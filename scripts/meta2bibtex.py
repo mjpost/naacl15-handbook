@@ -6,6 +6,8 @@
 # file on the CDROM in the proceedings, bibtex labels correspond to submission
 # numbers.
 
+# Usage
+
 # Written by Ulrich Germann, May 2012.
 
 from paper_info import *

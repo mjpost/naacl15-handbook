@@ -1,0 +1,145 @@
+\documentclass[twoside,makeidx]{book}
+
+\usepackage{pdfpages}
+
+% set paper size and margins; needs to be adapted for A5 ideally, we
+% should have a document class for conference handbooks where A5
+% vs. letter-halved is a class option
+\usepackage[
+  paperheight=8.5in, 
+  paperwidth=5.5in, 
+  inner=.75in,
+  outer=.5in,
+  bottom=.75in,
+  top=.75in,
+  twoside]{geometry}
+\input{content/special/preamble} 
+\input{content/special/macros}    
+\input{content/setup/venues}    % macros for event locations
+\input{content/setup/sessions}  % session titles and venues
+
+\renewcommand{\normalsize}{\fontsize{8}{9}\selectfont}
+\renewcommand{\small}{\fontsize{7}{8}\selectfont}
+\renewcommand{\footnotesize}{\fontsize{6}{6}\selectfont}
+\renewcommand{\large}{\fontsize{10}{11}\selectfont}
+\renewcommand{\Large}{\fontsize{12}{14}\selectfont}
+\renewcommand{\huge}{\fontsize{14}{17}\selectfont}
+
+% for each part of the conference, add the .bib file produced with
+% meta2bibtex.py here:
+%% \bibliography{auto/ArgMin/papers.bib}
+%% \bibliography{auto/BEA9/papers.bib}
+%% \bibliography{auto/BioNLP/papers.bib}
+%% \bibliography{auto/CLPsych/papers.bib}
+%% \bibliography{auto/CMCL/papers.bib}
+%% \bibliography{auto/CoNLL2014/papers.bib}
+%% \bibliography{auto/ComputEL/papers.bib}
+%% \bibliography{auto/EVENTS/papers.bib}
+%% \bibliography{auto/LLVisInt/papers.bib}
+%% \bibliography{auto/LTCSS/papers.bib}
+%% \bibliography{auto/MORPHFSM/papers.bib}
+%% \bibliography{auto/Metaphor/papers.bib}
+%% \bibliography{auto/NLPSD/papers.bib}
+%% \bibliography{auto/SLPAT2014/papers.bib}
+%% \bibliography{auto/SP14/papers.bib}
+%% \bibliography{auto/WASSA/papers.bib}
+\bibliography{auto/WMT14/papers.bib}
+%% \bibliography{auto/abstracts/papers.bib}
+%% \bibliography{auto/conll14st/papers.bib}
+%% \bibliography{auto/demos/papers.bib}
+%% \bibliography{auto/fsnlp/papers.bib}
+%% \bibliography{auto/papers/papers.bib}
+%% \bibliography{auto/shortpapers/papers.bib}
+%% \bibliography{auto/srw/papers.bib}
+%% \bibliography{auto/tacl/papers.bib}
+%% \bibliography{auto/tutorials/papers.bib}
+
+\begin{document}
+
+\fancyfoot[C]{}
+%% \input{content/fmatter/cover} 
+%% \includepdf[pages={1}]{content/fmatter/cover.pdf}
+
+\fancyfoot[C]{\thepage}
+
+\thispagestyle{empty}
+\mbox{}
+
+\vfill
+\noindent Handbook production by Matt Post (Johns Hopkins University) \\  
+% NAACL HLT 2013 logo by Lucy Roark (VERIFY THIS)
+Printing by Omnipress of Madison, Wisconsin
+\index{Post, Matt}
+\newpage
+
+\frontmatter
+%% \input{content/fmatter/splash}\clearpage
+\input{content/fmatter/preface-chair}
+%% \clearpage
+%% \input{content/fmatter/preface-pc}
+\clearpage%{\thispagestyle{emptyheader}\cleardoublepage}
+\setheaders{}{}
+\input{content/fmatter/committee}
+\clearpage
+%\input{content/fmatter/sponsors}
+\clearpage%{\thispagestyle{emptyheader}\cleardoublepage}
+\setheaders{}{}
+
+\setcounter{tocdepth}{2}
+\tableofcontents
+\mainmatter
+\pagestyle{fancy}
+
+%LOCAL INFO HERE
+%\input{content/fmatter/local-info}
+\clearpage
+
+%% \input{content/day1/sunday}
+%% \input{content/day2/monday}
+%% \input{content/day3/tuesday}
+%% \input{content/day4/wednesday}
+
+%% \input{content/starsem}
+\input{content/workshops/workshops}
+%% \input{content/naacl-icml-symposium}
+
+\chapter{Venue information}
+\setheaders{Venue Information}{Venue Information}
+
+\clearpage
+%% \setheaders{Restaurant Guide}{Restaurant Guide}
+%% \addcontentsline{toc}{chapter}{Restaurant Guide}
+%% \includepdf[pages={1-17}]{content/restaurants.pdf}
+
+\clearpage
+%% \setheaders{Hotel Maps}{Hotel Maps}
+%% \input{content/maps}
+
+\cleardoublepage
+\addcontentsline{toc}{chapter}{Author Index}
+\setheaders{Author Index}{Author Index}
+\printindex
+
+\cleardoublepage
+%% \setheaders{Advertisements}{Advertisements}
+%% \begin{center}
+%%   \includegraphics{content/ads/ETS.pdf}
+%%   \vfill
+%%   \includegraphics[height=300px]{content/ads/ISI.pdf}
+%% \end{center}
+%% \newpage
+%% \begin{center}
+%%   \includegraphics[height=300px]{content/ads/SDL.pdf}
+%%   \vfill
+%%   \includegraphics[width=3in]{content/ads/AppenButlerHill-gif.jpg}
+%% \end{center}
+
+\cleardoublepage
+% Inside back cover
+%% \addcontentsline{toc}{chapter}{Area map (inside back cover)}
+%% \includepdf[pages={1}]{content/atlanta.pdf}
+
+\addcontentsline{toc}{chapter}{Sponsors}
+\input{content/fmatter/backcover}
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -33,6 +33,7 @@ $|=1;
 
 my $tpat     = "[0-9]{1,2}[:.][0-9]{2,2}(?:\\s*[ap]m)?";
 my $tspanpat = "\\(?($tpat)(?:\\s*-+\\s*($tpat))?\\)?";
+my $daynum = 1;
 while (my $line = <STDIN>) {
   $line =~ s/\r\n/\n/;
   print "\n" if ($line =~ /^[*=+]/);
@@ -42,7 +43,9 @@ while (my $line = <STDIN>) {
   {
     my $header = $1;
     $header = texify($header) if $header;
+    print "\\vspace{7em}\n" if $daynum > 1;
     print"\\item[] {\\Large\\bfseries $header}\\\\\\vspace{1.5ex}\n";
+    $daynum++;
   }
   elsif ($line =~ /^[=+]\s+(.*?)($tspanpat)\s*(.*)/i)
   {

@@ -93,12 +93,13 @@ sub texify
 
 sub minus12 {
   my ($h, $m) = @_;
+  $h =~ s/^0//;
   if ($h >= 13) {
     $h -= 12;
-    return "$h:${m}pm";
+    return "$h:$m";
   } elsif ($h == 12) {
-    return "$h:${m}pm";
+    return "$h:$m";
   } else {
-    return "$h:${m}am";
+    return "$h:$m";
   }
 }

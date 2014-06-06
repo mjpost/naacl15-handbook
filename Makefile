@@ -33,7 +33,7 @@ chbk-howto.dvi: doc/chbk-howto.tex
 	(grep 'run BibTeX on the file' $*.log && echo "$*.dvi: $*.bbl" >> $@) || echo -n ''
 
 %.fls: %.tex
-	${latex} -recorder $<
+	${latex} $<
 	rm -f $*.dvi
 	biber $*
 	${latex} $*

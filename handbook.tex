@@ -57,7 +57,7 @@
 
 \fancyfoot[C]{}
 %% \input{content/fmatter/cover} 
-%% \includepdf[pages={1}]{content/fmatter/cover.pdf}
+\includepdf[pages={1}]{content/fmatter/cover.pdf}
 
 \fancyfoot[C]{\thepage}
 
@@ -65,17 +65,15 @@
 \mbox{}
 
 \vfill
-\noindent Handbook production by Matt Post (Johns Hopkins University) \\  
-% NAACL HLT 2013 logo by Lucy Roark (VERIFY THIS)
-Printing by Omnipress of Madison, Wisconsin
-\index{Post, Matt}
+\noindent Printing by Omnipress of Madison, Wisconsin \\
 \newpage
 
 \frontmatter
-%% \input{content/fmatter/splash}\clearpage
+
 \input{content/fmatter/preface-chair}
-%% \clearpage
-%% \input{content/fmatter/preface-pc}
+\clearpage
+\input{content/fmatter/preface-pc}
+
 \clearpage%{\thispagestyle{emptyheader}\cleardoublepage}
 \setheaders{}{}
 \input{content/fmatter/committee}
@@ -94,9 +92,9 @@ Printing by Omnipress of Madison, Wisconsin
 
 %% MAIN CONFERENCE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% \input{content/day1/sunday}
-%% \input{content/day2/monday}
-%% \input{content/day3/tuesday}
+\input{content/sunday/sunday}
+\input{content/monday/monday}
+% \input{content/tuesday/tuesday}
 %% \input{content/day4/wednesday}
 
 %% WORKSHOPS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -113,8 +111,8 @@ Printing by Omnipress of Madison, Wisconsin
 %% \includepdf[pages={1-17}]{content/restaurants.pdf}
 
 \clearpage
-%% \setheaders{Hotel Maps}{Hotel Maps}
-%% \input{content/maps}
+\setheaders{Hotel Maps}{Hotel Maps}
+\input{content/maps}
 
 \cleardoublepage
 \addcontentsline{toc}{chapter}{Author Index}

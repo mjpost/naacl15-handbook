@@ -1,0 +1,41 @@
+\begin{bio}
+{\bfseries Liang Huang} is an Assistant Professor at the City University of New York (CUNY). He graduated in 2008 from Penn and has worked as a Research Scientist at Google and a Research Assistant Professor at USC/ISI. His work is mainly on the theoretical aspects (algorithms and formalisms) of computational linguistics, as well as theory and algorithms of structured learning. He has received a Best Paper Award at ACL 2008, several best paper nominations (ACL 2007, EMNLP 2008, and ACL 2010), two Google Faculty Research Awards (2010 and 2013), and a University Graduate Teaching Prize at Penn (2005). He has given two tutorials at COLING 2008 and NAACL 2009, being the most popular tutorial at both venues.
+
+{\bfseries Kai Zhao} is a Ph.D. candidate at the City University of New York (CUNY), working with Liang Huang. He received his B.S. from the University of Science and Technology in China (USTC). He has published on structured prediction, online learning, machine translation, and parsing algorithms. He was a summer intern with IBM TJ Watson Research Center in 2013.
+
+{\bfseries Lemao Liu} is a postdoctoral research associate at the City University of New York (CUNY), working with Liang Huang. He received his Ph.D. from the Harbin Institute of Technology in 2013. Much of his Ph.D. work was done while visiting NICT, Japan, under the guidance of Taro Watanabe. His research area is machine translation and machine learning.
+\end{bio}
+
+\begin{tutorial}{Scalable Large-Margin Structured Learning: Theory and Algorithms}
+  {Liang Huang (CUNY), Kai Zhao (CUNY), and Lemao Liu (CUNY)}
+  {Sunday, June 22, 2014, 9:00 -- 12:30pm}
+  {\TutLocB}
+
+Much of NLP tries to map structured input (sentences) to some form of
+structured output (tag sequences, parse trees, semantic graphs, or
+translated/paraphrased/compressed sentences). Thus structured
+prediction and its learning algorithm are of central importance to us
+NLP researchers. However, when applying machine learning to structured
+domains, we often face scalability issues for two reasons:
+
+\begin{enumerate}
+\item Even the fastest exact search algorithms for most NLP problems
+(such as parsing and translation) is too slow for repeated use on the
+training data, but approximate search (such as beam search)
+unfortunately breaks down the nice theoretical properties (such as
+convergence) of existing machine learning algorithms.
+
+\item Even with inexact search, the scale of the training data in NLP
+still makes pure online learning (such as perceptron and MIRA) too
+slow on a single CPU.
+
+This tutorial reviews recent advances that address these two
+challenges. In particular, we will cover principled machine learning
+methods that are designed to work under vastly inexact search, and
+parallelization algorithms that speed up learning on multiple CPUs. We
+will also extend structured learning to the latent variable setting,
+where in many NLP applications such as translation and semantic
+parsing the gold-standard derivation is hidden.
+\end{enumerate}
+
+\end{tutorial}

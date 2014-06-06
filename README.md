@@ -22,3 +22,6 @@ TODO
 - Make sure biblatex-biber is installed
 
 - Generate schedules and metadata for each workshop
+
+- Fill in the tutorials manually, editing
+  content/sunday/tutorials-001.tex and so on

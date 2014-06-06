@@ -1,0 +1,33 @@
+\begin{bio}
+  {\bfseries Trevor Cohn} is a Senior Lecturer and ARC Future Fellow at the University of
+  Melbourne. His research deals with probabilistic machine learning models, particularly structured
+  prediction and non-parametric Bayesian models. He has recently published several seminal papers on
+  Gaussian Process models for NLP with applications ranging from translation evaluation to temporal
+  dynamics in social media.
+
+  {\bfseries Daniel Preotiuc-Pietro} is a Research Associate at the University of Sheffield. His
+  research involves applying machine learning models to model large volumes of data, usually from
+  social media. Applications include forecasting future behaviours of text, users or real world
+  quantities (e.g. political voting intention), user geo-location and impact.
+
+  {\bfseries Neil Lawrence} is a Professor at the University of Sheffield. He is one of the foremost
+  experts on Gaussian Processes and non-parametric Bayesian inference, with a long history of
+  publications and innovations in the field, including their application to multi-output scenarios,
+  unsupervised learning, deep networks and scaling to big data. He has been program chair for top
+  machine learning conferences (NIPS, AISTATS), and has run several past tutorials on Gaussian
+  Processes.
+
+  \index{Cohn, Trevor}
+  \index{Preotiuc-Pietro, Daniel}
+  \index{Lawrence, Neil}
+\end{bio}
+
+\begin{tutorial}{Gaussian Processes for Natural Language Processing}
+  {Trevor Cohn (University of Melbourne), Daniel Preotiuc-Pietro (University of Sheffield), Neil Lawrence (University of Sheffield)}
+  {Sunday, June 22, 2014, 9:00 -- 12:30pm}
+  {\TutLocA}
+
+This tutorial aims to cover the basic motivation, ideas and theory of Gaussian Processes and several applications to natural language processing tasks. Gaussian Processes (GPs) are a powerful modelling framework incorporating kernels and Bayesian inference, and are recognised as state-of-the-art for many machine learning tasks. This tutorial will focus primarily on regression and classification, both fundamental techniques of wide-spread use in the NLP community. We argue that the GP framework offers many benefits over commonly used machine learning frameworks, such as linear models (logistic regression, least squares regression) and support vector machines (SVMs). GPs have the advantage of being a fully Bayesian model, giving a posterior over the desired variables. Their probabilistic formulation allows for much wider applicability in larger graphical models, unlike SVMs. Moreover, several properties of Gaussian distributions means that GP (regression) supports analytic formulations for the posterior and predictive inference, avoiding the many approximation errors that plague approximate inference techniques in common use for Bayesian models (e.g. MCMCM, variational Bayes).
+
+GPs provide an elegant, flexible and simple means of probabilistic inference. GPs have been actively researched since the early 2000s, and are now reaching maturity: the fundamental theory and practice is well understood, and now research is focused into their applications, and improve inference algorithms, e.g. for scaling inference to large and high-dimensional datasets. Several open-source packages (e.g. GPy and GPML) have been developed which allow for GPs to be easily used for many applications. This tutorial aims to present the main ideas and theory behind GPs and recent applications to NLP, emphasising their potential for widespread application across many NLP tasks.
+\end{tutorial}

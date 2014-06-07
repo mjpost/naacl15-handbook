@@ -9,6 +9,7 @@
 # Usage
 
 # Written by Ulrich Germann, May 2012.
+# Modified by Matt Post, June 2014.
 
 from paper_info import *
 import sys, os, unicodedata, codecs

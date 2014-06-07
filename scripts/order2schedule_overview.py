@@ -50,11 +50,12 @@ def time_max(a, b):
 dates = []
 schedule = defaultdict(defaultdict)
 sessions = defaultdict()
+session_times = defaultdict()
 
 for line in sys.stdin:
     line = line.rstrip()
 
-    print "LINE", line
+    # print "LINE", line
 
     if line.startswith('*'):
         day, date, year = line[2:].split(', ')
@@ -63,11 +64,10 @@ for line in sys.stdin:
 
     elif line.startswith('='):
         session_name = line[2:]
-        session_start = None
-        session_stop = None
 
     elif line.startswith('+'):
         timerange, title = line[2:].split(' ', 1)
+        session_name = None
 
         schedule[(day, date, year)][timerange] = title
 
@@ -75,6 +75,10 @@ for line in sys.stdin:
         """For the overview, we don't print sessions or papers, but we do need to look at
         oral presentations in order to determine the time range of the session (if any applies)"""
         if re.match(r'\d+:\d+', line.split(' ')[1]):
+            if session_name is None:
+                print "* WARNING: paper without a session name"
+                continue
+
             timerange = line.split(' ')[1]
             start, stop = timerange.split('--')
 
@@ -89,6 +93,7 @@ for line in sys.stdin:
             else:
                 sessions[session_name] = (day, date, year, timerange)
 
+# Take all the sessions and place them at their time
 for session in sorted(sessions.keys()):
     day, date, year, timerange = sessions[session]
     if not schedule[(day, date, year)].has_key(timerange):
@@ -103,7 +108,27 @@ def sort_times(a, b):
     return cmp(int(ahour), int(bhour))
 
 for date in dates:
-    print date
+    day, num, year = date
+    out = open(os.path.join(args.output_dir, '%s.tex' % (day)), 'w')
+    print >>out, '\\section*{Day at a Glance}'
+    print >>out, '\\renewcommand{\\arraystretch}{1.2}'
+    print >>out, '\\begin{SingleTrackSchedule}'
+    for key, val in sorted(schedule[date].iteritems(), cmp=sort_times):
+        start, stop = key.split('--')
 
-    for key,val in sorted(schedule[date].iteritems(), cmp=sort_times):
-        print '  ', key, val
+        if isinstance(val, list) and re.search(r':', val[0]):
+            sessions = [x for x in val]
+            title = sessions[0].split(':')[0][:-1]
+            print >>out, '  %s & -- & %s &' % (start, stop)
+            print >>out, '  \\begin{tabular}{|p{.6in}|p{.6in}|p{.6in}|p{.6in}|p{.6in}|}'
+            print >>out, '    \\multicolumn{5}{c}{{\\bfseries %s}}\\\\\\hline' % (title)
+            print >>out, ' & '.join([x.split(': ')[1] for x in sessions]), '\\\\'
+            print >>out, '  \\hline\\end{tabular} \\\\'
+
+        else:
+            print >>out, '  %s & -- & %s &' % (start, stop)
+            print >>out, '  {\\bfseries %s} \\hfill (\\UnknownLoc)' % (val)
+            print >>out, '  \\\\'
+
+    print >>out, '\\end{SingleTrackSchedule}'
+    out.close()

@@ -25,3 +25,12 @@ TODO
 
 - Fill in the tutorials manually, editing
   content/sunday/tutorials-001.tex and so on
+
+- Generate CoNLL and CoNLL shared papers as separate auto-generated workshops, manually
+  merge into content/
+
+- handbook content is split into workshops (no abstracts) and main conference (abstracts)
+
+- take schedule.tex files (formed treating order files as workshops)
+  for papers, shortpapers, demos, and tacl and merge them under
+  content, each of their days

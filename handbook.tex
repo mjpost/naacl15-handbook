@@ -1,5 +1,17 @@
 \documentclass[twoside,makeidx]{book}
 
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{combelow}
+\usepackage{newunicodechar}
+\newunicodechar{ș}{\cb{s}}
+\newunicodechar{ț}{\cb{t}}
+
+%% \usepackage{fontspec,xunicode,xltxtra}
+%% \setromanfont[Mapping=tex-text]{Times}
+%% \setsansfont[Mapping=tex-text]{Lucida Grande} 
+%% \setmonofont{Courier New}
+
 \usepackage{pdfpages}
 
 % set paper size and margins; needs to be adapted for A5 ideally, we
@@ -61,14 +73,27 @@
 
 \fancyfoot[C]{\thepage}
 
+\input{content/maps}
+
+\clearpage
 \thispagestyle{empty}
 \mbox{}
-
 \vfill
 \noindent Printing by Omnipress of Madison, Wisconsin \\
 \newpage
 
 \frontmatter
+
+%% TOC %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setcounter{tocdepth}{2}
+\tableofcontents
+\mainmatter
+\pagestyle{fancy}
+
+%% PREFACE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Conference Information}
 
 \input{content/fmatter/preface-chair}
 \clearpage
@@ -77,42 +102,46 @@
 \clearpage%{\thispagestyle{emptyheader}\cleardoublepage}
 \setheaders{}{}
 \input{content/fmatter/committee}
+
 \clearpage
 %\input{content/fmatter/sponsors}
 \clearpage%{\thispagestyle{emptyheader}\cleardoublepage}
 \setheaders{}{}
 
-\setcounter{tocdepth}{2}
-\tableofcontents
-\mainmatter
-\pagestyle{fancy}
-
 %\input{content/fmatter/local-info}
+
 \clearpage
 
 %% MAIN CONFERENCE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \input{content/sunday/sunday}
 \input{content/monday/monday}
-% \input{content/tuesday/tuesday}
-%% \input{content/day4/wednesday}
+\input{content/tuesday/tuesday}
+\input{content/wednesday/wednesday}
+
+%% CoNLL %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{content/CoNLL}
 
 %% WORKSHOPS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \input{content/workshops/workshops}
-%% \input{content/naacl-icml-symposium}
+
+%% MISC %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Miscellaneous}
+
+\input{content/restaurant-guide}
 
 %% \chapter{Venue information}
 %% \setheaders{Venue Information}{Venue Information}
+
+\input{content/anti-discrimination-policy}
 
 \clearpage
 %% \setheaders{Restaurant Guide}{Restaurant Guide}
 %% \addcontentsline{toc}{chapter}{Restaurant Guide}
 %% \includepdf[pages={1-17}]{content/restaurants.pdf}
-
-\clearpage
-\setheaders{Hotel Maps}{Hotel Maps}
-\input{content/maps}
 
 \cleardoublepage
 \addcontentsline{toc}{chapter}{Author Index}

@@ -41,10 +41,8 @@ chbk-howto.dvi: doc/chbk-howto.tex
 
 EXTENSIONS  = .ilg .ps .dvi .dep .idx .idx.fixed .ind .aux .idx.ilg
 EXTENSIONS += .bbl .blg .bcf .toc .fls .log -blx.bib .run.xml .out
-clean: $(filter $(addprefix handbook, ${EXTENSIONS}), $(wildcard handbook.*) $(wildcard handbook-blx.bib)) \
-	$(filter $(addprefix aclpub-setup, ${EXTENSIONS}), $(wildcard aclpub-setup.*) ) \
-	$(filter $(addprefix chbk-howto, ${EXTENSIONS}), $(wildcard chbk-howto.*) )
-	rm -f $^
+clean: 
+	rm -f $(addprefix handbook, ${EXTENSIONS})
 
 -include handbook.dep
 

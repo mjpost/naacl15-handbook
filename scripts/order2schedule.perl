@@ -80,8 +80,9 @@ while (my $line = <STDIN>)
       for (@tim)
       {  # add am / pm 
         s/\s+//g; 
-        /([0-9]+):/; 
-        $_ .= ($1 < 9 or $1 > 11) ? "pm" : "am"; 
+        $_ = minus12($_);
+        # /([0-9]+):/; 
+        # $_ .= ($1 < 9 or $1 > 11) ? "pm" : "am"; 
       }
       my $d = $day;
       $d =~ s/(.)([a-z]+).*/uc($1).$2/e;
@@ -154,8 +155,9 @@ for (@D)
           for (@tim)
           {    # add am / pm 
             s/\s+//g; 
-            /([0-9]+):/; 
-            $_ .= ($1 < 9 or $1 > 11) ? "pm" : "am"; 
+            $_ = minus12($_);
+            # /([0-9]+):/; 
+            # $_ .= ($1 < 9 or $1 > 11) ? "pm" : "am"; 
           }
           print TEX "$tim[0] & -- & $tim[1]";
           print TEX sprintf(" & \\paperentry{$conf_part-%03d}", $_) for @r;
@@ -187,8 +189,9 @@ for (@D)
             for (@tim)
             {  # add am / pm 
               s/\s+//g; 
-              /([0-9]+):/; 
-              $_ .= ($1 < 9 or $1 > 11) ? "pm" : "am"; 
+              $_ = minus12($_);
+              # /([0-9]+):/; 
+              # $_ .= ($1 < 9 or $1 > 11) ? "pm" : "am"; 
             }
             my $d = $day;
             $d =~ s/(.)([a-z]+).*/uc($1).$2/e;
@@ -211,4 +214,13 @@ for (@D)
       close TEX;
     }
   }
+}
+
+sub minus12 {
+  my ($hm) = @_;
+  /(\d+):(\d+)/;
+  my $hours = $1;
+  my $minutes = $2;
+  $hours -= 12 if ($hours >= 13);
+  return "$hours:$minutes";
 }

@@ -1,61 +1,46 @@
 * Thursday, June 26, 2014
-= (9:00) Opening
-= (9:05) Opening Invited Talk
-+  Semantic Parsing: Past, Present, and Future by Raymond Mooney
-= (9:50) Invited Talk
-+  Can a Machine Translate Without Knowing What Translation Is? by Kevin Knight
-= (10:20) Exceptional Submission Talk
-+ Low-Dimensional Embeddings of Logic
-= (10:30) Coffee Break
-= (11:00) Exceptional Submission Talk
-+ Combining Formal and Distributional Models of Temporal and Intensional Semantics
-= (11:10) Exceptional Submission Talk
-+ Cooking with Semantics
-= (11:20) Poster Session
-= (12:30) Lunch Break
-= (2:10) Invited Talk
-+  Semantic Parsing for Cancer Panomics by Hoifung Poon
-= (2:50) Invited Talk
-+  Semantics for Semantic Parsers by Mark Steedman
-= (3:30) Coffee Break
-= (4:00) Invited Talk
-+  Asking for Help Using Inverse Semantics by Stefanie Tellex
-= (4:40) Invited Talk
-+  Computing with Natural Language by Percy Liang
-= (5:20) Invited Talk
-+  Grounded Semantic Parsing by Luke Zettlemoyer
-= (6:00) Closing
-* Posters
-17  # Learning a Lexicon for Broad-coverage Semantic Parsing
-11  # Semantic Parsing using Distributional Semantics and Probabilistic Logic
-19  # Large-scale CCG Induction from the Groningen Meaning Bank
-9  # Semantic Parsing for Text to 3D Scene Generation
-+  Leveraging Frame Semantics and Distributional Semantics for Unsupervised Semantic Slot Induction in Spoken Dialogue Systems by Yun-nung Chen, William Yang Wang and Alexander Rudnicky
-+  Semantic Parsing for Information Extraction by Eunsol Choi, Tom Kwiatkowski and Luke Zettlemoyer
-+  Parsing and Grounding Referring Expressions in Automatically Constructed 3D Models by Nicholas Fitzgerald and Luke Zettlemoyer
-+  Graph-Based Algorithms for Semantic Parsing by Jeffrey Flanigan, Samuel Thomson, David Bamman, Jesse Dodge, Manaal Faruqui, Brendan O'Connor, Nathan Schneider, Swabha Swayamdipta, Chris Dyer and Noah A. Smith
-15  # A Deep Architecture for Semantic Parsing
-+  Symmetry-Based Semantic Parsing by Chloé Kiddon and Pedro Domingos
-+  Leveraging Heterogeneous Data Sources for Relational Semantic Parsing by Meghana Kshirsagar, Nathan Schneider and Chris Dyer
-+  Context-dependent Semantic Parsing for Time Expressions by Kenton Lee, Yoav Artzi, Jesse Dodge and Luke Zettlemoyer
-16 # NOTE: PAPER PRESENT IN THE SCHEDULE BUT NOT IN THE METADATA  # Combining Formal and Distributional Models of Temporal and Intensional Semantics
-29 # NOTE: PAPER PRESENT IN THE SCHEDULE BUT NOT IN THE METADATA  # Cooking with Semantics
-21  # Representing Caused Motion in Embodied Construction Grammar
-+  Constructing Semantic Parsing Datasets from Technical Documentation by Kyle Richardson and Jonas Kuhn
-+  Notes on the MCTest Dataset for the Open-Domain Machine Comprehension of Text by Matthew Richardson, Christopher J.C. Burges and Erin Renshaw
-34 # NOTE: PAPER PRESENT IN THE SCHEDULE BUT NOT IN THE METADATA  # Low-Dimensional Embeddings of Logic
-13  # Software Requirements: A new Domain for Semantic Parsers
-7  # From Treebank Parses to Episodic Logic and Commonsense Inference
-14  # On maximum spanning DAG algorithms for semantic DAG parsing
-23  # Intermediary Semantic Representation through Proposition Structures
-26  # Efficient Logical Inference for Semantic Processing
-+  A New Corpus for Context-Dependent Semantic Parsing by Andreas Vlachos and Stephen Clark
-27  # Towards README-EVAL : Interpreting README File Instructions
-31  # Freebase QA: Information Extraction or Semantic Parsing?
-#12 # NOTE: PAPER PRESENT IN THE SCHEDULE BUT NOT IN THE METADATA  # Context-dependent Semantic Parsing for Time Expressions
-#20 # NOTE: PAPER PRESENT IN THE SCHEDULE BUT NOT IN THE METADATA  # Constructing Semantic Parsing Datasets from Technical Documentation
-#22 # NOTE: PAPER PRESENT IN THE SCHEDULE BUT NOT IN THE METADATA  # Parsing and Grounding Referring Expressions in Automatically Constructed 3D Models
-#25 # NOTE: PAPER PRESENT IN THE SCHEDULE BUT NOT IN THE METADATA  # Notes on the MCTest Dataset for the Open-Domain Machine Comprehension of Text
-#28 # NOTE: PAPER PRESENT IN THE SCHEDULE BUT NOT IN THE METADATA  # Graph-Based Algorithms for Semantic Parsing
-#30 # NOTE: PAPER PRESENT IN THE SCHEDULE BUT NOT IN THE METADATA  # Semantic Parsing for Information Extraction
-#33 # NOTE: PAPER PRESENT IN THE SCHEDULE BUT NOT IN THE METADATA  # Symmetry-Based Semantic Parsing
++ 9:00--9:05 Opening Remarks
+= Invited Talks
++ 9:05--9:50 {\em Semantic Parsing: Past, Present, and Future} Raymond Mooney
++ 9:50--10:20 {\em Can a Machine Translate Without Knowing What Translation Is?} Kevin Knight
+= Exceptional Submission Talks
+34 10:20--10:30 # Low-Dimensional Embeddings of Logic
++ 10:30--11:00 Coffee Break
+16 11:00--11:10 # Combining Formal and Distributional Models of Temporal and Intensional Semantics
+29 11:10--11:20 # Cooking with Semantics
++ 11:20--12:30 Poster Session
+17 # Learning a Lexicon for Broad-coverage Semantic Parsing
+11 # Semantic Parsing using Distributional Semantics and Probabilistic Logic
+19 # Large-scale CCG Induction from the Groningen Meaning Bank
+9 # Semantic Parsing for Text to 3D Scene Generation
+51 ##+ {\em Leveraging Frame Semantics and Distributional Semantics for Unsupervised Semantic Slot Induction in Spoken Dialogue Systems} Yun-nung Chen, William Yang Wang and Alexander Rudnicky
+52 ##+ {\em Semantic Parsing for Information Extraction} Eunsol Choi, Tom Kwiatkowski and Luke Zettlemoyer
+53 ##+ {\em Parsing and Grounding Referring Expressions in Automatically Constructed 3D Models} Nicholas Fitzgerald and Luke Zettlemoyer
+54 ##+ {\em Graph-Based Algorithms for Semantic Parsing} Jeffrey Flanigan, Samuel Thomson, David Bamman, Jesse Dodge, Manaal Faruqui, Brendan O'Connor, Nathan Schneider, Swabha Swayamdipta, Chris Dyer and Noah A. Smith
+15 # A Deep Architecture for Semantic Parsing
+55 ##+ {\em Symmetry-Based Semantic Parsing} Chloé Kiddon and Pedro Domingos
+56 ##+ {\em Leveraging Heterogeneous Data Sources for Relational Semantic Parsing} Meghana Kshirsagar, Nathan Schneider and Chris Dyer
+57 ##+ {\em Context-dependent Semantic Parsing for Time Expressions} Kenton Lee, Yoav Artzi, Jesse Dodge and Luke Zettlemoyer
+16 # Combining Formal and Distributional Models of Temporal and Intensional Semantics
+29 # Cooking with Semantics
+21 # Representing Caused Motion in Embodied Construction Grammar
+58 ##+ {\em Constructing Semantic Parsing Datasets from Technical Documentation} Kyle Richardson and Jonas Kuhn
+59 ##+ {\em Notes on the MCTest Dataset for the Open-Domain Machine Comprehension of Text} Matthew Richardson, Christopher J.C. Burges and Erin Renshaw
+34 # Low-Dimensional Embeddings of Logic
+13 # Software Requirements: A new Domain for Semantic Parsers
+7 # From Treebank Parses to Episodic Logic and Commonsense Inference
+14 # On maximum spanning DAG algorithms for semantic DAG parsing
+23 # Intermediary Semantic Representation through Proposition Structures
+26 # Efficient Logical Inference for Semantic Processing
+60 ##+ {\em A New Corpus for Context-Dependent Semantic Parsing} Andreas Vlachos and Stephen Clark
+27 # Towards README-EVAL : Interpreting README File Instructions
+31 # Freebase QA: Information Extraction or Semantic Parsing?
++ 12:30--14:10 Lunch Break
+= Invited Talks
++ 14:10--14:50 {\em Semantic Parsing for Cancer Panomics} Hoifung Poon
++ 14:50--15:30 {\em Semantics for Semantic Parsers} Mark Steedman
++ 15:30--16:00 Coffee Break
++ 16:00--16:40 {\em Asking for Help Using Inverse Semantics} Stefanie Tellex
++ 16:40--17:20 {\em Computing with Natural Language} Percy Liang
++ 17:20--18:00 {\em Grounded Semantic Parsing} Luke Zettlemoyer
++ 18:00--18:00 Closing

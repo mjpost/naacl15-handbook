@@ -10,12 +10,12 @@
 = Session 1: Shared Translation Tasks
 41 9:10--9:30 # Sakaguchi: Efficient Elicitation of Annot...
 82 9:30--10:00 # Overview
-+ 10:00-10:30 Panel Discussion
++ 10:00--10:30 Panel Discussion
 
 + 10:30--11:00 Coffee 
 
 = Session 2: Poster Session
-+ 11:00-12:30 Shared Task: Translation
++ 11:00--12:30 Shared Task: Translation
 56  # Bicici: Parallel FDA5 for Fast Deploym...
 22  # Borisov: Yandex School of Data Analysis...
 68  # Cap: CimS -- The CIS and IMS joint ...
@@ -40,7 +40,7 @@
 72  # Williams: Edinburgh’s Syntax-Based Sys...
 79  # wu: DCU-Lingo24 Participation in W...
 
-+ 11:00-12:30 Shared Task: Medical Translation
++ 11:00--12:30 Shared Task: Medical Translation
 67  # Du\v{s}ek: Machine Translation of Medical...
 34  # Li: Postech's System Description f...
 15  # Lu: Domain Adaptation for Medical ...
@@ -52,7 +52,7 @@
 + 12:30--14:00 Lunch
 
 = Session 3: Invited Talk
-+ 14:00-15:30 {\em Machine Translation in Academia and in the Commercial World -- a Contrastive Perspective.} Alon Lavie, Research Professor -- Carnegie Mellon University, Co-founder, President and CTO -- Safaba Translation Solutions, Inc.
++ 14:00--15:30 {\em Machine Translation in Academia and in the Commercial World -- a Contrastive Perspective.} Alon Lavie, Research Professor -- Carnegie Mellon University, Co-founder, President and CTO -- Safaba Translation Solutions, Inc.
 
 + 15:30--16:00 Coffee
 

@@ -1,40 +1,45 @@
-* Friday June 27, 2014
-= (8:30) Opening Remarks
-= (8:35) Invited talk: Dr. Saif Mohammad
-41  # Words: Evaluative, Emotional, Colourful, Musical!
-= (9:10) Session 1: Cross-domain and Multilingual Sentiment Analysis
-39 9:10 # Robust Cross-Domain Sentiment Analysis for Low-Resource Languages
-19 9:35 # An Investigation for Implicatures in Chinese : Implicatures in Chinese and in English are similar !
-29 10:00 # Inducing Domain-specific Noun Polarity Guided by Domain-independent Polarity Preferences of Adjectives
-32 10:15 # Aspect-Level Sentiment Analysis in Czech
-= (10:30) Break
-= (10:50) Invited talk: Dr. Myle Ott
-42 10:50 # Linguistic Models of Deceptive Opinion Spam
-= (11:25) Session 2: Emotion, Irony and Sarcasm Classification
-28 11:25 # Semantic Role Labeling of Emotions in Tweets
-5 11:50 # An Impact Analysis of Features in a Classification Approach to Irony Detection in Product Reviews
-36 12:15 # Modelling Sarcasm in Twitter, a Novel Approach
-3 12:30 # Emotive or Non-emotive: That is The Question
-= (12:45) Lunch Break
-= (14:00) Demo talk: Dr. Alexandra Balahur
-43 14:00 # Challenges in Creating a Multilingual Sentiment Analysis Application for Social Media Mining
-= (14:30) Session 3: Lexical Acquisition and Feature Weighting for Sentiment Analysis
-8 14:30 # Two-Step Model for Sentiment Lexicon Extraction from Twitter Streams
-1 14:45 # Linguistically Informed Tweet Categorization for Online Reputation Management
-4 15:00 # Credibility Adjusted Term Frequency: A Supervised Term Weighting Scheme for Sentiment Analysis and Text Classification
-21 15:15 # Opinion Mining and Topic Categorization with Novel Term Weighting
-= (15:30) Break
-= (16:00) Session 4: Sentiment Analysis from Discourse and Dialogues
-16 16:00 # Sentiment classification of online political discussions: a comparison of a word-based and dependency-based method
-35 16:25 # Improving Agreement and Disagreement Identification in Online Discussions with A Socially-Tuned Sentiment Lexicon
-13 16:50 # Lexical Acquisition for Opinion Inference: A Sense-Level Lexicon of Benefactive and Malefactive Events
-15 17:05 # Dive deeper: Deep Semantics for Sentiment Analysis
-= (17:20) Break
-= (17:30) Session 5: Sentiment Analysis Evaluation. Going Beyond Current Sentiment Analysis Approaches
-38 17:30 # Evaluating Sentiment Analysis Evaluation: A Case Study in Securities Trading
-2 17:55 # Sentiment Classification on Polarity Reviews: An Empirical Study Using Rating-based Features
-7 18:20 # Effect of Using Regression on Class Confidence Scores in Sentiment Analysis of Twitter Data
-18 18:35 # A cognitive study of subjectivity extraction in sentiment annotation
-24 18:50 # The Use of Text Similarity and Sentiment Analysis to Examine Rationales in the Large-Scale Online Deliberations
-30 19:05 # A Conceptual Framework for Inferring Implicatures
-= (19:20) Closing remarks
+* Friday, June 27, 2014
++ 8:30--8:35 Opening Remarks
++ 8:35--9:10 Invited talk: Dr. Saif Mohammad
+41 8:35--9:10 # Words: Evaluative, Emotional, Colourful, Musical!
+
+= Session 1: Cross-domain and Multilingual Sentiment Analysis
+39 9:10--9:35 # Robust Cross-Domain Sentiment Analysis for Low-Resource Languages
+19 9:35--10:00 # An Investigation for Implicatures in Chinese : Implicatures in Chinese and in English are similar !
+29 10:00--10:15 # Inducing Domain-specific Noun Polarity Guided by Domain-independent Polarity Preferences of Adjectives
+32 10:15--10:30 # Aspect-Level Sentiment Analysis in Czech
++ 10:30--10:50 Break
++ 10:50--11:25 Invited talk: Dr. Myle Ott
+42 10:50--11:25 # Linguistic Models of Deceptive Opinion Spam
+
+= Session 2: Emotion, Irony and Sarcasm Classification
+28 11:25--11:50 # Semantic Role Labeling of Emotions in Tweets
+5 11:50--12:15 # An Impact Analysis of Features in a Classification Approach to Irony Detection in Product Reviews
+36 12:15--12:30 # Modelling Sarcasm in Twitter, a Novel Approach
+3 12:30--12:45 # Emotive or Non-emotive: That is The Question
++ 12:45--14:00 Lunch Break
++ 14:00--14:30 Demo talk: Dr. Alexandra Balahur
+43 14:00--14:30 # Challenges in Creating a Multilingual Sentiment Analysis Application for Social Media Mining
+= Session 3: Lexical Acquisition and Feature Weighting for Sentiment Analysis
+8 14:30--14:45 # Two-Step Model for Sentiment Lexicon Extraction from Twitter Streams
+1 14:45--15:00 # Linguistically Informed Tweet Categorization for Online Reputation Management
+4 15:00--15:15 # Credibility Adjusted Term Frequency: A Supervised Term Weighting Scheme for Sentiment Analysis and Text Classification
+21 15:15--15:30 # Opinion Mining and Topic Categorization with Novel Term Weighting
+
++ 15:30--16:00 Break
+= Session 4: Sentiment Analysis from Discourse and Dialogues
+16 16:00--16:25 # Sentiment classification of online political discussions: a comparison of a word-based and dependency-based method
+35 16:25--16:50 # Improving Agreement and Disagreement Identification in Online Discussions with A Socially-Tuned Sentiment Lexicon
+13 16:50--17:05 # Lexical Acquisition for Opinion Inference: A Sense-Level Lexicon of Benefactive and Malefactive Events
+15 17:05--17:20 # Dive deeper: Deep Semantics for Sentiment Analysis
+
++ 17:20--17:30 Break
+
+= Session 5: Sentiment Analysis Evaluation. Going Beyond Current Sentiment Analysis Approaches
+38 17:30--17:55 # Evaluating Sentiment Analysis Evaluation: A Case Study in Securities Trading
+2 17:55--18:20 # Sentiment Classification on Polarity Reviews: An Empirical Study Using Rating-based Features
+7 18:20--18:35 # Effect of Using Regression on Class Confidence Scores in Sentiment Analysis of Twitter Data
+18 18:35--18:50 # A cognitive study of subjectivity extraction in sentiment annotation
+24 18:50--19:05 # The Use of Text Similarity and Sentiment Analysis to Examine Rationales in the Large-Scale Online Deliberations
+30 19:05--19:20 # A Conceptual Framework for Inferring Implicatures
++ 19:20--19:30 Closing remarks

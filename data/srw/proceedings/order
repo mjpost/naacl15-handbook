@@ -1,5 +1,5 @@
 * Monday, June 23, 2014
-= SRW Thesis Proposal Presentations
+= Session 2D: SRW Thesis Proposal Presentations
 14 13:20--13:45 # Bayesian Kernel Methods for Natural Language Processing
 17 13:45--14:10 # Extracting Temporal and Causal Relations between Events
 19 14:10--14:35 # Towards a discourse relation-aware approach for Chinese-English machine translation
@@ -31,5 +31,6 @@
 #29 # NOTE: PAPER PRESENT IN THE SCHEDULE BUT NOT IN THE METADATA  # Disambiguating prepositional phrase attachment sites with sense information captured in contextualized distributional data
 #33 # NOTE: PAPER PRESENT IN THE SCHEDULE BUT NOT IN THE METADATA  # Open Information Extraction for Spanish Language based on Syntactic Constraints
 #34 # NOTE: PAPER PRESENT IN THE SCHEDULE BUT NOT IN THE METADATA  # Improving Text Normalization via Unsupervised Model and Discriminative Reranking
+
 = Poster Session
 + 18:50--21:30 Main Conference Papers Sponsored by SRW

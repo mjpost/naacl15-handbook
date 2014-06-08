@@ -34,21 +34,21 @@
 522 10:35--11:00 # Bilingually-constrained Phrase Embeddings for Machine Translation
 184 11:00--11:25 # Learning New Semi-Supervised Deep Auto-encoder Features for Statistical Machine Translation
 229 11:25--11:50 # Learning Topic Representation for SMT with Neural Networks
-= Session 1D: Syntax, Parsing and Tagging I
+= Session 1D: Syntax, Parsing, and Tagging I
 247 11:00--11:25 # Tagging The Web: Building A Robust Web Tagger with Neural Network
 = Session 1E: NLP for the Web and Social Media I
 177 10:10--10:35 # Unsupervised Solution Post Identification from Discussion Forums
 265 10:35--11:00 # Weakly Supervised User Profile Extraction from Twitter
 356 11:00--11:25 # The effect of wording on message propagation: Topic- and author-controlled natural experiments on Twitter
 384 11:25--11:50 # Inferring User Political Preferences from Streaming Communications
-+ 11:50--13:20 Lunch break; Student Lunch
++ 11:50--13:20 Lunch break; Bloomberg and Nuance Student Lunch
 = Session 2A: Syntax, Parsing and Tagging II
-466 13:30--13:45 # Steps to Excellence: Simple Inference with Refined Scoring of Dependency Trees
+466 13:20--13:45 # Steps to Excellence: Simple Inference with Refined Scoring of Dependency Trees
 548 13:45--14:10 # Sparser, Better, Faster GPU Parsing
 573 14:10--14:35 # Shift-Reduce CCG Parsing with a Dependency Model
 545 14:35--15:00 # Less Grammar, More Features
 = Session 2B: Semantics II
-99 13:30--13:45 # Don't count, predict! A systematic comparison of context-counting vs. context-predicting semantic vectors
+99 13:20--13:45 # Don't count, predict! A systematic comparison of context-counting vs. context-predicting semantic vectors
 349 13:45--14:10 # Metaphor Detection with Cross-Lingual Model Transfer
 134 14:10--14:35 # Learning Word Sense Distributions, Detecting Unattested Senses and Identifying Novel Senses Using Topic Models
 557 14:35--15:00 # Learning to Automatically Solve Algebra Word Problems
@@ -57,7 +57,7 @@
 37 14:35--15:00 # Max-Margin Tensor Neural Network for Chinese Word Segmentation
 = Session 2D: SRW
 = Session 2E: Sentiment Analysis I
-357 13:30--13:45 # An Empirical Study on the Effect of Negation Words on Sentiment
+357 13:20--13:45 # An Empirical Study on the Effect of Negation Words on Sentiment
 238 13:45--14:10 # Extracting Opinion Targets and Opinion Words from Online Reviews with Graph Co-ranking
 582 14:10--14:35 # Context-aware Learning for Sentence-level Sentiment Analysis with Posterior Regularization
 91 14:35--15:00 # Product Feature Mining: Semantic Clues versus Syntactic Constituents
@@ -81,7 +81,7 @@
 298 15:30--15:55 # A Robust Approach to Aligning Heterogeneous Lexical Resources
 255 15:55--16:20 # Predicting the relevance of distributional semantic similarity with contextual information
 + 16:45--17:00 Break
-+ 17:00--18:00 Invited talk I:  Corinna Cortes
++ 17:00--18:00 Invited talk I: Corinna Cortes
 610 17:00--18:00 # Learning Ensembles of Structured Prediction Rules
 = Oral Sessions for Student Research Workshop Posters
 + 18:50--21:30 Poster and Dinner Session I: TACL Papers, Long Papers, Short Papers, Student Research Workshop; Demonstrations
@@ -111,6 +111,7 @@
 115  # Joint POS Tagging and Transition-based Constituent Parsing in Chinese with Non-local Features
 359  # Strategies for Contiguous Multiword Expression Analysis and Dependency Parsing
 7  # Correcting Preposition Errors in Learner English Using Error Case Frames and Feedback Messages
+
 * Tuesday, June 24, 2014
 + 7:30--18:00 Registration
 + 7:30--9:00 Breakfast
@@ -147,7 +148,7 @@
 = Session 5B: Information Extraction III
 603 13:30--13:55 # Toward Future Scenario Generation: Extracting Event Causality Exploiting Semantic Relation, Context, and Association Features
 518 13:55--14:20 # Cross-narrative Temporal Ordering of Medical Events
-274  # Language-Aware Truth Assessment of Fact Candidates
+274 14:20--14:45 # Language-Aware Truth Assessment of Fact Candidates
 = Session 5C: Lexical Sematics and Ontology I
 209 13:30--13:55 # That's sick dude!: Automatic identification of word sense change across different timescales
 55 13:55--14:20 # A Step-wise Usage-based Method for Inducing Polysemy-aware Verb Classes
@@ -160,11 +161,6 @@
 118 13:55--14:20 # Bootstrapping into Filler-Gap: An Acquisition Story
 458 14:20--14:45 # Nonparametric Learning of Phonological Constraints in Optimality Theory
 + 14:45--15:15 Coffee break
-= Session 6A: Machine Translation III
-= Session 6B: Lexical Sematics and Ontology II
-= Session 6C: Generation/Summarization/Dialogue
-= Session 6D: NLP Applications and NLP Enabled Technology I
-= Session 6E: Language Resources and Evaluation III
 + 16:50--19:20 Poster and Dinner Session II: Long Papers, Short Papers and Demonstrations
 515  # Active Learning with Efficient Feature Weighting Methods for Improving Data Quality and Classification Accuracy
 552  # Political Ideology Detection Using Recursive Neural Networks
@@ -192,6 +188,7 @@
 579  # Unsupervised Morphology-Based Vocabulary Expansion
 85  # Toward Better Chinese Word Segmentation for SMT via Bilingual Constraints
 + 19:30--10:00 Social at the National Aquarium in Baltimore
+
 * Wednesday, June 25, 2014
 + 7:30--18:00 Registration
 + 7:30--9:00 Breakfast
@@ -199,7 +196,7 @@
 10 9:00--9:30 # Fast and Robust Neural Network Joint Models for Statistical Machine Translation
 307 9:30--10:00 # Low-Rank Tensors for Scoring Dependency Structures
 + 10:15--10:45 Coffee break
-= Session 7A: Multimodal NLP/ Lexical Semantics
+= Session 7A: Multimodal NLP / Lexical Semantics
 132 11:10--11:35 # CoSimRank: A Flexible & Efficient Graph-Theoretic Similarity Measure
 363 11:35--12:00 # Is this a wampimuk? Cross-modal mapping between distributional semantics and the visual world
 = Session 7B: Semantics III
@@ -224,7 +221,7 @@
 + 12:25--13:30 Lunch break
 + 13:30--15:00 ACL Business Meeting
 = Session 8A: NLP for the Web and Social Media II
-= Session 8B: Semantics/Information Extraction
+= Session 8B: Semantics / Information Extraction
 = Session 8C: Machine Translation V
 = Session 8D: Syntax, Parsing and Tagging V
 = Session 8E: Multilinguality and Multimodal NLP

@@ -1,5 +1,5 @@
 * Thursday, June 26, 2014
-+  9:00--9:18 Opening remarks
++ 9:00--9:18 Opening remarks
 = Session 1
 60 9:18--9:36 # What's in a p-value in NLP?
 56 9:36--9:54 # Domain-Specific Image Captioning
@@ -19,14 +19,14 @@
 * Friday, June 27, 2014
 + 8:35--9:35 Keynote 2: Tom Mitchell
 = Session 4
-76 9:35-- 9:53 # Focused Entailment Graphs for Open IE Propositions
+76 9:35--9:53 # Focused Entailment Graphs for Open IE Propositions
 13 9:53--10:11 # Improved Pattern Learning for Bootstrapped Entity Extraction
 45 10:11--10:30 # Temporal Scoping of Relational Facts based on Wikipedia Data
 + 10:30--11:00 Coffee break
 = Session 5
 70 11:00--11:18 # Distributed Word Representation Learning for Cross-Lingual Dependency Parsing
 62 11:18--11:36 # Treebank Translation for Cross-Lingual Parser Induction
-12 11:36 --11:54 # Weakly-Supervised Bayesian Learning of a CCG Supertagger
+12 11:36--11:54 # Weakly-Supervised Bayesian Learning of a CCG Supertagger
 87 11:54--12:12 # Factored Markov Translation with Robust Modeling
 57 12:12--12:30 # Hallucinating Phrase Translations for Low Resource MT
 + 12:30--14:00 Lunch break

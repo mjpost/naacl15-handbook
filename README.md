@@ -34,3 +34,8 @@ TODO
 - take schedule.tex files (formed treating order files as workshops)
   for papers, shortpapers, demos, and tacl and merge them under
   content, each of their days
+
+- Generate the day overviews, munge them a bit, pull them in
+
+ cat data/{papers,shortpapers,demos,tacl,srw}/proceedings/order | ./scripts/order2schedule_overview.py
+

@@ -107,10 +107,19 @@ def sort_times(a, b):
         return cmp(int(amin), int(bmin))
     return cmp(int(ahour), int(bhour))
 
+def minus12(time):
+    hours, minutes = time.split(':')
+    if hours.startswith('0'):
+        hours = hours[1:]
+    if int(hours) >= 13:
+        hours = `int(hours) - 12`
+
+    return '%s:%s' % (hours, minutes)
+
 for date in dates:
     day, num, year = date
     out = open(os.path.join(args.output_dir, '%s.tex' % (day)), 'w')
-    print >>out, '\\section*{Day at a Glance}'
+    print >>out, '\\section*{Overview}'
     print >>out, '\\renewcommand{\\arraystretch}{1.2}'
     print >>out, '\\begin{SingleTrackSchedule}'
     for key, val in sorted(schedule[date].iteritems(), cmp=sort_times):
@@ -119,14 +128,14 @@ for date in dates:
         if isinstance(val, list) and re.search(r':', val[0]):
             sessions = [x for x in val]
             title = sessions[0].split(':')[0][:-1]
-            print >>out, '  %s & -- & %s &' % (start, stop)
+            print >>out, '  %s & -- & %s &' % (minus12(start), minus12(stop))
             print >>out, '  \\begin{tabular}{|p{.6in}|p{.6in}|p{.6in}|p{.6in}|p{.6in}|}'
             print >>out, '    \\multicolumn{5}{c}{{\\bfseries %s}}\\\\\\hline' % (title)
             print >>out, ' & '.join([x.split(': ')[1] for x in sessions]), '\\\\'
             print >>out, '  \\hline\\end{tabular} \\\\'
 
         else:
-            print >>out, '  %s & -- & %s &' % (start, stop)
+            print >>out, '  %s & -- & %s &' % (minus12(start), minus12(stop))
             print >>out, '  {\\bfseries %s} \\hfill (\\UnknownLoc)' % (val)
             print >>out, '  \\\\'
 

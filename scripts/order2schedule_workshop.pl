@@ -1,8 +1,12 @@
 #!/usr/bin/perl -W
 
-# Used for workshop schedules
+# Creates a single-track workshop schedule with inline abstracts.
 #
 # Usage: 
+#
+#   cat data/WMT14/proceedings/order | order2schedule_workshop.pl WMT14
+#
+# Writes files to auto/NAME
 
 use strict;
 

@@ -130,7 +130,7 @@ for date in dates:
             title = sessions[0].split(':')[0][:-1]
             print >>out, '  %s & -- & %s &' % (minus12(start), minus12(stop))
             print >>out, '  \\begin{tabular}{|p{.6in}|p{.6in}|p{.6in}|p{.6in}|p{.6in}|}'
-            print >>out, '    \\multicolumn{5}{c}{{\\bfseries %s}}\\\\\\hline' % (title)
+            print >>out, '    \\multicolumn{5}{l}{{\\bfseries %s}}\\\\\\hline' % (title)
             print >>out, ' & '.join([x.split(': ')[1] for x in sessions]), '\\\\'
             print >>out, '  \\hline\\end{tabular} \\\\'
 

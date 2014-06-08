@@ -1,6 +1,6 @@
 SubmissionNumber#=%=#41
-FinalPaperTitle#=%=#Simpliﬁed Dependency Annotations with GFL-Web
-ShortPaperTitle#=%=#Simpliﬁed Dependency Annotations with GFL-Web
+FinalPaperTitle#=%=#Simplified Dependency Annotations with GFL-Web
+ShortPaperTitle#=%=#Simplified Dependency Annotations with GFL-Web
 NumberOfPages#=%=#6
 CopyrightSigned#=%=#Michael Mordowanec
 JobTitle#==#

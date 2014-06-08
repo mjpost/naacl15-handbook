@@ -1,0 +1,30 @@
+SubmissionNumber#=%=#13
+FinalPaperTitle#=%=#Automatic Generation of Challenging Distractors Using Context-Sensitive Inference Rules
+ShortPaperTitle#=%=#Automatic Generation of Challenging Distractors Using Context-Sensitive Inference Rules
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Torsten Zesch
+JobTitle#==#
+Organization#==#
+Abstract#==#Automatically generating challenging distractors for multiple-choice gap-fill
+items is still an unsolved problem. We propose to employ context-sensitive
+lexical inference rules in order to generate distractors that are semantically
+similar to the gap target word in some sense, but not in the particular sense
+induced by the gap-fill context. We hypothesize that such distractors should be
+particularly hard to distinguish from the correct answer. We focus on verbs as
+they are especially difficult to master for language learners and find that our
+approach is quite effective. In our test set of 20 items, our proposed method
+decreases the number of invalid distractors in 90% of the cases, and fully
+eliminates all of them in 65%. Further analysis on that dataset does not
+support our hypothesis regarding item difficulty as measured by average error
+rate of language learners. We conjecture that this may be due to limitations in
+our evaluation setting, which we plan to address in future work.
+Author{1}{Firstname}#=%=#Torsten
+Author{1}{Lastname}#=%=#Zesch
+Author{1}{Email}#=%=#zesch@ukp.informatik.tu-darmstadt.de
+Author{1}{Affiliation}#=%=#Language Technology Lab, University of Duisburg-Essen
+Author{2}{Firstname}#=%=#Oren
+Author{2}{Lastname}#=%=#Melamud
+Author{2}{Email}#=%=#melamuo@cs.biu.ac.il
+Author{2}{Affiliation}#=%=#Natural Language Processing Lab, Bar Ilan University
+
+==========

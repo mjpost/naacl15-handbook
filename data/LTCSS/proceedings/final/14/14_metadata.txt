@@ -1,0 +1,46 @@
+SubmissionNumber#=%=#14
+FinalPaperTitle#=%=#Extracting Socioeconomic Patterns from the News: Modelling Text and Outlet Importance Jointly
+ShortPaperTitle#=%=#Extracting Socioeconomic Patterns from the News: Modelling Text and Outlet Importance Jointly
+NumberOfPages#=%=#5
+CopyrightSigned#=%=#Vasileios Lampos
+JobTitle#==#
+Organization#==#5th Floor
+One Euston Square
+UCL, London Media Technology Campus (UCL/BBC)
+40 Melton Street
+London NW1 2FD
+United Kingdom
+Abstract#==#Information from news articles can be used to study correlations between
+textual discourse and socioeconomic patterns. This work focuses on the task of
+understanding how words contained in the news as well as the news outlets
+themselves may relate to a set of indicators, such as economic sentiment or
+unemployment rates. The bilinear nature of the applied regression model
+facilitates learning jointly word and outlet importance, supervised by these
+indicators. By evaluating the predictive ability of the extracted features, we
+can also assess their relevance to the target socioeconomic phenomena.
+Therefore, our approach can be formulated as a potential NLP tool, particularly
+suitable to the computational social science community, as it can be used to
+interpret connections between vast amounts of textual content and measurable
+society-driven factors.
+Author{1}{Firstname}#=%=#Vasileios
+Author{1}{Lastname}#=%=#Lampos
+Author{1}{Email}#=%=#v.lampos@ucl.ac.uk
+Author{1}{Affiliation}#=%=#Computer Science Department, University College London
+Author{2}{Firstname}#=%=#Daniel
+Author{2}{Lastname}#=%=#Preoţiuc-Pietro
+Author{2}{Email}#=%=#daniel@dcs.shef.ac.uk
+Author{2}{Affiliation}#=%=#University of Sheffield
+Author{3}{Firstname}#=%=#Sina
+Author{3}{Lastname}#=%=#Samangooei
+Author{3}{Email}#=%=#ss@ecs.soton.ac.uk
+Author{3}{Affiliation}#=%=#University of Southampton
+Author{4}{Firstname}#=%=#Douwe
+Author{4}{Lastname}#=%=#Gelling
+Author{4}{Email}#=%=#d.gelling@sheffield.ac.uk
+Author{4}{Affiliation}#=%=#University of Sheffield
+Author{5}{Firstname}#=%=#Trevor
+Author{5}{Lastname}#=%=#Cohn
+Author{5}{Email}#=%=#tcohn@unimelb.edu.au
+Author{5}{Affiliation}#=%=#University of Melbourne
+
+==========

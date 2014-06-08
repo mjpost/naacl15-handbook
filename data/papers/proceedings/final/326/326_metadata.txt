@@ -1,0 +1,34 @@
+SubmissionNumber#=%=#326
+FinalPaperTitle#=%=#Lattice Desegmentation for Statistical Machine Translation
+ShortPaperTitle#=%=#Lattice Desegmentation for Statistical Machine Translation
+NumberOfPages#=%=#11
+CopyrightSigned#=%=#NA
+JobTitle#==#
+Organization#==#
+Abstract#==#Morphological segmentation is an effective sparsity reduction strategy for
+statistical machine translation (SMT) involving morphologically complex
+languages. When translating into a segmented language, an extra step is
+required to desegment the output; previous studies have desegmented the 1-best
+output from the de- coder. In this paper, we expand our translation options by
+desegmenting n-best lists or lattices. Our novel lattice desegmentation
+algorithm gives us access to both segmented and desegmented views of the target
+language for a large subspace of possible translation outputs. This allows us
+to include features related to the desegmentation process, as well as an
+unsegmented language model (LM), to help select the best translation. We
+investigate this technique in the context of English-to-Arabic and
+English-to-Finnish translation, showing significant improvements over
+desegmentation of 1-best decoder outputs.
+Author{1}{Firstname}#=%=#Mohammad
+Author{1}{Lastname}#=%=#Salameh
+Author{1}{Email}#=%=#msalameh@ualberta.ca
+Author{1}{Affiliation}#=%=#University of Alberta
+Author{2}{Firstname}#=%=#Colin
+Author{2}{Lastname}#=%=#Cherry
+Author{2}{Email}#=%=#colin.cherry@nrc-cnrc.gc.ca
+Author{2}{Affiliation}#=%=#NRC
+Author{3}{Firstname}#=%=#Grzegorz
+Author{3}{Lastname}#=%=#Kondrak
+Author{3}{Email}#=%=#gkondrak@ualberta.ca
+Author{3}{Affiliation}#=%=#University of Alberta
+
+==========

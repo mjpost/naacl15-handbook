@@ -1,0 +1,24 @@
+SubmissionNumber#=%=#142
+FinalPaperTitle#=%=#Measuring metaphoricity
+ShortPaperTitle#=%=#Measuring metaphoricity
+NumberOfPages#=%=#7
+CopyrightSigned#=%=#Jonathan Edwin Dunn
+JobTitle#==#
+Organization#==#Illinois Institute of Technology
+3300 S Federal St, Chicago, IL 60616
+Abstract#==#This paper presents the first computationally-derived scalar measurement of
+metaphoricity. Each input sentence is given a value between 0 and 1 which
+represents how metaphoric that sentence is. This measure achieves a correlation
+of 0.450 (Pearson's R, p < 0.01) with an experimental measure of metaphoricity
+involving human participants. While far from perfect, this scalar measure of
+metaphoricity allows different thresholds for metaphoricity so that metaphor
+identification can be fitted for specific tasks and datasets. When reduced to a
+binary classification evaluation using the VU Amsterdam Metaphor Corpus, the
+system achieves an F-Measure of 0.608, slightly lower than the comparable
+binary classification system's 0.638 and competitive with existing approaches.
+Author{1}{Firstname}#=%=#Jonathan
+Author{1}{Lastname}#=%=#Dunn
+Author{1}{Email}#=%=#jonathan.edwin.dunn@gmail.com
+Author{1}{Affiliation}#=%=#Illinois Institute of Technology
+
+==========

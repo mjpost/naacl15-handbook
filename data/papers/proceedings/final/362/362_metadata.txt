@@ -1,0 +1,30 @@
+SubmissionNumber#=%=#362
+FinalPaperTitle#=%=#Joint Syntactic and Semantic Parsing with Combinatory Categorial Grammar
+ShortPaperTitle#=%=#Joint Syntactic and Semantic Parsing with Combinatory Categorial Grammar
+NumberOfPages#=%=#11
+CopyrightSigned#=%=#Jayant Krishnamurthy
+JobTitle#==#
+Organization#==#Carnegie Mellon University,
+5000 Forbes Avenue
+Pittsburgh, PA 15232
+Abstract#==#We present an approach to training a joint syntactic and semantic parser that
+combines syntactic training information from CCGbank with semantic training
+information from a knowledge base via distant supervision. The trained parser
+produces a full syntactic parse of any sentence, while simultaneously producing
+logical forms for portions of the sentence that have a semantic representation
+within the parser’s predicate vocabulary. We demonstrate our approach by
+training a parser whose semantic representation contains 130 predicates from
+the NELL ontology. A semantic evaluation demonstrates that this parser produces
+logical forms better than both comparable prior work and a pipelined
+syntax-then-semantics approach. A syntactic evaluation on CCGbank demonstrates
+that the parser’s dependency F- score is within 2.5% of state-of-the-art.
+Author{1}{Firstname}#=%=#Jayant
+Author{1}{Lastname}#=%=#Krishnamurthy
+Author{1}{Email}#=%=#jayantk@cs.cmu.edu
+Author{1}{Affiliation}#=%=#Carnegie Mellon University
+Author{2}{Firstname}#=%=#Tom M.
+Author{2}{Lastname}#=%=#Mitchell
+Author{2}{Email}#=%=#tom.mitchell@cmu.edu
+Author{2}{Affiliation}#=%=#Carnegie Mellon University
+
+==========

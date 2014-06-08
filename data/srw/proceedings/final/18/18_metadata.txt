@@ -1,0 +1,36 @@
+SubmissionNumber#=%=#18
+FinalPaperTitle#=%=#Learning Grammar with Explicit Annotations for Subordinating Conjunctions
+ShortPaperTitle#=%=#Learning Grammar with Explicit Annotations for Subordinating Conjunctions
+NumberOfPages#=%=#8
+CopyrightSigned#=%=#Dongchen Li
+JobTitle#==#
+Organization#==#Peking University, Yiheyuan Road 5, Haidian, Beijing, China
+Abstract#==#Data-driven approach for parsing may suffer from data sparsity when entirely
+unsupervised. External knowledge has been shown to effectively help mitigate
+this problem. Subordinating conjunctions impose important constraints on
+Chinese syntactic structures. This paper proposes a method to train a grammar
+with hierarchical subordinating conjunctions category knowledge as explicit
+annotations. Firstly, each part-of-speech tag of the subordinating conjunctions
+is annotated with the coarsest category in the hierarchical knowledge. These
+categories are human-defined to represent distinct syntactic constraints, and
+provide a good starting point for splitting. Secondly, based on the data-driven
+state-split approach, we establish a mapping from each automatic refined
+subcategory to one subcategory in the hierarchical knowledge. Then the
+data-driven splitting of these categories are restricted by the knowledge to
+avoid over refinement. Experiments show that constraining the grammar learning
+by the hierarchical knowledge improves parsing performance significantly on the
+baseline.
+Author{1}{Firstname}#=%=#Dongchen
+Author{1}{Lastname}#=%=#Li
+Author{1}{Email}#=%=#lidc@pku.edu.cn
+Author{1}{Affiliation}#=%=#Peking University
+Author{2}{Firstname}#=%=#Xiantao
+Author{2}{Lastname}#=%=#Zhang
+Author{2}{Email}#=%=#zhxt@pku.edu.cn
+Author{2}{Affiliation}#=%=#Peking University
+Author{3}{Firstname}#=%=#Xihong
+Author{3}{Lastname}#=%=#Wu
+Author{3}{Email}#=%=#wxh@cis.pku.edu.cn
+Author{3}{Affiliation}#=%=#Peking University
+
+==========

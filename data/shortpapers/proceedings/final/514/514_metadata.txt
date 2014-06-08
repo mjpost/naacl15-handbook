@@ -1,0 +1,47 @@
+SubmissionNumber#=%=#514
+FinalPaperTitle#=%=#Cross-lingual Opinion Analysis via Negative Transfer Detection
+ShortPaperTitle#=%=#Cross-lingual Opinion Analysis via Negative Transfer Detection
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Lin Gui
+JobTitle#==#
+Organization#==#Key Laboratory of Network Oriented Intelligent Computation, Shenzhen Graduate School, Harbin Institute of Technology, Xili town, Shenzhen City, Guangdong province, China;
+Department Of Computing, the Hong Kong Polytechnic University, Hung Hom, Kowloon, Hong Kong
+Abstract#==#Transfer learning method has been used in opinion analysis to make use of
+available language resources for other resource-poor languages. However, the
+cumulative class noise in transfer learning can adversely affect performance
+when more training data is used. In this paper, we propose a novel method in
+transductive transfer learning to identify noises through the detection of
+negative transfers. Evaluation on NLP&CC 2013 cross-lingual opinion analysis
+dataset shows that our approach outperformed the state-of-the-art systems. More
+signifi-cantly, our system shows a monotonic increase trend in performance
+improvement when more training data are used.
+Author{1}{Firstname}#=%=#Lin
+Author{1}{Lastname}#=%=#Gui
+Author{1}{Email}#=%=#guilin.nlp@gmail.com
+Author{1}{Affiliation}#=%=#Key Laboratory of Network Oriented Intelligent Computation, Shenzhen Graduate School, Harbin Institute of Technology, Shenzhen 518055
+Author{2}{Firstname}#=%=#Ruifeng
+Author{2}{Lastname}#=%=#Xu
+Author{2}{Email}#=%=#xuruifeng@hitsz.edu.cn
+Author{2}{Affiliation}#=%=#Key Laboratory of Network Oriented Intelligent Computation, Shenzhen Graduate School, Harbin Institute of Technology, Shenzhen 518055
+Author{3}{Firstname}#=%=#Qin
+Author{3}{Lastname}#=%=#Lu
+Author{3}{Email}#=%=#csluqin@comp.polyu.edu.hk
+Author{3}{Affiliation}#=%=#The Hong Kong Polytechnic University
+Author{4}{Firstname}#=%=#Jun
+Author{4}{Lastname}#=%=#Xu
+Author{4}{Email}#=%=#Xujun@hitsz.edu.cn
+Author{4}{Affiliation}#=%=#Key Laboratory of Network Oriented Intelligent Computation, Shenzhen Graduate School, Harbin Institute of Technology, Shenzhen 518055
+Author{5}{Firstname}#=%=#Jian
+Author{5}{Lastname}#=%=#Xu
+Author{5}{Email}#=%=#csjxu@comp.polyu.edu.hk
+Author{5}{Affiliation}#=%=#The Hong Kong Polytechnic University
+Author{6}{Firstname}#=%=#Bin
+Author{6}{Lastname}#=%=#Liu
+Author{6}{Email}#=%=#bliu@insun.hit.edu.cn
+Author{6}{Affiliation}#=%=#Key Laboratory of Network Oriented Intelligent Computation, Shenzhen Graduate School, Harbin Institute of Technology, Shenzhen 518055
+Author{7}{Firstname}#=%=#Xiaolong
+Author{7}{Lastname}#=%=#Wang
+Author{7}{Email}#=%=#wangxl@insun.hit.edu.cn
+Author{7}{Affiliation}#=%=#Key Laboratory of Network Oriented Intelligent Computation, Shenzhen Graduate School, Harbin Institute of Technology, Shenzhen 518055
+
+==========

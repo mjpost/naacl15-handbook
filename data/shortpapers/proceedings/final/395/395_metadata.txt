@@ -1,0 +1,37 @@
+SubmissionNumber#=%=#395
+FinalPaperTitle#=%=#An Extension of BLANC to System Mentions
+ShortPaperTitle#=%=#An Extension of BLANC to System Mentions
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Xiaoqiang Luo
+JobTitle#==#
+Organization#==#Google Inc., 111 8th Ave., New York, NY 10011
+Abstract#==#BLANC is a link-based coreference evaluation
+metric for measuring the quality
+of coreference systems on gold mentions.
+This paper extends the original
+BLANC (“BLANC-gold” henceforth) to
+system mentions, removing the gold mention
+assumption. The proposed BLANC
+falls back seamlessly to the original one if
+system mentions are identical to gold mentions,
+and it is shown to strongly correlate
+with existing metrics on the 2011 and 2012
+CoNLL data.
+Author{1}{Firstname}#=%=#Xiaoqiang
+Author{1}{Lastname}#=%=#Luo
+Author{1}{Email}#=%=#xiaoqiang.luo@gmail.com
+Author{1}{Affiliation}#=%=#Google
+Author{2}{Firstname}#=%=#Sameer
+Author{2}{Lastname}#=%=#Pradhan
+Author{2}{Email}#=%=#sameer.pradhan@childrens.harvard.edu
+Author{2}{Affiliation}#=%=#Boston Children's Hospital and Harvard Medical School
+Author{3}{Firstname}#=%=#Marta
+Author{3}{Lastname}#=%=#Recasens
+Author{3}{Email}#=%=#recasens@google.com
+Author{3}{Affiliation}#=%=#Google
+Author{4}{Firstname}#=%=#Eduard
+Author{4}{Lastname}#=%=#Hovy
+Author{4}{Email}#=%=#hovy@cmu.edu
+Author{4}{Affiliation}#=%=#CMU
+
+==========

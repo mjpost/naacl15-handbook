@@ -1,0 +1,45 @@
+SubmissionNumber#=%=#439
+FinalPaperTitle#=%=#Learning Semantic Hierarchies via Word Embeddings
+ShortPaperTitle#=%=#Learning Semantic Hierarchies via Word Embeddings
+NumberOfPages#=%=#11
+CopyrightSigned#=%=#Ruiji Fu
+JobTitle#==#
+Organization#==#Research Center for Social Computing and Information Retrieval, Harbin Institute of Technology
+92 West Dazhi Street, Nan Gang District, Harbin, China
+Abstract#==#Semantic hierarchy construction aims to build structures of concepts linked by
+hypernym–hyponym (“is-a”) relations. A major challenge for this task is
+the automatic discovery of such relations. This paper proposes a novel and
+effective method for the construction of semantic hierarchies based on word
+embeddings, which can be used to measure the semantic relationship between
+words. We identify whether a candidate word pair has hypernym–hyponym
+relation by using the word-embedding-based semantic projections between words
+and their hypernyms. Our result, an F-score of 73.74%, outperforms the
+state-of-theart methods on a manually labeled test dataset. Moreover, combining
+our method with a previous manually-built hierarchy extension method can
+further improve Fscore to 80.29%.
+Author{1}{Firstname}#=%=#Ruiji
+Author{1}{Lastname}#=%=#Fu
+Author{1}{Email}#=%=#furuiji@gmail.com
+Author{1}{Affiliation}#=%=#Harbin Institute of Technology
+Author{2}{Firstname}#=%=#Jiang
+Author{2}{Lastname}#=%=#Guo
+Author{2}{Email}#=%=#jguo@ir.hit.edu.cn
+Author{2}{Affiliation}#=%=#Harbin Institute of Technology
+Author{3}{Firstname}#=%=#Bing
+Author{3}{Lastname}#=%=#Qin
+Author{3}{Email}#=%=#bqin@ir.hit.edu.cn
+Author{3}{Affiliation}#=%=#Harbin Institute of Technology
+Author{4}{Firstname}#=%=#Wanxiang
+Author{4}{Lastname}#=%=#Che
+Author{4}{Email}#=%=#wanxiang@gmail.com
+Author{4}{Affiliation}#=%=#Harbin Institute of Technology
+Author{5}{Firstname}#=%=#Haifeng
+Author{5}{Lastname}#=%=#Wang
+Author{5}{Email}#=%=#wanghaifeng@baidu.com
+Author{5}{Affiliation}#=%=#Baidu
+Author{6}{Firstname}#=%=#Ting
+Author{6}{Lastname}#=%=#Liu
+Author{6}{Email}#=%=#tliu72@vip.126.com
+Author{6}{Affiliation}#=%=#
+
+==========

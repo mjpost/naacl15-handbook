@@ -1,0 +1,23 @@
+SubmissionNumber#=%=#41
+FinalPaperTitle#=%=#Words: Evaluative, Emotional, Colourful, Musical!
+ShortPaperTitle#=%=#Words: Evaluative, Emotional, Colourful, Musical!
+NumberOfPages#=%=#1
+CopyrightSigned#=%=#Saif Mohammad
+JobTitle#==#
+Organization#==#National Research Council Canada
+Abstract#==#Beyond literal meaning, words have associations with sentiment, emotion,
+colour, and even mu-sic. Identifying such associations is of substan-tial
+benefit for information visualization, data sonification, and sentiment
+analysis, which in turn have applications in commerce, education, art, and
+health. I will present methods to gener-ate high-coverage resources that
+capture such associations. I will show how these resources can be used for
+analyzing emotions in text, de-tecting personality from essays, and generating
+music from novels. Finally, I will show how word-sentiment association lexicons
+have helped create the top-ranking systems in recent SemEval competitions on
+the sentiment analysis of social media posts.
+Author{1}{Firstname}#=%=#Saif
+Author{1}{Lastname}#=%=#Mohammad
+Author{1}{Email}#=%=#saif.mohammad@nrc-cnrc.gc.ca
+Author{1}{Affiliation}#=%=#
+
+==========

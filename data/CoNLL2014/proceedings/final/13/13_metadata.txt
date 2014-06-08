@@ -1,0 +1,28 @@
+SubmissionNumber#=%=#13
+FinalPaperTitle#=%=#Improved Pattern Learning for Bootstrapped Entity Extraction
+ShortPaperTitle#=%=#Improved Pattern Learning for Bootstrapped Entity Extraction
+NumberOfPages#=%=#11
+CopyrightSigned#=%=#Sonal Gupta
+JobTitle#==#
+Organization#==#
+Abstract#==#Bootstrapped pattern learning for entity extraction usually starts with seed
+entities and iteratively learns patterns and entities from unlabeled text.
+Patterns are scored by their ability to extract more positive entities and less
+negative entities. A problem is that due to the lack of labeled data, unlabeled
+entities are either assumed to be negative or are ignored by the existing
+pattern scoring measures. In this paper, we improve pattern scoring by
+predicting the labels of unlabeled entities. We  use various unsupervised
+features based on contrasting domain-specific and general text, and exploiting
+distributional similarity and edit distances to learned entities. Our system
+outperforms existing pattern scoring algorithms for extracting
+drug-and-treatment entities from four medical forums.
+Author{1}{Firstname}#=%=#Sonal
+Author{1}{Lastname}#=%=#Gupta
+Author{1}{Email}#=%=#sonal@cs.stanford.edu
+Author{1}{Affiliation}#=%=#Stanford University
+Author{2}{Firstname}#=%=#Christopher
+Author{2}{Lastname}#=%=#Manning
+Author{2}{Email}#=%=#manning@cs.stanford.edu
+Author{2}{Affiliation}#=%=#Stanford University
+
+==========

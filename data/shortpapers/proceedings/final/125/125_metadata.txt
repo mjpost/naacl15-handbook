@@ -1,0 +1,22 @@
+SubmissionNumber#=%=#125
+FinalPaperTitle#=%=#Enforcing Structural Diversity in Cube-pruned Dependency Parsing
+ShortPaperTitle#=%=#Enforcing Structural Diversity in Cube-pruned Dependency Parsing
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Hao Zhang
+JobTitle#==#
+Organization#==#Google
+111 8th Ave, New York, NY 10011
+Abstract#==#In this paper we extend the cube-pruned dependency parsing framework of Zhang
+et al. (2012; 2013) by forcing inference to maintain both label and structural
+ambiguity. The resulting parser achieves state-of-the-art accuracies, in
+particular on datasets with a large set of dependency labels.
+Author{1}{Firstname}#=%=#Hao
+Author{1}{Lastname}#=%=#Zhang
+Author{1}{Email}#=%=#haozhang@google.com
+Author{1}{Affiliation}#=%=#Google
+Author{2}{Firstname}#=%=#Ryan
+Author{2}{Lastname}#=%=#McDonald
+Author{2}{Email}#=%=#ryanmcd@gmail.com
+Author{2}{Affiliation}#=%=#Google
+
+==========

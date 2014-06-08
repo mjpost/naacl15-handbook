@@ -1,0 +1,33 @@
+SubmissionNumber#=%=#34
+FinalPaperTitle#=%=#Postech's System Description for Medical Text Translation Task
+ShortPaperTitle#=%=#System Description for Medical Translation Task
+NumberOfPages#=%=#4
+CopyrightSigned#=%=#Jianri Li
+JobTitle#==#
+Organization#==#Pohang University of Science and Technology,
+77 Cheongam-Ro. Nam-Gu. Pohang. Gyeongbuk. Republic of Korea
+Abstract#==#We describe the PBSMT system and QT system that are developed for summary
+translation and query translation of WMT 14 medical translation task. We focus
+on query translation and propose a novel approach that divides a query into
+single phrases, and finds query translation candidates for each phrase
+according to three cases based on the term-to-term translation dictionary. The
+result of query translation experiment shows that our novel approach obtained
+higher translation accuracy than the baseline (PBSMT) system.
+Author{1}{Firstname}#=%=#Jianri
+Author{1}{Lastname}#=%=#Li
+Author{1}{Email}#=%=#skywalker@postech.ac.kr
+Author{1}{Affiliation}#=%=#Department of Computer Science and Engineering, Pohang University of Science and Technology, Pohang, Republic of Korea
+Author{2}{Firstname}#=%=#Se-Jong
+Author{2}{Lastname}#=%=#Kim
+Author{2}{Email}#=%=#sejong@postech.ac.kr
+Author{2}{Affiliation}#=%=#Department of Computer Science and Engineering, Pohang University of Science and Technology, Pohang, Republic of Korea
+Author{3}{Firstname}#=%=#Hwidong
+Author{3}{Lastname}#=%=#Na
+Author{3}{Email}#=%=#leona@postech.ac.kr
+Author{3}{Affiliation}#=%=#Department of Computer Science and Engineering, Pohang University of Science and Technology, Pohang, Republic of Korea
+Author{4}{Firstname}#=%=#Jong-Hyeok
+Author{4}{Lastname}#=%=#Lee
+Author{4}{Email}#=%=#jhlee@postech.ac.kr
+Author{4}{Affiliation}#=%=#Department of Computer Science and Engineering, Pohang University of Science and Technology, Pohang, Republic of Korea
+
+==========

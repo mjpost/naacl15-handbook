@@ -1,0 +1,40 @@
+SubmissionNumber#=%=#372
+FinalPaperTitle#=%=#Hierarchical Summarization: Scaling Up Multi-Document Summarization
+ShortPaperTitle#=%=#Hierarchical Summarization: Scaling Up Multi-Document Summarization
+NumberOfPages#=%=#11
+CopyrightSigned#=%=#Janara Christensen
+JobTitle#==#
+Organization#==#Computer Science and Engineering
+University of Washington
+Box 352350 
+Seattle, WA 98195-2350
+Abstract#==#Current multi-document summarization (MDS) systems have been designed for
+short, unstructured summaries of 10-15 documents, and are inadequate for larger
+document collections. We propose a new approach to scaling up summarization
+called hierarchical summarization, and present the first implemented system,
+Summa. 
+
+Summa produces a hierarchy of relatively short summaries, where the top level
+provides a general overview and  users can navigate the hierarchy to drill down
+for more details on topics of interest.  Summa optimizes for coherence as well
+as coverage of salient information.  In an Amazon Mechanical Turk evaluation,
+users prefer Summa ten times as often as flat MDS and three times as often as
+timelines.
+Author{1}{Firstname}#=%=#Janara
+Author{1}{Lastname}#=%=#Christensen
+Author{1}{Email}#=%=#janara@cs.washington.edu
+Author{1}{Affiliation}#=%=#University of Washington
+Author{2}{Firstname}#=%=#Stephen
+Author{2}{Lastname}#=%=#Soderland
+Author{2}{Email}#=%=#soderlan@cs.washington.edu
+Author{2}{Affiliation}#=%=#University of Washington
+Author{3}{Firstname}#=%=#Gagan
+Author{3}{Lastname}#=%=#Bansal
+Author{3}{Email}#=%=#cs1110081@cse.iitd.ac.in
+Author{3}{Affiliation}#=%=#Indian Institute of Technology Delhi
+Author{4}{Firstname}#=%=#
+Author{4}{Lastname}#=%=#Mausam
+Author{4}{Email}#=%=#mausam@cs.washington.edu
+Author{4}{Affiliation}#=%=#Indian Institute of Technology Delhi
+
+==========

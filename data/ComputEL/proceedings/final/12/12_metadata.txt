@@ -1,0 +1,36 @@
+SubmissionNumber#=%=#12
+FinalPaperTitle#=%=#Small Languages, Big Data: Multilingual Computational Tools and Techniques for the Lexicography of Endangered Languages
+ShortPaperTitle#=%=#Multilingual Computational Tools and Techniques for the Lexicography of Endangered Languages
+NumberOfPages#=%=#9
+CopyrightSigned#=%=#Paula A. Rogers
+JobTitle#==#
+Organization#==#Kamusi Project International
+Lausanne, Switzerland
+Abstract#==#The Kamusi Project, a multilingual online dictionary website, has as one of its
+goals to document the lexicons of endangered and less-resourced languages
+(LRLs). Kamusi.org provides a unified platform and repository for this kind of
+data that is both simple to use and free to researchers and the public. Since
+Kamusi has a separate entry for each homophone or polyseme, it can be used to
+produce sophisticated multilingual dictionaries. We have recently been
+confronting issues inherent in contact language-based lexicography, especially
+the elicitation of culturally-specific semantic terms, which cannot be obtained
+through fieldwork purely reliant on a contact language. To address this, we
+have designed a system of “balloons.” Based on a variety of factors,
+balloons raise the likelihood of revealing terms and fields that have
+particular relevance within a culture, rather than perpetuating linguistic bias
+toward the concerns and artifacts of more powerful groups. Kamusi has also
+developed a smartphone application which can be used for crowdsourcing
+contributions and validation.  It will also be invaluable in gathering oral
+data from speakers of endangered languages for the production of monolingual
+talking dictionaries. The first of these projects is planned for the Arrernte
+language in central Australia.
+Author{1}{Firstname}#=%=#Martin
+Author{1}{Lastname}#=%=#Benjamin
+Author{1}{Email}#=%=#martin@kamusi.org
+Author{1}{Affiliation}#=%=#École Polytechnique Fédérale de Lausanne
+Author{2}{Firstname}#=%=#Paula
+Author{2}{Lastname}#=%=#Radetzky
+Author{2}{Email}#=%=#paula@kamusi.org
+Author{2}{Affiliation}#=%=#Kamusi Project International
+
+==========

@@ -1,0 +1,34 @@
+SubmissionNumber#=%=#18
+FinalPaperTitle#=%=#Community Evaluation and Exchange of Word Vectors at wordvectors.org
+ShortPaperTitle#=%=#Community Evaluation and Exchange of Word Vectors at wordvectors.org
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Manaal Faruqui
+JobTitle#==#
+Organization#==#Carnegie Mellon University
+5000 Forbes Avenue, Pittsburgh PA, 15213
+Abstract#==#Vector space word representations are useful
+for many natural language processing
+applications. The diversity of techniques
+for computing vector representations
+and the large number of evaluation
+benchmarks makes reliable comparison a
+tedious task both for researchers developing
+new vector space models and for
+those wishing to use them. We present
+a website and suite of offline tools that
+that facilitate evaluation of word vectors
+on standard lexical semantics benchmarks
+and permit exchange and archival by users
+who wish to find good vectors for their
+applications. The system is accessible at:
+www.wordvectors.org.
+Author{1}{Firstname}#=%=#Manaal
+Author{1}{Lastname}#=%=#Faruqui
+Author{1}{Email}#=%=#manaalfar@gmail.com
+Author{1}{Affiliation}#=%=#Carnegie Mellon University
+Author{2}{Firstname}#=%=#Chris
+Author{2}{Lastname}#=%=#Dyer
+Author{2}{Email}#=%=#cdyer@cs.cmu.edu
+Author{2}{Affiliation}#=%=#Carnegie Mellon University
+
+==========

@@ -1,0 +1,36 @@
+SubmissionNumber#=%=#39
+FinalPaperTitle#=%=#Robust Cross-Domain Sentiment Analysis for Low-Resource Languages
+ShortPaperTitle#=%=#Robust Cross-Domain Sentiment Analysis for Low-Resource Languages
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#jakob elming
+JobTitle#==#
+Organization#==#Centre for Language Technology
+University of Copenhagen
+Njalsgade 140
+2300 Copenhagen S
+Denmark
+Abstract#==#While various approaches to domain adaptation exist, the majority of them
+requires knowledge of the target domain, and additional data, preferably
+labeled. For a language like English, it is often feasible to match most of
+those conditions, but in low-resource languages, it presents a problem. We
+explore the situation when neither data nor other information about the target
+domain is available. We use two samples of Danish, a low-resource language,
+from the consumer review domain (film vs. company reviews) in a sentiment
+analysis task. We observe dramatic performance drops when moving from one
+domain to the other. We then introduce a simple offline method that makes
+models more robust towards unseen domains, and observe relative improvements of
+more than 50%.
+Author{1}{Firstname}#=%=#Jakob
+Author{1}{Lastname}#=%=#Elming
+Author{1}{Email}#=%=#zmk867@hum.ku.dk
+Author{1}{Affiliation}#=%=#University of Copenhagen
+Author{2}{Firstname}#=%=#Barbara
+Author{2}{Lastname}#=%=#Plank
+Author{2}{Email}#=%=#bplank@gmail.com
+Author{2}{Affiliation}#=%=#University of Copenhagen
+Author{3}{Firstname}#=%=#Dirk
+Author{3}{Lastname}#=%=#Hovy
+Author{3}{Email}#=%=#mail@dirkhovy.com
+Author{3}{Affiliation}#=%=#Center for Language Technology, University of Copenhagen
+
+==========

@@ -1,0 +1,29 @@
+SubmissionNumber#=%=#4
+FinalPaperTitle#=%=#FFTM: A Fuzzy Feature Transformation Method for Medical Documents
+ShortPaperTitle#=%=#FFTM: A Fuzzy Feature Transformation Method for Medical Documents
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Amir Karami
+JobTitle#==#
+Organization#==#University of Maryland Baltimore County
+Abstract#==#The vast array of medical text data represents a valuable resource that can be
+analyzed to advance the state of the art in medicine. Currently, text mining
+methods are being used to analyze medical research and clinical text data. Some
+of the main challenges in text analysis are high dimensionality and noisy data.
+There is a need to develop novel feature transformation methods that help
+reduce the dimensionality of data and improve the performance of machine
+learning algorithms. In this paper we present a feature transformation method
+named FFTM. We illustrate the efficacy of our method using local term
+weighting, global term weighting, and Fuzzy clustering methods and show that
+the quality of text analysis in medical text documents can be improved. We
+compare FFTM with Latent Dirichlet Allocation (LDA) by using two different
+datasets and statistical tests show that FFTM outperforms LDA.
+Author{1}{Firstname}#=%=#Amir
+Author{1}{Lastname}#=%=#Karami
+Author{1}{Email}#=%=#amir3@umbc.edu
+Author{1}{Affiliation}#=%=#University of Maryland Baltimore County
+Author{2}{Firstname}#=%=#Aryya
+Author{2}{Lastname}#=%=#Gangopadhyay
+Author{2}{Email}#=%=#gangopad@umbc.edu
+Author{2}{Affiliation}#=%=#University of Maryland Baltimore County
+
+==========

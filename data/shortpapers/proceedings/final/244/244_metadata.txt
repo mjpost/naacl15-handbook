@@ -1,0 +1,27 @@
+SubmissionNumber#=%=#244
+FinalPaperTitle#=%=#Incremental Predictive Parsing with TurboParser
+ShortPaperTitle#=%=#Incremental Predictive Parsing with TurboParser
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Arne Köhn
+JobTitle#==#
+Organization#==#Universität Hamburg
+Vogt-Kölln-Straße 30
+22527 Hamburg
+Abstract#==#Most approaches to incremental parsing either incur a degradation of accuracy
+or they have to postpone decisions, yielding underspecified intermediate
+output.  We present an incremental predictive dependency parser that is fast,
+accurate, and largely language independent. By extending a state-of-the-art
+dependency parser, connected analyses for sentence prefixes are obtained, which
+even predict
+properties and the structural embedding of upcoming words. In contrast to other
+approaches, accuracy for complete sentence analyses does not decrease.
+Author{1}{Firstname}#=%=#Arne
+Author{1}{Lastname}#=%=#Köhn
+Author{1}{Email}#=%=#koehn@informatik.uni-hamburg.de
+Author{1}{Affiliation}#=%=#Universität Hamburg
+Author{2}{Firstname}#=%=#Wolfgang
+Author{2}{Lastname}#=%=#Menzel
+Author{2}{Email}#=%=#menzel@informatik.uni-hamburg.de
+Author{2}{Affiliation}#=%=#Hamburg University
+
+==========

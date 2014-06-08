@@ -1,0 +1,27 @@
+SubmissionNumber#=%=#22
+FinalPaperTitle#=%=#Yandex School of Data Analysis Russian-English Machine Translation System for WMT14
+ShortPaperTitle#=%=#Yandex School of Data Analysis Russian-English Machine Translation System for WMT14
+NumberOfPages#=%=#5
+CopyrightSigned#=%=#Alexey Borisov
+JobTitle#==#
+Organization#==#Yandex School of Data Analysis
+16, Leo Tolstoy street, Moscow, Russia
+Abstract#==#This paper describes the Yandex School of Data Analysis Russian-English system
+submitted to the ACL 2014 Ninth Workshop on Statistical Machine Translation
+shared translation task. We start with the system that we developed last year
+and investigate a few methods that were successful at the previous translation
+task including the new reparameterization of IBM Model 2, unpruned language
+model and operation sequence model. Next we propose a {simple yet practical}
+algorithm to transform Russian sentence into a more easily translatable form
+before decoding. The algorithm is based on the linguistic intuition of
+Russian-English bilinguals.
+Author{1}{Firstname}#=%=#Alexey
+Author{1}{Lastname}#=%=#Borisov
+Author{1}{Email}#=%=#alborisov@yandex-team.ru
+Author{1}{Affiliation}#=%=#Yandex School of Data Analysis
+Author{2}{Firstname}#=%=#Irina
+Author{2}{Lastname}#=%=#Galinskaya
+Author{2}{Email}#=%=#galinskaya@yandex-team.ru
+Author{2}{Affiliation}#=%=#Yandex School of Data Analysis
+
+==========

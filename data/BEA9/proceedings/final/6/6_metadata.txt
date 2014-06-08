@@ -1,0 +1,26 @@
+SubmissionNumber#=%=#6
+FinalPaperTitle#=%=#An Explicit Feedback System for Preposition Errors based on Wikipedia Revisions
+ShortPaperTitle#=%=#An Explicit Feedback System for Preposition Errors based on Wikipedia Revisions
+NumberOfPages#=%=#10
+CopyrightSigned#=%=#Nitin Madnani
+JobTitle#==#
+Organization#==#Educational Testing Service, Princeton, NJ 08541
+Abstract#==#This paper presents a proof-of-concept tool for providing automated explicit
+feedback to language learners based on data mined from Wikipedia revisions. The
+tool takes a sentence with a grammatical error as input and displays a ranked
+list of corrections for that error along with evidence to support each
+correction choice. We use lexical and part-of-speech contexts, as well as query
+expansion with a thesaurus to automatically match the error with evidence from
+the Wikipedia revisions. We demonstrate that the tool works well for the task
+of preposition selection errors, evaluating against a publicly available
+corpus.
+Author{1}{Firstname}#=%=#Nitin
+Author{1}{Lastname}#=%=#Madnani
+Author{1}{Email}#=%=#nmadnani@ets.org
+Author{1}{Affiliation}#=%=#Educational Testing Service
+Author{2}{Firstname}#=%=#Aoife
+Author{2}{Lastname}#=%=#Cahill
+Author{2}{Email}#=%=#acahill@ets.org
+Author{2}{Affiliation}#=%=#Educational Testing Service
+
+==========

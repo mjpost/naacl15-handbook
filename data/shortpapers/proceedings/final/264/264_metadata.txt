@@ -1,0 +1,27 @@
+SubmissionNumber#=%=#264
+FinalPaperTitle#=%=#Improved Iterative Correction for Distant Spelling Errors
+ShortPaperTitle#=%=#Improved Iterative Correction for Distant Spelling Errors
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Sergey
+JobTitle#==#
+Organization#==#
+Abstract#==#Noisy channel models, widely used in modern spellers, cope with typical
+misspellings,but do not work well with infrequent and difficult spelling
+errors. In this paper, we have improved the noisy channel approach by iterative
+stochastic search for the best correction. The proposed algorithm allowed us to
+avoid local minima problem and improve the F1 measure by 6.6% on distant
+spelling errors.
+Author{1}{Firstname}#=%=#Sergey
+Author{1}{Lastname}#=%=#Gubanov
+Author{1}{Email}#=%=#esgv@yandex-team.ru
+Author{1}{Affiliation}#=%=#Yandex
+Author{2}{Firstname}#=%=#Irina
+Author{2}{Lastname}#=%=#Galinskaya
+Author{2}{Email}#=%=#galinskaya@yandex-team.ru
+Author{2}{Affiliation}#=%=#Yandex
+Author{3}{Firstname}#=%=#Alexey
+Author{3}{Lastname}#=%=#Baytin
+Author{3}{Email}#=%=#baytin@yandex-team.ru
+Author{3}{Affiliation}#=%=#Yandex
+
+==========

@@ -1,0 +1,36 @@
+SubmissionNumber#=%=#325
+FinalPaperTitle#=%=#Biases in Predicting the Human Language Model
+ShortPaperTitle#=%=#Biases in Predicting the Human Language Model
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Benjamin Van Durme
+JobTitle#==#
+Organization#==#Johns Hopkins
+Baltimore, MD
+Abstract#==#We consider the prediction of three human behavioral measures – lexical
+decision, word naming, and picture naming – through the lens of domain bias
+in language modeling. Contrasting the predictive ability of statistics derived
+from 6 different corpora, we find intuitive results showing that, e.g., a
+British corpus over-predicts the speed with which an American will react to the
+words ward and duke, and that the Google n-grams over-predicts familiarity with
+technology terms. This study aims to provoke increased consideration of the
+human language model by NLP practitioners: biases are not limited to
+differences between corpora (i.e. “train” vs. “test”); they can exist
+as well between corpora and the intended user of the resultant technology.
+Author{1}{Firstname}#=%=#Alex B.
+Author{1}{Lastname}#=%=#Fine
+Author{1}{Email}#=%=#abfine@gmail.com
+Author{1}{Affiliation}#=%=#University of Illinois at Urbana-Champaign
+Author{2}{Firstname}#=%=#Austin F.
+Author{2}{Lastname}#=%=#Frank
+Author{2}{Email}#=%=#austin.frank@gmail.com
+Author{2}{Affiliation}#=%=#RIot Games
+Author{3}{Firstname}#=%=#T. Florian
+Author{3}{Lastname}#=%=#Jaeger
+Author{3}{Email}#=%=#fjaeger@bcs.rochester.edu
+Author{3}{Affiliation}#=%=#University of Rochester
+Author{4}{Firstname}#=%=#Benjamin
+Author{4}{Lastname}#=%=#Van Durme
+Author{4}{Email}#=%=#vandurme@cs.jhu.edu
+Author{4}{Affiliation}#=%=#JHU
+
+==========

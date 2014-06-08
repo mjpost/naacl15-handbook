@@ -1,0 +1,35 @@
+SubmissionNumber#=%=#24
+FinalPaperTitle#=%=#Improving Peer Feedback Prediction: The Sentence Level is Right
+ShortPaperTitle#=%=#Improving Peer Feedback Prediction: The Sentence Level is Right
+NumberOfPages#=%=#10
+CopyrightSigned#=%=#Huy Viet Nguyen
+JobTitle#==#
+Organization#==#Department of Computer Science, University of Pittsburgh
+Sennott Square
+University of Pittsburgh
+Pittsburgh, PA 15260
+USA
+Abstract#==#Recent research aims to automatically predict whether peer feedback is of high
+quality, e.g.  suggests solutions to identified problems. While prior studies
+have focused on peer review of papers, similar issues arise when reviewing
+diagrams and other artifacts. In addition, previous studies have not carefully
+examined how the level of prediction granularity impacts both accuracy and
+educational utility. In this paper we develop models for predicting the quality
+of peer feedback regarding argument diagrams. We propose to perform prediction
+at the sentence level, even though the educational task is to label feedback at
+a multi-sentential comment level. We first introduce a corpus annotated at a
+sentence level granularity, then build comment prediction models using this
+corpus. Our results show that  aggregating sentence prediction outputs to label
+comments not only outperforms approaches that directly train on comment
+annotations, but also provides useful information for enhancing peer review
+systems with new functionality.
+Author{1}{Firstname}#=%=#Huy
+Author{1}{Lastname}#=%=#Nguyen
+Author{1}{Email}#=%=#hvn3@pitt.edu
+Author{1}{Affiliation}#=%=#University of Pittsburgh
+Author{2}{Firstname}#=%=#Diane
+Author{2}{Lastname}#=%=#Litman
+Author{2}{Email}#=%=#litman@cs.pitt.edu
+Author{2}{Affiliation}#=%=#University of Pittsburgh
+
+==========

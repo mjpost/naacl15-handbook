@@ -1,0 +1,43 @@
+SubmissionNumber#=%=#49
+FinalPaperTitle#=%=#Probabilistic Modeling of Joint-context in Distributional Similarity
+ShortPaperTitle#=%=#Probabilistic Modeling of Joint-context in Distributional Similarity
+NumberOfPages#=%=#10
+CopyrightSigned#=%=#Oren Melamud
+JobTitle#==#PhD student
+Organization#==#Bar-Ilan University
+Ramat Gan, 5290002 Israel
+Abstract#==#Most traditional distributional similarity models fail to capture syntagmatic
+patterns that group together multiple word features within the same joint
+context.
+In this work we introduce a novel generic distributional similarity
+scheme under which the power of probabilistic models can be leveraged to
+effectively model joint contexts. Based on this scheme, we implement a concrete
+model which utilizes probabilistic n-gram language models. 
+Our evaluations suggest that this model is particularly well-suited for
+measuring similarity for verbs, which are known to exhibit richer syntagmatic
+patterns, while maintaining comparable or better performance with respect to
+competitive baselines for nouns. Following this, we propose our scheme as a
+framework for future semantic similarity models leveraging the substantial body
+of work that exists in probabilistic language modeling.
+Author{1}{Firstname}#=%=#Oren
+Author{1}{Lastname}#=%=#Melamud
+Author{1}{Email}#=%=#melamuo@cs.biu.ac.il
+Author{1}{Affiliation}#=%=#Bar Ilan University
+Author{2}{Firstname}#=%=#Ido
+Author{2}{Lastname}#=%=#Dagan
+Author{2}{Email}#=%=#dagan@cs.biu.ac.il
+Author{2}{Affiliation}#=%=#Bar-Ilan University
+Author{3}{Firstname}#=%=#Jacob
+Author{3}{Lastname}#=%=#Goldberger
+Author{3}{Email}#=%=#jacob.goldberger@biu.ac.il
+Author{3}{Affiliation}#=%=#Bar-Ilan University
+Author{4}{Firstname}#=%=#Idan
+Author{4}{Lastname}#=%=#Szpektor
+Author{4}{Email}#=%=#idan@yahoo-inc.com
+Author{4}{Affiliation}#=%=#
+Author{5}{Firstname}#=%=#Deniz
+Author{5}{Lastname}#=%=#Yuret
+Author{5}{Email}#=%=#dyuret@ku.edu.tr
+Author{5}{Affiliation}#=%=#Koc University
+
+==========

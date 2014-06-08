@@ -1,0 +1,40 @@
+SubmissionNumber#=%=#29
+FinalPaperTitle#=%=#Inducing Domain-specific Noun Polarity Guided by Domain-independent Polarity Preferences of Adjectives
+ShortPaperTitle#=%=#Inducing Domain-specific Noun Polarity
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Manfred Klenner
+JobTitle#==#
+Organization#==#
+Abstract#==#In this paper, we show how domain-specific noun polarity lexicons can be
+induced. We focus on the generation of good candidates and compare two machine
+learning scenarios
+in order to establish an approach that enables                                       
+     
+
+high
+precision.
+Candidates are
+generated on the basis of polarity preferences of adjectives derived from a
+large domain-independent corpus. 
+The polarity preference of a word, here an adjective, reflects the distribution
+of positive, negative and neutral arguments the word take  (here: its nominal
+head).
+Given a noun modified by some adjectives, a vote among the polarity preferences
+of these adjectives establishes  a good indictor of the polarity of the noun.
+In our experiments with five domains, we achieved f-measure of 59% up to 88% on
+the basis of two machine learning approaches carried out top of the preference
+votes.
+Author{1}{Firstname}#=%=#Manfred
+Author{1}{Lastname}#=%=#Klenner
+Author{1}{Email}#=%=#klenner@cl.uzh.ch
+Author{1}{Affiliation}#=%=#Computational Linguistics, University of Zurich
+Author{2}{Firstname}#=%=#Michael
+Author{2}{Lastname}#=%=#Amsler
+Author{2}{Email}#=%=#mamsler@cl.uzh.ch
+Author{2}{Affiliation}#=%=#Institute of Computational Linguistics, University of Zurich
+Author{3}{Firstname}#=%=#Nora
+Author{3}{Lastname}#=%=#Hollenstein
+Author{3}{Email}#=%=#hollenstein@cl.uzh.ch
+Author{3}{Affiliation}#=%=#University of Zurich
+
+==========

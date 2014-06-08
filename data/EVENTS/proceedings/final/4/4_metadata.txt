@@ -1,0 +1,44 @@
+SubmissionNumber#=%=#4
+FinalPaperTitle#=%=#Challenges of Adding Causation to Richer Event Descriptions
+ShortPaperTitle#=%=#Challenges of Adding Causation to Richer Event Descriptions
+NumberOfPages#=%=#9
+CopyrightSigned#=%=#Rei Ikuta
+JobTitle#==#
+Organization#==#University of Colorado at Boulder
+Boulder, CO 80309
+Abstract#==#The goal of this study is to create guidelines for annotating cause-effect
+relations as part of the Richer Event Description schema. We present the
+challenges faced using the definition of causation in terms of counterfactual
+dependence and propose new guidelines for cause-effect annotation using an
+alternative definition which treats causation as an intrinsic relation between
+events. To support the use of such an intrinsic definition, we examine the
+theoretical problems that the counterfactual definition faces, show how the
+intrinsic definition solves those problems, and explain how the intrinsic
+definition adheres to psychological reality, at least for our annotation
+purposes, better than the counterfactual definition. We then evaluate the new
+guidelines by presenting results obtained from pilot annotations of ten
+documents, showing that an inter-annotator agreement (F1-score) of 0.5753 was
+achieved. The results provide a benchmark for future studies concerning
+cause-effect annotation in the RED schema.
+Author{1}{Firstname}#=%=#Rei
+Author{1}{Lastname}#=%=#Ikuta
+Author{1}{Email}#=%=#rei.ikuta@colorado.edu
+Author{1}{Affiliation}#=%=#University of Colorado at Boulder
+Author{2}{Firstname}#=%=#Will
+Author{2}{Lastname}#=%=#Styler
+Author{2}{Email}#=%=#will@savethevowels.org
+Author{2}{Affiliation}#=%=#University of Colorado at Boulder
+Author{3}{Firstname}#=%=#Mariah
+Author{3}{Lastname}#=%=#Hamang
+Author{3}{Email}#=%=#mariah.hamang@colorado.edu
+Author{3}{Affiliation}#=%=#University of Colorado at Boulder
+Author{4}{Firstname}#=%=#Tim
+Author{4}{Lastname}#=%=#O'Gorman
+Author{4}{Email}#=%=#ogormant@colorado.edu
+Author{4}{Affiliation}#=%=#University of Colorado at Boulder
+Author{5}{Firstname}#=%=#Martha
+Author{5}{Lastname}#=%=#Palmer
+Author{5}{Email}#=%=#martha.palmer@colorado.edu
+Author{5}{Affiliation}#=%=#University of Colorado
+
+==========

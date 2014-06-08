@@ -1,0 +1,29 @@
+SubmissionNumber#=%=#195
+FinalPaperTitle#=%=#Cheap and easy entity evaluation
+ShortPaperTitle#=%=#Cheap and easy entity evaluation
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Ben Hachey
+JobTitle#==#
+Organization#==#University of Sydney
+NSW 2006, Australia
+Abstract#==#The AIDA-YAGO dataset is a popular target for whole-document entity recognition
+and disambiguation, despite lacking a shared evaluation tool. We review
+evaluation regimens in the literature while comparing the output of three
+approaches, and identify research opportunities. This utilises our open,
+accessible evaluation tool. We exemplify a new paradigm of distributed, shared
+evaluation, in which evaluation software and standardised, versioned system
+outputs are provided online.
+Author{1}{Firstname}#=%=#Ben
+Author{1}{Lastname}#=%=#Hachey
+Author{1}{Email}#=%=#ben.hachey@gmail.com
+Author{1}{Affiliation}#=%=#University of Sydney
+Author{2}{Firstname}#=%=#Joel
+Author{2}{Lastname}#=%=#Nothman
+Author{2}{Email}#=%=#joel.nothman@gmail.com
+Author{2}{Affiliation}#=%=#University of Sydney
+Author{3}{Firstname}#=%=#Will
+Author{3}{Lastname}#=%=#Radford
+Author{3}{Email}#=%=#wejradford@gmail.com
+Author{3}{Affiliation}#=%=#The University of Sydney
+
+==========

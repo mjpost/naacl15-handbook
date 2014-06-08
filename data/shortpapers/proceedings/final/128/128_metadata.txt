@@ -1,0 +1,25 @@
+SubmissionNumber#=%=#128
+FinalPaperTitle#=%=#Normalizing tweets with edit scripts and recurrent neural embeddings
+ShortPaperTitle#=%=#Normalizing tweets with edit scripts and recurrent neural embeddings
+NumberOfPages#=%=#7
+CopyrightSigned#=%=#Grzegorz Chrupała
+JobTitle#==#
+Organization#==#
+Abstract#==#Tweets often contain a large proportion of abbreviations,
+  alternative spellings, novel words and other non-canonical
+  language. These features are problematic for standard language
+  analysis tools and it can be desirable to convert them to canonical
+  form.  We propose a novel text normalization model based on learning
+  edit operations from labeled data while incorporating features
+  induced from unlabeled data via character-level neural text
+  embeddings.  The text embeddings are generated using an Simple
+  Recurrent Network.  We find that enriching the feature set with text
+  embeddings substantially lowers word error rates on an English tweet
+  normalization dataset. Our model improves on state-of-the-art with
+  little training data and without any lexical resources.
+Author{1}{Firstname}#=%=#Grzegorz
+Author{1}{Lastname}#=%=#Chrupała
+Author{1}{Email}#=%=#g.chrupala@uvt.nl
+Author{1}{Affiliation}#=%=#Tilburg University
+
+==========

@@ -1,0 +1,23 @@
+SubmissionNumber#=%=#6
+FinalPaperTitle#=%=#Sentence Processing in a Vectorial Model of Working Memory
+ShortPaperTitle#=%=#Sentence Processing in a Vectorial Model of Working Memory
+NumberOfPages#=%=#9
+CopyrightSigned#=%=#William Schuler
+JobTitle#==#
+Organization#==#The Ohio State University
+Columbus, OH 43210
+Abstract#==#This paper presents a vectorial incremental parsing model defined using
+independently posited operations over activation-based working memory and
+weight-based episodic memory.  This model has the attractive property that it
+hypothesizes only one unary preterminal rule application and only one binary
+branching rule application per time step, which allows it to be smoothly
+integrated into a vector-based recurrence that propagates structural ambiguity
+from one time step to the next.  Predictions of this model are calculated on a
+center-embedded sentence processing task and shown to exhibit decreased
+processing accuracy in center-embedded constructions.
+Author{1}{Firstname}#=%=#William
+Author{1}{Lastname}#=%=#Schuler
+Author{1}{Email}#=%=#schuler@ling.osu.edu
+Author{1}{Affiliation}#=%=#The Ohio State University
+
+==========

@@ -1,0 +1,32 @@
+SubmissionNumber#=%=#217
+FinalPaperTitle#=%=#Enriching Cold Start Personalized Language Model Using Social Network Information
+ShortPaperTitle#=%=#Enriching Cold Start Personalized Language Model Using Social Network Information
+NumberOfPages#=%=#7
+CopyrightSigned#=%=#Yu-Yang Huang
+JobTitle#==#
+Organization#==#
+Abstract#==#We introduce a generalized framework to enrich the personalized language models
+for cold start users. The cold start problem is solved with content written by
+friends on social network services. Our framework consists of a mixture
+language model, whose mixture weights are estimated with a factor graph. The
+factor graph is used to incorporate prior knowledge and heuristics to identify
+the most appropriate weights. The intrinsic and extrinsic experiments show
+significant improvement on cold start users.
+Author{1}{Firstname}#=%=#Yu-Yang
+Author{1}{Lastname}#=%=#Huang
+Author{1}{Email}#=%=#r02922050@csie.ntu.edu.tw
+Author{1}{Affiliation}#=%=#Graduate Institute of Computer Science and Information Engineering, National Taiwan University, Taipei, Taiwan
+Author{2}{Firstname}#=%=#Rui
+Author{2}{Lastname}#=%=#Yan
+Author{2}{Email}#=%=#ruiyan@seas.upenn.edu
+Author{2}{Affiliation}#=%=#Computer and Information Science Department, University of Pennsylvania, Philadelphia, PA 19104, U.S.A.
+Author{3}{Firstname}#=%=#Tsung-Ting
+Author{3}{Lastname}#=%=#Kuo
+Author{3}{Email}#=%=#d97944007@csie.ntu.edu.tw
+Author{3}{Affiliation}#=%=#Graduate Institute of Network and Multimedia, National Taiwan University, Taipei, Taiwan
+Author{4}{Firstname}#=%=#Shou-De
+Author{4}{Lastname}#=%=#Lin
+Author{4}{Email}#=%=#sdlin@csie.ntu.edu.tw
+Author{4}{Affiliation}#=%=#Graduate Institute of Computer Science and Information Engineering, National Taiwan University, Taipei, Taiwan
+
+==========

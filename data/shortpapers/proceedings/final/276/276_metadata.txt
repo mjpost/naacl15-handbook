@@ -1,0 +1,34 @@
+SubmissionNumber#=%=#276
+FinalPaperTitle#=%=#Improving Citation Polarity Classification with Product Reviews
+ShortPaperTitle#=%=#Improving Citation Polarity Classification with Product Reviews
+NumberOfPages#=%=#7
+CopyrightSigned#=%=#NA
+JobTitle#==#
+Organization#==#
+Abstract#==#Recent work classifying citations in scientific literature has shown
+that it is possible to improve classification results with extensive
+feature engineering.  While this result confirms that citation
+classification is feasible, there are two drawbacks to this
+approach: (i) it requires a large annotated corpus for supervised
+classification, which in the case of scientific literature is quite
+expensive; and (ii) feature engineering that is too specific to one
+area of scientific literature may not be portable to other domains,
+even within scientific literature.  In this paper we address these
+two drawbacks.                    First, we frame citation classification as a domain
+adaptation task and leverage the abundant labeled data available in
+other domains.                    Then, to avoid over-engineering specific citation
+features for a particular scientific domain, we explore a deep
+learning neural network approach that has shown to generalize well
+across domains using unigram and bigram features.  We achieve better
+citation classification results with this cross-domain approach than
+using in-domain classification.
+Author{1}{Firstname}#=%=#Charles
+Author{1}{Lastname}#=%=#Jochim
+Author{1}{Email}#=%=#charlesj@ie.ibm.com
+Author{1}{Affiliation}#=%=#IBM Research -- Dublin
+Author{2}{Firstname}#=%=#Hinrich
+Author{2}{Lastname}#=%=#Schütze
+Author{2}{Email}#=%=#inquiries@cislmu.org
+Author{2}{Affiliation}#=%=#CIS -- University of Munich
+
+==========

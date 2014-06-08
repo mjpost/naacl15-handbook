@@ -1,0 +1,28 @@
+SubmissionNumber#=%=#157
+FinalPaperTitle#=%=#Detection of Topic and its Extrinsic Evaluation Through Multi-Document Summarization
+ShortPaperTitle#=%=#Detection of Topic and its Extrinsic Evaluation Through Multi-Document Summarization
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Yoshimi Suzuki
+JobTitle#==#
+Organization#==#University of Yamanashi
+4-3-11 Takeda, Kofu, 400-8511, JAPAN
+Abstract#==#This paper presents a method for detecting words related to a topic (we
+ call them topic words) over time in the stream of documents. Topic words are
+widely distributed in the stream of documents, and sometimes they
+ frequently appear in the documents, and sometimes not. We propose a method to
+reinforce topic words with low frequencies by collecting documents from the
+corpus, and applied Latent Dirichlet Allocation to these documents. For the
+results of LDA, we identified topic words by using Moving Average Convergence
+Divergence. In order to evaluate the method, we applied the results of topic
+detection to extractive multi-document summarization. The results showed that
+the method was effective for sentence selection in summarization.
+Author{1}{Firstname}#=%=#Yoshimi
+Author{1}{Lastname}#=%=#Suzuki
+Author{1}{Email}#=%=#ysuzuki@yamanashi.ac.jp
+Author{1}{Affiliation}#=%=#University of Yamanashi
+Author{2}{Firstname}#=%=#Fumiyo
+Author{2}{Lastname}#=%=#Fukumoto
+Author{2}{Email}#=%=#fukumoto@yamanashi.ac.jp
+Author{2}{Affiliation}#=%=#Univ. of Yamanashi
+
+==========

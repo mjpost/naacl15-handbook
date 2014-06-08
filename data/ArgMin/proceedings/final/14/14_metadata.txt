@@ -1,0 +1,34 @@
+SubmissionNumber#=%=#14
+FinalPaperTitle#=%=#Identifying Appropriate Support for Propositions in Online User Comments
+ShortPaperTitle#=%=#Identifying Appropriate Support for Propositions in Online User Comments
+NumberOfPages#=%=#10
+CopyrightSigned#=%=#Joonsuk Park
+JobTitle#==#
+Organization#==#Department of Computer Science
+Cornell University
+Ithaca, NY, USA
+Abstract#==#The ability to analyze the adequacy of supporting information is necessary for
+determining the strength of an argument. This is especially the case for online
+user comments, which often consist of arguments lacking proper substantiation
+and reasoning. Thus, we develop a framework for automatically classifying each
+proposition as UNVERIFIABLE, VERIFIABLE NONEXPERIENTIAL, or VERIFIABLE
+EXPERIENTIAL, where the appropriate type of support is reason, evidence, and
+optional evidence, respectively. Once the existing support for propositions are
+identified, this classification can provide an estimate of how adequately the
+arguments have been supported. We build a gold standard dataset of 9,476
+sentences and clauses from 1,047 comments submitted to an eRulemaking platform
+and find that
+Support Vector Machine (SVM) classifiers trained with n-grams and additional
+features capturing the verifiability and experientiality exhibit statistically
+significant improvement over the unigram baseline, achieving a macro-averaged
+F1 of 68.99%.
+Author{1}{Firstname}#=%=#Joonsuk
+Author{1}{Lastname}#=%=#Park
+Author{1}{Email}#=%=#jpark@cs.cornell.edu
+Author{1}{Affiliation}#=%=#Cornell University
+Author{2}{Firstname}#=%=#Claire
+Author{2}{Lastname}#=%=#Cardie
+Author{2}{Email}#=%=#cardie@cs.cornell.edu
+Author{2}{Affiliation}#=%=#Cornell University
+
+==========

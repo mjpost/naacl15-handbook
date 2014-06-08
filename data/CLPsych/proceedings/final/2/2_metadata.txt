@@ -1,0 +1,42 @@
+SubmissionNumber#=%=#2
+FinalPaperTitle#=%=#Linguistic and Acoustic Features for Automatic Identification of Autism Spectrum Disorders in Children's Narrative
+ShortPaperTitle#=%=#Linguistic and Acoustic Features for Automatic Identification of Autism Spectrum Disorders in Children's Narrative
+NumberOfPages#=%=#9
+CopyrightSigned#=%=#Hiroki Tanaka
+JobTitle#==#
+Organization#==#
+Abstract#==#Autism spectrum disorders are developmental disorders characterised as deficits
+in social and communication skills, and they affect both verbal and non-verbal
+communication. Previous works measured differences in children with and without
+autism spectrum disorders in terms of linguistic and acoustic features,
+although they do not mention automatic identification using integration of
+these features. In this paper, we perform an exploratory study of several
+language and speech features of both single utterances and full narratives. We
+find that there are characteristic differences between children with autism
+spectrum disorders and typical development with respect to word categories,
+prosody, and voice quality, and that these differences can be used in automatic
+classifiers. We also examine the differences between American and Japanese
+children and find significant differences with regards to pauses before new
+turns and linguistic cues.
+Author{1}{Firstname}#=%=#Hiroki
+Author{1}{Lastname}#=%=#Tanaka
+Author{1}{Email}#=%=#hiroki-tan@is.naist.jp
+Author{1}{Affiliation}#=%=#Nara Institute of Science and Technology
+Author{2}{Firstname}#=%=#Sakriani
+Author{2}{Lastname}#=%=#Sakti
+Author{2}{Email}#=%=#ssakti@is.naist.jp
+Author{2}{Affiliation}#=%=#Nara Institute of Science and Technology
+Author{3}{Firstname}#=%=#Graham
+Author{3}{Lastname}#=%=#Neubig
+Author{3}{Email}#=%=#neubig@is.naist.jp
+Author{3}{Affiliation}#=%=#Nara Institute of Science and Technology
+Author{4}{Firstname}#=%=#Tomoki
+Author{4}{Lastname}#=%=#Toda
+Author{4}{Email}#=%=#tomoki@is.naist.jp
+Author{4}{Affiliation}#=%=#Nara Institute of Science and Technology
+Author{5}{Firstname}#=%=#Satoshi
+Author{5}{Lastname}#=%=#Nakamura
+Author{5}{Email}#=%=#s-nakamura@is.naist.jp
+Author{5}{Affiliation}#=%=#Nara Institute of Science and Technology
+
+==========

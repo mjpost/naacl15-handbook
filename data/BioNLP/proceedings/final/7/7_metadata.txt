@@ -1,0 +1,27 @@
+SubmissionNumber#=%=#7
+FinalPaperTitle#=%=#Structuring Operative Notes using Active Learning
+ShortPaperTitle#=%=#Structuring Operative Notes using Active Learning
+NumberOfPages#=%=#9
+CopyrightSigned#=%=#NA
+JobTitle#==#
+Organization#==#
+Abstract#==#We present an active learning method for placing the event mentions in an
+operative note into a pre-specified event structure.  Event mentions are first
+classified into action, peripheral action, observation, and report events.  The
+actions are further classified into their appropriate location within the event
+structure.  We examine how utilizing active learning significantly reduces the
+time needed to completely annotate a corpus of 2,820 appendectomy notes.
+Author{1}{Firstname}#=%=#Kirk
+Author{1}{Lastname}#=%=#Roberts
+Author{1}{Email}#=%=#kirkroberts@gmail.com
+Author{1}{Affiliation}#=%=#National Library of Medicine
+Author{2}{Firstname}#=%=#Sanda
+Author{2}{Lastname}#=%=#Harabagiu
+Author{2}{Email}#=%=#sanda@hlt.utdallas.edu
+Author{2}{Affiliation}#=%=#University of Texas at Dallas
+Author{3}{Firstname}#=%=#Michael
+Author{3}{Lastname}#=%=#Skinner
+Author{3}{Email}#=%=#Michael.Skinner@childrens.com
+Author{3}{Affiliation}#=%=#University of Texas Southwestern Medical Center / Children's Medical Center of Dallas
+
+==========

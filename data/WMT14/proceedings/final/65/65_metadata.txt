@@ -1,0 +1,37 @@
+SubmissionNumber#=%=#65
+FinalPaperTitle#=%=#FBK-UPV-UEdin participation in the WMT14 Quality Estimation shared-task
+ShortPaperTitle#=%=#FBK-UPV-UEdin in the WMT14 QE shared-task
+NumberOfPages#=%=#7
+CopyrightSigned#=%=#José Guilherme Camargo de Souza
+JobTitle#==#
+Organization#==#University of Trento, DISI, Via Sommarive, 9 I-38123 Povo , Trento, Italia
+Fondazione Bruno Kessler, Via Sommarive, 18,  I-38123 Trento, Italia
+Abstract#==#This paper describes the joint submission of Fondazione Bruno
+  Kessler, Universitat Politècnica de València and University of
+  Edinburgh to the Quality Estimation tasks of the Workshop on Statistical
+Machine
+  Translation 2014. We present our submissions for Task 1.2, 1.3 and 2. Our
+systems ranked first for Task 1.2 and for the Binary and Level1 settings in
+Task 2.
+Author{1}{Firstname}#=%=#José Guilherme
+Author{1}{Lastname}#=%=#Camargo de Souza
+Author{1}{Email}#=%=#desouza@fbk.eu
+Author{1}{Affiliation}#=%=#University of Trento and Fondazione Bruno Kessler
+Author{2}{Firstname}#=%=#Jesús
+Author{2}{Lastname}#=%=#González-Rubio
+Author{2}{Email}#=%=#jegonzalez@dsic.upv.es
+Author{2}{Affiliation}#=%=#Universitat Politècnica de València
+Author{3}{Firstname}#=%=#Christian
+Author{3}{Lastname}#=%=#Buck
+Author{3}{Email}#=%=#christian.buck@lantis.de
+Author{3}{Affiliation}#=%=#University of Edinburgh
+Author{4}{Firstname}#=%=#Marco
+Author{4}{Lastname}#=%=#Turchi
+Author{4}{Email}#=%=#marco.turchi@gmail.com
+Author{4}{Affiliation}#=%=#Fondazione Bruno Kessler
+Author{5}{Firstname}#=%=#Matteo
+Author{5}{Lastname}#=%=#Negri
+Author{5}{Email}#=%=#negri@fbk.eu
+Author{5}{Affiliation}#=%=#Fondazione Bruno Kessler
+
+==========

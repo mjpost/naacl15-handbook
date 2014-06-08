@@ -1,0 +1,41 @@
+SubmissionNumber#=%=#5
+FinalPaperTitle#=%=#Towards Gene Recognition from Rare and Ambiguous Abbreviations using a Filtering Approach
+ShortPaperTitle#=%=#Towards Gene Recognition from Rare and Ambiguous Abbreviations using a Filtering Approach
+NumberOfPages#=%=#10
+CopyrightSigned#=%=#Matthias Hartung
+JobTitle#==#
+Organization#==#Bielefeld University
+Abstract#==#Retrieving information about highly ambiguous gene/protein homonyms is a
+challenge, in particular where their non-protein meanings are more frequent
+than their protein meaning (e. g., SAH or HF). Due to their limited coverage in
+common benchmarking data sets, the performance of existing gene/protein
+recognition tools on these problematic cases is hard to assess. 
+
+We uniformly sample a corpus of eight ambiguous gene/protein abbreviations from
+MEDLINE and provide manual annotations for each mention of these abbreviations.
+Based on this resource, we show that available gene recognition tools such as
+conditional random fields (CRF) trained on BioCreative 2 NER data or GNAT tend
+to underperform on this phenomenon. We propose to extend existing gene
+recognition approaches by combining a CRF and a support vector machine. In a
+cross-entity evaluation and without taking any entity-specific information into
+account, our model achieves a gain of 6 points F1-Measure over our best
+baseline which checks for the occurrence of a long form of the abbreviation and
+more than 9 points over all existing tools investigated.
+Author{1}{Firstname}#=%=#Matthias
+Author{1}{Lastname}#=%=#Hartung
+Author{1}{Email}#=%=#mhartung@cit-ec.uni-bielefeld.de
+Author{1}{Affiliation}#=%=#Bielefeld University
+Author{2}{Firstname}#=%=#Roman
+Author{2}{Lastname}#=%=#Klinger
+Author{2}{Email}#=%=#rklinger@cit-ec.uni-bielefeld.de
+Author{2}{Affiliation}#=%=#Bielefeld University
+Author{3}{Firstname}#=%=#Matthias
+Author{3}{Lastname}#=%=#Zwick
+Author{3}{Email}#=%=#matthias.zwick@boehringer-ingelheim.com
+Author{3}{Affiliation}#=%=#Boehringer Ingelheim
+Author{4}{Firstname}#=%=#Philipp
+Author{4}{Lastname}#=%=#Cimiano
+Author{4}{Email}#=%=#cimiano@cit-ec.uni-bielefeld.de
+Author{4}{Affiliation}#=%=#Univ. Bielefeld
+
+==========

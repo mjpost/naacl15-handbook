@@ -1,0 +1,27 @@
+# Edit this file: 
+# reorder the lines that correspond to papers 
+#   and modify time slot, e.g. 9:00--9:30 
+# add lines for 
+#   start of new day, format: * DAY
+#   session headline, format: = HEADLINE 
+#   additional items, format: + TIME DESCRIPTION
+* Thursday, June 26, 2014
+= Session 1: Oral Presentation
+13 11:00--11:30 # The CoNLL-2014 Shared Task on Grammatical Error Correction
+2 11:30--11:50 # Grammatical error correction using hybrid systems and type filtering
+5 11:50--12:10 # The AMU System in the CoNLL-2014 Shared Task: Grammatical Error Correction by Data-Intensive and Feature-Rich Statistical Machine Translation
+6 12:10--12:30 # The Illinois-Columbia System in the CoNLL-2014 Shared Task
+
+= Session 2: Poster Presentation
+7 15:30--17:00 # RACAI GEC ___ A hybrid approach to Grammatical Error Correction
+# 2 # Grammatical error correction using hybrid systems and type filtering
+4  # Grammatical Error Detection Using Tagger Disagreement
+12  # CoNLL 2014 Shared Task: Grammatical Error Correction with a Syntactic N-gram Language Model from a Big Corpora
+# 5  # The AMU System in the CoNLL-2014 Shared Task: Grammatical Error Correction by Data-Intensive and Feature-Rich Statistical Machine Translation
+8  # Tuning a Grammar Correction System for Increased Precision
+3  # POSTECH Grammatical Error Correction System in the CoNLL-2014 Shared Task
+# 6  # The Illinois-Columbia System in the CoNLL-2014 Shared Task
+11  # Grammatical Error Detection and Correction using a Single Maximum Entropy Model
+9  # Factored Statistical Machine Translation for Grammatical Error Correction
+10  # NTHU at the CoNLL-2014 Shared Task
+1  # A Unified Framework for Grammar Error Correction..

@@ -1,0 +1,918 @@
+\documentclass[11pt]{article}
+
+% These have to be loaded first to avoid problems.
+\usepackage[final]{graphicx}
+
+\usepackage{amsmath}
+\usepackage{ctable}
+\usepackage{eacl2014}
+\usepackage{epstopdf}
+\usepackage[author=]{fixme}
+\usepackage[utf8]{inputenc}
+\usepackage{nicefrac}
+\usepackage{subfig}
+\usepackage{tikz-qtree}
+\usepackage{times}
+
+\let\app=\textsc
+\let\citeN=\newcite
+\let\w=\emph
+
+\frenchspacing
+
+\hyphenation{Pars-Eval}
+
+\let\backmatter=\relax % Dummy backmatter, to placate VIM's section folding
+\let\oldfrac=\frac
+\renewcommand\frac[2]{\mathchoice{\oldfrac{#1}{#2}}{\nicefrac{#1}{#2}}{\nicefrac{#1}{#2}}{\nicefrac{#1}{#2}}}
+\let\url=\texttt
+
+\newcommand\abs{\mathrm{abs}}
+\def\scTree[#1]{\tikzset{every node/.append style={font=\scshape}}\Tree[#1]}
+\newcommand\TED{\mathrm{TED}}
+
+\tikzset{edge from parent/.style={->,draw,font={\scshape\small}}}
+
+\makeatletter
+\def\noparencite#1#2{{#1\if@tempswa , #2\fi}}
+\newcommand\citeNP[1]{{\let\@cite=\noparencite\cite{#1}}}
+%\renewcommand\FXLayoutMargin[3]{\marginpar{\raggedright\@fxuseface{margin}\ignorespaces#3 #2}}
+\makeatother
+%\newcommand\note[1]{\fxfatal{#1}}
+
+% XXX: If I need to compress things a bit:
+%\titlebox3.5cm
+%\setlength\textfloatsep{2.5mm}
+%% In case of emergency:
+%%\renewcommand\baselinestretch{0.95}
+
+\title{A chance-corrected measure of inter-annotator agreement for syntax}
+\author{Arne Skjærholt \\
+Language technology group, dept.~of informatics \\
+University of Oslo \\
+\texttt{arnskj@ifi.uio.no}}
+
+%%% Reviewer comments:
+%% Reviewer 1:
+% General comments:
+%
+% This submission proposes a chance corrected measure of agreement between
+% annotators at the task of treebanking, for both syntactic constituency and
+% dependency data sets.
+%
+% The potential relevance of such a proposal is that it addresses a gap in the
+% current practice of non grammar-driven treebanking and of assessing the
+% reliability of the produced data sets. Typically, measures of agreement between
+% annotators have resorted to accuracy metrics that do not discount the expected
+% agreement.
+%
+% To take into account expected agreement, some sort of annotator's behavior
+% model or assumptions are needed. In the case of non grammar-driven treebanking,
+% that is of annotating sentences with their complex categories in the form of
+% graphs and trees, it has not been easy to come up with such satisfactory
+% modelling so far.
+%
+% The key point of this submission is to address this problem by resorting to
+% Krippendorf's alpha and thus "sidestep the problem of probabilistically
+% modelling annotators’ behavior entirely", according to their authors.
+%
+% To achieve that goal, the authors resort to a distance measure between trees
+% that responds to partial matches (and the 1.-4. constraints in p.3). That
+% measure relies on tree edit distance, based on the minimum number of edit
+% operations required to transform one tree into another.
+%
+% In our view, while the authors advance a proposal for a chance corrected metric
+% for inter-annotator agreement, they achieve this at the cost of making the
+% challenge of modelling annotators’ behavior to reappear at another quadrant
+% of the problem.
+%
+% The reason is that it is unknown the correspondence between the level of
+% disagreement of annotators with respect to two annotation (trees) and the
+% distance assigned to these annotations by the tree edit distance metric. In any
+% case, there are examples (some provided by the authors themselves, in the
+% discussion of Fig. 2, and in the first paragraph of the "Conclusion" section)
+% of clear discrepancies between the two.
+%
+% Agreement between two annotators is about agreeing on treebanking decisions by
+% humans on the task of annotating a given sentence, limited to the number of
+% admissible linguistic analysis decisions for the sentence at take. Tree edit
+% distance is about the minimum number of edit operations required to transform
+% one tree into another.
+%
+% Hence in practice, technically one may have a way to compute what appears to be
+% a chance corrected measure for annotator agreement in treebanking, which
+% happens nevertheless to be useless to be put to use, that is to provide a
+% secure hint on the reliability of the data set being produced  --- which is the
+% ultimate purpose of an inter-annotator agreement measure.
+%
+% In sum, given its purposes, it remains to be demonstrated that the proposed
+% measure
+% is superior to the currently used ones, criticized in the "Previous work"
+% section.
+%
+% Specific issues:
+%
+% - By seeking to determine which one of three possible metrics is closer to the
+% behavior of LAS, authors only reinforce the option for some abstract distance
+% metric, not related to admissible differences in agreement between human
+% annotators
+%
+% - On p. 3, authors assert that "TedEval ... by itself is still an uncorrected
+% accuracy measure and thus unsuitable for our purposes" without further
+% argument: Why do you think this is so? Please justify.
+%
+% - If authors had available "real-world corpora" to play with (in order to
+% decide/assess which alpha to pick that is more close to LAS), why to care about
+% synthetic data?
+%
+% - Most of first paragraph of "Conclusion" is rather puzzling: while at some
+% point authors assert that: "LAS is simply an inappropriate metric to gauge
+% inter-annotator agreement."; at some other point, authors rejoice for having
+% found that there is one of the three alphas that approximates well the behavior
+% of LAS: "In our estimation, the best metric is alpha_plain. As Fig. 3 shows,
+% simple LAS corresponds closely to alpha_plain." It seems that either the
+% authors were not able, or were not willing, to draw the full implications of
+% this, namely, as we noted above, that in practice, one may have a way to
+% compute what appears to be measure for annotator agreement in treebanking,
+% which is however useless to provide a secure hint on the reliability of the
+% data set being produced.
+%
+%% Reviewer 2:
+% This paper presents an adaptation of the alpha inter-annotator agreement
+% coefficient to syntactic annotations, using the tree edit distance to model the
+% structural differences between annotations. This new method can apply to both
+% phrase-structure and dependency annotations.
+%
+% The article is well-written, well-structured and dense. The related works part
+% covers both the evaluation of syntactic annotations and the existing metrics
+% and the choices that were made due to space constraints were appropriate (not
+% detailling the algorithm of Zhang and Shasha, for example). The authors lead
+% experiments using both the Richter methodology developped by Mathet et al. and
+% comparing real corpora. The presented results are sound and useful for the
+% community. The provided piece of software and data will also be of great value
+% (a licence should be added to both).
+%
+% One of the few weak points of the article, however, is the statement about
+% kappa, pi and S (paragraph "Finally, it may be hard... to compare"). S is never
+% used, apart in Artstein & Poesio 2008 (and it is more an illustration of what
+% should not be done) and kappa and pi are most of the times very close (if
+% they're not, there is probably a bias between annotators). The argument about
+% the metrics being not directly comparable does not hold, first for the reason I
+% just mentionned, second, because it also applies to the new metric presented
+% here.
+%
+% Another weak point is the fact that the authors did not detail the quality of
+% the "reference" corpus used for the Richter experiment (the Norwegian TB). Was
+% it proofread by experts? How many? How many times?
+%
+% In conclusion, I think this paper should be presented at ACL.
+%
+%% Reviewer 3:
+% An interesting paper porting chance-corrected agreement scores to syntactic
+% annotations. Although there is no methodological or technical breakthrough
+% (basically use recently developed methodologies and adapt them to the case of
+% tree annotations) the issue is important and the paper is clear.
+%
+% I completely agree with the authors future direction and would like to add that
+% discourse annotation could be an application also.
+%
+% Comments in the text:
+% p2, col1, par 2: "This is different from our approach in that agreement is
+% computed on annotator decisions rather than on the treebanked analyses,"
+%
+% This is however the original purposes of chance-corrected agreement scores:
+% measure distance between annotator decisions...
+%
+% p3, col1, par 2: "but agreement metrics require a model of random annotation,
+% and as such using models designed for parsing runs the risk of over-estimating
+% Ae, result- ing in artifically low agreement scores."
+%
+% This statement could be further developed.
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+    Following the works of \citeN{Carletta96} and \citeN{Art:Poe08}, there is
+    an increasing consensus within the field that in order to properly gauge
+    the reliability of an annotation effort, chance-corrected measures of
+    inter-annotator agreement should be used. With this in mind, it is
+    striking that virtually all evaluations of syntactic annotation efforts
+    use uncorrected parser evaluation metrics such as bracket $F_1$ (for
+    phrase structure) and accuracy scores (for dependencies).
+
+    In this work we present  a chance-corrected metric based on Krippendorff's
+    $\alpha$, adapted to the structure of syntactic annotations and applicable
+    both to phrase structure and dependency annotation without any
+    modifications. To evaluate our metric we first present a number of
+    synthetic experiments to better control the sources of noise and gauge the
+    metric's responses, before finally contrasting the behaviour of our
+    chance-corrected metric with that of uncorrected parser evaluation metrics
+    on real corpora.\footnote{The code used to produce the data in this paper,
+    and some of the datasets used, are available to download at
+    \url{https://github.com/arnsholt/syn-agreement/}}
+\end{abstract}
+
+\section{Introduction}
+It is a truth universally acknowledged that an annotation task in good
+standing be in possession of a measure of inter-annotator agreement (IAA).
+However, no such measure is in widespread use for the task of syntactic
+annotation. This is due to a mismatch between the formulation of the agreement
+measures, which assumes that the annotations have no or
+relatively little internal structure, and syntactic annotation where structure
+is the entire point of the annotation. For this reason efforts to gauge the
+quality of syntactic annotation are hampered by the need to fall back to
+simple accuracy measures. As shown in \citeN{Art:Poe08}, such measures are
+biased in favour of annotation schemes with fewer categories and do not
+account for skewed distributions between classes, which can give high
+observed agreement, even if the annotations are inconsistent.
+
+In this article we propose a family of chance-corrected measures of agreement,
+applicable to both dependency- and constituency-based syntactic annotation,
+based on Krippendorff's $\alpha$ and tree edit distance. First we give an
+overview of traditional agreement measures and why they are insufficient for
+syntax, before presenting our proposed metrics. Next, we present a number of
+synthetic experiments performed in order to find the best distance function
+for this kind of annotation; finally we contrast our new metric and simple
+accuracy scores as applied to real-world corpora before concluding and
+presenting some potential avenues for future work.
+
+\subsection{Previous work}
+The definitive reference for agreement measures in computational linguistics
+is \citeN{Art:Poe08}, who argue forcefully in favour of the use of
+chance-corrected measures of agreement over simple accuracy measures. However,
+most evaluations of syntactic treebanks use simple accuracy measures such as
+bracket $F_1$ scores for constituent trees (NEGRA, \citeNP{Brants00b}; TIGER,
+\citeNP{Bra:Han02}; Cat3LB, \citeNP{Civit:etal03}; The Arabic Treebank,
+\citeNP{Maa:Bie:Kul08}) or labelled or unlabelled attachment scores for
+dependency syntax (PDT, \citeNP{Hajic04}; PCEDT \citeNP{Mik:Ste10}; Norwegian
+Dependency Treebank, \citeNP{Skjaerholt13}). The only work we know of using
+chance-corrected metrics is \citeN{Rag:Dic13}, who use MASI \cite{Passoneau06}
+to measure agreement on dependency relations and head selection in
+multi-headed dependency syntax, and \citeN{Bha:Sha12}, who compute Cohen's
+$\kappa$ \cite{Cohen60} on dependency relations in single-headed dependency
+syntax. A limitation of the first approach is that token ID becomes the
+relevant category for the purposes of agreement, while the second approach
+only computes agreements on relations, not on structure.
+
+In grammar-driven treebanking (or parsebanking), the problems encountered are
+slightly different. In HPSG and LFG treebanking annotators do not annotate
+structure directly. Instead, the grammar parses the input sentences, and the
+annotator selects the correct parse (or rejects all the candidates) based on
+discriminants\footnote{A discriminant is an attribute of the analyses produced
+by the grammar where some of the analyses differ, e.g. is the word \w{jump} a
+noun or a verb, or does a PP attach to a VP or the VP's object NP.} of the
+parse forest. In this context, \citeN{deCastro11} developed a variant of
+$\kappa$ that measures agreement over discriminant selection. This is
+different from our approach in that agreement is computed on annotator
+decisions rather than on the treebanked analyses, and is only applicable to
+grammar-based approaches such as HPSG and LFG treebanking.
+
+The idea of using edit distance as the basis for an inter-annotator agreement
+metric has previously been explored by \citeN{Fournier13}. However that work
+used a boundary edit distance as the basis of a metric for the task of text
+segmentation.
+
+\subsection{Notation}
+\label{sec:notation}
+In this paper, we mostly follow the notation and terminology of
+\citeN{Art:Poe08}, with some additions. The key components in an agreement
+study are the \emph{items} annotated, the \emph{coders} who make judgements on
+individual items, and the \emph{annotations} created for the items. We denote
+these as follows:
+\begin{itemize}
+    \item The set of items $I = \{i_1, i_2, \dots\}$
+    \item The set of coders $C = \{c_1, c_2, \dots\}$
+    \item The set of annotations $X$ is a set of sets $X = \{X_i | i\in I\}$
+        where each set $X_i = \{x_{ic} | c\in C\}$ contains the annotations
+        for each item. If not all coders annotate all items, the different
+        $X_i$ will be of different sizes.
+\end{itemize}
+In the case of nominal categorisation we will also use the set $K$ of
+possible categories.
+
+\section{The metric}
+\label{sec:metric}
+The most common metrics used in computational linguistics are the metrics
+$\kappa$ \cite[introduced to computational linguistics by
+\citeNP{Carletta96}]{Cohen60} and $\pi$ \cite{Scott55}. These metrics express
+agreement on a nominal coding task as the ratio $\kappa, \pi = \frac{A_o -
+A_e}{1-A_e}$ where $A_o$ is the observed agreement and $A_e$ the expected
+agreement according to some model of ``random'' annotation. Both metrics have
+essentially the same model of expected agreement:
+\begin{equation}
+    A_e = \sum_{k\in K}P(k|c_1)P(k|c_2)
+\end{equation}
+differing only in how they estimate the probabilities: $\kappa$ assigns
+separate probability distributions to each coder based on their observed
+behaviour, while $\pi$ uses the same distribution for both coders based on
+their aggregate behaviour.
+
+Now, if we want to perform this same kind of evaluation on syntactic
+annotation it is not possible to use $\kappa$ or $\pi$ directly. In the case
+of dependency-based syntax we could conceivably use a variant of these metrics
+by considering the ID of a token's head as a categorical variable (the
+approach taken in \citeNP{Rag:Dic13}), but we argue that this is not
+satisfactory. This use of the metrics would consider agreement on categories
+such as ``tokens whose head is token number 24'', which is obviously not a
+linguistically informative category. Thus we have to reject this way of
+assessing the reliability of dependency syntax annotation. Also, this approach
+is not directly generalisable to constituency-based syntax.
+
+For dependency syntax we could generalise these metrics similarly to how
+$\kappa$ is generalised to $\kappa_w$ to handle partial credit for overlapping
+annotations. Let the function $\textrm{LAS}(t_1, t_2)$ be the number of tokens
+with the same head and label in the two trees $t_1$ and $t_2$, $T(i)$ the set
+of trees possible for an item $i\in I$, and $\textrm{tokens}$ the number of
+tokens in the corpus. Then we can compute an expected agreement as follows:
+\begin{gather}
+    A_e = \frac{1}{\textrm{tokens}} \sum_{i\in I}\sum_{t_1,t_2\in T(i)^2}
+    \textrm{LAS}_e(t_1, t_2) \\
+    \textrm{LAS}_e(t_1, t_2) = P(t_1|c_1)P(t_2|c_2)\textrm{LAS}(t_1, t_2) \notag
+\end{gather}
+
+We see three problems with this approach. First of all the number of possible
+trees for a sentence grows exponentially with sentence length, which means
+that explicitly iterating over all possible such pairs is computationally
+intractable, nor have we been able to easily derive an algorithm for this
+particular problem from standard algorithms.
+
+Second, the question of which model to use for $P(t|c)$ is not
+straightforward. It is possible to use generative parsing models such as PCFGs
+or the generative dependency models of \citeN{Eisner96}, but agreement metrics
+require a model of \emph{random} annotation, and as such using models designed
+for parsing runs the risk of over-estimating $A_e$, resulting in artificially
+low agreement scores.
+
+Finally, it may be hard to establish a consensus in the field of which
+particular metric to use. As shown by the existence of three different metrics
+($\kappa$, $\pi$ and $S$ \cite{Ben:Alp:Gol54}) for the relatively simple task
+of nominal coding, the choice of model for $P(t|c)$ will not be obvious, and
+thus differing choices of generative model as well as different choices for
+parameters such as smoothing will result in subtly different agreement
+metrics. The results of these different metrics will not be directly
+comparable, which will make the results of groups using different metrics
+unnecessarily hard to compare.
+
+\begin{figure}
+    \hspace{\fill}
+    \subfloat[The original dependency tree]{\hspace{1em}
+    \Tree[.ROOT \edge node[auto=left] {Pred}; [.saw
+        \edge node[auto=right] {Subj}; I
+        \edge node[auto=left] {Obj}; [.man \edge node[auto=right] {Det}; the ] ] ]
+    \hspace{1em}}
+    \hspace{2em}
+    \subfloat[The tree used in comparisons]{
+        \hspace{1em}
+        \scTree[.$\epsilon$ [.Pred Subj [.Obj Det ] ] ]
+        \hspace{1em}
+    }
+    \hspace{\fill}
+    \caption{Transformation of dependency trees before comparison}
+    \label{fig:cmp-deptree}
+\end{figure}
+
+Instead, we propose to use an agreement measure based on Krippendorff's
+$\alpha$ \cite{Krippendorff70,Krippendorff04} and tree edit distance. In this
+approach we compare tree structures directly, which is extremely parsimonious
+in terms of assumptions, and furthermore sidesteps the problem of
+probabilistically modelling annotators' behaviour entirely. Krippendorff's
+$\alpha$ is not as commonly used as $\kappa$ and $\pi$, but it has the
+advantage of being expressed in terms of an arbitrary \emph{distance function}
+$\delta$.
+
+A full derivation of $\alpha$ is beyond the scope of this article, and we will
+simply state the formula used to compute the agreement. Krippendorff's
+$\alpha$ is normally expressed in terms of the ratio of observed and expected
+disagreements: $\alpha = 1 - \frac{D_o}{D_e}$, where $D_o$ is the mean squared
+distance between annotations of the same item and $D_e$ the mean squared
+distance between all pairs of annotations:
+
+\begin{align*}
+    D_o &= \sum_{i\in I} \frac{1}{|X_i|-1} \sum_{c\in C}\sum_{c'\in
+        C}\delta(x_{ic}, x_{ic'})^2 \\
+    D_e &= \frac{1}{\sum_{i\in I}|X_i| - 1} \sum_{i\in I}\sum_{c\in
+        C}\sum_{i'\in I}\sum_{c'\in C}\delta(x_{ic}, x_{i'c'})^2
+\end{align*}
+
+Note that in the expression for $D_e$, we are computing the difference between
+annotations for \emph{different} items; thus, our distance function for
+syntactic trees needs to be able to compute the difference between arbitrary
+trees for completely unrelated sentences. The function $\delta$ can be any
+function as long as it is a metric; that is, it must be (1) non-negative, (2)
+symmetric, (3) zero only for identical inputs, and (4) it must obey the
+triangle inequality:
+\begin{enumerate}
+    \item $\forall x,y: \delta(x, y) \geq 0$
+    \item $\forall x,y: \delta(x, y) = \delta(x, y)$
+    \item $\forall x,y: \delta(x, y) = 0 \Leftrightarrow x = y$
+    \item $\forall x,y,z: \delta(x, y) + \delta(y, z) \geq \delta(x, z)$
+\end{enumerate}
+
+This immediately excludes metrics like ParsEval \cite{Black:etal91} and
+Leaf-Ancestor \cite{Sam:Bab03}, since they assume that the trees being
+compared are parses of the same sentence. Instead, we base our work on tree
+edit distance. The tree edit distance (TED) problem is defined analogously to
+the more familiar problem of string edit distance: what is the minimum number
+of edit operations required to transform one tree into the other? See
+\citeN{Bille05} for a thorough introduction to the tree edit distance problem
+and other related problems. For this work, we used the algorithm of
+\citeN{Zha:Sha89}. Tree edit distance has previously been used in the
+\app{TedEval} software \cite{Tsa:Niv:And11,Tsa:Niv:And12} for parser
+evaluation agnostic to both annotation scheme and theoretical framework, but
+this by itself is still an uncorrected accuracy measure and thus unsuitable
+for our purposes.\footnote{While it is quite different from other parser
+evaluation schemes, \app{TedEval} does not correct for chance agreement and is
+thus an uncorrected metric. It could of course form the basis for a corrected
+metric, given a suitable measure of expected agreement.}
+
+When comparing syntactic trees, we only want to compare dependency relations
+or non-terminal categories. Therefore we remove the leaf nodes in the case of
+phrase structure trees, and in the case of dependency trees we compare trees
+whose edges are unlabelled and nodes are labelled with the dependency relation
+between that word and its head; the root node receives the label $\epsilon$.
+An example of this latter transformation is shown in Figure
+\ref{fig:cmp-deptree}.
+
+\begin{figure}
+    \hspace{\fill}
+    \scTree[.$\epsilon$ [.Pred Subj [.Obj Det ] ] ]
+    \hspace{1em}
+    \scTree[.$\epsilon$
+        [.Pred
+            Subj
+            [. Obj Det [.Atr [. Pred [.Obj Det ] ] ] ] ] ]
+    \hspace{1em}
+    \scTree[.$\epsilon$ [.Pred Subj ] ]
+    \hspace{\fill}
+    \caption{Three trees with distance zero using $\delta_{diff}$}
+    \label{fig:zerodist}
+\end{figure}
+
+We propose three different distance functions for the agreement computation:
+the unmodified tree edit distance function, denoted $\delta_{plain}$, a second
+function $\delta_{diff}(x, y) = \TED(x,y) - \abs(|x|-|y|)$, the edit distance
+minus the difference in length between the two sentences, and finally
+$\delta_{norm}(x,y) = \frac{\TED(x,y)}{|x|+|y|}$, the edit distance normalised
+to the range $[0,1]$.\footnote{We can easily show that $|x|+|y|$ is an upper
+bound on the TED, corresponding to deleting all nodes in the source tree and
+inserting all the nodes in the target.}
+
+The plain TED is the simplest in terms of parsimony assumptions, however it
+may overestimate the difference between sentences, we intuitively find to be
+syntactically similar. For example the only difference between the two
+leftmost trees in Figure \ref{fig:zerodist} is a modifier, but
+$\delta_{plain}$ gives them distance 4 and $\delta_{diff}$ 0. On the other
+hand, $\delta_{diff}$ might underestimate some distances as well; for example
+the leftmost and rightmost trees also have distance zero using
+$\delta_{diff}$, despite our syntactic intuition that the difference between a
+transitive and an intransitive should be taken account of.
+
+The third distance function, $\delta_{norm}$, takes into account a slightly
+different concern; namely that when comparing a long sentence and a short
+sentence, the distance has to be quite large simply to account for the
+difference in number of nodes, unlike comparing two short or two long
+sentences. Normalising to the range $[0,1]$ puts all pairs on an equal
+footing.
+
+However, we cannot \emph{a priori} say which of the three functions is the
+optimal choice of distance functions. The different functions have different
+properties, and different advantages and drawbacks, and the nature of their
+strengths and weaknesses differ. We will therefore perform a number of
+synthetic experiments to investigate their properties in a controlled
+environment, before applying them to real-world data.
+
+\section{Synthetic experiments}
+In the previous section, we proposed three different agreement metrics
+$\alpha_{plain}$, $\alpha_{diff}$ and $\alpha_{norm}$, each involving
+different trade-offs. Deciding which of these metrics is the best one for our
+purposes of judging the consistency of syntactic annotation poses a bit of a
+conundrum. We could at this point apply our metrics to various real corpora
+and compare the results, but since the consistency of the corpora is unknown,
+it's impossible to say whether the best metric is the one resulting in the
+highest scores, the lowest scores or somewhere in the middle. To properly
+settle this question, we first performed a number of synthetic experiments to
+gauge how the different metrics respond to disagreement.
+
+The general approach we take is based on that used by \citeN{Mathet:etal12},
+adapted to dependency trees. An already annotated corpus, in our case 100
+randomly selected sentences from the Norwegian Dependency Treebank
+\cite{Solberg:etal14}, are taken as correct and then permuted to produce
+``annotations'' of different quality. For dependency trees, the input corpus
+is permuted as follows:
+\begin{enumerate}
+    \item Each token has a probability $p_{relabel}$ of being assigned a
+        different label uniformly at random from the set of labels used in the
+        corpus.
+    \item Each token has a probability $p_{reattach}$ of being assigned a new
+        head uniformly at random from the set of tokens not dominated by the
+        token.
+\end{enumerate}
+The second permutation process is dependent on the order the tokens are
+processed, and we consider the tokens in the post-order\footnote{That is, the
+child nodes of a node are all processed before the node itself. Nodes on the
+same level are traversed from left to right.} as dictated by the original
+tree. This way tokens close to the root have a fair chance of having candidate
+heads if they are selected. A pre-order traversal would result in tokens close
+to the root having few options, and in particular if the root has a single
+child, that node has no possible new heads unless one of its children has been
+assigned the root as its new head first. For example in the trees in figure
+\ref{fig:zerodist}, assigning any other head than the root to the
+\textsc{Pred} nodes directly dominated by the root will result in invalid
+(cyclic and unconnected) dependency trees. Traversing the tokens in the linear
+order dictated by the sentence has similar issues for tokens close to the root
+and close to the start of the sentence.
+
+\begin{figure}
+    \begin{center}
+        \input{initial.tex}
+    \end{center}
+    \caption{Mean agreement over ten runs}
+    \label{fig:synthetic-initial}
+\end{figure}
+
+For our first set of experiments, we set $p_{relabel}=p_{reattach}$ and
+evaluated the different agreement metrics for 10 evenly spaced $p$-values
+between 0.1 and 1.0. Initial exploration of the data showed that the mean
+follows the median very closely regardless of metric and perturbation level,
+and therefore we only report the mean scores across runs in this paper. The
+results of these experiments are shown in Figure \ref{fig:synthetic-initial},
+with the labelled attachment score\footnote{The \emph{de facto} standard
+parser evaluation metric in dependency parsing: the percentage of tokens that
+receive the correct head \emph{and} dependency relation.} (LAS) for
+comparison.
+
+The $\alpha_{diff}$ metric is clearly extremely sensitive to noise, with
+$p=0.1$ yielding mean $\alpha_{diff}=15.8\%$, while $\alpha_{norm}$ is more
+lenient than both LAS and $\alpha_{plain}$, with mean $\alpha_{norm}=14.5\%$
+at $p=1$, quite high compared to $\textrm{LAS}=0.9\%$, $\alpha_{plain}=-6.8\%$
+and $\alpha_{diff}=-246\%$. To further study the sensitivity of the metrics to
+the two kinds of noise, we performed an additional set of experiments, setting
+one $p=0$ while varying the other over the same range as in the previous
+experiment, the results of which are shown in Figures
+\ref{fig:synthetic-noattach} and \ref{fig:synthetic-nolabel}.
+
+The LAS curves are mostly unremarkable, with one exception: Mean LAS at
+$p_{reattach}=1$ of Figure \ref{fig:synthetic-nolabel} is 23.9\%, clearly much
+higher than we would expect if the trees were completely random. In
+comparison, mean LAS when only labels are perturbed is 4.1\%, and since the
+sample space of trees of size $n$ is clearly much larger than that of
+relabellings, a uniform random selection of tree would yield a LAS much closer
+to 0. This shows that our tree shuffling algorithm has a non-uniform
+distribution over the sample space.
+
+\begin{figure}
+    \begin{center}
+        \input{noattach.tex}
+    \end{center}
+    \caption{Mean agreement over ten runs, $p_{reattach} = 0$}
+    \label{fig:synthetic-noattach}
+\end{figure}
+
+\begin{figure}
+    \begin{center}
+        \input{nolabel.tex}
+    \end{center}
+    \caption{Mean agreement over ten runs, $p_{relabel} = 0$}
+    \label{fig:synthetic-nolabel}
+\end{figure}
+
+While the behaviour of our alphas and LAS are relatively similar in Figure
+\ref{fig:synthetic-initial}, Figures \ref{fig:synthetic-noattach} and
+\ref{fig:synthetic-nolabel} show that they do in fact have important
+differences. Whereas LAS responds linearly to perturbation of both labels and
+structure, with its parabolic behaviour in Figure \ref{fig:synthetic-initial}
+being simply the product of these two linear responses, the $\alpha$ metrics
+respond differently to structural noise and label noise, with label
+disagreements being penalised less harshly than structural disagreements.
+
+%As shown by Figures \ref{fig:synthetic-noattach} and
+%\ref{fig:synthetic-nolabel}, the $\alpha$ metrics have a stronger response to
+%structural disagreements than to labelling disagreement. This is of course due
+%to the fact that whereas LAS gives credit only if a token has label \emph{and}
+%head right, $\alpha$ gives credit for structural similarity even if all the
+%labels differ. Apart from this, the relative behaviour of the three metrics is
+%the same, with $\alpha_{norm}$ being more forgiving than $\alpha_{plain}$ and
+%$\alpha_{diff}$ still very sensitive to noise, even if the drop in
+%$\alpha_{diff}$ isn't quite as precipitous as when $p_{relabel} =
+%p_{reattach}$.
+
+The reason for the strictness of the $\alpha_{diff}$ metric and the laxity of
+$\alpha_{norm}$ is the effects the modified distance functions have on the
+distribution of distances. The $\delta_{diff}$ function causes an extreme
+shift of the distances towards 0; more than 30\% of the sentence pairs have
+distance 0, 1, or 2, which causes $D_e^{diff}$ to be extremely low and thus
+gives disproportionally large weight to non-zero distances in $D_o^{diff}$. On
+the other hand $\delta_{norm}$ causes a rightward shift of the distances,
+which results in a high $D_e^{norm}$ and thus individual disagreements having
+less weight.
+
+\section{Real-world corpora}
+Synthetic experiments do not always fully reflect real-world behaviour,
+however. Therefore we will also evaluate our metrics on real-world
+inter-annotator agreement data sets. In our evaluation, we will contrast
+labelled accuracy, the standard parser evaluation metric, and our three
+$\alpha$ metrics. In particular, we are interested in the correlation (or lack
+thereof) between LAS and the alphas, and whether the results of our synthetic
+experiments correspond well with the results on real-world IAA sets. Finally,
+we also evaluate the metric on both dependency and phrase structure data.
+
+\subsection{The corpora}
+We obtained\footnote{We contacted a number of treebank projects, among them
+the Penn Treebank and the Prague Dependency Treebank, but not all of them had
+data available.} data from four different corpora. Three of the data sets are
+dependency treebanks (NDT, CDT, PCEDT) and one phrase structure treebank
+(SSD), and of the dependency treebanks the PCEDT contains semantic
+dependencies, while the other two have traditional syntactic dependencies. The
+number of annotators and sizes of the different data sets are summarised in
+Table~\ref{tbl:corpora}.
+
+\paragraph{NDT} The Norwegian Dependency Treebank \cite{Solberg:etal14} is a
+dependency treebank constructed at the National Library of Norway. The data
+studied in this work has previously been used by \citeN{Skjaerholt13} to study
+agreement, but using simple accuracy measures (UAS, LAS) rather than
+chance-corrected measures. The IAA data set is divided into three parts,
+corresponding to different parsers used to preprocess the data before
+annotation; what we term NDT 1 through 3 correspond to what
+\citeN{Skjaerholt13} labels Danish, Swedish and Norwegian, respectively.
+
+\paragraph{CDT} The Copenhagen Dependency Treebanks
+\cite{Buc:Kor:Mul09,Buc:Kor10} is a collection of parallel dependency
+treebanks, containing data from the Danish PAROLE corpus
+\cite{Keson98a,Keson98b} in the original Danish and translated into English,
+Italian and Spanish.
+
+\ctable[botcap,
+    caption={Sizes of the different IAA corpora},
+    label=tbl:corpora,
+    mincapwidth=\columnwidth
+]{lcc}{
+    \tnote[a]{2 annotators}
+    \tnote[b]{4 annotators, avg. 2.8 annotators/text (min. 2, max. 4)}
+    \tnote[c]{3 annotators, avg. 2.7 annotators/text}
+    \tnote[d]{11 annotators, avg. 2.5 annotators/text (min. 2, max. 6)}
+    \tnote[e]{3 annotators, avg. 2.9 annotators/sent.}
+}{
+        \FL
+Corpus & Sentences & Tokens \ML
+NDT 1\tmark[a] & 130 & 1674 \NN
+NDT 2\tmark[a] & 110 & 1594 \NN
+NDT 3\tmark[a] & 150 & 1997 \ML
+CDT (da)\tmark[a] & 162 & 2394 \NN
+CDT (en)\tmark[a] & 264 & 5528 \NN
+CDT (es)\tmark[b] &  55 &  924 \NN
+CDT (it)\tmark[c] & 136 & 3057 \ML
+PCEDT\tmark[d]    &3531 &61737 \ML
+SSD\tmark[e]      &  96 & 1581
+        \LL
+    }
+
+\paragraph{PCEDT} The Prague Czech-English Dependency Treebank 2.0
+\citeN{PCEDT2} is a parallel corpus of English and Czech, consisting of
+English data from the Wall Street Journal Section of the Penn Treebank
+\cite{Mar:San:Mar93} and Czech translations of the English data. The syntactic
+annotations are layered and consist of an analytical layer similar to the
+annotations in most other dependency treebanks, and a more semantic
+tectogrammatical layer.
+
+Our data set consists of a common set of analytical annotations shared by all
+the annotators, and the tectogrammatical analyses built on top of this common
+foundation. A distinguishing feature of the tectogrammatical analyses, vis a
+vis the other treebanks we are using, is that semantically empty words only
+take part in the analytical annotation layer and nodes are inserted at the
+tectogrammatical layer to represent covert elements of the sentence not
+present in the surface syntax of the analytical layer. Thus, inserting and
+deleting nodes is a central part of the task of tectogrammatical annotation,
+unlike the more surface-oriented annotation of our other treebanks, where the
+tokenisation is fixed before the text is annotated.
+
+\paragraph{SSD} The Star-Sem Data is a portion of the dataset released for the
+*SEM 2012 shared task \cite{Mor:Bla12}, parsed using the LinGO English
+Resource Grammar (ERG, \citeNP{Flickinger00}) and the resulting parse forest
+disambiguated based on discriminants. The ERG is an HPSG-based grammar, and as
+such its analyses are attribute-value matrices (AVMs); an AVM is not a tree
+but a directed acyclic graph however, and for this reason we compute agreement
+not on the AVM but the so-called \emph{derivation tree}. This tree describes
+the types of the lexical items in the sentence and the bottom-up ordering of
+rule applications used to produce the final analysis and can be handled by our
+procedure like any phrase-structure tree.
+
+\subsection{Agreement results}
+To evaluate our corpora, we compute the three $\alpha$ variants described in
+the previous two sections, and compare these with labelled accuracy scores.
+
+When there are more than two annotators, we generalise the metric to be the
+average pairwise LAS for each sentence, weighted by the length of the
+sentence. Let $\textrm{LAS}(t_1, t_2)$ be the fraction of tokens with
+identical head and label in the trees $t_1$ and $t_2$; the pairwise labelled
+accuracy $\textrm{LAS}_p(X)$ of a set of annotations $X$ as described in
+section \ref{sec:notation} is:
+\begin{gather}
+    \textrm{LAS}_p(X) = \frac{1}{\sum_i|x_{i1}|}\sum\frac{|x_{i1}|\Lambda(X_i)}{\frac{|X_i|(|X_i|-1)}{2}} \label{eqn:pairwise} \\
+    \Lambda(X_i) = \sum_{c=1}^{|C|}\sum_{c'=c+1}^{|C|}\textrm{LAS}(x_{ic},
+    x_{ic'}) \notag
+\end{gather}
+This is equivalent to the traditional metric in the case where there are only
+two annotators.
+
+\ctable[botcap,
+    caption={Agreement scores on real-world corpora},
+    label=tbl:alpha-real,
+    mincapwidth=\columnwidth
+]{lcccc}{
+    \tnote[a]{2 sentences ignored}
+    \tnote[b]{15 sentences ignored}
+    \tnote[c]{1178 sentences ignored}
+    \tnote[d]{Mean pairwise Jaccard similarity}
+}{
+        \FL
+Corpus & $\alpha_{plain}$ & $\alpha_{diff}$ & $\alpha_{norm}$ & LAS \ML
+NDT 1    & 98.4 & 93.0 & 98.8 & 94.0 \NN % da
+NDT 2    & 98.9 & 95.0 & 99.1 & 94.4 \NN % sv
+NDT 3    & 97.9 & 91.2 & 98.7 & 95.3 \ML % no
+CDT (da) & 95.7 & 84.7 & 96.2 & 90.4 \NN
+CDT (en) & 92.4 & 70.7 & 95.0 & 88.4 \NN
+CDT (es) & 86.6 & 48.8 & 85.8 & 78.9\tmark[a] \NN
+CDT (it) & 84.5 & 55.7 & 89.2 & 81.3\tmark[b] \ML
+PCEDT    & 95.9 & 89.9 & 96.5 & 68.0\tmark[c] \ML
+SSD      & 99.1 & 98.6 & 99.3 & 87.9\tmark[d]
+        \LL
+    }
+
+As our uncorrected metric for comparing two phrase structure trees we do not
+use the traditional bracket $F_1$ as it does not generalise well to more than
+two annotators, but rather Jaccard similarity. The Jaccard similarity of two
+sets $A$ and $B$ is the ratio of the size of their intersection to the size of
+their union: $J(A, B) = \frac{|A\cap B|}{|A\cup B|}$, and we use the Jaccard
+similarity of the sets of labelled bracketings of two trees as our uncorrected
+measure. To compute the similarity for a complete set of annotations we use
+the mean pairwise Jaccard similarity weighted by sentence length; that is, the
+same procedure as in \ref{eqn:pairwise}, but using Jaccard similarity rather
+than LAS.
+
+Since LAS assumes that both of the sentences compared have identical sets of
+tokens, we had to exclude a number of sentences from the LAS computation in
+the cases of the English and Italian CDT corpora, and especially the PCEDT.
+The large number of sentences excluded in the PCEDT is due to the fact that in
+the tectogrammatical analysis of the PCEDT, inserting and deleting nodes is an
+important part of the annotation task.
+
+Looking at the results in Table \ref{tbl:alpha-real}, we observe two things.
+Most obvious, is the extremely large gap between the LAS and $\alpha$ metrics
+for the PCEDT data. However, there is a more subtle point; the orderings of
+the corpora by the different metrics are not the same. LAS order the corpora
+NDT 3, 2, 1, CDT da, en, it, es, PCEDT, whereas $\alpha_{diff}$ and
+$\alpha_{norm}$ gives the order NDT 2, 1, 3, PCEDT, CDT da, en, it, es, and
+$\alpha_{plain}$ gives the same order as the other alphas but with CDT es and
+it changing places. Furthermore, as the scatterplot in Figure
+\ref{fig:correlations} shows, there is a clear correlation between the
+$\alpha$ metrics and LAS, if we disregard the PCEDT results.
+
+\begin{figure}
+    \begin{center}
+        \input{correlations.tex}
+    \end{center}
+	\caption{Correlation of LAS with $\alpha$}
+	\label{fig:correlations}
+\end{figure}
+
+The reason the PCEDT gets such low LAS is essentially the same as the reason
+many sentences had to be excluded from the computation in the first place;
+since inserting and deleting nodes is an integral part of the tectogrammatical
+annotation task, the assumption implicit in the LAS computation that sentences
+with the same number of nodes have the same nodes in the same order is
+obviously false, resulting in a very low LAS.
+
+The corpus that scores the highest for all three metrics is the SSD corpus;
+the reason for this is uncertain, as our corpora differ along many dimensions,
+but the fact that the annotation was done by professional linguists who are
+very familiar with the grammar used to parse the data is likely a contributing
+factor. The difference between the $\alpha$ metrics and the Jaccard similarity
+is larger than the difference between $\alpha$ and LAS for our dependency
+corpora, however the two similarity metrics are not comparable, and it is well
+known that for phrase structures single disagreements such as a PP-attachment
+disagreement can result in multiple disagreeing bracketings.
+
+%I've sent emails about these:
+%\begin{itemize}
+%    \item TIGER
+%    \item NEGRA (mail bounced)
+%    \item PPCMBE
+%    \item English Web Treebank
+%    \item Cat3LB
+%    \item Hinoki
+%\end{itemize}
+
+\section{Conclusion}
+The most important conclusion we draw from this work is the most appropriate
+agreement metric for syntactic annotation. First of all, we disqualify the LAS
+metric, primarily due to the methodological inadequacies of using an
+uncorrected measure. While our experiments did not reveal any serious
+shortcomings (unlike those of \citeNP{Mathet:etal12} who in the case of
+categorisation showed that for large $p$ the uncorrected measure can be
+\emph{increasing}), the methodological problems of uncorrected metrics makes
+us wary of LAS as an agreement metric. Next, of the three $\alpha$ metrics,
+$\alpha_{plain}$ is clearly the best; $\alpha_{diff}$ is extremely sensitive
+to even moderate amounts of disagreement, while $\alpha_{norm}$ is overly
+lenient.
+
+Looking solely at Figure \ref{fig:synthetic-initial}, one might be led to
+believe that LAS and $\alpha_{plain}$ are interchangeable, but this is not the
+case. As shown by Figures \ref{fig:synthetic-noattach} and
+\ref{fig:synthetic-nolabel}, the paraboloid shape of the LAS curve in Figure
+\ref{fig:synthetic-initial} is simply the combination of the metric's linear
+responses to both label and structural perturbations. The behaviour of
+$\alpha$ on the other hand is more complex, with structural noise being
+penalised harder than perturbations of the labels. Thus, the similarity of LAS
+and $\alpha_{plain}$ is not at all assured when the amounts of structural and
+labelling disagreements differ. Additionally, we consider this imbalanced
+weighting of structural and labelling disagreements a benefit, as structure is
+the larger part of syntactic annotation compared to the labelling of the
+dependencies/bracketings. Finally our experiments show that $\alpha$ is a
+single metric that is applicable to both dependencies and phrase structure
+trees.
+
+%The most important conclusion we draw from this work is the most appropriate
+%agreement metric for syntactic annotation. In our estimation, the best metric
+%is $\alpha_{plain}$. As Figure \ref{fig:synthetic-initial} shows, simple
+%labelled accuracy corresponds closely to $\alpha_{plain}$, and is actually
+%closer to 0 when $p=1$. However, some factors argue against using the LAS to
+%measure annotator agreement. First of all, simple accuracy measures are
+%methodologically suspect and while our synthetic experiments didn't reveal any
+%serious shortcomings (unlike those of \citeNP{Mathet:etal12} who in the case
+%of categorisation showed that for large $p$ the uncorrected measure can be
+%\emph{increasing}), the discrepancy between LAS and $\alpha$ in the case of
+%the PCEDT data shows that for more complex annotation tasks, LAS is simply an
+%inappropriate metric to gauge inter-annotator agreement. Secondly, the
+%$\alpha$ metrics give larger weight to disagreements over structure compared
+%to label disagreements, whereas LAS gives equal weight to the two. We consider
+%this a benefit, as structure is the larger part of syntactic annotation
+%compared to the labelling of the dependencies/bracketings. Finally our
+%experiments show that $\alpha$ is a single metric that is applicable to both
+%dependencies and phrase structure trees.
+
+Furthermore, $\alpha$ metrics are far more flexible than simple accuracy
+metrics. The use of a distance function to define the metric means that more
+fine-grained distinctions can be made; for example, if the set of labels on
+the structures is highly structured, partial credit can be given for differing
+annotations that overlap. For example, if different types of adverbials
+(temporal, negation, etc.) receive different relations, as is the case in the
+Swedish Talbanken05 \cite{Niv:Nil:Hal06} corpus, confusion of different
+adverbial types can be given less weight than confusion between subject and
+object. The $\alpha$-based metrics are also far easier to apply to a more
+complex annotation task such as the tectogrammatical annotation of the PCEDT.
+In this task inserting and deleting nodes is an integral part of the
+annotation, and if two annotators insert or delete different nodes the
+all-or-nothing requirement of identical yield of the LAS metric makes it
+impossible as an evaluation metric in this setting.
+
+\subsection{Future work}
+In future work, we would like to investigate the use of other distance
+functions, in particular the use of approximate tree edit distance functions
+such as the $pq$-gram algorithm \cite{Aug:Boh:Gam05}. For large data sets such
+as the PCEDT set used in this work, computing $\alpha$ with tree edit distance
+as the distance measure can take a very long time.\footnote{The Python
+implementation used in this work, using NumPy and the PyPy compiler, took
+seven and a half hours compute a single $\alpha$ for the PCEDT data set on an
+Intel Core i7 2.9 GHz computer. The program is single-threaded.} This is due
+to the fact that $\alpha$ requires $O(n^2)$ comparisons to be made, each of
+which is $O(n^2)$ using our current approach. The problem of directed graph
+edit distance is NP-hard, which means that to apply our method to HPSG
+analyses directly approximate algorithms are a requirement.
+
+Another avenue for future work is improved synthetic experiments. As we saw,
+our implementation of tree perturbations was biased towards trees similar in
+shape to the source tree, and an improved permutation algorithm may reveal
+interesting edge-case behaviour in the metrics. A method for perturbing phrase
+structure trees would also be interesting, as this would allow us to repeat the
+synthetic experiments performed here using phrase structure corpora to compare
+the behaviour of the metrics on the two types of corpus.
+
+Finally, annotator modelling techniques like that presented in
+\citeN{Pas:Car13} has obvious advantages over agreement coefficients such as
+$\alpha$. These techniques are interpreted more easily than agreement
+coefficients, and they allow us to assess the quality of individual
+annotators, a crucial property in crowd-sourcing settings and something that's
+impossible using agreement coefficients.
+
+%\section{Miscellanea}
+%\begin{itemize}
+%    \item $\alpha$ is asymptotically equal to $\pi$ for large sample sizes:
+%        $\displaystyle\frac{D_o^\alpha}{D_e^\alpha} = \frac{n-1}{n}\frac{D_o^\pi}{D_e^\pi}$
+%    \item \citeN{Bra:Han02} claims that bracket $F_1$ is ``an appropriate
+%        measure for inter-annotator agreement''. WAT?
+%\end{itemize}
+
+\section*{Acknowledgements}
+I would like to thank Jan \v{S}t\v{e}p\'anek at Charles University for data
+from the PCEDT and help with the conversion process, the CDT project for
+publishing their agreement data, Per Erik Solberg at the Norwegian National
+Library for data from the NDT, and Emily Bender at the University of
+Washington for the SSD data.
+
+\backmatter
+\hyphenation{morfo-syntaktisk}
+\bibliographystyle{acl}
+\bibliography{library}
+
+\end{document}

@@ -1,0 +1,31 @@
+SubmissionNumber#=%=#56
+FinalPaperTitle#=%=#Domain-Specific Image Captioning
+ShortPaperTitle#=%=#Domain-Specific Image Captioning
+NumberOfPages#=%=#10
+CopyrightSigned#=%=#Rebecca Mason
+JobTitle#==#
+Organization#==#Department of Computer Science
+Brown University, Box 1910
+Providence, RI 02912
+Abstract#==#We present a data-driven framework for image caption generation which
+incorporates visual and textual features with varying degrees of spatial
+structure. We propose the task of domain-specific image captioning, where many
+relevant visual details cannot be captured by off-the-shelf general-domain
+entity detectors. We extract previously-written descriptions from a database
+and adapt them to new query images, using a joint visual and textual
+bag-of-words model to determine the correctness of individual words. We
+implement our model using a large, unlabeled dataset of women’s shoes images
+and natural language descriptions (Berg et al., 2010). Using both automatic and
+human evaluations, we show that our captioning method effectively deletes
+inaccurate words from extracted captions while maintaining a high level of
+detail in the generated output.
+Author{1}{Firstname}#=%=#Rebecca
+Author{1}{Lastname}#=%=#Mason
+Author{1}{Email}#=%=#rebecca@cs.brown.edu
+Author{1}{Affiliation}#=%=#Brown University
+Author{2}{Firstname}#=%=#Eugene
+Author{2}{Lastname}#=%=#Charniak
+Author{2}{Email}#=%=#ec@cs.brown.edu
+Author{2}{Affiliation}#=%=#Brown University
+
+==========

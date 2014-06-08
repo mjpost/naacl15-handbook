@@ -1,0 +1,30 @@
+SubmissionNumber#=%=#390
+FinalPaperTitle#=%=#Two Knives Cut Better Than One: Chinese Word Segmentation with Dual Decomposition
+ShortPaperTitle#=%=#Two Knives Cut Better Than One: Chinese Word Segmentation with Dual Decomposition
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Rob Voigt
+JobTitle#==#
+Organization#==#
+Abstract#==#There are two dominant approaches to Chinese word segmentation: word-based and
+character-based models, each with respective strengths. Prior work has shown
+that gains in segmentation performance can be achieved from combining these two
+types of models; however, past efforts have not provided a practical technique
+to allow mainstream adoption. We propose a method that effectively combines the
+strength of both segmentation schemes using an efficient dual-decomposition
+algorithm for joint inference. Our method is simple and easy to implement.
+Experiments on SIGHAN 2003 and 2005 evaluation datasets show that our method
+achieves the best reported results to date on 6 out of 7 datasets.
+Author{1}{Firstname}#=%=#Mengqiu
+Author{1}{Lastname}#=%=#Wang
+Author{1}{Email}#=%=#mengqiu@cs.stanford.edu
+Author{1}{Affiliation}#=%=#Stanford University
+Author{2}{Firstname}#=%=#Rob
+Author{2}{Lastname}#=%=#Voigt
+Author{2}{Email}#=%=#robvoigt@stanford.edu
+Author{2}{Affiliation}#=%=#Stanford University
+Author{3}{Firstname}#=%=#Christopher D.
+Author{3}{Lastname}#=%=#Manning
+Author{3}{Email}#=%=#manning@stanford.edu
+Author{3}{Affiliation}#=%=#Stanford University
+
+==========

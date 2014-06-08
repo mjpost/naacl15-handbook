@@ -1,0 +1,47 @@
+SubmissionNumber#=%=#65
+FinalPaperTitle#=%=#New Word Detection for Sentiment Analysis
+ShortPaperTitle#=%=#New Word Detection for Sentiment Analysis
+NumberOfPages#=%=#11
+CopyrightSigned#=%=#Minlie Huang
+JobTitle#==#associate professor
+Organization#==#Dept. of computer science and technology, tsinghua university, beijing 100084, china
+Abstract#==#Automatic extraction of new words is an indispensable precursor to many NLP
+tasks such as Chinese word segmentation, named entity extraction, and sentiment
+analysis.
+This paper aims at extracting new sentiment words from large-scale
+user-generated content.
+ We propose a fully unsupervised, purely data-driven framework for this
+purpose.
+We design statistical measures respectively to quantify the utility of a
+lexical pattern and
+to measure the possibility of a word being a new word.
+The method is almost free of linguistic resources (except POS tags), and
+requires no elaborated linguistic rules.
+We also demonstrate how new sentiment word will benefit sentiment analysis.
+ Experiment results demonstrate the effectiveness of the proposed method.
+Author{1}{Firstname}#=%=#Minlie
+Author{1}{Lastname}#=%=#Huang
+Author{1}{Email}#=%=#aihuang@tsinghua.edu.cn
+Author{1}{Affiliation}#=%=#Tsinghua University
+Author{2}{Firstname}#=%=#Borui
+Author{2}{Lastname}#=%=#Ye
+Author{2}{Email}#=%=#rosieye1992@gmail.com
+Author{2}{Affiliation}#=%=#University of Post and Telecommunications
+Author{3}{Firstname}#=%=#Yichen
+Author{3}{Lastname}#=%=#Wang
+Author{3}{Email}#=%=#wangycthu@gmail.com
+Author{3}{Affiliation}#=%=#Tsinghua University
+Author{4}{Firstname}#=%=#Haiqiang
+Author{4}{Lastname}#=%=#Chen
+Author{4}{Email}#=%=#chenhq@itsec.gov.cn
+Author{4}{Affiliation}#=%=#China Information Technology Security Evaluation Center
+Author{5}{Firstname}#=%=#Junjun
+Author{5}{Lastname}#=%=#Cheng
+Author{5}{Email}#=%=#chengjunjun@itsec.gov.cn
+Author{5}{Affiliation}#=%=#China Information Technology Security Evaluation Center
+Author{6}{Firstname}#=%=#Xiaoyan
+Author{6}{Lastname}#=%=#Zhu
+Author{6}{Email}#=%=#zxy-dcs@tsinghua.edu.cn
+Author{6}{Affiliation}#=%=#Tsinghua University
+
+==========

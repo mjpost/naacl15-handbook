@@ -1,0 +1,25 @@
+SubmissionNumber#=%=#15
+FinalPaperTitle#=%=#Translation Class Instruction as Collaboration in the Act of Translation
+ShortPaperTitle#=%=#Translation Class Instruction as Collaboration in the Act of Translation
+NumberOfPages#=%=#9
+CopyrightSigned#=%=#Lars Ahrenberg
+JobTitle#==#
+Organization#==#
+Abstract#==#The paper offers an effective way of teacher-student computer-based
+collaboration in translation class. We show how a quantitative-qualitative
+method of analysis supported by word alignment technology can be applied to
+student translations for use in the classroom. The combined use of
+natural-language processing and manual techniques enables students to
+‘co-emerge’ during highly motivated collaborative sessions. Within the
+advocated approach, students are pro-active seekers for a better translation
+(grade) in a teacher-centered computer-based peer-assisted translation class.
+Author{1}{Firstname}#=%=#Lars
+Author{1}{Lastname}#=%=#Ahrenberg
+Author{1}{Email}#=%=#lars.ahrenberg@liu.se
+Author{1}{Affiliation}#=%=#Linköping University
+Author{2}{Firstname}#=%=#Ljuba
+Author{2}{Lastname}#=%=#Tarvi
+Author{2}{Email}#=%=#ljuba.tarvi@welho.com
+Author{2}{Affiliation}#=%=#University of Helsinki
+
+==========

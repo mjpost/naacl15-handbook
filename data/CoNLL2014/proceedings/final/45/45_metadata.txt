@@ -1,0 +1,32 @@
+SubmissionNumber#=%=#45
+FinalPaperTitle#=%=#Towards Temporal Scoping of Relational Facts based on Wikipedia Data
+ShortPaperTitle#=%=#Towards Temporal Scoping of Relational Facts based on Wikipedia Data
+NumberOfPages#=%=#10
+CopyrightSigned#=%=#Avirup Sil
+JobTitle#==#
+Organization#==#Temple University, Computer and Information Science,
+1805 N Broad Street, Wachman 318, Philadelphia, PA 19122
+Abstract#==#Most previous work in information extraction from text has focused on
+named-entity recognition, entity linking, and relation extraction. Less
+attention has been paid given to extracting the temporal scope for relations
+between named entities; for example, the relation president-Of(John F. Kennedy,
+USA) is true only in the time-frame (January 20, 1961 - November 22, 1963). In
+this paper we present a system for temporal scoping of relational facts, which
+is trained on distant supervision based on the largest semi-structured resource
+available: Wikipedia. The system employs language models consisting of patterns
+automatically bootstrapped from Wikipedia sentences that contain the main
+entity of a page and slot-fillers extracted from the corresponding infoboxes.
+This proposed system achieves state-of-the-art results on 6 out of 7 relations
+on the benchmark Text Analysis Conference 2013 dataset for temporal slot
+filling (TSF), and outperforms the next best system in the TAC 2013 evaluation
+by more than 10 points.
+Author{1}{Firstname}#=%=#Avirup
+Author{1}{Lastname}#=%=#Sil
+Author{1}{Email}#=%=#avirupsil@gmail.com
+Author{1}{Affiliation}#=%=#Temple University
+Author{2}{Firstname}#=%=#Silviu-Petru
+Author{2}{Lastname}#=%=#Cucerzan
+Author{2}{Email}#=%=#silviu@microsoft.com
+Author{2}{Affiliation}#=%=#Microsoft Research
+
+==========

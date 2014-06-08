@@ -1,0 +1,29 @@
+SubmissionNumber#=%=#20
+FinalPaperTitle#=%=#Medical Relation Extraction with Manifold Models
+ShortPaperTitle#=%=#Medical Relation Extraction with Manifold Models
+NumberOfPages#=%=#11
+CopyrightSigned#=%=#Chang Wang
+JobTitle#==#
+Organization#==#IBM T. J. Watson Research Center
+Yorktown Heights, New York, 10598
+Abstract#==#In this paper, we present a manifold model for medical relation
+extraction. Our model is built upon a medical corpus containing
+80M sentences (11 gigabyte text) and designed to accurately and
+efficiently detect the key medical relations that can facilitate
+clinical decision making. Our approach integrates domain specific
+parsing and typing systems, and can utilize labeled as well as
+unlabeled examples. To provide users with more flexibility, we
+also take label weight into consideration. Effectiveness of our
+model is demonstrated both theoretically with a proof to show that
+the solution is a closed-form solution and experimentally with
+positive results in experiments.
+Author{1}{Firstname}#=%=#Chang
+Author{1}{Lastname}#=%=#Wang
+Author{1}{Email}#=%=#wangchan@us.ibm.com
+Author{1}{Affiliation}#=%=#IBM Research
+Author{2}{Firstname}#=%=#James
+Author{2}{Lastname}#=%=#Fan
+Author{2}{Email}#=%=#jfan.us@gmail.com
+Author{2}{Affiliation}#=%=#IBM Research
+
+==========

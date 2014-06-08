@@ -1,0 +1,39 @@
+SubmissionNumber#=%=#91
+FinalPaperTitle#=%=#Product Feature Mining: Semantic Clues versus Syntactic Constituents
+ShortPaperTitle#=%=#Product Feature Mining: Semantic Clues versus Syntactic Constituents
+NumberOfPages#=%=#11
+CopyrightSigned#=%=#Liheng Xu
+JobTitle#==#
+Organization#==#Institute of Automation, Chinese Academy of Sciences
+Abstract#==#Product feature mining is a key subtask in fine-grained opinion mining.
+Previous works often use syntax constituents in this task. However,
+syntax-based methods can only use discrete contextual information, which may
+suffer from data sparsity. This paper proposes a novel product feature mining
+method which leverages lexical and contextual semantic clues. Lexical semantic
+clue verifies whether a candidate term is related to the target product, and
+contextual semantic clue serves as a soft pattern miner to find candidates,
+which exploits semantics of each word in context so as to alleviate the data
+sparsity problem. We build a semantic similarity graph to encode lexical
+semantic clue, and employ a convolutional neural model to capture contextual
+semantic clue. Then Label Propagation is applied to combine both semantic
+clues. Experimental results show that our semantics-based method significantly
+outperforms conventional syntax-based approaches, which not only mines product
+features more accurately, but also extracts more infrequent product features.
+Author{1}{Firstname}#=%=#Liheng
+Author{1}{Lastname}#=%=#Xu
+Author{1}{Email}#=%=#lhxu@nlpr.ia.ac.cn
+Author{1}{Affiliation}#=%=#Institute of Automation, Chinese Academy of Sciences
+Author{2}{Firstname}#=%=#Kang
+Author{2}{Lastname}#=%=#Liu
+Author{2}{Email}#=%=#kliu@nlpr.ia.ac.cn
+Author{2}{Affiliation}#=%=#Chinese Academy of Sciences
+Author{3}{Firstname}#=%=#Siwei
+Author{3}{Lastname}#=%=#Lai
+Author{3}{Email}#=%=#swlai@nlpr.ia.ac.cn
+Author{3}{Affiliation}#=%=#CASIA
+Author{4}{Firstname}#=%=#Jun
+Author{4}{Lastname}#=%=#Zhao
+Author{4}{Email}#=%=#jzhao@nlpr.ia.ac.cn
+Author{4}{Affiliation}#=%=#Chinese Academy of Sciences
+
+==========

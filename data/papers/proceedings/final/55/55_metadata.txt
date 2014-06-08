@@ -1,0 +1,34 @@
+SubmissionNumber#=%=#55
+FinalPaperTitle#=%=#A Step-wise Usage-based Method for Inducing Polysemy-aware Verb Classes
+ShortPaperTitle#=%=#A Step-wise Usage-based Method for Inducing Polysemy-aware Verb Classes
+NumberOfPages#=%=#11
+CopyrightSigned#=%=#Daisuke Kawahara
+JobTitle#==#
+Organization#==#Kyoto University, 
+Yoshida-honmachi, Sakyo-ku, Kyoto 606-8501, Japan
+Abstract#==#We present an unsupervised method for inducing verb classes from verb
+uses in giga-word corpora. Our method consists of two clustering steps:
+verb-specific semantic frames are first induced by clustering
+verb uses in a corpus and then verb classes are
+induced by clustering these frames. By taking this step-wise approach,
+we can not only generate verb classes based on a massive amount of verb
+uses in a scalable manner, but also deal with verb polysemy, which is
+bypassed by most of the previous studies on verb clustering.
+In our experiments, we acquire semantic frames and verb classes from
+two giga-word corpora, the larger comprising 20 billion words. The
+effectiveness of our approach is verified through quantitative
+evaluations based on polysemy-aware gold-standard data.
+Author{1}{Firstname}#=%=#Daisuke
+Author{1}{Lastname}#=%=#Kawahara
+Author{1}{Email}#=%=#dk@i.kyoto-u.ac.jp
+Author{1}{Affiliation}#=%=#Kyoto University
+Author{2}{Firstname}#=%=#Daniel W.
+Author{2}{Lastname}#=%=#Peterson
+Author{2}{Email}#=%=#Daniel.W.Peterson@colorado.edu
+Author{2}{Affiliation}#=%=#University of Colorado
+Author{3}{Firstname}#=%=#Martha
+Author{3}{Lastname}#=%=#Palmer
+Author{3}{Email}#=%=#martha.palmer@colorado.edu
+Author{3}{Affiliation}#=%=#University of Colorado
+
+==========

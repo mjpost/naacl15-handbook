@@ -1,0 +1,34 @@
+SubmissionNumber#=%=#7
+FinalPaperTitle#=%=#Titles That Announce Argumentative Claims in Biomedical Research Articles
+ShortPaperTitle#=%=#Titles That Announce Argumentative Claims in Biomedical Research Articles
+NumberOfPages#=%=#2
+CopyrightSigned#=%=#Robert Mercer
+JobTitle#==#
+Organization#==#
+Abstract#==#In the experimental sciences authors use the scientific article to express
+their findings by making an argumentative claim.  While past studies have
+located the claim in the Abstract, the Introduction, and in the Discussion
+section, in this paper we focus on the article title as a potential source of
+the claim. Our investigation has suggested that titles which contain a tensed
+verb almost certainly announce the argument claim while titles which do not
+contain a tensed verb have varied announcements. Another observation that we
+have confirmed in our dataset is that the frequency of verbs in titles of
+experimental research articles has increased over time.
+Author{1}{Firstname}#=%=#Heather
+Author{1}{Lastname}#=%=#Graves
+Author{1}{Email}#=%=#hgraves@ualberta.ca
+Author{1}{Affiliation}#=%=#The University of Alberta
+Author{2}{Firstname}#=%=#Roger
+Author{2}{Lastname}#=%=#Graves
+Author{2}{Email}#=%=#graves1@ualberta.ca
+Author{2}{Affiliation}#=%=#The University of Western Ontario
+Author{3}{Firstname}#=%=#Robert
+Author{3}{Lastname}#=%=#Mercer
+Author{3}{Email}#=%=#mercer@csd.uwo.ca
+Author{3}{Affiliation}#=%=#The University of Western Ontario
+Author{4}{Firstname}#=%=#Mahzereen
+Author{4}{Lastname}#=%=#Akter
+Author{4}{Email}#=%=#Quazi.Akter@autodata.net
+Author{4}{Affiliation}#=%=#The University of Western Ontario
+
+==========

@@ -1,0 +1,37 @@
+SubmissionNumber#=%=#9
+FinalPaperTitle#=%=#Decision Style in a Clinical Reasoning Corpus
+ShortPaperTitle#=%=#Decision Style in a Clinical Reasoning Corpus
+NumberOfPages#=%=#5
+CopyrightSigned#=%=#Limor Hochberg
+JobTitle#==#
+Organization#==#Rochester Institute of Technology, 1 Lomb Memorial Dr, Rochester, NY 14623
+Abstract#==#The dual process model (Evans, 2008) posits two types of decision-making, which
+may be ordered on a continuum from intuitive to analytical (Hammond, 1981).
+This work uses a dataset of narrated image-based clinical reasoning, collected
+from physicians as they diagnosed dermatological cases presented as images. Two
+annotators with training in cognitive psychology assigned each narrative a
+rating on a four-point decision scale, from intuitive to analytical. This work
+discusses the annotation study, and makes contributions for resource creation
+methodology and analysis in the clinical domain.
+Author{1}{Firstname}#=%=#Limor
+Author{1}{Lastname}#=%=#Hochberg
+Author{1}{Email}#=%=#limorhochberg@gmail.com
+Author{1}{Affiliation}#=%=#Rochester Institute of Technology
+Author{2}{Firstname}#=%=#Cecilia
+Author{2}{Lastname}#=%=#Ovesdotter Alm
+Author{2}{Email}#=%=#coagla@rit.edu
+Author{2}{Affiliation}#=%=#Rochester Institute of Technology
+Author{3}{Firstname}#=%=#Esa M.
+Author{3}{Lastname}#=%=#Rantanen
+Author{3}{Email}#=%=#esa.rantanen@rit.edu
+Author{3}{Affiliation}#=%=#Rochester Institute of Technology
+Author{4}{Firstname}#=%=#Caroline M.
+Author{4}{Lastname}#=%=#DeLong
+Author{4}{Email}#=%=#cmdgsh@rit.edu
+Author{4}{Affiliation}#=%=#Rochester Institute of Technology
+Author{5}{Firstname}#=%=#Anne
+Author{5}{Lastname}#=%=#Haake
+Author{5}{Email}#=%=#anne.haake@gmail.com
+Author{5}{Affiliation}#=%=#Rochester Institute of Technology
+
+==========

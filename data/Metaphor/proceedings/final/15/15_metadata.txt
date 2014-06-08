@@ -1,0 +1,39 @@
+SubmissionNumber#=%=#15
+FinalPaperTitle#=%=#Conversational Metaphors in Use: Exploring the Contrast between Technical and Everyday Notions of Metaphor
+ShortPaperTitle#=%=#Exploring the Contrast between Technical and Everyday Notions of Metaphor
+NumberOfPages#=%=#10
+CopyrightSigned#=%=#HYEJU JANG
+JobTitle#==#student
+Organization#==#Carnegie Mellon University
+5000 Forbes Avenue, Pittsburgh 15213, PA
+Abstract#==#Much computational work has been done on identifying and interpreting the
+meaning of metaphors, but little work has been done on understanding the
+motivation behind the use of metaphor. To computationally model discourse and
+social positioning in metaphor, we need a corpus annotated with metaphors
+relevant to speaker intentions. This paper reports a corpus study as a first
+step towards computational work on social and discourse functions of metaphor.
+We use Amazon Mechanical Turk (MTurk) to annotate data from three web
+discussion forums covering distinct domains. We then compare these to
+annotations from our own annotation scheme which distinguish levels of metaphor
+with the labels: nonliteral, conventionalized, and literal. Our hope is that
+this work raises questions about what new work needs to be done in order to
+address the question of how metaphors are used to achieve social goals in
+interaction.
+Author{1}{Firstname}#=%=#Hyeju
+Author{1}{Lastname}#=%=#Jang
+Author{1}{Email}#=%=#hyejuj@cs.cmu.edu
+Author{1}{Affiliation}#=%=#Carnegie Mellon University
+Author{2}{Firstname}#=%=#Mario
+Author{2}{Lastname}#=%=#Piergallini
+Author{2}{Email}#=%=#mpiergal@cs.cmu.edu
+Author{2}{Affiliation}#=%=#Carnegie Mellon University
+Author{3}{Firstname}#=%=#Miaomiao
+Author{3}{Lastname}#=%=#Wen
+Author{3}{Email}#=%=#mwen@cs.cmu.edu
+Author{3}{Affiliation}#=%=#Carnegie Mellon University
+Author{4}{Firstname}#=%=#Carolyn
+Author{4}{Lastname}#=%=#Rose
+Author{4}{Email}#=%=#cprose@cs.cmu.edu
+Author{4}{Affiliation}#=%=#Carnegie Mellon University
+
+==========

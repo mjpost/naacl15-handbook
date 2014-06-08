@@ -1,0 +1,62 @@
+SubmissionNumber#=%=#603
+FinalPaperTitle#=%=#Toward Future Scenario Generation: Extracting Event Causality Exploiting Semantic Relation, Context, and Association Features
+ShortPaperTitle#=%=#Toward Future Scenario Generation: Extracting Event Causality
+NumberOfPages#=%=#11
+CopyrightSigned#=%=#Chikara Hashimoto
+JobTitle#==#
+Organization#==#National Institute of Information and Communications Technology (NICT)
+3-5, Seika-cho, Soraku-gun, Kyoto, 619-0289, Japan
+Abstract#==#We propose a supervised method of
+extracting event causalities like "conduct
+slash-and-burn agriculture" -> "exacerbate
+desertification" from the web using semantic
+relation (between nouns), context,
+and association features. Experiments
+show that our method outperforms baselines
+that are based on state-of-the-art
+methods. We also propose methods of
+generating future scenarios like "conduct
+slash-and-burn agriculture" -> "exacerbate
+desertification" -> "increase Asian dust (from
+China)" -> "asthma gets worse". Experiments
+show that we can generate 50,000
+scenarios with 68% precision. We also
+generated a scenario "deforestation continues"
+ -> "global warming worsens" -> "sea
+temperatures rise" -> "vibrio parahaemolyticus
+fouls (water)", which is written in no
+document in our input web corpus crawled
+in 2007. But the vibrio risk due to global
+warming was observed in Baker-Austin
+et al. (2013). Thus, we “predicted” the
+future event sequence in a sense.
+Author{1}{Firstname}#=%=#Chikara
+Author{1}{Lastname}#=%=#Hashimoto
+Author{1}{Email}#=%=#ch@nict.go.jp
+Author{1}{Affiliation}#=%=#NICT
+Author{2}{Firstname}#=%=#Kentaro
+Author{2}{Lastname}#=%=#Torisawa
+Author{2}{Email}#=%=#torisawa@nict.go.jp
+Author{2}{Affiliation}#=%=#NICT
+Author{3}{Firstname}#=%=#Julien
+Author{3}{Lastname}#=%=#Kloetzer
+Author{3}{Email}#=%=#julien@nict.go.jp
+Author{3}{Affiliation}#=%=#NICT
+Author{4}{Firstname}#=%=#Motoki
+Author{4}{Lastname}#=%=#Sano
+Author{4}{Email}#=%=#msano@nict.go.jp
+Author{4}{Affiliation}#=%=#NICT
+Author{5}{Firstname}#=%=#István
+Author{5}{Lastname}#=%=#Varga
+Author{5}{Email}#=%=#vistvan@az.jp.nec.com
+Author{5}{Affiliation}#=%=#NEC
+Author{6}{Firstname}#=%=#Jong-Hoon
+Author{6}{Lastname}#=%=#Oh
+Author{6}{Email}#=%=#rovellia@nict.go.jp
+Author{6}{Affiliation}#=%=#NICT
+Author{7}{Firstname}#=%=#Yutaka
+Author{7}{Lastname}#=%=#Kidawara
+Author{7}{Email}#=%=#kidawara@nict.go.jp
+Author{7}{Affiliation}#=%=#NICT
+
+==========

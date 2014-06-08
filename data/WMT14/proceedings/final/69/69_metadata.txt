@@ -1,0 +1,29 @@
+SubmissionNumber#=%=#69
+FinalPaperTitle#=%=#Large-scale Exact Decoding: The IMS-TTT submission to WMT14
+ShortPaperTitle#=%=#Large-scale Exact Decoding: The IMS-TTT submission to WMT14
+NumberOfPages#=%=#8
+CopyrightSigned#=%=#Daniel Quernheim
+JobTitle#==#
+Organization#==#Universität Stuttgart
+Institut für Maschinelle Sprachverarbeitung
+Pfaffenwaldring 5b
+70569 Stuttgart, Germany
+Abstract#==#We present the IMS-TTT submission to WMT14, an experimental statistical
+tree-to-tree machine translation system based on the multi-bottom up tree
+transducer including rule extraction, tuning and decoding.  Thanks to input
+parse forests and a ``no pruning'' strategy during decoding, the obtained
+translations are competitive.  The drawbacks are a restricted coverage of 70\%
+on test data, in part due to exact input parse tree matching, and a relatively
+high runtime.  Advantages include easy redecoding with a different weight
+vector, since the full translation forests can be stored after the first
+decoding pass.
+Author{1}{Firstname}#=%=#Daniel
+Author{1}{Lastname}#=%=#Quernheim
+Author{1}{Email}#=%=#daniel@ims.uni-stuttgart.de
+Author{1}{Affiliation}#=%=#Universität Stuttgart
+Author{2}{Firstname}#=%=#Fabienne
+Author{2}{Lastname}#=%=#Cap
+Author{2}{Email}#=%=#cap@ims.uni-stuttgart.de
+Author{2}{Affiliation}#=%=#Centre for Information Language Processing, University of Munich
+
+==========

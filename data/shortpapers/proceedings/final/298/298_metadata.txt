@@ -1,0 +1,28 @@
+SubmissionNumber#=%=#298
+FinalPaperTitle#=%=#Automatic Detection of Machine Translated Text and Translation Quality Estimation
+ShortPaperTitle#=%=#Automatic Detection of Machine Translated Text and Translation Quality Estimation
+NumberOfPages#=%=#7
+CopyrightSigned#=%=#Roee Aharoni
+JobTitle#==#
+Organization#==#Bar Ilan University, Ramat-Gan, Israel 52900
+Abstract#==#We show that it is possible to automatically detect machine translated text at
+sentence level from monolingual corpora, using text classification methods. We
+show further that the accuracy with which a 
+learned classifier can detect text as machine translated is strongly correlated
+with the translation quality of the machine translation system that generated
+it. Finally, we offer a generic machine translation quality estimation
+technique based on this approach, which does not require reference sentences.
+Author{1}{Firstname}#=%=#Roee
+Author{1}{Lastname}#=%=#Aharoni
+Author{1}{Email}#=%=#roee.aharoni@gmail.com
+Author{1}{Affiliation}#=%=#Bar Ilan University
+Author{2}{Firstname}#=%=#Moshe
+Author{2}{Lastname}#=%=#Koppel
+Author{2}{Email}#=%=#moishk@gmail.com
+Author{2}{Affiliation}#=%=#Bar-Ilan University
+Author{3}{Firstname}#=%=#Yoav
+Author{3}{Lastname}#=%=#Goldberg
+Author{3}{Email}#=%=#yoav.goldberg@gmail.com
+Author{3}{Affiliation}#=%=#Bar-Ilan University
+
+==========

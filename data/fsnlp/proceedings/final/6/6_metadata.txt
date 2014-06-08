@@ -1,0 +1,16 @@
+SubmissionNumber#=%=#6
+FinalPaperTitle#=%=#Case, Constructions, FrameNet, and the Deep Lexicon
+ShortPaperTitle#=%=#Case, Constructions, FrameNet, and the Deep Lexicon
+NumberOfPages#=%=#4
+CopyrightSigned#=%=#Jerry Hobbs
+JobTitle#==#
+Organization#==#USC ISI
+4676 Admiralty Way
+Marina del Rey, CA 90292
+Abstract#==#
+Author{1}{Firstname}#=%=#Jerry
+Author{1}{Lastname}#=%=#Hobbs
+Author{1}{Email}#=%=#hobbs@isi.edu
+Author{1}{Affiliation}#=%=#ISI
+
+==========

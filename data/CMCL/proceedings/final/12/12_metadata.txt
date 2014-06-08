@@ -1,0 +1,39 @@
+SubmissionNumber#=%=#12
+FinalPaperTitle#=%=#Computationally Rational Saccadic Control: An Explanation of Spillover Effects Based on Sampling from Noisy Perception and Memory
+ShortPaperTitle#=%=#Memory-Driven Spillover Effects in Computationally Rational Saccadic Control
+NumberOfPages#=%=#9
+CopyrightSigned#=%=#Michael Shvartsman
+JobTitle#==#
+Organization#==#University of Michigan
+500 S. State Street, Ann Arbor, MI 48109 USA
+Abstract#==#Eye-movements in reading exhibit frequency spillover effects: fixation
+durations on a word are affected by the frequency of the previous word. We
+explore the idea that this effect may be an emergent property of a
+computationally rational eye-movement strategy that is navigating a tradeoff
+between processing immediate perceptual input, and continued processing of past
+input based on memory. We present an adaptive eye-movement control model with a
+minimal capacity for such processing, based on a composition of thresholded
+sequential samplers that integrate information from noisy perception and noisy
+memory.  The model is applied to the List Lexical Decision Task and shown to
+yield frequency spillover -- a robust property of human eye-movements in this
+task, even with parafoveal masking.  We show that spillover in the model
+emerges in approximately optimal control policies that sometimes process memory
+rather than perception. We compare this model with one that is able to give
+priority to perception over memory, and show that the perception-priority
+policies in such a model do not perform as well in a range of plausible noise
+settings.  We explain how the frequency spillover arises from a
+counter-intuitive but fundamental property of sequenced thresholded samplers.
+Author{1}{Firstname}#=%=#Michael
+Author{1}{Lastname}#=%=#Shvartsman
+Author{1}{Email}#=%=#mshvarts@umich.edu
+Author{1}{Affiliation}#=%=#University of Michigan
+Author{2}{Firstname}#=%=#Richard
+Author{2}{Lastname}#=%=#Lewis
+Author{2}{Email}#=%=#rickl@umich.edu
+Author{2}{Affiliation}#=%=#University of Michigan
+Author{3}{Firstname}#=%=#Satinder
+Author{3}{Lastname}#=%=#Singh
+Author{3}{Email}#=%=#baveja@umich.edu
+Author{3}{Affiliation}#=%=#University of Michigan
+
+==========

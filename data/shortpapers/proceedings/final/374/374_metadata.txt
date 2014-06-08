@@ -1,0 +1,26 @@
+SubmissionNumber#=%=#374
+FinalPaperTitle#=%=#Concreteness and Subjectivity as Dimensions of Lexical Meaning
+ShortPaperTitle#=%=#Concreteness and Subjectivity as Dimensions of Lexical Meaning
+NumberOfPages#=%=#7
+CopyrightSigned#=%=#Felix Hill
+JobTitle#==#
+Organization#==#Computer Laboratory
+Cambridge University
+15 JJ Thompson Avenue
+Cambridge, UK
+CB3 0FD
+Abstract#==#We quantify the lexical subjectivity of adjectives using a corpus-based method,
+and show for the first time that it correlates with noun concreteness in large
+corpora. These cognitive dimensions together influence how word meanings
+combine, and we exploit this fact to achieve performance improvements on the
+semantic classification of adjective-noun pairs.
+Author{1}{Firstname}#=%=#Felix
+Author{1}{Lastname}#=%=#Hill
+Author{1}{Email}#=%=#fh295@cam.ac.uk
+Author{1}{Affiliation}#=%=#Cambridge University
+Author{2}{Firstname}#=%=#Anna
+Author{2}{Lastname}#=%=#Korhonen
+Author{2}{Email}#=%=#alk23@cam.ac.uk
+Author{2}{Affiliation}#=%=#Cambridge University
+
+==========

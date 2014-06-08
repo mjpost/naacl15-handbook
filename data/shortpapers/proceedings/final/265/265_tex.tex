@@ -1,0 +1,387 @@
+\documentclass[11pt]{article}
+\usepackage{acl2014}
+\usepackage{times}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{latexsym}
+\special{papersize=210mm,297mm} % to avoid having to use "-t a4" with dvips 
+\newcommand{\argmax}{\operatornamewithlimits{argmax}}
+
+\usepackage{multicol}
+\usepackage{bbm}
+\usepackage{url}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{array}
+\sloppy
+\newcommand{\superscript}[1]{\ensuremath{^{\textrm{#1}}}} 
+\def\sharedaffiliation{\end{tabular}\\ \begin{tabular}{c}}% Updated by TeXSupport on 23/04/2013
+\def\wu{\superscript{1}} 
+\def\comma{\superscript{,}} 
+\def\wg{\superscript{2}}
+
+
+\title{Sprinkling Topics for Weakly Supervised Text Classification}
+\author{Swapnil Hingmire\wu\comma\wg \\
+  {\tt swapnil.hingmire@tcs.com}
+ \\\And
+  Sutanu Chakraborti\wg\\ 
+  {\tt sutanuc@cse.iitm.ac.in}
+\end{tabular}\hss\egroup \hfil\hfil\egroup
+          \vskip 0.25in plus 1fil minus 0.125in
+           \hbox to \linewidth\bgroup\large \hfil\hfil
+             \hbox to 0pt\bgroup\hss \begin{tabular}[t]{c}
+ {\wu}Systems Research Lab, Tata Research Development and Design Center, Pune, India\\
+ {\wg}Department of Computer Science and Engineering,\\Indian Institute of Technology Madras, Chennai, India
+}
+% \author{Author 1 \\ Address line \\  ... \\ Address line
+%         \And  ... \And
+%         Author n \\ Address line \\ ... \\ Address line}
+\date{}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+Supervised text classification algorithms require a large number of documents labeled by humans, that involve a labor-intensive and time consuming process. In this paper, we propose a weakly supervised algorithm in which supervision comes in the form of labeling of Latent Dirichlet Allocation (LDA) topics. We then use this weak supervision to ``sprinkle'' artificial words to the training documents to identify topics in accordance with the underlying class structure of the corpus based on the higher order word associations. We evaluate this approach to improve performance of text classification on three real world datasets.
+\end{abstract}
+
+\section{Introduction}\label{Introduction}
+%Document classification is an essential technique which helps users to organize and use the knowledge hidden in the large collection of documents such as World Wide Web.
+In supervised text classification learning algorithms, the learner (a program) takes
+human labeled documents as input and learns a decision function that can classify a
+previously unseen document to one of the predefined classes. 
+Usually a large number of documents labeled by humans are used by the learner
+to classify unseen documents with adequate accuracy. Unfortunately, labeling a large
+number of documents is a labor-intensive and time consuming process.
+%Naive Bayes, Support Vector Machines (SVM), k-Nearest Neighbors (k-NN), Decision trees are examples of such algorithms.
+
+In this paper, we propose a text classification algorithm based on Latent Dirichlet Allocation (LDA) \cite{Blei:Latent} which does not need labeled documents. LDA is an unsupervised probabilistic topic model and it is widely used to discover latent semantic structure of a document collection by modeling words in the documents. Blei et al. \cite{Blei:Latent} used LDA topics as features in text classification, but they use labeled documents while learning a classifier. sLDA \cite{blei2007supervised}, DiscLDA \cite{lacoste2008disclda} and MedLDA \cite{Zhu:2009} are few extensions of LDA which model both class labels and words in the documents. These models can be used for text classification, but they need expensive labeled documents.
+
+An approach that is less demanding in terms of knowledge engineering is ClassifyLDA (Hingmire et al., 2013). In this approach, a topic model on a given set of unlabeled training documents is constructed using LDA, then an annotator assigns a class label to some topics based on their most probable words. These labeled topics are used to create a new topic model such that in the new model topics are better aligned to class labels. A class label is assigned to a test document on the basis of its most prominent topics. We extend ClassifyLDA algorithm by ``sprinkling'' topics to unlabeled documents.
+
+Sprinkling \cite{DBLP:conf/ecir/ChakrabortiLWW06} integrates class labels of documents into Latent Semantic Indexing (LSI)\cite{Deerwester:Indexing}. The basic idea involves encoding of class labels as artificial words which are ``sprinkled'' (appended) to training documents. As LSI uses higher order word associations \cite{Kontostathis:2006:FUL:1138797.1138801}, sprinkling of artificial words gives better and class-enriched latent semantic structure. However, Sprinkled LSI is a supervised technique and hence it requires expensive labeled documents. The paper revolves around the idea of labeling topics (which are far fewer in number compared to documents) as in ClassifyLDA, and using these labeled topic for sprinkling. 
+    
+As in ClassifyLDA, we ask an annotator to assign class labels to a set of topics inferred on the unlabeled training documents. We use the labeled topics to find probability distribution of each training document over the class labels. We create a set of artificial words corresponding to a class label and add (or sprinkle) them to the document. The number of such artificial terms is proportional to the probability of generating the document by the class label. We then infer a set of topics on the sprinkled training documents. As LDA uses higher order word associations \cite{Lee:2010:ECF:1748111.1748318} while discovering topics, we hypothesize that sprinkling will improve text classification performance of ClassifyLDA. We experimentally verify this hypothesis on three real world datasets.
+\section{Related Work}\label{Sec:BG_RW}
+Several researchers have proposed semi-supervised text classification algorithms with the aim of reducing  the time, effort and cost involved in labeling documents. These algorithms can be broadly categorized into three categories depending on how supervision is provided. In the first category, a small set of labeled documents and a large set of unlabeled documents is used while learning a classifier. Semi-supervised text classification algorithms proposed in \cite{Nigam:Text}, \cite{Joachims:1999:TIT:645528.657646}, \cite{Zhu02learningfrom} and \cite{Blum:1998:CLU:279943.279962} are a few examples of this type. However, these algorithms are sensitive to initial labeled documents and hyper-parameters of the algorithm.
+
+In the second category, supervision comes in the form of labeled words (features). \cite{Liu:2004:Text} and \cite{Druck:2008:LLF:1390334.1390436} are a few examples of this type. An important limitation of these algorithms is coming up with a small set of words that should be presented to the annotators for labeling. Also a human annotator may discard or mislabel a polysemous word, which may affect the performance of a text classifier.
+
+The third type of semi-supervised text classification algorithms is based on active learning. In active learning, particular unlabeled documents or features are selected and queried to an oracle (e.g. human annotator).\cite{DBLP:conf/pkdd/GodboleHSC04}, \cite{Raghavan:2006:ALF:1248547.1248608}, \cite{DBLP:conf/emnlp/DruckSM09} are a few examples of active learning based text classification algorithms. However, these algorithms are sensitive to the sampling strategy used to query documents or features.
+
+In our approach, an annotator does not label documents or words, rather she labels a small set of interpretable topics which are inferred in an unsupervised manner. These topics are very few, when compared to the number of documents. As the most probable words of topics are representative of the dataset, there is no need for the annotator to search for the right set of features for each class. As LDA topics are semantically more meaningful than individual words and can be acquired easily, our approach overcomes limitations of the semi-supervised methods discussed above.
+\section{Background}\label{sec:DC}
+\subsection{LDA}
+LDA is an unsupervised probabilistic generative model for collections of discrete data such as text documents. The generative process of LDA can be described as follows:\\
+\indent 1. for each topic $t$, draw a distribution over words: \begin{footnotesize}
+ $\phi_t \sim \mathrm{Dirichlet}(\beta_w)$ \end{footnotesize}\\
+\indent 2. for each document $d \in D$\\
+\indent \indent a. Draw a vector of topic proportions:\\\indent \indent \indent \begin{footnotesize}$\theta_d \sim \mathrm{Dirichlet}(\alpha_t)$\end{footnotesize}\\
+\indent \indent b. for each word $w$ at position $n$ in $d$\\
+\indent \indent \indent i. Draw a topic assignment:\\ \indent \indent \indent \begin{footnotesize}$z_{d,n} \sim \mathrm{Multinomial}(\theta_d)$\end{footnotesize}\\
+\indent \indent \indent ii. Draw a word:\\ \indent \indent \indent \begin{footnotesize}$w_{d,n} \sim \mathrm{Multinomial}(z_{d,n})$\end{footnotesize}\\
+Where, $T$ is the number of topics, $\phi_t$ is the word probabilities for topic $t$, $\theta_d$ is the topic probability distribution, $z_{d,n}$ is topic assignment and $w_{d,n}$ is word assignment for nth word position in document $d$ respectively. $\alpha_t$ and $\beta_w$ are topic and word Dirichlet priors.
+
+The key problem in LDA is posterior inference. The posterior inference involves the
+inference of the hidden topic structure given the observed documents. However, computing the
+exact posterior inference is intractable. In this paper we estimate approximate posterior inference using collapsed Gibbs sampling \cite{Griffiths:Finding}.
+
+The Gibbs sampling equation used to update the assignment of a topic \textit{t} to the word $w \in W$ at the position \textit{n} in document \textit{d}, conditioned on $\alpha_t$, $\beta_w$ is:
+\begin{align}\label{GibbsUpdate1}\footnotesize
+\lefteqn{P(z_{d,n}=t|z_{d,\neg n},w_{d,n}=w, \alpha_t, \beta_w)\propto} & \nonumber \\ 
+& \frac{\psi_{w,t}+\beta_w -1}{\sum_{v \in W} \psi_{v,t} + \beta_v -1}\times(\Omega_{t,d} + \alpha_t -1) 
+\end{align}
+where $\psi_{w,c}$ is the count of the word $w$ assigned to the topic $c$, $\Omega_{c,d}$ is the count of the topic $c$ assigned to words in the document $d$ and $W$ is the vocabulary of the corpus. We use a subscript $d,\neg n$ to denote the current token, $z_{d,n}$ is ignored in the Gibbs sampling update. After performing collapsed Gibbs sampling using equation \ref{GibbsUpdate1}, we use word topic assignments to compute a point estimate of the distribution over words $\phi_{w,c}$ and a point estimate of the posterior distribution over topics for each document \textit{d} ($\theta_{d}$) is:
+\vspace{-10mm}
+\begin{multicols}{2}
+  \begin{equation}\label{GibbsSamplingOp1}\footnotesize
+\phi_{w,t} = \frac{\psi_{w,t} + \beta_w}{\left[\sum\limits_{v \in W} \psi_{v,t} + \beta_v\right]}
+\end{equation}
+\break
+\begin{equation}\label{GibbsSamplingOp2}\footnotesize
+\theta_{t,d} = \frac{\Omega_{t,d} + \alpha_t}{\left[\sum\limits_{i=1}^{T} \Omega_{i,d} + \alpha_i\right]}
+\end{equation}
+\end{multicols}
+Let $M_{D} = <Z,\Phi,\Theta>$ be the hidden topic structure, where \textit{Z} is per word per document topic assignment, $\Phi = \{\phi_{t}\}$ and $\Theta=\{\theta_{d}\}$.
+\subsection{Sprinkling}
+\cite{DBLP:conf/ecir/ChakrabortiLWW06} propose a simple approach called ``sprinkling'' to incorporate class labels of documents into LSI. In sprinkling, a set of artificial words are appended to a training document which are specific to the class label of the document. Consider a case of binary classification with classes $c_1$ and $c_2$. If a document \textit{d} belongs to the class $c_1$ then a set of artificial words which represent the class $c_1$ are appended into the document \textit{d}, otherwise a set of artificial words which represent the class $c_2$ are appended. 
+
+Singular Value Decomposition (SVD) is then performed on the sprinkled training documents and a lower rank approximation is constructed by ignoring dimensions corresponding to lower singular values. Then, the sprinkled terms are removed from the lower rank approximation. \cite{DBLP:conf/ecir/ChakrabortiLWW06} empirically show that sprinkled words boost higher order word associations and projects documents with same class labels close to each other in latent semantic space.
+\section{Topic Sprinkling in LDA}
+In our text classification algorithm, we first infer a set of topics on the given unlabeled document corpus. We then ask a human annotator to assign one or more class labels to the topics based on their most probable words. We use these labeled topics to create a new LDA model as follows. If the topic assigned to the word \textit{w} at the position \textit{n} in document \textit{d} is \textit{t}, then we replace it by the class label assigned to the topic \textit{t}. If more than one class labels are assigned to the topic \textit{t}, then we randomly select one of the class labels assigned to the topic \textit{t}. If the annotator is unable to label a topic then we randomly select a class label from the set of all class labels. We then update the new LDA model using collapsed Gibbs sampling.% In the new LDA model number of topics are same as the number of class labels. 
+
+We use this new model to infer the probability distribution of each unlabeled training document over the class labels. Let, $\theta_{c,d}$ be the probability of generating document \textit{d} by class \textit{c}. We then sprinkle \textit{s} artificial words of class label \textit{c} to document \textit{d}, such that $s=K*\theta_{c,d}$ for some constant \textit{K}.
+
+We then infer a set of $|C|$ number of topics on the sprinkled dataset using collapsed Gibbs sampling, where  \textit{C} is the set of class labels of the training documents. We modify collapsed Gibbs sampling update in Equation \ref{GibbsUpdate1} to carry class label information while inferring topics. If a word in a document is a sprinkled word then while sampling a class label for it, we sample the class label associated with the sprinkled word, otherwise we sample a class label for the word using Gibbs update in Equation \ref{GibbsUpdate1}.
+
+We name this model as Topic Sprinkled LDA (TS-LDA). While classifying a test document, its probability distribution over class labels is inferred using TS-LDA model and it is classified to its most probable class label. 
+Algorithm for TS-LDA is summarized in Table \ref{Chap2:Algo:GibbsSampling}.
+\begin{table}[!t]\small
+\centering 
+\begin{tabular}{p{0.45\textwidth}}
+\hline
+\begin{itemize}
+\item \textbf{Input:} unlabeled document corpus-\textit{D}, number of topics-\textit{T} and number of sprinkled terms-\textit{K}
+\end{itemize}
+\begin{enumerate}
+\item Infer \textit{T} number of topics on \textit{D} for LDA using collapsed Gibbs sampling. Let $M_{D}$ be the hidden topic structure of this model.% (per word per document topic assignment).
+\item Ask an annotator to assign one or more class labels $c_i \in C$ to a topic based on its 30 most probable words.
+\item \textbf{Initialization:} For \textit{n}th word in document $d \in D$
+	  \newline if $z_{d,n}=t$ and the annotator has labeled topic \textit{t} with $c_i$ then, $z_{d,n}=c_i$
+\item Update $M_D$ using collapsed Gibbs sampling update in Equation \ref{GibbsUpdate1}.
+\item \textbf{Sprinkling:} For each document $d \in D$:
+	\begin{enumerate}
+	\item Infer a probability distribution $\theta_{d}$ over class labels using $M_D$ using Equation \ref{GibbsSamplingOp2}. 
+	\item Let, $\theta_{c,d}$ be probability of generating document \textit{d} by class \textit{c}.
+	\item Insert $K*\theta_{c,d}$ distinct words associated with the class $c$ to the document \textit{d}.
+	\end{enumerate}	 
+\item Infer $|C|$ number of topics on the sprinkled document corpus \textit{D} using collapsed Gibbs sampling update.
+\item Let $M^{\prime}_D$ be the new hidden topic structure. Let us call this hidden structure as TS-LDA.
+\item \textbf{Classification of an unlabled document \textit{d}}
+	\begin{enumerate}
+	\item Infer $\theta_{d}^{\prime}$ for document \textit{d} using $M_{D}^{\prime}$.
+	\item $k = \argmax_i \theta^{\prime}_{i,d}$  
+	\item $y_d = c_k$
+	\end{enumerate}
+\end{enumerate}
+\tabularnewline \hline
+\end{tabular}\caption{Algorithm for sprinkling LDA topics for text classification}
+\label{Chap2:Algo:GibbsSampling} 
+\end{table}
+% A * indicates that TS-LDA performs significantly better than ClassifyLDA and a \wg in the coherence comparisons indicates that TS-LDA performs significantly better than LDA, using a two-tailed paired t-test, $p = 0.05$.}
+\section{Experimental Evaluation} \label{sec:Experiments}
+We determine the effectiveness of our algorithm in relation to ClassifyLDA algorithm proposed in \cite{Hingmire:2013:DCT:2484028.2484140}.  We evaluate and compare our text classification algorithm by computing Macro averaged F1. As the inference of LDA is approximate, we repeat all the experiments for each dataset ten times and report average Macro-F1. Similar to \cite{Blei:Latent} we also learn supervised SVM classifier (LDA-SVM) for each dataset using topics as features and report average Macro-F1.
+
+%We also evaluate and compare coherence of topics inferred by TS-LDA model using the automated metric of topic coherence proposed in \cite{Mimno:2011:OSC:2145432.2145462}. This coherence metric relies upon word co-occurrence statistics of the training documents and does not need held-out reference documents. We expect a set of topics from LDA which are different from each other and specific to a certain concept or theme. This metric captures how much the most probable words of a topic belong to a single concept or theme, on the basis of co-occurrence of words within the training documents.
+\subsection{Datasets}
+We use the following datasets in our experiments.\\
+1. \textbf{20 Newsgroups:}  This dataset contains messages across twenty newsgroups. In our experiments, we use \textit{bydate} version of the 20Newsgroup dataset\footnote{\url{http://qwone.com/~jason/20Newsgroups/}}.  This version of the dataset is divided into training (60\%) and test (40\%) datasets. We construct classifiers on training datasets and evaluate them on test datasets.\\
+2. \textbf{SRAA: Simulated/Real/Aviation/Auto UseNet data\footnote{\url{http://people.cs.umass.edu/~mccallum/data.html}}:} This dataset contains 73,218 UseNet articles from four discussion groups, for simulated auto racing (sim\_auto), simulated aviation (sim\_aviation), real autos (real\_auto), real aviation (real\_aviation). Following are the three classification tasks associated with this dataset.\\
+1. sim\_auto vs sim\_aviation vs real\_auto vs real\_aviation\\
+2. auto (sim\_auto + real\_auto) vs aviation (sim\_aviation + real\_aviation)\\
+3. simulated (sim\_auto + sim\_aviation) vs real (real\_auto + real\_aviation)\\
+We randomly split SRAA dataset such that 80\% is used as training data and remaining is used as test data.\\
+3. \textbf{WebKB:} The WebKB dataset\footnote{\url{http://www.cs.cmu.edu/~webkb/}}  contains 8145 web pages gathered from university computer science departments. The task is to classify the webpages as \textit{student, course, faculty} or \textit{project}. We randomly split this dataset such that 80\% is used as training and 20\% is used as test data.
+
+We preprocess these datasets by removing HTML tags and stop-words.
+
+For various subsets of the 20Newsgroups and WebKB datasets discussed above, we choose number of topics as twice the number of classes.  For SRAA dataset we infer 8 topics on the training dataset and label these 8 topics for all the three classification tasks. While labeling a topic, we show its 30 most probable words to the human annotator.
+
+Similar to \cite{Griffiths:Finding}, we set symmetric Dirichlet word prior ($\beta_w$) for each topic to 0.01 and symmetric Dirichlet topic prior ($\alpha_t$) for each document to 50/\textit{T}, where T is number of topics. We set \textit{K} i.e. maximum number of words sprinkled per class to 10.
+\subsection{Results}
+Table \ref{Results_20Newsgroup} shows experimental results. We can observe that, TS-LDA performs better than ClassifyLDA in 5 of the total 9 subsets. For the \textit{comp-religion-sci} dataset TS-LDA and ClassifyLDA have the same performance. However, ClassifyLDA performs better than TS-LDA for the three classification tasks of SRAA dataset. We can also observe that, performance of TS-LDA is close to supervised LDA-SVM. We should note here that in TS-LDA, the annotator only labels a few topics and not a single document. Hence, our approach exerts a low cognitive load on the annotator, at the same time achieves text classification performance close to LDA-SVM which needs labeled documents.
+\begin{table*}[!ht]\small
+\centering 
+\begin{tabular}{|p{4.5cm}|c|p{1.9cm}|p{1.7cm}|p{2cm}|}
+\hline
+& &	\multicolumn{3}{c|}{\textbf{Text Classification} (Macro-F1)}	\tabularnewline \cline{2-5}
+Dataset	&	\# Topics	&	ClassifyLDA	&	TS-LDA	& 	LDA-SVM	\tabularnewline \hline
+\multicolumn{5}{|l|}{\textbf{20Newsgroups}}             \tabularnewline \hline									
+med-space	&	4	&	0.892	&	0.938	&	0.933	\tabularnewline \hline
+politics-religion	&	4	&	0.836	&	0.897	&	0.901	\tabularnewline \hline
+politics-sci	&	4	&	0.887	&	0.901	&	0.910	\tabularnewline \hline
+comp-religion-sci	&	6	&	0.853	&	0.853	&	0.872	\tabularnewline \hline
+politics-rec-religion-sci	&	8	&	0.842	&	0.858	&	0.862	\tabularnewline \hline
+\multicolumn{5}{|l|}{\textbf{SRAA}}             \tabularnewline \hline									
+real\_auto-real\_aviation-sim\_auto-sim\_aviation	&	8	&	0.766	&	0.741	&	0.820	\tabularnewline \hline
+auto-aviation	&	8	&	0.926	&	0.910	&	0.934	\tabularnewline \hline
+real-sim	&	8	&	0.918	&	0.902	&	0.923	\tabularnewline \hline
+\multicolumn{5}{|l|}{\textbf{WebKB}}             \tabularnewline \hline									
+WebKB	&	8	&	0.627	&	0.672	&	0.730	\tabularnewline \hline
+\end{tabular}\caption{Experimental results of text classification on various datasets.}
+\label{Results_20Newsgroup} 
+\end{table*}
+\subsection{Example}
+Table \ref{Example_topics_ms} shows most prominent words of four topics inferred on the \textit{med-space} subset of the 20Newsgroup dataset. We can observe here that most prominent words of the first topic do not represent a single class, while other topics represent either \textit{med (medical)} or \textit{space} class. We can say here that, these topics are not ``coherent''.
+
+\begin{table}[h]\small
+\centering 
+\begin{tabular}{|p{0.3cm}|p{4.5cm}|p{1.5cm}|}
+\hline
+\textbf{ID} & \textbf{Most prominent words in the topic} & \textbf{Class (med / space)} \tabularnewline \hline
+0	&	science scientific idea large theory bit pat thought problem isn  	&	\textbf{med + space}	\tabularnewline \hline
+1	&	information \textbf{health} research \textbf{medical} water \textbf{cancer hiv aids} children institute newsletter  &	\textbf{med}	\tabularnewline \hline
+2	&	msg \textbf{food doctor disease pain} day \textbf{treatment blood} steve dyer \textbf{medicine symptoms}  &	\textbf{med}	\tabularnewline \hline
+3	&	\textbf{space nasa launch earth orbit moon shuttle} data \textbf{lunar satellite}  &	\textbf{space}	\tabularnewline \hline
+\end{tabular}\caption{\small{Topic labeling on the \textit{med-space} subset of the 20Newsgroup dataset}}
+\label{Example_topics_ms} 
+\end{table}
+We use these labeled topics and create a TS-LDA model using the algorithm described in Table \ref{Chap2:Algo:GibbsSampling}. Table \ref{Example_topics_ms_sp} shows words corresponding to the top two topics of the TS-LDA model. We can observe here that these two topics are more coherent than the topics in Table \ref{Example_topics_ms}.
+\begin{table}[h]\small
+\centering 
+\begin{tabular}{|p{0.3cm}|p{4.5cm}|p{1.5cm}|}
+\hline
+\textbf{ID} & \textbf{Most prominent words in the topic} & \textbf{Class (med / space)} \tabularnewline \hline
+0	&	msg \textbf{medical health food disease} years problem information \textbf{doctor pain cancer}  	&	\textbf{med}	\tabularnewline \hline
+1	&	\textbf{space launch earth} data \textbf{orbit moon} program \textbf{shuttle lunar satellite}  &	\textbf{space}	\tabularnewline \hline
+\end{tabular}\caption{\small{Topics inferred on the \textit{med-space} subset of the 20Newsgroup dataset after sprinkling labeled topics from Table \ref{Example_topics_ms}.}}
+\label{Example_topics_ms_sp} 
+\end{table}
+
+Hence, we can say here that, in addition to text classification, sprinkling improves coherence of topics.
+
+We should note here that, in ClassifyLDA, the annotator is able to assign a single class label to a topic. If the annotator assigns a wrong class label to a topic representing multiple classes (e.g. first topic in Table \ref{Example_topics_ms}), then it may affect the performance of the resulting classifier. However, in our approach the annotator can assign multiple class labels to a topic, hence our approach is more flexible for the annotator to encode her domain knowledge efficiently. 
+%\subsection{Results}
+%Table \ref{Results_20Newsgroup} shows experimental results. We can observe that, TS-LDA performs significantly better in text classification than ClassifyLDA in 13 of the total 15 subsets with the same labeling efforts. Also, TS-LDA significantly improves coherence of topics in 13 of the total 15 subsets compared to both LDA and ClassifyfLDA algorithm. So we can say that labeling a set of topics and sprinkling words using the labeled topics yields coherent topics. It was observed that, due to sprinkling, probability of observing two words under the same topic was increased when the words strongly represent the same class, and decreased otherwise. For example in ``money-fx vs rest'' classification task probability of observing ``money'' and ``bank'' under the same topic  was increased as they strongly represent the class \textit{money-fx}, on the other hand the probability was decreased for ``money'' and ``refinery''. This sprinkling effect in turn improved text classification performance by 16.5\%. 
+\section{Conclusions and Future Work}\label{Sec:Conclusions}
+%In this paper, we propose an inexpensive document classification algorithm based on the generative property of LDA. The algorithm relies on labeling topics which are far fewer than number of documents, and hence reduces knowledge engineering overheads. Our experiments show that sprinkling of class specific artificial terms improves classification performance of ClassifyLDA as well as improves coherence of topics compared to standard LDA and ClassifyLDA algorithm. In future we would like to extend our algorithm towards multi-label text classification.
+In this paper we propose a novel algorithm that classifies documents based on class labels over few topics. This reduces the need to label a large collection of documents. We have used the idea of sprinkling originally proposed in the context of supervised Latent Semantic Analysis, but the setting here is quite different. Unlike the work in \cite{DBLP:conf/ecir/ChakrabortiLWW06}, we do not assume that we have class labels over the set of training documents. Instead, to realize our goal of reducing knowledge acquisition overhead, we propose a way of propagating knowledge of few topic labels to the words and inducing a new topic distribution that has its topics more closely aligned to the class labels. The results show that the approach can yield performance comparable to entirely supervised settings. In future work, we also envision the possibility of sprinkling knowledge from background knowledge sources like Wikipedia \cite{ESA} to realize an alignment of topics to Wikipedia concepts. We would like to study effect of change in number of topics on the text classification performance. We will also explore techniques which will help annotators to encode their domain knowledge efficiently when the topics are not well aligned to the class labels.
+%\\1\\2\\3\\4
+\bibliographystyle{acl}
+%\bibliography{refs}
+\begin{thebibliography}{10}
+
+\bibitem[\protect\citename{Blei and McAuliffe}2007]{blei2007supervised}
+David~M. Blei and Jon~D. McAuliffe.
+\newblock 2007.
+\newblock Supervised Topic Models.
+\newblock In {\em NIPS}.
+
+\bibitem[\protect\citename{Blei \bgroup et al.\egroup }2003]{Blei:Latent}
+David~M. Blei, Andrew~Y. Ng, and Michael~I. Jordan.
+\newblock 2003.
+\newblock Latent Dirichlet Allocation.
+\newblock {\em The Journal of Machine Learning Research}, 3:993--1022, March.
+
+\bibitem[\protect\citename{Blum and Mitchell}1998]{Blum:1998:CLU:279943.279962}
+Avrim Blum and Tom Mitchell.
+\newblock 1998.
+\newblock Combining Labeled and Unlabeled Data with Co-Training.
+\newblock In {\em Proceedings of the eleventh annual conference on
+  Computational learning theory}, pages 92--100.
+
+\bibitem[\protect\citename{Chakraborti \bgroup et al.\egroup
+  }2007]{DBLP:conf/ecir/ChakrabortiLWW06}
+Sutanu Chakraborti, Rahman Mukras, Robert Lothian, Nirmalie Wiratunga, Stuart N.~K. Watt, David J. Harper.
+\newblock 2007.
+\newblock Supervised Latent Semantic Indexing Using Adaptive Sprinkling.
+\newblock In {\em IJCAI}, pages 1582-1587.
+
+\bibitem[\protect\citename{Deerwester \bgroup et al.\egroup
+  }1990]{Deerwester:Indexing}
+Scott Deerwester, Susan~T. Dumais, George~W. Furnas, Thomas~K. Landauer, and
+  Richard Harshman.
+\newblock 1990.
+\newblock Indexing by Latent Semantic Analysis.
+\newblock {\em JASIS}, 41(6):391--407.
+
+\bibitem[\protect\citename{Druck \bgroup et al.\egroup
+  }2008]{Druck:2008:LLF:1390334.1390436}
+Gregory Druck, Gideon Mann, and Andrew McCallum.
+\newblock 2008.
+\newblock Learning from Labeled Features using Generalized Expectation
+  criteria.
+\newblock In {\em SIGIR}, pages 595--602.
+
+\bibitem[\protect\citename{Druck \bgroup et al.\egroup
+  }2009]{DBLP:conf/emnlp/DruckSM09}
+Gregory Druck, Burr Settles, and Andrew McCallum.
+\newblock 2009.
+\newblock Active Learning by Labeling Features.
+\newblock In {\em EMNLP}, pages 81--90.
+
+\bibitem[\protect\citename{Godbole \bgroup et al.\egroup
+  }2004]{DBLP:conf/pkdd/GodboleHSC04}
+Shantanu Godbole, Abhay Harpale, Sunita Sarawagi, and Soumen Chakrabarti.
+\newblock 2004.
+\newblock Document Classification through Interactive Supervision of Document
+  and Term Labels.
+\newblock In {\em PKDD}, pages 185--196.
+
+\bibitem[\protect\citename{Griffiths and Steyvers}2004]{Griffiths:Finding}
+Thomas~L. Griffiths and Mark Steyvers.
+\newblock 2004.
+\newblock Finding Scientific Topics.
+\newblock {\em PNAS}, 101(suppl. 1):5228--5235, April.
+
+\bibitem[\protect\citename{Hingmire \bgroup et al.\egroup
+  }2013]{Hingmire:2013:DCT:2484028.2484140}
+Swapnil Hingmire, Sandeep Chougule, Girish~K. Palshikar, and Sutanu
+  Chakraborti.
+\newblock 2013.
+\newblock Document Classification by Topic Labeling.
+\newblock In {\em SIGIR}, pages 877--880.
+
+\bibitem[\protect\citename{Joachims}1999]{Joachims:1999:TIT:645528.657646}
+Thorsten Joachims.
+\newblock 1999.
+\newblock Transductive Inference for Text Classification using Support Vector
+  Machines.
+\newblock In {\em ICML}, pages 200--209.
+
+\bibitem[\protect\citename{Kontostathis and
+  Pottenger}2006]{Kontostathis:2006:FUL:1138797.1138801}
+April Kontostathis and William~M. Pottenger.
+\newblock 2006.
+\newblock A Framework for Understanding Latent Semantic Indexing (LSI)
+  Performance.
+\newblock {\em Inf. Process. Manage.}, 42(1):56--73, January.
+
+\bibitem[\protect\citename{Lacoste-Julien \bgroup et al.\egroup
+  }2008]{lacoste2008disclda}
+Simon Lacoste-Julien, Fei Sha, and Michael~I. Jordan.
+\newblock 2008.
+\newblock DiscLDA: Discriminative Learning for Dimensionality Reduction and
+  Classification.
+\newblock In {\em NIPS}.
+
+\bibitem[\protect\citename{Lee \bgroup et al.\egroup
+  }2010]{Lee:2010:ECF:1748111.1748318}
+Sangno Lee, Jeff Baker, Jaeki Song, and James~C. Wetherbe.
+\newblock 2010.
+\newblock An Empirical Comparison of Four Text Mining Methods.
+\newblock In {\em Proceedings of the 2010 43rd Hawaii International Conference
+  on System Sciences}, pages 1--10.
+
+\bibitem[\protect\citename{Liu \bgroup et al.\egroup }2004]{Liu:2004:Text}
+Bing Liu, Xiaoli Li, Wee~Sun Lee, and Philip~S. Yu.
+\newblock 2004.
+\newblock Text Classification by Labeling Words.
+\newblock In {\em Proceedings of the 19th national conference on Artifical
+  intelligence}, pages 425--430.
+
+%\bibitem[\protect\citename{Mimno \bgroup et al.\egroup
+%  }2011]{Mimno:2011:OSC:2145432.2145462}
+%David Mimno, Hanna~M. Wallach, Edmund Talley, Miriam Leenders, and Andrew
+%  McCallum.
+%\newblock 2011.
+%\newblock Optimizing Semantic Coherence in Topic Models.
+%\newblock In {\em Proceedings of the Conference on Empirical Methods in Natural
+%  Language Processing}, pages 262--272.
+
+\bibitem[\protect\citename{Nigam \bgroup et al.\egroup }2000]{Nigam:Text}
+Kamal Nigam, Andrew~Kachites McCallum, Sebastian Thrun, and Tom Mitchell.
+\newblock 2000.
+\newblock Text Classification from Labeled and Unlabeled Documents using EM.
+\newblock {\em Machine Learning - Special issue on information retrieval},
+  39(2-3), May-June.
+
+\bibitem[\protect\citename{Raghavan \bgroup et al.\egroup
+  }2006]{Raghavan:2006:ALF:1248547.1248608}
+Hema Raghavan, Omid Madani, and Rosie Jones.
+\newblock 2006.
+\newblock Active Learning with Feedback on Features and Instances.
+\newblock {\em JMLR}, 7:1655--1686, December.
+
+\bibitem[\protect\citename{Zhu and Ghahramani}2002]{Zhu02learningfrom}
+Xiaojin Zhu and Zoubin Ghahramani.
+\newblock 2002.
+\newblock Learning from Labeled and Unlabeled Data with Label Propagation.
+\newblock Technical report, Carnegie Mellon University.
+
+\bibitem[\protect\citename{Zhu \bgroup et al.\egroup }2009]{Zhu:2009}
+Jun Zhu, Amr Ahmed, and Eric~P. Xing.
+\newblock 2009.
+\newblock MedLDA: Maximum Margin Supervised Topic Models for Regression and
+  Classification.
+\newblock In {\em ICML}, pages 1257--1264.
+
+\bibitem[\protect\citename{Gabrilovich and Markovitch}2007]{ESA}
+Evgeniy Gabrilovich and Shaul Markovitch.
+\newblock 2007.
+\newblock Computing Semantic Relatedness Using Wikipedia-based Explicit Semantic Analysis.
+\newblock In {\em IJCAI}, pages 1606--1611.
+
+\end{thebibliography}
+\end{document}

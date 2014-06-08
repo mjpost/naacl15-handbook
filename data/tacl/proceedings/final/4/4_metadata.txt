@@ -1,0 +1,22 @@
+SubmissionNumber#=%=#4
+FinalPaperTitle#=%=#From image descriptions to visual denotations: New similarity metrics for semantic inference over event descriptions
+ShortPaperTitle#=%=#
+NumberOfPages#=%=#
+CopyrightSigned#=%=#
+JobTitle#==#
+Organization#==#
+Abstract#==#We present FLORS, a new part-of-speech tagger for domain adaptation. 
+FLORS uses robust representations that work especially well for unknown words
+and for known words with unseen tags. FLORS is simpler and faster than previous
+domain adaptation methods, yet it has significantly better accuracy than
+several baselines.
+Author{1}{Firstname}#=%=#Tobias
+Author{1}{Lastname}#=%=#Schnabel
+Author{1}{Email}#=%=#tbs49@cornell.edu
+Author{1}{Affiliation}#=%=#Department of Computer Science, Cornell University
+Author{2}{Firstname}#=%=#Hinrich
+Author{2}{Lastname}#=%=#Schütze
+Author{2}{Email}#=%=#inquiries@cislmu.org
+Author{2}{Affiliation}#=%=#Center for Information & Language Processing, University of Munich
+
+==========

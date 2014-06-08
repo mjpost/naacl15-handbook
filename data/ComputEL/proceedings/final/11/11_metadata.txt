@@ -1,0 +1,26 @@
+SubmissionNumber#=%=#11
+FinalPaperTitle#=%=#Estimating Native Vocabulary Size in an Endangered Language
+ShortPaperTitle#=%=#Estimating Native Vocabulary Size in an Endangered Language
+NumberOfPages#=%=#5
+CopyrightSigned#=%=#Timofey Arkhangelskiy
+JobTitle#==#
+Organization#==#National Research University Higher School of Economics,
+101000, 20 Myasnitskaya str.,
+Moscow, Russia
+Abstract#==#The vocabularies of endangered languages surrounded by more prestigious
+languages are gradually shrinking in size due to the influx of borrowed items.
+It is easy to observe that in such languages, starting from some frequency
+rank, the lower the frequency of a vocabulary item, the higher the probability
+of that item being a borrowed one. On the basis of the data from the Beserman
+dialect of Udmurt, the article provides a model according to which the portion
+of borrowed items among the items with frequency ranks less than r increases
+logarithmically in r, starting from some rank r0, while for more frequent
+items, it can behave differently. Apart from theoretical interest, the model
+can be used to roughly predict the total number of native items in the
+vocabulary based on a limited corpus of texts.
+Author{1}{Firstname}#=%=#Timofey
+Author{1}{Lastname}#=%=#Arkhangelskiy
+Author{1}{Email}#=%=#timarkh@gmail.com
+Author{1}{Affiliation}#=%=#National Research University Higher School of Economics
+
+==========

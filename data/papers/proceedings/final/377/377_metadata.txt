@@ -1,0 +1,30 @@
+SubmissionNumber#=%=#377
+FinalPaperTitle#=%=#Linguistic Structured Sparsity in Text Categorization
+ShortPaperTitle#=%=#Linguistic Structured Sparsity in Text Categorization
+NumberOfPages#=%=#11
+CopyrightSigned#=%=#Dani Yogatama
+JobTitle#==#
+Organization#==#Carnegie Mellon University
+5000 Forbes Avenue, Pittsburgh, PA 15213
+Abstract#==#We introduce three linguistically motivated structured regularizers
+based on parse trees, topics, and hierarchical word clusters for text
+categorization.
+These regularizers impose linguistic bias in feature weights,
+enabling us to incorporate prior knowledge into conventional bag-of-words
+models.
+We show that our structured regularizers consistently improve
+classification accuracies compared to
+standard regularizers that penalize features in isolation (such
+as lasso, ridge, and elastic net regularizers) on a range of datasets
+for various text prediction problems: topic classification, sentiment analysis,
+and forecasting.
+Author{1}{Firstname}#=%=#Dani
+Author{1}{Lastname}#=%=#Yogatama
+Author{1}{Email}#=%=#dyogatama@cs.cmu.edu
+Author{1}{Affiliation}#=%=#Carnegie Mellon University
+Author{2}{Firstname}#=%=#Noah A.
+Author{2}{Lastname}#=%=#Smith
+Author{2}{Email}#=%=#nasmith@cs.cmu.edu
+Author{2}{Affiliation}#=%=#Carnegie Mellon University
+
+==========

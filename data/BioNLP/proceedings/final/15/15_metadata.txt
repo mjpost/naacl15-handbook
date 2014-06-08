@@ -1,0 +1,28 @@
+SubmissionNumber#=%=#15
+FinalPaperTitle#=%=#A repository of semantic types in the MIMIC II database clinical notes
+ShortPaperTitle#=%=#A repository of semantic types in the MIMIC II database clinical notes
+NumberOfPages#=%=#5
+CopyrightSigned#=%=#Richard M. Osborne
+JobTitle#==#
+Organization#==#University of Colorado
+Abstract#==#This paper describes a comprehensive
+repository of all MetaMap output from the
+MIMIC II database, publicly available to researchers who 
+comply with usage agreements
+required by UMLS and MIMIC-II.
+Additionally, software for manipulating
+MetaMap output, ultimately available on Source Forge, is presented.
+Author{1}{Firstname}#=%=#Richard
+Author{1}{Lastname}#=%=#Osborne
+Author{1}{Email}#=%=#richard.osborne@ucdenver.edu
+Author{1}{Affiliation}#=%=#University of Colorado - School of Medicine
+Author{2}{Firstname}#=%=#Alan
+Author{2}{Lastname}#=%=#Aronson
+Author{2}{Email}#=%=#alan@nlm.nih.gov
+Author{2}{Affiliation}#=%=#National Library of Medicine
+Author{3}{Firstname}#=%=#Kevin
+Author{3}{Lastname}#=%=#Cohen
+Author{3}{Email}#=%=#kevin.cohen@gmail.com
+Author{3}{Affiliation}#=%=#Computational Bioscience Program, U. Colorado School of Medicine
+
+==========

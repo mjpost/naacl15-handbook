@@ -1,0 +1,31 @@
+SubmissionNumber#=%=#429
+FinalPaperTitle#=%=#Punctuation Processing for Projective Dependency Parsing
+ShortPaperTitle#=%=#Punctuation Processing for Projective Dependency Parsing
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Ma Ji
+JobTitle#==#student
+Organization#==#NO. 3-11, Wenhua Road, Heping District, Shenyang, P. R. China
+Abstract#==#Modern statistical dependency parsers assign lexical heads to punctuations as
+well as words. Punctuation parsing errors lead to low parsing accuracy on
+words.
+  In this work, we propose an alternative approach to addressing punctuation in
+dependency parsing. Rather than assigning lexical heads to punctuations, we
+treat punctuations as properties of their neighbouring words, used as features
+to guide the parser to build the dependency graph.
+  Integrating our method with a arc-standard parser yields a 93.06% unlabelled
+attachment score, which is the best accuracy by a single-model transition-based
+parser reported so far.
+Author{1}{Firstname}#=%=#Ji
+Author{1}{Lastname}#=%=#Ma
+Author{1}{Email}#=%=#majineu@gmail.com
+Author{1}{Affiliation}#=%=#Northeastern University
+Author{2}{Firstname}#=%=#Yue
+Author{2}{Lastname}#=%=#Zhang
+Author{2}{Email}#=%=#yue_zhang@sutd.edu.sg
+Author{2}{Affiliation}#=%=#Singapore University of Technology and Design
+Author{3}{Firstname}#=%=#Jingbo
+Author{3}{Lastname}#=%=#Zhu
+Author{3}{Email}#=%=#zhujingbo@mail.neu.edu.cn
+Author{3}{Affiliation}#=%=#Northeastern University
+
+==========

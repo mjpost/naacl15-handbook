@@ -1,0 +1,42 @@
+SubmissionNumber#=%=#25
+FinalPaperTitle#=%=#The Enrollment Effect: A Study of Amazon's Vine Program
+ShortPaperTitle#=%=#The Enrollment Effect: A Study of Amazon's Vine Program
+NumberOfPages#=%=#11
+CopyrightSigned#=%=#claire cardie
+JobTitle#==#
+Organization#==#Cornell University
+Department of Computer Science
+Ithaca, NY 14853
+Abstract#==#Do rewards from retailers such as free
+products and recognition in the form of
+status badges1 influence the recipient’s behavior?
+We present a novel application
+of natural language processing to detect
+differences in consumer behavior due to
+such rewards. Specifically, we investigate
+the “Enrollment” effect, i.e. whether receiving
+products for free affect how consumer
+reviews are written. Using data
+from Amazon’s Vine program, we conduct
+a detailed analysis to detect stylistic
+differences in product reviews written
+by reviewers before and after enrollment
+in the Vine program. Our analysis suggests
+that the “Enrollment” effect exists.
+Further, we are able to characterize the
+effect on syntactic and semantic dimensions.
+This work has implications for researchers,
+firms and consumer advocates
+studying the influence of user-generated
+content as these changes in style could potentially
+influence consumer decisions.
+Author{1}{Firstname}#=%=#Dinesh
+Author{1}{Lastname}#=%=#Puranam
+Author{1}{Email}#=%=#dp457@cornell.edu
+Author{1}{Affiliation}#=%=#Cornell University
+Author{2}{Firstname}#=%=#Claire
+Author{2}{Lastname}#=%=#Cardie
+Author{2}{Email}#=%=#cardie@cs.cornell.edu
+Author{2}{Affiliation}#=%=#Cornell University
+
+==========

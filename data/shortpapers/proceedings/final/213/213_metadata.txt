@@ -1,0 +1,34 @@
+SubmissionNumber#=%=#213
+FinalPaperTitle#=%=#Bilingual Event Extraction: a Case Study on Trigger Type Determination
+ShortPaperTitle#=%=#Bilingual Event Extraction: a Case Study on Trigger Type Determination
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Zhu Zhu
+JobTitle#==#
+Organization#==#School of Computer Science & Technology, Soochow University, Suzhou, Jiangsu, 215006
+Abstract#==#Event extraction generally suffers from the data sparseness problem. In this
+paper, we address this problem by utilizing the labeled data from two different
+languages. As a preliminary study, we mainly focus on the subtask of trigger
+type determination in event extraction. To make the training data in different
+languages help each other, we propose a uniform text representation with
+bilingual features to represent the samples and handle the difficulty of
+locating the triggers in the translated text from both monolingual and
+bilingual perspectives. Empirical studies demonstrate the effectiveness of the
+proposed approach to bilingual classification on trigger type determination.
+Author{1}{Firstname}#=%=#Zhu
+Author{1}{Lastname}#=%=#Zhu
+Author{1}{Email}#=%=#zhuzhu0020@126.com
+Author{1}{Affiliation}#=%=#School of Computer Science & Technology, Soochow University, Suzhou, Jiangsu, 215006
+Author{2}{Firstname}#=%=#Shoushan
+Author{2}{Lastname}#=%=#Li
+Author{2}{Email}#=%=#lishoushan@suda.edu.cn
+Author{2}{Affiliation}#=%=#Soochow University
+Author{3}{Firstname}#=%=#Guodong
+Author{3}{Lastname}#=%=#Zhou
+Author{3}{Email}#=%=#gdzhou@suda.edu.cn
+Author{3}{Affiliation}#=%=#Soochow University
+Author{4}{Firstname}#=%=#Rui
+Author{4}{Lastname}#=%=#Xia
+Author{4}{Email}#=%=#rxia@njust.edu.cn
+Author{4}{Affiliation}#=%=#Department of Computer Science, Nanjing University of Science and Technology, Nanjing, Jiangsu
+
+==========

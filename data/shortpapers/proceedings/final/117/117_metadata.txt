@@ -1,0 +1,32 @@
+SubmissionNumber#=%=#117
+FinalPaperTitle#=%=#Exploring the Relative Role of Bottom-up and Top-down Information in Phoneme Learning
+ShortPaperTitle#=%=#Exploring the Relative Role of Bottom-up and Top-down Information in Phoneme Learning
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Abdellah Fourtassi
+JobTitle#==#
+Organization#==#LSCP, 29 rue d'Ulm, 75014, Paris
+Abstract#==#We test both bottom-up and top-down approaches in learning the phonemic status
+of the sounds of English and Japanese. We used large corpora of spontaneous
+speech to provide the learner with an input that models both the linguistic
+properties and statistical regularities of each language. We found both
+approaches to help discriminate between allophonic and phonemic contrasts with
+a high degree of accuracy, although top-down cues proved to be effective only
+on an interesting subset of the data.
+Author{1}{Firstname}#=%=#Abdellah
+Author{1}{Lastname}#=%=#Fourtassi
+Author{1}{Email}#=%=#abdellah.fourtassi@gmail.com
+Author{1}{Affiliation}#=%=#ENS, Paris
+Author{2}{Firstname}#=%=#Thomas
+Author{2}{Lastname}#=%=#Schatz
+Author{2}{Email}#=%=#thomas.schatz@laposte.net
+Author{2}{Affiliation}#=%=#INRIA/ENS/CNRS
+Author{3}{Firstname}#=%=#Balakrishnan
+Author{3}{Lastname}#=%=#Varadarajan
+Author{3}{Email}#=%=#bvarada2@jhu.edu
+Author{3}{Affiliation}#=%=#JHU
+Author{4}{Firstname}#=%=#Emmanuel
+Author{4}{Lastname}#=%=#Dupoux
+Author{4}{Email}#=%=#emmanuel.dupoux@gmail.com
+Author{4}{Affiliation}#=%=#EHESS
+
+==========

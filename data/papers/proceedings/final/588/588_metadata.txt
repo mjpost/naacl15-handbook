@@ -1,0 +1,21 @@
+SubmissionNumber#=%=#588
+FinalPaperTitle#=%=#Automatic Keyphrase Extraction: A Survey of the State of the Art
+ShortPaperTitle#=%=#Automatic Keyphrase Extraction: A Survey of the State of the Art
+NumberOfPages#=%=#12
+CopyrightSigned#=%=#Kazi S. Hasan
+JobTitle#==#
+Organization#==#Computer Science Department
+The University of Texas at Dallas
+800 W. Campbell Rd., MS EC31
+Richardson, TX 75080, USA
+Abstract#==#We present a survey of the state of the art in keyphrase extraction.
+Author{1}{Firstname}#=%=#Kazi Saidul
+Author{1}{Lastname}#=%=#Hasan
+Author{1}{Email}#=%=#saidul@hlt.utdallas.edu
+Author{1}{Affiliation}#=%=#University of Texas at Dallas
+Author{2}{Firstname}#=%=#Vincent
+Author{2}{Lastname}#=%=#Ng
+Author{2}{Email}#=%=#vince@hlt.utdallas.edu
+Author{2}{Affiliation}#=%=#University of Texas at Dallas
+
+==========

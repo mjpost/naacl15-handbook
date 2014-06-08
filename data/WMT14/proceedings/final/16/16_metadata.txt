@@ -1,0 +1,40 @@
+SubmissionNumber#=%=#16
+FinalPaperTitle#=%=#LIMSI Submission for WMT'14 QE Task
+ShortPaperTitle#=%=#LIMSI Submission for WMT'14 QE Task
+NumberOfPages#=%=#7
+CopyrightSigned#=%=#Guillaume Wisniewski
+JobTitle#==#Assistant Professor
+Organization#==#LIMSI-CNRS
+BP 133
+F-91403 ORSAY CEDEX
+Abstract#==#This paper describes LIMSI participation to the WMT'14 Shared Task
+  on Quality Estimation; we took part to the word-level quality
+  estimation task for English to Spanish translations. Our system
+  relies on a random forest classifier, an ensemble method that has
+  been shown to be very competitive for this kind of task, when only a
+  few dense and continuous features are used.  Notably, only 16
+  features are used in our experiments. These features describe, on
+  the one hand, the quality of the association between the source
+  sentence and each target word and, on the other hand, the fluency of
+  the hypothesis. Since the evaluation criterion is the F1 measure, a
+  specific tuning strategy is proposed to select the optimal values
+  for the hyper-parameters. Overall, our system achieves a 0.67 F1
+  score on a randomly extracted test set.
+Author{1}{Firstname}#=%=#Guillaume
+Author{1}{Lastname}#=%=#Wisniewski
+Author{1}{Email}#=%=#guillaume.wisniewski@limsi.fr
+Author{1}{Affiliation}#=%=#Univ. Paris Sud and LIMSI-CNRS
+Author{2}{Firstname}#=%=#Nicolas
+Author{2}{Lastname}#=%=#Pécheux
+Author{2}{Email}#=%=#nicolas.pecheux@limsi.fr
+Author{2}{Affiliation}#=%=#LIMSI-CNRS
+Author{3}{Firstname}#=%=#Alexander
+Author{3}{Lastname}#=%=#Allauzen
+Author{3}{Email}#=%=#allauzen@limsi.fr
+Author{3}{Affiliation}#=%=#Université Paris-Sud / LIMSI-CNRS
+Author{4}{Firstname}#=%=#François
+Author{4}{Lastname}#=%=#Yvon
+Author{4}{Email}#=%=#yvon@limsi.fr
+Author{4}{Affiliation}#=%=#LIMSI/CNRS
+
+==========

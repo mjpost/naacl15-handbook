@@ -1,0 +1,59 @@
+SubmissionNumber#=%=#43
+FinalPaperTitle#=%=#Abu-MaTran at WMT 2014 Translation Task: Two-step Data Selection and RBMT-Style Synthetic Rules
+ShortPaperTitle#=%=#Abu-MaTran at WMT 2014 Translation Task: Two-step Data Selection and RBMT-Style Synthetic Rules
+NumberOfPages#=%=#7
+CopyrightSigned#=%=#Raphael Rubino
+JobTitle#==#
+Organization#==#Prompsit Language Engineering, S.L.
+Avenida Universidad, s/n.
+Edificio Quorum III. 
+03202 Elche (Alicante)
+Spain
+Abstract#==#This paper presents the machine translation systems submitted by the Abu-MaTran
+project to the WMT 2014 translation task. The language pair concerned is
+English-French with a focus on French as the target language. The French to
+English translation direction is also considered, based on the word alignment
+computed in the other direction. Large language and translation models are
+built using all the datasets provided by the shared task organisers, as well as
+the monolingual data from LDC. To build the translation models, we apply a
+two-step data selection method based on bilingual cross-entropy difference and
+vocabulary saturation, considering each parallel corpus individually. Synthetic
+translation rules are extracted from the development sets and used to train
+another translation model. We then interpolate the translation models,
+minimising the perplexity on the development sets, to obtain our final SMT
+system. Our submission for the English to French translation task was ranked
+second amongst nine teams and a total of twenty submissions.
+Author{1}{Firstname}#=%=#Raphael
+Author{1}{Lastname}#=%=#Rubino
+Author{1}{Email}#=%=#raphael.rubino@gmail.com
+Author{1}{Affiliation}#=%=#Prompsit Language Engineering
+Author{2}{Firstname}#=%=#Antonio
+Author{2}{Lastname}#=%=#Toral
+Author{2}{Email}#=%=#atoral@computing.dcu.ie
+Author{2}{Affiliation}#=%=#Dublin City Unversity
+Author{3}{Firstname}#=%=#Víctor M.
+Author{3}{Lastname}#=%=#Sánchez-Cartagena
+Author{3}{Email}#=%=#vmsanchez@prompsit.com
+Author{3}{Affiliation}#=%=#Prompsit Language Engineering and Universitat d'Alacant
+Author{4}{Firstname}#=%=#Jorge
+Author{4}{Lastname}#=%=#Ferrández-Tordera
+Author{4}{Email}#=%=#jferrandez@prompsit.com
+Author{4}{Affiliation}#=%=#Prompsit Language Engineering, S.L.
+Author{5}{Firstname}#=%=#Sergio
+Author{5}{Lastname}#=%=#Ortiz Rojas
+Author{5}{Email}#=%=#sergio@prompsit.com
+Author{5}{Affiliation}#=%=#
+Author{6}{Firstname}#=%=#Gema
+Author{6}{Lastname}#=%=#Ramírez-Sánchez
+Author{6}{Email}#=%=#gramirez@prompsit.com
+Author{6}{Affiliation}#=%=#Prompsit Language Engineering, S.L.
+Author{7}{Firstname}#=%=#Felipe
+Author{7}{Lastname}#=%=#Sánchez-Martínez
+Author{7}{Email}#=%=#fsanchez@dlsi.ua.es
+Author{7}{Affiliation}#=%=#Universitat d'Alacant
+Author{8}{Firstname}#=%=#Andy
+Author{8}{Lastname}#=%=#Way
+Author{8}{Email}#=%=#away@computing.dcu.ie
+Author{8}{Affiliation}#=%=#School of Computing, Dublin City University
+
+==========

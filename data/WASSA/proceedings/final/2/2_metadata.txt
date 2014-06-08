@@ -1,0 +1,35 @@
+SubmissionNumber#=%=#2
+FinalPaperTitle#=%=#Sentiment Classification on Polarity Reviews: An Empirical Study Using Rating-based Features
+ShortPaperTitle#=%=#Sentiment Classification on Polarity Reviews: An Empirical Study Using Rating-based Features
+NumberOfPages#=%=#8
+CopyrightSigned#=%=#Dai Quoc Nguyen
+JobTitle#==#
+Organization#==#VNU University of Engineering and Technology 
+302E3, 144 Xuan Thuy Street, Cau Giay District, Hanoi, Vietnam
+Abstract#==#We present a new feature type named rating-based feature and evaluate the
+contribution of this feature to the task of document-level sentiment analysis.
+We achieve state-of-the-art results on two publicly available standard polarity
+movie datasets: on the dataset consisting of 2000 reviews produced by Pang and
+Lee (2004) we obtain an accuracy of 91.6% while it is 89.87% evaluated on the
+dataset of 50000 reviews created by Maas et al. (2011). We also get a
+performance at 93.24% on our own dataset consisting of 233600 movie reviews,
+and we aim to share this dataset for further research in sentiment polarity
+analysis task.
+Author{1}{Firstname}#=%=#Dai Quoc
+Author{1}{Lastname}#=%=#Nguyen
+Author{1}{Email}#=%=#nquocdai@gmail.com
+Author{1}{Affiliation}#=%=#VNU University of Engineering and Technology
+Author{2}{Firstname}#=%=#Dat Quoc
+Author{2}{Lastname}#=%=#Nguyen
+Author{2}{Email}#=%=#datquocnguyen@gmail.com
+Author{2}{Affiliation}#=%=#VNU University of Engineering and Technology
+Author{3}{Firstname}#=%=#Thanh
+Author{3}{Lastname}#=%=#Vu
+Author{3}{Email}#=%=#thanh.vu@open.ac.uk
+Author{3}{Affiliation}#=%=#The Open University, Milton Keynes, UK
+Author{4}{Firstname}#=%=#Son Bao
+Author{4}{Lastname}#=%=#Pham
+Author{4}{Email}#=%=#sbpham@gmail.com
+Author{4}{Affiliation}#=%=#VNU University of Engineering and Technology
+
+==========

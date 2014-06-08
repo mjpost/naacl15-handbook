@@ -1,0 +1,36 @@
+SubmissionNumber#=%=#4
+FinalPaperTitle#=%=#Temporal Analysis of Language through Neural Language Models
+ShortPaperTitle#=%=#Temporal Analysis of Language through Neural Language Models
+NumberOfPages#=%=#5
+CopyrightSigned#=%=#Yoon Kim
+JobTitle#==#
+Organization#==#New York University
+Abstract#==#We provide a method for automatically detecting change in language across time
+through a chronologically trained neural language model. We train the model on
+the Google Books Ngram corpus to obtain word vector representations specific
+to each year, and identify words that have changed significantly from 1900 to
+2009. The model identifies words such as "cell" and "gay" as having changed
+during that time period. The model simultaneously identifies the specific years
+during which such words underwent change.
+Author{1}{Firstname}#=%=#Yoon
+Author{1}{Lastname}#=%=#Kim
+Author{1}{Email}#=%=#yoon.r.kim@gmail.com
+Author{1}{Affiliation}#=%=#New York University
+Author{2}{Firstname}#=%=#Yi-I
+Author{2}{Lastname}#=%=#Chiu
+Author{2}{Email}#=%=#yic211@nyu.edu
+Author{2}{Affiliation}#=%=#New York University
+Author{3}{Firstname}#=%=#Kentaro
+Author{3}{Lastname}#=%=#Hanaki
+Author{3}{Email}#=%=#kh1615@nyu.edu
+Author{3}{Affiliation}#=%=#New York University
+Author{4}{Firstname}#=%=#Darshan
+Author{4}{Lastname}#=%=#Hegde
+Author{4}{Email}#=%=#dh1806@nyu.edu
+Author{4}{Affiliation}#=%=#New York University
+Author{5}{Firstname}#=%=#Slav
+Author{5}{Lastname}#=%=#Petrov
+Author{5}{Email}#=%=#slav@petrovi.de
+Author{5}{Affiliation}#=%=#Google
+
+==========

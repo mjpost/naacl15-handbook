@@ -1,0 +1,25 @@
+SubmissionNumber#=%=#6
+FinalPaperTitle#=%=#From image descriptions to visual denotations: New similarity metrics for semantic inference over event descriptions
+ShortPaperTitle#=%=#
+NumberOfPages#=%=#
+CopyrightSigned#=%=#
+JobTitle#==#
+Organization#==#
+Abstract#==#We develop parsing oracles for two transition-based dependency parsers,
+including the arc-standard parser, solving a problem that was left open in
+(Goldberg and Nivre, 2013). We experimentally show that using these oracles in
+training yields superior parsing accuracies on many languages.
+Author{1}{Firstname}#=%=#Yoav
+Author{1}{Lastname}#=%=#Goldberg
+Author{1}{Email}#=%=#yoav.goldberg@gmail.com
+Author{1}{Affiliation}#=%=#Department of Computer Science, Bar Ilan University, Israel
+Author{2}{Firstname}#=%=#Francesco
+Author{2}{Lastname}#=%=#Sartorio
+Author{2}{Email}#=%=#sartorio@dei.unipd.it
+Author{2}{Affiliation}#=%=#Department of Information Engineering, University of Padua, Italy
+Author{3}{Firstname}#=%=#Giorgio
+Author{3}{Lastname}#=%=#Satta
+Author{3}{Email}#=%=#satta@dei.unipd.it
+Author{3}{Affiliation}#=%=#Department of Information Engineering, University of Padua, Italy
+
+==========

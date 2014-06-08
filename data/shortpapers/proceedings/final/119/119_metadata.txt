@@ -1,0 +1,31 @@
+SubmissionNumber#=%=#119
+FinalPaperTitle#=%=#Content Importance Models for Scoring Writing From Sources
+ShortPaperTitle#=%=#Content Importance Models for Scoring Writing From Sources
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Beata Beigman Klebanov
+JobTitle#==#
+Organization#==#Educational Testing Service, Princeton, NJ
+Abstract#==#Selection of information from external sources is an important skill assessed
+in educational measurement. We address an integrative summarization task used
+in an assessment of English proficiency for non-native speakers applying to
+higher education institutions in the USA. We evaluate a variety of content
+importance models that help predict which parts of the source material should
+be selected by the test-taker in order to succeed on this task.
+Author{1}{Firstname}#=%=#Beata
+Author{1}{Lastname}#=%=#Beigman Klebanov
+Author{1}{Email}#=%=#bbeigmanklebanov@ets.org
+Author{1}{Affiliation}#=%=#ETS
+Author{2}{Firstname}#=%=#Nitin
+Author{2}{Lastname}#=%=#Madnani
+Author{2}{Email}#=%=#nmadnani@ets.org
+Author{2}{Affiliation}#=%=#Educational Testing Service
+Author{3}{Firstname}#=%=#Jill
+Author{3}{Lastname}#=%=#Burstein
+Author{3}{Email}#=%=#jburstein@ets.org
+Author{3}{Affiliation}#=%=#ETS
+Author{4}{Firstname}#=%=#Swapna
+Author{4}{Lastname}#=%=#Somasundaran
+Author{4}{Email}#=%=#swapna.sundaran@gmail.com
+Author{4}{Affiliation}#=%=#Educational Testing Services
+
+==========

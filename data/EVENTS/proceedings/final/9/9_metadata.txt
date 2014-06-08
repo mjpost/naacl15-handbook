@@ -1,0 +1,30 @@
+SubmissionNumber#=%=#9
+FinalPaperTitle#=%=#Is the Stanford Dependency Representation Semantic?
+ShortPaperTitle#=%=#Is the Stanford Dependency Representation Semantic?
+NumberOfPages#=%=#5
+CopyrightSigned#=%=#Rachel Rudinger
+JobTitle#==#
+Organization#==#Johns Hopkins University
+3400 North Charles Street
+Baltimore, Maryland 21218
+Abstract#==#The Stanford Dependencies are a deep syntactic representation that are widely
+used for semantic tasks, like Recognizing Textual Entailment. But do they
+capture all of the semantic information a meaning representation ought to
+convey? This paper explores this question by investigating the feasibility of 
+mapping Stanford dependency parses to Hobbsian Logical Form, a practical,
+event-theoretic semantic representation, using only a set of deterministic
+rules. Although we find that such a mapping is possible in a large number of
+cases, we also find cases for which such a mapping seems to require information
+beyond what the Stanford Dependencies encode. These cases shed light on the
+kinds of semantic information that are and are not present in the Stanford
+Dependencies.
+Author{1}{Firstname}#=%=#Rachel
+Author{1}{Lastname}#=%=#Rudinger
+Author{1}{Email}#=%=#rudinger@jhu.edu
+Author{1}{Affiliation}#=%=#Johns Hopkins University
+Author{2}{Firstname}#=%=#Benjamin
+Author{2}{Lastname}#=%=#Van Durme
+Author{2}{Email}#=%=#vandurme@cs.jhu.edu
+Author{2}{Affiliation}#=%=#JHU
+
+==========

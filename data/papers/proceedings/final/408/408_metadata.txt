@@ -1,0 +1,38 @@
+SubmissionNumber#=%=#408
+FinalPaperTitle#=%=#A Discriminative Graph-Based Parser for the Abstract Meaning Representation
+ShortPaperTitle#=%=#A Discriminative Graph-Based Parser for the Abstract Meaning Representation
+NumberOfPages#=%=#11
+CopyrightSigned#=%=#
+JobTitle#==#
+Organization#==#
+Abstract#==#Abstract meaning representation is a semantic formalism for which a growing set
+of annotated examples is available.  We introduce the first approach to parsing
+sentences into this representation, providing a strong baseline for future
+improvement.  The method is based on a novel algorithm for finding a maximum
+spanning, connected subgraph, embedded within a Lagrangian relaxation of a hard
+optimization problem that imposes linguistically inspired constraints. Our
+approach is described in the general framework of structured prediction,
+allowing future incorporation of additional features and constraints, and may
+extend to other formalisms as well.
+Author{1}{Firstname}#=%=#Jeffrey
+Author{1}{Lastname}#=%=#Flanigan
+Author{1}{Email}#=%=#jeffflanigan@gmail.com
+Author{1}{Affiliation}#=%=#CMU
+Author{2}{Firstname}#=%=#Sam
+Author{2}{Lastname}#=%=#Thomson
+Author{2}{Email}#=%=#sthomson@cs.cmu.edu
+Author{2}{Affiliation}#=%=#CMU
+Author{3}{Firstname}#=%=#Jaime
+Author{3}{Lastname}#=%=#Carbonell
+Author{3}{Email}#=%=#jgc@cs.cmu.edu
+Author{3}{Affiliation}#=%=#
+Author{4}{Firstname}#=%=#Chris
+Author{4}{Lastname}#=%=#Dyer
+Author{4}{Email}#=%=#cdyer@cs.cmu.edu
+Author{4}{Affiliation}#=%=#Carnegie Mellon University
+Author{5}{Firstname}#=%=#Noah A.
+Author{5}{Lastname}#=%=#Smith
+Author{5}{Email}#=%=#nasmith@cs.cmu.edu
+Author{5}{Affiliation}#=%=#Carnegie Mellon University
+
+==========

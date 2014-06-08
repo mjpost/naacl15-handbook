@@ -1,0 +1,26 @@
+SubmissionNumber#=%=#359
+FinalPaperTitle#=%=#Refinements to Interactive Translation Prediction Based on Search Graphs
+ShortPaperTitle#=%=#Refinements to Interactive Translation Prediction Based on Search Graphs
+NumberOfPages#=%=#5
+CopyrightSigned#=%=#
+JobTitle#==#
+Organization#==#
+Abstract#==#We propose a number of refinements to the canonical approach to interactive
+translation prediction. By more permissive matching criteria, placing emphasis
+on matching the last word of the user prefix, and dealing with predictions to
+partially typed words, we observe gains in both word prediction accuracy
+(+5.4%) and letter prediction accuracy (+9.3%).
+Author{1}{Firstname}#=%=#Philipp
+Author{1}{Lastname}#=%=#Koehn
+Author{1}{Email}#=%=#pkoehn@inf.ed.ac.uk
+Author{1}{Affiliation}#=%=#University of Edinburgh
+Author{2}{Firstname}#=%=#Chara
+Author{2}{Lastname}#=%=#Tsoukala
+Author{2}{Email}#=%=#ctsoukal@inf.ed.ac.uk
+Author{2}{Affiliation}#=%=#University of Edinburgh
+Author{3}{Firstname}#=%=#Herve
+Author{3}{Lastname}#=%=#Saint-Amand
+Author{3}{Email}#=%=#hsamand@inf.ed.ac.uk
+Author{3}{Affiliation}#=%=#
+
+==========

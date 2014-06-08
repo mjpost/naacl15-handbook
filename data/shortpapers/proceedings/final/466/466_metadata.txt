@@ -1,0 +1,28 @@
+SubmissionNumber#=%=#466
+FinalPaperTitle#=%=#Graph Ranking for Collective Named Entity Disambiguation
+ShortPaperTitle#=%=#Graph Ranking for Collective Named Entity Disambiguation
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Ayman Alhelbawy
+JobTitle#==#
+Organization#==#The University of Sheffield, Regent Court, 211 Portobello Street, Sheffield, S1 4DP, U.K
+Abstract#==#Named Entity Disambiguation (NED)refers to the task of mapping different named
+entity mentions in running text to their correct interpretations in a specific
+knowledge base (KB). This paper presents a collective disambiguation approach
+using a graph model. All possible NE candidates are represented as nodes in the
+graph and associations between different candidates are represented by edges
+between the nodes. Each node has an initial confidence score, e.g. entity
+popularity. Page-Rank is used to rank nodes and the final rank is combined with
+the initial confidence for candidate selection. Experiments on 27819 NE textual
+mentions show the effectiveness of using Page-Rank in conjunction with initial
+confidence: 87% accuracy is achieved, outperforming both baseline and
+state-of-the-art approaches.
+Author{1}{Firstname}#=%=#Ayman
+Author{1}{Lastname}#=%=#Alhelbawy
+Author{1}{Email}#=%=#aua.ayman@gmail.com
+Author{1}{Affiliation}#=%=#Sheffield University
+Author{2}{Firstname}#=%=#Robert
+Author{2}{Lastname}#=%=#Gaizauskas
+Author{2}{Email}#=%=#r.gaizauskas@sheffield.ac.uk
+Author{2}{Affiliation}#=%=#University of Sheffield
+
+==========

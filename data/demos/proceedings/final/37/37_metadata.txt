@@ -1,0 +1,36 @@
+SubmissionNumber#=%=#37
+FinalPaperTitle#=%=#Enhanced Search with Wildcards and Morphological Inflections in the Google Books Ngram Viewer
+ShortPaperTitle#=%=#Enhanced Search with Wildcards and Morphological Inflections in the Google Books Ngram Viewer
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Jason Mann
+JobTitle#==#
+Organization#==#Google
+Abstract#==#We present a new version of the Google Books Ngram Viewer, which plots the
+frequency of words and phrases over the last five centuries; its data
+encompasses 6% of the world’s published books. The new Viewer adds three
+features for more powerful search: wildcards, morphological inflections, and
+capitalization. These additions allow the discovery of patterns that were
+previously difficult to find and further facilitate the study of linguistic
+trends in printed text.
+Author{1}{Firstname}#=%=#Jason
+Author{1}{Lastname}#=%=#Mann
+Author{1}{Email}#=%=#jason.carlisle.mann@gmail.com
+Author{1}{Affiliation}#=%=#Columbia University
+Author{2}{Firstname}#=%=#David
+Author{2}{Lastname}#=%=#Zhang
+Author{2}{Email}#=%=#dzhang21@gmail.com
+Author{2}{Affiliation}#=%=#University of Southern California
+Author{3}{Firstname}#=%=#Lu
+Author{3}{Lastname}#=%=#Yang
+Author{3}{Email}#=%=#ly77@cornell.edu
+Author{3}{Affiliation}#=%=#Cornell University
+Author{4}{Firstname}#=%=#Dipanjan
+Author{4}{Lastname}#=%=#Das
+Author{4}{Email}#=%=#dipanjand@google.com
+Author{4}{Affiliation}#=%=#Google Inc.
+Author{5}{Firstname}#=%=#Slav
+Author{5}{Lastname}#=%=#Petrov
+Author{5}{Email}#=%=#slav@petrovi.de
+Author{5}{Affiliation}#=%=#Google
+
+==========

@@ -1,0 +1,41 @@
+SubmissionNumber#=%=#7
+FinalPaperTitle#=%=#LingSync & the Online Linguistic Database: New Models for the Collection and Management of Data for Language Communities, Linguists and Language Learners
+ShortPaperTitle#=%=#LingSync & the Online Linguistic Database
+NumberOfPages#=%=#10
+CopyrightSigned#=%=#Joel Dunham
+JobTitle#==#
+Organization#==#UBC Department of Linguistics
+Totem Field Studios
+2613 West Mall
+Vancouver, BC, Canada
+V6T 1Z4
+Abstract#==#LingSync and the Online Linguistic Database (OLD) are new models for the
+collection and management of data in endangered language settings. The LingSync
+and OLD projects seek to close a feedback loop between field linguists,
+language communities, software developers, and computational linguists by
+creating web services and user interfaces which facilitate collaborative and
+inclusive language documentation. This paper presents the architectures of
+these tools and the resources generated thus far. We also briefly discuss some
+of the features of the systems which are particularly helpful to endangered
+languages fieldwork and which should also be of interest to computational
+linguists, these being a service that automates the identification of
+utterances within audio/video, another that automates the alignment of audio
+recordings and transcriptions, and a number of services that automate the
+morphological parsing task. The paper discusses the requirements of software
+used for endangered language documentation, and presents novel data which
+demonstrates that users are actively seeking alternatives despite existing
+software.
+Author{1}{Firstname}#=%=#Joel
+Author{1}{Lastname}#=%=#Dunham
+Author{1}{Email}#=%=#jrwdunham@gmail.com
+Author{1}{Affiliation}#=%=#The University of British Columbia
+Author{2}{Firstname}#=%=#Gina
+Author{2}{Lastname}#=%=#Cook
+Author{2}{Email}#=%=#gina.c.cook@gmail.com
+Author{2}{Affiliation}#=%=#iLanguage Lab
+Author{3}{Firstname}#=%=#Joshua
+Author{3}{Lastname}#=%=#Horner
+Author{3}{Email}#=%=#josh.horner@gmail.com
+Author{3}{Affiliation}#=%=#Amilia
+
+==========

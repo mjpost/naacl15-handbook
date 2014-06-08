@@ -1,0 +1,36 @@
+SubmissionNumber#=%=#7
+FinalPaperTitle#=%=#Effect of Using Regression on Class Confidence Scores in Sentiment Analysis of Twitter Data
+ShortPaperTitle#=%=#Effect of Using Regression on Class Confidence Scores in Sentiment Analysis of Twitter Data
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Itir Onal
+JobTitle#==#
+Organization#==#Middle East Technical University
+Abstract#==#In this study, we aim to test our hypothesis that confidence scores of
+sentiment values of tweets aid in classification of sentiment. We used several
+feature sets consisting of lexical features, emoticons, features based on
+sentiment scores and combination of lexical and sentiment features. Since our
+dataset includes confidence scores of real numbers in [0-1] range, we employ
+regression analysis on each class of sentiments. We determine the class label
+of a tweet by
+looking at the maximum of the confidence scores assigned to it by these
+regressors. We test the results against classification results obtained by
+converting the confidence scores into discrete labels. Thus, the strength of
+sentiment is ignored. Our expectation was that taking the strength of sentiment
+into consideration would improve the classification results. Contrary
+to our expectations, our results indicate that using classification on discrete
+class labels and ignoring sentiment strength perform similar to using
+regression on continuous confidence scores.
+Author{1}{Firstname}#=%=#Itir
+Author{1}{Lastname}#=%=#Onal
+Author{1}{Email}#=%=#itir@ceng.metu.edu.tr
+Author{1}{Affiliation}#=%=#Middle East Technical University
+Author{2}{Firstname}#=%=#Ali Mert
+Author{2}{Lastname}#=%=#Ertugrul
+Author{2}{Email}#=%=#alimert@metu.edu.tr
+Author{2}{Affiliation}#=%=#Middle East Technical University
+Author{3}{Firstname}#=%=#Ruken
+Author{3}{Lastname}#=%=#Cakici
+Author{3}{Email}#=%=#ruken@ceng.metu.edu.tr
+Author{3}{Affiliation}#=%=#Middle East Technical University
+
+==========

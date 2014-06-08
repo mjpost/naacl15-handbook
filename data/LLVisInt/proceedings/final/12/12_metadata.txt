@@ -1,0 +1,21 @@
+SubmissionNumber#=%=#12
+FinalPaperTitle#=%=#MUCK: A toolkit for extracting and visualizing semantic dimensions of large text collections
+ShortPaperTitle#=%=#MUCK: A toolkit for extracting and visualizing semantic dimensions of large text collections
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#
+JobTitle#==#
+Organization#==#
+Abstract#==#Users with large text collections are often faced with one of two problems;
+either they wish to retrieve a semantically-relevant subset of data from the
+collection for further scrutiny (needle-in-a-haystack) or they wish to glean a
+high-level understanding of how a subset compares to the parent corpus in the
+context of aforementioned semantic dimensions (forest-for-the-trees).  This
+paper presents MUCK, an open-source toolkit that addresses both of these
+problems through a distributed text processing engine with an interactive
+visualization interface.
+Author{1}{Firstname}#=%=#Rebecca
+Author{1}{Lastname}#=%=#Weiss
+Author{1}{Email}#=%=#rjweiss@stanford.edu
+Author{1}{Affiliation}#=%=#
+
+==========

@@ -1,0 +1,39 @@
+SubmissionNumber#=%=#441
+FinalPaperTitle#=%=#A Convolutional Neural Network for Modelling Sentences
+ShortPaperTitle#=%=#A ConvNet for Modelling Sentences
+NumberOfPages#=%=#11
+CopyrightSigned#=%=#Nal Kalchbrenner
+JobTitle#==#
+Organization#==#Department of Computer Science, University of Oxford
+Wolfson Building
+Parks Road
+OXFORD
+OX1 3QD
+UK
+Abstract#==#The ability to accurately represent sentences is central to language
+understanding. We describe a convolutional architecture dubbed the Dynamic
+Convolutional Neural Network (DCNN) that we adopt for the semantic modelling of
+sentences. The network uses Dynamic k-Max Pooling, a global pooling operation
+over linear sequences. The network handles input sentences of varying length
+and induces a feature graph over the sentence that  is capable of explicitly
+capturing short and long-range relations. The network does not rely on a parse
+tree and is easily applicable to any language. We test the DCNN in four
+experiments: small scale binary and multi-class sentiment prediction, six-way
+question classification and Twitter sentiment prediction by distant
+supervision. The network achieves excellent performance in the first three
+tasks and a greater than 25% error reduction in the last task with respect to
+the strongest baseline.
+Author{1}{Firstname}#=%=#Nal
+Author{1}{Lastname}#=%=#Kalchbrenner
+Author{1}{Email}#=%=#nkalch@cs.ox.ac.uk
+Author{1}{Affiliation}#=%=#Oxford University
+Author{2}{Firstname}#=%=#Edward
+Author{2}{Lastname}#=%=#Grefenstette
+Author{2}{Email}#=%=#edward.grefenstette@cs.ox.ac.uk
+Author{2}{Affiliation}#=%=#University of Oxford
+Author{3}{Firstname}#=%=#Phil
+Author{3}{Lastname}#=%=#Blunsom
+Author{3}{Email}#=%=#phil.blunsom@cs.ox.ac.uk
+Author{3}{Affiliation}#=%=#University of Oxford
+
+==========

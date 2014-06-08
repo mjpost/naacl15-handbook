@@ -1,0 +1,40 @@
+SubmissionNumber#=%=#357
+FinalPaperTitle#=%=#An Empirical Study on the Effect of Negation Words on Sentiment
+ShortPaperTitle#=%=#An Empirical Study on the Effect of Negation Words on Sentiment
+NumberOfPages#=%=#10
+CopyrightSigned#=%=#NA
+JobTitle#==#
+Organization#==#National Research Council Canada
+1200 Montreal Road, Ottawa, K1C 5G4, ON, Canada
+Abstract#==#Negation words, such as no and not, play a fundamental role in modifying
+sentiment of textual expressions. We will refer to a negation word as the
+negator and the text span within the scope of the negator as the argument.
+Commonly used heuristics to estimate the sentiment of negated expressions rely
+simply on the sentiment of argument (and not on the negator or the argument
+itself). We use a sentiment treebank to show that these existing heuristics
+are poor estimators of sentiment. We then modify these heuristics to be
+dependent on the negators and show that this improves prediction. Next, we
+evaluate a recently proposed composition model (Socher et al., 2013) that
+relies on both the negator and the argument. This model learns the syntax and
+semantics of the negator’s argument with a recursive neural network. We show
+that this approach performs better than those mentioned above. Finally, we
+explicitly incorporate the prior sentiment of the argument and observe that
+this information can help further reduce fitting errors.
+Author{1}{Firstname}#=%=#Xiaodan
+Author{1}{Lastname}#=%=#Zhu
+Author{1}{Email}#=%=#zhu2048@gmail.com
+Author{1}{Affiliation}#=%=#National Research Council Canada
+Author{2}{Firstname}#=%=#Hongyu
+Author{2}{Lastname}#=%=#Guo
+Author{2}{Email}#=%=#hongyu.guo@nrc-cnrc.gc.ca
+Author{2}{Affiliation}#=%=#National Research Council Canada
+Author{3}{Firstname}#=%=#Saif
+Author{3}{Lastname}#=%=#Mohammad
+Author{3}{Email}#=%=#uvgotsaif@gmail.com
+Author{3}{Affiliation}#=%=#National Research Council Canada
+Author{4}{Firstname}#=%=#Svetlana
+Author{4}{Lastname}#=%=#Kiritchenko
+Author{4}{Email}#=%=#Svetlana.Kiritchenko@nrc.ca
+Author{4}{Affiliation}#=%=#National Research Council Canada
+
+==========

@@ -1,0 +1,31 @@
+SubmissionNumber#=%=#1
+FinalPaperTitle#=%=#InterlinguaPlus Machine Translation Approach for Local Languages: Ekegusii & Swahili
+ShortPaperTitle#=%=#InterlinguaPlus Machine Translation Approach for Local Languages: Ekegusii & Swahili
+NumberOfPages#=%=#5
+CopyrightSigned#=%=#Edward O.Ombui
+JobTitle#==#Lecturer
+Organization#==#Africa Nazarene University, PO BOX 53067, 00200 Nairobi, Kenya
+Abstract#==#This paper elucidates the InterlinguaPlus design and its application in
+bi-directional text translations between Ekegusii and Kiswahili languages
+unlike the traditional translation pairs, one-by-one. Therefore, any of the
+languages can be the source or target language. The first section is an
+overview of the project, which is followed by a brief review of Machine
+Translation. The next section discusses the implementation of the system using
+Carabao’s open machine translation framework and the results obtained. So
+far, the translation results have been plausible particularly for the
+resource-scarce local languages and clearly affirm morphological similarities
+inherent in Bantu languages.
+Author{1}{Firstname}#=%=#Edward
+Author{1}{Lastname}#=%=#Ombui
+Author{1}{Email}#=%=#eombui@anu.ac.ke
+Author{1}{Affiliation}#=%=#Africa Nazarene University
+Author{2}{Firstname}#=%=#Peter
+Author{2}{Lastname}#=%=#Wagacha
+Author{2}{Email}#=%=#waiganjo@uonbi.ac.ke
+Author{2}{Affiliation}#=%=#University of Nairobi
+Author{3}{Firstname}#=%=#Wanjiku
+Author{3}{Lastname}#=%=#Ng'ang'a
+Author{3}{Email}#=%=#wanjiku.nganga@uonbi.ac.ke
+Author{3}{Affiliation}#=%=#University of Nairobi
+
+==========

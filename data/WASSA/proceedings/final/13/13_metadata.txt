@@ -1,0 +1,30 @@
+SubmissionNumber#=%=#13
+FinalPaperTitle#=%=#Lexical Acquisition for Opinion Inference: A Sense-Level Lexicon of Benefactive and Malefactive Events
+ShortPaperTitle#=%=#Lexical Acquisition for Opinion Inference: A Sense-Level Lexicon of Benefactive and Malefactive Events
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Yoonjung Choi
+JobTitle#==#
+Organization#==#Yoonjung Choi
+Department of Computer Science, University of Pittsburgh
+Abstract#==#Opinion inference arises when opinions are expressed toward states and events
+which positive or negatively affect entities, i.e., benefactive and malefactive
+events. This paper addresses creating a lexicon of such events, which would be
+helpful to infer opinions. Verbs may be ambiguous, in that some meanings may be
+benefactive and others may be malefactive or neither. Thus, we use WordNet to
+create a sense-level lexicon. We begin with seed senses culled from FrameNet
+and expand the lexicon using WordNet relationships. The evaluations show that
+the accuracy of the approach is well above baseline accuracy.
+Author{1}{Firstname}#=%=#Yoonjung
+Author{1}{Lastname}#=%=#Choi
+Author{1}{Email}#=%=#choiyj35@gmail.com
+Author{1}{Affiliation}#=%=#University of Pittsburgh
+Author{2}{Firstname}#=%=#Lingjia
+Author{2}{Lastname}#=%=#Deng
+Author{2}{Email}#=%=#lid29@pitt.edu
+Author{2}{Affiliation}#=%=#University of Pittsburgh
+Author{3}{Firstname}#=%=#Janyce
+Author{3}{Lastname}#=%=#Wiebe
+Author{3}{Email}#=%=#wiebe@cs.pitt.edu
+Author{3}{Affiliation}#=%=#University of Pittsburgh
+
+==========

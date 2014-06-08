@@ -1,0 +1,30 @@
+SubmissionNumber#=%=#29
+FinalPaperTitle#=%=#Sentence-level Rewriting Detection
+ShortPaperTitle#=%=#Sentence-level Rewriting Detection
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Fan Zhang
+JobTitle#==#
+Organization#==#Department of Computer Science 
+Sennott Square 
+University of Pittsburgh 
+Pittsburgh, PA 15260 
+USA
+Abstract#==#Writers usually need iterations of revisions and edits during their writings.
+To better understand the process of rewriting, we need to know what has changed
+between the revisions. Prior work mainly focuses on detecting corrections
+within sentences, which is at the level of words or phrases. This paper
+proposes to detect revision changes at the sentence level. Looking at revisions
+at a higher level allows us to have a different understanding of the revision
+process. This paper also proposes an approach to automatically detect sentence
+revision changes. The proposed approach shows high accuracy in an evaluation
+using first and final draft essays from an undergraduate writing class.
+Author{1}{Firstname}#=%=#Fan
+Author{1}{Lastname}#=%=#Zhang
+Author{1}{Email}#=%=#faz23@pitt.edu
+Author{1}{Affiliation}#=%=#University of Pittsburgh
+Author{2}{Firstname}#=%=#Diane
+Author{2}{Lastname}#=%=#Litman
+Author{2}{Email}#=%=#litman@cs.pitt.edu
+Author{2}{Affiliation}#=%=#University of Pittsburgh
+
+==========

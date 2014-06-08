@@ -1,0 +1,41 @@
+SubmissionNumber#=%=#9
+FinalPaperTitle#=%=#Factored Statistical Machine Translation for Grammatical Error Correction
+ShortPaperTitle#=%=#Factored Statistical Machine Translation for Grammatical Error Correction
+NumberOfPages#=%=#8
+CopyrightSigned#=%=#
+JobTitle#==#
+Organization#==#
+Abstract#==#This paper describes our factored statistical machine translation (SMT) system
+for grammatical error correction by using small-scale training data in the
+CoNLL 2014 Shared Task. We constructed several systems with various factors
+compared with phrase-based statistical machine translation. The factors contain
+not only morphological information such as stem, prefix, suffix, but also
+syntactic information such as PoS. We tried to easily combine different systems
+or use the pipeline, although the effects are not so good, it exposed a lot of
+valuable information.
+Author{1}{Firstname}#=%=#Yiming
+Author{1}{Lastname}#=%=#Wang
+Author{1}{Email}#=%=#wang2008499@gmail.com
+Author{1}{Affiliation}#=%=#Natural Language Processing & Portuguese-Chinese Machine Translation Laboratory,  Department of Computer and Information Science, University of Macau, Macau S.A.R., China
+Author{2}{Firstname}#=%=#Longyue
+Author{2}{Lastname}#=%=#Wang
+Author{2}{Email}#=%=#vincentwang0229@hotmail.com
+Author{2}{Affiliation}#=%=#Natural Language Processing & Portuguese-Chinese Machine Translation Laboratory, Department of Computer and Information Science, University of Macau
+Author{3}{Firstname}#=%=#Xiaodong
+Author{3}{Lastname}#=%=#Zeng
+Author{3}{Email}#=%=#nlp2ct.samuel@gmail.com
+Author{3}{Affiliation}#=%=#University of Macau
+Author{4}{Firstname}#=%=#Derek F.
+Author{4}{Lastname}#=%=#Wong
+Author{4}{Email}#=%=#derekfw@umac.mo
+Author{4}{Affiliation}#=%=#University of Macau
+Author{5}{Firstname}#=%=#Lidia S.
+Author{5}{Lastname}#=%=#Chao
+Author{5}{Email}#=%=#lidiasc@umac.mo
+Author{5}{Affiliation}#=%=#Natural Language Processing & Portuguese-Chinese Machine Translation Laboratory,  Department of Computer and Information Science, University of Macau, Macau S.A.R., China
+Author{6}{Firstname}#=%=#Yi
+Author{6}{Lastname}#=%=#Lu
+Author{6}{Email}#=%=#mb25435@umac.mo
+Author{6}{Affiliation}#=%=#University of Macau
+
+==========

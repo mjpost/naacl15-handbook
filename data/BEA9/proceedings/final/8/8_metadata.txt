@@ -1,0 +1,32 @@
+SubmissionNumber#=%=#8
+FinalPaperTitle#=%=#Syllable and language model based features for detecting non-scorable tests in spoken language proficiency assessment applications
+ShortPaperTitle#=%=#Syllable and language model based features for detecting non-scorable tests in spoken language proficiency assessment applications
+NumberOfPages#=%=#10
+CopyrightSigned#=%=#Angeliki Metallinou
+JobTitle#==#
+Organization#==#Knowledge Technologies, Pearson
+4040 Campbell Ave., Menlo Park, California 94025, USA
+Abstract#==#This work introduces new methods for detecting non-scorable tests, i.e., tests
+that cannot be accurately scored automatically, in educational applications of
+spoken language proficiency assessment. Those include cases of unreliable
+automatic speech recognition (ASR), often because of noisy, off-topic, foreign
+or unintelligible speech. We examine features that estimate signal-derived
+syllable information and compare it with ASR results in order to detect
+responses with problematic recognition. Further, we explore the usefulness of
+language model based features, both for language models that are highly
+constrained to the spoken task, and for task independent phoneme language
+models. We validate our methods on a challenging dataset of young English
+language learners (ELLs) interacting with an automatic spoken assessment
+system. Our proposed methods achieve comparable performance compared to
+existing non-scorable detection approaches, and lead to a 21\% relative
+performance increase when combined with existing approaches.
+Author{1}{Firstname}#=%=#Angeliki
+Author{1}{Lastname}#=%=#Metallinou
+Author{1}{Email}#=%=#angeliki.metallinou@pearson.com
+Author{1}{Affiliation}#=%=#Pearson Knowledge Technologies
+Author{2}{Firstname}#=%=#Jian
+Author{2}{Lastname}#=%=#Cheng
+Author{2}{Email}#=%=#jian.cheng@pearson.com
+Author{2}{Affiliation}#=%=#Pearson Knowledge Technologies
+
+==========

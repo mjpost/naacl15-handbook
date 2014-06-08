@@ -1,0 +1,20 @@
+SubmissionNumber#=%=#21
+FinalPaperTitle#=%=#Representing Caused Motion in Embodied Construction Grammar
+ShortPaperTitle#=%=#Representing Caused Motion in ECG
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Miriam R. L. Petruck
+JobTitle#==#
+Organization#==#International Computer Science Institute
+1947 Center St, Suite #600
+Berkeley, CA 94704
+Abstract#==#
+Author{1}{Firstname}#=%=#Ellen K
+Author{1}{Lastname}#=%=#Dodge
+Author{1}{Email}#=%=#edodge@icsi.berkeley.edu
+Author{1}{Affiliation}#=%=#ICSI
+Author{2}{Firstname}#=%=#Miriam R L
+Author{2}{Lastname}#=%=#Petruck
+Author{2}{Email}#=%=#miriamp@icsi.berkeley.edu
+Author{2}{Affiliation}#=%=#ICSI
+
+==========

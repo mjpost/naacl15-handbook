@@ -1,0 +1,27 @@
+SubmissionNumber#=%=#8
+FinalPaperTitle#=%=#Two-Step Model for Sentiment Lexicon Extraction from Twitter Streams
+ShortPaperTitle#=%=#Two-Step Model for Sentiment Lexicon Extraction from Twitter Streams
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Ilia Chetviorkin
+JobTitle#==#
+Organization#==#Lomonosov Moscow State University
+Moscow, Leninskiye gory 1
+Abstract#==#In this study we explore a novel technique for creation of polarity lexicons
+from the Twitter streams in Russian and English. With this aim we make
+preliminary filtering of subjective tweets using general domain-independent
+lexicons in each language. Then the subjective tweets are used for extraction
+of domain-specific sentiment words. Relying on co-occurrence statistics of
+extracted words in a large unlabeled Twitter collections we utilize the Markov
+random field framework for the word polarity classification. To evaluate the
+quality of the obtained sentiment lexicons they are used for tweet sentiment
+classification and outperformed previous results.
+Author{1}{Firstname}#=%=#Ilia
+Author{1}{Lastname}#=%=#Chetviorkin
+Author{1}{Email}#=%=#ilia2010@yandex.ru
+Author{1}{Affiliation}#=%=#Lomonosov Moscow State University
+Author{2}{Firstname}#=%=#Natalia
+Author{2}{Lastname}#=%=#Loukachevitch
+Author{2}{Email}#=%=#louk_nat@mail.ru
+Author{2}{Affiliation}#=%=#Lomonosov Moscow State University
+
+==========

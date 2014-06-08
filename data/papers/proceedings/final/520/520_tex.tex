@@ -1,0 +1,1041 @@
+
+\documentclass[11pt]{article}
+\usepackage{acl2014}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{url}
+
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{booktabs} \usepackage{verbatim} \usepackage{tabu}
+\usepackage{rotating} \usepackage{makecell}
+\usepackage{pict2e} 
+\usepackage{soul} \usepackage[usenames,dvipsnames,svgnames,table]{xcolor} \usepackage{todonotes}
+\usepackage{arydshln} 
+
+\setlength{\abovecaptionskip}{5pt}
+
+\newcommand{\term}[1]{\textbf{#1}}
+\newcommand{\myth}{^{\text{th}}}
+\newcommand{\vc}[1]{\boldsymbol{#1}}
+
+\newcommand{\sups}[1]{\ensuremath{^{\textrm{#1}}}}
+\newcommand{\subs}[1]{\ensuremath{_{\textrm{#1}}}}
+
+\newcommand{\coarseIgFeats}{\textrm{IG$_{C}$}}
+\newcommand{\bjorkIgFeats}{\textrm{IG$_{B}$}}
+\newcommand{\bjorkLsFeats}{\textrm{B$_{de,en,es,zh}$}}
+\newcommand{\zhaoLsFeats}{\textrm{Z$_{ca}$}}
+
+\newcommand{\prop}[1]{\emph{#1}}
+\newcommand{\posi}[1]{{\scriptsize\textsf{#1}}}
+\newcommand{\modi}[1]{\emph{#1}}
+\newcommand{\feat}[3]{{\mod{#2}(\posi{#1}).\prop{#3}}}
+\renewcommand{\feat}[1]{{\scriptsize\textsf{#1}}}
+
+\newcommand{\att}[1]{{\scriptsize\textsf{#1}}}
+\newcommand{\val}[1]{{\scriptsize\texttt{#1}}}
+
+\setlength\titlebox{5cm}    
+\title{Low-Resource Semantic Role  Labeling}
+
+\author{Matthew R. Gormley$^{1}$ Margaret Mitchell$^2$ Benjamin Van Durme$^1$ Mark Dredze$^1$\vspace{.25em}\\
+$^1$Human Language Technology Center of Excellence \\\vspace{.25em}
+Johns Hopkins University, Baltimore, MD 21211\\
+$^2$Microsoft Research \\\vspace{.15em}
+Redmond, WA 98052 \\
+{\small {\tt mrg@cs.jhu.edu} $|$ {\tt memitc@microsoft.com} $|$ {\tt vandurme@cs.jhu.edu} $|$ {\tt  mdredze@cs.jhu.edu}}
+}
+
+\date{}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+
+    We explore the extent to which high-resource manual annotations 
+    such as treebanks  
+    are necessary for the task of semantic role labeling (SRL).
+    We examine how performance changes without syntactic supervision, 
+    comparing both {\it joint} and {\it pipelined} 
+    methods to induce latent syntax.  
+    This work highlights a new 
+   application of unsupervised grammar induction and demonstrates 
+    several approaches to SRL in the absence of supervised syntax.
+    Our best models obtain competitive results in the 
+    high-resource setting and state-of-the-art results in the low 
+    resource setting, reaching 72.48\% F1 averaged across languages.  
+    We release our code for this work along with a larger toolkit for specifying arbitrary 
+    graphical structure.\footnote{\url{http://www.cs.jhu.edu/~mrg/software/}}
+
+\end{abstract}
+
+\section{Introduction}
+\label{sec:introduction}
+
+The goal of semantic role labeling (SRL) is to identify predicates and
+arguments and label their semantic contribution in a sentence.
+Such labeling defines {\it who} did
+{\it what} to {\it whom}, {\it when}, {\it where} and {\it how}. 
+For example, in
+the sentence ``The kids ran the marathon'',  {\it ran} assigns a 
+role to {\it kids} to denote that they are the runners; 
+and a role to {\it marathon} to denote that it is the race course.  
+
+Models for SRL have increasingly come to rely
+on an array of NLP tools (e.g., parsers, lemmatizers) in order to obtain state-of-the-art
+results \cite{bjorkelund_multilingual_2009,zhao_multilingual_2009}.
+Each tool is typically trained on hand-annotated data, thus placing
+SRL at the end of a very high-resource NLP pipeline. 
+However, richly annotated data such as that provided in parsing
+treebanks is expensive to produce, and may be tied to specific
+domains (e.g., newswire).  Many languages do not have such 
+supervised resources ({\it low-resource languages}), which makes 
+exploring SRL cross-linguistically difficult.
+
+The problem of SRL for low-resource languages is an important one
+to solve, as solutions pave the way for a wide range of applications:  
+Accurate identification of the semantic roles of entities is a critical step
+for any application sensitive to semantics, from information retrieval to machine translation to
+question answering.  
+
+In this work, we explore models that minimize the need for high-resource
+supervision.  We examine approaches in a {\bf joint} setting where we marginalize
+over latent syntax to find the optimal semantic role assignment; and a {\bf
+  pipeline} setting where we first induce an unsupervised grammar.  We find that the joint approach is a viable alternative for making 
+reasonable semantic role predictions, outperforming the pipeline
+models. These models can be effectively trained with access to 
+only SRL annotations, and mark a state-of-the-art contribution for low-resource SRL.
+
+To better understand the effect of the low-resource grammars and features used in these models, we further include comparisons with (1) models that use higher-resource versions of the same features; (2) state-of-the-art high resource models; and (3) previous work on low-resource grammar induction.  In sum, this paper makes several experimental and modeling contributions, summarized below.
+
+\paragraph{Experimental contributions:}
+\begin{itemize}
+\vspace{-.5em}
+\itemsep -.25em
+\item Comparison of pipeline and joint models for SRL. 
+\item Subtractive experiments that consider the removal of supervised data.
+\item Analysis of the induced grammars in unsupervised, distantly-supervised, and joint training settings.
+\end{itemize}
+
+\paragraph{Modeling contributions:}
+\begin{itemize}
+\vspace{-.5em}
+\itemsep -.25em
+\item Simpler joint CRF for syntactic and semantic dependency parsing than previously reported.
+\item New application of unsupervised grammar induction: low-resource SRL.
+\item Constrained grammar induction using SRL for distant-supervision.
+\item Use of Brown clusters in place of POS tags for low-resource SRL.
+\end{itemize}
+
+The pipeline models are introduced in
+\S~\ref{sec:pipelineModel} and jointly-trained models for syntactic
+and semantic dependencies (similar in form to
+\newcite{naradowsky_improving_2012}) are introduced in \S~\ref{sec:jointModel}.  
+In the pipeline models, we develop a novel approach to unsupervised
+grammar induction and explore performance using SRL as distant
+supervision.
+The joint models use a non-loopy conditional random field (CRF) with a
+global factor constraining latent syntactic edge variables to form a
+tree. Efficient exact marginal inference is possible by embedding a
+dynamic programming algorithm within belief propagation as in
+\newcite{smith_eisner_2008_bp}.
+
+Even at the expense of no dependency path features, the joint models
+best pipeline-trained models for state-of-the-art performance in
+the low-resource setting (\S~\ref{sec:lowResourceResults}).  When the
+models have access to observed syntactic trees, they achieve
+near state-of-the-art accuracy in the high-resource setting on some languages
+(\S~\ref{sec:highResourceResults}).
+
+Examining the learning curve of the joint and pipeline models in two languages 
+demonstrates that a small number of labeled SRL examples may be essential 
+for good end-task performance, but that the choice of a good model for grammar induction has an even greater impact.
+
+\section{Related Work}
+\label{sec:relatedwork}
+
+Our work builds upon research in both semantic role labeling and 
+unsupervised grammar induction
+\cite{klein_corpus-based_2004,spitkovsky_viterbi_2010}. 
+Previous related approaches to 
+semantic role labeling include joint classification of semantic arguments 
+\cite{toutanova_joint_2005,johansson_dependency-based_2008}, 
+latent syntax induction \cite{boxwell_semantic_2011,naradowsky_improving_2012}, 
+and feature engineering for SRL 
+\cite{zhao_multilingual_2009,bjorkelund_multilingual_2009}.
+
+\newcite{toutanova_joint_2005} introduced one of the first joint approaches for SRL and
+demonstrated that a 
+model that scores the full predicate-argument
+structure of a parse tree could lead to significant error reduction over 
+independent classifiers for each predicate-argument relation.  
+
+\newcite{johansson_dependency-based_2008} and \newcite{lluis_joint_2013} 
+extend this idea by coupling predictions of a dependency parser with 
+predictions from a semantic role labeler.  In the model from 
+\newcite{johansson_dependency-based_2008}, the outputs from an 
+ SRL pipeline are reranked based on the full predicate-argument structure
+that they form.  The candidate set of syntactic-semantic structures is reranked 
+using the probability of the syntactic tree and semantic structure.  
+\newcite{lluis_joint_2013} use a joint arc-factored model that
+predicts full syntactic paths along with predicate-argument structures
+via dual decomposition.
+
+\newcite{boxwell_semantic_2011} 
+and \newcite{naradowsky_improving_2012} observe that syntax
+may be treated as latent when a treebank is not available.
+\newcite{boxwell_semantic_2011}
+describe a method for training a semantic role labeler by
+extracting features from a packed CCG parse chart, where the parse
+weights are given by a simple ruleset. 
+\newcite{naradowsky_improving_2012} marginalize over latent syntactic
+dependency parses.
+
+Both \newcite{boxwell_semantic_2011} and \newcite{naradowsky_improving_2012}
+suggest methods for SRL without supervised syntax, however, their 
+features come
+ largely from supervised resources. Even in their lowest resource
+ setting, \newcite{boxwell_semantic_2011} require an oracle CCG tag dictionary
+ extracted from a treebank.
+\newcite{naradowsky_improving_2012} 
+ limit their exploration to a small set of basic features, and included 
+ high-resource supervision in the form of lemmas, POS tags, and 
+ morphology available from the CoNLL 
+2009 data.  
+
+There has not yet been a comparison of techniques for SRL that do not 
+rely on a syntactic treebank, and no exploration of probabilistic models 
+for unsupervised grammar induction within an SRL pipeline that we 
+have been able to find. 
+
+Related work for the unsupervised 
+learning of dependency structures separately from
+semantic roles primarily comes from 
+\newcite{klein_corpus-based_2004}, 
+who introduced the Dependency Model with Valence (DMV).  
+This is a robust generative model that uses a head-outward process over 
+word classes, where heads generate arguments.  
+
+\newcite{spitkovsky_viterbi_2010} show that Viterbi (hard) EM training 
+of the DMV with simple uniform initialization of the model parameters 
+yields higher accuracy models than standard soft-EM training. In Viterbi 
+EM, the E-step finds the maximum likelihood corpus parse given the 
+current model parameters. The M-step then finds the maximum likelihood 
+parameters given the corpus parse.  We utilize this approach to
+produce unsupervised syntactic features for the SRL task.
+
+Grammar induction work has further demonstrated that distant 
+supervision in the form of ACE-style relations \cite{naseem_using_2011} 
+or HTML markup \cite{spitkovsky_profiting_2010} can lead to 
+considerable gains. Recent work in fully
+  unsupervised dependency parsing has supplanted these methods with
+ even higher accuracies \cite{spitkovsky_breaking_2013} by arranging 
+ optimizers into networks that suggest informed restarts based 
+ on previously identified local optima.  We do not
+ reimplement these approaches within the SRL pipeline here, but
+ provide comparison of these methods against our grammar induction 
+ approach in isolation in \S~\ref{sec:grammarInductionResults}.
+
+In both pipeline and joint models, we use features adapted from 
+state-of-the-art approaches to SRL.  This includes 
+\newcite{zhao_multilingual_2009} features, who use feature templates from 
+combinations of word
+properties, syntactic positions including head and children, and semantic 
+properties; and features from \newcite{bjorkelund_multilingual_2009}, who 
+utilize features on 
+syntactic siblings and the dependency path concatenated with the 
+direction of each edge.  Features are described further in \S~\ref{sec:features}.
+
+\section{Approaches}
+\label{sec:approaches}
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.325]{fig/pipeline_1.pdf}
+\caption{Pipeline approach to SRL. In this simple pipeline, the first
+  stage syntactically parses the corpus, and the second stage predicts
+  semantic predicate-argument structure for each sentence using
+  the labels of the first stage as features. In our
+  \emph{low-resource} pipelines, we assume that the syntactic parser
+  is given no labeled parses---however, it may optionally utilize the
+  semantic parses as distant supervision. Our experiments also consider `longer'
+  pipelines that include earlier stages: a morphological analyzer,
+  POS tagger, lemmatizer.}\label{fig:pipe}
+\end{figure}
+
+We consider an array of models, varying: \vspace{-.5em}
+
+\begin{enumerate}
+\itemsep -.25em
+\item Pipeline vs. joint training (Figures \ref{fig:pipe} and \ref{fig:joint})
+\item Types of supervision
+\item The objective function at the level of syntax
+\end{enumerate}
+
+\subsection{Unsupervised Syntax in the Pipeline}
+\label{sec:pipelineModel}
+
+Typical SRL systems are trained following a pipeline where the first
+component is trained on supervised data, and each subsequent component
+is trained using the 1-best output of the previous components.  A
+typical pipeline consists of a POS tagger, dependency parser, and
+semantic role labeler.  In this section, we introduce pipelines that
+remove the need for a supervised tagger and parser by training in an
+unsupervised and distantly supervised fashion.
+
+\paragraph{Brown Clusters}
+\label{sec:brownClusters}
+
+We use fully unsupervised Brown clusters
+\cite{brown_class-based_1992} in place of POS tags. Brown clusters have
+been used to good effect for various NLP tasks such as named entity
+recognition \cite{miller_name_2004} and dependency parsing
+\cite{koo_simple_2008,spitkovsky_unsupervised_2011}.
+The clusters are formed by a greedy hierachical clustering algorithm that finds an assignment of words to classes by
+maximizing the likelihood of the training data
+under a latent-class bigram model. 
+Each word type is assigned to a fine-grained cluster at a leaf of the
+hierarchy of clusters. Each cluster can be uniquely identified by the
+path from the root cluster to that leaf. Representing this path as a
+bit-string (with 1 indicating a left and 0 indicating a right child)
+allows a simple coarsening of the clusters by truncating the
+bit-strings. 
+We train 1000 Brown clusters for each of the CoNLL-2009 languages on
+Wikipedia text.\footnote{The Wikipedia text was tokenized for Polyglot
+  \cite{al-rfou_polyglot:_2013}: \url{http://bit.ly/embeddings}}
+
+\paragraph{Unsupervised Grammar Induction}
+\label{sec:unsupervisedGrammarInduction}
+Our first method for grammar induction is \emph{fully unsupervised} 
+Viterbi EM training of the Dependency Model with Valence (DMV)
+\cite{klein_corpus-based_2004}, with uniform initialization of the
+model parameters. 
+We define the DMV such that it generates sequences of word classes:
+either POS tags or Brown clusters as in
+\newcite{spitkovsky_unsupervised_2011}.
+ The DMV is a simple generative model for projective
+dependency trees. Children are generated recursively
+for each node. Conditioned on the parent class, the direction (right or
+left), and the current valence (first child or not), a coin is flipped to
+decide whether to generate another child; the distribution over child
+classes is conditioned on only the parent class and direction.
+
+\paragraph{Constrained Grammar Induction}
+\label{sec:constrainedGrammarInduction}
+Our second method, which we will refer to as DMV+C, induces grammar 
+in a \emph{distantly supervised} fashion by
+using a constrained parser in the E-step of Viterbi EM.
+Since the parser is part of a pipeline, we constrain it to respect
+the downstream SRL annotations  during training.
+At test time, the parser is unconstrained.
+
+Dependency-based semantic role labeling can be described as a simple structured
+prediction problem: the predicted structure is a labeled directed
+graph, where nodes correspond to words in the sentence.  Each directed
+edge indicates that there is a predicate-argument relationship between
+the two words; the parent is the predicate and the child the
+argument. The label on the edge indicates the type of semantic
+relationship.
+Unlike syntactic dependency parsing, the graph is
+not required to be a tree, nor even a connected graph. Self-loops and
+crossing arcs are permitted. 
+
+The constrained \emph{syntactic} DMV parser treats the semantic graph as observed,
+and constrains the syntactic parent to be chosen from one of the
+semantic parents, if there are any. In some cases, imposing this
+constraint would not permit \emph{any} projective dependency
+parses---in this case, we ignore the semantic constraint for that sentence.
+ We parse with the CKY algorithm
+\cite{younger_recognition_1967,aho_theory_1972} by utilizing a PCFG
+corresponding to the DMV \cite{cohn_inducing_2010}.  Each chart cell
+allows only non-terminals compatible with the constrained sets. This
+can be viewed as a variation of \newcite{pereira_schabes_1992}.
+
+\paragraph{Semantic Dependency Model}
+\label{sec:srlOnlyModel}
+
+As described above, semantic role labeling can be cast as a structured
+prediction problem where the structure is a labeled semantic
+dependency graph. 
+We define a conditional random field (CRF)
+\cite{lafferty_conditional_2001} for this task.  Because each word in
+a sentence may be in a semantic relationship with any other word
+(including itself), a sentence of length $n$ has $n^2$ possible edges.
+We define a single $L$+$1$-ary variable for each edge, whose value can
+be any of $L$ semantic labels or a special label indicating there is
+no predicate-argument relationship between the two words. In this way,
+we jointly perform \emph{identification} (determining whether a
+semantic relationship exists) and \emph{classification} (determining
+the semantic label).
+This use of an $L$+$1$-ary variable is in contrast to
+the model of \newcite{naradowsky_improving_2012}, which used a
+more complex set of binary variables and required a constraint factor permitting
+{\sc at-most-one}. We include one unary factor for each variable.
+
+We optionally include additional variables that perform
+word sense disambiguation for each predicate. Each has a
+unary factor and is completely disconnected from the semantic edge
+(similar to \newcite{naradowsky_improving_2012}). 
+These variables range over all the predicate senses observed in
+the training data for the \emph{lemma} of that predicate.
+
+\subsection{Joint Syntactic and Semantic Parsing Model}
+\label{sec:jointModel}
+
+\begin{figure}[tb]
+  \centering
+  \includegraphics[scale=0.6]{fig/joint_1.pdf}
+  \caption{Factor graph for the joint syntactic/semantic dependency
+    parsing model.}\label{fig:joint}
+\end{figure}
+
+In Section \ref{sec:pipelineModel}, we introduced pipeline-trained models for SRL,
+which used grammar induction to predict unlabeled syntactic parses. In
+this section, we define a simple model for joint syntactic and
+semantic dependency parsing.
+
+This model extends the CRF model in Section \ref{sec:srlOnlyModel} to
+include the projective syntactic dependency parse for a sentence. This
+is done by including an additional $n^2$ binary variables that
+indicate whether or not a directed syntactic dependency edge exists
+between a pair of words in the sentence. Unlike the semantic
+dependencies, these syntactic variables must be coupled so that they
+produce a projective dependency parse; this requires an additional
+global constraint factor to ensure that this is the case
+\cite{smith_eisner_2008_bp}. The constraint factor touches all $n^2$
+syntactic-edge variables, and multiplies in $1.0$ if they form a
+projective dependency parse, and $0.0$ otherwise. 
+We couple each syntactic edge variable
+to its semantic edge variable with a binary factor.
+Figure \ref{fig:joint} shows the factor graph for this joint model.
+
+Note that our factor graph does not contain any loops, thereby
+permitting efficient exact marginal inference just as in
+\newcite{naradowsky_improving_2012}.
+We train our CRF models by maximizing conditional log-likelihood
+ using stochastic gradient descent with an adaptive
+learning rate (AdaGrad) \cite{duchi_adaptive_2011} over mini-batches.
+
+The unary and binary factors are defined with exponential family
+potentials. In the next section, we consider binary features of the
+observations (the sentence and labels from previous pipeline stages)
+which are conjoined with the state of the variables in the factor.
+
+\subsection{Features for CRF Models}
+\label{sec:features}
+
+\begin{table}[tb]
+\centering
+\scriptsize
+\begin{tabu}{ll@{ }|p{14em}}
+\tabucline[1pt]{-}
+\scriptsize{\vspace{-1em}} \\
+\multicolumn{2}{l}{\footnotesize\bf Property} & {\footnotesize\bf Possible values} \\\hline
+1 & \att{word form} & all word forms\\
+2 & \att{lower case word form} & all lower-case forms\\
+3 & \att{5-char word form prefixes} & all 5-char form prefixes\\
+4 & \att{capitalization} & {\it True, False} \\
+5 & \att{top-800 word form} & top-800 word forms\\
+6 & \att{brown cluster} & {\it 000, 1100, 010110001}, ... \\
+7 & \att{brown cluster, length 5} & length 5 prefixes of brown clusters \\
+8 & \att{lemma} & all word lemmas \\
+9 & \att{POS tag} & {\it NNP, CD, JJ, DT}, ...\\
+10 & \att{morphological features} & Gender, Case, Number, ... \\ & (different across
+languages) \\
+11 & \att{dependency label} & {\it SBJ, NMOD, LOC}, ... \\ 
+12 & \att{edge direction} & {\it Up, Down} \\
+\tabucline[1pt]{-}
+\end{tabu}
+\caption{Word and edge properties in templates.}\label{tab:props}
+\end{table}
+
+\begin{table}[tb]
+\scriptsize
+\begin{tabu}{@{ }l@{ }l@{ }|l@{ }}
+\tabucline[1pt]{-}
+\scriptsize{\vspace{-1em}} \\
+$i$, $i$-$1$, $i$+$1$ & \posi{noFarChildren($w_i$)} & \posi{linePath($w_p$, $w_c$)} \\
+\posi{parent($w_i$)} & \posi{rightNearSib($w_i$)} & \posi{depPath($w_p$, $w_c$)} \\
+\posi{allChildren($w_i$)} & \posi{leftNearSib($w_i$)} & \posi{depPath($w_p$, $w_{lca}$) } \\
+\posi{rightNearChild($w_i$)} & \posi{firstVSupp($w_i$)} & \posi{depPath($w_c$, $w_{lca}$)} \\
+\posi{rightFarChild($w_i$)} & \posi{lastVSupp($w_i$)} & \posi{depPath($w_{lca}$, $w_{root}$) } \\
+\posi{leftNearChild($w_i$)} & \posi{firstNSupp($w_i$)} \\
+\posi{leftFarChild($w_i$)} & \posi{lastNSupp($w_i$)} \\
+\scriptsize{\vspace{-1em}} \\\tabucline[1pt]{-}
+\end{tabu}
+\caption{Word positions used in templates.  Based on current word position ($i$), 
+positions related to current word $w_i$, possible parent, child ($w_p$, $w_c$), lowest common ancestor between parent/child ($w_{lca}$), 
+and syntactic root ($w_{root}$).}\label{tab:positions}
+\end{table}
+
+\begin{table}[t]
+\centering
+\scriptsize
+\begin{tabu}{lp{14em}}
+\tabucline[1pt]{-}
+\scriptsize{\vspace{-1em}} \\
+{\footnotesize\bf Template} & {\footnotesize\bf Possible values} \\\hline
+\multicolumn{1}{l|}{\feat{relative position}} & {\it before, after, on} \\
+\multicolumn{1}{l|}{\feat{distance}, \feat{continuity}} & $\mathbb{Z}^+$ \\
+\multicolumn{1}{l|}{\feat{binned distance}} & $>$ 2, 5, 10, 20, 30, or 40 \\
+\multicolumn{1}{l|}{\feat{geneological relationship}} & {\it parent, child, ancestor, descendant} \\
+\multicolumn{1}{l|}{\feat{path-grams}} & {\it the\_NN\_went }\\
+\tabucline[1pt]{-}
+\end{tabu}
+\caption{Additional standalone templates.}
+\end{table}
+
+Our feature design stems from two key ideas. First, for SRL, it has
+been observed that feature bigrams (the concatenation of simple
+features such as a predicate's POS tag and an argument's word) are
+important for state-of-the-art
+\cite{zhao_multilingual_2009,bjorkelund_multilingual_2009}. Second,
+for syntactic dependency parsing, combining Brown cluster features
+with word forms or POS tags yields high accuracy even with little
+training data \cite{koo_simple_2008}.
+
+We create binary indicator features for each model using feature templates. Our feature
+template definitions build from those used by the top performing systems in the
+CoNLL-2009 Shared Task, \newcite{zhao_multilingual_2009} and
+\newcite{bjorkelund_multilingual_2009} and from features in syntactic dependency
+parsing \cite{mcdonald_online_2005,koo_simple_2008}.  
+
+\paragraph{Template Creation}
+
+Feature templates are defined over triples of $\mathsf{\langle property,  positions, order\rangle}$.
+{\bf Properties},
+ listed in Table \ref{tab:props}, are extracted from word {\bf positions} within the
+sentence, shown in Table \ref{tab:positions}.
+ Single positions for a word $w_i$ include its syntactic parent, its
+ leftmost farthest child (\posi{leftFarChild}), its rightmost nearest
+ sibling (\posi{rightNearSib}),
+ etc.   Following \newcite{zhao_multilingual_2009}, we include the notion of verb 
+ and noun supports and sections of the dependency path. Also following
+  \newcite{zhao_multilingual_2009}, properties from a set of positions can be put 
+  together in three possible 
+ {\bf orders}: as the given sequence, as a sorted list of unique strings, and removing 
+ all duplicated neighbored strings.  We consider both template unigrams and bigrams,
+combining two templates in sequence.  
+
+Additional templates we include are the relative position \cite{bjorkelund_multilingual_2009}, geneological relationship,
+distance \cite{zhao_multilingual_2009},
+and binned distance 
+\cite{koo_simple_2008} between
+two words in the path. From \newcite{lluis_joint_2013}, we use
+$1,2,3$-gram path features of words/POS tags (\feat{path-grams}), and
+the number of non-consecutive token pairs in a predicate-argument path
+(\feat{continuity}).   
+
+\subsection{Feature Selection}
+\label{sec:featureSelection}
+
+Constructing all feature template unigrams and bigrams would yield an
+unwieldy number of features.
+We therefore determine the top $N$ template bigrams for a dataset and 
+factor $a$ according to an
+information gain measure \cite{martins_structured_2011}:
+\begin{align*}
+  IG_{a,m} = \sum_{f \in T_m} \sum_{x_a} p(f, x_a) \log_2 \frac{p(f, x_a)}{p(f) p(x_a)}
+  \label{eq:informationGain}  
+\end{align*}
+where $T_m$ is the $m$th feature template, $f$ is a particular
+instantiation of that template, and $x_a$ is an assignment to the
+variables in factor $a$. The probabilities are empirical
+estimates computed from the training data. This is simply the mutual
+information of the feature template instantiation with the variable assignment.
+
+This filtering approach was treated as a simple baseline in
+\newcite{martins_structured_2011} to contrast with increasingly
+popular gradient based regularization approaches. Unlike the gradient
+based approaches, this filtering approach easily scales to many
+features since we can decompose the memory usage over feature
+templates.  
+
+As an additional speedup, we reduce the dimensionality of our feature space to 1
+million for each clique using a common trick referred to as
+\emph{feature hashing} \cite{weinberger_feature_2009}: we map each feature
+instantiation to an integer using a hash function\footnote{To
+  reduce hash collisions, We use MurmurHash v3
+  \url{https://code.google.com/p/smhasher}.} modulo the desired dimentionality.
+
+\begin{comment}
+\section{Pipelined vs. Joint Learning for SRL}
+
+As discussed in the introduction, semantic role labeling is traditionally 
+approached by first identifying syntactic features of the
+ sentence and then predicting predicates and their
+arguments.  These often use a pipeline of classifiers for predicate
+disambiguation, argument identification, and argument classification
+\cite{GildeaJurafsky02,SurdeanuEtAl08}.  
+
+Such pipeline approaches rely heavily on the accuracy of the syntactic
+parser \cite{PunyakanokEtAl05,GildeaPalmer02,lang_unsupervised_2011,titov_bayesian_2011}.
+ This decomposition prohibits the parser from utilizing
+the labels from the end task.
+
+In contrast, joint models can learn optimal representations for the
+given end task, without the need for additional annotations
+\cite{naradowsky_improving_2012}.  Joint learning provides a way to 
+propagate beliefs about related variables, and so should favor the 
+syntactic structure that is most consistent with the semantic 
+predicate-argument structures of a sentence. In principle, these models 
+can exploit syntactic and semantic features simultaneously, and could 
+improve accuracy for both syntactic and semantic relations 
+\cite{lluis_joint_2013}.
+
+Treating the SRL task alone as a pipeline has some advantages over a
+joint model.  \cite{bjorkelund_multilingual_2009} used re-ranking with
+global features as a final step in their pipeline. The features of
+this re-ranker could efficiently access all aspects of the pipeline at
+once.
+\end{comment}
+
+\section{Experiments}
+
+\begin{table*}
+\footnotesize
+\begin{center}
+\begin{tabu}{@{}p{.1em}}
+(a)\\
+\vspace{.7cm}
+(b)\\
+\vspace{1.4cm}
+\\
+\vspace{.1cm}
+(c)\\
+\vspace{.3cm}
+\\
+\end{tabu}
+\begin{tabu}{l@{\hspace{.01cm}}|l|l|c|cccccc}
+\tabucline[1pt]{}
+\textbf{SRL Approach} & \textbf{Feature Set} & \textbf{Dep. Parser} & {\textbf{Avg.}} &
+ {\bf ca} & {\bf cs} & {\bf de} & {\bf en} & {\bf es } & {\bf zh} \\ \tabucline[1pt]{}
+    Pipeline & \coarseIgFeats{} & Gold  & {\bf 84.98} & 84.97 & {\bf 87.65} & 79.14 & {\bf 86.54} & 84.22 & {\bf 87.35} \\
+  Pipeline & \bjorkIgFeats{} & Gold  & 84.74 & {\bf 85.15} & 86.64 & {\bf 79.50} & 85.77 & {\bf 84.40} & 86.95 \\
+  \newcite{naradowsky_improving_2012} & & Gold  & 72.73 & 69.59 & 74.84 & 66.49 & 78.55 & 68.93 & 77.97 \\
+\tabucline[.5pt]{}
+   \newcite{bjorkelund_multilingual_2009} & & Supervised & {\bf 81.55}  & 80.01 & {\bf 85.41} & {\bf 79.71} & {\bf 85.63} & 79.91 & {\bf 78.60} \\
+    \newcite{zhao_multilingual_2009} & & Supervised & 80.85 & {\bf 80.32} & 85.19 & 75.99 & 85.44 & {\bf 80.46} & 77.72 \\
+   Pipeline & \coarseIgFeats{} & Supervised & 78.03 & 76.24 & 83.34 & 74.19 & 81.96 & 76.12 & 76.35 \\
+    Pipeline & \zhaoLsFeats{}  & Supervised & *77.62  &  77.62  &   ---    & --- & --- & --- & --- \\
+    Pipeline & \bjorkLsFeats{} & Supervised & *76.49  &  ---  &  ---  & 72.17 & 81.15 & 76.65 & 75.99 \\
+   Pipeline & \bjorkIgFeats{} & Supervised & 75.68 & 74.59 & 81.61 & 69.08 & 78.86 & 74.51 & 75.44 \\
+\tabucline[.5pt]{}
+   Joint & \coarseIgFeats{} & Marginalized &  {\bf 72.48} & 71.35 & {\bf 81.03} & 65.15 & {\bf 76.16} & 71.03 & 70.14 \\
+   Joint & \bjorkIgFeats{} & Marginalized & 72.40 & {\bf 71.55} & 80.04 & 64.80 & 75.57 & {\bf 71.21} &  71.21 \\
+  \newcite{naradowsky_improving_2012}  & & Marginalized & 71.27 & 67.99 & 73.16 & {\bf 67.26} & 76.12 & 66.74 & {\bf 76.32} \\
+    Pipeline & \coarseIgFeats{} & DMV+C (bc) & 70.08 & 68.21 & 79.63 & 62.25 & 73.81 & 68.73 & 67.86 \\
+   Pipeline & \zhaoLsFeats{} & DMV+C (bc) & *69.67 & 69.67 &   ---    & --- & --- & --- & --- \\
+    Pipeline & \coarseIgFeats{} & DMV (bc) & 69.26 & 68.04 & 79.58 & 58.47 & 74.78 & 68.36 & 66.35 \\
+  Pipeline & \bjorkIgFeats{} & DMV (bc)  & 66.81 & 63.31 & 77.38 & 59.91 & 72.02 & 65.96 & 62.28 \\
+    Pipeline & \bjorkIgFeats{} & DMV+C (bc) & 65.61 & 61.89 & 77.48 & 58.97 & 69.11 & 63.31 & 62.92 \\
+  Pipeline & \bjorkLsFeats{} & DMV+C (bc) & *63.06 & ---   & ---   &  57.75 & 68.32 & 63.70  & 62.45 \\
+\tabucline[1pt]{}
+ \end{tabu}
+\end{center}
+\caption{Test F1 for SRL and sense disambiguation on CoNLL'09 
+  in high-resource and low-resource settings: we study (a) gold syntax, 
+  (b) supervised syntax, and (c) unsupervised syntax. 
+    Results are ranked by F1 with bold numbers indicating the best F1 
+  for a language and level of supervision.   \\
+  \footnotesize{    *Indicates partial averages for the language-specific feature sets
+  (\zhaoLsFeats{} and \bjorkLsFeats{}), for 
+  which we show results only on the languages for which the sets
+  were publicly available. }
+  }
+\label{tab:srl-sense-test-09}
+\end{table*}
+
+We are interested in the effects of varied supervision using pipeline and joint training for SRL.  
+To compare to prior work (i.e., submissions to the
+CoNLL-2009 Shared Task), we also consider the joint task of semantic
+role labeling \emph{and} predicate sense disambiguation.
+Our experiments are subtractive, beginning with all
+supervision available and then successively removing (a) dependency
+syntax, (b) morphological features, (c) POS tags, and (d) lemmas.
+Dependency syntax is the most expensive and difficult to obtain of
+these various forms of supervision. We explore the importance of both
+the labels and structure, and what quantity of supervision is useful.
+
+\subsection{Data}
+
+The CoNLL-2009 Shared Task \cite{hajivc_conll-2009_2009} dataset
+contains POS tags, lemmas, morphological features, syntactic
+dependencies, predicate senses, and semantic roles annotations for 7
+languages: Catalan, Chinese, Czech, English,
+German,
+Japanese,\footnote{We do not report results on Japanese as that data
+  was only made freely available to researchers that competed in CoNLL
+  2009.} Spanish. 
+The CoNLL-2005 and -2008 Shared Task datasets provide English SRL
+annotation, and for cross dataset comparability we consider only
+verbal predicates (more details in \S~\ref{sec:lowResourceResults}). 
+To compare with prior approaches that use semantic supervision for
+grammar induction, we utilize Section 23 of the WSJ portion of
+the Penn Treebank \cite{marcus_building_1993}.
+
+\subsection{Feature Template Sets}
+\label{sec:featureSets}
+Our primary feature set {\bf \coarseIgFeats{}} consists of 127 template unigrams
+that emphasize coarse properties (i.e., properties 7, 9, and 11 in
+Table \ref{tab:props}). We also explore the 31
+template unigrams\footnote{Because we do not include a binary factor
+  between predicate sense and semantic role, we do not include sense
+  as a feature for argument prediction.}  {\bf \bjorkIgFeats{}} described by
+\newcite{bjorkelund_multilingual_2009}.  Each of \coarseIgFeats{} and 
+\bjorkIgFeats{} also include 32 template bigrams
+selected by information gain on 1000 sentences---we select a different set of template
+bigrams for each dataset.
+
+We compare against 
+the language-specific feature sets detailed in 
+the literature on high-resource top-performing SRL systems: 
+From \newcite{bjorkelund_multilingual_2009}, these are feature sets for 
+German, English, Spanish and Chinese, obtained by weeks of forward 
+selection ({\bf \bjorkLsFeats{}}); 
+and from \newcite{zhao_multilingual_2009}, these are features for Catalan {\bf 
+\zhaoLsFeats{}}.\footnote{This covers all CoNLL languages but Czech, 
+where feature sets were 
+  not made publicly available in either work. In Czech, we disallowed template bigrams
+  involving \feat{path-grams}.}
+
+\subsection{High-resource SRL}
+\label{sec:highResourceResults}
+
+We first compare our models trained as a pipeline, using
+all available supervision (syntax, morphology, POS tags, lemmas) from
+the CoNLL-2009 data. 
+Table \ref{tab:srl-sense-test-09}(a)
+shows the results of our model with
+gold syntax and a richer feature set than that of
+\newcite{naradowsky_improving_2012}, which only looked at whether a
+syntactic dependency edge was present. This highlights an important
+advantage of the pipeline trained model: the features can consider any
+part of the syntax (e.g., arbitrary subtrees), whereas
+the joint model is limited to those features over which it can
+efficiently marginalize (e.g., short dependency paths). This holds true
+even in the pipeline setting where no syntactic supervision is available. 
+
+Table \ref{tab:srl-sense-test-09}(b) contrasts our
+high-resource results for the task of SRL and sense disambiguation with
+the top systems in the CoNLL-2009 Shared Task, giving
+further insight into the performance of the simple information gain
+feature selection technique.
+With supervised syntax, our simple information gain feature selection technique
+  (\S~\ref{sec:featureSelection}) performs admirably. However, the 
+  original unigram 
+  Bj\"orkelund features (\bjorkLsFeats{}), which were tuned for
+  a high-resource model, obtain higher F1 than our information gain set
+  using the same features in unigram and bigram templates 
+  (\bjorkIgFeats{}).  
+  This suggests that further 
+  work on feature selection may improve the results. 
+  We find that \bjorkIgFeats{} obtain \emph{higher} F1 than the original  Bj\"orkelund feature sets 
+  (\bjorkLsFeats{}) in
+  the low-resource pipeline setting with constrained grammar induction (DMV+C).
+
+\begin{table}
+\newcommand{\conllHeads}{{\scriptsize \it
+  \begin{tabular}{@{}c@{}}
+    2008\\heads
+  \end{tabular}} }
+\newcommand{\conllSpans}{  {\scriptsize \it
+  \begin{tabular}{@{}c@{}}
+    2005\\spans
+  \end{tabular}} }
+\newcommand{\conllOracleSpans}{   {\scriptsize \it
+  \begin{tabular}{@{}c@{}}
+    2005\\spans\\(oracle\\tree)
+  \end{tabular}} }
+\newcommand{\usesTreebank}{$\text{\rlap{$\checkmark$}}\square$}
+\newcommand{\noTreebank}{$\square$}
+\footnotesize
+\centering
+    \begin{tabu}{l@{}r|c|c|c}
+         & {\bf \diaghead{train~~~~test}{train}{test}} & \conllHeads & \conllSpans &  \multirow{2}[0]{*}{\conllOracleSpans} \\ \tabucline{1-4}
+  \usesTreebank{} PRY'08     & \multirow{3}[0]{*}{\rotatebox[origin=c]{90}{ \conllSpans}}    & 84.32    & 79.44  & \\ 
+  \noTreebank{} B'11 (tdc)&   &    ---   & 71.5  &  \\
+  \noTreebank{} B'11 (td)     &   & ---      & 65.0  & \\ \tabucline{}
+  \usesTreebank{} JN'08     &  \multirow{3}[0]{*}{\rotatebox[origin=c]{90}{\conllHeads }}    & 85.93      & 79.90  & \\ 
+  \noTreebank{} Joint, \coarseIgFeats{} & & 72.9 & 35.0 & 72.0 \\
+  \noTreebank{} Joint, \bjorkIgFeats{} &  & 67.3  & 37.8 & 67.1 \\
+   \tabucline[1pt]{}
+    \end{tabu}
+    \caption{F1 for SRL approaches (without sense disambiguation) in 
+     matched and mismatched train/test settings for CoNLL 2005 span and 2008 head supervision.
+      We contrast low-resource (\noTreebank{}) and
+      high-resource settings (\usesTreebank), where latter uses a treebank.
+      See \S~\ref{sec:lowResourceResults}
+      for caveats to this comparison.}
+\label{tab:srl-only-test-05}
+\end{table}
+
+\subsection{Low-Resource SRL}
+\label{sec:lowResourceResults}
+
+\paragraph{CoNLL-2009}
+Table \ref{tab:srl-sense-test-09}(c) includes results for our
+low-resource approaches and \newcite{naradowsky_improving_2012} on
+predicting semantic roles as well as sense.  In the low-resource
+setting of the CoNLL-2009 Shared task without syntactic supervision,
+ our joint model (Joint) with marginalized syntax
+  obtains state-of-the-art results with features \coarseIgFeats{} described in 
+  \S~\ref{sec:featureSets}. 
+  This model outperforms prior work \cite{naradowsky_improving_2012} and 
+  our pipeline model (Pipeline) with contrained (DMV+C) and 
+  unconstrained grammar induction (DMV) trained on brown clusters (bc). 
+
+ In the low-resource setting, training and decoding times for the
+pipeline and joint methods are similar as computation time tends to be
+dominated by feature extraction.
+
+These results begin to answer a key research question in this work: 
+The joint models outperform the pipeline models in the low-resource setting. 
+This holds even when using the same feature selection process. 
+Further, the best-performing low-resource features found in this work are 
+those based on coarse feature templates and selected by information gain. 
+Templates for these features generalize well to the high-resource 
+setting.  However, analysis of the induced grammars in the pipeline setting 
+suggests that the book is not closed on the issue.  We return to this 
+in \S~\ref{sec:grammarInductionResults}.
+
+\paragraph{CoNLL-2008, -2005}
+To finish out comparisons with state-of-the-art SRL, we 
+contrast our approach with that of \newcite{boxwell_semantic_2011}, who evaluate on SRL 
+in isolation (without sense disambiguation, as in CoNLL-2009).
+They report results on Prop-CCGbank \cite{boxwell_projecting_2008},
+which uses the same training/testing splits as the 
+CoNLL-2005 Shared Task.
+ Their results are therefore 
+loosely\footnote{The comparison is imperfect for two reasons:
+first, the CCGBank contains only 99.44\% of the original PTB sentences
+\cite{hockenmaier_ccgbank:_2007}; second, because PropBank was
+annotated over CFGs, after converting to CCG only 99.977\% of the
+argument spans were exact matches
+\cite{boxwell_projecting_2008}. However, this comparison was adopted
+by \newcite{boxwell_semantic_2011}, so we use it here.} comparable to
+results on the CoNLL-2005 dataset, which we can compare here.
+
+There is an additional complication in comparing SRL approaches directly:  
+The CoNLL-2005 dataset defines arguments as \emph{spans} instead of
+heads,
+which runs counter to our head-based syntactic
+representation. This creates a mismatched train/test scenario: we must
+train our model to predict argument \emph{heads}, but then test on our models
+ability to predict argument \emph{spans}.\footnote{
+We were unable to obtain the
+  system output of \newcite{boxwell_semantic_2011} in order to convert
+  their spans to dependencies and evaluate the other mismatched train/test
+  setting.}  We therefore train our models on the CoNLL-2008 argument 
+  heads,\footnote{CoNLL-2005, -2008, and -2009  were derived from PropBank 
+and share the same source text; -2008 and -2009 use argument heads.}
+  and post-process and convert from heads to spans using the conversion algorithm available
+  from \newcite{johansson_dependency-based_2008}.\footnote{
+  Specifically, we use their Algorithm 2, which produces the span dominated by each
+argument, with special handling of the case when the argument head
+dominates that of the predicate.  Also following
+  \newcite{johansson_dependency-based_2008}, we recover the '05
+  sentences missing from the '08 evaluation set.} The heads are either from an
+MBR tree or an oracle tree. This gives \newcite{boxwell_semantic_2011} the advantage, since our
+syntactic dependency parses are optimized to pick out semantic argument
+heads, not spans.
+
+Table \ref{tab:srl-only-test-05} presents our results.
+\newcite{boxwell_semantic_2011} (B'11) uses additional supervision in
+the form of a CCG tag dictionary derived from supervised data with
+(tdc) and without (tc) a cutoff. 
+Our model does very poorly on the '05 span-based evaluation because
+the constituent bracketing of the marginalized trees are
+inaccurate. This is elucidated by instead evaluating on the oracle
+spans, where our F1 scores are higher than
+\newcite{boxwell_semantic_2011}. We also contrast with relavant
+high-resource methods with span/head conversions from
+\newcite{johansson_dependency-based_2008}:
+\newcite{punyakanok_importance_2008} (PRY'08) and
+\newcite{johansson_dependency-based_2008} (JN'08).
+
+\paragraph{Subtractive Study}
+
+In our subsequent experiments, we study the effectiveness of our
+models as the available supervision is decreased. We
+incrementally remove dependency syntax, morphological features, POS tags,
+then lemmas. For these experiments, we utilize the coarse-grained 
+feature set (\coarseIgFeats{}), which includes Brown clusters.
+
+Across languages, we find the largest drop in F1 when we remove POS 
+tags; and we find a gain in F1 when we remove lemmas.  This indicates 
+that lemmas, which are a high-resource annotation, may not provide a 
+significant benefit for this task. The effect of removing morphological features 
+is different across languages, with little change in performance for 
+Catalan and Spanish, but a drop in performance for German.  This may 
+reflect a difference between the languages, or may reflect 
+the difference between the annotation of the languages: both the Catalan 
+and Spanish data originated from the Ancora project,\footnote{http://clic.ub.edu/corpus/ancora} 
+while the German data came from another source.
+
+\begin{table}
+    \centering
+  \footnotesize
+  \begin{tabu}{c|c|ccc}
+\tabucline[1pt]{} 
+    {\bf Rem} & {\bf \#FT} & {\bf ca} & {\bf de} & {\bf es } \\ [1ex]\tabucline[1pt]{} 
+        {\it --}       & 127+32 & 74.46 & 72.62 & 74.23\\%\rowfont{\scriptsize}
+    {\it Dep }   & 40+32 & 67.43 & 64.24 & 67.18 \\     {\it Mor }   & 30+32 & 67.84 & 59.78 & 66.94 \\     {\it POS }  & 23+32 & 64.40  & 54.68 & 62.71 \\     {\it Lem }  & 21+32 & 64.85 & 54.89 & 63.80 \\ \tabucline[1pt]{}
+  \end{tabu}
+  \caption{Subtractive experiments. Each row contains the F1 for SRL
+    only (without sense disambiguation)
+    where the supervision type of that row and all above it have
+    been removed. Removed supervision types (Rem) are:  
+    syntactic dependencies ({\it Dep}), morphology ({\it Mor}), POS
+    tags ({\it POS}), 
+    and lemmas ({\it Lem}).  \#FT indicates the number of 
+    feature templates used (unigrams+bigrams).}
+  \label{tab:supervisionAblation}
+\end{table}
+
+Figure \ref{fig:semanticDepsLearningCurve} contains the learning curve
+for SRL supervision in our lowest resource setting for two example languages, 
+Catalan and German.  This shows how F1 of SRL changes as we adjust the number 
+of training examples.  We find that the joint training approach to grammar induction
+yields consistently higher SRL performance than its distantly supervised counterpart.
+
+\begin{figure}[tb]
+  \centering
+\includegraphics[scale=0.45]{fig/catalan_german_F1_2.pdf}
+      \caption{Learning curve for semantic dependency supervision in
+    Catalan and German. F1 of SRL only (without sense disambiguation) shown as
+    the number of training sentences is increased.}
+  \label{fig:semanticDepsLearningCurve}
+\end{figure}
+
+\begin{table}[tb]
+  \newcommand{\dpCol}{0.35cm}
+  \centering
+  \footnotesize
+  \begin{tabu}{p{1.8cm}|p{0.45cm}|p{\dpCol}p{\dpCol}p{\dpCol}p{\dpCol}p{\dpCol}p{\dpCol}}
+\tabucline[1pt]{}
+\textbf{Dependency Parser} & {\textbf{Avg.}} & {\bf ca} & {\bf cs} & {\bf de} & {\bf en} & {\bf es } & {\bf zh} \vspace{.3em} \\
+ \tabucline[1pt]{} \rowfont{\scriptsize}
+Supervised* & 87.1  & 89.4  & 85.3  & 89.6  & 88.4  & 89.2  & 80.7 \\ \rowfont{\scriptsize}
+\tabucline[.5pt on 3pt]{}
+DMV (pos) & 30.2 & 45.3 & 22.7 & 20.9 & 32.9 & 41.9 & 17.2 \\ \rowfont{\scriptsize}
+DMV (bc) & 22.1 & 18.8 & 32.8 & 19.6 & 22.4 & 20.5 & 18.6 \\ \rowfont{\scriptsize}
+DMV+C (pos) & 37.5 & 50.2 & 34.9 & 21.5 & 36.9 & 49.8 & 32.0 \\ \rowfont{\scriptsize} 
+DMV+C (bc) & 40.2 & 46.3 & 37.5 & 28.7 & 40.6 & 50.4 & 37.5 \\ \rowfont{\scriptsize}
+Marginal, \coarseIgFeats{} & 43.8  & 50.3 & 45.8 & 27.2 & 44.2 & 46.3 & 48.5 \\ \rowfont{\scriptsize}
+ Marginal, \bjorkIgFeats{} & 50.2  & 52.4  & 43.4  & 41.3  & 52.6  & 55.2  & 56.2 \\
+\tabucline[1pt]{}
+ \end{tabu}
+ \caption{Unlabeled directed dependency accuracy on CoNLL'09 test set
+   in low-resource settings.  DMV models are trained on either
+   POS tags (pos) or Brown clusters (bc). \footnotesize{*Indicates the supervised parser outputs 
+   provided by the CoNLL'09 Shared Task.}}
+\label{tab:dep-acc-test-09}
+\end{table}
+
+\begin{table}[tbp]
+\footnotesize
+\centering
+\begin{tabu}{l|r|p{1.45cm}}
+\tabucline[1pt]{}
+\textbf{ } & \multicolumn{1}{l|}{\textbf{WSJ$^{\infty}$}} & \textbf{Distant} \\
+ & & \textbf{Supervision} \\\tabucline[1pt]{}
+ SAJM'10  & 44.8 & none\\ 
+ SAJ'13  & \textbf{64.4} & none \\ \tabucline[.5pt on 3pt]{} SJA'10  & 50.4 & HTML\\  
+ NB'11  & 59.4 & ACE05\\ \tabucline[.5pt on 3pt]{} DMV (bc) & 24.8 & none \\ 
+ DMV+C (bc) & 44.8 & SRL \\ 
+ Marginalized, \coarseIgFeats{} & 48.8 & SRL \\
+ Marginalized, \bjorkIgFeats{} & 58.9 & SRL \\
+\tabucline[1pt]{}
+\end{tabu}
+\caption{Comparison of grammar induction approaches. We contrast the
+  DMV trained with Viterbi EM+uniform initialization
+  (DMV), our constrained DMV (DMV+C), and our
+   model's MBR decoding of latent syntax (Marginalized) with other recent work:
+  \newcite{spitkovsky_viterbi_2010} (SAJM'10),
+  \newcite{spitkovsky_profiting_2010} (SJA'10),
+  \newcite{naseem_using_2011} (NB'11), and the CS model of
+  \newcite{spitkovsky_breaking_2013} (SAJ'13). }
+\label{tab:grammarInduction}
+\end{table}
+
+\subsection{Analysis of Grammar Induction}
+\label{sec:grammarInductionResults}
+
+Table \ref{tab:dep-acc-test-09} shows grammar induction accuracy in 
+low-resource settings.  We find that the gap between the supervised 
+parser and the unsupervised methods is quite large, despite the 
+reasonable accuracy both methods achieve for the SRL end task.  
+This suggests that refining the low-resource grammar induction 
+methods may lead to gains in SRL.
+
+Interestingly, the marginalized grammars best the DMV grammar 
+induction method; however, this difference is less pronounced when 
+the DMV is constrained using SRL labels as distant supervision.  This 
+could indicate that a better model for grammar induction would result 
+in better performance for SRL.  We therefore turn to an analysis of 
+other approaches to grammar induction
+in Table \ref{tab:grammarInduction}, evaluated on the Penn Treebank.  We contrast with
+methods using distant supervision 
+\cite{naseem_using_2011,spitkovsky_profiting_2010} and fully
+unsupervised dependency parsing \cite{spitkovsky_breaking_2013}. 
+Following prior work, 
+we exclude punctuation from 
+evaluation and convert the constituency trees to dependencies.\footnote{\newcite{naseem_using_2011} and our results use the Penn
+converter 
+\cite{pierre_extended_2007}. Spitkovsky et
+al.~\shortcite{spitkovsky_profiting_2010,spitkovsky_breaking_2013} use
+\newcite{collins_head-driven_1999} head percolation rules.}
+
+The approach from \newcite{spitkovsky_breaking_2013}
+(SAJ'13) outperforms all other approaches, including our marginalized
+settings.  We therefore may be able to achieve
+further gains in the pipeline model by considering better models of
+latent syntax, or better search techniques that break out of local
+optima. Similarly, improving the nonconvex optimization of our
+latent-variable CRF (Marginalized) may offer further gains.
+
+\section{Discussion and Future Work}
+
+We have compared various approaches for low-resource semantic role labeling at the state-of-the-art
+level. We find that we can outperform 
+prior work in the low-resource setting by coupling the selection of 
+feature templates based on information gain with a joint model that 
+marginalizes over latent syntax.
+
+We utilize unlabeled data in both generative and discriminative models
+for dependency syntax and in generative word clustering. Our discriminative joint
+models treat latent syntax as a structured-feature to be optimized for
+the end-task of SRL, while our other grammar induction techniques
+optimize for unlabeled data likelihood---optionally with distant supervision. We observe that careful use of
+these unlabeled data resources can improve performance on the end task.
+
+Our subtractive experiments suggest that lemma annotations, a 
+high-resource annotation, may not provide a large 
+benefit for SRL.  Our grammar induction analysis indicates that 
+relatively low accuracy can still result in reasonable SRL 
+predictions; still, the models do not outperform those that use supervised 
+syntax, and we aim to explore how well the pipeline models in 
+particular improve when we apply higher accuracy unsupervised grammar induction 
+techniques.
+
+We have utilized well studied datasets in order to best
+understand the quality of our models relative to prior work. In future
+work, we hope to explore the effectiveness of our approaches on truly
+low resource settings by using crowdsourcing to develop semantic
+role datasets in other languages and domains.  
+
+\paragraph{Acknowledgments}
+We thank Richard Johansson, Dennis Mehay, and Stephen Boxwell for 
+help with data.
+We also thank Jason Naradowsky, Jason Eisner, and anonymous reviewers 
+for comments on the paper.
+
+\bibliographystyle{acl}
+\bibliography{references}
+\end{document}
+

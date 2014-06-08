@@ -1,0 +1,30 @@
+SubmissionNumber#=%=#96
+FinalPaperTitle#=%=#Comparing Automatic Evaluation Measures for Image Description
+ShortPaperTitle#=%=#Comparing Automatic Evaluation Measures for Image Description
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Frank Keller
+JobTitle#==#
+Organization#==#School of Informatics
+University of Edinburgh
+Edinburgh EH8 9AB
+United Kingdom
+Abstract#==#Image description is a new natural language generation task, where the aim is
+to generate a human-like description of an image. The evaluation of
+computer-generated text is a notoriously difficult problem, however, the
+quality of image descriptions has typically been measured using unigram BLEU
+and human judgements. The focus of this paper is to determine the correlation
+of automatic measures with human judgements for this task. We estimate the
+correlation of unigram and Smoothed BLEU, TER, ROUGE-SU4, and Meteor against
+human judgements on two data sets. The main finding is that unigram BLEU has a
+weak correlation, and Meteor has the strongest correlation with human
+judgements.
+Author{1}{Firstname}#=%=#Desmond
+Author{1}{Lastname}#=%=#Elliott
+Author{1}{Email}#=%=#d.elliott@sms.ed.ac.uk
+Author{1}{Affiliation}#=%=#University of Edinburgh
+Author{2}{Firstname}#=%=#Frank
+Author{2}{Lastname}#=%=#Keller
+Author{2}{Email}#=%=#keller@inf.ed.ac.uk
+Author{2}{Affiliation}#=%=#University of Edinburgh
+
+==========

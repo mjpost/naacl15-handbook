@@ -1,0 +1,26 @@
+SubmissionNumber#=%=#359
+FinalPaperTitle#=%=#Strategies for Contiguous Multiword Expression Analysis and Dependency Parsing
+ShortPaperTitle#=%=#Strategies for Contiguous Multiword Expression Analysis and Dependency Parsing
+NumberOfPages#=%=#11
+CopyrightSigned#=%=#Matthieu Constant
+JobTitle#==#
+Organization#==#
+Abstract#==#In this paper, we investigate various strategies to predict both syntactic
+dependency parsing and contiguous multiword expression (MWE) recognition,
+testing them on the dependency version of French Treebank, as instantiated in
+the SPMRL Shared Task. Our work focuses on using an alternative representation
+of syntactically regular MWEs, which captures their syntactic internal
+structure. We obtain a system with comparable performance to that of previous
+works on this dataset, but which predicts both syntactic dependencies and the
+internal structure of MWEs. This can be useful for capturing the various
+degrees of semantic compositionality of MWEs.
+Author{1}{Firstname}#=%=#Marie
+Author{1}{Lastname}#=%=#Candito
+Author{1}{Email}#=%=#marie.candito@gmail.com
+Author{1}{Affiliation}#=%=#Univ Paris Diderot - INRIA - Alpage
+Author{2}{Firstname}#=%=#Matthieu
+Author{2}{Lastname}#=%=#Constant
+Author{2}{Email}#=%=#mconstan@univ-mlv.fr
+Author{2}{Affiliation}#=%=#Université Paris-Est, LIGM, CNRS
+
+==========

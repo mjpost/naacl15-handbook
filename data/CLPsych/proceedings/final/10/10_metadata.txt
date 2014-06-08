@@ -1,0 +1,37 @@
+SubmissionNumber#=%=#10
+FinalPaperTitle#=%=#Linguistic Indicators of Severity and Progress in Online Text-based Therapy for Depression
+ShortPaperTitle#=%=#Linguistic Indicators of Severity and Progress in Online Text-based Therapy for Depression
+NumberOfPages#=%=#10
+CopyrightSigned#=%=#Matthew Purver
+JobTitle#==#
+Organization#==#School of Electronic Engineering and Computer Science
+Queen Mary University of London
+Mile End Road, London E1 4NS, UK
+Abstract#==#Mental illnesses such as depression and anxiety are highly prevalent,
+and therapy is increasingly being offered online.  This new setting is
+a departure from face-to-face therapy, and offers both a challenge and
+an opportunity -- it is not yet known what features or approaches are
+likely to lead to successful outcomes in such a different medium, but
+online text-based therapy provides large amounts of data for
+linguistic analysis.  We present an initial investigation into the
+application of computational linguistic techniques, such as topic and
+sentiment modelling, to online therapy for depression and anxiety. We
+find that important measures such as symptom severity can be predicted
+with comparable accuracy to face-to-face data, using general features
+such as discussion topic and sentiment; however, measures of patient
+progress are captured only by finer-grained lexical features,
+suggesting that aspects of style or dialogue structure may also be important.
+Author{1}{Firstname}#=%=#Christine
+Author{1}{Lastname}#=%=#Howes
+Author{1}{Email}#=%=#c.howes@qmul.ac.uk
+Author{1}{Affiliation}#=%=#Queen Mary University of London
+Author{2}{Firstname}#=%=#Matthew
+Author{2}{Lastname}#=%=#Purver
+Author{2}{Email}#=%=#m.purver@qmul.ac.uk
+Author{2}{Affiliation}#=%=#Queen Mary University of London
+Author{3}{Firstname}#=%=#Rose
+Author{3}{Lastname}#=%=#McCabe
+Author{3}{Email}#=%=#R.McCabe@exeter.ac.uk
+Author{3}{Affiliation}#=%=#University of Exeter Medical School
+
+==========

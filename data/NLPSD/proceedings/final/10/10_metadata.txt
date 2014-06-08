@@ -1,0 +1,29 @@
+SubmissionNumber#=%=#10
+FinalPaperTitle#=%=#A Unified Topic-Style Model for Online Discussions
+ShortPaperTitle#=%=#A Unified Topic-Style Model for Online Discussions
+NumberOfPages#=%=#9
+CopyrightSigned#=%=#Ding Ying
+JobTitle#==#
+Organization#==#Singapore Management University
+Stamford Road NO. 81, Singapore
+Abstract#==#Forums have become major places for online communications for many years, where
+people often share and express opinion. We observe that, when editing posts,
+people would whether seriously show their opinions or play jokes and write
+meaningless post on the discussed topics. We design a unified probabilistic
+graphical model to capture both topic-driven words and style-driven words. The
+model can help us separate serious and unserious posts and users. An extensive
+set of experiments prove the effectiveness of our model.
+Author{1}{Firstname}#=%=#Ying
+Author{1}{Lastname}#=%=#Ding
+Author{1}{Email}#=%=#ying.ding.2011@smu.edu.sg
+Author{1}{Affiliation}#=%=#Singapore Management University
+Author{2}{Firstname}#=%=#Jing
+Author{2}{Lastname}#=%=#Jiang
+Author{2}{Email}#=%=#jingjiang@smu.edu.sg
+Author{2}{Affiliation}#=%=#Singapore Management University
+Author{3}{Firstname}#=%=#Qiming
+Author{3}{Lastname}#=%=#Diao
+Author{3}{Email}#=%=#qiming.ustc@gmail.com
+Author{3}{Affiliation}#=%=#Singapore Management University
+
+==========

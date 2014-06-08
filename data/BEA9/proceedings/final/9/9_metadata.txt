@@ -1,0 +1,28 @@
+SubmissionNumber#=%=#9
+FinalPaperTitle#=%=#Exploiting Morphological, Grammatical, and Semantic Correlates for Improved Text Difficulty Assessment
+ShortPaperTitle#=%=#Exploiting Morphological, Grammatical, and Semantic Correlates for Improved Text Difficulty Assessment
+NumberOfPages#=%=#8
+CopyrightSigned#=%=#Elizabeth Salesky
+JobTitle#==#Assistant Staff
+Organization#==#MIT Lincoln Laboratory
+244 Wood Street
+Lexington, MA 02421
+Abstract#==#We present a low-resource, language-independent system for text difficulty
+assessment. We replicate and improve upon a baseline by Shen et al. (2013) for
+readability assessment on the Interagency Language Roundtable (ILR) scale. Our
+work demonstrates that the addition of morphological, information theoretic,
+and language modeling features to a traditional readability baseline greatly
+benefits performance on this scale. We compare two algorithms, the
+Margin-Infused Relaxed Algorithm and Support Vector Machines, for our
+experiments on Arabic, Dari, English, and Pashto and provide a detailed
+analysis of our results.
+Author{1}{Firstname}#=%=#Elizabeth
+Author{1}{Lastname}#=%=#Salesky
+Author{1}{Email}#=%=#elizabeth.salesky@ll.mit.edu
+Author{1}{Affiliation}#=%=#MIT Lincoln Laboratory
+Author{2}{Firstname}#=%=#Wade
+Author{2}{Lastname}#=%=#Shen
+Author{2}{Email}#=%=#swade@ll.mit.edu
+Author{2}{Affiliation}#=%=#MIT
+
+==========

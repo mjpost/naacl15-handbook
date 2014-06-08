@@ -1,0 +1,37 @@
+SubmissionNumber#=%=#567
+FinalPaperTitle#=%=#Probabilistic Labeling for Efficient Referential Grounding based on Collaborative Discourse
+ShortPaperTitle#=%=#Probabilistic Labeling for Efficient Referential Grounding
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Changsong Liu
+JobTitle#==#
+Organization#==#Department of Computer Science and Engineering
+Michigan State University
+East Lansing, MI 48824, USA
+Abstract#==#When humans and artificial agents (e.g. robots) have mismatched perceptions of
+the shared environment, referential communication between them becomes
+difficult. To mediate perceptual differences, this paper presents a new
+approach using probabilistic labeling for referential grounding. This approach
+aims to integrate different types of evidence from the collaborative
+referential discourse into a unified scheme. Its probabilistic labeling
+procedure can generate multiple grounding hypotheses to facilitate follow-up
+dialogue. Our empirical results have shown the probabilistic labeling approach
+significantly outperforms a previous graph-matching approach for referential
+grounding.
+Author{1}{Firstname}#=%=#Changsong
+Author{1}{Lastname}#=%=#Liu
+Author{1}{Email}#=%=#liucs81@gmail.com
+Author{1}{Affiliation}#=%=#Michigan State University
+Author{2}{Firstname}#=%=#Lanbo
+Author{2}{Lastname}#=%=#She
+Author{2}{Email}#=%=#shelanbo@cse.msu.edu
+Author{2}{Affiliation}#=%=#Michigan State University
+Author{3}{Firstname}#=%=#Rui
+Author{3}{Lastname}#=%=#Fang
+Author{3}{Email}#=%=#fangrui@cse.msu.edu
+Author{3}{Affiliation}#=%=#Michigan State University
+Author{4}{Firstname}#=%=#Joyce Y.
+Author{4}{Lastname}#=%=#Chai
+Author{4}{Email}#=%=#jchai@cse.msu.edu
+Author{4}{Affiliation}#=%=#Michigan State University
+
+==========

@@ -1,0 +1,30 @@
+SubmissionNumber#=%=#178
+FinalPaperTitle#=%=#Negation Focus Identification with Contextual Discourse Information
+ShortPaperTitle#=%=#Negation Focus Identification with Contextual Discourse Information
+NumberOfPages#=%=#9
+CopyrightSigned#=%=#Bowei Zou
+JobTitle#==#
+Organization#==#Soochow University, 1st Shizi Street, Suzhou, China
+Abstract#==#Negative expressions are common in natural language text and play a critical
+role in information extraction. However, the performances of current systems
+are far from satisfaction, largely due to its focus on intra-sentence
+information and its failure to consider inter-sentence information. In this
+paper, we propose a graph model to enrich intra-sentence features with
+inter-sentence features from both lexical and topic perspectives. Evaluation on
+the *SEM 2012 shared task corpus indicates the usefulness of contextual
+discourse information in negation focus identification and justifies the
+effectiveness of our graph model in capturing such global information.
+Author{1}{Firstname}#=%=#Bowei
+Author{1}{Lastname}#=%=#Zou
+Author{1}{Email}#=%=#zoubowei@gmail.com
+Author{1}{Affiliation}#=%=#Natural Language Processing Lab, Soochow University
+Author{2}{Firstname}#=%=#Guodong
+Author{2}{Lastname}#=%=#Zhou
+Author{2}{Email}#=%=#gdzhou@suda.edu.cn
+Author{2}{Affiliation}#=%=#Soochow University
+Author{3}{Firstname}#=%=#Qiaoming
+Author{3}{Lastname}#=%=#Zhu
+Author{3}{Email}#=%=#qmzhu@suda.edu.cn
+Author{3}{Affiliation}#=%=#Soochow University
+
+==========

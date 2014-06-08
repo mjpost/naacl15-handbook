@@ -1,0 +1,32 @@
+SubmissionNumber#=%=#585
+FinalPaperTitle#=%=#Multilingual Models for Compositional Distributed Semantics
+ShortPaperTitle#=%=#Multilingual Models for Compositional Distributed Semantics
+NumberOfPages#=%=#11
+CopyrightSigned#=%=#Karl Moritz Hermann
+JobTitle#==#
+Organization#==#Dept of Computer Science,
+University of Oxford,
+Parks Road, OX1 3QD, Oxford, UK
+Abstract#==#We present a novel technique for learning semantic representations, which
+extends the distributional hypothesis to multilingual data and joint-space
+embeddings. Our models leverage parallel data and learn to strongly align the
+embeddings of semantically equivalent sentences, while maintaining sufficient
+distance between those of dissimilar sentences. The models do not rely on
+word alignments or any syntactic information and are successfully applied to a
+number of diverse languages. We extend our approach to learn semantic
+representations at the document level, too. We evaluate these models on two
+cross-lingual
+document classification tasks, outperforming the prior state of the art.
+Through qualitative analysis and the study of pivoting effects we demonstrate
+that our representations are semantically plausible and can capture semantic
+relationships across languages without parallel data.
+Author{1}{Firstname}#=%=#Karl Moritz
+Author{1}{Lastname}#=%=#Hermann
+Author{1}{Email}#=%=#karl.moritz.hermann@cs.ox.ac.uk
+Author{1}{Affiliation}#=%=#University of Oxford
+Author{2}{Firstname}#=%=#Phil
+Author{2}{Lastname}#=%=#Blunsom
+Author{2}{Email}#=%=#phil.blunsom@cs.ox.ac.uk
+Author{2}{Affiliation}#=%=#University of Oxford
+
+==========

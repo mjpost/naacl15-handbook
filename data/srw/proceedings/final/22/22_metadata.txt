@@ -1,0 +1,26 @@
+SubmissionNumber#=%=#22
+FinalPaperTitle#=%=#Going beyond sentences when applying tree kernels
+ShortPaperTitle#=%=#Going beyond sentences when applying tree kernels
+NumberOfPages#=%=#8
+CopyrightSigned#=%=#Dmitry Ilvovsky
+JobTitle#==#
+Organization#==#National Research University Higher School of Economics,
+Myasnitskya, 20, Moscow, Russia
+Abstract#==#We go beyond the level of individual sentences applying parse tree kernels to
+paragraphs. We build a set of extended trees for a paragraph of text from the
+individual parse trees for sentences and learn short texts such as search
+results and social profile postings to take advantage of additional
+discourse-related information. Extension is based on coreferences and rhetoric
+structure relations between the phrases in different sentences. We evaluate our
+approach, tracking relevance classifi-cation improvement for multi-sentence
+search task. The search problem is formulated as classification of search
+results into the classes of relevant and irrelevant, learning from the Bing
+search results. We compare performances of individual sentence kernels with the
+ones for extended parse trees and show that adding discourse information to
+learning data helps to improve classification results.
+Author{1}{Firstname}#=%=#Dmitry
+Author{1}{Lastname}#=%=#Ilvovsky
+Author{1}{Email}#=%=#dilv_ru@yahoo.com
+Author{1}{Affiliation}#=%=#Higher School of Economics
+
+==========

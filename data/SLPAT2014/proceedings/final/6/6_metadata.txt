@@ -1,0 +1,23 @@
+SubmissionNumber#=%=#6
+FinalPaperTitle#=%=#Graphical Modification of Text. An Approach To Dyslexic Users.
+ShortPaperTitle#=%=#Graphical Modification of Text For Dyslexics.
+NumberOfPages#=%=#4
+CopyrightSigned#=%=#Tereza Pařilová
+JobTitle#==#
+Organization#==#Masaryk University, Botanická 68a, Brno  602 00, Czech Republic
+Abstract#==#The requirements of user interface for dyslexics have not been yet properly
+explored. Accessibility to any kind of information or just to entertainment web
+pages is a key factor to equality of rights, moreover it breaks down social
+barriers. Considering that study materials are nowadays very much accessible
+through internet, by accommodating web content to anyhow disabled users must be
+seen as natural thing. Dyslexia is considered as an cognitive impairment
+arising from visual similarity of letters, therefore we focus on Czech language
+which uses special characters. The aim of our research is to introduce an
+application that allows dyslexics to decode text easier and understand it
+properly.
+Author{1}{Firstname}#=%=#Tereza
+Author{1}{Lastname}#=%=#Pařilová
+Author{1}{Email}#=%=#phd.fi.muni@gmail.com
+Author{1}{Affiliation}#=%=#PhD Researcher
+
+==========

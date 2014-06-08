@@ -1,0 +1,31 @@
+SubmissionNumber#=%=#56
+FinalPaperTitle#=%=#Parallel FDA5 for Fast Deployment of Accurate Statistical Machine Translation Systems
+ShortPaperTitle#=%=#Parallel FDA5 for Fast Deployment of Accurate Statistical Machine Translation Systems
+NumberOfPages#=%=#7
+CopyrightSigned#=%=#ERGUN BICICI
+JobTitle#==#
+Organization#==#CENTRE FOR NEXT GENERATION LOCALISATION, SCHOOL OF COMPUTING, DUBLIN CITY UNIVERSITY
+Abstract#==#We use parallel FDA5, an efficiently parameterized and optimized implementation
+of 
+feature decay algorithms for fast deployment of accurate statistical
+machine translation systems, taking only about half a day for each translation
+direction.
+We build Parallel FDA5 Moses SMT systems for all language pairs in the WMT14
+translation task and obtain SMT 
+performance close to the top Moses systems with an average of $3.49$ BLEU
+points difference using significantly less resources for 
+training and development.
+Author{1}{Firstname}#=%=#Ergun
+Author{1}{Lastname}#=%=#Bicici
+Author{1}{Email}#=%=#bicici.ku@gmail.com
+Author{1}{Affiliation}#=%=#Centre for Next Generation Localisation, Dublin City University
+Author{2}{Firstname}#=%=#Qun
+Author{2}{Lastname}#=%=#Liu
+Author{2}{Email}#=%=#qliu@computing.dcu.ie
+Author{2}{Affiliation}#=%=#Centre for Next Generation Localisation (CNGL) Faculty of Engineering and Computing, Dublin City University (DCU)
+Author{3}{Firstname}#=%=#Andy
+Author{3}{Lastname}#=%=#Way
+Author{3}{Email}#=%=#away@computing.dcu.ie
+Author{3}{Affiliation}#=%=#Associate Professor in Computing, School of Computing, Dublin City University
+
+==========

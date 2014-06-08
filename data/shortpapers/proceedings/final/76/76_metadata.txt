@@ -1,0 +1,35 @@
+SubmissionNumber#=%=#76
+FinalPaperTitle#=%=#Training a Korean SRL System with Rich Morphological Features
+ShortPaperTitle#=%=#Training a Korean SRL System with Rich Morphological Features
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Young-Bum Kim
+JobTitle#==#PhD Student
+Organization#==#University of Wisconsin-Madison: computer sciences department.
+1210 W. Dayton St. Madison, Wi, 53706
+Abstract#==#In this paper we introduce a semantic role labeler for Korean, an agglutinative
+language with rich morphology. First, we create a novel training source by
+semantically annotating a Korean corpus containing fine-grained morphological
+and syntactic information. We then develop a supervised SRL model by leveraging
+morphological features of Korean that tend to correspond with semantic roles.
+Our model also employs a variety of latent morpheme representations induced
+from a larger body of unannotated Korean text. These elements lead to
+state-of-the-art performance of 81.07% labeled F1, representing the best SRL
+performance reported to date for an agglutinative language.
+Author{1}{Firstname}#=%=#Young-Bum
+Author{1}{Lastname}#=%=#Kim
+Author{1}{Email}#=%=#ybkim@cs.wisc.edu
+Author{1}{Affiliation}#=%=#University of Wisconsin-Madison
+Author{2}{Firstname}#=%=#Heemoon
+Author{2}{Lastname}#=%=#Chae
+Author{2}{Email}#=%=#hmchae221@gmail.com
+Author{2}{Affiliation}#=%=#UW-Madison
+Author{3}{Firstname}#=%=#Benjamin
+Author{3}{Lastname}#=%=#Snyder
+Author{3}{Email}#=%=#bsnyder@cs.wisc.edu
+Author{3}{Affiliation}#=%=#University of Wisconsin-Madison
+Author{4}{Firstname}#=%=#Yu-Seop
+Author{4}{Lastname}#=%=#Kim
+Author{4}{Email}#=%=#yskim01@hallym.ac.kr
+Author{4}{Affiliation}#=%=#Hallym University
+
+==========

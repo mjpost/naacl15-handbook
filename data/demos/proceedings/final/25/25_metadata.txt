@@ -1,0 +1,42 @@
+SubmissionNumber#=%=#25
+FinalPaperTitle#=%=#lex4all: A language-independent tool for building and evaluating pronunciation lexicons for small-vocabulary speech recognition
+ShortPaperTitle#=%=#lex4all: Pronunciation Lexicons for Any Low-resource Language
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Anjana Vakil
+JobTitle#==#
+Organization#==#Saarland University
+Department of Computational Linguistics & Phonetics
+Postfach 15 11 50
+66041 Saarbrücken
+Germany
+Abstract#==#This paper describes lex4all, an open-source PC application for the generation
+and evaluation of pronunciation lexicons in any language. With just a few
+minutes of recorded audio and no expert knowledge of linguistics or speech
+technology, individuals or organizations seeking to create speech-driven
+applications in low-resource languages can build lexicons enabling the
+recognition of small vocabularies (up to 100 terms, roughly) in the target
+language using an existing recognition engine designed for a high-resource
+source language (e.g. English). To build such lexicons, we employ an existing
+method for cross-language phoneme-mapping. The application also offers a
+built-in audio recorder that facilitates data collection, a significantly
+faster implementation of the phoneme-mapping technique, and an evaluation
+module that expedites research on small-vocabulary speech recognition for
+low-resource languages.
+Author{1}{Firstname}#=%=#Anjana
+Author{1}{Lastname}#=%=#Vakil
+Author{1}{Email}#=%=#anjanav@coli.uni-saarland.de
+Author{1}{Affiliation}#=%=#Saarland University
+Author{2}{Firstname}#=%=#Max
+Author{2}{Lastname}#=%=#Paulus
+Author{2}{Email}#=%=#mpaulus@coli.uni-saarland.de
+Author{2}{Affiliation}#=%=#Saarland University
+Author{3}{Firstname}#=%=#Alexis
+Author{3}{Lastname}#=%=#Palmer
+Author{3}{Email}#=%=#apalmer@coli.uni-sb.de
+Author{3}{Affiliation}#=%=#Saarland University
+Author{4}{Firstname}#=%=#Michaela
+Author{4}{Lastname}#=%=#Regneri
+Author{4}{Email}#=%=#regneri@coli.uni-saarland.de
+Author{4}{Affiliation}#=%=#Saarland University, Saarbrücken
+
+==========

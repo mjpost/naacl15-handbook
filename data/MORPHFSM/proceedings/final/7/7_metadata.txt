@@ -1,0 +1,18 @@
+SubmissionNumber#=%=#7
+FinalPaperTitle#=%=#The Error-driven Ranking Model of the Acquisition of Phonotactics: How to Keep the Faithfulness Constraints at Bay
+ShortPaperTitle#=%=#The EDRA Model: How to Keep the Faithfulness Constraints at Bay
+NumberOfPages#=%=#9
+CopyrightSigned#=%=#Giorgio Magri
+JobTitle#==#
+Organization#==#
+Abstract#==#A problem which arises in the theory of the error-driven ranking model of the
+acquisition of phonotactics is that the faith- fulness constraints need to be
+promoted but should not be promoted too high. This paper motivates this
+technical problem and shows how to tune the promotion component of the
+re-ranking rule so as to keep the faithfulness constraints at bay.
+Author{1}{Firstname}#=%=#Giorgio
+Author{1}{Lastname}#=%=#Magri
+Author{1}{Email}#=%=#magrigrg@gmail.com
+Author{1}{Affiliation}#=%=#CNRS, University of Paris 8
+
+==========

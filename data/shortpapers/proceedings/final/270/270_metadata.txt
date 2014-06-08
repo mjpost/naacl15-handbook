@@ -1,0 +1,33 @@
+SubmissionNumber#=%=#270
+FinalPaperTitle#=%=#Two-Stage Hashing for Fast Document Retrieval
+ShortPaperTitle#=%=#Two-Stage Hashing for Fast Document Retrieval
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Hao Li
+JobTitle#==#
+Organization#==#Computer Science Department, Rensselaer Polytechnic Institute, Troy, NY 12180, USA
+Abstract#==#This work fulfills sublinear time Nearest Neighbor Search (NNS) in massive
+scale document collections. The primary contribution is to propose a two-stage
+unsupervised hashing framework which harmoniously integrates two
+state-of-the-art hashing algorithms Locality Sensitive Hashing (LSH) and
+Iterative Quantization (ITQ). LSH accounts for neighbor candidate pruning,
+while ITQ provides an efficient and effective reranking over the neighbor pool
+captured by LSH. Furthermore, the proposed hashing framework capitalizes on
+both term and topic similarity among documents, leading to precise document
+retrieval. The experimental results convincingly show that our hashing based
+document retrieval approach well approximates the conventional Information
+Retrieval (IR) method in terms of retrieving semantically similar documents,
+and meanwhile achieves a speedup of over one order of magnitude in query time.
+Author{1}{Firstname}#=%=#Hao
+Author{1}{Lastname}#=%=#Li
+Author{1}{Email}#=%=#haoli.qc@gmail.com
+Author{1}{Affiliation}#=%=#Computer Science Department, Rensselaer Polytechnic Institute, U.S.A
+Author{2}{Firstname}#=%=#Wei
+Author{2}{Lastname}#=%=#Liu
+Author{2}{Email}#=%=#weiliu@us.ibm.com
+Author{2}{Affiliation}#=%=#IBM T. J. Watson Research Center
+Author{3}{Firstname}#=%=#Heng
+Author{3}{Lastname}#=%=#Ji
+Author{3}{Email}#=%=#jih@rpi.edu
+Author{3}{Affiliation}#=%=#Rensselaer Polytechnic Institute
+
+==========

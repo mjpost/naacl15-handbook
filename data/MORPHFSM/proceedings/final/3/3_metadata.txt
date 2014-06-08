@@ -1,0 +1,28 @@
+SubmissionNumber#=%=#3
+FinalPaperTitle#=%=#Rule Based Morphological Analyzer of Kazakh Language
+ShortPaperTitle#=%=#Rule Based Morphological Analyzer of Kazakh Language
+NumberOfPages#=%=#9
+CopyrightSigned#=%=#Ilyas Cicekli
+JobTitle#==#
+Organization#==#Hacettepe University
+Department of Computer Engineering
+Beytepe 06800, Ankara, Turkey
+Abstract#==#Having a morphological analyzer is a very critical issue especially for NLP
+related tasks on agglutinative languages. This paper presents a detailed
+computational analysis of Kazakh language which is an agglutinative language.
+With a detailed analysis of Kazakh language morphology, the formalization of
+rules over all morphotactics of Kazakh language is worked out and a rule-based
+morphological analyzer is developed for Kazakh language. The morphological
+analyzer is constructed using two-level morphology approach with Xerox finite
+state tools and some implementation details of rule-based morphological
+analyzer have been presented in this paper.
+Author{1}{Firstname}#=%=#Gulshat
+Author{1}{Lastname}#=%=#Kessikbayeva
+Author{1}{Email}#=%=#shatik2030@gmail.com
+Author{1}{Affiliation}#=%=#Hacettepe University
+Author{2}{Firstname}#=%=#Ilyas
+Author{2}{Lastname}#=%=#Cicekli
+Author{2}{Email}#=%=#ilyas@cs.hacettepe.edu.tr
+Author{2}{Affiliation}#=%=#Hacettepe University
+
+==========

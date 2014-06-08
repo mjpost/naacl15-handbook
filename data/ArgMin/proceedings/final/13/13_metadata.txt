@@ -1,0 +1,32 @@
+SubmissionNumber#=%=#13
+FinalPaperTitle#=%=#Indicators of Argument-conclusion Relationships. An Approach for Argumentation Mining in German Discourses
+ShortPaperTitle#=%=#Indicators of Argument-conclusion Relationships
+NumberOfPages#=%=#2
+CopyrightSigned#=%=#BT
+JobTitle#==#Research Assistant
+Organization#==#RWTH Aachen University
+Abstract#==#Subject of the paper is a new methodological approach for the analysis of
+public discourses aiming at the semi-automated identification of arguments. Up
+to now, only little research deals with the automation of manual
+discourse-linguistic argumentation analysis in German corpora. Therefore, we
+suggest the combination of methods from discourse analysis with methods from
+Natural Language Processing such as multi-level annotation. The presented
+approach is intended to be a first at-tempt to argumentation mining.
+Author{1}{Firstname}#=%=#Bianka
+Author{1}{Lastname}#=%=#Trevisan
+Author{1}{Email}#=%=#b.trevisan@tk.rwth-aachen.de
+Author{1}{Affiliation}#=%=#RWTH Aachen University
+Author{2}{Firstname}#=%=#Eva
+Author{2}{Lastname}#=%=#Dickmeis
+Author{2}{Email}#=%=#e.dickmeis@tk.rwth-aachen.de
+Author{2}{Affiliation}#=%=#RWTH Aachen University
+Author{3}{Firstname}#=%=#Eva-Maria
+Author{3}{Lastname}#=%=#Jakobs
+Author{3}{Email}#=%=#e.m.jakobs@tk.rwth-aachen.de
+Author{3}{Affiliation}#=%=#RWTH Aachen University
+Author{4}{Firstname}#=%=#Thomas
+Author{4}{Lastname}#=%=#Niehr
+Author{4}{Email}#=%=#t.niehr@tk.rwth-aachen.de
+Author{4}{Affiliation}#=%=#RWTH Aachen University
+
+==========

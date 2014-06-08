@@ -1,0 +1,25 @@
+SubmissionNumber#=%=#27
+FinalPaperTitle#=%=#Analyzing Positions and Topics in Political Discussions of the German Bundestag
+ShortPaperTitle#=%=#Analyzing Positions and Topics in Political Discussions of the German Bundestag
+NumberOfPages#=%=#8
+CopyrightSigned#=%=#Cäcilia Zirn
+JobTitle#==#
+Organization#==#University of Mannheim
+B6 26
+68159 Mannheim
+Germany
+Abstract#==#We present ongoing doctoral work on automatically understanding the
+   positions of politicians with respect to those of the party they
+   belong to. To this end, we use textual data, namely transcriptions of
+   political speeches from meetings of the German Bundestag, and party
+   manifestos, in order to automatically acquire the positions of
+   political actors and parties, respectively. We discuss a variety of
+   possible supervised and unsupervised approaches to determine the
+   topics of interest and compare positions, and propose to explore an
+   approach based on topic modeling techniques for these tasks.
+Author{1}{Firstname}#=%=#Cäcilia
+Author{1}{Lastname}#=%=#Zirn
+Author{1}{Email}#=%=#caecilia@informatik.uni-mannheim.de
+Author{1}{Affiliation}#=%=#University of Mannheim
+
+==========

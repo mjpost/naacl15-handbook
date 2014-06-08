@@ -1,0 +1,44 @@
+SubmissionNumber#=%=#19
+FinalPaperTitle#=%=#The Language Demographics of Amazon Mechanical Turk
+ShortPaperTitle#=%=#
+NumberOfPages#=%=#
+CopyrightSigned#=%=#
+JobTitle#==#
+Organization#==#
+Abstract#==#In this paper, we study the problem of manually correcting automatic 
+annotations of natural language in as efficient a manner as possible. We
+introduce a method for automatically segmenting a corpus into chunks such that
+many uncertain labels are grouped into the same chunk, while human supervision
+can be omitted altogether for other segments. A tradeoff must be found for
+segment sizes. Choosing short segments allows us to reduce the number of highly
+confident labels that are supervised by the annotator, which is useful because
+these labels are often already correct and supervising correct labels is a
+waste of effort. In contrast, long segments reduce the cognitive effort due to
+context switches. Our method helps find the segmentation that optimizes
+supervision efficiency by defining user models to predict the cost and utility
+of supervising each segment and solving a constrained optimization problem
+balancing these contradictory objectives. A user study demonstrates substantial
+gains over pre-segmented, confidence-ordered baselines on two natural language
+processing tasks: speech transcription and word segmentation.
+Author{1}{Firstname}#=%=#Matthias
+Author{1}{Lastname}#=%=#Sperber
+Author{1}{Email}#=%=#matthias.sperber@kit.edu
+Author{1}{Affiliation}#=%=#Karlsruhe Institute of Technology, Institute for Anthropomatics, Germany
+Author{2}{Firstname}#=%=#Mirjam
+Author{2}{Lastname}#=%=#Simantzik
+Author{2}{Email}#=%=#mirjam.simantzik@jibbigo.com
+Author{2}{Affiliation}#=%=#Mobile Technologies GmbH, Germany
+Author{3}{Firstname}#=%=#Graham
+Author{3}{Lastname}#=%=#Neubig
+Author{3}{Email}#=%=#neubig@is.naist.jp
+Author{3}{Affiliation}#=%=#Nara Institute of Science and Technology, AHC Laboratory, Japan
+Author{4}{Firstname}#=%=#Satoshi
+Author{4}{Lastname}#=%=#Nakamura
+Author{4}{Email}#=%=#s-nakamura@is.naist.jp
+Author{4}{Affiliation}#=%=#Nara Institute of Science and Technology, AHC Laboratory, Japan
+Author{5}{Firstname}#=%=#Alex
+Author{5}{Lastname}#=%=#Waibel
+Author{5}{Email}#=%=#waibel@kit.edu
+Author{5}{Affiliation}#=%=#Karlsruhe Institute of Technology, Institute for Anthropomatics, Germany
+
+==========

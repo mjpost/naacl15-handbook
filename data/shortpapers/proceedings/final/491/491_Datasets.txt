@@ -1,0 +1,5 @@
+For the paper titled "Tailoring Continuous Word Representations for Dependency Parsing", ACL 2014 (short), we have made our SKIP_DEP syntactic-context embeddings and bit-strings publicly available at ttic.edu/bansal/data/syntacticEmbeddings.zip
+
+This information and link is also provided in the conclusion section of the paper.
+
+We haven't uploaded it here (in the camera-ready submission system) because the zip file is ~100MB in size.

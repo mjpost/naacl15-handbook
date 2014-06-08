@@ -1,0 +1,34 @@
+SubmissionNumber#=%=#23
+FinalPaperTitle#=%=#Using Simple NLP Tools to Trace the Globalization of the Art World
+ShortPaperTitle#=%=#Using Simple NLP Tools to Trace the Globalization of the Art World
+NumberOfPages#=%=#5
+CopyrightSigned#=%=#Mohamed AlTantawy
+JobTitle#==#
+Organization#==#
+Abstract#==#We introduce a novel task, that of associating relative time with cities in
+text. We show that the task can be performed using NLP tools and techniques.
+The task is deployed on a large corpus of data to study a specific phenomenon,
+namely the temporal dimension of contemporary arts globalization over the first
+decade of the 21st century.
+Author{1}{Firstname}#=%=#Mohamed
+Author{1}{Lastname}#=%=#AlTantawy
+Author{1}{Email}#=%=#mohamed@agolo.com
+Author{1}{Affiliation}#=%=#
+Author{2}{Firstname}#=%=#Alix
+Author{2}{Lastname}#=%=#Rule
+Author{2}{Email}#=%=#aer2132@columbia.edu
+Author{2}{Affiliation}#=%=#Columbia University
+Author{3}{Firstname}#=%=#Owen
+Author{3}{Lastname}#=%=#Rambow
+Author{3}{Email}#=%=#rambow@ccls.columbia.edu
+Author{3}{Affiliation}#=%=#Columbia University
+Author{4}{Firstname}#=%=#Zhongyu
+Author{4}{Lastname}#=%=#Wang
+Author{4}{Email}#=%=#zw2259@columbia.edu
+Author{4}{Affiliation}#=%=#Columbia University
+Author{5}{Firstname}#=%=#Rupayan
+Author{5}{Lastname}#=%=#Basu
+Author{5}{Email}#=%=#rb3034@columbia.edu
+Author{5}{Affiliation}#=%=#Columbia University
+
+==========

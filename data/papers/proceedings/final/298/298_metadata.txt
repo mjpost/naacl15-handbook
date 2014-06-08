@@ -1,0 +1,27 @@
+SubmissionNumber#=%=#298
+FinalPaperTitle#=%=#A Robust Approach to Aligning Heterogeneous Lexical Resources
+ShortPaperTitle#=%=#A Robust Approach to Aligning Heterogeneous Lexical Resources
+NumberOfPages#=%=#11
+CopyrightSigned#=%=#Mohammad Taher Pilehvar
+JobTitle#==#
+Organization#==#Sapienza University of Rome, Italy
+Abstract#==#Lexical resource alignment has been an active field of research over the last
+decade. However, prior methods for aligning lexical resources have been either
+specific to a particular pair of resources, or heavily dependent on the
+availability of hand-crafted alignment data for the pair of resources to be
+aligned. Here we present a unified approach that can be applied to an arbitrary
+pair of lexical resources, including machine-readable dictionaries with no
+network structure. Our approach leverages a similarity measure that enables the
+structural comparison of senses across lexical resources, achieving
+state-of-the-art performance on the task of aligning WordNet to three different
+collaborative resources: Wikipedia, Wiktionary and OmegaWiki.
+Author{1}{Firstname}#=%=#Mohammad Taher
+Author{1}{Lastname}#=%=#Pilehvar
+Author{1}{Email}#=%=#pilehvar@di.uniroma1.it
+Author{1}{Affiliation}#=%=#Sapienza University of Rome
+Author{2}{Firstname}#=%=#Roberto
+Author{2}{Lastname}#=%=#Navigli
+Author{2}{Email}#=%=#navigli@di.uniroma1.it
+Author{2}{Affiliation}#=%=#Sapienza University of Rome
+
+==========

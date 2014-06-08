@@ -1,0 +1,30 @@
+SubmissionNumber#=%=#32
+FinalPaperTitle#=%=#Depeche Mood: a Lexicon for Emotion Analysis from Crowd Annotated News
+ShortPaperTitle#=%=#Depeche Mood: a Lexicon for Emotion Analysis from Crowd Annotated News
+NumberOfPages#=%=#7
+CopyrightSigned#=%=#Marco Guerini
+JobTitle#==#
+Organization#==#Trento RISE
+Abstract#==#While many lexica annotated with words polarity are available for sentiment
+analysis, very few tackle the harder task of emotion analysis and are
+usually quite limited in coverage. In this paper, we present a novel approach
+for extracting - in a totally automated way - a high-coverage and
+high-precision lexicon of roughly 37 thousand terms annotated  
+with emotion scores, called DepecheMood. 
+Our approach exploits in an original way `crowd-sourced' affective annotation
+implicitly provided by readers of news articles from rappler.com. 
+By providing new state-of-the-art performances in unsupervised settings for
+regression and classification tasks, even using a naive approach, our
+experiments show the 
+beneficial impact of harvesting
+social media data for affective lexicon building
+Author{1}{Firstname}#=%=#Jacopo
+Author{1}{Lastname}#=%=#Staiano
+Author{1}{Email}#=%=#staiano@disi.unitn.it
+Author{1}{Affiliation}#=%=#Department of Information Engineering and Computer Science, University of Trento
+Author{2}{Firstname}#=%=#Marco
+Author{2}{Lastname}#=%=#Guerini
+Author{2}{Email}#=%=#marco.guerini@trentorise.eu
+Author{2}{Affiliation}#=%=#Trento-Rise
+
+==========

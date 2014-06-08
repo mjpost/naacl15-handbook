@@ -1,0 +1,23 @@
+SubmissionNumber#=%=#11
+FinalPaperTitle#=%=#Semantic Parsing using Distributional Semantics and Probabilistic Logic
+ShortPaperTitle#=%=#Semantic Parsing using Distributional Semantics and Probabilistic Logic
+NumberOfPages#=%=#5
+CopyrightSigned#=%=#Islam Beltagy
+JobTitle#==#
+Organization#==#The University of Texas at Austin
+Austin, Texas 78712
+Abstract#==#
+Author{1}{Firstname}#=%=#Islam
+Author{1}{Lastname}#=%=#Beltagy
+Author{1}{Email}#=%=#beltagy@cs.utexas.edu
+Author{1}{Affiliation}#=%=#The University of Texas at Austin
+Author{2}{Firstname}#=%=#Katrin
+Author{2}{Lastname}#=%=#Erk
+Author{2}{Email}#=%=#katrin.erk@mail.utexas.edu
+Author{2}{Affiliation}#=%=#University of Texas at Austin
+Author{3}{Firstname}#=%=#Raymond
+Author{3}{Lastname}#=%=#Mooney
+Author{3}{Email}#=%=#mooney@cs.utexas.edu
+Author{3}{Affiliation}#=%=#University of Texas at Austin
+
+==========

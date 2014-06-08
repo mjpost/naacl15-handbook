@@ -1,0 +1,45 @@
+SubmissionNumber#=%=#1
+FinalPaperTitle#=%=#Senti-LSSVM: Sentiment-Oriented Multi-Relation Extraction with Latent Structural SVM
+ShortPaperTitle#=%=#Senti-LSSVM: Sentiment-Oriented Multi-Relation Extraction with Latent Structural SVM
+NumberOfPages#=%=#11
+CopyrightSigned#=%=#NA
+JobTitle#==#
+Organization#==#
+Abstract#==#Sentiment-oriented multi-relation extraction from user-generated web 
+documents is of great importance for both producers and consumers. Unlike the
+previous work, we formulate this extraction task as a learning problem with
+structured outputs and design the corresponding inference as an integer linear
+program.  Our newly proposed model based on latent structural SVM can learn
+from the training corpora, which does not contain explicit annotations of
+sentiment-bearing expressions, and it can simultaneously recognize both binary
+(opinion) and ternary (comparison) relations with regard to entity mentions of
+interest. The empirical evaluation shows that our approach significantly
+outperforms the state-of-the-art baselines across domains (camera and movie)
+and across genres (reviews and forum posts). The gold standard corpus will also
+be a valuable resource for the community.
+Author{1}{Firstname}#=%=#Lizhen
+Author{1}{Lastname}#=%=#Qu
+Author{1}{Email}#=%=#lqu@mpi-inf.mpg.de
+Author{1}{Affiliation}#=%=#Max Planck Institute for Informatics
+Author{2}{Firstname}#=%=#Yi
+Author{2}{Lastname}#=%=#Zhang
+Author{2}{Email}#=%=#yi.zhang@nuance.com
+Author{2}{Affiliation}#=%=#Nuance Communications
+Author{3}{Firstname}#=%=#Rui
+Author{3}{Lastname}#=%=#Wang
+Author{3}{Email}#=%=#mars198356@hotmail.com
+Author{3}{Affiliation}#=%=#DFKI GmbH
+Author{4}{Firstname}#=%=#Lili
+Author{4}{Lastname}#=%=#Jiang
+Author{4}{Email}#=%=#ljiang@mpi-inf.mpg.de
+Author{4}{Affiliation}#=%=#Max Planck Institute for Informatics
+Author{5}{Firstname}#=%=#Rainer
+Author{5}{Lastname}#=%=#Gemulla
+Author{5}{Email}#=%=#rgemulla@mpi-inf.mpg.de
+Author{5}{Affiliation}#=%=#Max Planck Institute for Informatics
+Author{6}{Firstname}#=%=#Gerhard
+Author{6}{Lastname}#=%=#Weikum
+Author{6}{Email}#=%=#weikum@mpi-inf.mpg.de
+Author{6}{Affiliation}#=%=#Max Planck Institute for Informatics
+
+==========

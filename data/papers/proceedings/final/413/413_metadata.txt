@@ -1,0 +1,36 @@
+SubmissionNumber#=%=#413
+FinalPaperTitle#=%=#Semantic Frame Identification with Distributed Word Representations
+ShortPaperTitle#=%=#Semantic Frame Identification with Distributed Word Representations
+NumberOfPages#=%=#11
+CopyrightSigned#=%=#Dipanjan Das
+JobTitle#==#
+Organization#==#Google Inc., 76 9th Avenue, 4th Floor, New York, NY 10011.
+Abstract#==#We present a novel technique for semantic frame identification using
+distributed representations of predicates and their syntactic context; this
+technique leverages automatic syntactic parses and a generic set of word
+embeddings. Given labeled data annotated with frame-semantic parses, we learn a
+model that projects the set of word representations for the syntactic context
+around a predicate to a low dimensional representation. The latter is used for
+semantic frame identification; with a standard argument identification method
+inspired by prior work, we achieve state-of-the-art results on FrameNet-style
+frame-semantic analysis. Additionally, we report strong results on
+PropBank-style semantic role
+labeling in comparison to prior work.
+Author{1}{Firstname}#=%=#Karl Moritz
+Author{1}{Lastname}#=%=#Hermann
+Author{1}{Email}#=%=#karl.moritz.hermann@cs.ox.ac.uk
+Author{1}{Affiliation}#=%=#University of Oxford
+Author{2}{Firstname}#=%=#Dipanjan
+Author{2}{Lastname}#=%=#Das
+Author{2}{Email}#=%=#dipanjand@google.com
+Author{2}{Affiliation}#=%=#Google Inc.
+Author{3}{Firstname}#=%=#Jason
+Author{3}{Lastname}#=%=#Weston
+Author{3}{Email}#=%=#jweston@google.com
+Author{3}{Affiliation}#=%=#Google
+Author{4}{Firstname}#=%=#Kuzman
+Author{4}{Lastname}#=%=#Ganchev
+Author{4}{Email}#=%=#kuzman@google.com
+Author{4}{Affiliation}#=%=#Google
+
+==========

@@ -1,0 +1,29 @@
+SubmissionNumber#=%=#280
+FinalPaperTitle#=%=#Exponential Reservoir Sampling for Streaming Language Models
+ShortPaperTitle#=%=#Exponential Reservoir Sampling for Streaming Language Models
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#
+JobTitle#==#
+Organization#==#
+Abstract#==#We show how rapidly changing textual streams such as Twitter can be modelled in
+fixed space.  Our approach is based upon a randomised algorithm called {\em
+Exponential Reservoir Sampling}, unexplored by this community until now.  Using
+language models over Twitter and Newswire as a testbed, our
+experimental results based on perplexity support the intuition that recently
+observed data generally outweighs that seen in the past, but that at
+times, the past can have valuable signals enabling better modelling of
+the present.
+Author{1}{Firstname}#=%=#Miles
+Author{1}{Lastname}#=%=#Osborne
+Author{1}{Email}#=%=#miles@inf.ed.ac.uk
+Author{1}{Affiliation}#=%=#Edinburgh
+Author{2}{Firstname}#=%=#Ashwin
+Author{2}{Lastname}#=%=#Lall
+Author{2}{Email}#=%=#lalla@denison.edu
+Author{2}{Affiliation}#=%=#Denison University
+Author{3}{Firstname}#=%=#Benjamin
+Author{3}{Lastname}#=%=#Van Durme
+Author{3}{Email}#=%=#vandurme@cs.jhu.edu
+Author{3}{Affiliation}#=%=#JHU
+
+==========

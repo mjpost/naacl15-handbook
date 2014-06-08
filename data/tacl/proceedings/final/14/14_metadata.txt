@@ -1,0 +1,42 @@
+SubmissionNumber#=%=#14
+FinalPaperTitle#=%=#The Language Demographics of Amazon Mechanical Turk
+ShortPaperTitle#=%=#
+NumberOfPages#=%=#
+CopyrightSigned#=%=#
+JobTitle#==#
+Organization#==#
+Abstract#==#Previous work on Recursive Neural Networks (RNNs) shows that these 
+models can produce compositional feature vectors for accurately representing
+and classifying sentences or images. However, the sentence vectors of previous
+models cannot accurately represent visually grounded meaning. We introduce the
+DT-RNN model which uses dependency trees to embed sentences into a vector space
+in order to retrieve images that are described by those sentences. Unlike
+previous RNN-based models which use constituency trees, DT-RNNs naturally focus
+on the action and agents in a sentence. They are better able to abstract from
+the details of word order and syntactic expression. DT-RNNs outperform other
+recursive and recurrent neural networks, kernelized CCA and a bag-of-words
+baseline on the tasks of finding an image that fits a sentence description and
+vice versa. They also give more similar representations to sentences that
+describe the same image.
+Author{1}{Firstname}#=%=#Richard
+Author{1}{Lastname}#=%=#Socher
+Author{1}{Email}#=%=#richard@socher.org
+Author{1}{Affiliation}#=%=#Stanford University, Computer Science Department
+Author{2}{Firstname}#=%=#Andrej
+Author{2}{Lastname}#=%=#Karpathy
+Author{2}{Email}#=%=#karpathy@cs.stanford.edu
+Author{2}{Affiliation}#=%=#Stanford University, Computer Science Department
+Author{3}{Firstname}#=%=#Quoc V.
+Author{3}{Lastname}#=%=#Le
+Author{3}{Email}#=%=#qvl@google.com
+Author{3}{Affiliation}#=%=#Google Inc.
+Author{4}{Firstname}#=%=#Christopher
+Author{4}{Lastname}#=%=#Manning
+Author{4}{Email}#=%=#manning@stanford.edu
+Author{4}{Affiliation}#=%=#Stanford University, Computer Science Department
+Author{5}{Firstname}#=%=#Andrew
+Author{5}{Lastname}#=%=#Ng
+Author{5}{Email}#=%=#ang@cs.stanford.edu
+Author{5}{Affiliation}#=%=#Stanford University, Computer Science Department
+
+==========

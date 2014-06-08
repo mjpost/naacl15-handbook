@@ -1,0 +1,30 @@
+SubmissionNumber#=%=#87
+FinalPaperTitle#=%=#Factored Markov Translation with Robust Modeling
+ShortPaperTitle#=%=#Factored Markov Translation with Robust Modeling
+NumberOfPages#=%=#9
+CopyrightSigned#=%=#Yang Feng
+JobTitle#==#
+Organization#==#Yang Feng, USC/ISI, 4676 Admiralty Way, Marina Del Rey, CA,USA, 90292
+Abstract#==#Phrase-based translation models usually memorize local translation literally
+and make independent assumption between phrases which makes it neither
+generalize well on unseen data nor model sentence-level effects between
+phrases. In this paper we present a new method to model correlations between
+phrases into a Markov model and meanwhile employ a robust smoothing strategy to
+provide better generalization. It defines a recursive estimation process and
+backs off in parallel to infer richer structures.
+Our evaluation shows an 1.1--3.2 BLEU improvement over competitive baselines
+for Chinese-English and Arabic-English translation.
+Author{1}{Firstname}#=%=#Yang
+Author{1}{Lastname}#=%=#Feng
+Author{1}{Email}#=%=#yangfeng145@gmail.com
+Author{1}{Affiliation}#=%=#USC/ISI
+Author{2}{Firstname}#=%=#Trevor
+Author{2}{Lastname}#=%=#Cohn
+Author{2}{Email}#=%=#tcohn@unimelb.edu.au
+Author{2}{Affiliation}#=%=#University of Melbourne
+Author{3}{Firstname}#=%=#Xinkai
+Author{3}{Lastname}#=%=#Du
+Author{3}{Email}#=%=#xinkaid@gmail.com
+Author{3}{Affiliation}#=%=#USA
+
+==========

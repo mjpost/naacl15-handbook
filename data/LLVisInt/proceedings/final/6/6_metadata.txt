@@ -1,0 +1,41 @@
+SubmissionNumber#=%=#6
+FinalPaperTitle#=%=#GLANCE Visualizes Lexical Phenomena for Language Learning
+ShortPaperTitle#=%=#GLANCE Visualizes Lexical Phenomena for Language Learning
+NumberOfPages#=%=#4
+CopyrightSigned#=%=#Mei-Hua Chen
+JobTitle#==#
+Organization#==#Department of Foreign Languages and Literature, Hua Fan University.
+No. 1, Huafan Rd. Shihding Dist., New Taipei City 223, Taiwan R.O.C
+Abstract#==#Facilitating vocabulary knowledge is a challenging aspect for language
+learners. Although current corpus-based reference tools provide authentic
+contextual clues, the plain text format is not conducive to fully illustrating
+some lexical phenomena. Thus, this paper proposes GLANCE , a text visualization
+tool, to present a large amount of lexical phenomena using charts and graphs,
+aimed at helping language learners understand a word quickly and intuitively.
+To evaluate the effectiveness of the system, we designed interfaces to allow
+comparison between text and graphics presentation, and conducted a preliminary
+user study with ESL students. The results show that the visualized display is
+of greater benefit to the understanding of word characteristics than textual
+display.
+Author{1}{Firstname}#=%=#MeiHua
+Author{1}{Lastname}#=%=#Chen
+Author{1}{Email}#=%=#chen.meihua@gmail.com
+Author{1}{Affiliation}#=%=#Department of Foreign Languages and Literature, Hua Fan University
+Author{2}{Firstname}#=%=#Shih-Ting
+Author{2}{Lastname}#=%=#Huang
+Author{2}{Email}#=%=#koromiko1104@gmail.com
+Author{2}{Affiliation}#=%=#Department of Computer Science, National Tsing Hua University
+Author{3}{Firstname}#=%=#Ting-Hui
+Author{3}{Lastname}#=%=#Kao
+Author{3}{Email}#=%=#maxis1718@gmail.com
+Author{3}{Affiliation}#=%=#Department of Computer Science, National Tsing Hua University
+Author{4}{Firstname}#=%=#Hsun-wen
+Author{4}{Lastname}#=%=#Chiu
+Author{4}{Email}#=%=#chiuhsunwen@gmail.com
+Author{4}{Affiliation}#=%=#National Tsing Hua University
+Author{5}{Firstname}#=%=#Tzu-Hsi
+Author{5}{Lastname}#=%=#Yen
+Author{5}{Email}#=%=#joseph.yen@gmail.com
+Author{5}{Affiliation}#=%=#National Tsing Hua University
+
+==========

@@ -1,0 +1,33 @@
+SubmissionNumber#=%=#458
+FinalPaperTitle#=%=#Nonparametric Learning of Phonological Constraints in Optimality Theory
+ShortPaperTitle#=%=#Nonparametric Learning of Phonological Constraints in Optimality Theory
+NumberOfPages#=%=#10
+CopyrightSigned#=%=#
+JobTitle#==#
+Organization#==#
+Abstract#==#We present a method to jointly learn features and weights directly from
+distributional data in a maximum entropy model. Specifically, we propose a
+non-parametric Bayesian model for learning phonological markedness constraints
+directly from the distribution of input-output mappings in an Optimality Theory
+(OT) setting. The model uses an Indian Buffet Process prior to learn the
+feature values used in the maximum entropy method, and is the first algorithm
+for learning phonological constraints without presupposing constraint
+structure. The model learns a system of constraints that explains observed data
+as well as the phonologically-grounded constraints of a standard analysis, with
+a violation structure corresponding to the standard constraints.  These results
+suggest an alternative data-driven source for constraints instead of a fully
+innate constraint set.
+Author{1}{Firstname}#=%=#Gabriel
+Author{1}{Lastname}#=%=#Doyle
+Author{1}{Email}#=%=#gdoyle@ling.ucsd.edu
+Author{1}{Affiliation}#=%=#UC San Diego
+Author{2}{Firstname}#=%=#Klinton
+Author{2}{Lastname}#=%=#Bicknell
+Author{2}{Email}#=%=#kbicknell@northwestern.edu
+Author{2}{Affiliation}#=%=#Northwestern
+Author{3}{Firstname}#=%=#Roger
+Author{3}{Lastname}#=%=#Levy
+Author{3}{Email}#=%=#rlevy@ucsd.edu
+Author{3}{Affiliation}#=%=#University of California, San Diego
+
+==========

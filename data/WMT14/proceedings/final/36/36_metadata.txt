@@ -1,0 +1,35 @@
+SubmissionNumber#=%=#36
+FinalPaperTitle#=%=#English-to-Hindi system description for WMT 2014: Deep Source-Context Features for Moses
+ShortPaperTitle#=%=#English-to-Hindi system description for WMT 2014: Deep Source-Context Features for Moses
+NumberOfPages#=%=#5
+CopyrightSigned#=%=#Marta Ruiz Costa-jussà
+JobTitle#==#
+Organization#==#Instituto Politécnico Nacional
+Mexico DF
+Abstract#==#This paper describes the IPN-UPV participation on the English-to-Hindi
+translation task from WMT 2014 International Evaluation Campaign. The system
+presented is based on Moses and enhanced with deep learning by means of a
+source-context feature function. This feature depends on the input sentence to
+translate, which makes it more challenging to adapt it into the Moses
+framework. This work reports the
+experimental details of the system putting special emphasis on: how the feature
+function is integrated in Moses and how the deep learning representations are
+trained and used.
+Author{1}{Firstname}#=%=#Marta R.
+Author{1}{Lastname}#=%=#Costa-jussà
+Author{1}{Email}#=%=#martaruizcostajussa@gmail.com
+Author{1}{Affiliation}#=%=#Instituto Politécnico Nacional
+Author{2}{Firstname}#=%=#Parth
+Author{2}{Lastname}#=%=#Gupta
+Author{2}{Email}#=%=#pgupta@dsic.upv.es
+Author{2}{Affiliation}#=%=#Technical University of Valencia
+Author{3}{Firstname}#=%=#Paolo
+Author{3}{Lastname}#=%=#Rosso
+Author{3}{Email}#=%=#prosso@dsic.upv.es
+Author{3}{Affiliation}#=%=#Universitat Politècnica de València
+Author{4}{Firstname}#=%=#Rafael E.
+Author{4}{Lastname}#=%=#Banchs
+Author{4}{Email}#=%=#rembanchs@i2r.a-star.edu.sg
+Author{4}{Affiliation}#=%=#Institute for Infocomm Research
+
+==========

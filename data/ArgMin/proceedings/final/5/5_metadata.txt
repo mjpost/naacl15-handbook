@@ -1,0 +1,51 @@
+SubmissionNumber#=%=#5
+FinalPaperTitle#=%=#A Benchmark Dataset for Automatic Detection of Claims and Evidence in the Context of Controversial Topics
+ShortPaperTitle#=%=#A Benchmark Dataset for Automatic Detection of Claims and Evidence in the Context of Controversial Topics
+NumberOfPages#=%=#5
+CopyrightSigned#=%=#Ehud Aharoni
+JobTitle#==#
+Organization#==#IBM Haifa Labs
+Haifa University Campus
+Mount Carmel
+Haifa 31905
+Israel
+Abstract#==#We describe a novel and unique argumentative structure dataset. This corpus
+consists of data extracted from hundreds of Wikipedia articles using a
+meticulously monitored manual annotation process. The result is 2,683 argument
+elements, collected in the context of 33 controversial topics, organized under
+a simple claim-evidence structure. The obtained data are publicly available for
+academic research.
+Author{1}{Firstname}#=%=#Ehud
+Author{1}{Lastname}#=%=#Aharoni
+Author{1}{Email}#=%=#aehud@il.ibm.com
+Author{1}{Affiliation}#=%=#IBM Haifa Research Lab
+Author{2}{Firstname}#=%=#Anatoly
+Author{2}{Lastname}#=%=#Polnarov
+Author{2}{Email}#=%=#anatoly.polnarov@mail.huji.ac.il
+Author{2}{Affiliation}#=%=#Hebrew University in Jerusalem
+Author{3}{Firstname}#=%=#Tamar
+Author{3}{Lastname}#=%=#Lavee
+Author{3}{Email}#=%=#TAMARL@il.ibm.com
+Author{3}{Affiliation}#=%=#IBM Haifa Research Lab
+Author{4}{Firstname}#=%=#Daniel
+Author{4}{Lastname}#=%=#Hershcovich
+Author{4}{Email}#=%=#danielh@il.ibm.com
+Author{4}{Affiliation}#=%=#IBM Haifa Research Lab
+Author{5}{Firstname}#=%=#Ran
+Author{5}{Lastname}#=%=#Levy
+Author{5}{Email}#=%=#ranl@il.ibm.com
+Author{5}{Affiliation}#=%=#IBM Haifa Research Lab
+Author{6}{Firstname}#=%=#Ruty
+Author{6}{Lastname}#=%=#Rinott
+Author{6}{Email}#=%=#rutyr@il.ibm.com
+Author{6}{Affiliation}#=%=#IBM Haifa Research Lab
+Author{7}{Firstname}#=%=#Dan
+Author{7}{Lastname}#=%=#Gutfreund
+Author{7}{Email}#=%=#dannygu@il.ibm.com
+Author{7}{Affiliation}#=%=#IBM Haifa Research Lab
+Author{8}{Firstname}#=%=#Noam
+Author{8}{Lastname}#=%=#Slonim
+Author{8}{Email}#=%=#noams@il.ibm.com
+Author{8}{Affiliation}#=%=#IBM Haifa Research Lab
+
+==========

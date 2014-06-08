@@ -1,0 +1,39 @@
+SubmissionNumber#=%=#464
+FinalPaperTitle#=%=#Tri-Training for Authorship Attribution with Limited Training Data
+ShortPaperTitle#=%=#Tri-Training for Authorship Attribution with Limited Training Data
+NumberOfPages#=%=#7
+CopyrightSigned#=%=#Tieyun Qian
+JobTitle#==#
+Organization#==#Wuhan University
+Abstract#==#Authorship attribution (AA) aims to identify the authors of a set of documents.
+Traditional studies in this area often assume that there are a large set of
+labeled documents available for training. However, in the real life, it is
+often difficult or expensive to collect a large set of labeled data. For
+example, in the online review domain, most reviewers (authors) only write a few
+reviews, which are not enough to serve as the training data for accurate
+classification. In this paper, we present a novel three-view tri-training
+method to iteratively identify authors of unlabeled data to augment the
+training set. The key idea is to first represent each docu-ment in three
+distinct views, and then perform tri-training to exploit the large amount of
+unlabeled documents. Starting from 10 train-ing documents per author, we
+systematically evaluate the effectiveness of the proposed tri-training method
+for AA. Experimental results show that the proposed approach outperforms the
+state-of-the-art semi-supervised method CNG+SVM and other baselines.
+Author{1}{Firstname}#=%=#Tieyun
+Author{1}{Lastname}#=%=#Qian
+Author{1}{Email}#=%=#qty@whu.edu.cn
+Author{1}{Affiliation}#=%=#Wuhan University
+Author{2}{Firstname}#=%=#Bing
+Author{2}{Lastname}#=%=#Liu
+Author{2}{Email}#=%=#liub@cs.uic.edu
+Author{2}{Affiliation}#=%=#University of Illinois at Chicago
+Author{3}{Firstname}#=%=#Li
+Author{3}{Lastname}#=%=#Chen
+Author{3}{Email}#=%=#ccnuchenli@163.com
+Author{3}{Affiliation}#=%=#Wuhan University
+Author{4}{Firstname}#=%=#Zhiyong
+Author{4}{Lastname}#=%=#Peng
+Author{4}{Email}#=%=#peng@whu.edu.cn
+Author{4}{Affiliation}#=%=#Wuhan University
+
+==========

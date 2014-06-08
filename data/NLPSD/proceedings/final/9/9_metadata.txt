@@ -1,0 +1,41 @@
+SubmissionNumber#=%=#9
+FinalPaperTitle#=%=#Discourse Analysis of User Forums in an Online Weight Loss Application
+ShortPaperTitle#=%=#Discourse Analysis of User Forums in an Online Weight Loss Application
+NumberOfPages#=%=#5
+CopyrightSigned#=%=#Lydia Manikonda
+JobTitle#==#
+Organization#==#Arizona State University; 699 S. Mill Ave.; Tempe, AZ. 85281
+Abstract#==#Online social communities are becoming increasingly popular platforms for
+people to share information, seek emotional support, and maintain
+accountability for losing weight. Studying the language and discourse in these
+communities can offer insights on how users benefit from using these
+applications. This paper presents a preliminary analysis of language and
+discourse patterns in forum posts by users who lose weight and keep it off
+versus users with fluctuating weight dynamics.              Our results reveal
+differences
+about how the types of posts, polarity of sentiments, and semantic cohesion of
+posts made by users vary along with their weight loss pattern. To our
+knowledge, this is the first discourse-level analysis of language and weight
+loss dynamics.
+Author{1}{Firstname}#=%=#Lydia
+Author{1}{Lastname}#=%=#Manikonda
+Author{1}{Email}#=%=#lmanikon@asu.edu
+Author{1}{Affiliation}#=%=#Arizona State University
+Author{2}{Firstname}#=%=#Heather
+Author{2}{Lastname}#=%=#Pon-Barry
+Author{2}{Email}#=%=#ponbarry@asu.edu
+Author{2}{Affiliation}#=%=#Arizona State University
+Author{3}{Firstname}#=%=#Subbarao
+Author{3}{Lastname}#=%=#Kambhampati
+Author{3}{Email}#=%=#rao@asu.edu
+Author{3}{Affiliation}#=%=#Arizona State University
+Author{4}{Firstname}#=%=#Eric
+Author{4}{Lastname}#=%=#Hekler
+Author{4}{Email}#=%=#ehekler@asu.edu
+Author{4}{Affiliation}#=%=#Arizona State University
+Author{5}{Firstname}#=%=#David W.
+Author{5}{Lastname}#=%=#McDonald
+Author{5}{Email}#=%=#dwmc@uw.edu
+Author{5}{Affiliation}#=%=#University of Washington
+
+==========

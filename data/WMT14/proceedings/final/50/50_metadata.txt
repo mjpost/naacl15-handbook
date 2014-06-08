@@ -1,0 +1,35 @@
+SubmissionNumber#=%=#50
+FinalPaperTitle#=%=#DCU Terminology Translation System for Medical Query Subtask at WMT14
+ShortPaperTitle#=%=#DCU Terminology Translation System for Medical Query Subtask at WMT14
+NumberOfPages#=%=#7
+CopyrightSigned#=%=#Tsuyoshi Okita
+JobTitle#==#
+Organization#==#Dublin City University, School of Computing
+Abstract#==#This paper describes the Dublin City University
+terminology translation system used for our participation in the query
+translation subtask in the medical translation task in the Workshop on
+Statistical Machine Translation (WMT14).  We deployed six different
+kinds of terminology extraction methods, and participated in three
+different tasks: FR--EN and 
+EN--FR query tasks, and the CLIR task.              We obtained 36.2 BLEU points
+absolute for FR--EN and 28.8 BLEU points absolute for EN--FR tasks where
+we obtained the first place in both tasks.  We obtained 51.8
+BLEU points absolute for the CLIR task.
+Author{1}{Firstname}#=%=#Tsuyoshi
+Author{1}{Lastname}#=%=#Okita
+Author{1}{Email}#=%=#tokita@computing.dcu.ie
+Author{1}{Affiliation}#=%=#dublin city university
+Author{2}{Firstname}#=%=#Ali
+Author{2}{Lastname}#=%=#Vahid
+Author{2}{Email}#=%=#avahid@computing.dcu.ie
+Author{2}{Affiliation}#=%=#DCU
+Author{3}{Firstname}#=%=#Andy
+Author{3}{Lastname}#=%=#Way
+Author{3}{Email}#=%=#away@computing.dcu.ie
+Author{3}{Affiliation}#=%=#DCU
+Author{4}{Firstname}#=%=#Qun
+Author{4}{Lastname}#=%=#Liu
+Author{4}{Email}#=%=#qliu@computing.dcu.ie
+Author{4}{Affiliation}#=%=#Dublin City University
+
+==========

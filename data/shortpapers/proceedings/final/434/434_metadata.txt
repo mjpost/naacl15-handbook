@@ -1,0 +1,37 @@
+SubmissionNumber#=%=#434
+FinalPaperTitle#=%=#Hierarchical MT Training using Max-Violation Perceptron
+ShortPaperTitle#=%=#Hierarchical MT Training using Max-Violation Perceptron
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Kai Zhao
+JobTitle#==#
+Organization#==#Graduate Center, City University of New York
+Abstract#==#Large-scale discriminative training has become promising for statistical
+machine
+translation by leveraging the huge training corpus; for example the recent
+effort
+in phrase-based MT (Yu et al., 2013) significantly outperforms mainstream
+methods that only train on small tuning sets. However, phrase-based MT suffers
+from limited reorderings, and thus its training can only utilize a small
+portion of the bitext due to the distortion limit. To address this problem, we
+extend Yu et al. (2013) to syntax-based MT by generalizing their latent
+variable “violation-fixing” perceptron from graphs to hypergraphs.
+Experiments confirm that our method leads to up to +1.2 B LEU improvement over
+mainstream methods such as MERT and PRO .
+Author{1}{Firstname}#=%=#Kai
+Author{1}{Lastname}#=%=#Zhao
+Author{1}{Email}#=%=#kzhao.hf@gmail.com
+Author{1}{Affiliation}#=%=#Graduate Center, CUNY
+Author{2}{Firstname}#=%=#Liang
+Author{2}{Lastname}#=%=#Huang
+Author{2}{Email}#=%=#liang.huang.sh@gmail.com
+Author{2}{Affiliation}#=%=#City University of New York (CUNY)
+Author{3}{Firstname}#=%=#Haitao
+Author{3}{Lastname}#=%=#Mi
+Author{3}{Email}#=%=#hmi@us.ibm.com
+Author{3}{Affiliation}#=%=#IBM Watson Research Center
+Author{4}{Firstname}#=%=#Abe
+Author{4}{Lastname}#=%=#Ittycheriah
+Author{4}{Email}#=%=#abei@us.ibm.com
+Author{4}{Affiliation}#=%=#IBM
+
+==========

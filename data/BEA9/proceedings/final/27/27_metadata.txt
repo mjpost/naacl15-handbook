@@ -1,0 +1,37 @@
+SubmissionNumber#=%=#27
+FinalPaperTitle#=%=#Natural Language Generation with Vocabulary Constraints
+ShortPaperTitle#=%=#Natural Language Generation with Vocabulary Constraints
+NumberOfPages#=%=#10
+CopyrightSigned#=%=#Ben Swanson
+JobTitle#==#
+Organization#==#Brown University
+Providence RI
+Abstract#==#We investigate data driven natural lan-
+guage generation under the constraints
+that all words must come from a fixed vo-
+cabulary and a specified word must ap-
+pear in the generated sentence, motivated
+by the possibility for automatic genera-
+tion of language education exercises. We
+present fast and accurate approximations
+to the ideal rejection samplers for these
+constraints and compare various sentence
+level generative language models. Our
+best systems produce output that is with
+high frequency both novel and error free,
+which we validate with human and auto-
+matic evaluations.
+Author{1}{Firstname}#=%=#Ben
+Author{1}{Lastname}#=%=#Swanson
+Author{1}{Email}#=%=#chonger@cs.brown.edu
+Author{1}{Affiliation}#=%=#Brown University
+Author{2}{Firstname}#=%=#Elif
+Author{2}{Lastname}#=%=#Yamangil
+Author{2}{Email}#=%=#elifyamangil@gmail.com
+Author{2}{Affiliation}#=%=#Harvard University
+Author{3}{Firstname}#=%=#Eugene
+Author{3}{Lastname}#=%=#Charniak
+Author{3}{Email}#=%=#ec@cs.brown.edu
+Author{3}{Affiliation}#=%=#Brown University
+
+==========

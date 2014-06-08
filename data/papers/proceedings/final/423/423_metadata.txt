@@ -1,0 +1,31 @@
+SubmissionNumber#=%=#423
+FinalPaperTitle#=%=#Predicting Instructor's Intervention in MOOC forums
+ShortPaperTitle#=%=#Predicting Instructor's Intervention in MOOC forums
+NumberOfPages#=%=#11
+CopyrightSigned#=%=#Snigdha Chaturvedi
+JobTitle#==#
+Organization#==#University of Maryland, College Park, MD, USA, 20742
+Abstract#==#Instructor intervention in student discussion forums is a vital component in
+Massive Open Online Courses (MOOCs), where personalized interaction is limited.
+This paper introduces the problem of predicting instructor interventions in
+MOOC forums. We propose several prediction models designed to capture unique
+aspects of MOOCs, combining course information, forum structure and posts
+content. Our models abstract contents of individual posts of threads using
+latent categories, learned jointly with the binary intervention prediction
+problem. Experiments over data from two Coursera MOOCs demonstrate that
+incorporating the structure of threads into the learning problem leads to
+better predictive performance.
+Author{1}{Firstname}#=%=#Snigdha
+Author{1}{Lastname}#=%=#Chaturvedi
+Author{1}{Email}#=%=#snigdhac@cs.umd.edu
+Author{1}{Affiliation}#=%=#University of Maryland, College Park
+Author{2}{Firstname}#=%=#Dan
+Author{2}{Lastname}#=%=#Goldwasser
+Author{2}{Email}#=%=#goldan55@gmail.com
+Author{2}{Affiliation}#=%=#University of Maryland
+Author{3}{Firstname}#=%=#Hal
+Author{3}{Lastname}#=%=#Daumé III
+Author{3}{Email}#=%=#me@hal3.name
+Author{3}{Affiliation}#=%=#UMD
+
+==========

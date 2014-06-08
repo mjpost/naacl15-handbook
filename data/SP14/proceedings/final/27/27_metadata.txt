@@ -1,0 +1,16 @@
+SubmissionNumber#=%=#27
+FinalPaperTitle#=%=#Towards README-EVAL : Interpreting README File Instructions
+ShortPaperTitle#=%=#Towards README-EVAL : Interpreting README File Instructions
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#James White
+JobTitle#==#
+Organization#==#Department of Linguistics 
+University of Washington 
+Seattle, WA 98195-4340
+Abstract#==#
+Author{1}{Firstname}#=%=#James
+Author{1}{Lastname}#=%=#White
+Author{1}{Email}#=%=#jimwhite@uw.edu
+Author{1}{Affiliation}#=%=#University of Washington
+
+==========

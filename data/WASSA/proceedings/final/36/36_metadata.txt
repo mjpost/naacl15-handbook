@@ -1,0 +1,32 @@
+SubmissionNumber#=%=#36
+FinalPaperTitle#=%=#Modelling Sarcasm in Twitter, a Novel Approach
+ShortPaperTitle#=%=#Modelling Sarcasm in Twitter, a Novel Approach
+NumberOfPages#=%=#9
+CopyrightSigned#=%=#Francesco Barbieri
+JobTitle#==#
+Organization#==#Pompeu Fabra University, Barcelona, Spain
+Abstract#==#Automatic detection of figurative language is a challenging task in
+computational linguistics. Recognising both literal and figurative meaning is
+not trivial for a machine and in some cases it is hard even for humans. For
+this reason novel and accurate systems able to recognise figurative languages
+are necessary. We present in this paper a novel computational model capable to
+detect sarcasm in the social network Twitter (a popular microblogging service
+which allows users to post short messages). Our model is easy to implement and,
+unlike previous systems, it does not include patterns of words as features. Our
+seven sets of lexical features aim to detect sarcasm by its inner structure
+(for example unexpectedness, intensity of the terms or imbalance between
+registers), abstracting from the use of specific terms.
+Author{1}{Firstname}#=%=#Francesco
+Author{1}{Lastname}#=%=#Barbieri
+Author{1}{Email}#=%=#francesco.barbieri@upf.edu
+Author{1}{Affiliation}#=%=#Pompeu Fabra University, Barcelona
+Author{2}{Firstname}#=%=#Horacio
+Author{2}{Lastname}#=%=#Saggion
+Author{2}{Email}#=%=#horacio.saggion@upf.edu
+Author{2}{Affiliation}#=%=#UPF & University of Sheffield
+Author{3}{Firstname}#=%=#Francesco
+Author{3}{Lastname}#=%=#Ronzano
+Author{3}{Email}#=%=#francesco.ronzano@upf.edu
+Author{3}{Affiliation}#=%=#UPF - Pompeu Fabra University
+
+==========

@@ -1,0 +1,22 @@
+SubmissionNumber#=%=#422
+FinalPaperTitle#=%=#Predicting Power Relations between Participants in Written Dialog from a Single Thread
+ShortPaperTitle#=%=#Predicting Power Relations between Participants in Written Dialog from a Single Thread
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Vinodkumar Prabhakaran
+JobTitle#==#
+Organization#==#Columbia University, NY
+Abstract#==#We introduce the problem of predicting who has power over whom in pairs of
+people based on a single written dialog. We propose a new set of structural
+features. We build a supervised learning system to predict the direction of
+power; our new features significantly improve the results over using previously
+proposed features.
+Author{1}{Firstname}#=%=#Vinodkumar
+Author{1}{Lastname}#=%=#Prabhakaran
+Author{1}{Email}#=%=#vinod@cs.columbia.edu
+Author{1}{Affiliation}#=%=#Columbia University
+Author{2}{Firstname}#=%=#Owen
+Author{2}{Lastname}#=%=#Rambow
+Author{2}{Email}#=%=#rambow@ccls.columbia.edu
+Author{2}{Affiliation}#=%=#Columbia University
+
+==========

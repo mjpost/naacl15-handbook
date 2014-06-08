@@ -1,0 +1,56 @@
+SubmissionNumber#=%=#16
+FinalPaperTitle#=%=#Towards Assessing Changes in Degree of Depression through Facebook
+ShortPaperTitle#=%=#Towards Assessing Changes in Degree of Depression through Facebook
+NumberOfPages#=%=#8
+CopyrightSigned#=%=#HAS
+JobTitle#==#
+Organization#==#3701 Market Street, Suite 219
+Philadelphia, PA 19104
+Abstract#==#Depression is typically diagnosed as being present or absent.However,
+depression severity is believed to be continuously distributed rather than
+dichotomous. Severity may vary for a given patient daily and seasonally as a
+function of many variables ranging from life events to environmental factors.
+Repeated population-scale assessment of depression through questionnaires is
+expensive. In this paper we use survey responses and status updates from 28,749
+Facebook users to develop a regression model that predicts users' degree of
+depression based on their Facebook status updates. Our user-level predictive
+accuracy is modest, significantly outperforming a baseline of average user
+sentiment. We use our model to estimate user changes in depression across
+seasons, and find, consistent with literature, users' degree of depression most
+often increases from summer to winter. We then show the potential to study
+factors driving individuals' level of depression by looking at its most highly
+correlated language features.
+Author{1}{Firstname}#=%=#H. Andrew
+Author{1}{Lastname}#=%=#Schwartz
+Author{1}{Email}#=%=#hansens@seas.upenn.edu
+Author{1}{Affiliation}#=%=#University of Pennsylvania
+Author{2}{Firstname}#=%=#Johannes
+Author{2}{Lastname}#=%=#Eichstaedt
+Author{2}{Email}#=%=#jeich@sas.upenn.edu
+Author{2}{Affiliation}#=%=#University of Pennsylvania
+Author{3}{Firstname}#=%=#Margaret L.
+Author{3}{Lastname}#=%=#Kern
+Author{3}{Email}#=%=#mkern@sas.upenn.edu
+Author{3}{Affiliation}#=%=#University of Pennsylvania
+Author{4}{Firstname}#=%=#Gregory
+Author{4}{Lastname}#=%=#Park
+Author{4}{Email}#=%=#gregpark@sas.upen.edu
+Author{4}{Affiliation}#=%=#University of Pennsylvania
+Author{5}{Firstname}#=%=#Maarten
+Author{5}{Lastname}#=%=#Sap
+Author{5}{Email}#=%=#maarten@sas.upenn.edu
+Author{5}{Affiliation}#=%=#University of Pennsylvania
+Author{6}{Firstname}#=%=#David
+Author{6}{Lastname}#=%=#Stillwell
+Author{6}{Email}#=%=#ds617@cam.ac.uk
+Author{6}{Affiliation}#=%=#University of Cambridge
+Author{7}{Firstname}#=%=#Michal
+Author{7}{Lastname}#=%=#Kosinski
+Author{7}{Email}#=%=#mk583@cam.ac.uk
+Author{7}{Affiliation}#=%=#University of Cambridge
+Author{8}{Firstname}#=%=#Lyle
+Author{8}{Lastname}#=%=#Ungar
+Author{8}{Email}#=%=#ungar@cis.upenn.edu
+Author{8}{Affiliation}#=%=#University of Pennsylvania
+
+==========

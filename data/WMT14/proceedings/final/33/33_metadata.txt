@@ -1,0 +1,33 @@
+SubmissionNumber#=%=#33
+FinalPaperTitle#=%=#The UA-Prompsit hybrid machine translation system for the 2014 Workshop on Statistical Machine Translation
+ShortPaperTitle#=%=#The UA-Prompsit hybrid machine translation system for the 2014 Workshop on Statistical Machine Translation
+NumberOfPages#=%=#8
+CopyrightSigned#=%=#Víctor M. Sánchez-Cartagena
+JobTitle#==#
+Organization#==#Departament de Llenguatges i Sistemes Informàtics
+Universitat d'Alacant
+Apartat de Correus 99
+E-03080 Alacant
+Abstract#==#This paper describes the system jointly developed by members of the Departament
+de Llenguatges i Sistemes Informàtics at Universitat d'Alacant and the
+Prompsit Language Engineering company for the shared translation task of the
+2014 Workshop on Statistical Machine Translation. We present a phrase-based
+statistical machine translation system whose phrase table is enriched with
+information obtained from dictionaries and shallow-transfer rules like those
+used in rule-based machine translation. The novelty of our approach lies in the
+fact that the transfer rules used were not written by humans, but automatically
+inferred from a parallel corpus.
+Author{1}{Firstname}#=%=#Víctor M.
+Author{1}{Lastname}#=%=#Sánchez-Cartagena
+Author{1}{Email}#=%=#vmsanchez@prompsit.com
+Author{1}{Affiliation}#=%=#Prompsit Language Engineering and Universitat d'Alacant
+Author{2}{Firstname}#=%=#Juan Antonio
+Author{2}{Lastname}#=%=#Pérez-Ortiz
+Author{2}{Email}#=%=#japerez@dlsi.ua.es
+Author{2}{Affiliation}#=%=#Departament de Llenguatges i Sistemes Informàtics, Universitat d'Alacant
+Author{3}{Firstname}#=%=#Felipe
+Author{3}{Lastname}#=%=#Sánchez-Martínez
+Author{3}{Email}#=%=#fsanchez@dlsi.ua.es
+Author{3}{Affiliation}#=%=#Universitat d'Alacant
+
+==========

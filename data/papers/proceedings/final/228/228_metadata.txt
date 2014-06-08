@@ -1,0 +1,39 @@
+SubmissionNumber#=%=#228
+FinalPaperTitle#=%=#Knowledge-Based Question Answering as Machine Translation
+ShortPaperTitle#=%=#KB-QA as Machine Translation
+NumberOfPages#=%=#10
+CopyrightSigned#=%=#Junwei Bao
+JobTitle#==#
+Organization#==#
+Abstract#==#A typical knowledge-based question answering(KB-QA) system faces two
+challenges: one is to transform natural language questions into their meaning
+representations(MRs); the other is to retrieve answers from knowledge bases
+(KBs) using generated MRs. Unlike previous methods which treat them in a
+cascaded manner, we present a translation-based approach to solve these two
+tasks in one unified framework. We translate questions to answers based on CYK
+parsing. Answers as translations of the span covered by each CYK cell are
+obtained by a question translation method, which first generates formal triple
+queries as MRs for the span based on question patterns and relation
+expressions, and then retrieves answers from a given KB based on triple queries
+generated. A linear model is defined over derivations, and minimum error rate
+training is used to tune feature weights based on a set of question-answer
+pairs. Compared to a KB-QA system using a state-of-the-art semantic parser, our
+method achieves better results.
+Author{1}{Firstname}#=%=#Junwei
+Author{1}{Lastname}#=%=#Bao
+Author{1}{Email}#=%=#baojunwei001@gmail.com
+Author{1}{Affiliation}#=%=#Harbin Institute of Technology
+Author{2}{Firstname}#=%=#Nan
+Author{2}{Lastname}#=%=#Duan
+Author{2}{Email}#=%=#nanduan@microsoft.com
+Author{2}{Affiliation}#=%=#Microsoft Research Asia
+Author{3}{Firstname}#=%=#Ming
+Author{3}{Lastname}#=%=#Zhou
+Author{3}{Email}#=%=#mingzhou@microsoft.com
+Author{3}{Affiliation}#=%=#microsoft research asia
+Author{4}{Firstname}#=%=#Tiejun
+Author{4}{Lastname}#=%=#Zhao
+Author{4}{Email}#=%=#tjzhao@hit.edu.cn
+Author{4}{Affiliation}#=%=#Harbin Institute of Technology
+
+==========

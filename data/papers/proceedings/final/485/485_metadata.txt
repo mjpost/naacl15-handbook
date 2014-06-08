@@ -1,0 +1,30 @@
+SubmissionNumber#=%=#485
+FinalPaperTitle#=%=#Online Learning in Tensor Space
+ShortPaperTitle#=%=#Online Learning in Tensor Space
+NumberOfPages#=%=#10
+CopyrightSigned#=%=#Yuan Cao
+JobTitle#==#
+Organization#==#Center for Language & Speech Processing and Human Language Technology Center of Excellence
+The Johns Hopkins University
+Baltimore, MD, USA, 21218
+Abstract#==#We propose an online learning algorithm based on tensor-space models. A
+tensor-space model represents data in a compact way, and via rank-1
+approximation the weight tensor can be made highly structured hence the number
+of parameters to be estimated is significantly smaller than the traditional
+vector-space models. This regularizes the model complexity and makes the tensor
+model highly effective under situations where a large feature set is defined
+but very low resource is available for training. We experimented the proposed
+algorithm on a parsing task, and our results show that even with very little
+training data the learning algorithm based on tensor model performs well, and
+gives significantly better results than learning algorithms based on
+traditional vector-space models.
+Author{1}{Firstname}#=%=#Yuan
+Author{1}{Lastname}#=%=#Cao
+Author{1}{Email}#=%=#yuan.cao@jhu.edu
+Author{1}{Affiliation}#=%=#Center for Language and Speech Processing, Johns Hopkins University
+Author{2}{Firstname}#=%=#Sanjeev
+Author{2}{Lastname}#=%=#Khudanpur
+Author{2}{Email}#=%=#khudanpur@jhu.edu
+Author{2}{Affiliation}#=%=#Johns Hopkins University
+
+==========

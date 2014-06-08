@@ -1,0 +1,38 @@
+SubmissionNumber#=%=#349
+FinalPaperTitle#=%=#Metaphor Detection with Cross-Lingual Model Transfer
+ShortPaperTitle#=%=#Metaphor Detection with Cross-Lingual Model Transfer
+NumberOfPages#=%=#11
+CopyrightSigned#=%=#Yulia Tsvetkov
+JobTitle#==#
+Organization#==#Carnegie Mellon University
+Abstract#==#We show that it is possible to reliably discriminate whether a syntactic
+construction is meant literally or metaphorically using lexical semantic
+features of the words that participate in the construction. Our model is
+constructed using English resources, and we obtain state-of-the-art performance
+relative to previous work in this language. Using a model transfer approach by
+pivoting through a bilingual dictionary, we show our model can identify
+metaphoric expressions in other languages. We provide results on three new test
+sets in Spanish, Farsi, and Russian. The results support the hypothesis that
+metaphors are conceptual, rather than lexical, in nature.
+Author{1}{Firstname}#=%=#Yulia
+Author{1}{Lastname}#=%=#Tsvetkov
+Author{1}{Email}#=%=#yulia.tsvetkov@gmail.com
+Author{1}{Affiliation}#=%=#Carnegie Mellon University
+Author{2}{Firstname}#=%=#Leonid
+Author{2}{Lastname}#=%=#Boytsov
+Author{2}{Email}#=%=#leo@boytsov.info
+Author{2}{Affiliation}#=%=#Carnegie Mellon University
+Author{3}{Firstname}#=%=#Anatole
+Author{3}{Lastname}#=%=#Gershman
+Author{3}{Email}#=%=#anatoleg@cs.cmu.edu
+Author{3}{Affiliation}#=%=#Carnegie Mellon University
+Author{4}{Firstname}#=%=#Eric
+Author{4}{Lastname}#=%=#Nyberg
+Author{4}{Email}#=%=#ehn@cs.cmu.edu
+Author{4}{Affiliation}#=%=#Carnegie Mellon University
+Author{5}{Firstname}#=%=#Chris
+Author{5}{Lastname}#=%=#Dyer
+Author{5}{Email}#=%=#cdyer@cs.cmu.edu
+Author{5}{Affiliation}#=%=#Carnegie Mellon University
+
+==========

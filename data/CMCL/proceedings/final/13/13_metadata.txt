@@ -1,0 +1,41 @@
+SubmissionNumber#=%=#13
+FinalPaperTitle#=%=#A Usage-Based Model of Early Grammatical Development
+ShortPaperTitle#=%=#A Usage-Based Model of Early Grammatical Development
+NumberOfPages#=%=#9
+CopyrightSigned#=%=#Barend Beekhuizen
+JobTitle#==#
+Organization#==#Leiden University
+P.O. Box 9500 
+2300 RA Leiden, The Netherlands
+Abstract#==#The representations and processes yielding the limited length and telegraphic
+style of language production early on in acquisition have received little
+attention in acquisitional modeling. In this paper, we present a model,
+starting with minimal linguistic representations, that incrementally builds up
+an inventory of increasingly long and abstract grammatical representations
+(form+meaning pairings), in line with the usage-based conception of language
+acquisition. We explore its performance on a comprehension and a generation
+task, showing that, over time, the model better understands the processed
+utterances, generates longer utterances, and better expresses the situation
+these utterances intend to refer to.
+Author{1}{Firstname}#=%=#Barend
+Author{1}{Lastname}#=%=#Beekhuizen
+Author{1}{Email}#=%=#barendbeekhuizen@gmail.com
+Author{1}{Affiliation}#=%=#Leiden University
+Author{2}{Firstname}#=%=#Rens
+Author{2}{Lastname}#=%=#Bod
+Author{2}{Email}#=%=#l.w.m.bod@uva.nl
+Author{2}{Affiliation}#=%=#University of Amsterdam
+Author{3}{Firstname}#=%=#Afsaneh
+Author{3}{Lastname}#=%=#Fazly
+Author{3}{Email}#=%=#afsaneh@cs.toronto.edu
+Author{3}{Affiliation}#=%=#University of Toronto
+Author{4}{Firstname}#=%=#Suzanne
+Author{4}{Lastname}#=%=#Stevenson
+Author{4}{Email}#=%=#suzanne@cs.toronto.edu
+Author{4}{Affiliation}#=%=#University of Toronto
+Author{5}{Firstname}#=%=#Arie
+Author{5}{Lastname}#=%=#Verhagen
+Author{5}{Email}#=%=#a.verhagen@hum.leidenuniv.nl
+Author{5}{Affiliation}#=%=#Leiden University
+
+==========

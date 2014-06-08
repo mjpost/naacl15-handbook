@@ -1,0 +1,31 @@
+SubmissionNumber#=%=#20
+FinalPaperTitle#=%=#Coreference Resolution for Structured Drug Product Labels
+ShortPaperTitle#=%=#Coreference Resolution for Structured Drug Product Labels
+NumberOfPages#=%=#9
+CopyrightSigned#=%=#Halil Kilicoglu
+JobTitle#==#
+Organization#==#
+Abstract#==#FDA drug package inserts provide comprehensive and authoritative information
+about drugs. DailyMed database is a repository of structured product labels
+extracted from these package inserts. Most salient information about drugs
+remains in free text portions of these labels. Extracting information from
+these portions can improve the safety and quality of drug prescription. In this
+paper, we present a study that focuses on resolution of coreferential
+information from drug labels contained in DailyMed. We generalized and expanded
+an existing rule-based coreference resolution module for this purpose.
+Enhancements include resolution of set/instance anaphora, recognition of
+appositive constructions and wider use of UMLS semantic knowledge. We obtained
+an improvement of 40% over the baseline with unweighted average F1-measure
+using B-CUBED, MUC, and CEAF metrics. The results underscore the importance of
+set/instance anaphora and appositive constructions in this type of text and
+point out the shortcomings in coreference annotation in the dataset.
+Author{1}{Firstname}#=%=#Halil
+Author{1}{Lastname}#=%=#Kilicoglu
+Author{1}{Email}#=%=#kilicogluh@mail.nih.gov
+Author{1}{Affiliation}#=%=#National Library of Medicine
+Author{2}{Firstname}#=%=#Dina
+Author{2}{Lastname}#=%=#Demner-Fushman
+Author{2}{Email}#=%=#ddemner@mail.nih.gov
+Author{2}{Affiliation}#=%=#NLM
+
+==========

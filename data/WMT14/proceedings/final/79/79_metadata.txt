@@ -1,0 +1,44 @@
+SubmissionNumber#=%=#79
+FinalPaperTitle#=%=#DCU-Lingo24 Participation in WMT 2014 Hindi-English Translation task
+ShortPaperTitle#=%=#DCU-Lingo24_Hindi
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Xiaofeng Wu
+JobTitle#==#
+Organization#==#CNGL, Centre for Global Intelligent Content
+School of Computing, Dublin City University
+Dublin 9, Ireland
+CNGL, Centre for Global Intelligent Content
+School of Computing, Dublin City University
+Dublin 9, Ireland
+Abstract#==#This paper describes the DCU-Lingo24 submission to WMT 2014 for the Hindi-
+English translation task. We exploit miscellaneous methods in our system,
+including: Context-Informed PB-SMT, OOV Word Conversion (OWC), Multi-Alignment
+Combination (MAC), Oper-ation Sequence Model (OSM), Stem-ming Align and Normal
+Phrase Extraction (SANPE), and Language Model Interpola-tion (LMI). We also
+describe various pre-processing steps we tried for Hindi in this task.
+Author{1}{Firstname}#=%=#Xiaofeng
+Author{1}{Lastname}#=%=#Wu
+Author{1}{Email}#=%=#xiaofengwu@computing.dcu.ie
+Author{1}{Affiliation}#=%=#CNGL, School of Computing, DCU
+Author{2}{Firstname}#=%=#Rejwanul
+Author{2}{Lastname}#=%=#Haque
+Author{2}{Email}#=%=#rejwanul.haque@lingo24.com
+Author{2}{Affiliation}#=%=#Lingo24
+Author{3}{Firstname}#=%=#Tsuyoshi
+Author{3}{Lastname}#=%=#Okita
+Author{3}{Email}#=%=#tokita@computing.dcu.ie
+Author{3}{Affiliation}#=%=#dublin city university
+Author{4}{Firstname}#=%=#Piyush
+Author{4}{Lastname}#=%=#Arora
+Author{4}{Email}#=%=#parora@computing.dcu.ie
+Author{4}{Affiliation}#=%=#Dublin City University
+Author{5}{Firstname}#=%=#Andy
+Author{5}{Lastname}#=%=#Way
+Author{5}{Email}#=%=#away@computing.dcu.ie
+Author{5}{Affiliation}#=%=#
+Author{6}{Firstname}#=%=#Qun
+Author{6}{Lastname}#=%=#Liu
+Author{6}{Email}#=%=#qliu@computing.dcu.ie
+Author{6}{Affiliation}#=%=#Dublin City University
+
+==========

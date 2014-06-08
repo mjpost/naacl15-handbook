@@ -1,0 +1,43 @@
+SubmissionNumber#=%=#6
+FinalPaperTitle#=%=#Crowdsourcing High-Quality Parallel Data Extraction from Twitter
+ShortPaperTitle#=%=#Crowdsourcing High-Quality Parallel Data Extraction from Twitter
+NumberOfPages#=%=#11
+CopyrightSigned#=%=#Wang Ling
+JobTitle#==#
+Organization#==#CMU-LTI & INESC-ID
+Abstract#==#High-quality parallel data is crucial for a range of multilingual applications,
+from tuning and evaluating machine translation systems to cross-lingual
+annotation projection. Unfortunately, automatically obtained parallel data
+(which is available in relative abundance) tends to be quite noisy. To obtain
+high-quality parallel data, we introduce a crowdsourcing paradigm in which
+workers with only basic bilingual proficiency identify translations from an
+automatically extracted corpus of parallel microblog messages. For less than
+$350, we obtained over 5000 parallel segments in five language pairs. Evaluated
+against expert annotations, the quality of the crowdsourced corpus is
+significantly better than existing automatic methods: it obtains an performance
+comparable to expert annotations when used in MERT tuning of a microblog MT
+system; and training a parallel sentence classifier with it leads also to
+improved results. The crowdsourced corpora will be made available in
+\url{http://www.cs.cmu.edu/~lingwang/microtopia/}.
+Author{1}{Firstname}#=%=#Wang
+Author{1}{Lastname}#=%=#Ling
+Author{1}{Email}#=%=#wanglin1122@gmail.com
+Author{1}{Affiliation}#=%=#CMU-LTI & INESC-ID
+Author{2}{Firstname}#=%=#Luis
+Author{2}{Lastname}#=%=#Marujo
+Author{2}{Email}#=%=#lmarujo@cs.cmu.edu
+Author{2}{Affiliation}#=%=#CMU-LTI & INESC-ID
+Author{3}{Firstname}#=%=#Chris
+Author{3}{Lastname}#=%=#Dyer
+Author{3}{Email}#=%=#cdyer@cs.cmu.edu
+Author{3}{Affiliation}#=%=#Carnegie Mellon University
+Author{4}{Firstname}#=%=#Alan W
+Author{4}{Lastname}#=%=#Black
+Author{4}{Email}#=%=#awb@cs.cmu.edu
+Author{4}{Affiliation}#=%=#Carnegie Mellon University
+Author{5}{Firstname}#=%=#Isabel
+Author{5}{Lastname}#=%=#Trancoso
+Author{5}{Email}#=%=#imt@l2f.inesc-id.pt
+Author{5}{Affiliation}#=%=#INESC-ID
+
+==========

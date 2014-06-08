@@ -1,0 +1,26 @@
+SubmissionNumber#=%=#30
+FinalPaperTitle#=%=#A Conceptual Framework for Inferring Implicatures
+ShortPaperTitle#=%=#A Conceptual Framework for Inferring Implicatures
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Lingjia Deng
+JobTitle#==#
+Organization#==#Intelligent Systems Program
+University of Pittsburgh
+Abstract#==#While previous sentiment analysis research has concentrated on the
+interpretation of explicitly stated opinions and attitudes, this work addresses
+a type of opinion implicature (i.e., opinion-oriented default inference) in
+real-world text. This work describes a rule-based conceptual framework for
+representing and analyzing opinion implicatures. In the course of understanding
+implicatures, the system recognizes implicit sentiments (and beliefs) toward
+various events and entities in the sentence, often of mixed polarities; thus,
+it produces a richer interpretation than is typical in opinion analysis.
+Author{1}{Firstname}#=%=#Janyce
+Author{1}{Lastname}#=%=#Wiebe
+Author{1}{Email}#=%=#wiebe@cs.pitt.edu
+Author{1}{Affiliation}#=%=#University of Pittsburgh
+Author{2}{Firstname}#=%=#Lingjia
+Author{2}{Lastname}#=%=#Deng
+Author{2}{Email}#=%=#lingjiadeng@gmail.com
+Author{2}{Affiliation}#=%=#University of Pittsburgh
+
+==========

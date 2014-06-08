@@ -1,0 +1,32 @@
+SubmissionNumber#=%=#177
+FinalPaperTitle#=%=#Unsupervised Solution Post Identification from Discussion Forums
+ShortPaperTitle#=%=#Unsupervised Solution Post Identification from Discussion Forums
+NumberOfPages#=%=#10
+CopyrightSigned#=%=#DEEPAK P
+JobTitle#==#
+Organization#==#IBM Research - India, Bangalore, India
+Abstract#==#Discussion forums have evolved into a dependable source of knowledge to solve
+common problems. However, only a minority of the posts in discussion forums are
+solution posts. Identifying solution posts from discussion forums, hence, is an
+important research problem. In this paper, we present a technique for
+unsupervised solution post identification leveraging a so far unexplored
+textual feature, that of lexical correlations between problems and solutions.
+We use translation models and language models to exploit lexical correlations
+and solution post character respectively. Our technique is designed to not rely
+much on structural features such as post metadata since such features are often
+not uniformly available across forums. Our clustering-based iterative solution
+identification approach based on the EM-formulation performs favorably in an
+empirical evaluation, beating the only unsupervised solution identification
+technique from literature by a very large margin. We also show that our
+unsupervised technique is competitive against methods that require supervision,
+outperforming one such technique comfortably.
+Author{1}{Firstname}#=%=#Deepak
+Author{1}{Lastname}#=%=#P
+Author{1}{Email}#=%=#deepakp7@gmail.com
+Author{1}{Affiliation}#=%=#IBM Research - India
+Author{2}{Firstname}#=%=#Karthik
+Author{2}{Lastname}#=%=#Visweswariah
+Author{2}{Email}#=%=#v-karthik@in.ibm.com
+Author{2}{Affiliation}#=%=#IBM Research India
+
+==========

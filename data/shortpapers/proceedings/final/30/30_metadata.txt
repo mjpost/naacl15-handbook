@@ -1,0 +1,33 @@
+SubmissionNumber#=%=#30
+FinalPaperTitle#=%=#Dependency-based Pre-ordering for Chinese-English Machine Translation
+ShortPaperTitle#=%=#Dependency Pre-ordering for Chinese-English MT
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Jingsheng Cai
+JobTitle#==#Student
+Organization#==#Name: School of Computer and Information Technology, Beijing Jiaotong University
+Address: No.3 Shangyuancun, Haidian District, Beijing, 100044, China
+Abstract#==#In statistical machine translation (SMT), syntax-based pre-ordering of the
+source language is an effective method for dealing with language pairs where
+there are great differences in their respective word orders. This paper
+introduces a novel pre-ordering approach based on dependency parsing for
+Chinese-English SMT. We present a set of dependency-based pre-ordering rules
+which improved the BLEU score by 1.61 on the NIST 2006 evaluation data. We also
+investigate the accuracy of the rule set by conducting human evaluations.
+Author{1}{Firstname}#=%=#Jingsheng
+Author{1}{Lastname}#=%=#Cai
+Author{1}{Email}#=%=#joycetsai99@gmail.com
+Author{1}{Affiliation}#=%=#School of Computer and Information Technology,  Beijing Jiaotong University
+Author{2}{Firstname}#=%=#Masao
+Author{2}{Lastname}#=%=#Utiyama
+Author{2}{Email}#=%=#mutiyama@nict.go.jp
+Author{2}{Affiliation}#=%=#NICT
+Author{3}{Firstname}#=%=#Eiichiro
+Author{3}{Lastname}#=%=#Sumita
+Author{3}{Email}#=%=#eiichiro.sumita@nict.go.jp
+Author{3}{Affiliation}#=%=#NICT
+Author{4}{Firstname}#=%=#Yujie
+Author{4}{Lastname}#=%=#Zhang
+Author{4}{Email}#=%=#yjzhang@bjtu.edu.cn
+Author{4}{Affiliation}#=%=#School of Computer and Information Technology, Beijing Jiaotong University
+
+==========

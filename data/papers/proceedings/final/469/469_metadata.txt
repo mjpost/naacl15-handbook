@@ -1,0 +1,35 @@
+SubmissionNumber#=%=#469
+FinalPaperTitle#=%=#Anchors Regularized: Adding Robustness and Extensibility to Scalable Topic-Modeling Algorithms
+ShortPaperTitle#=%=#Anchors Regularized: Adding Robustness and Extensibility to Scalable Topic-Modeling Algorithms
+NumberOfPages#=%=#11
+CopyrightSigned#=%=#Thang Nguyen
+JobTitle#==#
+Organization#==#University of Maryland, college park
+Abstract#==#Spectral methods offer scalable alternatives
+to Markov chain Monte Carlo and expectation
+maximization. However, these new
+methods lack the rich priors associated with
+probabilistic models. We examine Arora et
+al.’s anchor words algorithm for topic modeling
+and develop new, regularized algorithms
+that not only mathematically resemble
+Gaussian and Dirichlet priors but also
+improve the interpretability of topic models.
+Our new regularization approaches make
+these efficient algorithms more flexible; we
+also show that these methods can be combined
+with informed priors.
+Author{1}{Firstname}#=%=#Thang
+Author{1}{Lastname}#=%=#Nguyen
+Author{1}{Email}#=%=#daithang@umiacs.umd.edu
+Author{1}{Affiliation}#=%=#Umiacs, UMD
+Author{2}{Firstname}#=%=#Yuening
+Author{2}{Lastname}#=%=#Hu
+Author{2}{Email}#=%=#ynhu@cs.umd.edu
+Author{2}{Affiliation}#=%=#University of Maryland
+Author{3}{Firstname}#=%=#Jordan
+Author{3}{Lastname}#=%=#Boyd-Graber
+Author{3}{Email}#=%=#jbg@umiacs.umd.edu
+Author{3}{Affiliation}#=%=#University of Maryland
+
+==========

@@ -1,0 +1,37 @@
+SubmissionNumber#=%=#515
+FinalPaperTitle#=%=#Active Learning with Efficient Feature Weighting Methods for Improving Data Quality and Classification Accuracy
+ShortPaperTitle#=%=#Active Learning with Efficient Feature Weighting Methods for Improving Data Quality and Classification Accuracy
+NumberOfPages#=%=#9
+CopyrightSigned#=%=#Lu Chen
+JobTitle#==#
+Organization#==#Samsung Research America, Silicon Valley
+75 W Plumeria Dr. San Jose, CA 95134 USA
+Abstract#==#Many machine learning datasets are noisy with a substantial number of
+mislabeled instances. This noise yields sub-optimal classification performance.
+In this paper we study a large, low quality annotated dataset, created quickly
+and cheaply using Amazon Mechanical Turk to crowdsource annotations. We
+describe computationally cheap feature weighting techniques and a novel
+non-linear distribution spreading algorithm that can be used to iteratively and
+interactively correcting mislabeled instances to significantly improve
+annotation quality at low cost. Eight different emotion extraction experiments
+on Twitter data demonstrate that our approach is just as effective as more
+computationally expensive techniques. Our techniques save a considerable amount
+of time.
+Author{1}{Firstname}#=%=#Justin
+Author{1}{Lastname}#=%=#Martineau
+Author{1}{Email}#=%=#justin.m@samsung.com
+Author{1}{Affiliation}#=%=#Samsung Research America, Silicon Valley
+Author{2}{Firstname}#=%=#Lu
+Author{2}{Lastname}#=%=#Chen
+Author{2}{Email}#=%=#chen@knoesis.org
+Author{2}{Affiliation}#=%=#Kno.e.sis Center, Wright State University
+Author{3}{Firstname}#=%=#Doreen
+Author{3}{Lastname}#=%=#Cheng
+Author{3}{Email}#=%=#doreen.c@samsung.com
+Author{3}{Affiliation}#=%=#Samsung Research America, Silicon Valley
+Author{4}{Firstname}#=%=#Amit
+Author{4}{Lastname}#=%=#Sheth
+Author{4}{Email}#=%=#amit@knoesis.org
+Author{4}{Affiliation}#=%=#Kno.e.sis Center, Wright State University
+
+==========

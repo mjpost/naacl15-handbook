@@ -1,0 +1,37 @@
+SubmissionNumber#=%=#46
+FinalPaperTitle#=%=#An Empirical Comparison of Features and Tuning for Phrase-based Machine Translation
+ShortPaperTitle#=%=#An Empirical Comparison of Features and Tuning for Phrase-based Machine Translation
+NumberOfPages#=%=#11
+CopyrightSigned#=%=#Spence Green
+JobTitle#==#
+Organization#==#Gates Building, Rm #232
+353 Serra Mall
+Stanford, CA, USA 94305
+Abstract#==#Scalable discriminative training methods are now broadly available
+for estimating phrase-based, feature-rich translation models. However,
+the sparse feature sets typically appearing in research evaluations are less
+attractive than standard dense features such as language and translation
+model probabilities: they often overfit, do not generalize, or require
+complex and slow feature extractors. This paper introduces extended
+features, which are more specific than dense features yet more general
+than lexicalized sparse features. Large-scale experiments
+show that extended features yield robust BLEU gains for both Arabic-English
++1.05 and Chinese-English +0.67 relative to a strong
+feature-rich baseline. We also specialize the feature set to specific
+data domains, identify an objective function that is less prone to
+overfitting, and release fast, scalable, and language-independent
+tools for implementing the features.
+Author{1}{Firstname}#=%=#Spence
+Author{1}{Lastname}#=%=#Green
+Author{1}{Email}#=%=#spenceg@stanford.edu
+Author{1}{Affiliation}#=%=#Stanford University
+Author{2}{Firstname}#=%=#Daniel
+Author{2}{Lastname}#=%=#Cer
+Author{2}{Email}#=%=#cer@google.com
+Author{2}{Affiliation}#=%=#Google
+Author{3}{Firstname}#=%=#Christopher
+Author{3}{Lastname}#=%=#Manning
+Author{3}{Email}#=%=#manning@cs.stanford.edu
+Author{3}{Affiliation}#=%=#Stanford University
+
+==========

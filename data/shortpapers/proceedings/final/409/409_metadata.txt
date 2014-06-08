@@ -1,0 +1,27 @@
+SubmissionNumber#=%=#409
+FinalPaperTitle#=%=#Fast Easy Unsupervised Domain Adaptation with Marginalized Structured Dropout
+ShortPaperTitle#=%=#Fast Easy Unsupervised Domain Adaptation with Marginalized Structured Dropout
+NumberOfPages#=%=#7
+CopyrightSigned#=%=#Yi Yang
+JobTitle#==#
+Organization#==#Georgia Institute of Technology
+North Ave NW, Atlanta, GA 30332
+Abstract#==#Unsupervised domain adaptation often relies on transforming the instance
+representation. However, most such approaches are designed for bag-of-words
+models, and ignore the structured features present in many problems in NLP. We
+propose a new technique called marginalized structured dropout, which exploits
+feature structure to obtain a remarkably simple and efficient feature
+projection. Applied to the task of fine-grained part-of-speech tagging on a
+dataset of historical Portuguese, marginalized structured dropout yields
+state-of-the-art accuracy while increasing speed by more than an
+order-of-magnitude over previous work.
+Author{1}{Firstname}#=%=#Yi
+Author{1}{Lastname}#=%=#Yang
+Author{1}{Email}#=%=#yiyang@gatech.edu
+Author{1}{Affiliation}#=%=#Georgia Institute of Technology
+Author{2}{Firstname}#=%=#Jacob
+Author{2}{Lastname}#=%=#Eisenstein
+Author{2}{Email}#=%=#jacobe@gmail.com
+Author{2}{Affiliation}#=%=#Georgia Institute of Technology
+
+==========

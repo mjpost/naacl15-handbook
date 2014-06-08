@@ -1,0 +1,35 @@
+SubmissionNumber#=%=#440
+FinalPaperTitle#=%=#Mutual Disambiguation for Entity Linking
+ShortPaperTitle#=%=#Mutual Disambiguation for Entity Linking
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Marie-Jean MEURS
+JobTitle#==#
+Organization#==#Centre for Structural and Functional Genomics
+Concordia University
+7141 Sherbrooke St. W., L-GE-120.13,
+Montreal, QC 
+Canada H4B 1R6
+Abstract#==#The disambiguation algorithm presented in this paper is implemented in
+SemLinker, an entity linking system. First, named entities are linked to
+candidate Wikipedia pages by a generic annotation engine. Then, the algorithm
+re-ranks candidate links according to mutual relations between all the named
+entities found in the document. The evaluation is based on experiments
+conducted on the test corpus of the TAC-KBP 2012 entity linking task.
+Author{1}{Firstname}#=%=#Eric
+Author{1}{Lastname}#=%=#Charton
+Author{1}{Email}#=%=#eric.charton@polymtl.ca
+Author{1}{Affiliation}#=%=#Polytechnique Montreal
+Author{2}{Firstname}#=%=#Marie-Jean
+Author{2}{Lastname}#=%=#Meurs
+Author{2}{Email}#=%=#marie-jean.meurs@concordia.ca
+Author{2}{Affiliation}#=%=#Centre for Structural and Functional Genomics, Concordia University
+Author{3}{Firstname}#=%=#Ludovic
+Author{3}{Lastname}#=%=#Jean-Louis
+Author{3}{Email}#=%=#ludovic.jeanlouis@gmail.com
+Author{3}{Affiliation}#=%=#Ecole Polytechnique Montreal
+Author{4}{Firstname}#=%=#Michel
+Author{4}{Lastname}#=%=#Gagnon
+Author{4}{Email}#=%=#michel.gagnon@polymtl.ca
+Author{4}{Affiliation}#=%=#Ecole Polytechnique Montreal
+
+==========

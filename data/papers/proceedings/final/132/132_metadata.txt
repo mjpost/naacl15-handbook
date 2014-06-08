@@ -1,0 +1,30 @@
+SubmissionNumber#=%=#132
+FinalPaperTitle#=%=#CoSimRank: A Flexible & Efficient Graph-Theoretic Similarity Measure
+ShortPaperTitle#=%=#CoSimRank: A Flexible & Efficient Graph-Theoretic Similarity Measure
+NumberOfPages#=%=#11
+CopyrightSigned#=%=#Sascha Rothe
+JobTitle#==#
+Organization#==#Centrum für Informations- und Sprachverarbeitung
+Ludwig-Maximilians-Universität
+Oettingenstraße 67
+80538 München
+Abstract#==#We present CoSimRank, a new graphtheoretic similarity measure that is efficient
+because it can compute a single node similarity without having to compute the
+similarities of the entire graph. We present equivalent formalizations that
+show CoSimRank’s close relationship to Personalized PageRank and SimRank and
+also show how we can take advantage of fast matrix multiplication algorithms to
+compute CoSimRank. Another advantage of CoSimRank is that it can be flexibly
+extended from basic node-node similarity to several other graph-theoretic
+similarity measures. In an experimental evaluation on the tasks of synonym
+extraction and bilingual lexicon extraction, CoSimRank is faster or more
+accurate than previous approaches.
+Author{1}{Firstname}#=%=#Sascha
+Author{1}{Lastname}#=%=#Rothe
+Author{1}{Email}#=%=#sascha.rothe@live.de
+Author{1}{Affiliation}#=%=#Center for Information and Language Processing, University of Munich
+Author{2}{Firstname}#=%=#Hinrich
+Author{2}{Lastname}#=%=#Schütze
+Author{2}{Email}#=%=#inquiries@cislmu.org
+Author{2}{Affiliation}#=%=#Center for Information and Language Processing, University of Munich
+
+==========

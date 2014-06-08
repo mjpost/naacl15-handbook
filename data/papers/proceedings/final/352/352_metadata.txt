@@ -1,0 +1,30 @@
+SubmissionNumber#=%=#352
+FinalPaperTitle#=%=#Zero-shot Entity Extraction from Web Pages
+ShortPaperTitle#=%=#Zero-shot Entity Extraction from Web Pages
+NumberOfPages#=%=#11
+CopyrightSigned#=%=#Panupong Pasupat
+JobTitle#==#
+Organization#==#Stanford University
+353 Serra Mall
+Stanford, CA 94305
+Abstract#==#In order to extract entities of a fine-grained category from semi-structured
+data in web pages, existing information extraction systems rely on seed
+examples or redundancy across multiple web pages. In this paper, we consider a
+new zero-shot learning task of extracting entities specified by a natural
+language query (in place of seeds) given only a single web page. Our approach
+defines a log-linear model over latent extraction predicates, which select
+lists of entities from the web page. The main challenge is to define features
+on widely varying candidate entity lists. We tackle this by abstracting list
+elements and using aggregate statistics to define features. Finally, we created
+a new dataset of diverse queries and web pages, and show that our system
+achieves significantly better accuracy than a natural baseline.
+Author{1}{Firstname}#=%=#Panupong
+Author{1}{Lastname}#=%=#Pasupat
+Author{1}{Email}#=%=#ppasupat@cs.stanford.edu
+Author{1}{Affiliation}#=%=#Stanford University
+Author{2}{Firstname}#=%=#Percy
+Author{2}{Lastname}#=%=#Liang
+Author{2}{Email}#=%=#pliang@cs.stanford.edu
+Author{2}{Affiliation}#=%=#Stanford University
+
+==========

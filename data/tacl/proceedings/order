@@ -1,0 +1,91 @@
++ 18:00--21:00 Welcome Reception
+* Monday, June 23, 2014
++ 7:30--18:00 Registration
++ 7:30--9:00 Breakfast
++ 8:55--9:00 Opening session
++ 9:00--9:40 President talk
++ 9:40--10:10 Coffee break
+= Session 1A: Discourse, Dialogue, Coreference and Pragmatics
+= Session 1B: Semantics I
+= Session 1C: Machine Translation I
+= Session 1D: Syntax, Parsing, and Tagging I
+6 10:10--10:35 # A Tabular Method for Dynamic Oracles in Transition-Based Parsing
+5 10:35--11:00 # Joint Incremental Disfluency Detection and Dependency Parsin
+12 11:25--11:50 # A Crossing-Sensitive Third-Order Factorization for Dependency Parsing
+= Session 1E: NLP for the Web and Social Media I
++ 11:50--13:20 Lunch break; Student Lunch
+= Session 2A: Syntax, Parsing and Tagging II
+= Session 2B: Semantics II
+= Session 2C: Word Segmentation and POS Tagging
+7 13:30--13:45 # Exploring the Role of Stress in Bayesian Word Segmentation using Adaptor Grammars
+4 14:10--14:35 # FLORS: Fast and Simple Domain Adaptation for Part-of-Speech Tagging
+= Session 2D: SRW
+= Session 2E: Sentiment Analysis I
++ 15:00--15:30 Coffee break
+= Session 3A: Topic Modeling
+= Session 3B: Information Extraction I
+= Session 3C: Generation
+= Session 3D: Syntax, Parsing and Tagging III
+17 15:30--15:55 # Training Deterministic Parsers with Non-Deterministic Oracles
+= Session 3E: Language Resources and Evaluation I
+11 16:20--16:45 # Temporal Annotation in the Clinical Domain
++ 16:45--17:00 Break
++ 17:00--18:00 Invited talk I:  Corinna Cortes
+= Oral Sessions for Student Research Workshop Posters
++ 18:50--21:30 Poster and Dinner Session I: TACL Papers, Long Papers, Short Papers, Student Research Workshop; Demonstrations
+8  # Entity Linking meets Word Sense Disambiguation: a Unified Approach
+13  # Data-Driven Metaphor Recognition and Explanation
+14  # Grounded Compositional Semantics for Finding and Describing Images with Sentences
+15  # Parallel Algorithms for Unsupervised Tagging
+16  # Heterogeneous Networks and Their Applications: Scientometrics, Name Disambiguation, and Topic Modeling
+18  # Discriminative Lexical Semantic Segmentation with Gaps: Running the MWE Gamut
+* Tuesday, June 24, 2014
++ 7:30--18:00 Registration
++ 7:30--9:00 Breakfast
++ 9:00--10:00 Invited talk II: Zoran Popovic
++ 10:00--10:30 Coffee break
+= Session 4A: Machine Learning for NLP
+= Session 4B: Information Extraction II
+= Session 4C: Machine Translation II
+= Session 4D: Summarization
+= Session 4E: Language Resources and Evaluation II
+19 10:30--10:55 # Segmentation for Efficient Supervised Language Annotation with an Explicit Cost-Utility Tradeoff
+10 11:45--12:10 # The Language Demographics of Amazon Mechanical Turk
++ 12:10--13:30 Lunch break
+= Session 5A: Question Answering
+= Session 5B: Information Extraction III
+= Session 5C: Lexical Sematics and Ontology I
+= Session 5D: Syntax, Parsing and Tagging IV
+9 14:20--14:45 # Cross-lingual Projected Expectation Regularization for Weakly Supervised Learning
+= Session 5E: Cognitive Modeling and Psycholinguistics
++ 14:45--15:15 Coffee break
+= Session 6A: Machine Translation III
+= Session 6B: Lexical Semantics and Ontology II
+= Session 6C: Generation/Summarization/Dialogue
+= Session 6D: NLP Applications and NLP Enabled Technology I
+= Session 6E: Language Resources and Evaluation III
++ 16:50--19:20 Poster and Dinner Session II: Long Papers, Short Papers and Demonstrations in Grand BallroomI/II/III/IV/V/VI/VII/VIII
++ 19:30--10:00 Social at the National Aquarium in Baltimore
+* Wednesday, June 25, 2014
++ 7:30--18:00 Registration
++ 7:30--9:00 Breakfast
+= Best paper session
++ 10:15--10:45 Coffee break
+= Session 7A: Multimodal NLP/ Lexical Semantics
+2 10:45--11:10 # Back to Basics for Monolingual Alignment: Exploiting Word Similarity and Contextual Evidence
+3 12:00--12:25 # From image descriptions to visual denotations: New similarity metrics for semantic inference over event descriptions
+= Session 7B: Semantics III
+= Session 7C: Machine Translation IV
+= Session 7D: NLP Applications and NLP Enabled Technology II
+= Session 7E: Sentiment Analysis II
+1 10:45--11:10 # Senti-LSSVM: Sentiment-Oriented Multi-Relation Extraction with Latent Structural SVM
++ 12:25--13:30 Lunch break
++ 13:30--15:00 ACL Business Meeting
+= Session 8A: NLP for the Web and Social Media II
+= Session 8B: Semantics/Information Extraction
+= Session 8C: Machine Translation V
+= Session 8D: Syntax, Parsing, and Tagging V
+= Session 8E: Multilinguality and Multimodal NLP
++ 16:30--17:00 Coffee break
++ 17:00--18:30 Lifetime Achievement Award
++ 18:30--19:00 Closing session

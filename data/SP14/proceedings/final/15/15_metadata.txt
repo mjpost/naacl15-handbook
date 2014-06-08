@@ -1,0 +1,26 @@
+SubmissionNumber#=%=#15
+FinalPaperTitle#=%=#A Deep Architecture for Semantic Parsing
+ShortPaperTitle#=%=#A Deep Architecture for Semantic Parsing
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Karl Moritz Hermann
+JobTitle#==#
+Organization#==#University of Oxford, Dept of Computer Science, Parks Road, OX1 3QD Oxford, UK
+Abstract#==#
+Author{1}{Firstname}#=%=#Edward
+Author{1}{Lastname}#=%=#Grefenstette
+Author{1}{Email}#=%=#edward.grefenstette@cs.ox.ac.uk
+Author{1}{Affiliation}#=%=#University of Oxford
+Author{2}{Firstname}#=%=#Phil
+Author{2}{Lastname}#=%=#Blunsom
+Author{2}{Email}#=%=#phil.blunsom@cs.ox.ac.uk
+Author{2}{Affiliation}#=%=#University of Oxford
+Author{3}{Firstname}#=%=#Nando
+Author{3}{Lastname}#=%=#de Freitas
+Author{3}{Email}#=%=#nando@cs.ox.ac.uk
+Author{3}{Affiliation}#=%=#University of Oxford
+Author{4}{Firstname}#=%=#Karl Moritz
+Author{4}{Lastname}#=%=#Hermann
+Author{4}{Email}#=%=#karl.moritz.hermann@cs.ox.ac.uk
+Author{4}{Affiliation}#=%=#University of Oxford
+
+==========

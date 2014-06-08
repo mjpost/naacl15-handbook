@@ -1,0 +1,28 @@
+SubmissionNumber#=%=#456
+FinalPaperTitle#=%=#How much do word embeddings encode about syntax?
+ShortPaperTitle#=%=#How much do word embeddings encode about syntax?
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#JA
+JobTitle#==#
+Organization#==#University of California, Berkeley
+Berkeley, CA 94720
+Abstract#==#How might a parser benefit from real-valued word embeddings? We isolate three
+ways in which word embeddings could be used to extend a state-of-the-art
+statistical parser: by relating out-of-vocabulary words to known ones, by
+encouraging common behavior among related in-vocabulary words, and by directly
+providing features for the lexicon. On small training sets, we show small but
+significant gains over the baseline parser; as the training data grows, we find
+that these gains diminish. Our results support a hypothesis that word
+embeddings import syntactic information that is useful but redundant with
+(rather than complementary to) distinctions learned from larger treebanks in
+other ways.
+Author{1}{Firstname}#=%=#Jacob
+Author{1}{Lastname}#=%=#Andreas
+Author{1}{Email}#=%=#jda@cs.berkeley.edu
+Author{1}{Affiliation}#=%=#Berkeley
+Author{2}{Firstname}#=%=#Dan
+Author{2}{Lastname}#=%=#Klein
+Author{2}{Email}#=%=#klein@cs.berkeley.edu
+Author{2}{Affiliation}#=%=#UC Berkeley
+
+==========

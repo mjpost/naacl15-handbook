@@ -1,0 +1,34 @@
+SubmissionNumber#=%=#523
+FinalPaperTitle#=%=#Polylingual Tree-Based Topic Models for Translation Domain Adaptation
+ShortPaperTitle#=%=#Polylingual Tree-Based Topic Models for Translation Domain Adaptation
+NumberOfPages#=%=#11
+CopyrightSigned#=%=#KE ZHAI
+JobTitle#==#
+Organization#==#University of Maryland, College Park
+Abstract#==#Topic models, an unsupervised technique for inferring translation domains
+improve
+machine translation quality. However, previous work uses only the source
+language
+and completely ignores the target language, which can disambiguate domains. We
+propose new polylingual tree-based topic models to extract domain knowledge
+that considers both source and target languages and derive three different
+inference schemes. We evaluate our model on a Chinese to English translation
+task and obtain up to 1.2 BLEU improvement over strong baselines.
+Author{1}{Firstname}#=%=#Yuening
+Author{1}{Lastname}#=%=#Hu
+Author{1}{Email}#=%=#ynhu@cs.umd.edu
+Author{1}{Affiliation}#=%=#University of Maryland
+Author{2}{Firstname}#=%=#Ke
+Author{2}{Lastname}#=%=#Zhai
+Author{2}{Email}#=%=#kzhai@umd.edu
+Author{2}{Affiliation}#=%=#University of Maryland, College Park
+Author{3}{Firstname}#=%=#Vladimir
+Author{3}{Lastname}#=%=#Eidelman
+Author{3}{Email}#=%=#vladimir.eidelman@gmail.com
+Author{3}{Affiliation}#=%=#UMD
+Author{4}{Firstname}#=%=#Jordan
+Author{4}{Lastname}#=%=#Boyd-Graber
+Author{4}{Email}#=%=#jbg@umiacs.umd.edu
+Author{4}{Affiliation}#=%=#University of Maryland
+
+==========

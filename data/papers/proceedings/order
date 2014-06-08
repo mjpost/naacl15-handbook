@@ -1,0 +1,233 @@
+* Sunday, June 22, 2014
++ 7:30--18:00 Registration
++ 7:30--9:00 Breakfast
++ 9:00--12:30 Morning Tutorial
+= Session T1: Gaussian Processes for Natural Language Processing
+= Session T2: Scalable Large-Margin Structured Learning: Theory and Algorithms
+= Session T3: Semantics for Large-Scale Multimedia: New Challenges for NLP
+= Session T4: Wikification and Beyond: The Challenges of Entity and Concept Grounding
++ 12:30--14:00 Lunch break
++ 14:00--17:30 Afternoon Tutorial
+= Session T5: New Directions in Vector Space Models of Meaning
+= Session T6: Structured Belief Propagation for NLP
+= Session T7: Semantics, Discourse and Statistical Machine Translation
+= Session T8: Syntactic Processing Using Global Discriminative Learning and Beam-Search Decoding
++ 18:00--21:00 Welcome Reception
+* Monday, June 23, 2014
++ 7:30--18:00 Registration
++ 7:30--9:00 Breakfast
++ 8:55--9:00 Opening session
++ 9:00--9:40 President talk
++ 9:40--10:10 Coffee break
+= Session 1A: Discourse, Dialogue, Coreference and Pragmatics
+449 10:10--10:35 # Representation Learning for Text-level Discourse Parsing
+73 10:35--11:00 # Text-level Discourse Dependency Parsing
+327 11:00--11:25 # Discovering Latent Structure in Task-Oriented Dialogues
+387 11:25--11:50 # Learning Structured Perceptrons for Coreference Resolution with Latent Antecedents and Non-local Features
+= Session 1B: Semantics I
+585 10:10--10:35 # Multilingual Models for Compositional Distributed Semantics
+136 10:35--11:00 # Simple Negation Scope Resolution through Deep Parsing: A Semantic Solution to a Semantic Problem
+560 11:00--11:25 # Logical Inference on Dependency-based Compositional Semantics
+38 11:25--11:50 # A practical and linguistically-motivated approach to compositional distributional semantics
+= Session 1C: Machine Translation I
+326 10:10--10:35 # Lattice Desegmentation for Statistical Machine Translation
+522 10:35--11:00 # Bilingually-constrained Phrase Embeddings for Machine Translation
+184 11:00--11:25 # Learning New Semi-Supervised Deep Auto-encoder Features for Statistical Machine Translation
+229 11:25--11:50 # Learning Topic Representation for SMT with Neural Networks
+= Session 1D: Syntax, Parsing and Tagging I
+247 11:00--11:25 # Tagging The Web: Building A Robust Web Tagger with Neural Network
+= Session 1E: NLP for the Web and Social Media I
+177 10:10--10:35 # Unsupervised Solution Post Identification from Discussion Forums
+265 10:35--11:00 # Weakly Supervised User Profile Extraction from Twitter
+356 11:00--11:25 # The effect of wording on message propagation: Topic- and author-controlled natural experiments on Twitter
+384 11:25--11:50 # Inferring User Political Preferences from Streaming Communications
++ 11:50--13:20 Lunch break; Student Lunch
+= Session 2A: Syntax, Parsing and Tagging II
+466 13:30--13:45 # Steps to Excellence: Simple Inference with Refined Scoring of Dependency Trees
+548 13:45--14:10 # Sparser, Better, Faster GPU Parsing
+573 14:10--14:35 # Shift-Reduce CCG Parsing with a Dependency Model
+545 14:35--15:00 # Less Grammar, More Features
+= Session 2B: Semantics II
+99 13:30--13:45 # Don't count, predict! A systematic comparison of context-counting vs. context-predicting semantic vectors
+349 13:45--14:10 # Metaphor Detection with Cross-Lingual Model Transfer
+134 14:10--14:35 # Learning Word Sense Distributions, Detecting Unattested Senses and Identifying Novel Senses Using Topic Models
+557 14:35--15:00 # Learning to Automatically Solve Algebra Word Problems
+= Session 2C: Word Segmentation and POS Tagging
+108 13:45--14:10 # Modelling function words improves unsupervised word segmentation
+37 14:35--15:00 # Max-Margin Tensor Neural Network for Chinese Word Segmentation
+= Session 2D: SRW
+= Session 2E: Sentiment Analysis I
+357 13:30--13:45 # An Empirical Study on the Effect of Negation Words on Sentiment
+238 13:45--14:10 # Extracting Opinion Targets and Opinion Words from Online Reviews with Graph Co-ranking
+582 14:10--14:35 # Context-aware Learning for Sentence-level Sentiment Analysis with Posterior Regularization
+91 14:35--15:00 # Product Feature Mining: Semantic Clues versus Syntactic Constituents
++ 15:00--15:30 Coffee break
+= Session 3A: Topic Modeling
+512 15:30--15:55 # Aspect Extraction with Automated Prior Knowledge Learning
+469 15:55--16:20 # Anchors Regularized: Adding Robustness and Extensibility to Scalable Topic-Modeling Algorithms
+331 16:20--16:45 # A Bayesian Mixed Effects Model of Literary Character
+= Session 3B: Information Extraction I
+45 15:30--15:55 # Collective Tweet Wikification based on Semi-supervised Graph Regularization
+352 15:55--16:20 # Zero-shot Entity Extraction from Web Pages
+46 16:20--16:45 # Incremental Joint Extraction of Entity Mentions and Relations
+= Session 3C: Generation
+601 15:30--15:55 # That's Not What I Meant! Using Parsers to Avoid Structural Ambiguities in Generated Text
+239 15:55--16:20 # Surface Realisation from Knowledge-Bases
+140 16:20--16:45 # Hybrid Simplification using Deep Semantics and Machine Translation
+= Session 3D: Syntax, Parsing and Tagging III
+259 15:55--16:20 # Grammatical Relations in Chinese: GB-Ground Extraction and Data-Driven Parsing
+563 16:20--16:45 # Ambiguity-aware Ensemble Training for Semi-supervised Dependency Parsing
+= Session 3E: Language Resources and Evaluation I
+298 15:30--15:55 # A Robust Approach to Aligning Heterogeneous Lexical Resources
+255 15:55--16:20 # Predicting the relevance of distributional semantic similarity with contextual information
++ 16:45--17:00 Break
++ 17:00--18:00 Invited talk I:  Corinna Cortes
+610 17:00--18:00 # Learning Ensembles of Structured Prediction Rules
+= Oral Sessions for Student Research Workshop Posters
++ 18:50--21:30 Poster and Dinner Session I: TACL Papers, Long Papers, Short Papers, Student Research Workshop; Demonstrations
+249  # Interpretable Semantic Vectors from a Joint Model of Brain- and Text- Based Meaning
+416  # Single-Agent vs. Multi-Agent Techniques for Concurrent Reinforcement Learning of Negotiation Dialogue Policies
+161  # A Linear-Time Bottom-Up Discourse Parser with Constraints and Post-Editing
+178  # Negation Focus Identification with Contextual Discourse Information
+65  # New Word Detection for Sentiment Analysis
+475  # ReNew: A Semi-Supervised Framework for Generating Domain-Specific Lexicons and Sentiment Analysis
+400  # A Decision-Theoretic Approach to Natural Language Generation
+569  # Generating Code-switched Text for Lexical Learning
+14  # Omni-word Feature and Soft Constraint for Chinese Relation Extraction
+219  # Bilingual Active Learning for Relation Classification via Pseudo Parallel Corpora
+366  # Learning Soft Linear Constraints with Application to Citation Field Extraction
+153  # A Study of Concept-based Weighting Regularization for Medical Records Search
+149  # Learning to Predict Distributions of Words Across Domains
+288  # How to make words with vectors: Phrase generation in distributional semantics
+465  # Vector space semantics with frequency-driven motifs
+495  # Lexical Inference over Multi-Word Predicates: A Distributional Approach
+441  # A Convolutional Neural Network for Modelling Sentences
+485  # Online Learning in Tensor Space
+82  # Graph-based Semi-Supervised Learning of Translation Models from Monolingual Data
+335  # Using Discourse Structure Improves Machine Translation Evaluation
+402  # Learning Continuous Phrase Representations for Translation Modeling
+365  # Adaptive Quality Estimation for Machine Translation
+206  # Learning Grounded Meaning Representations with Autoencoders
+115  # Joint POS Tagging and Transition-based Constituent Parsing in Chinese with Non-local Features
+359  # Strategies for Contiguous Multiword Expression Analysis and Dependency Parsing
+7  # Correcting Preposition Errors in Learner English Using Error Case Frames and Feedback Messages
+* Tuesday, June 24, 2014
++ 7:30--18:00 Registration
++ 7:30--9:00 Breakfast
++ 9:00--10:00 Invited talk II: Zoran Popovic
++ 10:00--10:30 Coffee break
+= Session 4A: Machine Learning for NLP
+321 10:30--10:55 # Kneser-Ney Smoothing on Expected Counts
+605 10:55--11:20 # Robust Entity Clustering via Phylogenetic Inference
+377 11:20--11:45 # Linguistic Structured Sparsity in Text Categorization
+510 11:45--12:10 # Perplexity on Reduced Corpora
+= Session 4B: Information Extraction II
+31 10:30--10:55 # Robust Domain Adaptation for Relation Extraction via Clustering Consistency
+550 10:55--11:20 # Encoding Relation Requirements for Relation Extraction via Joint Inference
+20 11:20--11:45 # Medical Relation Extraction with Manifold Models
+4 11:45--12:10 # Distant Supervision for Relation Extraction with Matrix Completion
+= Session 4C: Machine Translation II
+246 10:30--10:55 # Enhancing Grammatical Cohesion: Generating Transitional Expressions for SMT
+80 10:55--11:20 # Adaptive HTER Estimation for Document-Specific MT Post-Editing
+212 11:20--11:45 # Translation Assistance by Translation of L1 Fragments in an L2 Context
+306 11:45--12:10 # Response-based Learning for Grounded Machine Translation
+= Session 4D: Summarization
+268 10:30--10:55 # Modelling Events through Memory-based, Open-IE Patterns for Abstractive Summarization
+372 10:55--11:20 # Hierarchical Summarization: Scaling Up Multi-Document Summarization
+266 11:20--11:45 # Query-Chain Focused Summarization
+75 11:45--12:10 # Exploiting Timelines to Enhance Multi-document Summarization
+= Session 4E: Language Resources and Evaluation II
+374 10:55--11:20 # A chance-corrected measure of inter-annotator agreement for syntax
+380 11:20--11:45 # Two Is Bigger (and Better) Than One: the Wikipedia Bitaxonomy Project
++ 12:10--13:30 Lunch break
+= Session 5A: Question Answering
+432 13:30--13:55 # Information Extraction over Structured Data: Question Answering with Freebase
+228 13:55--14:20 # Knowledge-Based Question Answering as Machine Translation
+157 14:20--14:45 # Discourse Complements Lexical Semantics for Non-factoid Answer Reranking
+= Session 5B: Information Extraction III
+603 13:30--13:55 # Toward Future Scenario Generation: Extracting Event Causality Exploiting Semantic Relation, Context, and Association Features
+518 13:55--14:20 # Cross-narrative Temporal Ordering of Medical Events
+274  # Language-Aware Truth Assessment of Fact Candidates
+= Session 5C: Lexical Sematics and Ontology I
+209 13:30--13:55 # That's sick dude!: Automatic identification of word sense change across different timescales
+55 13:55--14:20 # A Step-wise Usage-based Method for Inducing Polysemy-aware Verb Classes
+179 14:20--14:45 # Structured Learning for Taxonomy Induction with Belief Propagation
+= Session 5D: Syntax, Parsing and Tagging IV
+428 13:30--13:55 # A Provably Correct Learning Algorithm for Latent-Variable PCFGs
+452 13:55--14:20 # Spectral Unsupervised Parsing with Additive Tree Metrics
+= Session 5E: Cognitive Modeling and Psycholinguistics
+135 13:30--13:55 # Weak semantic context helps phonetic learning in a model of infant language acquisition
+118 13:55--14:20 # Bootstrapping into Filler-Gap: An Acquisition Story
+458 14:20--14:45 # Nonparametric Learning of Phonological Constraints in Optimality Theory
++ 14:45--15:15 Coffee break
+= Session 6A: Machine Translation III
+= Session 6B: Lexical Sematics and Ontology II
+= Session 6C: Generation/Summarization/Dialogue
+= Session 6D: NLP Applications and NLP Enabled Technology I
+= Session 6E: Language Resources and Evaluation III
++ 16:50--19:20 Poster and Dinner Session II: Long Papers, Short Papers and Demonstrations
+515  # Active Learning with Efficient Feature Weighting Methods for Improving Data Quality and Classification Accuracy
+552  # Political Ideology Detection Using Recursive Neural Networks
+424  # A Unified Model for Soft Linguistic Reordering Constraints in Statistical Machine Translation
+487  # Are Two Heads Better than One? Crowdsourced Translation via a Two-Step Collaboration of Non-Professional Translators and Editors
+440  # A Generalized Language Model as the Combination of Skipped n-grams and Modified Kneser Ney Smoothing
+204  # A Semiparametric Gaussian Copula Regression Model for Predicting Financial Risks from Earnings Calls
+523  # Polylingual Tree-Based Topic Models for Translation Domain Adaptation
+520  # Low-Resource Semantic Role Labeling
+362  # Joint Syntactic and Semantic Parsing with Combinatory Categorial Grammar
+439  # Learning Semantic Hierarchies via Word Embeddings
+378  # Probabilistic Soft Logic for Semantic Textual Similarity
+383  # Abstractive Summarization of Spoken and Written Conversations Based on Phrasal Queries
+278  # Comparing Multi-label Classification with Reinforcement Learning for Summarisation of Time-series Data
+594  # Approximation Strategies for Multi-Structure Sentence Compression
+273  # Opinion Mining on YouTube
+588  # Automatic Keyphrase Extraction: A Survey of the State of the Art
+51  # Pattern Dictionary of English Prepositions
+160  # Looking at Unbalanced Specialized Comparable Corpora for Bilingual Lexicon Extraction
+337  # Validating and Extending Semantic Knowledge Bases using Video Games with a Purpose
+133  # Shallow Analysis Based Assessment of Syntactic Complexity for Automated Speech Scoring
+334  # Can You Repeat That? Using Word Repetition to Improve Spoken Term Detection
+376  # Character-Level Chinese Dependency Parsing
+482  # Unsupervised Dependency Parsing with Transferring Distribution via Parallel Guidance and Entropy Regularization
+579  # Unsupervised Morphology-Based Vocabulary Expansion
+85  # Toward Better Chinese Word Segmentation for SMT via Bilingual Constraints
++ 19:30--10:00 Social at the National Aquarium in Baltimore
+* Wednesday, June 25, 2014
++ 7:30--18:00 Registration
++ 7:30--9:00 Breakfast
+= Best paper session
+10 9:00--9:30 # Fast and Robust Neural Network Joint Models for Statistical Machine Translation
+307 9:30--10:00 # Low-Rank Tensors for Scoring Dependency Structures
++ 10:15--10:45 Coffee break
+= Session 7A: Multimodal NLP/ Lexical Semantics
+132 11:10--11:35 # CoSimRank: A Flexible & Efficient Graph-Theoretic Similarity Measure
+363 11:35--12:00 # Is this a wampimuk? Cross-modal mapping between distributional semantics and the visual world
+= Session 7B: Semantics III
+448 10:45--11:10 # Semantic Parsing via Paraphrasing
+408 11:10--11:35 # A Discriminative Graph-Based Parser for the Abstract Meaning Representation
+540 11:35--12:00 # Context-dependent Semantic Parsing for Time Expressions
+413 12:00--12:25 # Semantic Frame Identification with Distributed Word Representations
+= Session 7C: Machine Translation IV
+203 10:45--11:10 # A Sense-Based Translation Model for Statistical Machine Translation
+225 11:10--11:35 # Recurrent Neural Networks for Word Alignment Model
+584 11:35--12:00 # A Constrained Viterbi Relaxation for Bidirectional Word Alignment
+491 12:00--12:25 # A Recursive Recurrent Neural Network for Statistical Machine Translation
+= Session 7D: NLP Applications and NLP Enabled Technology II
+423 10:45--11:10 # Predicting Instructor's Intervention in MOOC forums
+607 11:10--11:35 # A Joint Graph Model for Pinyin-to-Chinese Conversion with Typo Correction
+287 11:35--12:00 # Smart Selection
+576 12:00--12:25 # Modeling Prompt Adherence in Student Essays
+= Session 7E: Sentiment Analysis II
+489 11:10--11:35 # ConnotationWordNet: Learning Connotation over the Word+Sense Network
+113 11:35--12:00 # Learning Sentiment-Specific Word Embedding for Twitter Sentiment Classification
+159 12:00--12:25 # Towards a General Rule for Identifying Deceptive Opinion Spam
++ 12:25--13:30 Lunch break
++ 13:30--15:00 ACL Business Meeting
+= Session 8A: NLP for the Web and Social Media II
+= Session 8B: Semantics/Information Extraction
+= Session 8C: Machine Translation V
+= Session 8D: Syntax, Parsing and Tagging V
+= Session 8E: Multilinguality and Multimodal NLP
++ 16:30--17:00 Coffee break
++ 17:00--18:30 Lifetime Achievement Award
++ 18:30--19:00 Closing Session

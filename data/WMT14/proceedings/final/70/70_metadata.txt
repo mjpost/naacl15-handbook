@@ -1,0 +1,33 @@
+SubmissionNumber#=%=#70
+FinalPaperTitle#=%=#CUNI in WMT14: Chimera Still Awaits Bellerophon
+ShortPaperTitle#=%=#CUNI in WMT14: Chimera Still Awaits Bellerophon
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Ales Tamchyna
+JobTitle#==#
+Organization#==#Charles University in Prague
+Faculty of Mathematics and Physics
+Institute of Formal and Applied Linguistics
+Malostranske nam. 25, Prague, Czech Republic
+Abstract#==#We present our English-Czech and English-Hindi submissions for this year's WMT
+translation task. For English-Czech, we build upon last year's Chimera and
+evaluate several setups. English-Hindi is a new language pair for this year. We
+experimented with reverse self-training to acquire more (synthetic) parallel
+data and with modeling target-side morphology.
+Author{1}{Firstname}#=%=#Aleš
+Author{1}{Lastname}#=%=#Tamchyna
+Author{1}{Email}#=%=#tamchyna@ufal.mff.cuni.cz
+Author{1}{Affiliation}#=%=#Charles University in Prague, UFAL MFF
+Author{2}{Firstname}#=%=#Martin
+Author{2}{Lastname}#=%=#Popel
+Author{2}{Email}#=%=#popel@ufal.mff.cuni.cz
+Author{2}{Affiliation}#=%=#Charles University in Prague, Faculty of Mathematics and Physics, UFAL
+Author{3}{Firstname}#=%=#Rudolf
+Author{3}{Lastname}#=%=#Rosa
+Author{3}{Email}#=%=#rosa@ufal.mff.cuni.cz
+Author{3}{Affiliation}#=%=#Charles University in Prague, Faculty of Mathematics and Physics, Institute of Formal and Applied Linguistics
+Author{4}{Firstname}#=%=#Ondrej
+Author{4}{Lastname}#=%=#Bojar
+Author{4}{Email}#=%=#bojar@ufal.mff.cuni.cz
+Author{4}{Affiliation}#=%=#Charles University in Prague, Faculty of Mathematics and Physics
+
+==========

@@ -1,0 +1,38 @@
+SubmissionNumber#=%=#7
+FinalPaperTitle#=%=#Speech recognition in Alzheimer's disease with personal assistive robots
+ShortPaperTitle#=%=#Speech recognition in Alzheimer's disease with personal assistive robots
+NumberOfPages#=%=#9
+CopyrightSigned#=%=#Frank Rudzicz
+JobTitle#==#
+Organization#==#Toronto Rehabilitation Institute
+550 University Avenue, rm 12-175
+Toronto Ontario Canada M5G 2A2
+Abstract#==#To help individuals with Alzheimer's disease live at home for longer, we are
+developing a mobile robotic platform, called ED, intended to be used as a
+personal caregiver to help with the performance of activities of daily living.
+In a series of experiments, we study speech-based interactions between each of
+10 older adults with Alzheimer’s disease and ED as the former makes tea in a
+simulated home environment. Analysis reveals that speech recognition remains a
+challenge for this recording environment, with word-level accuracies between
+5.8% and 19.2% during household tasks with individuals with Alzheimer's
+disease. This work provides a baseline assessment for the types of technical
+and communicative challenges that will need to be overcome in human-robot
+interaction for this population.
+Author{1}{Firstname}#=%=#Frank
+Author{1}{Lastname}#=%=#Rudzicz
+Author{1}{Email}#=%=#frank@cs.toronto.edu
+Author{1}{Affiliation}#=%=#Toronto Rehabilitation Institute; University of Toronto, Department of Computer Science
+Author{2}{Firstname}#=%=#Rosalie
+Author{2}{Lastname}#=%=#Wang
+Author{2}{Email}#=%=#wang.rosalie@gmail.com
+Author{2}{Affiliation}#=%=#Toronto Rehabilitation Institute
+Author{3}{Firstname}#=%=#Momotaz
+Author{3}{Lastname}#=%=#Begum
+Author{3}{Email}#=%=#momotaz.begum.onu@gmail.com
+Author{3}{Affiliation}#=%=#University of Massachussetts Lowell
+Author{4}{Firstname}#=%=#Alex
+Author{4}{Lastname}#=%=#Mihailidis
+Author{4}{Email}#=%=#alex.mihailidis@utoronto.ca
+Author{4}{Affiliation}#=%=#University of Toronto
+
+==========

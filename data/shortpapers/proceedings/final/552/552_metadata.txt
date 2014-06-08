@@ -1,0 +1,42 @@
+SubmissionNumber#=%=#552
+FinalPaperTitle#=%=#Single Document Summarization based on Nested Tree Structure
+ShortPaperTitle#=%=#Single Document Summarization based on Nested Tree Structure
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Yuta Kikuchi
+JobTitle#==#
+Organization#==#Tokyo Institute of technology
+4295, Nagatsuta, Midori-ku, Yokohama, 226-8503, Japan
+Abstract#==#Many methods of text summarization combining sentence selection and sentence
+compression have recently been proposed. Although the dependency between words
+has been used in most of these methods, the dependency between sentences, 
+i.e., rhetorical structures, has not been exploited in such joint methods. We
+used both dependency between words and dependency between sentences by
+constructing a nested tree, in which nodes in the document tree representing
+dependency between sentences were replaced by a sentence tree representing
+dependency between words. We formulated a summarization task as a combinatorial
+optimization problem, in which the nested tree was trimmed without losing
+important content in the source document. The results from an empirical
+evaluation revealed that our method based on the trimming of the nested tree
+significantly improved the summarization of texts.
+Author{1}{Firstname}#=%=#Yuta
+Author{1}{Lastname}#=%=#Kikuchi
+Author{1}{Email}#=%=#kikuchi@lr.pi.titech.ac.jp
+Author{1}{Affiliation}#=%=#Tokyo Institute of Technology
+Author{2}{Firstname}#=%=#Tsutomu
+Author{2}{Lastname}#=%=#Hirao
+Author{2}{Email}#=%=#hirao.tsutomu@lab.ntt.co.jp
+Author{2}{Affiliation}#=%=#NTT Communication Science Labs.
+Author{3}{Firstname}#=%=#Hiroya
+Author{3}{Lastname}#=%=#Takamura
+Author{3}{Email}#=%=#takamura@pi.titech.ac.jp
+Author{3}{Affiliation}#=%=#Tokyo Institute of Technology
+Author{4}{Firstname}#=%=#Manabu
+Author{4}{Lastname}#=%=#Okumura
+Author{4}{Email}#=%=#oku@pi.titech.ac.jp
+Author{4}{Affiliation}#=%=#Tokyo Institute of Technology
+Author{5}{Firstname}#=%=#Masaaki
+Author{5}{Lastname}#=%=#NAGATA
+Author{5}{Email}#=%=#nagata.masaaki@lab.ntt.co.jp
+Author{5}{Affiliation}#=%=#+81-774-93-5235
+
+==========

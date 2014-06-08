@@ -1,0 +1,26 @@
+SubmissionNumber#=%=#55
+FinalPaperTitle#=%=#A Systematic Comparison of Smoothing Techniques for Sentence-Level BLEU
+ShortPaperTitle#=%=#A Systematic Comparison of Smoothing Techniques for Sentence-Level BLEU
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#NA
+JobTitle#==#
+Organization#==#
+Abstract#==#BLEU is the de facto standard machine translation (MT) evaluation metric.
+However, because BLEU computes a geometric mean of n-gram precisions, it often
+correlates poorly with human judgment on the sentence-level. Therefore, several
+smoothing techniques have been proposed. This paper systematically compares 7
+smoothing techniques for sentence-level BLEU. Three of them are first proposed
+in this paper, and they correlate better with human judgments on the
+sentence-level than other smoothing techniques. Moreover, we also compare the
+performance of using the 7 smoothing techniques in statistical machine
+translation tuning.
+Author{1}{Firstname}#=%=#Boxing
+Author{1}{Lastname}#=%=#Chen
+Author{1}{Email}#=%=#boxing.chen@cnrc-nrc.gc.ca
+Author{1}{Affiliation}#=%=#NRC
+Author{2}{Firstname}#=%=#Colin
+Author{2}{Lastname}#=%=#Cherry
+Author{2}{Email}#=%=#colin.cherry@nrc-cnrc.gc.ca
+Author{2}{Affiliation}#=%=#NRC
+
+==========

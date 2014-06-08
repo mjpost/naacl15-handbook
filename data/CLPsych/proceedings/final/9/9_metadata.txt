@@ -1,0 +1,53 @@
+SubmissionNumber#=%=#9
+FinalPaperTitle#=%=#Comparison of different feature sets for identification of variants in progressive aphasia
+ShortPaperTitle#=%=#Comparison of different feature sets for identification of variants in progressive aphasia
+NumberOfPages#=%=#10
+CopyrightSigned#=%=#Kathleen Fraser
+JobTitle#==#
+Organization#==#University of Toronto
+Department of Computer Science
+10 King's College Rd, Rm 3302
+Toronto, Ontario, Canada
+M5S 3G4
+Abstract#==#We use computational techniques to extract a large number of different features
+from the narrative speech of individuals with primary progressive aphasia
+(PPA).
+We examine several different types of features, including part-of-speech,
+complexity, context-free grammar, fluency, psycholinguistic, vocabulary
+richness, and acoustic, and discuss the circumstances under which they can be
+extracted. We consider the task of training a machine learning classifier to
+determine whether a participant is a control, or has the fluent or nonfluent
+variant of PPA.We first evaluate the individual feature sets on their
+classification accuracy, then perform an ablation study to determine the
+optimal combination of feature sets. Finally, we rank the features in four
+practical scenarios: given audio data only, given unsegmented transcripts only,
+given segmented transcripts only, and given both audio and segmented
+transcripts. We find that psycholinguistic features are highly discriminative
+in most cases, and that acoustic, context-free grammar, and part-of-speech
+features can also be important in some circumstances.
+Author{1}{Firstname}#=%=#Kathleen C.
+Author{1}{Lastname}#=%=#Fraser
+Author{1}{Email}#=%=#kfraser@cs.toronto.edu
+Author{1}{Affiliation}#=%=#University of Toronto
+Author{2}{Firstname}#=%=#Graeme
+Author{2}{Lastname}#=%=#Hirst
+Author{2}{Email}#=%=#gh@cs.toronto.edu
+Author{2}{Affiliation}#=%=#University of Toronto
+Author{3}{Firstname}#=%=#Naida L.
+Author{3}{Lastname}#=%=#Graham
+Author{3}{Email}#=%=#Naida.Graham@utoronto.ca
+Author{3}{Affiliation}#=%=#Toronto Rehabilitation Institute
+Author{4}{Firstname}#=%=#Jed A.
+Author{4}{Lastname}#=%=#Meltzer
+Author{4}{Email}#=%=#jmeltzer@research.baycrest.org
+Author{4}{Affiliation}#=%=#Rotman Research Institute, Baycrest Centre
+Author{5}{Firstname}#=%=#Sandra E.
+Author{5}{Lastname}#=%=#Black
+Author{5}{Email}#=%=#sandra.black@sunnybrook.ca
+Author{5}{Affiliation}#=%=#Sunnybrook Health Sciences Centre
+Author{6}{Firstname}#=%=#Elizabeth
+Author{6}{Lastname}#=%=#Rochon
+Author{6}{Email}#=%=#elizabeth.rochon@utoronto.ca
+Author{6}{Affiliation}#=%=#Toronto Rehabilitation Institute
+
+==========

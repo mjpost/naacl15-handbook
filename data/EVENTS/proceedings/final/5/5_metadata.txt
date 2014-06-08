@@ -1,0 +1,30 @@
+SubmissionNumber#=%=#5
+FinalPaperTitle#=%=#Inter-annotator Agreement for ERE annotation
+ShortPaperTitle#=%=#Inter-annotator Agreement for ERE annotation
+NumberOfPages#=%=#5
+CopyrightSigned#=%=#Seth Kulick
+JobTitle#==#
+Organization#==#Linguistic Data Consortium, University of Pennsylvania, 3600 Market Street, Suite 810, Philadelphia, PA 19104
+Abstract#==#This paper describes a system for inter-annotator agreement
+analysis of ERE annotation, focusing on entity mentions and how 
+the higher-order annotations such as  events are dependent
+on those entity mentions.  The goal of this approach is
+to provide both (1) quantitative scores for the various levels
+of annotation, and (2) information about the 
+ types of annotation inconsistencies that might exist.
+While primarily designed for inter-annotator agreement, it can
+also be considered a system for evaluation of ERE annotation.
+Author{1}{Firstname}#=%=#Seth
+Author{1}{Lastname}#=%=#Kulick
+Author{1}{Email}#=%=#skulick@seas.upenn.edu
+Author{1}{Affiliation}#=%=#Linguistic Data Consortium, University of Pennsylvania
+Author{2}{Firstname}#=%=#Ann
+Author{2}{Lastname}#=%=#Bies
+Author{2}{Email}#=%=#bies@ldc.upenn.edu
+Author{2}{Affiliation}#=%=#Linguistic Data Consortium
+Author{3}{Firstname}#=%=#Justin
+Author{3}{Lastname}#=%=#Mott
+Author{3}{Email}#=%=#jmott@ldc.upenn.edu
+Author{3}{Affiliation}#=%=#Linguistic Data Consortium
+
+==========

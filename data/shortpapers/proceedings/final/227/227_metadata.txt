@@ -1,0 +1,41 @@
+SubmissionNumber#=%=#227
+FinalPaperTitle#=%=#An Annotation Framework for Dense Event Ordering
+ShortPaperTitle#=%=#An Annotation Framework for Dense Event Ordering
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#NA
+JobTitle#==#
+Organization#==#Nathanael Chambers
+Computer Science Department
+United States Naval Academy
+Annapolis, MD 21409
+Abstract#==#Today's event ordering research is heavily dependent on annotated corpora.
+Current corpora influence shared evaluations and drive algorithm development.
+Partly due to this dependence, most research focuses on partial orderings of a
+document's events. For instance, the TempEval competitions and the TimeBank
+only annotate small portions of the event graph, focusing on the most salient
+events or on specific types of event pairs (e.g., only events in the same
+sentence). Deeper temporal reasoners struggle with this sparsity because the
+entire temporal picture is not represented. This paper proposes a new
+annotation process with a mechanism to force annotators to label connected
+graphs. It generates 10 times more relations per document than the TimeBank,
+and our TimeBank-Dense corpus is larger than all current corpora. We hope this
+process and its dense corpus encourages research on new global models with
+deeper reasoning.
+Author{1}{Firstname}#=%=#Taylor
+Author{1}{Lastname}#=%=#Cassidy
+Author{1}{Email}#=%=#taylorcassidy64@gmail.com
+Author{1}{Affiliation}#=%=#CUNY Graduate Center
+Author{2}{Firstname}#=%=#Bill
+Author{2}{Lastname}#=%=#McDowell
+Author{2}{Email}#=%=#forkunited@gmail.com
+Author{2}{Affiliation}#=%=#Carnegie Mellon University
+Author{3}{Firstname}#=%=#Nathanael
+Author{3}{Lastname}#=%=#Chambers
+Author{3}{Email}#=%=#nchamber@usna.edu
+Author{3}{Affiliation}#=%=#US Naval Academy
+Author{4}{Firstname}#=%=#Steven
+Author{4}{Lastname}#=%=#Bethard
+Author{4}{Email}#=%=#bethard@cis.uab.edu
+Author{4}{Affiliation}#=%=#University of Alabama at Birmingham
+
+==========

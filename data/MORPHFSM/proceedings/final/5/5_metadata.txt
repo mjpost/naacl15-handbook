@@ -1,0 +1,38 @@
+SubmissionNumber#=%=#5
+FinalPaperTitle#=%=#Rules, Analogy, and Social Factors Codetermine Past-tense Formation Patterns in English
+ShortPaperTitle#=%=#Rules, Analogy, and Social Factors Codetermine Past-tense Formation Patterns in English
+NumberOfPages#=%=#9
+CopyrightSigned#=%=#P M Racz
+JobTitle#==#
+Organization#==#New Zealand Institute of Language, Brain and Behaviour
+    University of Canterbury
+    Private Bag 4800, Christchurch
+    New Zealand
+Abstract#==#We investigate past-tense formation preferences for five irregular English verb
+classes. We gathered data on a large scale using a nonce probe study
+implemented on Amazon Mechanical Turk. We compare a Minimal Generalization
+Learner (which infers stochastic rules) with a Generalized Context Model (which
+evaluates new items via analogy with existing items) as models of participant
+choices. Overall, the GCM is a better predictor, but the the MGL provides some
+additional predictive power. Because variation across speakers is greater than
+variation across items, we also explore individual-level factors as predictors.
+Females exhibited significantly more categorical choices than males, a finding
+that can be related to results in sociolinguistics.
+Author{1}{Firstname}#=%=#Peter
+Author{1}{Lastname}#=%=#Racz
+Author{1}{Email}#=%=#peter.racz@canterbury.ac.nz
+Author{1}{Affiliation}#=%=#New Zealand Institute of Language Brain and Behaviour, University of Canterbury
+Author{2}{Firstname}#=%=#Clayton
+Author{2}{Lastname}#=%=#Beckner
+Author{2}{Email}#=%=#clayton.beckner@canterbury.ac.nz
+Author{2}{Affiliation}#=%=#New Zealand Institute of Language Brain and Behaviour, University of Canterbury
+Author{3}{Firstname}#=%=#Jennifer B.
+Author{3}{Lastname}#=%=#Hay
+Author{3}{Email}#=%=#jen.hay@canterbury.ac.nz
+Author{3}{Affiliation}#=%=#New Zealand Institute of Language Brain and Behaviour, University of Canterbury
+Author{4}{Firstname}#=%=#Janet B.
+Author{4}{Lastname}#=%=#Pierrehumbert
+Author{4}{Email}#=%=#jbp@northwestern.edu
+Author{4}{Affiliation}#=%=#Department of Linguistics / NICO, Northwestern University. New Zealand Institute of Language Brain and Behaviour, University of Canterbury
+
+==========

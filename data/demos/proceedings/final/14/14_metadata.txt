@@ -1,0 +1,42 @@
+SubmissionNumber#=%=#14
+FinalPaperTitle#=%=#kLogNLP: Graph Kernel–based Relational Learning of Natural Language
+ShortPaperTitle#=%=#kLogNLP: Graph Kernel–based Relational Learning of Natural Language
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Mathias Verbeke
+JobTitle#==#
+Organization#==#KU Leuven
+Department of Computer Science
+Celestijnenlaan 200A
+B-3001 Heverlee
+Belgium
+Abstract#==#kLog is a framework for kernel-based learning that has already proven
+successful in solving a number of relational tasks in natural language
+processing. In this paper, we present kLogNLP, a natural language processing
+module for kLog. This module enriches kLog with NLP-specific preprocessors,
+enabling the use of existing libraries and toolkits within an elegant and
+powerful declarative machine learning framework. The resulting relational model
+of the domain can be extended by specifying additional relational features in a
+declarative way using a logic programming language. This declarative approach
+offers a more flexible way of experimentation and to insert domain knowledge.
+Author{1}{Firstname}#=%=#Mathias
+Author{1}{Lastname}#=%=#Verbeke
+Author{1}{Email}#=%=#mathias.verbeke@cs.kuleuven.be
+Author{1}{Affiliation}#=%=#KU Leuven
+Author{2}{Firstname}#=%=#Paolo
+Author{2}{Lastname}#=%=#Frasconi
+Author{2}{Email}#=%=#paolo.frasconi@unifi.it
+Author{2}{Affiliation}#=%=#Università degli Studi di Firenze
+Author{3}{Firstname}#=%=#Kurt
+Author{3}{Lastname}#=%=#De Grave
+Author{3}{Email}#=%=#kurt.degrave@cs.kuleuven.be
+Author{3}{Affiliation}#=%=#KU Leuven
+Author{4}{Firstname}#=%=#Fabrizio
+Author{4}{Lastname}#=%=#Costa
+Author{4}{Email}#=%=#costa@informatik.uni-freiburg.de
+Author{4}{Affiliation}#=%=#Albert-Ludwigs-Universität Freiburg
+Author{5}{Firstname}#=%=#Luc
+Author{5}{Lastname}#=%=#De Raedt
+Author{5}{Email}#=%=#luc.deraedt@cs.kuleuven.be
+Author{5}{Affiliation}#=%=#KU Leuven
+
+==========

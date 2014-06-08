@@ -1,0 +1,36 @@
+SubmissionNumber#=%=#274
+FinalPaperTitle#=%=#Language-Aware Truth Assessment of Fact Candidates
+ShortPaperTitle#=%=#Language-Aware Truth Assessment of Fact Candidates
+NumberOfPages#=%=#11
+CopyrightSigned#=%=#Ndapandula Nakashole
+JobTitle#==#
+Organization#==#Carnegie Mellon University
+5000 Forbes Avenue,Pittsburgh, 15213
+Abstract#==#This paper introduces FactChecker, a
+novel, language-aware approach to truth-finding.
+FactChecker differs from prior
+approaches in that it does not rely on iterative
+peer voting, instead it leverages language
+to infer believability of fact candidates.
+In particular, FactChecker makes
+use of linguistic features to detect if a
+given source objectively states facts or
+is speculative and opinionated. To ensure
+that fact candidates mentioned in
+similar sources have similar believability,
+FactChecker augments objectivity with a
+co-mention score to compute the overall
+believability score of a fact candidate. Our
+experiments on various datasets show that
+FactChecker yields higher accuracy than
+existing approaches.
+Author{1}{Firstname}#=%=#Ndapandula
+Author{1}{Lastname}#=%=#Nakashole
+Author{1}{Email}#=%=#ndapa@cs.cmu.edu
+Author{1}{Affiliation}#=%=#Carnegie Mellon Univeristy
+Author{2}{Firstname}#=%=#Tom M.
+Author{2}{Lastname}#=%=#Mitchell
+Author{2}{Email}#=%=#tom.mitchell@cs.cmu.edu
+Author{2}{Affiliation}#=%=#Carnegie Mellon University
+
+==========

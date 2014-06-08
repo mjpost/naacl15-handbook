@@ -1,0 +1,34 @@
+SubmissionNumber#=%=#115
+FinalPaperTitle#=%=#Part-of-Speech Tagging using Conditional Random Fields: Exploiting Sub-Label Dependencies for Improved Accuracy
+ShortPaperTitle#=%=#Part-of-Speech Tagging using Conditional Random Fields: Exploiting Sub-Label Dependencies for Improved Accuracy
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Miikka Silfverberg
+JobTitle#==#Doctoral student
+Organization#==#Department of Modern Languages
+PL 24, 00014 University of Helsinki
+Unioninkatu 40 B, 6. krs
+Abstract#==#We discuss part-of-speech (POS) tagging in presence of large, fine-grained
+label sets using conditional random fields (CRFs). We propose improving tagging
+accuracy by utilizing dependencies within sub-components of the fine-grained
+labels. These sub-label dependencies are incorporated into the CRF model via a
+(relatively) straightforward feature extraction scheme. Experiments on five
+languages show that the approach can yield significant improvement in tagging
+accuracy in case the labels have sufficiently rich inner structure.
+Author{1}{Firstname}#=%=#Miikka
+Author{1}{Lastname}#=%=#Silfverberg
+Author{1}{Email}#=%=#miikka.silfverberg@helsinki.fi
+Author{1}{Affiliation}#=%=#
+Author{2}{Firstname}#=%=#Teemu
+Author{2}{Lastname}#=%=#Ruokolainen
+Author{2}{Email}#=%=#teemu.ruokolainen@aalto.fi
+Author{2}{Affiliation}#=%=#Aalto University
+Author{3}{Firstname}#=%=#Krister
+Author{3}{Lastname}#=%=#Lindén
+Author{3}{Email}#=%=#krister.linden@helsinki.fi
+Author{3}{Affiliation}#=%=#University of Helsinki
+Author{4}{Firstname}#=%=#mikko
+Author{4}{Lastname}#=%=#kurimo
+Author{4}{Email}#=%=#mikko.kurimo@tkk.fi
+Author{4}{Affiliation}#=%=#Aalto University
+
+==========

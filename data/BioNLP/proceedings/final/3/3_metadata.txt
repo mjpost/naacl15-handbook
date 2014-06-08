@@ -1,0 +1,35 @@
+SubmissionNumber#=%=#3
+FinalPaperTitle#=%=#Chunking Clinical Text Containing Non-Canonical Language
+ShortPaperTitle#=%=#Chunking Clinical Text Containing Non-Canonical Language
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Aleksandar Savkov
+JobTitle#==#
+Organization#==#University of Sussex
+Sussex House
+Brighton
+BN1 9RH
+United Kingdom
+Abstract#==#Free text notes typed by primary care physicians during patient consultations
+typically contain highly non-canonical language. Shallow syntactic analysis of
+free text notes can help to reveal valuable information for the study of
+disease and treatment. We present an exploratory study into chunking such text
+using off-the-shelf language processing tools and pre-trained statistical
+models. We evaluate chunking accuracy with respect to part-of-speech tagging
+quality, choice of chunk representation, and breadth of context features. Our
+results indicate that narrow context feature windows give the best results, but
+that chunk representation and minor differences in tagging quality do not have
+a significant impact on chunking accuracy.
+Author{1}{Firstname}#=%=#Aleksandar
+Author{1}{Lastname}#=%=#Savkov
+Author{1}{Email}#=%=#a.savkov@sussex.ac.uk
+Author{1}{Affiliation}#=%=#University of Sussex
+Author{2}{Firstname}#=%=#John
+Author{2}{Lastname}#=%=#Carroll
+Author{2}{Email}#=%=#j.a.carroll@sussex.ac.uk
+Author{2}{Affiliation}#=%=#University of Sussex
+Author{3}{Firstname}#=%=#Jackie
+Author{3}{Lastname}#=%=#Cassell
+Author{3}{Email}#=%=#j.cassell@bsms.ac.uk
+Author{3}{Affiliation}#=%=#Brighton and Sussex Medical School
+
+==========

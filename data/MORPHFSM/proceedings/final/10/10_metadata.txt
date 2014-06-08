@@ -1,0 +1,17 @@
+SubmissionNumber#=%=#10
+FinalPaperTitle#=%=#10 Open Questions in Computational Morphonology
+ShortPaperTitle#=%=#10 Open Questions in Computational Morphonology
+NumberOfPages#=%=#5
+CopyrightSigned#=%=#Grzegorz Kondrak
+JobTitle#==#Associate Professor
+Organization#==#Dept of Computing Science, Athabasca Hall 221, Univ of Alberta, T6G 2E8, Edmonton, Canada
+Abstract#==#The objective of this paper is to initiate discussion within the SIGMORPHON
+community around several issues that involve computational morphology,
+phonology, phonetics, orthography, syllabification, transliteration, machine
+translation, inflection generation, and native language identification.
+Author{1}{Firstname}#=%=#Grzegorz
+Author{1}{Lastname}#=%=#Kondrak
+Author{1}{Email}#=%=#gkondrak@ualberta.ca
+Author{1}{Affiliation}#=%=#University of Alberta
+
+==========

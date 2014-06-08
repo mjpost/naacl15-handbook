@@ -1,0 +1,38 @@
+SubmissionNumber#=%=#4
+FinalPaperTitle#=%=#Active Learning with Constrained Topic Model
+ShortPaperTitle#=%=#Active Learning with Constrained Topic Model
+NumberOfPages#=%=#4
+CopyrightSigned#=%=#YIYANG
+JobTitle#==#
+Organization#==#EECS Department 
+Northwestern University 
+Ford 3-204
+2133 Sheridan Road 
+Evanston, IL, 60208
+Abstract#==#Latent Dirichlet Allocation (LDA) is a topic modeling tool that  automatically
+discovers topics from a large collection of documents. It  is one of the most
+popular text analysis tools currently in use. In practice however, the topics
+discovered by LDA don't always make sense to end users. In this extended
+abstract, we propose an active learning framework that                               
+interactively and
+iteratively acquires user feedback to improve the quality of learned topics. We
+conduct experiments to demonstrate its effectiveness with simulated user input
+on a benchmark dataset.
+Author{1}{Firstname}#=%=#Yi
+Author{1}{Lastname}#=%=#Yang
+Author{1}{Email}#=%=#yiyang@u.northwestern.edu
+Author{1}{Affiliation}#=%=#Northwestern University
+Author{2}{Firstname}#=%=#Shimei
+Author{2}{Lastname}#=%=#Pan
+Author{2}{Email}#=%=#shimei@us.ibm.com
+Author{2}{Affiliation}#=%=#IBM T.J.Watson Research Center
+Author{3}{Firstname}#=%=#Doug
+Author{3}{Lastname}#=%=#Downey
+Author{3}{Email}#=%=#ddowney@eecs.northwestern.edu
+Author{3}{Affiliation}#=%=#Northwestern University
+Author{4}{Firstname}#=%=#Kunpeng
+Author{4}{Lastname}#=%=#Zhang
+Author{4}{Email}#=%=#kzhang6@uic.edu
+Author{4}{Affiliation}#=%=#University of Illinois at Chicago
+
+==========

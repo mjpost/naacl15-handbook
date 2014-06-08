@@ -1,0 +1,35 @@
+SubmissionNumber#=%=#225
+FinalPaperTitle#=%=#Recurrent Neural Networks for Word Alignment Model
+ShortPaperTitle#=%=#Recurrent Neural Networks for Word Alignment Model
+NumberOfPages#=%=#11
+CopyrightSigned#=%=#Akihiro Tamura
+JobTitle#==#
+Organization#==#NEC Corporation
+8916-47, Takayama-cho, Ikoma, Nara, 630-0101, JAPAN
+Abstract#==#This study proposes a word alignment model based on a recurrent neural network
+(RNN), in which an unlimited alignment history is represented by recurrently
+connected hidden layers. We perform unsupervised learning using
+noise-contrastive estimation, which utilizes artificially generated negative
+samples. Our alignment model is directional, similar to the generative IBM
+models. To overcome this limitation, we encourage agreement between the two
+directional models by introducing a penalty function that ensures word
+embedding consistency across two directional models during training. The
+RNN-based model outperforms the feed-forward neural network-based model (Yang
+et al., 2013) as well as the IBM Model 4 under Japanese-English and
+French-English word alignment tasks, and achieves comparable translation
+performance to those baselines for Japanese-English and Chinese-English
+translation tasks.
+Author{1}{Firstname}#=%=#Akihiro
+Author{1}{Lastname}#=%=#Tamura
+Author{1}{Email}#=%=#akihiro.tamura@gmail.com
+Author{1}{Affiliation}#=%=#Data and Text Mining Technology Group, Knowledge Discovery Research Laboratories, NEC Corporation
+Author{2}{Firstname}#=%=#Taro
+Author{2}{Lastname}#=%=#Watanabe
+Author{2}{Email}#=%=#taro.watanabe@nict.go.jp
+Author{2}{Affiliation}#=%=#NICT
+Author{3}{Firstname}#=%=#Eiichiro
+Author{3}{Lastname}#=%=#Sumita
+Author{3}{Email}#=%=#eiichiro.sumita@nict.go.jp
+Author{3}{Affiliation}#=%=#NICT
+
+==========

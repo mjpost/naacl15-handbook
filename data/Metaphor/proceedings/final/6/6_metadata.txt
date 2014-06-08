@@ -1,0 +1,21 @@
+SubmissionNumber#=%=#6
+FinalPaperTitle#=%=#Multi-dimensional abstractness in cross-domain mappings
+ShortPaperTitle#=%=#Multi-dimensional abstractness
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Jonathan Dunn
+JobTitle#==#
+Organization#==#Illinois Institute of Technology
+3300 S Federal St, Chicago, IL 60616
+Abstract#==#Metaphor is a cognitive process that shapes abstract target concepts by mapping
+them to concrete source concepts. Thus, many computational approaches to
+metaphor make reference, directly or indirectly, to the abstractness of words
+and concepts. The property of abstractness, however, remains theoretically and
+empirically unexplored. This paper implements a multi-dimensional definition of
+abstractness and tests the usefulness of each dimension for detecting
+cross-domain mappings.
+Author{1}{Firstname}#=%=#Jonathan
+Author{1}{Lastname}#=%=#Dunn
+Author{1}{Email}#=%=#jonathan.edwin.dunn@gmail.com
+Author{1}{Affiliation}#=%=#Illinois Institute of Technology
+
+==========

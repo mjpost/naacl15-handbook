@@ -1,0 +1,31 @@
+SubmissionNumber#=%=#203
+FinalPaperTitle#=%=#A Sense-Based Translation Model for Statistical Machine Translation
+ShortPaperTitle#=%=#A Sense-Based Translation Model for Statistical Machine Translation
+NumberOfPages#=%=#11
+CopyrightSigned#=%=#Deyi Xiong
+JobTitle#==#
+Organization#==#Soochow University
+Abstract#==#The sense in which a word is used determines the translation of the word. In
+this paper, we propose a sense-based translation model to integrate word senses
+into statistical machine translation. We build a broad-coverage sense tagger
+based on a nonparametric Bayesian topic model that automatically learns sense
+clusters for words in the source language. The proposed sense-based translation
+model enables the decoder to select appropriate translations for source words
+according to the inferred senses for these words using maximum entropy
+classifiers. Our method is significantly different from previous word sense
+disambiguation reformulated for machine translation in that the latter neglects
+word senses in nature. We test the effectiveness of the proposed sense-based
+translation
+model on a large-scale Chinese-to-English translation task. Results show that
+the proposed model substantially outperforms not only the baseline but also the
+previous reformulated word sense disambiguation.
+Author{1}{Firstname}#=%=#Deyi
+Author{1}{Lastname}#=%=#Xiong
+Author{1}{Email}#=%=#deyi.xiong@gmail.com
+Author{1}{Affiliation}#=%=#Soochow University
+Author{2}{Firstname}#=%=#Min
+Author{2}{Lastname}#=%=#Zhang
+Author{2}{Email}#=%=#minzhang@suda.edu.cn
+Author{2}{Affiliation}#=%=#Soochow University
+
+==========

@@ -1,0 +1,27 @@
+SubmissionNumber#=%=#19
+FinalPaperTitle#=%=#MiTextExplorer: Linked brushing and mutual information for exploratory text data analysis
+ShortPaperTitle#=%=#MiTextExplorer: Linked brushing and mutual information for exploratory text data analysis
+NumberOfPages#=%=#13
+CopyrightSigned#=%=#Brendan OConnor
+JobTitle#==#
+Organization#==#Carnegie Mellon University
+5000 Forbes Ave, Pittsburgh PA 15213
+Abstract#==#In this paper I describe a preliminary experimental system, MITextExplorer, for
+textual linked brushing, which allows an analyst to interactively explore
+statistical relationships between (1) terms, and (2) document metadata
+(covariates).  An analyst can graphically select documents embedded in a
+temporal, spatial, or other continuous space, and the tool reports terms with
+strong statistical associations for the region.  The user can then drill down
+to specific term and term groupings, viewing further associations, and see how
+terms are used in context.  The goal is to rapidly compare language usage
+across interesting document covariates.
+
+I illustrate examples of using the tool on several datasets: geo-located
+Twitter messages, presidential State of the Union addresses, the ACL Anthology,
+and the King James Bible.
+Author{1}{Firstname}#=%=#Brendan
+Author{1}{Lastname}#=%=#O'Connor
+Author{1}{Email}#=%=#brenocon@cs.cmu.edu
+Author{1}{Affiliation}#=%=#Carnegie Mellon University
+
+==========

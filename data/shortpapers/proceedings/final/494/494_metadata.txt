@@ -1,0 +1,27 @@
+SubmissionNumber#=%=#494
+FinalPaperTitle#=%=#Cross-cultural Deception Detection
+ShortPaperTitle#=%=#Cross-cultural Deception Detection
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Rada Mihalcea
+JobTitle#==#
+Organization#==#U. Michigan, EECS,
+2260 Hayward St., Ann Arbor, MI, 48109
+Abstract#==#In this paper, we address the task of cross-cultural deception detection. Using
+crowdsourcing, we collect three deception datasets, two in English (one
+originating from United States and one from India), and one in Spanish obtained
+from speakers from Mexico. We run comparative experiments to evaluate the
+accuracies of deception classifiers built for each culture, and also to analyze
+classification differences within and across cultures. Our results show that we
+can leverage cross-cultural information, either through translation or
+equivalent semantic categories, and build deception classifiers with a
+performance ranging between 60-70%.
+Author{1}{Firstname}#=%=#Verónica
+Author{1}{Lastname}#=%=#Pérez-Rosas
+Author{1}{Email}#=%=#veronica.perezrosas@gmail.com
+Author{1}{Affiliation}#=%=#University of North Texas
+Author{2}{Firstname}#=%=#Rada
+Author{2}{Lastname}#=%=#Mihalcea
+Author{2}{Email}#=%=#mihalcea@umich.edu
+Author{2}{Affiliation}#=%=#University of Michigan
+
+==========

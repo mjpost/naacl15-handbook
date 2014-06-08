@@ -1,0 +1,47 @@
+SubmissionNumber#=%=#8
+FinalPaperTitle#=%=#A Comparison of the Events and Relations Across ACE, ERE, TAC-KBP, and FrameNet Annotation Standards
+ShortPaperTitle#=%=#Events and Relations Across ACE, ERE, TAC-KBP, and FrameNet Annotation Standards
+NumberOfPages#=%=#9
+CopyrightSigned#=%=#Jacqueline Aguilar
+JobTitle#==#
+Organization#==#Human Language Technology Center of Excellence
+Johns Hopkins University
+810 Wyman Park Dr. 
+Baltimore, MD, USA
+Abstract#==#The resurgence of effort within computational semantics has led to increased
+interest in various types of relation extraction and semantic parsing. While
+various manually annotated resources exist for enabling this work, these
+materials have been developed with different standards and goals in
+mind. In an effort to provide better general understanding across these
+resources, we provide a summary overview of the standards underlying ACE, ERE,
+TAC-KBP Slot-filling, and FrameNet.
+Author{1}{Firstname}#=%=#Jacqueline
+Author{1}{Lastname}#=%=#Aguilar
+Author{1}{Email}#=%=#jacqui@jhu.edu
+Author{1}{Affiliation}#=%=#Johns Hopkins University
+Author{2}{Firstname}#=%=#Charley
+Author{2}{Lastname}#=%=#Beller
+Author{2}{Email}#=%=#charleybeller@jhu.edu
+Author{2}{Affiliation}#=%=#Johns Hopkins University
+Author{3}{Firstname}#=%=#Paul
+Author{3}{Lastname}#=%=#McNamee
+Author{3}{Email}#=%=#paul.mcnamee@jhuapl.edu
+Author{3}{Affiliation}#=%=#Johns Hopkins University
+Author{4}{Firstname}#=%=#Benjamin
+Author{4}{Lastname}#=%=#Van Durme
+Author{4}{Email}#=%=#vandurme@cs.jhu.edu
+Author{4}{Affiliation}#=%=#JHU
+Author{5}{Firstname}#=%=#Stephanie
+Author{5}{Lastname}#=%=#Strassel
+Author{5}{Email}#=%=#strassel@ldc.upenn.edu
+Author{5}{Affiliation}#=%=#Linguistic Data Consortium, University of Pennsylvania
+Author{6}{Firstname}#=%=#Zhiyi
+Author{6}{Lastname}#=%=#Song
+Author{6}{Email}#=%=#zhiyi@ldc.upenn.edu
+Author{6}{Affiliation}#=%=#Linguistic Data Consortium, University of Pennsylvania
+Author{7}{Firstname}#=%=#Joe
+Author{7}{Lastname}#=%=#Ellis
+Author{7}{Email}#=%=#joellis@ldc.upenn.edu
+Author{7}{Affiliation}#=%=#Linguistic Data Consortium, University of Pennsylvania
+
+==========

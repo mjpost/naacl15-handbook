@@ -1,0 +1,32 @@
+SubmissionNumber#=%=#310
+FinalPaperTitle#=%=#Transforming trees into hedges and parsing with "hedgebank" grammars
+ShortPaperTitle#=%=#Transforming trees into hedges and parsing with "hedgebank" grammars
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Brian Roark
+JobTitle#==#
+Organization#==#Google, Inc, 79 Ninth Avenue, New York, NY 10011
+Abstract#==#Finite-state chunking and tagging methods are very fast for annotating
+non-hierarchical syntactic information, and are often applied in applications
+that do not require full syntactic analyses.  Scenarios such as incremental
+machine translation may benefit from some degree of hierarchical syntactic
+analysis without requiring fully connected parses.  We introduce hedge parsing
+as an approach to recovering constituents of length up to some maximum span L. 
+This approach improves efficiency by bounding constituent size, and allows for
+efficient segmentation strategies prior to parsing.  Unlike shallow parsing
+methods, hedge parsing yields internal hierarchical structure of phrases within
+its span bound.  We present the approach and some initial experiments on
+different inference strategies.
+Author{1}{Firstname}#=%=#Mahsa
+Author{1}{Lastname}#=%=#Yarmohammadi
+Author{1}{Email}#=%=#yarmoham@ohsu.edu
+Author{1}{Affiliation}#=%=#Oregon Health & Science University
+Author{2}{Firstname}#=%=#Aaron
+Author{2}{Lastname}#=%=#Dunlop
+Author{2}{Email}#=%=#aaron.dunlop@gmail.com
+Author{2}{Affiliation}#=%=#Intel Corp.
+Author{3}{Firstname}#=%=#Brian
+Author{3}{Lastname}#=%=#Roark
+Author{3}{Email}#=%=#roarkbr@gmail.com
+Author{3}{Affiliation}#=%=#Google Inc.
+
+==========

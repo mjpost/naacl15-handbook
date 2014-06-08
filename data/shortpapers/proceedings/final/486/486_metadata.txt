@@ -1,0 +1,36 @@
+SubmissionNumber#=%=#486
+FinalPaperTitle#=%=#Determiner-Established Deixis to Communicative Artifacts in Pedagogical Text
+ShortPaperTitle#=%=#Determiner-Established Deixis to Communicative Artifacts in Pedagogical Text
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Shomir Wilson
+JobTitle#==#
+Organization#==#University of Edinburgh
+School of Informatics
+10 Crichton St
+Edinburgh, Midlothian EH8 9AB
+Scotland, United Kingdom
+Abstract#==#Pedagogical materials frequently contain deixis to communicative artifacts such
+as textual structures (e.g., sections and lists), discourse entities, and
+illustrations. By relating such artifacts to the prose, deixis plays an
+essential role in structuring the flow of information in informative writing.
+However, existing language technologies have largely overlooked this mechanism.
+We examine properties of deixis to communicative artifacts using a corpus rich
+in determiner-established instances of the phenomenon (e.g., “this
+section”, “these equations”, “those reasons”) from Wikibooks, a
+collection of learning texts. We use this corpus in combination with WordNet to
+determine a set of word senses that are characteristic of the phenomenon,
+showing its diversity and validating intuitions about its qualities. The
+results motivate further research to extract the connections encoded by such
+deixis, with the goals of enhancing tools to present pedagogical e-texts to
+readers and, more broadly, improving language technologies that rely on deictic
+phenomena.
+Author{1}{Firstname}#=%=#Shomir
+Author{1}{Lastname}#=%=#Wilson
+Author{1}{Email}#=%=#shomir@gmail.com
+Author{1}{Affiliation}#=%=#University of Edinburgh
+Author{2}{Firstname}#=%=#Jon
+Author{2}{Lastname}#=%=#Oberlander
+Author{2}{Email}#=%=#jon@inf.ed.ac.uk
+Author{2}{Affiliation}#=%=#University of Edinburgh
+
+==========

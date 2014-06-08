@@ -1,0 +1,55 @@
+SubmissionNumber#=%=#4
+FinalPaperTitle#=%=#The Karlsruhe Institute of Technology Translation Systems for the WMT 2014
+ShortPaperTitle#=%=#The Karlsruhe Institute of Technology Translation Systems for the WMT 2014
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Teresa Herrmann
+JobTitle#==#
+Organization#==#Karlsruhe Institute of Technology
+Institute for Anthropomatics and Robotics
+Adenauerring 2
+76131 Karlsruhe
+Abstract#==#In this paper, we present the KIT systems participating in the Shared
+Translation Task translating between English<->German and English<->French.
+All translations are generated using phrase-based translation systems, using
+different kinds of word-based, part-of-speech-based and cluster-based language
+models trained on the provided data. Additional models further include
+bilingual language models, reordering models based on part-of-speech tags and
+syntactic parse trees, as well as a lexicalized reordering model.
+In order to make use of noisy web-crawled data, we apply filtering and data
+selection methods for language modelling.
+A discriminative word lexicon using source context information proved
+beneficial for all translation directions.
+Author{1}{Firstname}#=%=#Teresa
+Author{1}{Lastname}#=%=#Herrmann
+Author{1}{Email}#=%=#teresa.herrmann@kit.edu
+Author{1}{Affiliation}#=%=#Karlsruhe Institute of Technology
+Author{2}{Firstname}#=%=#Mohammed
+Author{2}{Lastname}#=%=#Mediani
+Author{2}{Email}#=%=#mohammed.mediani@kit.edu
+Author{2}{Affiliation}#=%=#Karlsruhe Institute of Technology
+Author{3}{Firstname}#=%=#Eunah
+Author{3}{Lastname}#=%=#Cho
+Author{3}{Email}#=%=#eunah.cho@kit.edu
+Author{3}{Affiliation}#=%=#Karlsruhe Institute of Technology
+Author{4}{Firstname}#=%=#Thanh-Le
+Author{4}{Lastname}#=%=#Ha
+Author{4}{Email}#=%=#thanh-le.ha@kit.edu
+Author{4}{Affiliation}#=%=#Karlsruhe Institute of Technology
+Author{5}{Firstname}#=%=#Jan
+Author{5}{Lastname}#=%=#Niehues
+Author{5}{Email}#=%=#jan.niehues@kit.edu
+Author{5}{Affiliation}#=%=#Karlsruhe Institute of Technology
+Author{6}{Firstname}#=%=#Isabel
+Author{6}{Lastname}#=%=#Slawik
+Author{6}{Email}#=%=#isabel.slawik@kit.edu
+Author{6}{Affiliation}#=%=#Karlsruhe Institute of Technology
+Author{7}{Firstname}#=%=#Yuqi
+Author{7}{Lastname}#=%=#Zhang
+Author{7}{Email}#=%=#yuqi.zhang@kit.edu
+Author{7}{Affiliation}#=%=#Karlsruhe Institute of Technology
+Author{8}{Firstname}#=%=#Alex
+Author{8}{Lastname}#=%=#Waibel
+Author{8}{Email}#=%=#alexander.waibel@kit.edu
+Author{8}{Affiliation}#=%=#Karlsruhe Institute of Technology
+
+==========

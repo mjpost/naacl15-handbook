@@ -1,0 +1,28 @@
+SubmissionNumber#=%=#69
+FinalPaperTitle#=%=#The Penn Parsed Corpus of Modern British English: First Parsing Results and Analysis
+ShortPaperTitle#=%=#The Penn Parsed Corpus of Modern British English: First Parsing Results and Analysis
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Seth Kulick
+JobTitle#==#
+Organization#==#Linguistic Data Consortium, University of Pennsylvania, 3600 Market Street, Suite 810, Philadelphia, PA 19104
+Abstract#==#This paper presents the first results on parsing the  Penn Parsed Corpus of
+ Modern British English (PPCMBE), a million-word   historical treebank with an
+annotation style similar to that  of the Penn Treebank (PTB).  We describe key
+features of the PPCMBE annotation style that differ from the PTB, and present
+some experiments with tree transformations to better compare the results to the
+PTB. First steps in parser analysis focus on problematic structures
+  created by the parser.
+Author{1}{Firstname}#=%=#Seth
+Author{1}{Lastname}#=%=#Kulick
+Author{1}{Email}#=%=#skulick@seas.upenn.edu
+Author{1}{Affiliation}#=%=#Linguistic Data Consortium, University of Pennsylvania
+Author{2}{Firstname}#=%=#Anthony
+Author{2}{Lastname}#=%=#Kroch
+Author{2}{Email}#=%=#kroch@change.ling.upenn.edu
+Author{2}{Affiliation}#=%=#Dept of Linguistics, University of Pennsylvania
+Author{3}{Firstname}#=%=#Beatrice
+Author{3}{Lastname}#=%=#Santorini
+Author{3}{Email}#=%=#beatrice57@clear.net
+Author{3}{Affiliation}#=%=#Dept. of Linguistics, University of Pennsylvania
+
+==========

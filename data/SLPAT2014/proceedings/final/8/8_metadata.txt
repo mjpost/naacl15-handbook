@@ -1,0 +1,32 @@
+SubmissionNumber#=%=#8
+FinalPaperTitle#=%=#Dialogue Strategy Learning in Healthcare: A Systematic Approach for Learning Dialogue Models from Data
+ShortPaperTitle#=%=#Dialogue Strategy Learning in Healthcare
+NumberOfPages#=%=#7
+CopyrightSigned#=%=#Hamidreza Chinaei
+JobTitle#==#
+Organization#==#Université Laval
+Pavillon Adrien-Pouliot
+1065, avenue de la Médecine
+Local 3723
+Abstract#==#We aim to build dialogue agents that optimize the dialogue strategy,
+specifically through learning the dialogue model components from dialogue data.
+In this paper, we describe our                          current research on
+automatically
+learning
+dialogue strategies in the healthcare domain. We go through our systematic
+approach of learning dialogue model components from data, specifically user
+intents and the user model,  as well as the agent reward function.  We
+demonstrate our experiments on healthcare data from which we learned the
+dialogue model components. We conclude by describing our current research for
+automatically learning dialogue features that can be used in representing
+dialogue states and learning the reward function.
+Author{1}{Firstname}#=%=#Hamidreza
+Author{1}{Lastname}#=%=#Chinaei
+Author{1}{Email}#=%=#hchinae@gmail.com
+Author{1}{Affiliation}#=%=#Laval University
+Author{2}{Firstname}#=%=#Brahim
+Author{2}{Lastname}#=%=#Chaib-draa
+Author{2}{Email}#=%=#Brahim.Chaib-Draa@ift.ulaval.ca
+Author{2}{Affiliation}#=%=#Laval University
+
+==========

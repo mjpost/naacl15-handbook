@@ -1,0 +1,25 @@
+SubmissionNumber#=%=#19
+FinalPaperTitle#=%=#Large-scale CCG Induction from the Groningen Meaning Bank
+ShortPaperTitle#=%=#Large-scale CCG Induction from the Groningen Meaning Bank
+NumberOfPages#=%=#5
+CopyrightSigned#=%=#Sebastian Beschke
+JobTitle#==#
+Organization#==#Universität Hamburg
+Fachbereich Informatik
+Vogt-Kölln-Str. 30
+22527 Hamburg
+Abstract#==#
+Author{1}{Firstname}#=%=#Sebastian
+Author{1}{Lastname}#=%=#Beschke
+Author{1}{Email}#=%=#beschke@informatik.uni-hamburg.de
+Author{1}{Affiliation}#=%=#University of Hamburg
+Author{2}{Firstname}#=%=#Yang
+Author{2}{Lastname}#=%=#Liu
+Author{2}{Email}#=%=#liuyang2011@tsinghua.edu.cn
+Author{2}{Affiliation}#=%=#Tsinghua University
+Author{3}{Firstname}#=%=#Wolfgang
+Author{3}{Lastname}#=%=#Menzel
+Author{3}{Email}#=%=#menzel@informatik.uni-hamburg.de
+Author{3}{Affiliation}#=%=#University of Hamburg
+
+==========

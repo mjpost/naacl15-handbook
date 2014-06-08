@@ -1,0 +1,33 @@
+SubmissionNumber#=%=#37
+FinalPaperTitle#=%=#Max-Margin Tensor Neural Network for Chinese Word Segmentation
+ShortPaperTitle#=%=#Max-Margin Tensor Neural Network for Chinese Word Segmentation
+NumberOfPages#=%=#11
+CopyrightSigned#=%=#Wenzhe Pei
+JobTitle#==#
+Organization#==#Key Laboratory of Computational Linguistics, Ministry of Education, School of Electronics Engineering and Computer Science, Peking University, Beijing, P.R.China
+Abstract#==#Recently, neural network models for natural language processing tasks have been
+increasingly focused on for their ability to alleviate the burden of manual
+feature engineering. In this paper, we propose a novel neural network model for
+Chinese word segmentation called Max-Margin Tensor Neural Network (MMTNN). By
+exploiting tag embedding and tensor-based transformation, MMTNN has the ability
+to model complicated interactions between tags and context characters.
+Furthermore, a new tensor factorization approach is proposed to speed up the
+model and avoid overfitting. Experiments on the benchmark dataset show that our
+model achieves better performances than previous neural network models and that
+our model can achieve a competitive performance with minimal feature
+engineering. Despite Chinese word segmentation being a specific case, MMTNN can
+be easily generalized and applied to other sequence labeling tasks.
+Author{1}{Firstname}#=%=#Wenzhe
+Author{1}{Lastname}#=%=#Pei
+Author{1}{Email}#=%=#williampei1988@126.com
+Author{1}{Affiliation}#=%=#Institute of Computational Linguistic, Peking University
+Author{2}{Firstname}#=%=#Tao
+Author{2}{Lastname}#=%=#Ge
+Author{2}{Email}#=%=#getao@pku.edu.cn
+Author{2}{Affiliation}#=%=#Key Laboratory of Computational Linguistics, Peking University
+Author{3}{Firstname}#=%=#Baobao
+Author{3}{Lastname}#=%=#Chang
+Author{3}{Email}#=%=#chbb@pku.edu.cn
+Author{3}{Affiliation}#=%=#
+
+==========

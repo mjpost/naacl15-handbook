@@ -1,0 +1,30 @@
+SubmissionNumber#=%=#7
+FinalPaperTitle#=%=#From image descriptions to visual denotations: New similarity metrics for semantic inference over event descriptions
+ShortPaperTitle#=%=#
+NumberOfPages#=%=#
+CopyrightSigned#=%=#
+JobTitle#==#
+Organization#==#
+Abstract#==#Stress has long been established as a major cue in word segmentation 
+for English infants. We show that enabling a current state-of-the-artBayesian
+word segmentation model to take advantage of stress cuesnoticeably improves its
+performance. We find that the improvementsrange from 10 to 4%, depending on
+both the use of phonotactic cuesand, to a lesser extent, the amount of evidence
+available to the learner.We also find that in particular early on, stress cues
+are much moreuseful for our model than phonotactic cues by themselves,
+consistent with the finding that children do seem to use stress cues before
+they use phonotactic cues. Finally, we study how the model's knowledge about
+stress patterns evolves over time. We not only find that our model correctly
+acquires the most frequent patterns relatively quickly but also that the Unique
+Stress Constraint that is at the heart of a previously proposed model does not
+need to be built in but can be acquired jointly with word segmentation.
+Author{1}{Firstname}#=%=#Benjamin
+Author{1}{Lastname}#=%=#Börschinger
+Author{1}{Email}#=%=#benjamin.borschinger@mq.edu.au
+Author{1}{Affiliation}#=%=#epartment of Computing, Macquarie University, Sydney, Australia;Department of Computational Linguistics, Heidelberg University, Heidelberg, Germany
+Author{2}{Firstname}#=%=#Mark
+Author{2}{Lastname}#=%=#Johnson
+Author{2}{Email}#=%=#mark.johnsonr@mq.edu.au
+Author{2}{Affiliation}#=%=#epartment of Computing, Macquarie University, Sydney, Australia;Santa Fe Institute, Santa Fe, US
+
+==========

@@ -1,0 +1,36 @@
+SubmissionNumber#=%=#69
+FinalPaperTitle#=%=#Lexicon Infused Phrase Embeddings for Named Entity Resolution
+ShortPaperTitle#=%=#Lexicon Infused Phrase Embeddings for Named Entity Resolution
+NumberOfPages#=%=#9
+CopyrightSigned#=%=#Alexandre Tachard Passos
+JobTitle#==#
+Organization#==#School of Computer Science
+UMass Amherst
+Amherst, MA
+Abstract#==#Most state-of-the-art approaches for named-entity recognition (NER)
+  use semi supervised information in the form of word clusters and
+  lexicons. Recently neural network-based language models have been
+  explored, as they as a byproduct generate highly informative vector
+  representations for words, known as word embeddings. In this paper
+  we present two contributions: a new form of learning word embeddings
+  that can leverage information from relevant lexicons to improve the
+  representations, and the first system to use neural word embeddings
+  to achieve state-of-the-art results on named-entity recognition in
+  both CoNLL and Ontonotes NER. Our system achieves an F1 score of
+  90.90 on the test set for CoNLL 2003---significantly better than any
+  previous system trained on public data, and matching a system
+  employing massive private industrial query-log data.
+Author{1}{Firstname}#=%=#Alexandre
+Author{1}{Lastname}#=%=#Passos
+Author{1}{Email}#=%=#alexandre.tp@gmail.com
+Author{1}{Affiliation}#=%=#UMass
+Author{2}{Firstname}#=%=#Vineet
+Author{2}{Lastname}#=%=#Kumar
+Author{2}{Email}#=%=#vineet@cs.umass.edu
+Author{2}{Affiliation}#=%=#UMass
+Author{3}{Firstname}#=%=#Andrew
+Author{3}{Lastname}#=%=#McCallum
+Author{3}{Email}#=%=#mccallum@cs.umass.edu
+Author{3}{Affiliation}#=%=#UMass Amherst
+
+==========

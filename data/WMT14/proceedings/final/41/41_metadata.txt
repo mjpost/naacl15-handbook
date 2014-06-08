@@ -1,0 +1,38 @@
+SubmissionNumber#=%=#41
+FinalPaperTitle#=%=#Efficient Elicitation of Annotations for Human Evaluation of Machine Translation
+ShortPaperTitle#=%=#Efficient Elicitation of Annotations for Human Evaluation of Machine Translation
+NumberOfPages#=%=#11
+CopyrightSigned#=%=#Keisuke Sakaguchi
+JobTitle#==#
+Organization#==#Keisuke Sakaguchi
+Center for Language and Speech Processing, Johns Hopkins University
+Hackerman Hall 226, 3400 North Charles Street
+Abstract#==#A main output of the annual Workshop on Statistical Machine Translation (WMT)
+is a ranking of the systems that participated in its shared translation tasks,
+produced by aggregating pairwise sentence-level comparisons collected from
+human judges. Over the past few years, there have been a number of tweaks to
+the aggregation formula in attempts to address issues arising from the inherent
+ambiguity and subjectivity of the task, as well as weaknesses in the proposed
+models and the manner of model selection.
+
+We continue this line of work by adapting the TrueSkill algorithm — an online
+approach for modeling the relative skills of players in ongoing competitions,
+such as Microsoft’s Xbox Live — to the human evaluation of machine
+translation output. Our experimental results show that TrueSkill outperforms
+other recently proposed models on accuracy, and also can significantly reduce
+the number of pairwise annotations that need to be collected by sampling
+non-uniformly from the space of system competitions.
+Author{1}{Firstname}#=%=#Keisuke
+Author{1}{Lastname}#=%=#Sakaguchi
+Author{1}{Email}#=%=#keisuke@cs.jhu.edu
+Author{1}{Affiliation}#=%=#Johns Hopkins University
+Author{2}{Firstname}#=%=#Matt
+Author{2}{Lastname}#=%=#Post
+Author{2}{Email}#=%=#post@cs.jhu.edu
+Author{2}{Affiliation}#=%=#Johns Hopkins University
+Author{3}{Firstname}#=%=#Benjamin
+Author{3}{Lastname}#=%=#Van Durme
+Author{3}{Email}#=%=#vandurme@cs.jhu.edu
+Author{3}{Affiliation}#=%=#JHU
+
+==========

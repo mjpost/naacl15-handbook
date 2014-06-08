@@ -1,0 +1,33 @@
+SubmissionNumber#=%=#118
+FinalPaperTitle#=%=#Bootstrapping into Filler-Gap: An Acquisition Story
+ShortPaperTitle#=%=#Bootstrapping into Filler-Gap: An Acquisition Story
+NumberOfPages#=%=#10
+CopyrightSigned#=%=#Marten van Schijndel
+JobTitle#==#
+Organization#==#The Ohio State University
+222 Oxley Hall, 1712 Neil Avenue
+Columbus OH, 43210-1298
+Abstract#==#Analyses of filler-gap dependencies usually involve complex syntactic rules or
+heuristics; however recent results suggest that filler-gap comprehension begins
+earlier than seemingly simpler constructions such as ditransitives or passives.
+Therefore, this work models filler-gap acquisition as a byproduct of learning
+word orderings (e.g. SVO vs OSV), which must be done at a very young age anyway
+in order to extract meaning from language. Specifically, this model, trained on
+part-of-speech tags, represents the preferred locations of semantic roles
+relative to a verb as Gaussian mixtures over real numbers.
+
+This approach learns role assignment in filler-gap constructions in a manner
+consistent with current developmental findings and is extremely robust to
+initialization variance. Additionally, this model is shown to be able to
+account for a characteristic error made by learners during this period ('A and
+B gorped' interpreted as 'A gorped B').
+Author{1}{Firstname}#=%=#Marten
+Author{1}{Lastname}#=%=#van Schijndel
+Author{1}{Email}#=%=#vanschm@ling.osu.edu
+Author{1}{Affiliation}#=%=#The Ohio State University
+Author{2}{Firstname}#=%=#Micha
+Author{2}{Lastname}#=%=#Elsner
+Author{2}{Email}#=%=#melsner@ling.osu.edu
+Author{2}{Affiliation}#=%=#The Ohio State University
+
+==========

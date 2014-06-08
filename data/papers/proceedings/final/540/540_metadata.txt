@@ -1,0 +1,33 @@
+SubmissionNumber#=%=#540
+FinalPaperTitle#=%=#Context-dependent Semantic Parsing for Time Expressions
+ShortPaperTitle#=%=#Context-dependent Semantic Parsing for Time Expressions
+NumberOfPages#=%=#11
+CopyrightSigned#=%=#Kenton Lee
+JobTitle#==#
+Organization#==#University of Washington 
+Seattle, WA 98195
+Abstract#==#We present an approach for learning context-dependent semantic parsers to
+identify and interpret time expressions. We use a Combinatory Categorial
+Grammar to construct compositional meaning representations, while considering
+contextual cues, such as the document creation time and the tense of the
+governing verb, to compute the final time values. Experiments on benchmark
+datasets show that our approach outperforms previous state-of-the-art systems,
+with error reductions of 13% to 21% in end-to-end performance.
+Author{1}{Firstname}#=%=#Kenton
+Author{1}{Lastname}#=%=#Lee
+Author{1}{Email}#=%=#kentonl@cs.washington.edu
+Author{1}{Affiliation}#=%=#University of Washington
+Author{2}{Firstname}#=%=#Yoav
+Author{2}{Lastname}#=%=#Artzi
+Author{2}{Email}#=%=#yoav@cs.washington.edu
+Author{2}{Affiliation}#=%=#University of Washington
+Author{3}{Firstname}#=%=#Jesse
+Author{3}{Lastname}#=%=#Dodge
+Author{3}{Email}#=%=#jessed@cs.cmu.edu
+Author{3}{Affiliation}#=%=#Carnegie Mellon University
+Author{4}{Firstname}#=%=#Luke
+Author{4}{Lastname}#=%=#Zettlemoyer
+Author{4}{Email}#=%=#lsz@cs.washington.edu
+Author{4}{Affiliation}#=%=#University of Washington
+
+==========

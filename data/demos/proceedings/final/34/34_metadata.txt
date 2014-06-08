@@ -1,0 +1,44 @@
+SubmissionNumber#=%=#34
+FinalPaperTitle#=%=#WELT: Using Graphics Generation in Linguistic Fieldwork
+ShortPaperTitle#=%=#WELT: Using Graphics Generation in Linguistic Fieldwork
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Morgan Ulinski
+JobTitle#==#
+Organization#==#Department of Computer Science
+Columbia University
+450 Computer Science Building
+1214 Amsterdam Avenue, Mailcode: 0401
+New York, New York 10027-7003
+Abstract#==#We describe the WordsEye Linguistics tool (WELT), a novel tool for the
+documentation and preservation of endangered languages. WELT is based on
+WordsEye (Coyne and Sproat, 2001), a text-to-scene tool that automatically
+generates 3D scenes from written input. WELT has two modes of operation. In the
+first mode, English input automatically generates a picture which can be used
+to elicit a description in the target language. In the second mode, the
+linguist formally documents the grammar of an endangered language, thereby
+creating a system that takes input in the endangered language and generates a
+picture according to the grammar; the picture can then be used to verify the
+grammar with native speakers. We will demonstrate WELT’s use on scenarios
+involving Arrernte and Nahuatl.
+Author{1}{Firstname}#=%=#Morgan
+Author{1}{Lastname}#=%=#Ulinski
+Author{1}{Email}#=%=#mulinski@cs.columbia.edu
+Author{1}{Affiliation}#=%=#Columbia University
+Author{2}{Firstname}#=%=#Anusha
+Author{2}{Lastname}#=%=#Balakrishnan
+Author{2}{Email}#=%=#ab3596@columbia.edu
+Author{2}{Affiliation}#=%=#Columbia University
+Author{3}{Firstname}#=%=#Bob
+Author{3}{Lastname}#=%=#Coyne
+Author{3}{Email}#=%=#coyne@cs.columbia.edu
+Author{3}{Affiliation}#=%=#Columbia University
+Author{4}{Firstname}#=%=#Julia
+Author{4}{Lastname}#=%=#Hirschberg
+Author{4}{Email}#=%=#julia@cs.columbia.edu
+Author{4}{Affiliation}#=%=#Columbia University
+Author{5}{Firstname}#=%=#Owen
+Author{5}{Lastname}#=%=#Rambow
+Author{5}{Email}#=%=#rambow@ccls.columbia.edu
+Author{5}{Affiliation}#=%=#Columbia University
+
+==========

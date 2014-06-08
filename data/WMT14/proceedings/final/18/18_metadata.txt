@@ -1,0 +1,44 @@
+SubmissionNumber#=%=#18
+FinalPaperTitle#=%=#Dependency-based Automatic Enumeration of Semantically Equivalent Word Orders for Evaluating Japanese Translations
+ShortPaperTitle#=%=#Dependency-based Automatic Enumeration of Semantically Equivalent Word Orders for Evaluating Japanese Translations
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Hideki Isozaki
+JobTitle#==#
+Organization#==#Okayama Prefectural University
+111 Kuboki, Soja-shi, Okayama-ken, 719-1197, Japan
+Abstract#==#Scrambling is acceptable reordering of
+verb arguments in languages such as
+Japanese and German. In automatic evaluation
+of translation quality, BLEU is
+the de facto standard method, but BLEU
+has only very weak correlation with human
+judgements in case of Japanese-to-
+English/English-to-Japanese translations.
+Therefore, alternative methods, IMPACT
+and RIBES, were proposed and they have
+shown much stronger correlation than
+BLEU. Now, RIBES is popular in recent
+papers on JE/EJ translations. RIBES compares
+word order of MT output with manually
+translated reference sentences and
+does not regard scrambling at all. In this
+paper, we present a method to enumerate
+scrambled sentences from dependency
+trees of reference sentences. Our experiments
+based on NTCIR Patent MT data show that the method improves
+sentence-level correlation between RIBES and
+human-judged adequacy.
+Author{1}{Firstname}#=%=#Hideki
+Author{1}{Lastname}#=%=#Isozaki
+Author{1}{Email}#=%=#isozaki@cse.oka-pu.ac.jp
+Author{1}{Affiliation}#=%=#Okayama Prefectural University
+Author{2}{Firstname}#=%=#Natsume
+Author{2}{Lastname}#=%=#Kouchi
+Author{2}{Email}#=%=#cd25017y@cse.oka-pu.ac.jp
+Author{2}{Affiliation}#=%=#Okayama Prefectural University
+Author{3}{Firstname}#=%=#Tsutomu
+Author{3}{Lastname}#=%=#Hirao
+Author{3}{Email}#=%=#hirao.tsutomu@lab.ntt.co.jp
+Author{3}{Affiliation}#=%=#NTT Communication Science Labs.
+
+==========

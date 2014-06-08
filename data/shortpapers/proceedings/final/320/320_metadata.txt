@@ -1,0 +1,47 @@
+SubmissionNumber#=%=#320
+FinalPaperTitle#=%=#Predicting Grammaticality on an Ordinal Scale
+ShortPaperTitle#=%=#Predicting Grammaticality on an Ordinal Scale
+NumberOfPages#=%=#7
+CopyrightSigned#=%=#Michael Heilman
+JobTitle#==#
+Organization#==#Educational Testing Service
+660 Rosedale Rd
+Princeton, NJ 08541
+Abstract#==#Automated methods for identifying whether sentences are grammatical have
+various potential applications (e.g., machine translation, automated essay
+scoring, computer-assisted language learning).                                 In
+this
+work, we
+construct a
+statistical model of grammaticality using various linguistic features (e.g.,
+misspelling counts, parser outputs, n-gram language model scores). We also
+present a new publicly available dataset of learner sentences judged for
+grammaticality on an ordinal scale. In evaluations, we compare our system to
+the one from Post (2011) and find that our approach yields state-of-the-art
+performance.
+Author{1}{Firstname}#=%=#Michael
+Author{1}{Lastname}#=%=#Heilman
+Author{1}{Email}#=%=#mheilman@ets.org
+Author{1}{Affiliation}#=%=#Educational Testing Service
+Author{2}{Firstname}#=%=#Aoife
+Author{2}{Lastname}#=%=#Cahill
+Author{2}{Email}#=%=#acahill@ets.org
+Author{2}{Affiliation}#=%=#Educational Testing Service
+Author{3}{Firstname}#=%=#Nitin
+Author{3}{Lastname}#=%=#Madnani
+Author{3}{Email}#=%=#nmadnani@ets.org
+Author{3}{Affiliation}#=%=#Educational Testing Service
+Author{4}{Firstname}#=%=#Melissa
+Author{4}{Lastname}#=%=#Lopez
+Author{4}{Email}#=%=#mlopez002@ets.org
+Author{4}{Affiliation}#=%=#Educational Testing Service
+Author{5}{Firstname}#=%=#Matthew
+Author{5}{Lastname}#=%=#Mulholland
+Author{5}{Email}#=%=#mmulholland@ets.org
+Author{5}{Affiliation}#=%=#Educational Testing Service
+Author{6}{Firstname}#=%=#Joel
+Author{6}{Lastname}#=%=#Tetreault
+Author{6}{Email}#=%=#tetreaul@gmail.com
+Author{6}{Affiliation}#=%=#Nuance Communications
+
+==========

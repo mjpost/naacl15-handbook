@@ -1,0 +1,34 @@
+SubmissionNumber#=%=#49
+FinalPaperTitle#=%=#Dynamic Topic Adaptation for SMT using Distributional Profiles
+ShortPaperTitle#=%=#Dynamic Topic Adaptation for SMT using Distributional Profiles
+NumberOfPages#=%=#12
+CopyrightSigned#=%=#Eva Hasler
+JobTitle#==#
+Organization#==#Informatics Forum
+10 Crichton Street
+EH8 9AB Edinburgh
+Abstract#==#Despite its potential to improve lexical selection, most state-of-the-art
+machine translation systems take only minimal contextual information into
+account. We capture context with a topic model over distributional proﬁles
+built from the context words of each translation unit. Topic distributions are
+inferred for each translation unit and used to adapt the translation model
+dynamically to a given test context by measuring their similarity. We show that
+combining information from both local and global test contexts helps to improve
+lexical selection and outperforms a baseline system by up to 1.15 BLEU. We test
+our topic-adapted model on a diverse data set containing documents from three
+different domains and achieve competitive performance in comparison with two
+supervised domain-adapted systems.
+Author{1}{Firstname}#=%=#Eva
+Author{1}{Lastname}#=%=#Hasler
+Author{1}{Email}#=%=#ehasler@ed.ac.uk
+Author{1}{Affiliation}#=%=#University of Edinburgh
+Author{2}{Firstname}#=%=#Barry
+Author{2}{Lastname}#=%=#Haddow
+Author{2}{Email}#=%=#bhaddow@inf.ed.ac.uk
+Author{2}{Affiliation}#=%=#University of Edinburgh
+Author{3}{Firstname}#=%=#Philipp
+Author{3}{Lastname}#=%=#Koehn
+Author{3}{Email}#=%=#pkoehn@inf.ed.ac.uk
+Author{3}{Affiliation}#=%=#University of Edinburgh
+
+==========

@@ -1,0 +1,36 @@
+SubmissionNumber#=%=#18
+FinalPaperTitle#=%=#A cognitive study of subjectivity extraction in sentiment annotation
+ShortPaperTitle#=%=#A cognitive study of subjectivity extraction in sentiment annotation
+NumberOfPages#=%=#5
+CopyrightSigned#=%=#Aditya Joshi
+JobTitle#==#
+Organization#==#IITB-Monash Research Academy, IIT Bombay, Mumbai, PIN-400076, India.
+Abstract#==#Existing sentiment analysers are weak AI systems: they try to capture the
+functionality of human sentiment detection faculty, without worrying about how
+such faculty is realized in the hardware of the human. These analysers are
+agnostic of the actual cognitive processes involved. This, however, does not
+deliver when applications demand order of magnitude facelift in accuracy, as
+well as insight into characteristics of sentiment detection process. In this
+paper, we present a cognitive study of sentiment detection from the perspective
+of strong AI. We study the sentiment detection process of a set of human
+”sentiment readers”. Using eye-tracking, we show that on the way to
+sentiment detection, humans first extract subjectivity. They focus attention on
+a subset of sentences before arriving at the overall sentiment. This they do
+either through ”anticipation” where sentences are skipped during the first
+pass of reading, or through ”homing” where a subset of the sentences are
+read over multiple passes, or through both. ”Homing” behaviour is also
+observed at the sub-sentence level in complex sentiment phenomena like sarcasm.
+Author{1}{Firstname}#=%=#Abhijit
+Author{1}{Lastname}#=%=#Mishra
+Author{1}{Email}#=%=#abhijitmishra.530@gmail.com
+Author{1}{Affiliation}#=%=#Indian Institute of Technology Bombay
+Author{2}{Firstname}#=%=#Aditya
+Author{2}{Lastname}#=%=#Joshi
+Author{2}{Email}#=%=#adityaj@cse.iitb.ac.in
+Author{2}{Affiliation}#=%=#IITB-Monash Research Academy
+Author{3}{Firstname}#=%=#Pushpak
+Author{3}{Lastname}#=%=#Bhattacharyya
+Author{3}{Email}#=%=#pushpakbh@gmail.com
+Author{3}{Affiliation}#=%=#CSE Department, IIT Bombay
+
+==========

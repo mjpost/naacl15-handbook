@@ -1,0 +1,42 @@
+SubmissionNumber#=%=#307
+FinalPaperTitle#=%=#Low-Rank Tensors for Scoring Dependency Structures
+ShortPaperTitle#=%=#Low-Rank Tensors for Scoring Dependency Structures
+NumberOfPages#=%=#11
+CopyrightSigned#=%=#Tao Lei
+JobTitle#==#
+Organization#==#CSAIL, MIT, 32 Vassar St.
+Cambridge, MA 02139
+Abstract#==#Accurate scoring of syntactic structures such as head-modifier arcs in
+dependency parsing typically requires rich, high-dimensional feature
+representations. A small subset of such features is often selected manually.
+This is problematic when features lack clear linguistic meaning as in
+embeddings or when the information is blended across features. In this paper,
+we use tensors to map high-dimensional feature vectors into low dimensional
+representations. We explicitly maintain the parameters as a low-rank tensor to
+obtain low dimensional representations of words in their syntactic roles, and
+to leverage modularity in the tensor for easy training with online algorithms.
+Our parser consistently outperforms the Turbo and MST parsers across 14
+different languages. We also obtain the best published UAS results on 5
+languages.
+Author{1}{Firstname}#=%=#Tao
+Author{1}{Lastname}#=%=#Lei
+Author{1}{Email}#=%=#taolei@csail.mit.edu
+Author{1}{Affiliation}#=%=#MIT CSAIL
+Author{2}{Firstname}#=%=#Yu
+Author{2}{Lastname}#=%=#Xin
+Author{2}{Email}#=%=#yuxin@csail.mit.edu
+Author{2}{Affiliation}#=%=#MIT CSAIL
+Author{3}{Firstname}#=%=#Yuan
+Author{3}{Lastname}#=%=#Zhang
+Author{3}{Email}#=%=#yuanzh@csail.mit.edu
+Author{3}{Affiliation}#=%=#Massachusetts Institute of Technology
+Author{4}{Firstname}#=%=#Regina
+Author{4}{Lastname}#=%=#Barzilay
+Author{4}{Email}#=%=#regina@csail.mit.edu
+Author{4}{Affiliation}#=%=#MIT
+Author{5}{Firstname}#=%=#Tommi
+Author{5}{Lastname}#=%=#Jaakkola
+Author{5}{Email}#=%=#tommi@csail.mit.edu
+Author{5}{Affiliation}#=%=#MIT CSAIL
+
+==========

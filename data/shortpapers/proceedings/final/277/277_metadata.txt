@@ -1,0 +1,34 @@
+SubmissionNumber#=%=#277
+FinalPaperTitle#=%=#Constructing a Turkish-English Parallel TreeBank
+ShortPaperTitle#=%=#Constructing a Turkish-English Parallel TreeBank
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#OLCAY TANER YILDIZ
+JobTitle#==#
+Organization#==#Department of Computer Engineering,
+Isik University,
+Istanbul, Turkey
+Abstract#==#In this paper, we report our preliminary efforts in building an English-Turkish
+parallel treebank corpus for statistical machine translation. In the corpus, we
+manually generated parallel trees for about 5,000 sentences from Penn Treebank.
+English sentences in our set have a maximum of 15 tokens, including
+punctuation. We constrained the translated trees to the reordering of the
+children and the replacement of the leaf nodes with appropriate glosses. We
+also report the tools that we built and used in our tree translation task.
+Author{1}{Firstname}#=%=#Olcay Taner
+Author{1}{Lastname}#=%=#Yıldız
+Author{1}{Email}#=%=#olcaytaner@isikun.edu.tr
+Author{1}{Affiliation}#=%=#Department of Computer Engineering, Isik University
+Author{2}{Firstname}#=%=#Ercan
+Author{2}{Lastname}#=%=#Solak
+Author{2}{Email}#=%=#ercan@isikun.edu.tr
+Author{2}{Affiliation}#=%=#Department of Computer Engineering, Isik University
+Author{3}{Firstname}#=%=#Onur
+Author{3}{Lastname}#=%=#Görgün
+Author{3}{Email}#=%=#onur.gorgun@alcatel-lucent.com
+Author{3}{Affiliation}#=%=#Alcatel Lucent Teletas Telekomunikasyon A.S. Istanbul, Turkey
+Author{4}{Firstname}#=%=#Razieh
+Author{4}{Lastname}#=%=#Ehsani
+Author{4}{Email}#=%=#razieh.ehsani@isikun.edu.tr
+Author{4}{Affiliation}#=%=#Department of Computer Engineering, Isik University
+
+==========

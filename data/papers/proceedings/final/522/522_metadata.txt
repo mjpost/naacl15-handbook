@@ -1,0 +1,44 @@
+SubmissionNumber#=%=#522
+FinalPaperTitle#=%=#Bilingually-constrained Phrase Embeddings for Machine Translation
+ShortPaperTitle#=%=#Bilingually-constrained Phrase Embeddings for Machine Translation
+NumberOfPages#=%=#11
+CopyrightSigned#=%=#Jiajun Zhang
+JobTitle#==#
+Organization#==#Institute of Automation, Chinese Academy of Sciences
+No. 95, Zhongguancun East Road, Beijing, China
+Abstract#==#We propose Bilingually-constrained Recursive Auto-encoders (BRAE) to learn
+semantic phrase embeddings (compact vector representations for phrases), which
+can distinguish the phrases with different semantic meanings.
+The BRAE is trained in a way that minimizes the semantic distance of
+translation equivalents and maximizes the semantic distance of non-translation
+pairs simultaneously.
+After training, the model learns how to embed each phrase semantically in two
+languages and also learns how to transform semantic embedding space in one
+language to the other. 
+We evaluate our proposed method on two end-to-end SMT tasks (phrase table
+pruning and decoding with phrasal semantic similarities) which need to measure
+semantic similarity between a source phrase and its translation candidates.
+Extensive experiments show that the BRAE is remarkably effective in these two
+tasks.
+Author{1}{Firstname}#=%=#Jiajun
+Author{1}{Lastname}#=%=#Zhang
+Author{1}{Email}#=%=#jjzhang@nlpr.ia.ac.cn
+Author{1}{Affiliation}#=%=#Institute of Automation Chinese Academy of Sciences
+Author{2}{Firstname}#=%=#Shujie
+Author{2}{Lastname}#=%=#Liu
+Author{2}{Email}#=%=#shujliu@microsoft.com
+Author{2}{Affiliation}#=%=#
+Author{3}{Firstname}#=%=#Mu
+Author{3}{Lastname}#=%=#Li
+Author{3}{Email}#=%=#muli@microsoft.com
+Author{3}{Affiliation}#=%=#
+Author{4}{Firstname}#=%=#Ming
+Author{4}{Lastname}#=%=#Zhou
+Author{4}{Email}#=%=#mingzhou@microsoft.com
+Author{4}{Affiliation}#=%=#microsoft research asia
+Author{5}{Firstname}#=%=#Chengqing
+Author{5}{Lastname}#=%=#Zong
+Author{5}{Email}#=%=#cqzong@nlpr.ia.ac.cn
+Author{5}{Affiliation}#=%=#Institute of Automation, Chinese Academy of Sciences
+
+==========

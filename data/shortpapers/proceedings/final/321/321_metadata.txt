@@ -1,0 +1,34 @@
+SubmissionNumber#=%=#321
+FinalPaperTitle#=%=#Generalized Character-Level Spelling Error Correction
+ShortPaperTitle#=%=#Generalized Character-Level Spelling Error Correction
+NumberOfPages#=%=#7
+CopyrightSigned#=%=#Nizar Habash
+JobTitle#==#
+Organization#==#Columbia University
+475 Riverside Drive Suite 850, New YorK, NY 10115
+Abstract#==#We present a generalized discriminative model for spelling error correction
+which targets character-level transformations. While operating at the character
+level, the model makes use of word-level and contextual information. In
+contrast to previous work, the proposed approach learns to correct a variety of
+error types without guidance of manually-selected constraints or
+language-specific features. We apply the model to correct errors in Egyptian
+Arabic dialect text, achieving 65\% reduction in word error rate over the input
+baseline, and improving over the earlier state-of-the-art system.
+Author{1}{Firstname}#=%=#Noura
+Author{1}{Lastname}#=%=#Farra
+Author{1}{Email}#=%=#noura@cs.columbia.edu
+Author{1}{Affiliation}#=%=#Columbia University, Center for Computational Learning Systems
+Author{2}{Firstname}#=%=#Nadi
+Author{2}{Lastname}#=%=#Tomeh
+Author{2}{Email}#=%=#nadi.tomeh@gmail.com
+Author{2}{Affiliation}#=%=#Columbia University
+Author{3}{Firstname}#=%=#Alla
+Author{3}{Lastname}#=%=#Rozovskaya
+Author{3}{Email}#=%=#ar3366@columbia.edu
+Author{3}{Affiliation}#=%=#Columbia University
+Author{4}{Firstname}#=%=#Nizar
+Author{4}{Lastname}#=%=#Habash
+Author{4}{Email}#=%=#habash@ccls.columbia.edu
+Author{4}{Affiliation}#=%=#Columbia University
+
+==========

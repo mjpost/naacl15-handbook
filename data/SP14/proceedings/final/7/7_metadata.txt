@@ -1,0 +1,15 @@
+SubmissionNumber#=%=#7
+FinalPaperTitle#=%=#From Treebank Parses to Episodic Logic and Commonsense Inference
+ShortPaperTitle#=%=#From Treebank Parses to Episodic Logic and Commonsense Inference
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Lenhart Schubert
+JobTitle#==#
+Organization#==#University of Rochester,
+Rochester, NY 14627
+Abstract#==#
+Author{1}{Firstname}#=%=#Lenhart
+Author{1}{Lastname}#=%=#Schubert
+Author{1}{Email}#=%=#schubert@cs.rochester.edu
+Author{1}{Affiliation}#=%=#University of Rochester
+
+==========

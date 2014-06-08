@@ -1,0 +1,29 @@
+SubmissionNumber#=%=#449
+FinalPaperTitle#=%=#Representation Learning for Text-level Discourse Parsing
+ShortPaperTitle#=%=#Representation Learning for Text-level Discourse Parsing
+NumberOfPages#=%=#12
+CopyrightSigned#=%=#Yangfeng Ji
+JobTitle#==#
+Organization#==#Georgia Institute of Technology
+North Avenue, Atlanta, GA 30332
+Abstract#==#Text-level discourse parsing is notoriously difficult, as distinctions between
+discourse relations require subtle semantic judgments that are not easily
+captured using standard features. In this paper, we present a representation
+learning approach, in which we transform surface features into a latent space
+that facilitates RST discourse parsing. By combining the machinery of
+large-margin transition-based structured prediction with representation
+learning, our method jointly learns to parse discourse while at the same time
+learning a discourse-driven projection of surface features. The resulting
+shift-reduce discourse parser obtains substantial improvements over the
+previous state-of-the-art in predicting relations and nuclearity on the RST
+Treebank.
+Author{1}{Firstname}#=%=#Yangfeng
+Author{1}{Lastname}#=%=#Ji
+Author{1}{Email}#=%=#jiyfeng@gatech.edu
+Author{1}{Affiliation}#=%=#School of Interactive Computing, Georgia Institute of Technology
+Author{2}{Firstname}#=%=#Jacob
+Author{2}{Lastname}#=%=#Eisenstein
+Author{2}{Email}#=%=#jacobe@gmail.com
+Author{2}{Affiliation}#=%=#Georgia Institute of Technology
+
+==========

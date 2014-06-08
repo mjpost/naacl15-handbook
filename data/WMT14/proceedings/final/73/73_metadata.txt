@@ -1,0 +1,33 @@
+SubmissionNumber#=%=#73
+FinalPaperTitle#=%=#LIG System for Word Level QE task at WMT14
+ShortPaperTitle#=%=#LIG System for Word Level QE task at WMT14
+NumberOfPages#=%=#7
+CopyrightSigned#=%=#Ngoc Quang Luong
+JobTitle#==#PhD student
+Organization#==#LIG, Campus de Grenoble
+41, Rue des Mathematiques,
+UJF - BP53, F-38041 Grenoble Cedex 9, France
+Abstract#==#This paper describes our Word-level QE system for WMT 2014 shared task on
+Spanish - English pair. Compared to WMT 2013, this year’s task is different
+due to the lack of SMT setting information and additional resources. We report
+how we overcome this challenge to retain most of the important features which
+performed well last year in our system. Novel features related to availability
+of multiple systems output (new point of this year) are also proposed and
+experimented along with baseline set. The system is optimized by several ways:
+tuning the classification threshold, combining with WMT 2013 data, and refining
+using Feature Selection strategy on our development set, before dealing with
+the test set for submission.
+Author{1}{Firstname}#=%=#Ngoc Quang
+Author{1}{Lastname}#=%=#Luong
+Author{1}{Email}#=%=#quangngocluong@gmail.com
+Author{1}{Affiliation}#=%=#Joseph Fourier University, Grenoble, France
+Author{2}{Firstname}#=%=#Laurent
+Author{2}{Lastname}#=%=#Besacier
+Author{2}{Email}#=%=#laurent.besacier@imag.fr
+Author{2}{Affiliation}#=%=#Joseph Fourrier University,  Grenoble,  France
+Author{3}{Firstname}#=%=#Benjamin
+Author{3}{Lastname}#=%=#Lecouteux
+Author{3}{Email}#=%=#benjamin.lecouteux@imag.fr
+Author{3}{Affiliation}#=%=#Joseph Fourrier University, Grenoble, France
+
+==========

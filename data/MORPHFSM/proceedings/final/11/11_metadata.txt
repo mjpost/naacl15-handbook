@@ -1,0 +1,26 @@
+SubmissionNumber#=%=#11
+FinalPaperTitle#=%=#Revisiting Word Neighborhoods for Speech Recognition
+ShortPaperTitle#=%=#Revisiting Word Neighborhoods for Speech Recognition
+NumberOfPages#=%=#9
+CopyrightSigned#=%=#Preethi Jyothi
+JobTitle#==#
+Organization#==#Beckman Institute, 405 N Mathews Ave, Urbana, IL 61801
+Abstract#==#Word neighborhoods have been suggested but not thoroughly explored as an
+explanatory variable for errors in automatic speech recognition (ASR).             
+We
+revisit the definition of word neighborhoods, propose new measures using a
+fine-grained articulatory representation of word pronunciations, and consider
+new neighbor weighting functions. We analyze the significance of our measures
+as predictors of errors in an isolated-word ASR system and a continuous-word
+ASR system. We find that our measures are significantly better predictors of
+ASR errors than previously used neighborhood density measures.
+Author{1}{Firstname}#=%=#Preethi
+Author{1}{Lastname}#=%=#Jyothi
+Author{1}{Email}#=%=#pjyothi@illinois.edu
+Author{1}{Affiliation}#=%=#Beckman Institute, UIUC
+Author{2}{Firstname}#=%=#Karen
+Author{2}{Lastname}#=%=#Livescu
+Author{2}{Email}#=%=#klivescu@ttic.edu
+Author{2}{Affiliation}#=%=#TTI-Chicago
+
+==========

@@ -1,0 +1,29 @@
+SubmissionNumber#=%=#8
+FinalPaperTitle#=%=#Extracting Higher Order Relations From Biomedical Text
+ShortPaperTitle#=%=#Extracting Higher Order Relations From Biomedical Text
+NumberOfPages#=%=#2
+CopyrightSigned#=%=#Robert Mercer
+JobTitle#==#
+Organization#==#
+Abstract#==#Argumentation in a scientific article is composed of unexpressed and explicit
+statements of old and new knowledge combined into a logically coherent textual
+argument. Discourse relations, linguistic coherence relations that connect
+discourse segments, help to communicate an argument's logical steps. A
+biomedical relation exhibits a relationship between biomedical entities. In
+this paper, we are primarily concerned with the extraction of  connections
+between biomedical relations, a connection that we call a higher order
+relation. We combine two methods, namely biomedical relation extraction and
+discourse relation parsing, to extract such higher order relations from
+biomedical research articles. Finding and extracting these relations can assist
+in automatically understanding the scientific arguments expressed by the author
+in the text.
+Author{1}{Firstname}#=%=#Syeed
+Author{1}{Lastname}#=%=#Ibn Faiz
+Author{1}{Email}#=%=#syeedibnfaiz@gmail.com
+Author{1}{Affiliation}#=%=#The University of Western Ontario
+Author{2}{Firstname}#=%=#Robert
+Author{2}{Lastname}#=%=#Mercer
+Author{2}{Email}#=%=#mercer@csd.uwo.ca
+Author{2}{Affiliation}#=%=#The University of Western Ontario
+
+==========

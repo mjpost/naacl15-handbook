@@ -1,0 +1,35 @@
+SubmissionNumber#=%=#18
+FinalPaperTitle#=%=#Learning Verb Classes in an Incremental Model
+ShortPaperTitle#=%=#Learning Verb Classes in an Incremental Model
+NumberOfPages#=%=#9
+CopyrightSigned#=%=#Libby Barak
+JobTitle#==#
+Organization#==#Dept. of Computer Science, University of Toronto
+10 King's College Road
+Toronto, ON M5S 3G4
+Abstract#==#The ability of children to generalize over the linguistic input they
+  receive is key to acquiring productive knowledge of verbs.  Such
+  generalizations help children extend their learned knowledge of
+  constructions to a novel verb, and use it appropriately in syntactic
+  patterns previously unobserved for that verb---a key factor in
+  language productivity.  Computational models can help shed light on
+  the gradual development of more abstract knowledge during verb
+  acquisition. We present an incremental Bayesian model that simultaneously and
+  incrementally learns argument structure constructions and verb
+  classes given naturalistic language input.  We show how the
+  distributional properties in the input language influence the
+  formation of generalizations over the constructions and classes.
+Author{1}{Firstname}#=%=#Libby
+Author{1}{Lastname}#=%=#Barak
+Author{1}{Email}#=%=#libbyb@cs.toronto.edu
+Author{1}{Affiliation}#=%=#University of Toronto
+Author{2}{Firstname}#=%=#Afsaneh
+Author{2}{Lastname}#=%=#Fazly
+Author{2}{Email}#=%=#afsaneh@cs.toronto.edu
+Author{2}{Affiliation}#=%=#University of Toronto
+Author{3}{Firstname}#=%=#Suzanne
+Author{3}{Lastname}#=%=#Stevenson
+Author{3}{Email}#=%=#suzanne@cs.toronto.edu
+Author{3}{Affiliation}#=%=#University of Toronto
+
+==========

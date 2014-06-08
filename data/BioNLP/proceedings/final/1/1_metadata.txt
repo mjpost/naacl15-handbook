@@ -1,0 +1,44 @@
+SubmissionNumber#=%=#1
+FinalPaperTitle#=%=#Using statistical parsing to detect agrammatic aphasia
+ShortPaperTitle#=%=#Using statistical parsing to detect agrammatic aphasia
+NumberOfPages#=%=#9
+CopyrightSigned#=%=#Kathleen Fraser
+JobTitle#==#
+Organization#==#University of Toronto
+Department of Computer Science
+10 King's College Road, Rm. 3302
+Toronto, Ontario, Canada
+M5S 3G4
+Abstract#==#Agrammatic aphasia is a serious language impairment which can occur after a
+stroke or traumatic brain injury. We present an automatic method for analyzing
+aphasic speech using surface level parse features and context-free grammar
+production rules. Examining these features individually, we show that we can
+uncover many of the same characteristics of agrammatic language that have been
+reported in studies using manual analysis. When taken together, these parse
+features can be used to train a classifier to accurately predict whether or not
+an individual has aphasia. Furthermore, we find that the parse features can
+lead to higher classification accuracies than traditional measures of syntactic
+complexity. Finally, we find that a minimal amount of pre-processing can lead
+to better results than using either the raw data or highly processed data.
+Author{1}{Firstname}#=%=#Kathleen C.
+Author{1}{Lastname}#=%=#Fraser
+Author{1}{Email}#=%=#kfraser@cs.toronto.edu
+Author{1}{Affiliation}#=%=#University of Toronto
+Author{2}{Firstname}#=%=#Graeme
+Author{2}{Lastname}#=%=#Hirst
+Author{2}{Email}#=%=#gh@cs.toronto.edu
+Author{2}{Affiliation}#=%=#University of Toronto
+Author{3}{Firstname}#=%=#Jed A.
+Author{3}{Lastname}#=%=#Meltzer
+Author{3}{Email}#=%=#jmeltzer@research.baycrest.org
+Author{3}{Affiliation}#=%=#Rotman Research Institute, Baycrest Centre
+Author{4}{Firstname}#=%=#Jennifer E.
+Author{4}{Lastname}#=%=#Mack
+Author{4}{Email}#=%=#Jennifer-mack-0@northwestern.edu
+Author{4}{Affiliation}#=%=#Northwestern University
+Author{5}{Firstname}#=%=#Cynthia K.
+Author{5}{Lastname}#=%=#Thompson
+Author{5}{Email}#=%=#ckthom@northwestern.edu
+Author{5}{Affiliation}#=%=#Northwestern University
+
+==========

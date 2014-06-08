@@ -1,0 +1,21 @@
+SubmissionNumber#=%=#1
+FinalPaperTitle#=%=#Augmenting FrameNet Via PPDB
+ShortPaperTitle#=%=#Augmenting FrameNet Via PPDB
+NumberOfPages#=%=#5
+CopyrightSigned#=%=#Pushpendre Rastogi
+JobTitle#==#
+Organization#==#Johns Hopkins University, Baltimore
+Abstract#==#FrameNet is a lexico-semantic dataset that embodies the theory of frame
+semantics. Like other semantic databases, FrameNet is incomplete. We augment it
+via the paraphrase database, PPDB, and gain a three-fold increase in coverage
+at 65% precision.
+Author{1}{Firstname}#=%=#Pushpendre
+Author{1}{Lastname}#=%=#Rastogi
+Author{1}{Email}#=%=#pushpendre@jhu.edu
+Author{1}{Affiliation}#=%=#Johns Hopkins University
+Author{2}{Firstname}#=%=#Benjamin
+Author{2}{Lastname}#=%=#Van Durme
+Author{2}{Email}#=%=#vandurme@cs.jhu.edu
+Author{2}{Affiliation}#=%=#JHU
+
+==========

@@ -1,0 +1,225 @@
+* Sunday, June 22, 2014
++ 7:30--18:00 Registration
++ 7:30--9:00 Breakfast
++ 9:00--12:30 Morning Tutorial
+= Session T1: Gaussian Processes for Natural Language Processing
+= Session T2: Scalable Large-Margin Structured Learning: Theory and Algorithms
+= Session T3: Semantics for Large-Scale Multimedia: New Challenges for NLP
+= Session T4: Wikification and Beyond: The Challenges of Entity and Concept Grounding
++ 12:30--14:00 Lunch break
++ 14:00--17:30 Afternoon Tutorial
+= Session T5: New Directions in Vector Space Models of Meaning
+= Session T6: Structured Belief Propagation for NLP
+= Session T7: Semantics, Discourse and Statistical Machine Translation
+= Session T8: Syntactic Processing Using Global Discriminative Learning and Beam-Search Decoding
++ 18:00--21:00 Welcome Reception
+* Monday, June 23, 2014
++ 7:30--18:00 Registration
++ 7:30--9:00 Breakfast
++ 8:55--9:00 Opening session
++ 9:00--9:40 President talk
++ 9:40--10:10 Coffee break
+= Session 1A: Discourse, Dialogue, Coreference and Pragmatics
+= Session 1B: Semantics I
+= Session 1C: Machine Translation I
+= Session 1D: Syntax, Parsing, and Tagging I
+= Session 1E: NLP for the Web and Social Media I
++ 11:50--13:20 Lunch break; Student Lunch
+= Session 2A: Syntax, Parsing and Tagging II
+= Session 2B: Semantics II
+= Session 2C: Word Segmentation and POS Tagging
+= Session 2D: SRW
+= Session 2E: Sentiment Analysis I
++ 15:00--15:30 Coffee break
+= Session 3A: Topic Modeling
+= Session 3B: Information Extraction I
+= Session 3C: Generation
+= Session 3D: Syntax, Parsing and Tagging III
+= Session 3E: Language Resources and Evaluation I
++ 16:45--17:00 Break
++ 17:00--18:00 Invited talk I:  Corinna Cortes
+= Oral Sessions for Student Research Workshop Posters
++ 18:50--21:30 Poster and Dinner Session I: TACL Papers, Long Papers, Short Papers, Student Research Workshop; Demonstrations
+117  # Exploring the Relative Role of Bottom-up and Top-down Information in Phoneme Learning
+325  # Biases in Predicting the Human Language Model
+567  # Probabilistic Labeling for Efficient Referential Grounding based on Collaborative Discourse
+229  # A Composite Kernel Approach for Dialog Topic Tracking with Structured Domain Knowledge from Wikipedia
+395  # An Extension of BLANC to System Mentions
+407  # Scoring Coreference Partitions of Predicted Mentions: A Reference Implementation
+206  # Measuring Sentiment Annotation Complexity of Text
+276  # Improving Citation Polarity Classification with Product Reviews
+98  # Adaptive Recursive Neural Network for Target-dependent Twitter Sentiment Classification
+265  # Sprinkling Topics for Weakly Supervised Text Classification
+56  # A Feature-Enriched Tree Kernel for Relation Extraction
+455  # Employing Word Representations and Regularization for Domain Adaptation of Relation Extraction
+466  # Graph Ranking for Collective Named Entity Disambiguation
+116  # Descending-Path Convolution Kernel for Syntactic Structures
+93  # Entities' Sentiment Relevance
+549  # Automatic Detection of Multilingual Dictionaries on the Web
+444  # Automatic Detection of Cognates Using Orthographic Alignment
+136  # Automatically constructing Wordnet Synsets
+277  # Constructing a Turkish-English Parallel TreeBank
+511  # Improved Typesetting Models for Historical OCR
+437  # Robust Logistic Regression using Shift Parameters
+515  # Faster Phrase-Based Decoding by Refining Feature State
+404  # Decoder Integration and Expected BLEU Training for Recurrent Neural Network Language Models
+208  # On the Elements of an Accurate Tree-to-String Machine Translation System
+343  # Simple extensions and POS Tags for a reparameterised IBM Model 2
+30  # Dependency-based Pre-ordering for Chinese-English Machine Translation
+321  # Generalized Character-Level Spelling Error Correction
+264  # Improved Iterative Correction for Distant Spelling Errors
+320  # Predicting Grammaticality on an Ordinal Scale
+462  # I___m a Belieber: Social Roles via Self-identification and Conceptual Attributes
+214  # Automatically Detecting Corresponding Edit-Turn-Pairs in Wikipedia
+390  # Two Knives Cut Better Than One: Chinese Word Segmentation with Dual Decomposition
+315  # Effective Document-Level Features for Chinese Patent Word Segmentation
+351  # Word Segmentation of Informal Arabic with Domain Adaptation
+246  # Resolving Lexical Ambiguity in Tensor Regression Models of Meaning
+279  # A Novel Content Enriching Model for Microblog Using News Corpus
+492  # Learning Bilingual Word Representations by Marginalizing Alignments
+414  # Detecting Retries of Voice Search Queries
+336  # Sliding Alignment Windows for Real-Time Crowd Captioning
+157  # Detection of Topic and its Extrinsic Evaluation Through Multi-Document Summarization
+119  # Content Importance Models for Scoring Writing From Sources
+173  # Chinese Morphological Analysis with Character-level POS Tagging
+115  # Part-of-Speech Tagging using Conditional Random Fields: Exploiting Sub-Label Dependencies for Improved Accuracy
+269  # POS induction with distributional and morphological information using a distance-dependent Chinese restaurant process
+1  # Improving the Recognizability of Syntactic Relations Using Contextualized Examples
+* Tuesday, June 24, 2014
++ 7:30--18:00 Registration
++ 7:30--9:00 Breakfast
++ 9:00--10:00 Invited talk II: Zoran Popovic
++ 10:00--10:30 Coffee break
+= Session 4A: Machine Learning for NLP
+= Session 4B: Information Extraction II
+= Session 4C: Machine Translation II
+= Session 4D: Summarization
+= Session 4E: Language Resources and Evaluation II
++ 12:10--13:30 Lunch break
+= Session 5A: Question Answering
+= Session 5B: Information Extraction III
+= Session 5C: Lexical Sematics and Ontology I
+= Session 5D: Syntax, Parsing and Tagging IV
+= Session 5E: Cognitive Modeling and Psycholinguistics
++ 14:45--15:15 Coffee break
+= Session 6A: Machine Translation III
+503 15:15--15:30 # How to Speak a Language without Knowing It
+403 15:30--15:45 # Assessing the Discourse Factors that Influence the Quality of Machine Translation
+298 15:45--16:00 # Automatic Detection of Machine Translated Text and Translation Quality Estimation
+= Session 6B: Lexical Semantics and Ontology II
+480 15:15--15:30 # Improving sparse word similarity models with asymmetric measures
+401 15:30--15:45 # Dependency-Based Word Embeddings
+146 15:45--16:00 # Vector spaces for historical linguistics: Using distributional semantics to study syntactic productivity in diachrony
+= Session 6C: Generation/Summarization/Dialogue
+552 15:15--15:30 # Single Document Summarization based on Nested Tree Structure
+392 15:30--15:45 # Linguistic Considerations in Automatic Question Generation
+445 15:45--16:00 # Polynomial Time Joint Structural Inference for Sentence Compression
+306 16:00--16:15 # A Bayesian Method to Incorporate Background Knowledge during Automatic Text Summarization
+422 16:15--16:30 # Predicting Power Relations between Participants in Written Dialog from a Single Thread
+= Session 6D: NLP Applications and NLP Enabled Technology I
+464 15:15--15:30 # Tri-Training for Authorship Attribution with Limited Training Data
+190 15:30--15:45 # Automation and Evaluation of the Keyword Method for Second Language Learning
+397 15:45--16:00 # Citation Resolution: A method for evaluating context-based citation recommendation systems
+134 16:00--16:15 # Hippocratic Abbreviation Expansion
+54 16:15--16:30 # Unsupervised Feature Learning for Visual Sign Language Identification
+= Session 6E: Language Resources and Evaluation III
+290 15:15--15:30 # Experiments with crowdsourced re-annotation of a POS tagging data set
+85 15:30--15:45 # Building Sentiment Lexicons for All Major Languages
+425 15:45--16:00 # Difficult Cases: From Data to Learning, and Back
+389 16:00--16:15 # The VerbCorner Project: Findings from Phase 1 of crowd-sourcing a semantic decomposition of verbs
+121 16:15--16:30 # A Corpus of Sentence-level Revisions in Academic Writing: A Step towards Understanding Statement Strength in Communication
++ 16:50--19:20 Poster and Dinner Session II: Long Papers, Short Papers and Demonstrations in Grand BallroomI/II/III/IV/V/VI/VII/VIII
+486  # Determiner-Established Deixis to Communicative Artifacts in Pedagogical Text
+439  # Modeling Factuality Judgments in Social Media Text
+435  # A Topic Model for Building Fine-grained Domain-specific Emotion Lexicon
+32  # Depeche Mood: a Lexicon for Emotion Analysis from Crowd Annotated News
+71  # Improving Twitter Sentiment Analysis with Topic-Based Mixture Modeling and Semi-Supervised Training
+494  # Cross-cultural Deception Detection
+537  # Particle Filter Rejuvenation and Latent Dirichlet Allocation
+96  # Comparing Automatic Evaluation Measures for Image Description
+337  # Learning a Lexical Simplifier Using Wikipedia
+195  # Cheap and easy entity evaluation
+248  # Identifying Real-Life Complex Task Names with Task-Intrinsic Entities from Microblogs
+440  # Mutual Disambiguation for Entity Linking
+357  # How Well can We Learn Interpretable Entity Types from Text?
+230  # Learning Translational and Knowledge-based Similarities from Relevance Rankings for Cross-Language Retrieval
+270  # Two-Stage Hashing for Fast Document Retrieval
+227  # An Annotation Framework for Dense Event Ordering
+319  # Linguistically debatable or just plain wrong?
+64  # Humans Require Context to Infer Ironic Intent (so Computers Probably do, too)
+416  # Automatic prediction of aspectual class of verbs in context
+50  # Combining Word Patterns and Discourse Markers for Paradigmatic Relation Classification
+67  # Applying a Naive Bayes Similarity Measure to Word Sense Disambiguation
+409  # Fast Easy Unsupervised Domain Adaptation with Marginalized Structured Dropout
+44  # Improving Lexical Embeddings with Semantic Knowledge
+191  # Optimizing Segmentation Strategies for Simultaneous Speech Translation
+405  # A joint inference of deep case analysis and zero subject generation for Japanese-to-English statistical machine translation
+155  # A Hybrid Approach to Skeleton-based Translation
+493  # Effective Selection of Translation Model Training Data
+359  # Refinements to Interactive Translation Prediction Based on Search Graphs
+328  # Cross-lingual Model Transfer Using Feature Representation Projection
+152  # Cross-language and Cross-encyclopedia Article Linking Using Mixed-language Topic Model and Hypernym Translation
+364  # Nonparametric Method for Data-driven Image Captioning
+209  # Improved Correction Detection in Revised ESL Sentences
+388  # Unsupervised Alignment of Privacy Policies using Hidden Markov Models
+217  # Enriching Cold Start Personalized Language Model Using Social Network Information
+344  # Automatic Labelling of Topic Models Learned from Twitter by Summarisation
+530  # Stochastic Contextual Edit Distance and Probabilistic FSTs
+39  # Labelling Topics using Unsupervised Graph-based Methods
+76  # Training a Korean SRL System with Rich Morphological Features
+502  # Semantic Parsing for Single-Relation Question Answering
+180  # On WordNet Semantic Classes and Dependency Parsing
+125  # Enforcing Structural Diversity in Cube-pruned Dependency Parsing
+69  # The Penn Parsed Corpus of Modern British English: First Parsing Results and Analysis
+112  # Parser Evaluation Using Derivation Trees: A Complement to evalb
++ 19:30--10:00 Social at the National Aquarium in Baltimore
+* Wednesday, June 25, 2014
++ 7:30--18:00 Registration
++ 7:30--9:00 Breakfast
+= Best paper session
++ 10:15--10:45 Coffee break
+= Session 7A: Multimodal NLP/ Lexical Semantics
+= Session 7B: Semantics III
+= Session 7C: Machine Translation IV
+= Session 7D: NLP Applications and NLP Enabled Technology II
+= Session 7E: Sentiment Analysis II
++ 12:25--13:30 Lunch break
++ 13:30--15:00 ACL Business Meeting
+= Session 8A: NLP for the Web and Social Media II
+159 15:00--15:15 # Learning Polylingual Topic Models from Code-Switched Social Media Documents
+128 15:15--15:30 # Normalizing tweets with edit scripts and recurrent neural embeddings
+280 15:30--15:45 # Exponential Reservoir Sampling for Streaming Language Models
+479 15:45--16:00 # A Piece of My Mind: A Sentiment Analysis Approach for Online Dispute Detection
+65 16:00--16:15 # A Simple Bayesian Modelling Approach to Event Extraction from Twitter
+75 16:15--16:30 # Be Appropriate and Funny: Automatic Entity Morph Encoding
+= Session 8B: Semantics/Information Extraction
+189 15:00--15:15 # Applying Grammar Induction to Text Mining
+79 15:15--15:30 # Semantic Consistency: A Local Subspace Based Method for Distant Supervised Relation Extraction
+374 15:30--15:45 # Concreteness and Subjectivity as Dimensions of Lexical Meaning
+287 15:45--16:00 # Infusion of Labeled Data into Distant Supervision for Relation Extraction
+352 16:00--16:15 # Recognizing Implied Predicate-Argument Relationships in Textual Inference
+142 16:15--16:30 # Measuring metaphoricity
+= Session 8C: Machine Translation V
+86 15:00--15:15 # Empirical Study of Unsupervised Chinese Word Segmentation Methods for SMT on Large-scale Corpora
+415 15:15--15:30 # EM Decipherment for Large Vocabularies
+485 15:30--15:45 # XMEANT: Better semantic MT evaluation without reference translations
+327 15:45--16:00 # Sentence Level Dialect Identification for Machine Translation System Selection
+202 16:00--16:15 # RNN-based Derivation Structure Prediction for SMT
+434 16:15--16:30 # Hierarchical MT Training using Max-Violation Perceptron
+= Session 8D: Syntax, Parsing, and Tagging V
+429 15:00--15:15 # Punctuation Processing for Projective Dependency Parsing
+310 15:15--15:30 # Transforming trees into hedges and parsing with "hedgebank" grammars
+244 15:30--15:45 # Incremental Predictive Parsing with TurboParser
+491 15:45--16:00 # Tailoring Continuous Word Representations for Dependency Parsing
+475 16:00--16:15 # Observational Initialization of Type-Supervised Taggers
+456 16:15--16:30 # How much do word embeddings encode about syntax?
+= Session 8E: Multilinguality and Multimodal NLP
+303 15:00--15:15 # Distributed Representations of Geographically Situated Language
+354 15:15--15:30 # Improving Multi-Modal Representations Using Image Dispersion: Why Less is Sometimes More
+213 15:30--15:45 # Bilingual Event Extraction: a Case Study on Trigger Type Determination
+198 15:45--16:00 # Understanding Relation Temporality of Entities
+353 16:00--16:15 # Does the Phonology of L1 Show Up in L2 Texts?
+514 16:15--16:30 # Cross-lingual Opinion Analysis via Negative Transfer Detection
++ 16:30--17:00 Coffee break
++ 17:00--18:30 Lifetime Achievement Award
++ 18:30--19:00 Closing session

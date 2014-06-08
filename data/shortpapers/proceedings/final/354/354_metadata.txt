@@ -1,0 +1,34 @@
+SubmissionNumber#=%=#354
+FinalPaperTitle#=%=#Improving Multi-Modal Representations Using Image Dispersion: Why Less is Sometimes More
+ShortPaperTitle#=%=#Improving Multi-Modal Representations Using Image Dispersion: Why Less is Sometimes More
+NumberOfPages#=%=#7
+CopyrightSigned#=%=#DOUWE KIELA
+JobTitle#==#
+Organization#==#
+Abstract#==#Models that learn semantic representations from both linguistic and perceptual
+input outperform text-only models in many contexts and better reflect human
+concept acquisition. However, experiments suggest that while the inclusion of
+perceptual input improves representations of certain concepts, it degrades the
+representations of others. We propose an unsupervised method to determine
+whether to include perceptual input for a concept, and show that it
+significantly improves the ability of multi-modal models to learn and represent
+word meanings. The method relies solely on image data, and can be applied to a
+variety of other NLP tasks.
+Author{1}{Firstname}#=%=#Douwe
+Author{1}{Lastname}#=%=#Kiela
+Author{1}{Email}#=%=#douwe.kiela@cl.cam.ac.uk
+Author{1}{Affiliation}#=%=#University of Cambridge Computer Laboratory
+Author{2}{Firstname}#=%=#Felix
+Author{2}{Lastname}#=%=#Hill
+Author{2}{Email}#=%=#fh295@cam.ac.uk
+Author{2}{Affiliation}#=%=#Cambridge University
+Author{3}{Firstname}#=%=#Anna
+Author{3}{Lastname}#=%=#Korhonen
+Author{3}{Email}#=%=#anna.korhonen@cl.cam.ac.uk
+Author{3}{Affiliation}#=%=#University of Cambridge
+Author{4}{Firstname}#=%=#Stephen
+Author{4}{Lastname}#=%=#Clark
+Author{4}{Email}#=%=#sc609@cam.ac.uk
+Author{4}{Affiliation}#=%=#University of Cambridge
+
+==========

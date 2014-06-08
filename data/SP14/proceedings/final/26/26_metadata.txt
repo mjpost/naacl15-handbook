@@ -1,0 +1,22 @@
+SubmissionNumber#=%=#26
+FinalPaperTitle#=%=#Efficient Logical Inference for Semantic Processing
+ShortPaperTitle#=%=#Efficient Logical Inference for Semantic Processing
+NumberOfPages#=%=#5
+CopyrightSigned#=%=#tianran
+JobTitle#==#
+Organization#==#National Institute of Informatics, Japan
+Abstract#==#
+Author{1}{Firstname}#=%=#Ran
+Author{1}{Lastname}#=%=#Tian
+Author{1}{Email}#=%=#tianran@nii.ac.jp
+Author{1}{Affiliation}#=%=#National Institute of Informatics
+Author{2}{Firstname}#=%=#Yusuke
+Author{2}{Lastname}#=%=#Miyao
+Author{2}{Email}#=%=#yusuke@nii.ac.jp
+Author{2}{Affiliation}#=%=#National Instutite of Informatics
+Author{3}{Firstname}#=%=#Takuya
+Author{3}{Lastname}#=%=#Matsuzaki
+Author{3}{Email}#=%=#takuya-matsuzaki@nii.ac.jp
+Author{3}{Affiliation}#=%=#National Institute of Informatics
+
+==========

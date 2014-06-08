@@ -1,0 +1,39 @@
+SubmissionNumber#=%=#23
+FinalPaperTitle#=%=#Assessing the Readability of Sentences: Which Corpora and Features?
+ShortPaperTitle#=%=#Assessing the Readability of Sentences: Which Corpora and Features?
+NumberOfPages#=%=#11
+CopyrightSigned#=%=#Simonetta Montemagni
+JobTitle#==#
+Organization#==#Istituto di Linguistica Computazionale "Antonio Zampolli"
+Abstract#==#The paper investigates the problem of sentence readability assessment, which is
+modelled as a classification task, with a specific view to text semplification.
+In particular, it aims at addressing two open issues connected with it, 
+i.e. the corpora to be used for training, and the identification of the most
+effective features to determine sentence readability. An existing readability
+assessment tool developed for Italian was specialized at the level of the
+training corpus and of the learning algorithm. A maximum entropy--based feature
+selection and ranking algorithm (grafting) was used to identify to the most
+relevant features: it turned out that assessing the readability of sentences is
+a complex task, requiring a high number of features, mainly syntactic ones.
+Author{1}{Firstname}#=%=#Felice
+Author{1}{Lastname}#=%=#Dell'Orletta
+Author{1}{Email}#=%=#felice.dellorletta@ilc.cnr.it
+Author{1}{Affiliation}#=%=#Istituto di Linguistica Computazionale "Antonio Zampolli", ILC - CNR, Pisa
+Author{2}{Firstname}#=%=#Martijn
+Author{2}{Lastname}#=%=#Wieling
+Author{2}{Email}#=%=#wieling@gmail.com
+Author{2}{Affiliation}#=%=#Department of Quantitative Linguistics, University of Tubingen, Tubingen
+Author{3}{Firstname}#=%=#Giulia
+Author{3}{Lastname}#=%=#Venturi
+Author{3}{Email}#=%=#giulia.venturi@ilc.cnr.it
+Author{3}{Affiliation}#=%=#Istituto di Linguistica Computazionale "Antonio Zampolli"
+Author{4}{Firstname}#=%=#Andrea
+Author{4}{Lastname}#=%=#Cimino
+Author{4}{Email}#=%=#andrea.cimino@ilc.cnr.it
+Author{4}{Affiliation}#=%=#Istituto di Linguistica Computazionale "Antonio Zampolli", ILC - CNR, Pisa
+Author{5}{Firstname}#=%=#Simonetta
+Author{5}{Lastname}#=%=#Montemagni
+Author{5}{Email}#=%=#simonetta.montemagni@ilc.cnr.it
+Author{5}{Affiliation}#=%=#Istituto di Linguistica Computazionale "Antonio Zampolli"
+
+==========

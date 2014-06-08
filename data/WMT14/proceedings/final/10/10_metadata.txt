@@ -1,0 +1,47 @@
+SubmissionNumber#=%=#10
+FinalPaperTitle#=%=#The KIT-LIMSI Translation System for WMT 2014
+ShortPaperTitle#=%=#The KIT-LIMSI Translation System for WMT 2014
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Jan Niehues
+JobTitle#==#
+Organization#==#KIT
+Adenauerring 2
+76131 Karlsruhe
+Abstract#==#This paper describes the joined submission of LIMSI and KIT to the Shared
+Translation Task for the German-to-English direction.  The system consists of a
+phrase-based translation system using a pre-reordering approach. The baseline
+system already includes several models like conventional language models on
+different word factors and a discriminative word lexicon. This system is used
+to generate a k-best list. In a second step, the list is reranked using SOUL
+language and translation models. 
+Originally, SOUL translation models were applied to n-gram-based translation
+systems that use tuples as translation units instead of phrase pairs. In this
+article, we describe their integration into the KIT phrase-based system.
+Experimental results show that their use can yield significant improvements in
+terms of BLEU score.
+Author{1}{Firstname}#=%=#Quoc Khanh
+Author{1}{Lastname}#=%=#Do
+Author{1}{Email}#=%=#dokhanh@limsi.fr
+Author{1}{Affiliation}#=%=#LIMSI-CNRS
+Author{2}{Firstname}#=%=#Teresa
+Author{2}{Lastname}#=%=#Herrmann
+Author{2}{Email}#=%=#teresa.herrmann@kit.edu
+Author{2}{Affiliation}#=%=#Karlsruhe Institute of Technology
+Author{3}{Firstname}#=%=#Jan
+Author{3}{Lastname}#=%=#Niehues
+Author{3}{Email}#=%=#jan.niehues@kit.edu
+Author{3}{Affiliation}#=%=#Karlsruhe Institute of Technology
+Author{4}{Firstname}#=%=#Alexander
+Author{4}{Lastname}#=%=#Allauzen
+Author{4}{Email}#=%=#allauzen@limsi.fr
+Author{4}{Affiliation}#=%=#Université Paris-Sud / LIMSI-CNRS
+Author{5}{Firstname}#=%=#François
+Author{5}{Lastname}#=%=#Yvon
+Author{5}{Email}#=%=#yvon@limsi.fr
+Author{5}{Affiliation}#=%=#LIMSI/CNRS
+Author{6}{Firstname}#=%=#Alex
+Author{6}{Lastname}#=%=#Waibel
+Author{6}{Email}#=%=#alex.waibel@kit.edu
+Author{6}{Affiliation}#=%=#Karlsruhe Institute of Technology
+
+==========

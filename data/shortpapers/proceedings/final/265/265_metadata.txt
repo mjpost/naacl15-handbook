@@ -1,0 +1,26 @@
+SubmissionNumber#=%=#265
+FinalPaperTitle#=%=#Sprinkling Topics for Weakly Supervised Text Classification
+ShortPaperTitle#=%=#Sprinkling Topics for Weakly Supervised Text Classification
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Swapnil V. Hingmire
+JobTitle#==#
+Organization#==#
+Abstract#==#Supervised text classification algorithms require a large number of documents
+labeled by humans, that involve a labor-intensive and time consuming process.
+In this paper, we propose a weakly supervised algorithm in which supervision
+comes in the form of labeling of Latent Dirichlet Allocation (LDA) topics. We
+then use this weak supervision to ``sprinkle'' artificial words to the training
+documents to identify topics in accordance with the underlying class structure
+of the corpus based on the higher order word associations. We evaluate this
+approach to improve performance of text classification on three real world
+datasets.
+Author{1}{Firstname}#=%=#Swapnil
+Author{1}{Lastname}#=%=#Hingmire
+Author{1}{Email}#=%=#swapnil.hingmire@tcs.com
+Author{1}{Affiliation}#=%=#Systems Research Lab, Tata Research Development and Design Center, Pune, India
+Author{2}{Firstname}#=%=#Sutanu
+Author{2}{Lastname}#=%=#Chakraborti
+Author{2}{Email}#=%=#sutanuc@cse.iitm.ac.in
+Author{2}{Affiliation}#=%=#Department of Computer Science and Engineering, Indian Institute of Technology Madras, Chennai, India
+
+==========

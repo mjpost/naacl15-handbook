@@ -1,0 +1,31 @@
+SubmissionNumber#=%=#537
+FinalPaperTitle#=%=#Particle Filter Rejuvenation and Latent Dirichlet Allocation
+ShortPaperTitle#=%=#Particle Filter Rejuvenation and Latent Dirichlet Allocation
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Chandler May
+JobTitle#==#
+Organization#==#Johns Hopkins University
+3400 N. Charles St
+Baltimore, MD 21218
+Abstract#==#Previous research has established several methods of online learning for latent
+Dirichlet allocation (LDA).  However, streaming learning for LDA---allowing
+only one pass over the data and constant storage complexity---is not as well
+explored.  We use reservoir sampling to reduce the storage complexity of a
+previously-studied online algorithm, namely the particle filter, to constant. 
+We then show that a simpler particle filter implementation performs just as
+well, and that the quality of the initialization dominates other factors of
+performance.
+Author{1}{Firstname}#=%=#Chandler
+Author{1}{Lastname}#=%=#May
+Author{1}{Email}#=%=#cjmay@jhu.edu
+Author{1}{Affiliation}#=%=#Johns Hopkins University / HLTCOE
+Author{2}{Firstname}#=%=#Alex
+Author{2}{Lastname}#=%=#Clemmer
+Author{2}{Email}#=%=#clemmer.alexander@gmail.com
+Author{2}{Affiliation}#=%=#Microsoft
+Author{3}{Firstname}#=%=#Benjamin
+Author{3}{Lastname}#=%=#Van Durme
+Author{3}{Email}#=%=#vandurme@cs.jhu.edu
+Author{3}{Affiliation}#=%=#Johns Hopkins University / HLTCOE
+
+==========

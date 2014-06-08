@@ -1,0 +1,22 @@
+SubmissionNumber#=%=#2
+FinalPaperTitle#=%=#Scalable Large-Margin Structured Learning: Theory and Algorithms
+ShortPaperTitle#=%=#Scalable Large-Margin Structured Learning: Theory and Algorithms
+NumberOfPages#=%=#2
+CopyrightSigned#=%=#
+JobTitle#==#
+Organization#==#
+Abstract#==#N/A
+Author{1}{Firstname}#=%=#Liang
+Author{1}{Lastname}#=%=#Huang
+Author{1}{Email}#=%=#liang.huang.sh@gmail.com
+Author{1}{Affiliation}#=%=#The City University of New York
+Author{2}{Firstname}#=%=#Kai
+Author{2}{Lastname}#=%=#Zhao
+Author{2}{Email}#=%=#kzhao.hf@gmail.com
+Author{2}{Affiliation}#=%=#The City University of New York
+Author{3}{Firstname}#=%=#Lemao
+Author{3}{Lastname}#=%=#Liu
+Author{3}{Email}#=%=#lemaoliu@gmail.com
+Author{3}{Affiliation}#=%=#The City University of New York
+
+==========

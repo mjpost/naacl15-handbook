@@ -1,0 +1,39 @@
+SubmissionNumber#=%=#7
+FinalPaperTitle#=%=#RACAI GEC – A hybrid approach to Grammatical Error Correction
+ShortPaperTitle#=%=#RACAI GEC – A hybrid approach to Grammatical Error Correction
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#
+JobTitle#==#
+Organization#==#
+Abstract#==#This paper describes RACAI’s (Research Institute for Artificial Intelligence)
+hybrid grammatical error correction system. This system was validated during
+the participation into the CONLL Shared Task on Grammatical Error Correction.
+We
+offer an analysis of the types of errors detected and corrected by our system
+and we present the necessary steps to reproduce our experiment
+Author{1}{Firstname}#=%=#Tiberiu
+Author{1}{Lastname}#=%=#Boroș
+Author{1}{Email}#=%=#tibi@racai.ro
+Author{1}{Affiliation}#=%=#Research Institute for Artificial Intelligence, Romanian Academy
+Author{2}{Firstname}#=%=#Stefan Daniel
+Author{2}{Lastname}#=%=#Dumitrescu
+Author{2}{Email}#=%=#dumitrescu.stefan@gmail.com
+Author{2}{Affiliation}#=%=#Research Institute for Artificial Intelligence
+Author{3}{Firstname}#=%=#Adrian
+Author{3}{Lastname}#=%=#Zafiu
+Author{3}{Email}#=%=#adrian_zafiu@yahoo.com
+Author{3}{Affiliation}#=%=#University of Pitesti
+Author{4}{Firstname}#=%=#Dan
+Author{4}{Lastname}#=%=#Tufiș
+Author{4}{Email}#=%=#tufis@racai.ro
+Author{4}{Affiliation}#=%=#Research Institute for Artificial Intelligence, Romanian Academy
+Author{5}{Firstname}#=%=#Verginica
+Author{5}{Lastname}#=%=#Barbu Mititelu
+Author{5}{Email}#=%=#vergi@racai.ro
+Author{5}{Affiliation}#=%=#RACAI
+Author{6}{Firstname}#=%=#Ionut Paul
+Author{6}{Lastname}#=%=#Vaduva
+Author{6}{Email}#=%=#ionut@racai.ro
+Author{6}{Affiliation}#=%=#Research Institute for Artificial Intelligence, Romanian Academy
+
+==========

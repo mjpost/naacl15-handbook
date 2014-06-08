@@ -1,0 +1,66 @@
+SubmissionNumber#=%=#11
+FinalPaperTitle#=%=#The Language Demographics of Amazon Mechanical Turk
+ShortPaperTitle#=%=#
+NumberOfPages#=%=#
+CopyrightSigned#=%=#
+JobTitle#==#
+Organization#==#
+Abstract#==#This article discusses the requirements of a formal specification for the
+annotation of tem- poral information in clinical narratives. We discuss the
+implementation and extension of ISO-TimeML for annotating a corpus of clini-
+cal notes, known as the XXX corpus. To reflect the information task and the
+heavily
+inference- based reasoning demands in the domain, a new annotation guideline
+has been developed, “the XXX Guidelines to ISO-TimeML (XXX- TimeML)”. To
+clarify what relations merit an- notation, we distinguish between
+linguistically- derived and inferentially-derived temporal or- derings in the
+text. We also apply a top per- forming TempEval 2013 system against this new
+resource to measure the difficulty of adapt- ing systems to the clinical
+domain. The corpus is available to the community and has been proposed for use
+in a SemEval 2015 task.
+Author{1}{Firstname}#=%=#William
+Author{1}{Lastname}#=%=#Styler
+Author{1}{Email}#=%=#william.styler@colorado.edu
+Author{1}{Affiliation}#=%=#Department of Linguistics, University of Colorado at Boulde
+Author{2}{Firstname}#=%=#Steven
+Author{2}{Lastname}#=%=#Bethard
+Author{2}{Email}#=%=#bethard@cis.uab.edu
+Author{2}{Affiliation}#=%=#Department of Computer and Information Sciences, University of Alabama at Birmingham
+Author{3}{Firstname}#=%=#Sean
+Author{3}{Lastname}#=%=#Finan
+Author{3}{Email}#=%=#sean.finan@childrens.harvard.edu
+Author{3}{Affiliation}#=%=#Children’s Hospital Boston Informatics Program and Harvard Medical School
+Author{4}{Firstname}#=%=#Martha
+Author{4}{Lastname}#=%=#Palmer
+Author{4}{Email}#=%=#martha.palmer@colorado.edu
+Author{4}{Affiliation}#=%=#Department of Linguistics, University of Colorado at Boulde
+Author{5}{Firstname}#=%=#Sameer
+Author{5}{Lastname}#=%=#Pradhan
+Author{5}{Email}#=%=#sameer.pradhan@childrens.harvard.edu
+Author{5}{Affiliation}#=%=#Children’s Hospital Boston Informatics Program and Harvard Medical School
+Author{6}{Firstname}#=%=#Piet C
+Author{6}{Lastname}#=%=#de Groen
+Author{6}{Email}#=%=#pietdegroen@gmail.com
+Author{6}{Affiliation}#=%=#Mayo Clinic College of Medicine, Mayo Clinic, Rochester, MN
+Author{7}{Firstname}#=%=#Brad
+Author{7}{Lastname}#=%=#Erickson
+Author{7}{Email}#=%=#brad-erickson@uiowa.edu
+Author{7}{Affiliation}#=%=#Mayo Clinic College of Medicine, Mayo Clinic, Rochester, MN
+Author{8}{Firstname}#=%=#Timothy
+Author{8}{Lastname}#=%=#Miller
+Author{8}{Email}#=%=#timothy.millera@childrens.harvard.edu
+Author{8}{Affiliation}#=%=#Children’s Hospital Boston Informatics Program and Harvard Medical School
+Author{9}{Firstname}#=%=#Chen
+Author{9}{Lastname}#=%=#Lin
+Author{9}{Email}#=%=#chen.lin@childrens.harvard.edu
+Author{9}{Affiliation}#=%=#Children’s Hospital Boston Informatics Program and Harvard Medical School
+Author{10}{Firstname}#=%=#Guergana
+Author{10}{Lastname}#=%=#Savova
+Author{10}{Email}#=%=#Guergana.Savova@childrens.harvard.edu
+Author{10}{Affiliation}#=%=#Children’s Hospital Boston Informatics Program and Harvard Medical School
+Author{11}{Firstname}#=%=#James
+Author{11}{Lastname}#=%=#Pustejovsky
+Author{11}{Email}#=%=#jamesp@cs.brandeis.edu
+Author{11}{Affiliation}#=%=#Department of Computer Science, Brandeis University
+
+==========

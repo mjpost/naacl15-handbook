@@ -1,0 +1,38 @@
+SubmissionNumber#=%=#5
+FinalPaperTitle#=%=#Individuality-preserving Voice Conversion for Articulation Disorders Using Dictionary Selective Non-negative Matrix Factorization
+ShortPaperTitle#=%=#Individuality-preserving Voice Conversion for Articulation Disorders Using Dictionary Selective Non-negative Matrix Factorization
+NumberOfPages#=%=#9
+CopyrightSigned#=%=#Ryo AIHARA
+JobTitle#==#
+Organization#==#Graduate School of System Informatics, Kobe University
+1-1, Rokkodai, Nada, Kobe, 6578501, Japan
+Abstract#==#We present in this paper a voice conversion (VC) method for a person with an
+articulation disorder resulting from athetoid cerebral palsy. The movements of
+such speakers are limited by their athetoid symptoms, and their consonants are
+often unstable or unclear, which makes it difficult for them to communicate. In
+this paper, exemplar-based spectral conversion using Non-negative Matrix
+Factorization (NMF) is applied to a voice with an articulation disorder. In
+order to preserve the speaker's individuality, we use a combined dictionary
+that was constructed from the source speaker's vowels and target speaker's
+consonants. However, this exemplar-based approach needs to hold all the
+training exemplars (frames), and it may cause mismatching of phonemes between
+input signals and selected exemplars. In this paper, in order to reduce the
+mismatching of phoneme alignment, we propose a phoneme-categorized
+sub-dictionary and a dictionary selection method using NMF. The effectiveness
+of this method was confirmed by comparing its effectiveness with that of a
+conventional Gaussian Mixture Model (GMM)-based and conventional NMF-based
+method.
+Author{1}{Firstname}#=%=#Ryo
+Author{1}{Lastname}#=%=#Aihara
+Author{1}{Email}#=%=#aihara@me.cs.scitec.kobe-u.ac.jp
+Author{1}{Affiliation}#=%=#Kobe University
+Author{2}{Firstname}#=%=#Tetsuya
+Author{2}{Lastname}#=%=#Takiguchi
+Author{2}{Email}#=%=#takigu@kobe-u.ac.jp
+Author{2}{Affiliation}#=%=#Kobe University
+Author{3}{Firstname}#=%=#Yasuo
+Author{3}{Lastname}#=%=#Ariki
+Author{3}{Email}#=%=#ariki@kobe-u.ac.jp
+Author{3}{Affiliation}#=%=#Kobe University
+
+==========

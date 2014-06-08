@@ -1,0 +1,26 @@
+SubmissionNumber#=%=#315
+FinalPaperTitle#=%=#Effective Document-Level Features for Chinese Patent Word Segmentation
+ShortPaperTitle#=%=#Effective Document-Level Features for Chinese Patent Word Segmentation
+NumberOfPages#=%=#7
+CopyrightSigned#=%=#Si Li
+JobTitle#==#
+Organization#==#Brandeis University
+415 South St, Waltham, MA 02453, USA
+Abstract#==#A patent is a property right for an invention granted by the government to the
+inventor. Patents often have a high concentration of scientific and technical
+terms that are rare in everyday language. However, some scientific and
+technical terms usually appear with high frequency only in one specific patent.
+In this paper, we propose a pragmatic approach to Chinese word segmentation on
+patents where we train a sequence labeling model based on a group of novel
+document-level features. Experiments show that the accuracy of our model
+reached 96.3% (F1 score) on development set and 95.0% on a held-out test set.
+Author{1}{Firstname}#=%=#Si
+Author{1}{Lastname}#=%=#Li
+Author{1}{Email}#=%=#ls198cf@gmail.com
+Author{1}{Affiliation}#=%=#Brandeis University
+Author{2}{Firstname}#=%=#Nianwen
+Author{2}{Lastname}#=%=#Xue
+Author{2}{Email}#=%=#xuen@brandeis.edu
+Author{2}{Affiliation}#=%=#Brandeis University
+
+==========

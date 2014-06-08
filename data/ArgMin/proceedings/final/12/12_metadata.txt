@@ -1,0 +1,29 @@
+SubmissionNumber#=%=#12
+FinalPaperTitle#=%=#Ontology-Based Argument Mining and Automatic Essay Scoring
+ShortPaperTitle#=%=#Ontology-Based Argument Mining and Automatic Essay Scoring
+NumberOfPages#=%=#5
+CopyrightSigned#=%=#Nathan Ong
+JobTitle#==#
+Organization#==#University of Pittsburgh
+4200 Fifth Avenue
+Pittsburgh, PA 15260
+Abstract#==#Essays are frequently used as a medium for teaching and evaluating
+argumentation skills.  Recently, there has been interest in diagrammatic
+outlining as a replacement to the written outline that often precedes essay
+writing.  This paper presents a preliminary approach for automatically
+identifying diagram ontology elements in essays, and demonstrates its positive
+correlation with expert scores of essay quality.
+Author{1}{Firstname}#=%=#Nathan
+Author{1}{Lastname}#=%=#Ong
+Author{1}{Email}#=%=#nro5@pitt.edu
+Author{1}{Affiliation}#=%=#University of Pittsburgh
+Author{2}{Firstname}#=%=#Diane
+Author{2}{Lastname}#=%=#Litman
+Author{2}{Email}#=%=#litman@cs.pitt.edu
+Author{2}{Affiliation}#=%=#University of Pittsburgh
+Author{3}{Firstname}#=%=#Alexandra
+Author{3}{Lastname}#=%=#Brusilovsky
+Author{3}{Email}#=%=#apb27@pitt.edu
+Author{3}{Affiliation}#=%=#University of Pittsburgh
+
+==========

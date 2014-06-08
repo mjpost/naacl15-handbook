@@ -1,0 +1,39 @@
+SubmissionNumber#=%=#12
+FinalPaperTitle#=%=#Self-disclosure topic model for Twitter conversations
+ShortPaperTitle#=%=#Self-disclosure topic model for Twitter conversations
+NumberOfPages#=%=#8
+CopyrightSigned#=%=#JinYeong Bak
+JobTitle#==#
+Organization#==#Computer Science, KAIST
+Abstract#==#Self-disclosure, the act of revealing oneself to others, is an important social
+behavior that contributes positively to intimacy and social support from
+others. It is a natural behavior, and social scientists have carried out
+numerous quantitative analyses of it through manual tagging and survey
+questionnaires. 
+Recently, the flood of data from online social networks (OSN) offers a
+practical way to observe and analyze self-disclosure behavior at an
+unprecedented scale. The challenge with such analysis is that OSN data come
+with no annotations, and it would be impossible to manually annotate the data
+for a quantitative analysis of self-disclosure. 
+As a solution, we propose a semi-supervised machine learning approach, using a
+variant of latent Dirichlet allocation for automatically classifying
+self-disclosure in a massive dataset of Twitter conversations. 
+For measuring the accuracy of our model, we manually annotate a small subset of
+our dataset, and we show that our model shows significantly higher accuracy and
+F-measure than various other methods.
+With the results our model, we uncover a positive and significant relationship
+between self-disclosure and online conversation frequency over time.
+Author{1}{Firstname}#=%=#JinYeong
+Author{1}{Lastname}#=%=#Bak
+Author{1}{Email}#=%=#jy.bak@kaist.ac.kr
+Author{1}{Affiliation}#=%=#KAIST
+Author{2}{Firstname}#=%=#Chin-Yew
+Author{2}{Lastname}#=%=#Lin
+Author{2}{Email}#=%=#cyl@microsoft.com
+Author{2}{Affiliation}#=%=#
+Author{3}{Firstname}#=%=#Alice
+Author{3}{Lastname}#=%=#Oh
+Author{3}{Email}#=%=#alice.oh@kaist.edu
+Author{3}{Affiliation}#=%=#KAIST
+
+==========

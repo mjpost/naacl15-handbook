@@ -1,0 +1,40 @@
+SubmissionNumber#=%=#3
+FinalPaperTitle#=%=#Preliminary Test of a Real-Time, Interactive Silent Speech Interface Based on Electromagnetic Articulograph
+ShortPaperTitle#=%=#Preliminary Test of a Real-Time Silent Speech Interface
+NumberOfPages#=%=#8
+CopyrightSigned#=%=#Jun Wang
+JobTitle#==#
+Organization#==#Callier Center for Communication Disorders
+University of Texas at Dallas
+1966 Inwood Rd. Dallas, TX 75235
+Abstract#==#A silent speech interface (SSI) maps articulatory movement data to speech
+output. Although still in experimental stages, silent speech interfaces hold
+significant potential for facilitating oral communication in persons after
+laryngectomy or with other severe voice impairments. Despite the recent efforts
+on silent speech recognition algorithm development using offline data analysis,
+online test of SSIs have rarely been conducted. In this paper, we present a
+preliminary, online test of a real-time, interactive SSI based on
+electromagnetic motion tracking. The SSI played back synthesized speech sounds
+in response to the user’s tongue and lip movements. Three English talkers
+participated in this test, where they mouthed (silently articulated) phrases
+using the device to complete a phrase-reading task. Among the three
+participants, 96.67% to 100% of the mouthed phrases were correctly recognized
+and corresponding synthesized sounds were played after a short delay.
+Furthermore, one participant demonstrated the feasibility of using the SSI for
+a short conversation. The experimental results demonstrated the feasibility and
+potential of silent speech interfaces based on electromagnetic articulograph
+for future clinical applications.
+Author{1}{Firstname}#=%=#Jun
+Author{1}{Lastname}#=%=#Wang
+Author{1}{Email}#=%=#wangjun@utdallas.edu
+Author{1}{Affiliation}#=%=#University of Texas at Dallas
+Author{2}{Firstname}#=%=#Ashok
+Author{2}{Lastname}#=%=#Samal
+Author{2}{Email}#=%=#samal@cse.unl.edu
+Author{2}{Affiliation}#=%=#University of Nebraska-Lincoln
+Author{3}{Firstname}#=%=#Jordan
+Author{3}{Lastname}#=%=#Green
+Author{3}{Email}#=%=#jgreen2@mghihp.edu
+Author{3}{Affiliation}#=%=#MGH Institute of Health Professions
+
+==========

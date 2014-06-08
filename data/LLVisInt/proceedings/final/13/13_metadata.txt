@@ -1,0 +1,34 @@
+SubmissionNumber#=%=#13
+FinalPaperTitle#=%=#Design of an Active Learning System with Human Correction for Content Analysis
+ShortPaperTitle#=%=#Design of an Active Learning System with Human Correction for Content Analysis
+NumberOfPages#=%=#4
+CopyrightSigned#=%=#Nancy McCracken
+JobTitle#==#
+Organization#==#School of Information Studies
+Syracuse University
+Syracuse, NY 13244
+Abstract#==#Our research investigation focuses on the role of humans in supplying corrected
+examples in active learning cycles, an important aspect of deploying active
+learning in practice.  In this paper, we dis-cuss sampling strategies and
+sampling sizes in set-ting up an active learning system for human ex-periments
+in the task of content analysis, which involves labeling concepts in large
+volumes of text.  The cost of conducting comprehensive hu-man subject studies
+to experimentally determine the effects of sampling sizes and sampling sizes is
+high. To reduce those costs, we first applied an active learning simulation
+approach to test the ef-fect of different sampling strategies and sampling
+sizes on machine learning (ML) performance in order to select a smaller set of
+parameters to be evaluated in human subject studies.
+Author{1}{Firstname}#=%=#Nancy
+Author{1}{Lastname}#=%=#McCracken
+Author{1}{Email}#=%=#njmccrac@syr.edu
+Author{1}{Affiliation}#=%=#Syracuse University
+Author{2}{Firstname}#=%=#Jasy Suet Yan
+Author{2}{Lastname}#=%=#Liew
+Author{2}{Email}#=%=#jliewsue@syr.edu
+Author{2}{Affiliation}#=%=#School of Information Studies, Syracuse University
+Author{3}{Firstname}#=%=#Kevin
+Author{3}{Lastname}#=%=#Crowston
+Author{3}{Email}#=%=#crowston@syr.edu
+Author{3}{Affiliation}#=%=#School of Information Studies, Syracuse University
+
+==========

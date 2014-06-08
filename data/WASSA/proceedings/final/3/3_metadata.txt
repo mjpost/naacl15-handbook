@@ -1,0 +1,36 @@
+SubmissionNumber#=%=#3
+FinalPaperTitle#=%=#Emotive or Non-emotive: That is The Question
+ShortPaperTitle#=%=#Emotive or Non-emotive: That is The Question
+NumberOfPages#=%=#7
+CopyrightSigned#=%=#Michal Ptaszynski
+JobTitle#==#
+Organization#==#Kitami Institute of Technology,
+Department of Computer Science,
+165 Koen-cho, Kitami, 090-8507, Japan
+Abstract#==#In this research we focus on discriminating between emotive (emotionally
+loaded) and non-emotive sentences. We define the problem from a linguistic
+point of view assuming that emotive sentences stand out both lexically and
+grammatically. We verify this assumption experimentally by comparing two sets
+of such sentences in Japanese. The comparison is based on words, longer n-grams
+as well as more sophisticated patterns. In the classification we use a novel
+unsupervised learning algorithm based on the idea of language combinatorics.
+The method reached results comparable to the state of the art, while the fact
+that it is fully automatic makes it more efficient and language independent.
+Author{1}{Firstname}#=%=#Michal
+Author{1}{Lastname}#=%=#Ptaszynski
+Author{1}{Email}#=%=#michal.ptaszynski@gmail.com
+Author{1}{Affiliation}#=%=#Kitami Institute of Technology
+Author{2}{Firstname}#=%=#Fumito
+Author{2}{Lastname}#=%=#Masui
+Author{2}{Email}#=%=#f-masui@cs.kitami-it.ac.jp
+Author{2}{Affiliation}#=%=#Kitami Institute of Technology
+Author{3}{Firstname}#=%=#Rafal
+Author{3}{Lastname}#=%=#Rzepka
+Author{3}{Email}#=%=#kabura@media.eng.hokudai.ac.jp
+Author{3}{Affiliation}#=%=#Hokkaido University
+Author{4}{Firstname}#=%=#Kenji
+Author{4}{Lastname}#=%=#Araki
+Author{4}{Email}#=%=#araki@ist.hokudai.ac.jp
+Author{4}{Affiliation}#=%=#Hokkaido University
+
+==========

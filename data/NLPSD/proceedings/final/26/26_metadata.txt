@@ -1,0 +1,58 @@
+SubmissionNumber#=%=#26
+FinalPaperTitle#=%=#Collective Stance Classification of Posts in Online Debate Forums
+ShortPaperTitle#=%=#Collective Stance Classification of Posts in Online Debate Forums
+NumberOfPages#=%=#9
+CopyrightSigned#=%=#Dhanya Sridhar
+JobTitle#==#
+Organization#==#University of California Santa Cruz
+1156 High Street
+Santa Cruz, CA 95064
+Abstract#==#Online debate sites are a large source of
+informal and opinion-sharing dialogue on
+current socio-political issues. Inferring
+users’ stance (PRO or CON) towards discussion
+topics in domains such as politics
+or news is an important problem, and is
+of utility to researchers, government organizations,
+and companies. Predicting
+users’ stance supports identification of social
+and political groups, building of better
+recommender systems, and personalization
+of users’ information preferences to
+their ideological beliefs. In this paper, we
+develop a novel collective classification
+approach to stance classification, which
+makes use of both structural and linguistic
+features, and which collectively labels
+the posts’ stance across a network of the
+users’ posts. We identify both linguistic
+features of the posts and features that capture
+the underlying relationships between
+posts and users. We use probabilistic soft
+logic (PSL) (Bach et al., 2013) to model
+post stance by leveraging both these local
+linguistic features as well as the observed
+network structure of the posts to reason
+over the dataset. We evaluate our approach
+on 4FORUMS (Walker et al., 2012b), a collection
+of discussions from an online debate
+site on issues ranging from gun control
+to gay marriage. We show that our collective
+classification model is able to easily
+incorporate rich, relational information
+and outperforms a local model which uses
+only linguistic information.
+Author{1}{Firstname}#=%=#Dhanya
+Author{1}{Lastname}#=%=#Sridhar
+Author{1}{Email}#=%=#dsridhar@ucsc.edu
+Author{1}{Affiliation}#=%=#UC Santa Cruz
+Author{2}{Firstname}#=%=#Lise
+Author{2}{Lastname}#=%=#Getoor
+Author{2}{Email}#=%=#getoor@soe.ucsc.edu
+Author{2}{Affiliation}#=%=#UC Santa Cruz
+Author{3}{Firstname}#=%=#Marilyn
+Author{3}{Lastname}#=%=#Walker
+Author{3}{Email}#=%=#maw@soe.ucsc.edu
+Author{3}{Affiliation}#=%=#UC Santa Cruz
+
+==========

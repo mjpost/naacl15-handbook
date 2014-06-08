@@ -1,0 +1,29 @@
+SubmissionNumber#=%=#397
+FinalPaperTitle#=%=#Citation Resolution: A method for evaluating context-based citation recommendation systems
+ShortPaperTitle#=%=#Citation Resolution: A method for evaluating context-based citation recommendation systems
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Daniel Duma
+JobTitle#==#
+Organization#==#School of Informatics, University of Edinburgh
+10 Crichton St, Edinburgh, Midlothian EH8 9AB, United Kingdom
+Abstract#==#Wouldn't it be helpful if your text editor automatically suggested papers
+that are relevant to your research? Wouldn't it be even better if those
+suggestions were contextually relevant? In this paper we name a system that
+would accomplish this a context-based citation recommendation (CBCR) system. We
+specifically present Citation Resolution, a method for the evaluation of CBCR
+systems which exclusively uses readily-available scientific articles.
+Exploiting the human judgements that are already implicit in available
+resources, we avoid purpose-specific annotation. We apply this evaluation to
+three sets of methods for representing a document, based on a) the contents of
+the document, b) the surrounding contexts of citations to the document found in
+other documents, and c) a mixture of the two.
+Author{1}{Firstname}#=%=#Daniel
+Author{1}{Lastname}#=%=#Duma
+Author{1}{Email}#=%=#s1135029@sms.ed.ac.uk
+Author{1}{Affiliation}#=%=#University of Edinburgh
+Author{2}{Firstname}#=%=#Ewan
+Author{2}{Lastname}#=%=#Klein
+Author{2}{Email}#=%=#ewan.klein@gmail.com
+Author{2}{Affiliation}#=%=#School of Informatics, University of Edinburgh
+
+==========

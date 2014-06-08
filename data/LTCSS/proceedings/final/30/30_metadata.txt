@@ -1,0 +1,30 @@
+SubmissionNumber#=%=#30
+FinalPaperTitle#=%=#Creating and Destroying Party Brands
+ShortPaperTitle#=%=#Creating and Destroying Party Brands
+NumberOfPages#=%=#1
+CopyrightSigned#=%=#
+JobTitle#==#
+Organization#==#
+Abstract#==#Party brands are central to theories of Congressional action.  While previous
+work assumes that a party's brand---its long run reputation---is a direct
+consequence of the content of legislation, in this presentation I show how
+partisans from both parties use public statements to craft their own party's
+reputation and to undermine their opponents party.   The incentive to craft and
+destroy brands varies across legislators, creating systematic distortions in
+who contributes to partisan branding efforts, what is said about a party's
+brand, and when partisan criticism becomes salient. To demonstrate the
+construction of party brands I use new collections of newsletters from
+Congressional offices, along with press releases, floor speeches, and media
+broadcasts.  Across the diverse sources, I show that ideologically extreme
+legislators are the most likely to explain their party's work in Washington and
+the most likely to criticize the opposing party---particularly when their is an
+opposing party president.  Extreme legislators also engage in more vitriolic
+criticism of the opposing party, particularly when opposing presidents are
+unpopular.  The result is that parties in rhetoric appear even more combative
+and polarized in public debate outside Congress than inside Congress.
+Author{1}{Firstname}#=%=#Justin
+Author{1}{Lastname}#=%=#Grimmer
+Author{1}{Email}#=%=#jgrimmer@stanford.edu
+Author{1}{Affiliation}#=%=#Stanford University
+
+==========

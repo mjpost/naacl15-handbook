@@ -1,0 +1,32 @@
+SubmissionNumber#=%=#7
+FinalPaperTitle#=%=#Conceptual and Practical Steps in Event Coreference Analysis of Large-scale Data
+ShortPaperTitle#=%=#Event Coreference Analysis of Large-scale Data
+NumberOfPages#=%=#10
+CopyrightSigned#=%=#Fatemeh Torabi Asr
+JobTitle#==#
+Organization#==#
+Abstract#==#A simple conceptual model is employed to investigate events, and break the task
+of coreference resolution into two steps: semantic class detection and
+similarity-based matching. With this perspective an algorithm is implemented to
+cluster event mentions in a large-scale corpus. Results on test data from
+AQUAINT TimeML, which we annotated manually with coreference links, reveal how
+semantic conventions vs. information available in the context of event mentions
+affect decisions in coreference analysis.
+Author{1}{Firstname}#=%=#Fatemeh
+Author{1}{Lastname}#=%=#Torabi Asr
+Author{1}{Email}#=%=#torabiasr@gmail.com
+Author{1}{Affiliation}#=%=#MMCI Cluster of Excellence, Saarland University
+Author{2}{Firstname}#=%=#Jonathan
+Author{2}{Lastname}#=%=#Sonntag
+Author{2}{Email}#=%=#jonathan.sonntag@yahoo.de
+Author{2}{Affiliation}#=%=#University of Potsdam
+Author{3}{Firstname}#=%=#Yulia
+Author{3}{Lastname}#=%=#Grishina
+Author{3}{Email}#=%=#grishina@uni-potsdam.de
+Author{3}{Affiliation}#=%=#University of Potsdam
+Author{4}{Firstname}#=%=#Manfred
+Author{4}{Lastname}#=%=#Stede
+Author{4}{Email}#=%=#stede@uni-potsdam.de
+Author{4}{Affiliation}#=%=#University of Potsdam
+
+==========

@@ -1,0 +1,33 @@
+SubmissionNumber#=%=#38
+FinalPaperTitle#=%=#A practical and linguistically-motivated approach to compositional distributional semantics
+ShortPaperTitle#=%=#A practical and linguistically-motivated approach to compositional distributional semantics
+NumberOfPages#=%=#10
+CopyrightSigned#=%=#Denis Paperno
+JobTitle#==#
+Organization#==#Language, Interaction and Computation Laboratory
+CIMeC - Center for Mind/Brain Sciences
+Palazzo Fedrigotti - corso Bettini 31, 38068 Rovereto (TN)
+Abstract#==#Distributional semantic methods to approximate word meaning with context
+vectors have been very successful empirically, and the last years have seen a
+surge of interest in their compositional extension to phrases and sentences. We
+present here a new model that, like those of Coecke et al. (2010) and Baroni
+and Zamparelli (2010), closely mimics the standard Montagovian semantic
+treatment of composition in distributional terms. However, our approach avoids
+a number of issues that have prevented the application of the earlier
+linguistically-motivated models to full-fledged, real-life sentences. We test
+the model on a variety of empirical tasks, showing that it consistently
+outperforms a set of competitive rivals.
+Author{1}{Firstname}#=%=#Denis
+Author{1}{Lastname}#=%=#Paperno
+Author{1}{Email}#=%=#denis.paperno@unitn.it
+Author{1}{Affiliation}#=%=#
+Author{2}{Firstname}#=%=#Nghia The
+Author{2}{Lastname}#=%=#Pham
+Author{2}{Email}#=%=#thenghia.pham@unitn.it
+Author{2}{Affiliation}#=%=#University of Trento
+Author{3}{Firstname}#=%=#Marco
+Author{3}{Lastname}#=%=#Baroni
+Author{3}{Email}#=%=#marco.baroni@unitn.it
+Author{3}{Affiliation}#=%=#University of Trento
+
+==========

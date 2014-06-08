@@ -1,0 +1,40 @@
+SubmissionNumber#=%=#255
+FinalPaperTitle#=%=#Predicting the relevance of distributional semantic similarity with contextual information
+ShortPaperTitle#=%=#Predicting the relevance of distributional semantic similarity with contextual information
+NumberOfPages#=%=#10
+CopyrightSigned#=%=#Philippe Muller
+JobTitle#==#
+Organization#==#
+Abstract#==#Using distributional analysis methods to compute semantic proximity links
+between words has become commonplace in NLP. 
+The resulting relations  are often noisy or difficult to interpret in general. 
+This paper focuses on the issues of evaluating a distributional resource and
+filtering 
+the relations it contains, but instead of considering it in abstracto, we focus
+on pairs of words in context. 
+In a discourse, we are interested in knowing if the semantic link between two
+items is
+a by-product of textual coherence or is irrelevant.  
+We first set up a human annotation of semantic links with or without contextual
+information to show the importance
+of the textual context in evaluating the relevance of semantic similarity, and
+to assess the prevalence of actual semantic
+relations between word tokens. We then built an experiment to automatically
+predict this relevance, evaluated on the reliable reference data set which was
+the outcome of the first annotation.  
+We show that in-document information greatly improve the prediction made by the
+similarity level alone.
+Author{1}{Firstname}#=%=#Philippe
+Author{1}{Lastname}#=%=#Muller
+Author{1}{Email}#=%=#philippe.muller@irit.fr
+Author{1}{Affiliation}#=%=#IRIT, Toulouse University
+Author{2}{Firstname}#=%=#Cécile
+Author{2}{Lastname}#=%=#Fabre
+Author{2}{Email}#=%=#cecile.fabre@univ-tlse2.fr
+Author{2}{Affiliation}#=%=#CLLE, Toulouse University
+Author{3}{Firstname}#=%=#Clémentine
+Author{3}{Lastname}#=%=#Adam
+Author{3}{Email}#=%=#clementine.adam@univ-tlse2.fr
+Author{3}{Affiliation}#=%=#CLLE, Toulouse University
+
+==========

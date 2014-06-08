@@ -1,0 +1,31 @@
+SubmissionNumber#=%=#11
+FinalPaperTitle#=%=#Measuring the Public Accountability of New Modes of Governance
+ShortPaperTitle#=%=#Measuring the Public Accountability of New Modes of Governance
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Michael Amsler
+JobTitle#==#
+Organization#==#Institute of Computational Linguistics
+University of Zurich
+Abstract#==#We present an encompassing research endeavour on the public accountability of
+new modes of governance in Europe. The aim of this project is to measure the
+salience, tonality and framing of regulatory bodies and public interest
+organisations in newspaper coverage and parliamentary debates over the last 15
+years.
+In order to achieve this, we use language technology which is still underused
+in political science text analyses. Institutionally, the project has emerged
+from a collaboration between a computational linguistics and a political
+science department.
+Author{1}{Firstname}#=%=#Bruno
+Author{1}{Lastname}#=%=#Wueest
+Author{1}{Email}#=%=#wueest@ipz.uzh.ch
+Author{1}{Affiliation}#=%=#Institute of Political Science, University of Zurich
+Author{2}{Firstname}#=%=#Gerold
+Author{2}{Lastname}#=%=#Schneider
+Author{2}{Email}#=%=#gschneid@ifi.uzh.ch
+Author{2}{Affiliation}#=%=#Institute of Computational Linguistics, University of Zurich
+Author{3}{Firstname}#=%=#Michael
+Author{3}{Lastname}#=%=#Amsler
+Author{3}{Email}#=%=#mamsler@cl.uzh.ch
+Author{3}{Affiliation}#=%=#Institute of Computational Linguistics, University of Zurich
+
+==========

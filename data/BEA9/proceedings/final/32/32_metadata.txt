@@ -1,0 +1,39 @@
+SubmissionNumber#=%=#32
+FinalPaperTitle#=%=#Towards Domain-Independent Assessment of Elementary Students’ Science Competency using Soft Cardinality
+ShortPaperTitle#=%=#Towards Domain-Independent Assessment of Elementary Students’ Science Competency using Soft Cardinality
+NumberOfPages#=%=#7
+CopyrightSigned#=%=#Samuel Leeman-Munk
+JobTitle#==#
+Organization#==#North Carolina State University
+Raleigh, North Carolina 27695
+Abstract#==#Automated assessment of student learning has become the subject of increasing
+attention. Students’ textual responses to short answer questions offer a rich
+source of data for assessment. However, automatically analyzing textual
+constructed responses poses significant computational challenges, exacerbated
+by the disfluencies that occur prominently in elementary students’ writing.
+With robust text analytics, there is the potential to analyze a student’s
+text re-sponses and accurately predict his or her future success.  In this
+paper, we propose applying soft cardinality, a technique that has shown success
+grading less disfluent student answers, on a corpus of fourth-grade responses
+to constructed response questions. Based on decomposition of words into their
+constituent character substrings, soft cardinality’s evaluations of responses
+written by fourth graders correlates with summative analyses of their content
+knowledge.
+Author{1}{Firstname}#=%=#Samuel
+Author{1}{Lastname}#=%=#Leeman-Munk
+Author{1}{Email}#=%=#spleeman@ncsu.edu
+Author{1}{Affiliation}#=%=#North Carolina State University
+Author{2}{Firstname}#=%=#Angela
+Author{2}{Lastname}#=%=#Shelton
+Author{2}{Email}#=%=#anshelto@ncsu.edu
+Author{2}{Affiliation}#=%=#North Carolina State University
+Author{3}{Firstname}#=%=#Eric
+Author{3}{Lastname}#=%=#Wiebe
+Author{3}{Email}#=%=#wiebe@ncsu.edu
+Author{3}{Affiliation}#=%=#North Carolina State University
+Author{4}{Firstname}#=%=#James
+Author{4}{Lastname}#=%=#Lester
+Author{4}{Email}#=%=#lester@ncsu.edu
+Author{4}{Affiliation}#=%=#North Carolina State University
+
+==========

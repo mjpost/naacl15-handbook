@@ -1,0 +1,41 @@
+SubmissionNumber#=%=#17
+FinalPaperTitle#=%=#Detecting linguistic idiosyncratic interests in autism using distributional semantic models
+ShortPaperTitle#=%=#Detecting linguistic idiosyncratic interests in autism using distributional semantic models
+NumberOfPages#=%=#5
+CopyrightSigned#=%=#Masoud Rouhizadeh
+JobTitle#==#
+Organization#==#Center for Spoken Language Understanding (CSLU)
+Oregon Health & Science University (OHSU)
+3181 SW Sam Jackson Park Rd, GH 40
+Portland, OR, 97239
+Abstract#==#Children with autism spectrum disorder often exhibit idiosyncratic patterns of
+behaviors and interests. In this paper, we focus on measuring the presence of
+idiosyncratic interests at the linguistic level in children with autism using
+distributional semantic models. We model the semantic space of children's
+narratives by calculating pairwise word overlap, and we compare the overlap
+found within and across diagnostic groups. We find that the words used by
+children with typical development tend to be used by other children with
+typical development, while the words used by children with autism overlap less
+with those used by children with typical development and even less with those
+used by other children with autism. These findings suggest that children with
+autism are veering not only away from the topic of the target narrative but
+also in idiosyncratic semantic directions potentially defined by their
+individual topics of interest.
+Author{1}{Firstname}#=%=#Masoud
+Author{1}{Lastname}#=%=#Rouhizadeh
+Author{1}{Email}#=%=#mrouhizadeh@gmail.com
+Author{1}{Affiliation}#=%=#Oregon Health & Science University (OHSU)
+Author{2}{Firstname}#=%=#Emily
+Author{2}{Lastname}#=%=#Prud'hommeaux
+Author{2}{Email}#=%=#emilypx@gmail.com
+Author{2}{Affiliation}#=%=#University of Rochester
+Author{3}{Firstname}#=%=#Jan
+Author{3}{Lastname}#=%=#van Santen
+Author{3}{Email}#=%=#vansantj@ohsu.edu
+Author{3}{Affiliation}#=%=#Oregon Health & Science University (OHSU)
+Author{4}{Firstname}#=%=#Richard
+Author{4}{Lastname}#=%=#Sproat
+Author{4}{Email}#=%=#rws@xoba.com
+Author{4}{Affiliation}#=%=#Google
+
+==========

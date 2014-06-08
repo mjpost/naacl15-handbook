@@ -1,0 +1,49 @@
+SubmissionNumber#=%=#363
+FinalPaperTitle#=%=#Is this a wampimuk? Cross-modal mapping between distributional semantics and the visual world
+ShortPaperTitle#=%=#Is this a wampimuk? Cross-modal mapping between distributional semantics and the visual world
+NumberOfPages#=%=#12
+CopyrightSigned#=%=#Angeliki Lazaridou
+JobTitle#==#
+Organization#==#University of Trento
+Palazzo Fedrigotti - corso Bettini 31, 
+38068 Rovereto (TN)
+Italy
+Abstract#==#Following up on recent work on estab-
+lishing a mapping between vector-based
+semantic embeddings of words and the
+visual representations of the correspond-
+ing objects from natural images, we first
+present a simple approach to cross-modal
+vector-based semantics for the task of
+zero-shot learning, in which an image
+of a previously unseen object is mapped
+to a linguistic representation denoting its
+word. We then introduce fast mapping, a
+challenging and more cognitively plausi-
+ble variant of the zero-shot task, in which
+the learner is exposed to new objects and
+the corresponding words in very limited
+linguistic contexts. By combining prior
+linguistic and visual knowledge acquired
+about words and their objects, as well as
+exploiting the limited new evidence avail-
+able, the learner must learn to associate
+new objects with words. Our results on
+this task pave the way to realistic simula-
+tions of how children or robots could use
+existing knowledge to bootstrap grounded
+semantic knowledge about new concepts.
+Author{1}{Firstname}#=%=#Angeliki
+Author{1}{Lastname}#=%=#Lazaridou
+Author{1}{Email}#=%=#angeliki.lazaridou@unitn.it
+Author{1}{Affiliation}#=%=#University of Trento
+Author{2}{Firstname}#=%=#Elia
+Author{2}{Lastname}#=%=#Bruni
+Author{2}{Email}#=%=#elia.bruni@gmail.com
+Author{2}{Affiliation}#=%=#University of Trento
+Author{3}{Firstname}#=%=#Marco
+Author{3}{Lastname}#=%=#Baroni
+Author{3}{Email}#=%=#marco.baroni@unitn.it
+Author{3}{Affiliation}#=%=#University of Trento
+
+==========

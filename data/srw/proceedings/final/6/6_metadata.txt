@@ -1,0 +1,33 @@
+SubmissionNumber#=%=#6
+FinalPaperTitle#=%=#A Mapping-Based Approach for General Formal Human Computer Interaction Using Natural Language
+ShortPaperTitle#=%=#A Mapping Approach for General Human Computer Interaction
+NumberOfPages#=%=#7
+CopyrightSigned#=%=#Vincent Letard
+JobTitle#==#
+Organization#==#LIMSI - CNRS
+B.P. 133 
+91403 ORSAY CEDEX
+FRANCE
+Abstract#==#We consider the problem of mapping natural language written utterances
+expressing operational instructions to formal language expressions, applied to
+French and the R programming language. Developing a learning operational
+assistant requires the means to train and evaluate it, that is, a baseline
+system able to interact with the user. After presenting the guidelines of our
+work, we propose a model to represent the problem and discuss the fit of direct
+mapping methods to our task. Finally, we show that, while not resulting in
+excellent scores, a simple approach seems to be sufficient to provide a
+baseline for an interactive learning system.
+Author{1}{Firstname}#=%=#Vincent
+Author{1}{Lastname}#=%=#Letard
+Author{1}{Email}#=%=#vincent.letard@limsi.fr
+Author{1}{Affiliation}#=%=#LIMSI CNRS
+Author{2}{Firstname}#=%=#Sophie
+Author{2}{Lastname}#=%=#Rosset
+Author{2}{Email}#=%=#rosset@limsi.fr
+Author{2}{Affiliation}#=%=#LIMSI CNRS
+Author{3}{Firstname}#=%=#Gabriel
+Author{3}{Lastname}#=%=#Illouz
+Author{3}{Email}#=%=#illouz@limsi.fr
+Author{3}{Affiliation}#=%=#Limsi CNRS
+
+==========

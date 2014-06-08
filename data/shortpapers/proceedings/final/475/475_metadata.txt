@@ -1,0 +1,30 @@
+SubmissionNumber#=%=#475
+FinalPaperTitle#=%=#Observational Initialization of Type-Supervised Taggers
+ShortPaperTitle#=%=#Observational Initialization of Type-Supervised Taggers
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Hui Zhang
+JobTitle#==#
+Organization#==#Hui Zhang
+USC Information Sciences Institute
+4676 Admiralty Way, Suite 1001
+Marina del Rey, CA 90292, USA
+Abstract#==#Recent work has sparked new interest in type-supervised part-of-speech tagging,
+a data setting in which no labeled sentences are available, but the set of
+allowed tags is known for each word type. This paper describes observational
+initialization, a novel technique for initializing EM when training a
+type-supervised HMM tagger. Our initializer allocates probability mass to
+unambiguous transitions in an unlabeled corpus, generating token-level
+observations from type-level supervision.  Experimentally, observational
+initialization gives state-of-the-art type-supervised tagging accuracy,
+providing an error reduction of 56% over uniform initialization on the Penn
+English Treebank.
+Author{1}{Firstname}#=%=#Hui
+Author{1}{Lastname}#=%=#Zhang
+Author{1}{Email}#=%=#huizhang.fuan@gmail.com
+Author{1}{Affiliation}#=%=#USC/ISI
+Author{2}{Firstname}#=%=#John
+Author{2}{Lastname}#=%=#DeNero
+Author{2}{Email}#=%=#denero@google.com
+Author{2}{Affiliation}#=%=#Google
+
+==========

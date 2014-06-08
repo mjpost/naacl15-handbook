@@ -1,0 +1,39 @@
+SubmissionNumber#=%=#159
+FinalPaperTitle#=%=#Towards a General Rule for Identifying Deceptive Opinion Spam
+ShortPaperTitle#=%=#Towards a General Rule for Identifying Deceptive Opinion Spam
+NumberOfPages#=%=#11
+CopyrightSigned#=%=#Jiwei Li
+JobTitle#==#
+Organization#==#Carnegie Mellon University
+Abstract#==#Consumers’ purchase decisions are increasingly influenced by user-generated
+online re- views. Accordingly, there has been growing concern about the
+potential for posting deceptive opinion spam fictitious reviews that have been
+deliberately written to sound authentic, to deceive the readers. In this paper,
+we explore generalized approaches for identifying online deceptive opinion spam
+based on a new gold standard data, which is comprised of data from four
+different domains (i.e. Hotel, Restaurant, Airline, Doctor), each of which
+contains three types of reviews, i.e. costumer generated truthful reviews,
+Turker generated deceptive reviews and employee (domain-expert) generated
+deceptive reviews. Our approach tries to capture the general difference of
+language usage between deceptive and truthful reviews and we hope that it would
+be of help to customers when making purchase decisions, and review portal
+operators, such as TripAdvisor or Yelp to investigate fraudulent activity on
+their sites.
+Author{1}{Firstname}#=%=#Jiwei
+Author{1}{Lastname}#=%=#Li
+Author{1}{Email}#=%=#jiweil@andrew.cmu.edu
+Author{1}{Affiliation}#=%=#Carnegie Mellon University
+Author{2}{Firstname}#=%=#Myle
+Author{2}{Lastname}#=%=#Ott
+Author{2}{Email}#=%=#myleott@cs.cornell.edu
+Author{2}{Affiliation}#=%=#Cornell University
+Author{3}{Firstname}#=%=#Claire
+Author{3}{Lastname}#=%=#Cardie
+Author{3}{Email}#=%=#cardie@cs.cornell.edu
+Author{3}{Affiliation}#=%=#Cornell University
+Author{4}{Firstname}#=%=#Eduard
+Author{4}{Lastname}#=%=#Hovy
+Author{4}{Email}#=%=#ehovy@andrew.cmu.edu
+Author{4}{Affiliation}#=%=#Carnegie Mellon University
+
+==========

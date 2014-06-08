@@ -1,0 +1,36 @@
+SubmissionNumber#=%=#20
+FinalPaperTitle#=%=#Analyzing Argumentative Discourse Units in Online Interactions
+ShortPaperTitle#=%=#Analyzing Argumentative Discourse Units in Online Interactions
+NumberOfPages#=%=#10
+CopyrightSigned#=%=#Debanjan Ghosh
+JobTitle#==#
+Organization#==#School of Communication and Information, Rutgers University
+4 Huntington Street, New Brunswick NJ 08901
+Abstract#==#Argument mining of online interactions is in its infancy. One reason is the
+lack of annotated corpora in this genre. To make progress, we need to develop a
+principled and scalable way of determining which portions of texts are
+argumentative and what is the nature of argumentation. We propose a two-tiered
+approach to achieve this goal and report on several initial studies to assess
+its potential.
+Author{1}{Firstname}#=%=#Debanjan
+Author{1}{Lastname}#=%=#Ghosh
+Author{1}{Email}#=%=#debanjan.ghosh@rutgers.edu
+Author{1}{Affiliation}#=%=#Rutgers University
+Author{2}{Firstname}#=%=#Smaranda
+Author{2}{Lastname}#=%=#Muresan
+Author{2}{Email}#=%=#smara@ccls.columbia.edu
+Author{2}{Affiliation}#=%=#Columbia University
+Author{3}{Firstname}#=%=#Nina
+Author{3}{Lastname}#=%=#Wacholder
+Author{3}{Email}#=%=#ninwac@rutgers.edu
+Author{3}{Affiliation}#=%=#Rutgers University SC&I
+Author{4}{Firstname}#=%=#Mark
+Author{4}{Lastname}#=%=#Aakhus
+Author{4}{Email}#=%=#aakhus@rutgers.edu
+Author{4}{Affiliation}#=%=#Rutgers University
+Author{5}{Firstname}#=%=#Matthew
+Author{5}{Lastname}#=%=#Mitsui
+Author{5}{Email}#=%=#mmitsui@rutgers.edu
+Author{5}{Affiliation}#=%=#Rutgers University
+
+==========

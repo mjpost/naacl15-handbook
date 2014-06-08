@@ -1,0 +1,40 @@
+SubmissionNumber#=%=#485
+FinalPaperTitle#=%=#XMEANT: Better semantic MT evaluation without reference translations
+ShortPaperTitle#=%=#XMEANT: Better semantic MT evaluation without reference translations
+NumberOfPages#=%=#7
+CopyrightSigned#=%=#Lo, Chi-kiu
+JobTitle#==#
+Organization#==#Lo, Chi-kiu
+Department of Computer Science and Engineering,
+Hong Kong University of Science and Technology,
+Clear Water Bay, Kowloon,
+Hong Kong
+Abstract#==#We introduce XMEANT---a new cross-lingual version of the semantic frame based
+MT evaluation metric MEANT---which can correlate even more closely with human
+adequacy judgments than monolingual MEANT and eliminates the need for expensive
+human references. Previous work established that MEANT reflects translation
+adequacy with state-of-the-art accuracy, and optimizing MT systems against
+MEANT robustly improves translation quality. However, to go beyond tuning
+weights in the loglinear SMT model, a cross-lingual objective function that can
+deeply integrate semantic frame criteria into the MT training pipeline is
+needed. We show that cross-lingual XMEANT outperforms monolingual MEANT by (1)
+replacing the monolingual context vector model in MEANT with simple translation
+probabilities, and (2) incorporating bracketing ITG constraints.
+Author{1}{Firstname}#=%=#Chi-kiu
+Author{1}{Lastname}#=%=#Lo
+Author{1}{Email}#=%=#jackielo@cs.ust.hk
+Author{1}{Affiliation}#=%=#HKUST
+Author{2}{Firstname}#=%=#Meriem
+Author{2}{Lastname}#=%=#Beloucif
+Author{2}{Email}#=%=#mbeloucif@cse.ust.hk
+Author{2}{Affiliation}#=%=#HKUST
+Author{3}{Firstname}#=%=#Markus
+Author{3}{Lastname}#=%=#Saers
+Author{3}{Email}#=%=#masaers@cs.ust.hk
+Author{3}{Affiliation}#=%=#Hong Kong University of Science and Technology
+Author{4}{Firstname}#=%=#Dekai
+Author{4}{Lastname}#=%=#Wu
+Author{4}{Email}#=%=#dekai@cs.ust.hk
+Author{4}{Affiliation}#=%=#HKUST
+
+==========

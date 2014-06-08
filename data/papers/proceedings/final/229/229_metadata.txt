@@ -1,0 +1,49 @@
+SubmissionNumber#=%=#229
+FinalPaperTitle#=%=#Learning Topic Representation for SMT with Neural Networks
+ShortPaperTitle#=%=#Learning Topic Representation for SMT with Neural Networks
+NumberOfPages#=%=#11
+CopyrightSigned#=%=#Lei Cui
+JobTitle#==#
+Organization#==#Harbin Institute of Technology
+No. 92 West Dazhi Street , Nan Gang District, Harbin 150001
+Abstract#==#Statistical Machine Translation (SMT) usually utilizes contextual information
+to disambiguate translation candidates. However, it is often limited to
+contexts within sentence boundaries, hence broader topical information cannot
+be leveraged.  In this paper, we propose a novel approach to learning topic
+representation for parallel data using a neural network architecture, where
+abundant topical contexts are embedded via topic relevant monolingual data. By
+associating each translation rule with the topic representation, topic relevant
+rules are selected according to the distributional similarity with the source
+text during SMT decoding. Experimental results show that our method
+significantly improves translation accuracy in the NIST Chinese-to-English
+translation task compared to a state-of-the-art baseline.
+Author{1}{Firstname}#=%=#Lei
+Author{1}{Lastname}#=%=#Cui
+Author{1}{Email}#=%=#leicui@hit.edu.cn
+Author{1}{Affiliation}#=%=#Harbin Institute of Technology
+Author{2}{Firstname}#=%=#Dongdong
+Author{2}{Lastname}#=%=#Zhang
+Author{2}{Email}#=%=#dozhang@microsoft.com
+Author{2}{Affiliation}#=%=#Microsoft Research
+Author{3}{Firstname}#=%=#Shujie
+Author{3}{Lastname}#=%=#Liu
+Author{3}{Email}#=%=#shujliu@microsoft.com
+Author{3}{Affiliation}#=%=#Microsoft Research
+Author{4}{Firstname}#=%=#Qiming
+Author{4}{Lastname}#=%=#Chen
+Author{4}{Email}#=%=#simoncqm@gmail.com
+Author{4}{Affiliation}#=%=#Shanghai Jiao Tong University
+Author{5}{Firstname}#=%=#Mu
+Author{5}{Lastname}#=%=#Li
+Author{5}{Email}#=%=#muli@microsoft.com
+Author{5}{Affiliation}#=%=#Microsoft Research
+Author{6}{Firstname}#=%=#Ming
+Author{6}{Lastname}#=%=#Zhou
+Author{6}{Email}#=%=#mingzhou@microsoft.com
+Author{6}{Affiliation}#=%=#Microsoft Research
+Author{7}{Firstname}#=%=#Muyun
+Author{7}{Lastname}#=%=#Yang
+Author{7}{Email}#=%=#ymy@mtlab.hit.edu.cn
+Author{7}{Affiliation}#=%=#Harbin Institute of Technology
+
+==========

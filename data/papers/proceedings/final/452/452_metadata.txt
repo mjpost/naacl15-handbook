@@ -1,0 +1,35 @@
+SubmissionNumber#=%=#452
+FinalPaperTitle#=%=#Spectral Unsupervised Parsing with Additive Tree Metrics
+ShortPaperTitle#=%=#Spectral Unsupervised Parsing with Additive Tree Metrics
+NumberOfPages#=%=#11
+CopyrightSigned#=%=#Ankur P. Parikh
+JobTitle#==#
+Organization#==#Carnegie Mellon University
+5000 Forbes Ave.
+Pittsburgh, PA 15213
+Abstract#==#We propose a spectral approach for unsupervised constituent parsing that comes
+with theoretical guarantees on latent structure recovery. Our approach is
+grammarless – we directly learn the bracketing structure of a given sentence
+without using a grammar model. The main algorithm is based on lifting the
+concept of additive tree metrics for structure learning of latent trees in the
+phylogenetic and machine learning communities to the case where the tree
+structure varies across examples. Although finding the “minimal” latent
+tree
+is NP-hard in general, for the case of projective trees we find that it can be
+found using bilexical parsing algorithms. Empirically, our algorithm performs
+favorably compared to the constituent context model of Klein and Manning (2002)
+without the need for careful initialization.
+Author{1}{Firstname}#=%=#Ankur P.
+Author{1}{Lastname}#=%=#Parikh
+Author{1}{Email}#=%=#apparikh@cs.cmu.edu
+Author{1}{Affiliation}#=%=#Carnegie Mellon University
+Author{2}{Firstname}#=%=#Shay B.
+Author{2}{Lastname}#=%=#Cohen
+Author{2}{Email}#=%=#scohen@inf.ed.ac.uk
+Author{2}{Affiliation}#=%=#
+Author{3}{Firstname}#=%=#Eric P.
+Author{3}{Lastname}#=%=#Xing
+Author{3}{Email}#=%=#epxing@cs.cmu.edu
+Author{3}{Affiliation}#=%=#Carnegie Mellon University
+
+==========

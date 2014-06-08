@@ -1,0 +1,42 @@
+SubmissionNumber#=%=#191
+FinalPaperTitle#=%=#Optimizing Segmentation Strategies for Simultaneous Speech Translation
+ShortPaperTitle#=%=#Optimizing Segmentation Strategies for Simultaneous Speech Translation
+NumberOfPages#=%=#6
+CopyrightSigned#=%=#Yusuke Oda
+JobTitle#==#
+Organization#==#Graduate School of Information Science
+Nara Institute of Science and Technology
+Takayama, Ikoma, Nara 630-0192, Japan
+Abstract#==#In this paper, we propose new algorithms for learning segmentation strategies
+for simultaneous speech translation.
+In contrast to previously proposed heuristic methods,
+our method finds a segmentation that
+directly maximizes the performance of the machine translation system.
+We describe two methods based on greedy search and dynamic programming
+that search for the optimal segmentation strategy.
+An experimental evaluation finds that
+our algorithm is able to segment the input two to three times more frequently
+than conventional methods in terms of number of words, while maintaining
+the same score of automatic evaluation.
+Author{1}{Firstname}#=%=#Yusuke
+Author{1}{Lastname}#=%=#Oda
+Author{1}{Email}#=%=#oda.yusuke.on9@is.naist.jp
+Author{1}{Affiliation}#=%=#Nara Institute of Science and Technology
+Author{2}{Firstname}#=%=#Graham
+Author{2}{Lastname}#=%=#Neubig
+Author{2}{Email}#=%=#neubig@is.naist.jp
+Author{2}{Affiliation}#=%=#Nara Institute of Science and Technology
+Author{3}{Firstname}#=%=#Sakriani
+Author{3}{Lastname}#=%=#Sakti
+Author{3}{Email}#=%=#ssakti@is.naist.jp
+Author{3}{Affiliation}#=%=#Nara Institute of Science and Technology
+Author{4}{Firstname}#=%=#Tomoki
+Author{4}{Lastname}#=%=#Toda
+Author{4}{Email}#=%=#tomoki@is.naist.jp
+Author{4}{Affiliation}#=%=#Nara Institute of Science and Technology
+Author{5}{Firstname}#=%=#Satoshi
+Author{5}{Lastname}#=%=#Nakamura
+Author{5}{Email}#=%=#s-nakamura@is.naist.jp
+Author{5}{Affiliation}#=%=#Nara Institute of Science and Technology
+
+==========

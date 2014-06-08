@@ -1,0 +1,22 @@
+SubmissionNumber#=%=#8
+FinalPaperTitle#=%=#Syntactic Processing Using Global Discriminative Learning and Beam-Search Decoding
+ShortPaperTitle#=%=#Syntactic Processing Using Global Discriminative Learning and Beam-Search Decoding
+NumberOfPages#=%=#3
+CopyrightSigned#=%=#
+JobTitle#==#
+Organization#==#
+Abstract#==#N/A
+Author{1}{Firstname}#=%=#Yue
+Author{1}{Lastname}#=%=#Zhang
+Author{1}{Email}#=%=#yue_zhang@sutd.edu.sg
+Author{1}{Affiliation}#=%=#Singapore University of Technology and Design
+Author{2}{Firstname}#=%=#Meishan
+Author{2}{Lastname}#=%=#Zhang
+Author{2}{Email}#=%=#mszhang@ir.hit.edu.cn
+Author{2}{Affiliation}#=%=#Harbin Institute of Technology
+Author{3}{Firstname}#=%=#Ting
+Author{3}{Lastname}#=%=#Liu
+Author{3}{Email}#=%=#tliu@ir.hit.edu.cn
+Author{3}{Affiliation}#=%=#Harbin Institute of Technology
+
+==========

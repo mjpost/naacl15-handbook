@@ -11,3 +11,4 @@ handbook.out
 handbook.pdf
 handbook.run.xml
 handbook.toc
+*.pyc

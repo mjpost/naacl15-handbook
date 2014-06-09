@@ -1,7 +1,7 @@
 SubmissionNumber#=%=#9
-FinalPaperTitle#=%=#From image descriptions to visual denotations: New similarity metrics for semantic inference over event descriptions
-ShortPaperTitle#=%=#
-NumberOfPages#=%=#
+FinalPaperTitle#=%=#Cross-lingual Projected Expectation Regularization for Weakly Supervised Learning
+ShortPaperTitle#=%=#Cross-lingual Projected Expectation Regularization for Weakly Supervised Learning
+NumberOfPages#=%=#12
 CopyrightSigned#=%=#
 JobTitle#==#
 Organization#==#

@@ -1,7 +1,7 @@
 SubmissionNumber#=%=#13
-FinalPaperTitle#=%=#The Language Demographics of Amazon Mechanical Turk
-ShortPaperTitle#=%=#
-NumberOfPages#=%=#
+FinalPaperTitle#=%=#Data-Driven Metaphor Recognition and Explanation
+ShortPaperTitle#=%=#Data-Driven Metaphor Recognition and Explanation
+NumberOfPages#=%=#12
 CopyrightSigned#=%=#
 JobTitle#==#
 Organization#==#

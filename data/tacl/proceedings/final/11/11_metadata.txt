@@ -1,7 +1,7 @@
 SubmissionNumber#=%=#11
-FinalPaperTitle#=%=#The Language Demographics of Amazon Mechanical Turk
-ShortPaperTitle#=%=#
-NumberOfPages#=%=#
+FinalPaperTitle#=%=#Temporal Annotation in the Clinical Domain
+ShortPaperTitle#=%=#Temporal Annotation in the Clinical Domain
+NumberOfPages#=%=#12
 CopyrightSigned#=%=#
 JobTitle#==#
 Organization#==#

@@ -1,7 +1,7 @@
 SubmissionNumber#=%=#6
-FinalPaperTitle#=%=#From image descriptions to visual denotations: New similarity metrics for semantic inference over event descriptions
-ShortPaperTitle#=%=#
-NumberOfPages#=%=#
+FinalPaperTitle#=%=#A Tabular Method for Dynamic Oracles in Transition-Based Parsing
+ShortPaperTitle#=%=#A Tabular Method for Dynamic Oracles in Transition-Based Parsing
+NumberOfPages#=%=#12
 CopyrightSigned#=%=#
 JobTitle#==#
 Organization#==#

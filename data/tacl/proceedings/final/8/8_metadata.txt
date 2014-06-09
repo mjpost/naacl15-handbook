@@ -1,7 +1,7 @@
 SubmissionNumber#=%=#8
-FinalPaperTitle#=%=#From image descriptions to visual denotations: New similarity metrics for semantic inference over event descriptions
-ShortPaperTitle#=%=#
-NumberOfPages#=%=#
+FinalPaperTitle#=%=#Entity Linking meets Word Sense Disambiguation: a Unified Approach
+ShortPaperTitle#=%=#Entity Linking meets Word Sense Disambiguation: a Unified Approach
+NumberOfPages#=%=#14
 CopyrightSigned#=%=#
 JobTitle#==#
 Organization#==#

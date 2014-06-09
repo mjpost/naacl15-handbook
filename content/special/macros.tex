@@ -253,12 +253,11 @@
 \newcommand{\posterabstract}[1]{%
   \noindent%
   \begin{minipage}{\linewidth}%
-    \begin{center}\label{#1}%
-      {\bfseries\normalsize\papertitle{#1}}\\
-      \normalsize\paperauthor{\citefullauthornames{#1}}\\
-    \end{center}
-  \end{minipage}\par\nopagebreak%
-  \noindent{\small\input{auto/abstracts/#1}}\vspace{2em}\par}			% Space reduced to 2em from 3em - B
+    \label{#1}%
+          {\bfseries\normalsize\papertitle{#1}}\\
+          \normalsize\paperauthor{\citefullauthornames{#1}}
+  \end{minipage}\vspace{1mm}\\\nopagebreak%
+  \noindent{\small\input{auto/abstracts/#1}}\par}
 
 % insert an abstract into a list of abstracts
 \newcommand{\paperabstract}[5]{%
@@ -286,8 +285,8 @@
   %%   {\bfseries \citetitle{#5}} \vspace{.5em}\linebreak
   %%   {\itshape    \citefullauthornames{#5}}%\vspace{.5em}\linebreak	% Reduce space between header and abstract - B
   %%   %#1 #2 --- #4\linebreak 						% Redundant info? - B
-  \end{minipage}\par\nopagebreak%
-  \noindent{\small\input{auto/abstracts/#5}}\vspace{1em}\par}			% Space reduced to 2em from 3em - B
+  \end{minipage}\vspace{1mm}\\\nopagebreak%
+  \noindent{\small\input{auto/abstracts/#5}}\par}
 
 \newcommand{\TutorialCoverPage}[4]{%
 \vspace*{.25in}
@@ -462,3 +461,6 @@ Human Language Technologies}\par
 \newcommand{\wspaperentry}[1]{
   \parbox[t]{\linewidth}{\raggedright\papertitle{#1}\newline
     \paperauthor{\citefullauthornames{#1}}}}
+
+\newcommand{\sessionchair}[2]{
+  \emph{Chair: #1 #2}\par\index{#2, #1}}

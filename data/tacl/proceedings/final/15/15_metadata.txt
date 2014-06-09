@@ -1,7 +1,7 @@
 SubmissionNumber#=%=#15
-FinalPaperTitle#=%=#The Language Demographics of Amazon Mechanical Turk
-ShortPaperTitle#=%=#
-NumberOfPages#=%=#
+FinalPaperTitle#=%=#Parallel Algorithms for Unsupervised Tagging
+ShortPaperTitle#=%=#Parallel Algorithms for Unsupervised Tagging
+NumberOfPages#=%=#14
 CopyrightSigned#=%=#
 JobTitle#==#
 Organization#==#

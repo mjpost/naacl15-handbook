@@ -1,7 +1,7 @@
 SubmissionNumber#=%=#16
-FinalPaperTitle#=%=#The Language Demographics of Amazon Mechanical Turk
-ShortPaperTitle#=%=#
-NumberOfPages#=%=#
+FinalPaperTitle#=%=#Heterogeneous Networks and Their Applications: Scientometrics, Name Disambiguation, and Topic Modeling
+ShortPaperTitle#=%=#Heterogeneous Networks and Their Applications: Scientometrics, Name Disambiguation, and Topic Modeling
+NumberOfPages#=%=#14
 CopyrightSigned#=%=#
 JobTitle#==#
 Organization#==#

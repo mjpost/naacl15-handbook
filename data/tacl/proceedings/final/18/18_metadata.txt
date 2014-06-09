@@ -1,7 +1,7 @@
 SubmissionNumber#=%=#18
-FinalPaperTitle#=%=#The Language Demographics of Amazon Mechanical Turk
-ShortPaperTitle#=%=#
-NumberOfPages#=%=#
+FinalPaperTitle#=%=#Discriminative Lexical Semantic Segmentation with Gaps: Running the MWE Gamut
+ShortPaperTitle#=%=#Discriminative Lexical Semantic Segmentation with Gaps: Running the MWE Gamut
+NumberOfPages#=%=#14
 CopyrightSigned#=%=#
 JobTitle#==#
 Organization#==#

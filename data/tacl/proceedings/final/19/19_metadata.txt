@@ -1,7 +1,7 @@
 SubmissionNumber#=%=#19
-FinalPaperTitle#=%=#The Language Demographics of Amazon Mechanical Turk
-ShortPaperTitle#=%=#
-NumberOfPages#=%=#
+FinalPaperTitle#=%=#Segmentation for Efficient Supervised Language Annotation with an Explicit Cost-Utility Tradeoff
+ShortPaperTitle#=%=#Segmentation for Efficient Supervised Language Annotation with an Explicit Cost-Utility Tradeoff
+NumberOfPages#=%=#12
 CopyrightSigned#=%=#
 JobTitle#==#
 Organization#==#

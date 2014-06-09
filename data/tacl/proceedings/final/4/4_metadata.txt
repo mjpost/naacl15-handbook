@@ -1,7 +1,7 @@
 SubmissionNumber#=%=#4
-FinalPaperTitle#=%=#From image descriptions to visual denotations: New similarity metrics for semantic inference over event descriptions
-ShortPaperTitle#=%=#
-NumberOfPages#=%=#
+FinalPaperTitle#=%=#FLORS: Fast and Simple Domain Adaptation for Part-of-Speech Tagging
+ShortPaperTitle#=%=#FLORS: Fast and Simple Domain Adaptation for Part-of-Speech Tagging
+NumberOfPages#=%=#12
 CopyrightSigned#=%=#
 JobTitle#==#
 Organization#==#

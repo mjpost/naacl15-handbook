@@ -1,7 +1,7 @@
 SubmissionNumber#=%=#17
-FinalPaperTitle#=%=#The Language Demographics of Amazon Mechanical Turk
-ShortPaperTitle#=%=#
-NumberOfPages#=%=#
+FinalPaperTitle#=%=#Training Deterministic Parsers with Non-Deterministic Oracles
+ShortPaperTitle#=%=#Training Deterministic Parsers with Non-Deterministic Oracles
+NumberOfPages#=%=#12
 CopyrightSigned#=%=#
 JobTitle#==#
 Organization#==#

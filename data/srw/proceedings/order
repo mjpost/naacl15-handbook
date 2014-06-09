@@ -4,28 +4,14 @@
 17 13:45--14:10 # Extracting Temporal and Causal Relations between Events
 19 14:10--14:35 # Towards a discourse relation-aware approach for Chinese-English machine translation
 27 14:35--15:00 # Analyzing Positions and Topics in Political Discussions of the German Bundestag
-= Poster Highlights
-+ 18:05--18:50 SRW Research Papers
-6  # A Mapping-Based Approach for General Formal Human Computer Interaction Using Natural Language
-15  # An Exploration of Embeddings for Generalized Phrases
-18  # Learning Grammar with Explicit Annotations for Subordinating Conjunctions
-22  # Going beyond sentences when applying tree kernels
-25  # Multi-document summarization using distortion-rate ratio
-29  # Disambiguating prepositional phrase attachment sites with sense information captured in contextualized distributional data
-33  # Open Information Extraction for Spanish Language based on Syntactic Constraints
-34  # Improving Text Normalization via Unsupervised Model and Discriminative Reranking
-= Poster Session
-+ 18:50--21:30 Poster and Dinner Session I: TACL Papers, Long Papers, Short Papers, Student Research Workshop; Demonstrations
+= SRW Poster Highlights
+6 18:05--18:10 # A Mapping-Based Approach for General Formal Human Computer Interaction Using Natural Language
+15 18:10--18:15 # An Exploration of Embeddings for Generalized Phrases
+18 18:15--18:20 # Learning Grammar with Explicit Annotations for Subordinating Conjunctions
+22 18:20--18:25 # Going beyond sentences when applying tree kernels
+25 18:25--18:30 # Multi-document summarization using distortion-rate ratio
+29 18:30--18:35 # Disambiguating prepositional phrase attachment sites with sense information captured in contextualized distributional data
+33 18:35--18:40 # Open Information Extraction for Spanish Language based on Syntactic Constraints
+34 18:40--18:45 # Improving Text Normalization via Unsupervised Model and Discriminative Reranking
 9  # Semi-Automatic Development of KurdNet, The Kurdish WordNet
-#14 # NOTE: PAPER PRESENT IN THE SCHEDULE BUT NOT IN THE METADATA  # Bayesian Kernel Methods for Natural Language Processing
-#17 # NOTE: PAPER PRESENT IN THE SCHEDULE BUT NOT IN THE METADATA  # Extracting Temporal and Causal Relations between Events
-#19 # NOTE: PAPER PRESENT IN THE SCHEDULE BUT NOT IN THE METADATA  # Towards a discourse relation-aware approach for Chinese-English machine translation
-#27 # NOTE: PAPER PRESENT IN THE SCHEDULE BUT NOT IN THE METADATA  # Analyzing Positions and Topics in Political Discussions of the German Bundestag
-#6 # NOTE: PAPER PRESENT IN THE SCHEDULE BUT NOT IN THE METADATA  # A Mapping-Based Approach for General Formal Human Computer Interaction Using Natural Language
-#15 # NOTE: PAPER PRESENT IN THE SCHEDULE BUT NOT IN THE METADATA  # An Exploration of Embeddings for Generalized Phrases
-#18 # NOTE: PAPER PRESENT IN THE SCHEDULE BUT NOT IN THE METADATA  # Learning Grammar with Explicit Annotations for Subordinating Conjunctions
-#22 # NOTE: PAPER PRESENT IN THE SCHEDULE BUT NOT IN THE METADATA  # Going beyond sentences when applying tree kernels
-#25 # NOTE: PAPER PRESENT IN THE SCHEDULE BUT NOT IN THE METADATA  # Multi-document summarization using distortion-rate ratio
-#29 # NOTE: PAPER PRESENT IN THE SCHEDULE BUT NOT IN THE METADATA  # Disambiguating prepositional phrase attachment sites with sense information captured in contextualized distributional data
-#33 # NOTE: PAPER PRESENT IN THE SCHEDULE BUT NOT IN THE METADATA  # Open Information Extraction for Spanish Language based on Syntactic Constraints
-#34 # NOTE: PAPER PRESENT IN THE SCHEDULE BUT NOT IN THE METADATA  # Improving Text Normalization via Unsupervised Model and Discriminative Reranking
++ 18:50--21:30 Poster and Dinner Session I: TACL Papers, Long Papers, Short Papers, Student Research Workshop; Demonstrations

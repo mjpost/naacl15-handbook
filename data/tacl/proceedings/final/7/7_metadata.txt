@@ -1,7 +1,7 @@
 SubmissionNumber#=%=#7
-FinalPaperTitle#=%=#From image descriptions to visual denotations: New similarity metrics for semantic inference over event descriptions
-ShortPaperTitle#=%=#
-NumberOfPages#=%=#
+FinalPaperTitle#=%=#Exploring the Role of Stress in Bayesian Word Segmentation using Adaptor Grammars
+ShortPaperTitle#=%=#Exploring the Role of Stress in Bayesian Word Segmentation using Adaptor Grammars
+NumberOfPages#=%=#12
 CopyrightSigned#=%=#
 JobTitle#==#
 Organization#==#

@@ -1,7 +1,7 @@
 SubmissionNumber#=%=#5
-FinalPaperTitle#=%=#From image descriptions to visual denotations: New similarity metrics for semantic inference over event descriptions
-ShortPaperTitle#=%=#
-NumberOfPages#=%=#
+FinalPaperTitle#=%=#Joint Incremental Disfluency Detection and Dependency Parsin
+ShortPaperTitle#=%=#Joint Incremental Disfluency Detection and Dependency Parsin
+NumberOfPages#=%=#12
 CopyrightSigned#=%=#
 JobTitle#==#
 Organization#==#

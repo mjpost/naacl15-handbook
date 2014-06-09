@@ -1,7 +1,7 @@
 SubmissionNumber#=%=#14
-FinalPaperTitle#=%=#The Language Demographics of Amazon Mechanical Turk
-ShortPaperTitle#=%=#
-NumberOfPages#=%=#
+FinalPaperTitle#=%=#Grounded Compositional Semantics for Finding and Describing Images with Sentences
+ShortPaperTitle#=%=#Grounded Compositional Semantics for Finding and Describing Images with Sentences
+NumberOfPages#=%=#12
 CopyrightSigned#=%=#
 JobTitle#==#
 Organization#==#

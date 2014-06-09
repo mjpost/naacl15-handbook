@@ -383,11 +383,11 @@ Human Language Technologies}\par
 %\newlength{\wsscheduleindentation}
 %\newlength{\wsschedulelabelwidth}
 \newenvironment{wsschedule}[5]{%
-  % #1 workshop title without line breaks
+  % #1 workshop title
   % #2 workshop number
   % #3 workshop label
-  % #4 workshop title
-  % #6 workshop location
+  % #4 workshop organizers
+  % #5 workshop location
   %\addcontentsline{toc}{section}{{{\bfseries W~#2:} #4}}
 
   %\addcontentsline{toc}{section}{{{\bfseries W~#2:} 
@@ -406,9 +406,10 @@ Human Language Technologies}\par
     {\Large
     \ifthenelse{\equal{#2}{0}}{{}}{{\huge{Workshop #2:\\\vspace{.5ex}}}}
       %\ifthenelse{\equal{#1}{none}}{{#4}}{{#1}}
-      #4
+      #1
       \vspace{1ex}}\\
     {\large Venue: #5 \vspace{2em}}\\
+    {Organizers: \citefullauthornames{#4}}\\
     %% {\huge Workshop Program\vspace{1ex}}
   \end{center}
   \markright{{\bfseries W~#2:} #1}{}%

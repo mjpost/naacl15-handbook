@@ -6,7 +6,7 @@
 2A	Syntax, Parsing & Tagging II	Julia Hockenmaier
 2B	Semantics II	Raymond Mooney
 2C	Word Segmentation and POS Tagging	Greg Kondrak
-2D
+2D  SRW  Svitlana Volkova
 2E	Sentiment Analysis I	Myle Ott
 3A	Topic Modeling	Chris Dyer
 3B	Information Extraction I	Mihai Surdeanu

@@ -404,12 +404,10 @@ Human Language Technologies}\par
   \begin{center}
 %    {\huge{\Large Workshop #2:}\vspace{.5ex}\\
     {\Large
-    \ifthenelse{\equal{#2}{0}}{{}}{{\huge{Workshop #2:\\\vspace{.5ex}}}}
-      %\ifthenelse{\equal{#1}{none}}{{#4}}{{#1}}
-      #1
-      \vspace{1ex}}\\
+      \ifthenelse{\equal{#2}{0}}{{}}{{\huge{Workshop #2:\\\vspace{.5ex}}}}
+      #1\par}
+    {\ifthenelse{\equal{#4}{0}}{{}}{{Organizers: \paperauthor{#4}}\par}}
     {\large Venue: #5 \vspace{2em}}\\
-    {Organizers: \citefullauthornames{#4}}\\
     %% {\huge Workshop Program\vspace{1ex}}
   \end{center}
   \markright{{\bfseries W~#2:} #1}{}%

@@ -378,21 +378,16 @@ Human Language Technologies}\par
 \begin{SingleTrackSchedule}}%
 {\end{SingleTrackSchedule}\end{center}}
 
+%% WORKSHOP SCHEDULE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %\newlength{\wsscheduleindentation}
 %\newlength{\wsschedulelabelwidth}
-\newenvironment{wsschedule}[6]{%
+\newenvironment{wsschedule}[5]{%
   % #1 workshop title without line breaks
   % #2 workshop number
   % #3 workshop label
   % #4 workshop title
-  % #5 workshop date
   % #6 workshop location
-  %\typeout {#1}
-  %\typeout {#2}
-  %\typeout {#3}
-  %\typeout {#4}
-  %\typeout {#5}
-  %\typeout {#6}
   %\addcontentsline{toc}{section}{{{\bfseries W~#2:} #4}}
 
   %\addcontentsline{toc}{section}{{{\bfseries W~#2:} 
@@ -413,8 +408,7 @@ Human Language Technologies}\par
       %\ifthenelse{\equal{#1}{none}}{{#4}}{{#1}}
       #4
       \vspace{1ex}}\\
-    {\Large #5\vspace{1em}}\\
-    {\large Venue: #6 \vspace{2em}}\\
+    {\large Venue: #5 \vspace{2em}}\\
     %% {\huge Workshop Program\vspace{1ex}}
   \end{center}
   \markright{{\bfseries W~#2:} #1}{}%

@@ -14,7 +14,7 @@
 3D	Syntax, Parsing & Tagging III	Yusuke Miyao
 3E	Language Resources and Evaluation I	Fei Xia
 4A	Machine Learning for NLP	Kevin Duh
-4B	Information Extraction II	Su Jian
+4B	Information Extraction II	Jian Su
 4C	Machine Translation II	Colin Cherry
 4D	Summarization	Yang Liu
 4E	Language Resources and Evaluation II	Nianwen Xue

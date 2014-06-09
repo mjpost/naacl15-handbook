@@ -39,3 +39,14 @@ TODO
 
  cat data/{papers,shortpapers,demos,tacl,srw}/proceedings/order | ./scripts/order2schedule_overview.py
 
+
+- Mausam will cause you trouble. Grep for him. You want just the name,
+  no {}s
+  
+- also special characters in abstracts (e.g., a real alpha, funny
+  latex, chinese, etc)
+  
+- order files: should have just what they need, no full schedule in
+  eahc. If session has papers from multiple (e.g., tacl, papers), make
+  sure to have identical session header. use "papers" for full
+  schedule of all events

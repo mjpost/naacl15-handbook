@@ -125,6 +125,11 @@
 
 \input{content/CoNLL}
 
+%% Cultural event %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter[Special Cultural Event]{Special Cultural Event}
+\thispagestyle{emptyheader}
+
 %% WORKSHOPS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \input{content/workshops/workshops}
@@ -147,23 +152,12 @@
 %% SPONSORS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \clearpage
-\section{Sponsors}
+\addcontentsline{toc}{section}{Sponsorship}
+\setheaders{}{}
+\input{content/ads}
 
-\cleardoublepage
-%% \setheaders{Advertisements}{Advertisements}
-%% \begin{center}
-%%   \includegraphics{content/ads/ETS.pdf}
-%%   \vfill
-%%   \includegraphics[height=300px]{content/ads/ISI.pdf}
-%% \end{center}
-%% \newpage
-%% \begin{center}
-%%   \includegraphics[height=300px]{content/ads/SDL.pdf}
-%%   \vfill
-%%   \includegraphics[width=3in]{content/ads/AppenButlerHill-gif.jpg}
-%% \end{center}
+%% BACK COVER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\cleardoublepage
 % Inside back cover
 %% \addcontentsline{toc}{chapter}{Area map (inside back cover)}
 %% \includepdf[pages={1}]{content/atlanta.pdf}
@@ -172,4 +166,4 @@
 %% \input{content/fmatter/backcover}
 
 \end{document}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+

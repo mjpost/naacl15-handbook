@@ -461,3 +461,20 @@ Human Language Technologies}\par
 \newcommand{\papertitleandauthor}[1]{
   {\bfseries \papertitle{#1}}\\
   \paperauthor{\citefullauthornames{#1}}}
+
+\newcommand{\papertableentry}[1]{
+  {\papertitle{#1}}\newline
+  {\paperauthor{\citeauthorslastnamesonly{#1}}}}
+
+\newenvironment{SessionOverview}[2]{
+  \section[#1]{#1 Overview}
+  \setheaders{#1}{#2}
+  \begin{center}
+    \begin{tabular}{p{0.8in}|p{0.8in}|p{0.8in}|p{0.8in}|p{0.8in}}
+      \righthyphenmin2
+      \sloppy
+      \bf Track A & \bf Track B & \bf Track C & \bf Track D & \bf Track E \\
+      \TrackALoc & \TrackBLoc & \TrackCLoc & \TrackDLoc & \TrackELoc \\
+      \hline\hline}
+{\end{tabular}\end{center}}
+

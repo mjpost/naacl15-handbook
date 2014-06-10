@@ -75,13 +75,10 @@
 
 \fancyfoot[C]{\thepage}
 
-\input{content/maps}
-
-\clearpage
-\thispagestyle{empty}
-\mbox{}
-\vfill
-\noindent Printing by Omnipress of Madison, Wisconsin \\
+%% \input{content/maps}
+%% \mbox{}
+%% \vfill
+%% \noindent Printing by Omnipress of Madison, Wisconsin \\
 
 \cleardoublepage
 \frontmatter
@@ -121,14 +118,14 @@
 \input{content/tuesday/tuesday}
 \input{content/wednesday/wednesday}
 
+%% Cultural event %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{content/special-event}
+
 %% CoNLL %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \input{content/CoNLL}
 
-%% Cultural event %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\chapter[Special Cultural Event]{Special Cultural Event}
-\thispagestyle{emptyheader}
 
 %% WORKSHOPS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -164,6 +161,11 @@
 
 %% \addcontentsline{toc}{chapter}{Sponsors}
 %% \input{content/fmatter/backcover}
+
+%% BACK COVER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{content/restaurant-summary}
+\includepdf[pages={1}]{content/backcover.pdf}
 
 \end{document}
 

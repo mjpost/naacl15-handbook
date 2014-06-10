@@ -15,7 +15,7 @@
   \setlength{\w}{\linewidth}%
   \settowidth{\tsl}{$\,$} % temporary abuse of this length measure
   \addtolength{\w}{-2\tsl}%
-  \settowidth{\tsl}{00:00am}
+  \settowidth{\tsl}{00:00}
   \addtolength{\w}{-2\tsl}%
   \addtolength{\w}{-2\tabcolsep}%
   \addtolength{\w}{-1\en}%
@@ -25,7 +25,7 @@
       p{1\en}%
       @{$\,$}%
       >{\raggedright}p{\tsl}%
-      p{\w}@{}}%
+      >{\RaggedRight}p{\w}@{}}%
 }{%
   \end{longtable}%
 }

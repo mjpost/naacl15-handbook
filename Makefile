@@ -15,7 +15,10 @@ chbk-howto.dvi: doc/chbk-howto.tex
 	latex doc/$*
 	(grep -i 'rerun' $*.log && ${latex} doc/$*) || echo -n ''
 
-%.pdf: %.ps
+%.pdf: %.dvi
+	@echo "No need to run 'ps2pdf $<'"
+
+%.dvi:
 	if [ -e $*.idx ]; then scripts/fix-index.perl < $*.idx > $*.idx.fixed && makeindex $*.idx.fixed -o $*.ind && ${latex} $*; fi
 	(grep 'Rerun to get cross-references right.' $*.log && ${latex} $*) || echo -n ''
 

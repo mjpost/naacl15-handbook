@@ -479,3 +479,8 @@ Human Language Technologies}\par
       \hline\hline}
 {\end{tabular}\end{center}}
 
+\newcommand{\daydate}{DAY, DATE}
+\newcommand{\daydateyear}{DAY, DATE, YEAR}
+\newcommand{\setdaydateyear}[3]{
+  \renewcommand{\daydateyear}{#1, #2, #3\xspace}
+  \renewcommand{\daydate}{#1, #2\xspace}}

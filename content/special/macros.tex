@@ -386,7 +386,7 @@ Human Language Technologies}\par
   % #1 workshop title
   % #2 workshop number
   % #3 workshop label
-  % #4 workshop organizers
+  % #4 workshop paper ID
   % #5 workshop location
   %\addcontentsline{toc}{section}{{{\bfseries W~#2:} #4}}
 
@@ -396,16 +396,18 @@ Human Language Technologies}\par
   % For workshops numbered 0, don't prepend W0 on the contents page
   \clearpage
   \ifthenelse{\equal{#2}{0}}
-             {{\addcontentsline{toc}{section}{{#1}}}}
-             {{\addcontentsline{toc}{section}{{{\bfseries W#2:} #1}}}}
+             {\section{\textbf{#1}}}
+             {\section[{\bfseries W#2:} #1]{{\bfseries Workshop #2:} #1}}
+             %% {{\addcontentsline{toc}{section}{{#1}}}}
+             %% {{\addcontentsline{toc}{section}{{{\bfseries W#2:} #1}}}}
 
   \markboth{}{}
   \label{#3}
   \begin{center}
 %    {\huge{\Large Workshop #2:}\vspace{.5ex}\\
-    {\Large
-      \ifthenelse{\equal{#2}{0}}{{}}{{\huge{Workshop #2:\\\vspace{.5ex}}}}
-      #1\par}
+    %% {\Large
+    %%   \ifthenelse{\equal{#2}{0}}{{}}{{\huge{Workshop #2:\\\vspace{.5ex}}}}
+    %%   #1\par}
     {\ifthenelse{\equal{#4}{0}}{{}}{{Organizers: \paperauthor{\citefullauthornames{#4}}}\par}}
     {\large Venue: #5 \vspace{2em}}\\
     %% {\huge Workshop Program\vspace{1ex}}
@@ -467,7 +469,7 @@ Human Language Technologies}\par
   {\paperauthor{\citeauthorslastnamesonly{#1}}}}
 
 \newenvironment{SessionOverview}[7]{
-  \section[#1]{#1 Overview - #2}
+  \section[#1]{#1 Overview -- #2}
   \setheaders{#1}{#2}
   \begin{center}
     \righthyphenmin2

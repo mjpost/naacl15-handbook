@@ -1,22 +1,27 @@
-VPATH = doc
+# $@ the target
+# $* the matched prefix
+# $< the matched dependent
+
+# -recorder records the files opened in a file with a .fls extension. This is used to infer
+# the list of file dependencies.
+
 latex = pdflatex -recorder
-all: handbook
-handbook: handbook.pdf
-docu: aclpub-setup.pdf chbk-howto.pdf
 
-#doc/aclpub-setup.dvi:
-#	${MAKE} -C doc -f ../Makefile aclpub-setup.pdf
+all: handbook.pdf
 
-aclpub-setup.dvi: doc/aclpub-setup.tex
-	latex doc/$*
-	(grep -i 'rerun' $*.log && ${latex} doc/$*) || echo -n ''
+# pdflatex
+# build dep file
+# biber
+# pdflatex
+# fix index
+# makeindex
+# pdflatex
+# pdflatex
 
-chbk-howto.dvi: doc/chbk-howto.tex
-	latex doc/$*
-	(grep -i 'rerun' $*.log && ${latex} doc/$*) || echo -n ''
-
-%.pdf: %.dvi
-	@echo "No need to run 'ps2pdf $<'"
+%.pdf: handbook.tex
+	${latex} handbook
+	grep INPUT $< | perl -pe "s/INPUT /$*.dvi: /" > handbook.dep
+	${latex} handbook
 
 %.dvi:
 	if [ -e $*.idx ]; then scripts/fix-index.perl < $*.idx > $*.idx.fixed && makeindex $*.idx.fixed -o $*.ind && ${latex} $*; fi
@@ -25,8 +30,9 @@ chbk-howto.dvi: doc/chbk-howto.tex
 %.log: %.tex
 	${latex} $*
 
+# Produce a list of file dependencies by looking for INPUT lines in the .fls file
+# (written from the first call to pdflatex because of the -recorder option)
 %.dep: %.fls
-	grep INPUT $< | perl -pe "s/INPUT /$*.dvi: /" > $@
 	(grep 'run BibTeX on the file' $*.log && echo "$*.dvi: $*.bbl" >> $@) || echo -n ''
 
 %.fls: %.tex
@@ -35,9 +41,9 @@ chbk-howto.dvi: doc/chbk-howto.tex
 	biber $*
 	${latex} $*
 
-
 EXTENSIONS  = .ilg .ps .dvi .dep .idx .idx.fixed .ind .aux .idx.ilg
 EXTENSIONS += .bbl .blg .bcf .toc .fls .log -blx.bib .run.xml .out
+
 clean: 
 	rm -f $(addprefix handbook, ${EXTENSIONS})
 

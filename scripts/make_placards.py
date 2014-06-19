@@ -99,6 +99,13 @@ for subconf in args.subconferences:
 templateEnv = jinja2.Environment(loader = jinja2.FileSystemLoader( searchpath="." ))
 template = templateEnv.get_template(args.template)
 
+def sort_times(a, b):
+    ahour, amin = a['time'].split('--')[0].split(':')
+    bhour, bmin = b['time'].split('--')[0].split(':')
+    if ahour == bhour:
+        return cmp(int(amin), int(bmin))
+    return cmp(int(ahour), int(bhour))
+
 for day, data in sessions.iteritems():
     for track in data.keys():
 
@@ -111,7 +118,7 @@ for day, data in sessions.iteritems():
         for session in sorted(data[track].keys()):
             all_data['sessions'].append({
                 'title': session,
-                'papers': data[track][session]['papers']
+                'papers': sorted(data[track][session]['papers'], lambda x,y: sort_times(x,y))
             })
 
         out = codecs.open('%s/%s-%s.tex' % (args.output_dir, day, track), 'w', 'utf-8')

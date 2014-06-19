@@ -17,8 +17,8 @@ This paper proposes an efficient unified PYP-based monolingual and bilingual
 UWS method. Experimental results show that the proposed method is comparable to
 supervised segmenters on the in-domain NIST OpenMT corpus, and yields a 0.96
 BLEU relative increase on NTCIR PatentMT corpus which is out-of-domain.
-Author{1}{Firstname}#=%=#xiaolin
-Author{1}{Lastname}#=%=#wang
+Author{1}{Firstname}#=%=#Xiaolin
+Author{1}{Lastname}#=%=#Wang
 Author{1}{Email}#=%=#xiaolin.wang@nict.go.jp
 Author{1}{Affiliation}#=%=#NICT
 Author{2}{Firstname}#=%=#Masao

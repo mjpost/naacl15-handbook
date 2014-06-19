@@ -118,7 +118,7 @@ tutorials, and, since 2013, TACL) are assembled.
 
 Publications chairs should ensure the following:
 
-- If at all possible, convince the pub chairs **not** to use START's
+- If at all possible, convince the PC chairs **not** to use START's
   "ScheduleMaker" tool. This is a complicated Excel front-end setup
   that generates the "order" file, which is already fairly simple to
   edit. They should just edit the order file directly. It is much
@@ -149,6 +149,15 @@ Publications chairs should ensure the following:
   you decide to rename "Coffee Break" to "Tea time" for this year's
   meeting in Cambridge) do not require changes to be made all over the
   place. 
+
+- Parallel sessions should be named using the convention "Session NL: NAME", where
+  N is a session number (1..as many as necessary), L is a letter (A..number of parallel tracks),
+  and NAME is the session name. Session names should be globally distinct. For example,
+
+       = Session 6D: Machine Translation II
+
+  This aids immensely in generating the handbook and also the poster placards that sit
+  outside the rooms and provide a summary of all papers in each track. 
   
 - If papers are mixed across workshops (e.g., a TACL paper presented
   with main conference long papers), the session headers should be

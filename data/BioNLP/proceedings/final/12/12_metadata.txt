@@ -18,5 +18,9 @@ Author{1}{Firstname}#=%=#Bei
 Author{1}{Lastname}#=%=#Yu
 Author{1}{Email}#=%=#byu@syr.edu
 Author{1}{Affiliation}#=%=#Syracuse University
+Author{2}{Firstname}#=%=#Daniele
+Author{2}{Lastname}#=%=#Fanelli
+Author{2}{Email}#=%=#email@danielefanelli.com
+Author{2}{Affiliation}#=%=#School of Library and Information Science, University of Montreal
 
 ==========

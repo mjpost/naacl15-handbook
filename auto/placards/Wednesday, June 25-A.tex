@@ -1,0 +1,97 @@
+% This is a template file used to generate A1-sized placards
+% summarizing all the talks that take place in a particular room.
+
+\documentclass{book}
+
+\usepackage{pdfpages}
+
+% set paper size and margins; needs to be adapted for A5 ideally, we
+% should have a document class for conference handbooks where A5
+% vs. letter-halved is a class option
+\usepackage[
+  paperheight=841mm,
+  paperwidth=594mm,
+  inner=1.5in,
+  outer=1.5in,
+  bottom=2in,
+  top=2in,
+  twoside]{geometry}
+\input{../../content/special/preamble} 
+\input{../../content/special/macros}    
+\input{../../content/setup/venues}    % macros for event locations
+
+\renewcommand{\footnotesize}{\fontsize{18}{22}\selectfont}
+\renewcommand{\small}{\fontsize{24}{28}\selectfont}
+\renewcommand{\normalsize}{\fontsize{32}{36}\selectfont}
+\renewcommand{\large}{\fontsize{36}{40}\selectfont}
+\renewcommand{\Large}{\fontsize{64}{66}\selectfont}
+\renewcommand{\huge}{\fontsize{72}{80}\selectfont}
+
+\begin{document}
+
+\section{Day at a Glance --- Wednesday, June 25}
+
+\begin{tabular}{p{8in}b{10in}}
+  \includegraphics[width=6in]{../../content/fmatter/logos/harbor.png}
+  & \huge{\bfseries Track A}\newline\TrackALoc\vfill
+\end{tabular}
+
+\renewcommand{\arraystretch}{1.5}
+\fancyfoot[L]{ {\small The 52nd Annual Meeting of the Association for Computational
+    Linguistics\hfill\url{aclweb.org}}}
+
+
+\begin{tabular}{p{3in}p{16in}}
+  \multicolumn{2}{l}{\bfseries\large Session 7A: Multimodal NLP / Lexical Semantics} \\\hline
+
+    
+    11:10--11:35
+    &	CoSimRank: A Flexible \& Efficient Graph-Theoretic Similarity Measure \newline 
+    {\itshape Sascha Rothe, Hinrich Schütze} \\
+    
+    11:35--12:00
+    &	Is this a wampimuk? Cross-modal mapping between distributional semantics and the visual world \newline 
+    {\itshape Angeliki Lazaridou, Elia Bruni, Marco Baroni} \\
+    
+    10:45--11:10
+    &	Back to Basics for Monolingual Alignment: Exploiting Word Similarity and Contextual Evidence \newline 
+    {\itshape Md Arafat Sultan, Steven Bethard, Tamara Sumner} \\
+    
+    12:00--12:25
+    &	From image descriptions to visual denotations: New similarity metrics for semantic inference over event descriptions \newline 
+    {\itshape Peter Young, Alice Lai, Micah Hodosh, Julia Hockenmaier} \\
+    
+\end{tabular}
+
+\begin{tabular}{p{3in}p{16in}}
+  \multicolumn{2}{l}{\bfseries\large Session 8A: NLP for the Web and Social Media II} \\\hline
+
+    
+    3:00--3:15
+    &	Learning Polylingual Topic Models from Code-Switched Social Media Documents \newline 
+    {\itshape Nanyun Peng, Yiming Wang, Mark Dredze} \\
+    
+    3:15--3:30
+    &	Normalizing tweets with edit scripts and recurrent neural embeddings \newline 
+    {\itshape Grzegorz Chrupała} \\
+    
+    3:30--3:45
+    &	Exponential Reservoir Sampling for Streaming Language Models \newline 
+    {\itshape Miles Osborne, Ashwin Lall, Benjamin Van Durme} \\
+    
+    3:45--4:00
+    &	A Piece of My Mind: A Sentiment Analysis Approach for Online Dispute Detection \newline 
+    {\itshape Lu Wang, Claire Cardie} \\
+    
+    4:00--4:15
+    &	A Simple Bayesian Modelling Approach to Event Extraction from Twitter \newline 
+    {\itshape Deyu Zhou, Liangyu Chen, Yulan He} \\
+    
+    4:15--4:30
+    &	Be Appropriate and Funny: Automatic Entity Morph Encoding \newline 
+    {\itshape Boliang Zhang, Hongzhao Huang, Xiaoman Pan, Heng Ji, Kevin Knight, Zhen Wen, Yizhou Sun, Jiawei Han, Bulent Yener} \\
+    
+\end{tabular}
+
+
+\end{document}

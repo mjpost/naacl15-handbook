@@ -56,7 +56,6 @@
 = Session 2C: Word Segmentation and POS Tagging
 108 13:45--14:10 # Modelling function words improves unsupervised word segmentation
 37 14:35--15:00 # Max-Margin Tensor Neural Network for Chinese Word Segmentation
-= Session 2D: SRW
 = Session 2E: Sentiment Analysis I
 357 13:20--13:45 # An Empirical Study on the Effect of Negation Words on Sentiment
 238 13:45--14:10 # Extracting Opinion Targets and Opinion Words from Online Reviews with Graph Co-ranking
@@ -220,11 +219,6 @@
 159 12:00--12:25 # Towards a General Rule for Identifying Deceptive Opinion Spam
 + 12:25--13:30 Lunch break
 + 13:30--15:00 ACL Business Meeting
-= Session 8A: NLP for the Web and Social Media II
-= Session 8B: Semantics / Information Extraction
-= Session 8C: Machine Translation V
-= Session 8D: Syntax, Parsing and Tagging V
-= Session 8E: Multilinguality and Multimodal NLP
 + 16:30--17:00 Coffee break
 + 17:00--18:30 Lifetime Achievement Award
 + 18:30--19:00 Closing Session

@@ -1,0 +1,107 @@
+% This is a template file used to generate A1-sized placards
+% summarizing all the talks that take place in a particular room.
+
+\documentclass{book}
+
+\usepackage{pdfpages}
+
+% set paper size and margins; needs to be adapted for A5 ideally, we
+% should have a document class for conference handbooks where A5
+% vs. letter-halved is a class option
+\usepackage[
+  paperheight=841mm,
+  paperwidth=594mm,
+  inner=1.5in,
+  outer=1.5in,
+  bottom=2in,
+  top=2in,
+  twoside]{geometry}
+\input{../../content/special/preamble} 
+\input{../../content/special/macros}    
+\input{../../content/setup/venues}    % macros for event locations
+
+\renewcommand{\footnotesize}{\fontsize{18}{22}\selectfont}
+\renewcommand{\small}{\fontsize{24}{28}\selectfont}
+\renewcommand{\normalsize}{\fontsize{32}{36}\selectfont}
+\renewcommand{\large}{\fontsize{36}{40}\selectfont}
+\renewcommand{\Large}{\fontsize{64}{66}\selectfont}
+\renewcommand{\huge}{\fontsize{72}{80}\selectfont}
+
+\begin{document}
+
+\section{Day at a Glance --- Monday, June 23}
+
+\begin{tabular}{p{8in}b{10in}}
+  \includegraphics[width=6in]{../../content/fmatter/logos/harbor.png}
+  & \huge{\bfseries Track B}\newline\TrackBLoc\vfill
+\end{tabular}
+
+\renewcommand{\arraystretch}{1.5}
+\fancyfoot[L]{ {\small The 52nd Annual Meeting of the Association for Computational
+    Linguistics\hfill\url{aclweb.org}}}
+
+
+\begin{tabular}{p{3in}p{16in}}
+  \multicolumn{2}{l}{\bfseries\large Session 1B: Semantics I} \\\hline
+
+    
+    10:10--10:35
+    &	Multilingual Models for Compositional Distributed Semantics \newline 
+    {\itshape Karl Moritz Hermann, Phil Blunsom} \\
+    
+    10:35--11:00
+    &	Simple Negation Scope Resolution through Deep Parsing: A Semantic Solution to a Semantic Problem \newline 
+    {\itshape Woodley Packard, Emily M. Bender, Jonathon Read, Stephan Oepen, Rebecca Dridan} \\
+    
+    11:00--11:25
+    &	Logical Inference on Dependency-based Compositional Semantics \newline 
+    {\itshape Ran Tian, Yusuke Miyao, Takuya Matsuzaki} \\
+    
+    11:25--11:50
+    &	A practical and linguistically-motivated approach to compositional distributional semantics \newline 
+    {\itshape Denis Paperno, Nghia The Pham, Marco Baroni} \\
+    
+\end{tabular}
+
+\begin{tabular}{p{3in}p{16in}}
+  \multicolumn{2}{l}{\bfseries\large Session 2B: Semantics II} \\\hline
+
+    
+    1:20--1:45
+    &	Don't count, predict! A systematic comparison of context-counting vs. context-predicting semantic vectors \newline 
+    {\itshape Marco Baroni, Georgiana Dinu, Germán Kruszewski} \\
+    
+    1:45--2:10
+    &	Metaphor Detection with Cross-Lingual Model Transfer \newline 
+    {\itshape Yulia Tsvetkov, Leonid Boytsov, Anatole Gershman, Eric Nyberg, Chris Dyer} \\
+    
+    2:10--2:35
+    &	Learning Word Sense Distributions, Detecting Unattested Senses and Identifying Novel Senses Using Topic Models \newline 
+    {\itshape Jey Han Lau, Paul Cook, Diana McCarthy, Spandana Gella, Timothy Baldwin} \\
+    
+    2:35--3:00
+    &	Learning to Automatically Solve Algebra Word Problems \newline 
+    {\itshape Nate Kushman, Luke Zettlemoyer, Regina Barzilay, Yoav Artzi} \\
+    
+\end{tabular}
+
+\begin{tabular}{p{3in}p{16in}}
+  \multicolumn{2}{l}{\bfseries\large Session 3B: Information Extraction I} \\\hline
+
+    
+    3:30--3:55
+    &	Collective Tweet Wikification based on Semi-supervised Graph Regularization \newline 
+    {\itshape Hongzhao Huang, Yunbo Cao, Xiaojiang Huang, Heng Ji, Chin-Yew Lin} \\
+    
+    3:55--4:20
+    &	Zero-shot Entity Extraction from Web Pages \newline 
+    {\itshape Panupong Pasupat, Percy Liang} \\
+    
+    4:20--4:45
+    &	Incremental Joint Extraction of Entity Mentions and Relations \newline 
+    {\itshape Qi Li, Heng Ji} \\
+    
+\end{tabular}
+
+
+\end{document}

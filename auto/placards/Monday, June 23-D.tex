@@ -1,0 +1,107 @@
+% This is a template file used to generate A1-sized placards
+% summarizing all the talks that take place in a particular room.
+
+\documentclass{book}
+
+\usepackage{pdfpages}
+
+% set paper size and margins; needs to be adapted for A5 ideally, we
+% should have a document class for conference handbooks where A5
+% vs. letter-halved is a class option
+\usepackage[
+  paperheight=841mm,
+  paperwidth=594mm,
+  inner=1.5in,
+  outer=1.5in,
+  bottom=2in,
+  top=2in,
+  twoside]{geometry}
+\input{../../content/special/preamble} 
+\input{../../content/special/macros}    
+\input{../../content/setup/venues}    % macros for event locations
+
+\renewcommand{\footnotesize}{\fontsize{18}{22}\selectfont}
+\renewcommand{\small}{\fontsize{24}{28}\selectfont}
+\renewcommand{\normalsize}{\fontsize{32}{36}\selectfont}
+\renewcommand{\large}{\fontsize{36}{40}\selectfont}
+\renewcommand{\Large}{\fontsize{64}{66}\selectfont}
+\renewcommand{\huge}{\fontsize{72}{80}\selectfont}
+
+\begin{document}
+
+\section{Day at a Glance --- Monday, June 23}
+
+\begin{tabular}{p{8in}b{10in}}
+  \includegraphics[width=6in]{../../content/fmatter/logos/harbor.png}
+  & \huge{\bfseries Track D}\newline\TrackDLoc\vfill
+\end{tabular}
+
+\renewcommand{\arraystretch}{1.5}
+\fancyfoot[L]{ {\small The 52nd Annual Meeting of the Association for Computational
+    Linguistics\hfill\url{aclweb.org}}}
+
+
+\begin{tabular}{p{3in}p{16in}}
+  \multicolumn{2}{l}{\bfseries\large Session 1D: Syntax, Parsing, and Tagging I} \\\hline
+
+    
+    11:00--11:25
+    &	Tagging The Web: Building A Robust Web Tagger with Neural Network \newline 
+    {\itshape Ji Ma, Yue Zhang, Jingbo Zhu} \\
+    
+    10:10--10:35
+    &	A Tabular Method for Dynamic Oracles in Transition-Based Parsing \newline 
+    {\itshape Yoav Goldberg, Francesco Sartorio, Giorgio Satta} \\
+    
+    10:35--11:00
+    &	Joint Incremental Disfluency Detection and Dependency Parsin \newline 
+    {\itshape Matthew Honnibal, Mark Johnson} \\
+    
+    11:25--11:50
+    &	A Crossing-Sensitive Third-Order Factorization for Dependency Parsing \newline 
+    {\itshape Emily Pitler} \\
+    
+\end{tabular}
+
+\begin{tabular}{p{3in}p{16in}}
+  \multicolumn{2}{l}{\bfseries\large Session 2D: SRW Thesis Proposal Presentations} \\\hline
+
+    
+    1:20--1:45
+    &	Bayesian Kernel Methods for Natural Language Processing \newline 
+    {\itshape Daniel Beck} \\
+    
+    1:45--2:10
+    &	Extracting Temporal and Causal Relations between Events \newline 
+    {\itshape Paramita Mirza} \\
+    
+    2:10--2:35
+    &	Towards a discourse relation-aware approach for Chinese-English machine translation \newline 
+    {\itshape Frances Yung} \\
+    
+    2:35--3:00
+    &	Analyzing Positions and Topics in Political Discussions of the German Bundestag \newline 
+    {\itshape Cäcilia Zirn} \\
+    
+\end{tabular}
+
+\begin{tabular}{p{3in}p{16in}}
+  \multicolumn{2}{l}{\bfseries\large Session 3D: Syntax, Parsing and Tagging III} \\\hline
+
+    
+    3:55--4:20
+    &	Grammatical Relations in Chinese: GB-Ground Extraction and Data-Driven Parsing \newline 
+    {\itshape Weiwei Sun, Yantao Du, Xin Kou, Shuoyang Ding, Xiaojun Wan} \\
+    
+    4:20--4:45
+    &	Ambiguity-aware Ensemble Training for Semi-supervised Dependency Parsing \newline 
+    {\itshape Zhenghua Li, Min Zhang, Wenliang Chen} \\
+    
+    3:30--3:55
+    &	Training Deterministic Parsers with Non-Deterministic Oracles \newline 
+    {\itshape Yoav Goldberg, Joakim Nivre} \\
+    
+\end{tabular}
+
+
+\end{document}

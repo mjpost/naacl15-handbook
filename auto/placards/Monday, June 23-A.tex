@@ -1,0 +1,107 @@
+% This is a template file used to generate A1-sized placards
+% summarizing all the talks that take place in a particular room.
+
+\documentclass{book}
+
+\usepackage{pdfpages}
+
+% set paper size and margins; needs to be adapted for A5 ideally, we
+% should have a document class for conference handbooks where A5
+% vs. letter-halved is a class option
+\usepackage[
+  paperheight=841mm,
+  paperwidth=594mm,
+  inner=1.5in,
+  outer=1.5in,
+  bottom=2in,
+  top=2in,
+  twoside]{geometry}
+\input{../../content/special/preamble} 
+\input{../../content/special/macros}    
+\input{../../content/setup/venues}    % macros for event locations
+
+\renewcommand{\footnotesize}{\fontsize{18}{22}\selectfont}
+\renewcommand{\small}{\fontsize{24}{28}\selectfont}
+\renewcommand{\normalsize}{\fontsize{32}{36}\selectfont}
+\renewcommand{\large}{\fontsize{36}{40}\selectfont}
+\renewcommand{\Large}{\fontsize{64}{66}\selectfont}
+\renewcommand{\huge}{\fontsize{72}{80}\selectfont}
+
+\begin{document}
+
+\section{Day at a Glance --- Monday, June 23}
+
+\begin{tabular}{p{8in}b{10in}}
+  \includegraphics[width=6in]{../../content/fmatter/logos/harbor.png}
+  & \huge{\bfseries Track A}\newline\TrackALoc\vfill
+\end{tabular}
+
+\renewcommand{\arraystretch}{1.5}
+\fancyfoot[L]{ {\small The 52nd Annual Meeting of the Association for Computational
+    Linguistics\hfill\url{aclweb.org}}}
+
+
+\begin{tabular}{p{3in}p{16in}}
+  \multicolumn{2}{l}{\bfseries\large Session 1A: Discourse, Dialogue, Coreference and Pragmatics} \\\hline
+
+    
+    10:10--10:35
+    &	Representation Learning for Text-level Discourse Parsing \newline 
+    {\itshape Yangfeng Ji, Jacob Eisenstein} \\
+    
+    10:35--11:00
+    &	Text-level Discourse Dependency Parsing \newline 
+    {\itshape Sujian Li, Liang Wang, Ziqiang Cao, Wenjie Li} \\
+    
+    11:00--11:25
+    &	Discovering Latent Structure in Task-Oriented Dialogues \newline 
+    {\itshape Ke Zhai, Jason D Williams} \\
+    
+    11:25--11:50
+    &	Learning Structured Perceptrons for Coreference Resolution with Latent Antecedents and Non-local Features \newline 
+    {\itshape Anders Björkelund, Jonas Kuhn} \\
+    
+\end{tabular}
+
+\begin{tabular}{p{3in}p{16in}}
+  \multicolumn{2}{l}{\bfseries\large Session 2A: Syntax, Parsing and Tagging II} \\\hline
+
+    
+    1:20--1:45
+    &	Steps to Excellence: Simple Inference with Refined Scoring of Dependency Trees \newline 
+    {\itshape Yuan Zhang, Tao Lei, Regina Barzilay, Tommi Jaakkola, Amir Globerson} \\
+    
+    1:45--2:10
+    &	Sparser, Better, Faster GPU Parsing \newline 
+    {\itshape David Hall, Taylor Berg-Kirkpatrick, Dan Klein} \\
+    
+    2:10--2:35
+    &	Shift-Reduce CCG Parsing with a Dependency Model \newline 
+    {\itshape Wenduan Xu, Stephen Clark, Yue Zhang} \\
+    
+    2:35--3:00
+    &	Less Grammar, More Features \newline 
+    {\itshape David Hall, Greg Durrett, Dan Klein} \\
+    
+\end{tabular}
+
+\begin{tabular}{p{3in}p{16in}}
+  \multicolumn{2}{l}{\bfseries\large Session 3A: Topic Modeling} \\\hline
+
+    
+    3:30--3:55
+    &	Aspect Extraction with Automated Prior Knowledge Learning \newline 
+    {\itshape Zhiyuan Chen, Arjun Mukherjee, Bing Liu} \\
+    
+    3:55--4:20
+    &	Anchors Regularized: Adding Robustness and Extensibility to Scalable Topic-Modeling Algorithms \newline 
+    {\itshape Thang Nguyen, Yuening Hu, Jordan Boyd-Graber} \\
+    
+    4:20--4:45
+    &	A Bayesian Mixed Effects Model of Literary Character \newline 
+    {\itshape David Bamman, Ted Underwood, Noah A. Smith} \\
+    
+\end{tabular}
+
+
+\end{document}

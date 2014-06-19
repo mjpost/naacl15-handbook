@@ -88,8 +88,10 @@ class Paper:
         
         return
 
+    def escaped_title(self):
+        return re.sub(r'&', r'\\&', self.long)
+
     def __str__(self):
-        return ", ".join([str(a) for a in self.authors]) + \
-               ": \"" + self.long + "\""
+        return ", ".join([str(a) for a in self.authors]) + ": \"" + self.escaped_title() + "\""
 
     

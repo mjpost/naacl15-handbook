@@ -1,0 +1,111 @@
+% This is a template file used to generate A1-sized placards
+% summarizing all the talks that take place in a particular room.
+
+\documentclass{book}
+
+\usepackage{pdfpages}
+
+% set paper size and margins; needs to be adapted for A5 ideally, we
+% should have a document class for conference handbooks where A5
+% vs. letter-halved is a class option
+\usepackage[
+  paperheight=841mm,
+  paperwidth=594mm,
+  inner=1.5in,
+  outer=1.5in,
+  bottom=2in,
+  top=2in,
+  twoside]{geometry}
+\input{../../content/special/preamble} 
+\input{../../content/special/macros}    
+\input{../../content/setup/venues}    % macros for event locations
+
+\renewcommand{\footnotesize}{\fontsize{18}{22}\selectfont}
+\renewcommand{\small}{\fontsize{24}{28}\selectfont}
+\renewcommand{\normalsize}{\fontsize{32}{36}\selectfont}
+\renewcommand{\large}{\fontsize{36}{40}\selectfont}
+\renewcommand{\Large}{\fontsize{64}{66}\selectfont}
+\renewcommand{\huge}{\fontsize{72}{80}\selectfont}
+
+\begin{document}
+
+\section{Day at a Glance --- Monday, June 23}
+
+\begin{tabular}{p{8in}b{10in}}
+  \includegraphics[width=6in]{../../content/fmatter/logos/harbor.png}
+  & \huge{\bfseries Track E}\newline\TrackELoc\vfill
+\end{tabular}
+
+\renewcommand{\arraystretch}{1.5}
+\fancyfoot[L]{ {\small The 52nd Annual Meeting of the Association for Computational
+    Linguistics\hfill\url{aclweb.org}}}
+
+
+\begin{tabular}{p{3in}p{16in}}
+  \multicolumn{2}{l}{\bfseries\large Session 1E: NLP for the Web and Social Media I} \\\hline
+
+    
+    10:10--10:35
+    &	Unsupervised Solution Post Identification from Discussion Forums \newline 
+    {\itshape Deepak P, Karthik Visweswariah} \\
+    
+    10:35--11:00
+    &	Weakly Supervised User Profile Extraction from Twitter \newline 
+    {\itshape Jiwei Li, Alan Ritter, Eduard Hovy} \\
+    
+    11:00--11:25
+    &	The effect of wording on message propagation: Topic- and author-controlled natural experiments on Twitter \newline 
+    {\itshape Chenhao Tan, Lillian Lee, Bo Pang} \\
+    
+    11:25--11:50
+    &	Inferring User Political Preferences from Streaming Communications \newline 
+    {\itshape Svitlana Volkova, Glen Coppersmith, Benjamin Van Durme} \\
+    
+\end{tabular}
+
+\begin{tabular}{p{3in}p{16in}}
+  \multicolumn{2}{l}{\bfseries\large Session 2E: Sentiment Analysis I} \\\hline
+
+    
+    1:20--1:45
+    &	An Empirical Study on the Effect of Negation Words on Sentiment \newline 
+    {\itshape Xiaodan Zhu, Hongyu Guo, Saif Mohammad, Svetlana Kiritchenko} \\
+    
+    1:45--2:10
+    &	Extracting Opinion Targets and Opinion Words from Online Reviews with Graph Co-ranking \newline 
+    {\itshape Kang Liu, Liheng Xu, Jun Zhao} \\
+    
+    2:10--2:35
+    &	Context-aware Learning for Sentence-level Sentiment Analysis with Posterior Regularization \newline 
+    {\itshape Bishan Yang, Claire Cardie} \\
+    
+    2:35--3:00
+    &	Product Feature Mining: Semantic Clues versus Syntactic Constituents \newline 
+    {\itshape Liheng Xu, Kang Liu, Siwei Lai, Jun Zhao} \\
+    
+\end{tabular}
+
+\begin{tabular}{p{3in}p{16in}}
+  \multicolumn{2}{l}{\bfseries\large Session 3E: Language Resources and Evaluation I} \\\hline
+
+    
+    3:30--3:55
+    &	A Robust Approach to Aligning Heterogeneous Lexical Resources \newline 
+    {\itshape Mohammad Taher Pilehvar, Roberto Navigli} \\
+    
+    3:55--4:20
+    &	Predicting the relevance of distributional semantic similarity with contextual information \newline 
+    {\itshape Philippe Muller, Cécile Fabre, Clémentine Adam} \\
+    
+    5:00--6:00
+    &	Learning Ensembles of Structured Prediction Rules \newline 
+    {\itshape Corinna Cortes, Vitaly Kuznetsov, Mehryar Mohri} \\
+    
+    4:20--4:45
+    &	Temporal Annotation in the Clinical Domain \newline 
+    {\itshape William Styler, Steven Bethard, Sean Finan, Martha Palmer, Sameer Pradhan, Piet C de Groen, Brad Erickson, Timothy Miller, Chen Lin, Guergana Savova, James Pustejovsky} \\
+    
+\end{tabular}
+
+
+\end{document}

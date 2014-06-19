@@ -1,0 +1,103 @@
+% This is a template file used to generate A1-sized placards
+% summarizing all the talks that take place in a particular room.
+
+\documentclass{book}
+
+\usepackage{pdfpages}
+
+% set paper size and margins; needs to be adapted for A5 ideally, we
+% should have a document class for conference handbooks where A5
+% vs. letter-halved is a class option
+\usepackage[
+  paperheight=841mm,
+  paperwidth=594mm,
+  inner=1.5in,
+  outer=1.5in,
+  bottom=2in,
+  top=2in,
+  twoside]{geometry}
+\input{../../content/special/preamble} 
+\input{../../content/special/macros}    
+\input{../../content/setup/venues}    % macros for event locations
+
+\renewcommand{\footnotesize}{\fontsize{18}{22}\selectfont}
+\renewcommand{\small}{\fontsize{24}{28}\selectfont}
+\renewcommand{\normalsize}{\fontsize{32}{36}\selectfont}
+\renewcommand{\large}{\fontsize{36}{40}\selectfont}
+\renewcommand{\Large}{\fontsize{64}{66}\selectfont}
+\renewcommand{\huge}{\fontsize{72}{80}\selectfont}
+
+\begin{document}
+
+\section{Day at a Glance --- Tuesday, June 24}
+
+\begin{tabular}{p{8in}b{10in}}
+  \includegraphics[width=6in]{../../content/fmatter/logos/harbor.png}
+  & \huge{\bfseries Track A}\newline\TrackALoc\vfill
+\end{tabular}
+
+\renewcommand{\arraystretch}{1.5}
+\fancyfoot[L]{ {\small The 52nd Annual Meeting of the Association for Computational
+    Linguistics\hfill\url{aclweb.org}}}
+
+
+\begin{tabular}{p{3in}p{16in}}
+  \multicolumn{2}{l}{\bfseries\large Session 4A: Machine Learning for NLP} \\\hline
+
+    
+    10:30--10:55
+    &	Kneser-Ney Smoothing on Expected Counts \newline 
+    {\itshape Hui Zhang, David Chiang} \\
+    
+    10:55--11:20
+    &	Robust Entity Clustering via Phylogenetic Inference \newline 
+    {\itshape Nicholas Andrews, Jason Eisner, Mark Dredze} \\
+    
+    11:20--11:45
+    &	Linguistic Structured Sparsity in Text Categorization \newline 
+    {\itshape Dani Yogatama, Noah A. Smith} \\
+    
+    11:45--12:10
+    &	Perplexity on Reduced Corpora \newline 
+    {\itshape Hayato Kobayashi} \\
+    
+\end{tabular}
+
+\begin{tabular}{p{3in}p{16in}}
+  \multicolumn{2}{l}{\bfseries\large Session 5A: Question Answering} \\\hline
+
+    
+    1:30--1:55
+    &	Information Extraction over Structured Data: Question Answering with Freebase \newline 
+    {\itshape Xuchen Yao, Benjamin Van Durme} \\
+    
+    1:55--2:20
+    &	Knowledge-Based Question Answering as Machine Translation \newline 
+    {\itshape Junwei Bao, Nan Duan, Ming Zhou, Tiejun Zhao} \\
+    
+    2:20--2:45
+    &	Discourse Complements Lexical Semantics for Non-factoid Answer Reranking \newline 
+    {\itshape Peter Jansen, Mihai Surdeanu, Peter Clark} \\
+    
+\end{tabular}
+
+\begin{tabular}{p{3in}p{16in}}
+  \multicolumn{2}{l}{\bfseries\large Session 6A: Machine Translation III} \\\hline
+
+    
+    3:15--3:30
+    &	How to Speak a Language without Knowing It \newline 
+    {\itshape Xing Shi, Kevin Knight, Heng Ji} \\
+    
+    3:30--3:45
+    &	Assessing the Discourse Factors that Influence the Quality of Machine Translation \newline 
+    {\itshape Junyi Jessy Li, Marine Carpuat, Ani Nenkova} \\
+    
+    3:45--4:00
+    &	Automatic Detection of Machine Translated Text and Translation Quality Estimation \newline 
+    {\itshape Roee Aharoni, Moshe Koppel, Yoav Goldberg} \\
+    
+\end{tabular}
+
+
+\end{document}

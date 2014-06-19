@@ -1,5 +1,5 @@
 SubmissionNumber#=%=#18
-FinalPaperTitle#=%=#Discriminative Lexical Semantic Segmentation with Gaps: Running the MWE Gamut
+FinalPaperTitle#=%=#[TACL] Discriminative Lexical Semantic Segmentation with Gaps: Running the MWE Gamut
 ShortPaperTitle#=%=#Discriminative Lexical Semantic Segmentation with Gaps: Running the MWE Gamut
 NumberOfPages#=%=#14
 CopyrightSigned#=%=#

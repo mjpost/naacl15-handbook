@@ -1,5 +1,5 @@
 SubmissionNumber#=%=#7
-FinalPaperTitle#=%=#Exploring the Role of Stress in Bayesian Word Segmentation using Adaptor Grammars
+FinalPaperTitle#=%=#[TACL] Exploring the Role of Stress in Bayesian Word Segmentation using Adaptor Grammars
 ShortPaperTitle#=%=#Exploring the Role of Stress in Bayesian Word Segmentation using Adaptor Grammars
 NumberOfPages#=%=#12
 CopyrightSigned#=%=#

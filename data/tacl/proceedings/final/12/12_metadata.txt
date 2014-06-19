@@ -1,5 +1,5 @@
 SubmissionNumber#=%=#12
-FinalPaperTitle#=%=#A Crossing-Sensitive Third-Order Factorization for Dependency Parsing
+FinalPaperTitle#=%=#[TACL] A Crossing-Sensitive Third-Order Factorization for Dependency Parsing
 ShortPaperTitle#=%=#A Crossing-Sensitive Third-Order Factorization for Dependency Parsing
 NumberOfPages#=%=#14
 CopyrightSigned#=%=#

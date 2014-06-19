@@ -1,5 +1,5 @@
 SubmissionNumber#=%=#16
-FinalPaperTitle#=%=#Heterogeneous Networks and Their Applications: Scientometrics, Name Disambiguation, and Topic Modeling
+FinalPaperTitle#=%=#[TACL] Heterogeneous Networks and Their Applications: Scientometrics, Name Disambiguation, and Topic Modeling
 ShortPaperTitle#=%=#Heterogeneous Networks and Their Applications: Scientometrics, Name Disambiguation, and Topic Modeling
 NumberOfPages#=%=#14
 CopyrightSigned#=%=#

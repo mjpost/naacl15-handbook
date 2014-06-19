@@ -1,5 +1,5 @@
 SubmissionNumber#=%=#8
-FinalPaperTitle#=%=#Entity Linking meets Word Sense Disambiguation: a Unified Approach
+FinalPaperTitle#=%=#[TACL] Entity Linking meets Word Sense Disambiguation: a Unified Approach
 ShortPaperTitle#=%=#Entity Linking meets Word Sense Disambiguation: a Unified Approach
 NumberOfPages#=%=#14
 CopyrightSigned#=%=#

@@ -1,5 +1,5 @@
 SubmissionNumber#=%=#19
-FinalPaperTitle#=%=#Segmentation for Efficient Supervised Language Annotation with an Explicit Cost-Utility Tradeoff
+FinalPaperTitle#=%=#[TACL] Segmentation for Efficient Supervised Language Annotation with an Explicit Cost-Utility Tradeoff
 ShortPaperTitle#=%=#Segmentation for Efficient Supervised Language Annotation with an Explicit Cost-Utility Tradeoff
 NumberOfPages#=%=#12
 CopyrightSigned#=%=#

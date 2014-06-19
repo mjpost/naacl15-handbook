@@ -1,5 +1,5 @@
 SubmissionNumber#=%=#9
-FinalPaperTitle#=%=#Cross-lingual Projected Expectation Regularization for Weakly Supervised Learning
+FinalPaperTitle#=%=#[TACL] Cross-lingual Projected Expectation Regularization for Weakly Supervised Learning
 ShortPaperTitle#=%=#Cross-lingual Projected Expectation Regularization for Weakly Supervised Learning
 NumberOfPages#=%=#12
 CopyrightSigned#=%=#

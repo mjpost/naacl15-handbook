@@ -1,5 +1,5 @@
 SubmissionNumber#=%=#6
-FinalPaperTitle#=%=#A Tabular Method for Dynamic Oracles in Transition-Based Parsing
+FinalPaperTitle#=%=#[TACL] A Tabular Method for Dynamic Oracles in Transition-Based Parsing
 ShortPaperTitle#=%=#A Tabular Method for Dynamic Oracles in Transition-Based Parsing
 NumberOfPages#=%=#12
 CopyrightSigned#=%=#

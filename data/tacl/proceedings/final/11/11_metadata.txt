@@ -1,5 +1,5 @@
 SubmissionNumber#=%=#11
-FinalPaperTitle#=%=#Temporal Annotation in the Clinical Domain
+FinalPaperTitle#=%=#[TACL] Temporal Annotation in the Clinical Domain
 ShortPaperTitle#=%=#Temporal Annotation in the Clinical Domain
 NumberOfPages#=%=#12
 CopyrightSigned#=%=#

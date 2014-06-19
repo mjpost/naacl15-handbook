@@ -1,6 +1,6 @@
 * Monday, June 23, 2014
 = Session 1D: Syntax, Parsing, and Tagging I
-6 10:10--10:35 # A Tabular Method for Dynamic Oracles in Transition-Based Parsing
+17 10:10--10:35 # Training Deterministic Parsers with Non-Deterministic Oracles
 5 10:35--11:00 # Joint Incremental Disfluency Detection and Dependency Parsin
 12 11:25--11:50 # A Crossing-Sensitive Third-Order Factorization for Dependency Parsing
 
@@ -9,7 +9,7 @@
 4 14:10--14:35 # FLORS: Fast and Simple Domain Adaptation for Part-of-Speech Tagging
 
 = Session 3D: Syntax, Parsing and Tagging III
-17 15:30--15:55 # Training Deterministic Parsers with Non-Deterministic Oracles
+6 15:30--15:55 # A Tabular Method for Dynamic Oracles in Transition-Based Parsing
 
 = Session 3E: Language Resources and Evaluation I
 11 16:20--16:45 # Temporal Annotation in the Clinical Domain

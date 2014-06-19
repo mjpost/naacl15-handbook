@@ -1,5 +1,5 @@
 SubmissionNumber#=%=#4
-FinalPaperTitle#=%=#FLORS: Fast and Simple Domain Adaptation for Part-of-Speech Tagging
+FinalPaperTitle#=%=#[TACL] FLORS: Fast and Simple Domain Adaptation for Part-of-Speech Tagging
 ShortPaperTitle#=%=#FLORS: Fast and Simple Domain Adaptation for Part-of-Speech Tagging
 NumberOfPages#=%=#12
 CopyrightSigned#=%=#

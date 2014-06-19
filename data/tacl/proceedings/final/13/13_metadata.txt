@@ -1,5 +1,5 @@
 SubmissionNumber#=%=#13
-FinalPaperTitle#=%=#Data-Driven Metaphor Recognition and Explanation
+FinalPaperTitle#=%=#[TACL] Data-Driven Metaphor Recognition and Explanation
 ShortPaperTitle#=%=#Data-Driven Metaphor Recognition and Explanation
 NumberOfPages#=%=#12
 CopyrightSigned#=%=#

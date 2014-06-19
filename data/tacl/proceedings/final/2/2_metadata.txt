@@ -1,5 +1,5 @@
 SubmissionNumber#=%=#2
-FinalPaperTitle#=%=#Back to Basics for Monolingual Alignment: Exploiting Word Similarity and Contextual Evidence
+FinalPaperTitle#=%=#[TACL] Back to Basics for Monolingual Alignment: Exploiting Word Similarity and Contextual Evidence
 ShortPaperTitle#=%=#Back to Basics for Monolingual Alignment: Exploiting Word Similarity and Contextual Evidence
 NumberOfPages#=%=#12
 CopyrightSigned#=%=#

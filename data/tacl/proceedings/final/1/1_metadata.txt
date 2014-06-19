@@ -1,5 +1,5 @@
 SubmissionNumber#=%=#1
-FinalPaperTitle#=%=#Senti-LSSVM: Sentiment-Oriented Multi-Relation Extraction with Latent Structural SVM
+FinalPaperTitle#=%=#[TACL] Senti-LSSVM: Sentiment-Oriented Multi-Relation Extraction with Latent Structural SVM
 ShortPaperTitle#=%=#Senti-LSSVM: Sentiment-Oriented Multi-Relation Extraction with Latent Structural SVM
 NumberOfPages#=%=#14
 CopyrightSigned#=%=#NA

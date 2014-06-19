@@ -1,5 +1,5 @@
 SubmissionNumber#=%=#15
-FinalPaperTitle#=%=#Parallel Algorithms for Unsupervised Tagging
+FinalPaperTitle#=%=#[TACL] Parallel Algorithms for Unsupervised Tagging
 ShortPaperTitle#=%=#Parallel Algorithms for Unsupervised Tagging
 NumberOfPages#=%=#14
 CopyrightSigned#=%=#

@@ -1,5 +1,5 @@
 SubmissionNumber#=%=#5
-FinalPaperTitle#=%=#Joint Incremental Disfluency Detection and Dependency Parsin
+FinalPaperTitle#=%=#[TACL] Joint Incremental Disfluency Detection and Dependency Parsin
 ShortPaperTitle#=%=#Joint Incremental Disfluency Detection and Dependency Parsin
 NumberOfPages#=%=#12
 CopyrightSigned#=%=#

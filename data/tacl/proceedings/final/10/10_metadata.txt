@@ -1,5 +1,5 @@
 SubmissionNumber#=%=#10
-FinalPaperTitle#=%=#The Language Demographics of Amazon Mechanical Turk
+FinalPaperTitle#=%=#[TACL] The Language Demographics of Amazon Mechanical Turk
 ShortPaperTitle#=%=#The Language Demographics of Amazon Mechanical Turk
 NumberOfPages#=%=#14
 CopyrightSigned#=%=#

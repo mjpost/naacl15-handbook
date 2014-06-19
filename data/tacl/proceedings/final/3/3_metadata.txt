@@ -1,5 +1,5 @@
 SubmissionNumber#=%=#3
-FinalPaperTitle#=%=#From image descriptions to visual denotations: New similarity metrics for semantic inference over event descriptions
+FinalPaperTitle#=%=#[TACL] From image descriptions to visual denotations: New similarity metrics for semantic inference over event descriptions
 ShortPaperTitle#=%=#From image descriptions to visual denotations: New similarity metrics for semantic inference over event descriptions
 NumberOfPages#=%=#12
 CopyrightSigned#=%=#

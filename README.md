@@ -28,11 +28,14 @@ provided here will be of some aid to you.
 A good conference handbook should have the following
 
 - A nice, customized cover
-- Schedules for the main conference, workshops, and any co-located conferences
-- Abstracts for all papers presented in the main conference
 - Letters from the General Chair and PC Chairs
-- Full pages for special events (the banquet, business meeting,
-  special awards and cermonies)
+- Schedules for the main conference, workshops, and any co-located conferences
+- Overviews for each day that summarize the main events
+- An "at-a-glance" overview page for each parallel session listing times, 
+  locations, titles, and authors
+- Abstracts for all papers presented in the main conference
+- Full pages for special events (the banquet, business meeting, special
+  awards and ceremonies)
 - A perfect index, pointing to any and every mention of a name within
   the document, and containing no duplicate names (with spelling variations)
 - A local guide with restaurants, area attractions, etc

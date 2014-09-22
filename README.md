@@ -308,19 +308,19 @@ Directories:
 
 - Verify each of them with `scripts/verify_schedule.py`:
 
-       for file in $(ls data); do 
-         num=$(cat data/$file/proceedings/order | ./scripts/verify_schedule.py > /dev/null 2>&1; echo $?) 
-         if test $num -ne 0; then 
-           echo -e "$file\t$num"
-         fi
-       done
+        for file in $(ls data); do 
+          num=$(cat data/$file/proceedings/order | ./scripts/verify_schedule.py > /dev/null 2>&1; echo $?) 
+          if test $num -ne 0; then 
+            echo -e "$file\t$num"
+          fi
+        done
 
 - Generate the bibtex metadata from each workshop's paper metadata:
 
-       for dir in $(ls data); do 
-         [[ ! -d "auto/$dir" ]] && mkdir auto/$dir
-         ./scripts/meta2bibtex.py data/$dir/proceedings/final $dir
-       done
+        for dir in $(ls data); do 
+          [[ ! -d "auto/$dir" ]] && mkdir auto/$dir
+          ./scripts/meta2bibtex.py data/$dir/proceedings/final $dir
+        done
     
   This creates abstracts in `auto/abstracts` (read in via LaTeX calls
   to `\paperabstract`) and BibTeX metadata used for the index and
@@ -345,7 +345,7 @@ Directories:
 
 - Generate the daily overviews, munge them a bit, pull them in
 
-       cat data/{papers,shortpapers,demos,tacl,srw}/proceedings/order | ./scripts/order2schedule_overview.py
+        cat data/{papers,shortpapers,demos,tacl,srw}/proceedings/order | ./scripts/order2schedule_overview.py
 
 - Email Dragomir Radev, who will run your index against
   [the ACL Anthology Network](http://clair.eecs.umich.edu/aan/index.php),

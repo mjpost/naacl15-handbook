@@ -336,6 +336,12 @@ Directories:
   This leaves you with a ton of `schedule.tex` files which can be
   `\input`ed via LaTeX
 
+- Generate the paper and poster session files (which you'll have to edit a bit afterwards):
+
+       for name in tacl demos papers; do
+           cat data/$name/proceedings/order | ./scripts/order2schedule.perl $name
+       done
+
 - Edit `content/workshops/overview.tex` and
   `content/workshops/workshops.tex` to include these files and to be correct.
 

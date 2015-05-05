@@ -9,6 +9,23 @@ import re
 import sys
 import codecs
 
+def clean(str):
+    """This is a list of nasty characters that people enter into their papers that break
+    various things downstream. Add to it as you see fit."""
+    str = str.replace(u"“",u"``")
+    str = str.replace(u"”",u"''")
+    str = str.replace(u' "',u" ``")
+    str = str.replace(u'"',u"''")
+    str = str.replace(u'ﬁ',u"fi")
+    str = str.replace(u'ﬂ',u"fl")
+    str = str.replace(u'’',u"'")
+    str = str.replace(u'–',u"---")
+    str = str.replace(u'&',u"\\&")
+    str = str.replace(u'#',u"\\#")
+    str = str.replace(u'_',u"\\_")
+    
+    return str
+
 class Author:
     def __init__(self):
         self.first = "{}"
@@ -50,7 +67,7 @@ class Paper:
             if key == "SubmissionNumber":
                 self.id = val
             elif key == "FinalPaperTitle":
-                self.long = val
+                self.long = clean(val)
             elif key == "ShortPaperTitle":
                 self.short = val
             elif key.startswith('Author'):
@@ -74,19 +91,9 @@ class Paper:
         # Certain UTF-8 characters should be replaced by latex code
         # or latex will complain bitterly.
         self.abstract = ' '.join(abstract)
-        self.abstract = self.abstract.replace(u"“",u"``")
-        self.abstract = self.abstract.replace(u"”",u"''")
-        self.abstract = self.abstract.replace(u' "',u" ``")
-        self.abstract = self.abstract.replace(u'"',u"''")
-        self.abstract = self.abstract.replace(u'ﬁ',u"fi")
-        self.abstract = self.abstract.replace(u'ﬂ',u"fl")
-        self.abstract = self.abstract.replace(u'’',u"'")
-        self.abstract = self.abstract.replace(u'–',u"---")
-        self.abstract = self.abstract.replace(u'&',u"\\&")
-        self.abstract = self.abstract.replace(u'#',u"\\#")
-        self.abstract = self.abstract.replace(u'_',u"\\_")
-        
-        return
+
+        self.abstract = clean(self.abstract)
+
 
     def escaped_title(self):
         return re.sub(r'&', r'\\&', self.long)

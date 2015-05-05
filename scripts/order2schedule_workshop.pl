@@ -39,6 +39,7 @@ my $tpat     = "[0-9]{1,2}[:.][0-9]{2,2}(?:\\s*[ap]m)?";
 my $tspanpat = "\\(?($tpat)(?:\\s*-+\\s*($tpat))?\\)?";
 my $daynum = 1;
 while (my $line = <STDIN>) {
+  next if $line =~ /^#/ or $line =~ /^\s*$/;
   $line =~ s/\r\n/\n/;
   print "\n" if ($line =~ /^[*=+]/);
   print "\% $line" if $debug;
@@ -51,21 +52,22 @@ while (my $line = <STDIN>) {
     print"\\item[] {\\Large\\bfseries $header}\\\\\\vspace{1.5ex}\n";
     $daynum++;
   }
-  elsif ($line =~ /^[=+]\s+(.*?)($tspanpat)\s*(.*)/i)
+  elsif ($line =~ /^[=+!]\s+(.*?)($tspanpat)\s*(.*)/i)
   {
     my $pre   = $1;
     my $time  = lc($2);
     my $start = $3;
     my $end   = $4;
-    my $post  = $5;
+    my ($post,$hash) = splitkeys($5);
     $start = "" unless $start;
     $end   = "" unless $end;
     $pre  = texify($pre)  if $pre;
     $post = texify($post) if $post;
+    my $author = (exists $hash->{'%by'} ? " ($hash->{'%by'})" : "");
     #print "$pre\n$post\n$start\n$end\n";
     print"\\vspace{1ex}\n";
     $time =~ s/(\d+):(\d+)/minus12($1,$2)/eg;
-    print "\\item[$time] {\\bfseries $pre $post}\n";
+    print "\\item[$time] {\\bfseries $pre $post$author}\n";
   }
   elsif ($line =~ /^[=+]\s*(.*)/)
   {
@@ -86,6 +88,10 @@ while (my $line = <STDIN>) {
     my $startsat = scalar(@t) ? pop @t : "";
     $time =~ s/(\d+):(\d+)/minus12($1,$2)/eg;
     print sprintf("\\item[$time] \\wspaperentry{$conf_part-%03d}\n", $paper_id);
+  }
+  else
+  {
+    print STDERR "NO MATCH FOR: $conf_part ||| $line";
   }
 }
 
@@ -110,3 +116,13 @@ sub minus12 {
     return "$h:$m";
   }
 }
+
+sub splitkeys {
+  my $str = shift;
+  my $event = $str;
+  $event =~ s/ %.*//;
+  my %hash;
+  $hash{$1} = $2 while $str =~ /(%\w+) ([^%]+)/g;
+  return ($event, \%hash);
+}
+    

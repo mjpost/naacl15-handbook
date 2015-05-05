@@ -9,9 +9,9 @@
 13 11:25--11:45  # Automated Scoring of Picture-based Story Narration
 24 11:45--12:05  # Measuring Feature Diversity in Native Language Identification
 37 12:05--12:25  # Automated Evaluation of Scientific Writing: AESW Shared Task Proposal
-+ 12:30--14:00 Lunch
-+ 14:00--15:30 Poster Sessions
-+ 14:00--14:45 Poster Session A
++ 12:30--2:00 Lunch
++ 2:00--3:30 Poster Sessions
++ 2:00--2:45 Poster Session A
 #37  # NOTE: PAPER PRESENT MORE THAN ONCE IN THE SCHEDULE  # Automated Evaluation of Scientific Writing: AESW Shared Task Proposal
 15   # Scoring Persuasive Essays Using Opinions and their Targets
 19   # Towards Automatic Description of Knowledge Components
@@ -22,7 +22,7 @@
 27   # The Jinan Chinese Learner Corpus
 9   # Reducing Annotation Efforts in Supervised Short Answer Scoring
 28   # Annotation and Classification of Argumentative Writing Revisions
-+ 14:45--15:30 Poster Session B
++ 2:45--3:30 Poster Session B
 46   # Embarrassed or Awkward? Ranking Emotion Synonyms for ESL Learners' Appropriate Wording
 18   # RevUP: Automatic Gap-Fill Question Generation from Educational Texts
 14   # Preliminary Experiments on Crowdsourced Evaluation of Feedback Granularity
@@ -33,8 +33,8 @@
 30   # Generating Reference Texts for Short Answer Scoring Using Graph-based Summarization
 12   # Evaluating the performance of Automated Text Scoring systems
 26   # Task-Independent Features for Automated Essay Grading
-+ 15:30--16:00 Break
-38 16:00--16:25  # Using Learner Data to Improve Error Correction in Adjective___Noun Combinations
-33 16:25--16:50  # Using NLP to Support Scalable Assessment of Short Free Text Responses
-43 16:50--17:15  # Automatically Scoring Freshman Writing: A Preliminary Investigation
-+ 17:15--17:30 Closing Remarks
++ 3:30--4:00 Break
+38 4:00--4:25  # Using Learner Data to Improve Error Correction in Adjective___Noun Combinations
+33 4:25--4:50  # Using NLP to Support Scalable Assessment of Short Free Text Responses
+43 4:50--5:15  # Automatically Scoring Freshman Writing: A Preliminary Investigation
++ 5:15--5:30 Closing Remarks

@@ -10,7 +10,8 @@ latex = pdflatex
 all: handbook.pdf
 
 # In many cases, you can just run latex once to get your updates in
-handbook.pdf: handbook.tex handbook.dep handbook.ind
+handbook.pdf: handbook.tex handbook.ind
+	${latex} handbook
 	${latex} handbook
 
 # Build the handbook, then fix the index, run biber, and rebuild
@@ -29,6 +30,7 @@ handbook.dep:
 	${latex} -recorder handbook
 	grep "INPUT.*tex$$" handbook.fls | sort | uniq | perl -pe "s/INPUT /handbook.pdf:/" > handbook.dep
 
+.PHONY: clean handbook.tex
 
 EXTENSIONS  = .ilg .ps .dvi .dep .idx .idx.fixed .ind .aux .idx.ilg .bbl .blg .bcf .toc .fls .log -blx.bib .run.xml .out
 

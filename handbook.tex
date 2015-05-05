@@ -27,8 +27,11 @@
   bottom=.75in,
   top=.75in,
   twoside]{geometry}
+
+% Lots of macros
 \input{content/special/preamble} 
 \input{content/special/macros}    
+
 \input{content/setup/venues}    % macros for event locations
 \input{content/setup/sessions}  % session titles and venues
 
@@ -41,45 +44,44 @@
 
 % for each part of the conference, add the .bib file produced with
 % meta2bibtex.py here:
-\bibliography{auto/ArgMin/papers.bib}
-\bibliography{auto/BEA9/papers.bib}
-\bibliography{auto/BioNLP/papers.bib}
-\bibliography{auto/CLPsych/papers.bib}
-\bibliography{auto/CMCL/papers.bib}
-\bibliography{auto/CoNLL2014/papers.bib}
-\bibliography{auto/ComputEL/papers.bib}
-\bibliography{auto/EVENTS/papers.bib}
-\bibliography{auto/LLVisInt/papers.bib}
-\bibliography{auto/LTCSS/papers.bib}
-\bibliography{auto/MORPHFSM/papers.bib}
-\bibliography{auto/Metaphor/papers.bib}
-\bibliography{auto/NLPSD/papers.bib}
-\bibliography{auto/SLPAT2014/papers.bib}
-\bibliography{auto/SP14/papers.bib}
-\bibliography{auto/WASSA/papers.bib}
-\bibliography{auto/WMT14/papers.bib}
-\bibliography{auto/conll14st/papers.bib}
+
+\bibliography{auto/argmining/papers.bib}
+\bibliography{auto/bea/papers.bib}
+\bibliography{auto/clfl/papers.bib}
+\bibliography{auto/clpsych/papers.bib}
+\bibliography{auto/cmcl/papers.bib}
 \bibliography{auto/demos/papers.bib}
-\bibliography{auto/fsnlp/papers.bib}
+\bibliography{auto/event/papers.bib}
+\bibliography{auto/exprom/papers.bib}
+\bibliography{auto/law/papers.bib}
+\bibliography{auto/metaphor/papers.bib}
+\bibliography{auto/mwe/papers.bib}
 \bibliography{auto/papers/papers.bib}
-\bibliography{auto/shortpapers/papers.bib}
+\bibliography{auto/semeval/papers.bib}
+\bibliography{auto/socialnlp/papers.bib}
 \bibliography{auto/srw/papers.bib}
-\bibliography{auto/tacl/papers.bib}
-\bibliography{auto/tutorials/papers.bib}
+\bibliography{auto/ssst-9/papers.bib}
+\bibliography{auto/starsem/papers.bib}
+\bibliography{auto/tutorial-final/papers.bib}
+\bibliography{auto/vsm-nlp/papers.bib}
+
+% Special bib for the workshops
 \bibliography{content/workshops/papers.bib}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 
-\setdaydateyear{Sunday}{June 22}{2014}
+\setdaydateyear{Sunday}{May 31}{2015}
 
 \fancyfoot[C]{}
 %% \input{content/fmatter/cover} 
 
 \includepdf[pages={1}]{content/fmatter/cover.pdf}
 
-\input{content/maps}
+%% \input{content/maps}
 \vfill
-\emph{Cover design by Jeff Hayes}\\
+\emph{Cover design by Aurelia Bunescu}\\
 \emph{Printing by Omnipress of Madison, Wisconsin}
 
 \fancyfoot[C]{\thepage}
@@ -106,8 +108,8 @@
 \setheaders{}{}
 \input{content/fmatter/committee}
 
-\clearpage
-%\input{content/fmatter/sponsors}
+%% \clearpage
+%% \input{content/fmatter/sponsors}
 \clearpage%{\thispagestyle{emptyheader}\cleardoublepage}
 \setheaders{}{}
 
@@ -115,31 +117,35 @@
 
 \clearpage
 
+%% TUTORIALS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{content/tutorials/tutorials-overview}
+
 %% MAIN CONFERENCE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\input{content/sunday/sunday}
+%% \setdaydateyear{Monday}{June 1}{2015}
+%% \input{content/monday/monday}
 
-\setdaydateyear{Monday}{June 23}{2014}
-\input{content/monday/monday}
+%% \setdaydateyear{Tuesday}{June 2}{2015}
+%% \input{content/tuesday/tuesday}
 
-\setdaydateyear{Tuesday}{June 24}{2014}
-\input{content/tuesday/tuesday}
-
-\setdaydateyear{Wednesday}{June 25}{2014}
-\input{content/wednesday/wednesday}
+%% \setdaydateyear{Wednesday}{June 3}{2015}
+%% \input{content/wednesday/wednesday}
 
 %% Cultural event %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\setdaydateyear{Thursday}{June 26}{2014}
-\addcontentsline{toc}{chapter}{Special Cultural Event: Thursday, June 26, 8:00 PM}
-\input{content/special-event}
+%% \setdaydateyear{Thursday}{June 4}{2015}
+%% \addcontentsline{toc}{chapter}{Special Cultural Event: Thursday, June 26, 8:00 PM}
+%% \input{content/special-event}
 
-%% CoNLL %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% *SEM% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\input{content/CoNLL}
+\setdaydateyear{Thursday--Friday}{June 4--5}{2015}
+\input{content/colocated/overview}
 
 %% WORKSHOPS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\setdaydateyear{Thursday--Friday}{June 4--5}{2015}
 \input{content/workshops/workshops}
 
 %% MISC %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -158,22 +164,22 @@
 \chapter{Local Guide}
 
 % Restaurant and local guide
-\input{content/restaurant-guide}
+%% \input{content/restaurant-guide}
 
 %% SPONSORS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \clearpage
 \addcontentsline{toc}{section}{Sponsorship}
 \setheaders{}{}
-\input{content/ads}
+%% \input{content/ads}
 
 \pagestyle{empty}
 \newpage\newpage
 
 %% BACK COVER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\input{content/restaurant-summary}
-\includepdf[pages={1}]{content/backcover.pdf}
+%% \input{content/restaurant-summary}
+%% \includepdf[pages={1}]{content/backcover.pdf}
 
 \end{document}
 

@@ -13,18 +13,24 @@ Usage:
 
 """
 
-import re
-import os
-import sys
+import re, os
+import sys, csv
 import argparse
+import acl
 from collections import defaultdict
 
 PARSER = argparse.ArgumentParser(description="Generate overview schedules for *ACL handbooks")
 PARSER.add_argument("-output_dir", dest="output_dir", default="auto/papers")
+PARSER.add_argument("-location_file", default='input/room_assignments.csv', type=str, help="File path for CSV locations")
 args = PARSER.parse_args()
 
 if not os.path.exists(args.output_dir):
     os.makedirs(args.output_dir)
+
+locations = {}
+if args.location_file is not None:
+    for row in csv.DictReader(open(args.location_file)):
+        locations[row['event']] = '\\\\%sLoc' % (row['event'])
 
 def time_min(a, b):
     ahour, amin = a.split(':')
@@ -63,39 +69,23 @@ for line in sys.stdin:
             dates.append((day, date, year))
 
     elif line.startswith('='):
-        session_name = line[2:]
+        str = line[2:]
+        time_range, session_name = str.split(' ', 1)
+        sessions[session_name] = (day, date, year, time_range)
 
-    elif line.startswith('+'):
+    elif line.startswith('+') or line.startswith('!'):
         timerange, title = line[2:].split(' ', 1)
+        title, keys = acl.extract_keywords(title)
+        if keys.has_key('by'):
+            title = "%s (%s)" % (title.strip(), keys['by'])
         session_name = None
 
         schedule[(day, date, year)][timerange] = title
 
-    elif re.match(r'\d+', line):
-        """For the overview, we don't print sessions or papers, but we do need to look at
-        oral presentations in order to determine the time range of the session (if any applies)"""
-        if re.match(r'\d+:\d+', line.split(' ')[1]):
-            if session_name is None:
-                print "* WARNING: paper without a session name"
-                continue
-
-            timerange = line.split(' ')[1]
-            start, stop = timerange.split('--')
-
-            if sessions.has_key(session_name):
-                old_start, old_stop = sessions[session_name][3].split('--')
-                if old_start != start or old_stop != stop:
-                    old_timerange = '%s--%s' % (old_start, old_stop)
-                    new_timerange = '%s--%s' % (time_min(old_start, start), time_max(old_stop, stop))
-
-                    sessions[session_name] = (day, date, year, new_timerange)
-
-            else:
-                sessions[session_name] = (day, date, year, timerange)
-
 # Take all the sessions and place them at their time
 for session in sorted(sessions.keys()):
     day, date, year, timerange = sessions[session]
+#    print >> sys.stderr, "SESSION", session, day, date, year, timerange
     if not schedule[(day, date, year)].has_key(timerange):
         schedule[(day, date, year)][timerange] = []
     schedule[(day, date, year)][timerange].append(session)
@@ -118,25 +108,51 @@ def minus12(time):
 
 for date in dates:
     day, num, year = date
-    out = open(os.path.join(args.output_dir, '%s.tex' % (day)), 'w')
+    path = os.path.join(args.output_dir, '%s.tex' % (day))
+    out = open(path, 'w')
+    print >> sys.stderr, "Writing file", path
     print >>out, '\\section*{Overview}'
     print >>out, '\\renewcommand{\\arraystretch}{1.2}'
     print >>out, '\\begin{SingleTrackSchedule}'
     for key, val in sorted(schedule[date].iteritems(), cmp=sort_times):
         start, stop = key.split('--')
 
+        def sessioncode(name):
+            """Session 9C: Machine Translation -> Session 9C"""
+            if name.find(':') == -1:
+                return name
+            else:
+                return name[:name.find(':')]
+
+        def sessiontitle(name):
+            """10:40--11:40 Session 9C: Machine Translation -> Machine Translation"""
+            name = name[name.find(' ')+1:]
+            if name.find(':') == -1:
+                return name
+            else:
+                return name[name.find(':')+2:]
+
         if isinstance(val, list) and re.search(r':', val[0]):
             sessions = [x for x in val]
-            title = sessions[0].split(':')[0][:-1]
+
+            # turn "Session 9A" to "Session 9"
+            title = sessioncode(sessions[0])[:-1]
+            num_parallel_sessions = len(sessions)
+            locations = ['\emph{\Track%cLoc}' % (chr(65+x)) for x in range(num_parallel_sessions)]
+            # column width in inches
+            width = 3.0 / num_parallel_sessions
             print >>out, '  %s & -- & %s &' % (minus12(start), minus12(stop))
-            print >>out, '  \\begin{tabular}{|p{.6in}|p{.6in}|p{.6in}|p{.6in}|p{.6in}|}'
-            print >>out, '    \\multicolumn{5}{l}{{\\bfseries %s}}\\\\\\hline' % (title)
-            print >>out, ' & '.join([x.split(': ')[1] for x in sessions]), '\\\\'
+            print >>out, '  \\begin{tabular}{|%s|}' % ('|'.join(['p{%.1fin}' % width for x in range(num_parallel_sessions)]))
+            print >>out, '    \\multicolumn{%d}{l}{{\\bfseries %s}}\\\\\\hline' % (num_parallel_sessions,title)
+            print >>out, ' & '.join([sessiontitle(x) for x in sessions]), '\\\\'
+            print >>out, ' & '.join(locations), '\\\\'
             print >>out, '  \\hline\\end{tabular} \\\\'
 
         else:
             print >>out, '  %s & -- & %s &' % (minus12(start), minus12(stop))
-            print >>out, '  {\\bfseries %s} \\hfill (\\UnknownLoc)' % (val)
+#            loc = locations.get(val, "\\UnknownLoc")
+            loc = "\\UnknownLoc"
+            print >>out, '  {\\bfseries %s} \\hfill (%s)' % (val, loc)
             print >>out, '  \\\\'
 
     print >>out, '\\end{SingleTrackSchedule}'

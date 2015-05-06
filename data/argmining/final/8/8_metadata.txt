@@ -18,7 +18,7 @@ developed a novel graph-based agreement measure which reflects the semantic
 similarity of different annotation graphs.
 Author{1}{Firstname}#=%=#Christian
 Author{1}{Lastname}#=%=#Kirschner
-Author{1}{Email}#=%=#kirschner@kdsl.informatik.tu-darmstadt.de
+Author{1}{Email}#=%=#christian-kirschner@web.de
 Author{1}{Affiliation}#=%=#Knowledge Discovery in Scientific Literature (KDSL), German Institute for Educational Research (DIPF),  Ubiquitous Knowledge Processing Lab (UKP-TUDA), Department of Computer Science, Technische Universität Darmstadt
 Author{2}{Firstname}#=%=#Judith
 Author{2}{Lastname}#=%=#Eckle-Kohler

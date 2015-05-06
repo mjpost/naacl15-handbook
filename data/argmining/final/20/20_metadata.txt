@@ -21,7 +21,7 @@ debating technologies.
 Author{1}{Firstname}#=%=#Johannes
 Author{1}{Lastname}#=%=#Kiesel
 Author{1}{Email}#=%=#johannes.kiesel@uni-weimar.de
-Author{1}{Affiliation}#=%=#Bauhaus-Universität Weimar, Faculty of Media
+Author{1}{Affiliation}#=%=#Bauhaus-Universität Weimar
 Author{2}{Firstname}#=%=#Khalid
 Author{2}{Lastname}#=%=#Al Khatib
 Author{2}{Email}#=%=#khalid.alkhatib@uni-weimar.de

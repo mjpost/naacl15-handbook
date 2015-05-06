@@ -1,8 +1,8 @@
 * Thursday, June 4, 2015
 + 08:00--08:30 Registration
 + 08:30--09:00 Opening remarks
-+ 09:00--10:00 Joint *SEM and SemEval keynote talk by Marco Baroni, "Playing ficles and running with the corbons: What (multimodal) distributional semantic models learn during their childhood"
-= Session SE1: Track I - Text Similarity and Question Answering (Session 1)
++ 09:00--10:00 Joint *SEM and SemEval keynote talk by Marco Baroni, “Playing ficles and running with the corbons: What (multimodal) distributional semantic models learn during their childhood”
+= Track I - Text Similarity and Question Answering (Part 1)
 103 10:00--10:15 # SemEval-2015 Task 1: Paraphrase and Semantic Similarity in Twitter
 83 10:15--10:25 # MITRE: Seven Systems for Semantic Similarity in Tweets
 + 10:25--11:00 Poster Session: Tasks 1, 2, and 3 (Part 1)
@@ -52,14 +52,14 @@
 133   # Voltron: A Hybrid System For Answer Validation Based On Lexical And Distance Features
 179   # CoMiC: Adapting a Short Answer Assessment System for Answer Selection
 + 10:30--11:00 Coffee Break and Poster Session
-= Session SE2: Track I - Text Similarity and Question Answering (Session 2)
+= Track I - Text Similarity and Question Answering (Part 2)
 160 11:00--11:15 # SemEval-2015 Task 2: Semantic Textual Similarity
 101 11:15--11:25 # ExB Themis: Extensive Feature Extraction from Word Alignments for Semantic Textual Similarity
 128 11:25--11:40 # SemEval-2015 Task 3: Answer Selection in Community Question Answering
 38 11:40--11:50 # VectorSLU: A Continuous Word Vector Approach to Answer Selection in Community Question Answering Systems
 + 11:50--12:30 Poster Session: Tasks 1, 2, and 3 (Part 2)
 + 12:30--13:30 Lunch Break 
-= Session SE3: Track IV - Word Sense Disambiguation and Induction
+= Track IV - Word Sense Disambiguation and Induction
 70 13:30--13:45 # SemEval-2015 Task 13: Multilingual All-Words Sense Disambiguation and Entity Linking
 81 13:45--13:55 # LIMSI: Translations as Source of Indirect Supervision for Multilingual All-Words Sense Disambiguation and Entity Linking
 184 13:55--14:10 # SemEval-2015 Task 14: Analysis of Clinical Text
@@ -94,7 +94,7 @@
 #68   # BLCUNLP: Corpus Pattern Analysis for Verbs Based on Dependency Chain
 110   # Duluth: Word Sense Discrimination in the Service of Lexicography
 + 15:30--16:00 Coffee Break and Poster Session
-= Session SE3: Track III - Sentiment
+= Track III - Sentiment
 113 16:00--16:15 # SemEval-2015 Task 9: CLIPEval Implicit Polarity of Events
 152 16:15--16:30 # SemEval-2015 Task 10: Sentiment Analysis in Twitter
 86 16:30--16:40 # UNITN: Training Deep Convolutional Neural Network for Twitter Sentiment Classification
@@ -162,7 +162,7 @@
 
 * Friday, June 5, 2015
 
-= Session SE5: Track II - Time and Space (Part 1)
+= Track II - Time and Space (Part 1)
 78 09:00--09:15 # SemEval-2015 Task 4: TimeLine: Cross-Document Event Ordering
 85 09:15--09:25 # SPINOZA_VU: An NLP Pipeline for Cross Document TimeLines
 139 09:25--09:40 # SemEval-2015 Task 5: QA TempEval
@@ -193,7 +193,7 @@
 
 + 10:30--11:00 Coffee Break and Poster Session
 
-= Session SE6: Track II - Time and Space (Part 2)
+= Track II - Time and Space (Part 2)
 158 11:00--11:15 # SemEval-2015 Task 7: Diachronic Text Evaluation
 84 11:15--11:25 # UCD: Diachronic Text Classification with Character, Word, and Syntactic N-grams
 127 11:25--11:40 # SemEval-2015 Task 8: SpaceEval
@@ -202,7 +202,7 @@
 
 + 12:30--14:00 Lunch Break 
 
-= Session SE6: Track V - Learning Semantic Relations
+= Track V - Learning Semantic Relations
 72 14:00--14:15 # SemEval-2015 Task 17: Taxonomy Extraction Evaluation
 39 14:15--14:25 # INRIASAC: Simple Hypernym Extraction Methods
 168 14:25--14:40 # SemEval-2015 Task 18: Semantic Dependency Parsing

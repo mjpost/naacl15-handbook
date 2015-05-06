@@ -1,7 +1,7 @@
 SubmissionNumber#=%=#17
 FinalPaperTitle#=%=#LT3: Applying Hybrid Terminology Extraction to Aspect-Based Sentiment Analysis
 ShortPaperTitle#=%=#LT3: Applying Hybrid Terminology Extraction to ABSA
-NumberOfPages#=%=#5
+NumberOfPages#=%=#6
 CopyrightSigned#=%=#Orphee De Clercq
 JobTitle#==#researcher
 Organization#==#LT3, Ghent University

@@ -16,7 +16,7 @@ Usage:
 import re, os
 import sys, csv
 import argparse
-import acl
+import handbook
 from collections import defaultdict
 
 PARSER = argparse.ArgumentParser(description="Generate overview schedules for *ACL handbooks")
@@ -27,10 +27,7 @@ args = PARSER.parse_args()
 if not os.path.exists(args.output_dir):
     os.makedirs(args.output_dir)
 
-locations = {}
-if args.location_file is not None:
-    for row in csv.DictReader(open(args.location_file)):
-        locations[row['event']] = '\\\\%sLoc' % (row['event'])
+locations = handbook.load_location_file(args.location_file)
 
 def time_min(a, b):
     ahour, amin = a.split(':')
@@ -75,7 +72,7 @@ for line in sys.stdin:
 
     elif line.startswith('+') or line.startswith('!'):
         timerange, title = line[2:].split(' ', 1)
-        title, keys = acl.extract_keywords(title)
+        title, keys = handbook.extract_keywords(title)
         if keys.has_key('by'):
             title = "%s (%s)" % (title.strip(), keys['by'])
         session_name = None
@@ -108,7 +105,7 @@ def minus12(time):
 
 for date in dates:
     day, num, year = date
-    path = os.path.join(args.output_dir, '%s.tex' % (day))
+    path = os.path.join(args.output_dir, '%s-overview.tex' % (day))
     out = open(path, 'w')
     print >> sys.stderr, "Writing file", path
     print >>out, '\\section*{Overview}'

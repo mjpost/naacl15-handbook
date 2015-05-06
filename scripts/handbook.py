@@ -1,4 +1,5 @@
 import re
+from csv import DictReader
 
 def extract_keywords(title):
     """Extracts keywords from a title, and returns the title and a dictionary of keys and values"""
@@ -11,5 +12,11 @@ def extract_keywords(title):
 
     return title, dict
         
+def load_location_file(file):
+    """Loads a location file (TODO: specify format)"""
+    locations = {}
+    if file is not None:
+        for row in DictReader(open(file)):
+            locations[row['event']] = '\\\\%sLoc' % (row['event'])
 
-       
+    return locations

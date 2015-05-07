@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import re
 from csv import DictReader
 
@@ -20,3 +22,19 @@ def load_location_file(file):
             locations[row['event']] = '\\\\%sLoc' % (row['event'])
 
     return locations
+
+def latex_escape(str):
+    """Replaces unescaped special characters with escaped versions, and does
+    other special character conversions."""
+    
+    str = str.replace('~','{\\textasciitilde}')
+#    str = str.replace('β','\\beta')
+
+    # escape these characters if not already escaped
+    special_chars = r'\#\@\&\$\_\%'
+    patternstr = r'([^\\])([%s])' % (special_chars)
+    str = re.sub(patternstr, '\\1\\\\\\2', str)
+
+    # fix superscripts
+#    str = re.sub(r'([^$])\^(.*?) ', r'\1$^\2$ ',  str)
+    return str

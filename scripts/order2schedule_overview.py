@@ -135,21 +135,20 @@ for date in dates:
             # turn "Session 9A" to "Session 9"
             title = sessioncode(sessions[0])[:-1]
             num_parallel_sessions = len(sessions)
-            locations = ['\emph{\Track%cLoc}' % (chr(65+x)) for x in range(num_parallel_sessions)]
+            rooms = ['\emph{\Track%cLoc}' % (chr(65+x)) for x in range(num_parallel_sessions)]
             # column width in inches
             width = 3.0 / num_parallel_sessions
             print >>out, '  %s & -- & %s &' % (minus12(start), minus12(stop))
             print >>out, '  \\begin{tabular}{|%s|}' % ('|'.join(['p{%.1fin}' % width for x in range(num_parallel_sessions)]))
             print >>out, '    \\multicolumn{%d}{l}{{\\bfseries %s}}\\\\\\hline' % (num_parallel_sessions,title)
             print >>out, ' & '.join([sessiontitle(x) for x in sessions]), '\\\\'
-            print >>out, ' & '.join(locations), '\\\\'
+            print >>out, ' & '.join(rooms), '\\\\'
             print >>out, '  \\hline\\end{tabular} \\\\'
 
         else:
             print >>out, '  %s & -- & %s &' % (minus12(start), minus12(stop))
-#            loc = locations.get(val, "\\UnknownLoc")
-            loc = "\\UnknownLoc"
-            print >>out, '  {\\bfseries %s} \\hfill (%s)' % (val, loc)
+            loc = val.split(' ')[0].capitalize()
+            print >>out, '  {\\bfseries %s} \\hfill (\\%sLoc)' % (val, loc)
             print >>out, '  \\\\'
 
     print >>out, '\\end{SingleTrackSchedule}'

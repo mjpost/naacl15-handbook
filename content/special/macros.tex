@@ -427,13 +427,14 @@ Human Language Technologies}\par
 
 \newcounter{WorkshopCounter}
 
-\newenvironment{tutorial}[4]{%
+\newenvironment{tutorial}[3]{%
   \stepcounter{TutorialCounter}
   % #1 tutorial bibtex ID
   % #2 date and time
   % #3 location
 
-  \section[\textbf{T\theTutorialCounter:} \papertitle{#1}]{Tutorial \theTutorialCounter}
+  % Cannot get \papertitle to expand
+  \section[\textbf{T\theTutorialCounter:} \expandafter\papertitle\expandafter{#1}]{Tutorial \theTutorialCounter}
   \begin{center}
     \begin{Large}
       \bfseries \papertitle{#1}\\ \vspace{2em}\par
@@ -473,6 +474,19 @@ Human Language Technologies}\par
       \bf Track A & \bf Track B & \bf Track C & \bf Track D & \bf Track E \\
       \it #3 & \it #4 & \it #5 & \it #6 & \it #7 \\
       \TrackALoc & \TrackBLoc & \TrackCLoc & \TrackDLoc & \TrackELoc \\
+      \hline\hline}
+{\end{tabular}\end{center}}
+
+\newenvironment{ThreeSessionOverview}[5]{
+  \section[#1]{#1 Overview -- #2}
+  \setheaders{#1}{#2}
+  \begin{center}
+    \righthyphenmin2
+    \sloppy
+    \begin{tabular}{>{\RaggedRight}p{1.3in}|>{\RaggedRight}p{1.3in}|>{\RaggedRight}p{1.3in}}
+      \bf Track A & \bf Track B & \bf Track C \\\hline
+      \it #3 & \it #4 & \it #5 \\
+      \TrackALoc & \TrackBLoc & \TrackCLoc \\
       \hline\hline}
 {\end{tabular}\end{center}}
 

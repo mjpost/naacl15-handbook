@@ -24,6 +24,7 @@ from collections import defaultdict
 PARSER = argparse.ArgumentParser(description="Generate schedules for *ACL handbooks")
 PARSER.add_argument("-output_dir", dest="output_dir", default="auto/papers")
 PARSER.add_argument("-location_file", default='input/room_assignments.csv', type=str, help="File path for CSV locations")
+PARSER.add_argument('order_files', nargs='+', help='List of order files')
 args = PARSER.parse_args()
 
 if not os.path.exists(args.output_dir):
@@ -56,7 +57,7 @@ def threedigits(str):
     return '%03d' % (int(str))
 
 class Paper:
-    def __init__(self, line):
+    def __init__(self, line, subconf):
         self.id, rest = line.split(' ', 1)
         if re.match(r'^\d+', rest) is not None:
             self.time, comment = rest.split(' ', 1)
@@ -68,30 +69,28 @@ class Paper:
             tokens = self.id.split('/')
             self.id = '%s-%s' % (tokens[1].lower(), threedigits(tokens[0]))
         else:
-            self.id = 'papers-%s' % (threedigits(self.id))
+            self.id = '%s-%s' % (subconf, threedigits(self.id))
             
 class Session:
     def __init__(self, line, date):
         (self.time, self.name) = line[2:].split(' ', 1)
         self.date = date
         self.papers = []
+        self.desc = None
 
-        if self.name.find(':') == -1:
-            self.code = None
-        else:
-            self.code = self.name[:self.name.find(':')]
-            self.name = self.name[self.name.find(':')+2:]
+        if self.name.find(':') != -1:
+            colonpos = self.name.find(':')
+            self.desc = self.name[colonpos+2:]
+            self.name = self.name[:colonpos]
+        # print >> sys.stderr, "LINE %s NAME %s DESC %s" % (line, self.name, self.desc)
 
     def add_paper(self,paper):
         self.papers.append(paper)
 
     def num(self):
         # strip off the last char (A, B, C, D, etc)
-        return self.code[:-1]
-        
-    def title(self):
-        return self.name
-
+        # turns, e.g., "Session 1A" into "1"
+        return self.name.split(' ')[-1][:-1]
 
 # List of dates
 dates = []
@@ -99,42 +98,44 @@ schedule = defaultdict(defaultdict)
 sessions = defaultdict()
 session_times = defaultdict()
 
-for line in sys.stdin:
-    line = line.rstrip()
+for file in args.order_files:
+    subconf_name = file.split('/')[1]
+    for line in open(file):
+        line = line.rstrip()
 
-    # print "LINE", line
+        # print "LINE", line
 
-    if line.startswith('*'):
-        # This sets the day
-        day, date, year = line[2:].split(', ')
-        if not (day, date, year) in dates:
-            dates.append((day, date, year))
+        if line.startswith('*'):
+            # This sets the day
+            day, date, year = line[2:].split(', ')
+            if not (day, date, year) in dates:
+                dates.append((day, date, year))
 
-    elif line.startswith('='):
-        # This names a parallel session that runs at a certain time
-        str = line[2:]
-        time_range, session_name = str.split(' ', 1)
-        sessions[session_name] = Session(line, (day, date, year))
-
-    elif line.startswith('+'):
-        # This names an event that takes place at a certain time
-        timerange, title = line[2:].split(' ', 1)
-
-        if "poster" in title.lower():
-            session_name = title
+        elif line.startswith('='):
+            # This names a parallel session that runs at a certain time
+            str = line[2:]
+            time_range, session_name = str.split(' ', 1)
             sessions[session_name] = Session(line, (day, date, year))
 
-    elif re.match(r'^\d+', line) is not None:
-        id, rest = line.split(' ', 1)
-        if re.match(r'^\d+:\d+-+\d+:\d+', rest) is not None:
-            title = rest.split(' ', 1)
-        else:
-            title = rest
+        elif line.startswith('+'):
+            # This names an event that takes place at a certain time
+            timerange, title = line[2:].split(' ', 1)
 
-        if not sessions.has_key(session_name):
-            sessions[session_name] = Session("= %s %s" % (timerange, session_name), (day, date, year))
+            if "poster" in title.lower() or "demo" in title.lower():
+                session_name = title
+                sessions[session_name] = Session(line, (day, date, year))
 
-        sessions[session_name].add_paper(Paper(line))
+        elif re.match(r'^\d+', line) is not None:
+            id, rest = line.split(' ', 1)
+            if re.match(r'^\d+:\d+-+\d+:\d+', rest) is not None:
+                title = rest.split(' ', 1)
+            else:
+                title = rest
+
+            if not sessions.has_key(session_name):
+                sessions[session_name] = Session("= %s %s" % (timerange, session_name), (day, date, year))
+
+            sessions[session_name].add_paper(Paper(line, subconf_name))
 
 # Take all the sessions and place them at their time
 for session in sorted(sessions.keys()):
@@ -153,6 +154,9 @@ def sort_times(a, b):
     return cmp(int(ahour), int(bhour))
 
 def minus12(time):
+    if "--" in time:
+        return '--'.join(map(lambda x: minus12(x), time.split('--')))
+
     hours, minutes = time.split(':')
     if hours.startswith('0'):
         hours = hours[1:]
@@ -183,14 +187,16 @@ for date in dates:
             print >>out, '\\begin{ThreeSessionOverview}{Parallel Session %s}{\daydateyear}' % (session_num)
             num_papers = len(sessions[0].papers)
             for session in sessions:
-                print >>out, '  {%s}' % (session.title())
+                print >>out, '  {%s}' % (session.desc)
 
-            times = [p.time.split('--')[1] for p in sessions[0].papers]
+            times = [minus12(p.time.split('--')[1]) for p in sessions[0].papers]
             for paper_num in range(num_papers):
+                if paper_num > 0:
+                    print >>out, ' \\hline'
                 print >>out, '  \\marginnote{\\rotatebox{90}{%s}}[2mm]' % (times[paper_num])
                 papers = [session.papers[paper_num] for session in sessions]
                 print >>out, '  ', ' & '.join(['\\papertableentry{%s}' % (p.id) for p in papers])
-                print >>out, ' \\\\\\hline'
+                print >>out, '\\\\'
 
             print >>out, '\\end{ThreeSessionOverview}\n'
 
@@ -198,10 +204,21 @@ for date in dates:
             print >>out, '\\newpage'
             print >>out, '\\section*{Parallel Session %s}' % (session_num)
             for i, session in enumerate(sessions):
-                print >>out, '{\\bfseries\\large %s: %s}\\\\' % (session.code, session.title())
+                print >>out, '{\\bfseries\\large %s: %s}\\\\' % (session.name, session.desc)
                 print >>out, '\\Track%cLoc\\hfill\\sessionchair{}{}' % (chr(i + 65))
                 for paper in session.papers:
                     print >>out, '\\paperabstract{\\day}{%s}{}{}{%s}' % (paper.time, paper.id)
                 print >>out, '\\clearpage'
+
+        else:
+            session = event[0]
+            # Poster session
+            print >>out, '{\\section{%s}' % (session.name)
+            print >>out, '{\\setheaders{%s}{\\daydateyear}' % (session.name)
+            print >>out, '%s\\\\' % (minus12(session.time))
+            for paper in session.papers:
+                print >>out, '\\posterabstract{%s}' % (paper.id)
+
+        print >>out, '\n'
 
     out.close()

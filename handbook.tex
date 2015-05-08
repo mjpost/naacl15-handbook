@@ -81,14 +81,22 @@
 
 %% \input{content/maps}
 \clearpage
-\vfill
-\emph{Cover design by Aurelia Bunescu}\\
+\thispagestyle{empty}
+\vspace*{6in}
+\noindent\emph{Cover design by Aurelia Bunescu}\\
 \emph{Printing by Omnipress of Madison, Wisconsin}
 
 \fancyfoot[C]{\thepage}
 \newpage
 \cleardoublepage
 \frontmatter
+
+%% SPONSORS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\addcontentsline{toc}{chapter}{Sponsorship}
+\thispagestyle{empty}
+\setheaders{Sponsors}{Sponsors}
+\input{content/sponsors/sponsors}
 
 %% TOC %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -176,7 +184,7 @@
 %% SPONSORS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \clearpage
-\addcontentsline{toc}{chapter}{Sponsorship}
+%\addcontentsline{toc}{chapter}{Sponsorship}
 \setheaders{}{}
 \input{content/ads/ads}
 

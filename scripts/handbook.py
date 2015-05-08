@@ -14,15 +14,6 @@ def extract_keywords(title):
 
     return title, dict
         
-def load_location_file(file):
-    """Loads a location file (TODO: specify format)"""
-    locations = {}
-    if file is not None:
-        for row in DictReader(open(file)):
-            locations[row['event']] = '\\\\%sLoc' % (row['event'])
-
-    return locations
-
 def latex_escape(str):
     """Replaces unescaped special characters with escaped versions, and does
     other special character conversions."""

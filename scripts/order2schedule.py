@@ -23,14 +23,11 @@ from collections import defaultdict
 
 PARSER = argparse.ArgumentParser(description="Generate schedules for *ACL handbooks")
 PARSER.add_argument("-output_dir", dest="output_dir", default="auto/papers")
-PARSER.add_argument("-location_file", default='input/room_assignments.csv', type=str, help="File path for CSV locations")
 PARSER.add_argument('order_files', nargs='+', help='List of order files')
 args = PARSER.parse_args()
 
 if not os.path.exists(args.output_dir):
     os.makedirs(args.output_dir)
-
-locations = handbook.load_location_file(args.location_file)
 
 def time_min(a, b):
     ahour, amin = a.split(':')
@@ -71,18 +68,27 @@ class Paper:
         else:
             self.id = '%s-%s' % (subconf, threedigits(self.id))
             
+    def __str__(self):
+        return "%s %s" % (id, time)
+
 class Session:
     def __init__(self, line, date):
-        (self.time, self.name) = line[2:].split(' ', 1)
+        (self.time, namestr) = line[2:].split(' ', 1)
         self.date = date
         self.papers = []
         self.desc = None
+
+        (self.name, self.keywords) = handbook.extract_keywords(namestr)
+#        print "SESSION", self.time, self.name, self.keywords
 
         if self.name.find(':') != -1:
             colonpos = self.name.find(':')
             self.desc = self.name[colonpos+2:]
             self.name = self.name[:colonpos]
         # print >> sys.stderr, "LINE %s NAME %s DESC %s" % (line, self.name, self.desc)
+
+    def __str__(self):
+        return "SESSION [%s/%s] %s %s" % (self.date, self.time, self.name, self.desc)
 
     def add_paper(self,paper):
         self.papers.append(paper)
@@ -91,6 +97,22 @@ class Session:
         # strip off the last char (A, B, C, D, etc)
         # turns, e.g., "Session 1A" into "1"
         return self.name.split(' ')[-1][:-1]
+
+    def chair(self):
+        """Returns the (first name, last name) of the chair, if found in a %chair keyword"""
+        
+        if self.keywords.has_key('chair'):
+            fullname = self.keywords['chair']
+            if ',' in fullname:
+                names = fullname.split(', ')
+                return (names[1].strip(), names[0].strip())
+            else:
+                # This is just a heuristic, assuming the first name is one word and the last
+                # name is 1+ words
+                names = fullname.split(' ', 1)
+                return (names[0].strip(), names[1].strip())
+        else:
+            return ('', '')
 
 # List of dates
 dates = []
@@ -189,6 +211,7 @@ for date in dates:
             for session in sessions:
                 print >>out, '  {%s}' % (session.desc)
 
+#            print "START", start, "STOP", stop, day, sessions[0]
             times = [minus12(p.time.split('--')[1]) for p in sessions[0].papers]
             for paper_num in range(num_papers):
                 if paper_num > 0:
@@ -204,8 +227,9 @@ for date in dates:
             print >>out, '\\newpage'
             print >>out, '\\section*{Parallel Session %s}' % (session_num)
             for i, session in enumerate(sessions):
+                chair = session.chair()
                 print >>out, '{\\bfseries\\large %s: %s}\\\\' % (session.name, session.desc)
-                print >>out, '\\Track%cLoc\\hfill\\sessionchair{}{}' % (chr(i + 65))
+                print >>out, '\\Track%cLoc\\hfill\\sessionchair{%s}{%s}' % (chr(i + 65),chair[0],chair[1])
                 for paper in session.papers:
                     print >>out, '\\paperabstract{\\day}{%s}{}{}{%s}' % (paper.time, paper.id)
                 print >>out, '\\clearpage'

@@ -58,8 +58,10 @@ class Paper:
         self.id, rest = line.split(' ', 1)
         if re.match(r'^\d+', rest) is not None:
             self.time, comment = rest.split(' ', 1)
+            self.poster = False
         else:
             self.time = None
+            self.poster = True
             comment = rest
 
         if self.id.find('/') != -1:
@@ -79,24 +81,24 @@ class Session:
         self.desc = None
 
         (self.name, self.keywords) = handbook.extract_keywords(namestr)
-#        print "SESSION", self.time, self.name, self.keywords
-
+        
         if self.name.find(':') != -1:
             colonpos = self.name.find(':')
             self.desc = self.name[colonpos+2:]
             self.name = self.name[:colonpos]
+            self.num = self.name.split(' ')[-1][:-1]
         # print >> sys.stderr, "LINE %s NAME %s DESC %s" % (line, self.name, self.desc)
+
+        self.poster = False
+        l = self.name.lower()
+        if 'poster' in l or 'demo' in l or 'best paper' in l:
+            self.poster = True
 
     def __str__(self):
         return "SESSION [%s/%s] %s %s" % (self.date, self.time, self.name, self.desc)
 
     def add_paper(self,paper):
         self.papers.append(paper)
-
-    def num(self):
-        # strip off the last char (A, B, C, D, etc)
-        # turns, e.g., "Session 1A" into "1"
-        return self.name.split(' ')[-1][:-1]
 
     def chair(self):
         """Returns the (first name, last name) of the chair, if found in a %chair keyword"""
@@ -191,42 +193,49 @@ def minus12(time):
 # Write a file for each date. This file can then be imported and, if desired, manually edited.
 for date in dates:
     day, num, year = date
-    path = os.path.join(args.output_dir, '%s.tex' % (day))
-    out = open(path, 'w')
-    print >> sys.stderr, "Writing to file", path
-    for timerange, event in sorted(schedule[date].iteritems(), cmp=sort_times):
+    for timerange, events in sorted(schedule[date].iteritems(), cmp=sort_times):
         start, stop = timerange.split('--')
 
-        if isinstance(event, list) and len(event) > 1:
-            # Multiple events at this time -- a set of parallel sessions!
-            sessions = [x for x in event]
+        if not isinstance(events, list):
+            continue
 
-            session_num = sessions[0].num()
+        parallel_sessions = filter(lambda x: isinstance(x, Session) and not x.poster, events)
+        poster_sessions = filter(lambda x: isinstance(x, Session) and x.poster, events)
 
-            # Print the Session overview (single-page at-a-glance grid)
+        # PARALLEL SESSIONS
+
+        # Print the Session overview (single-page at-a-glance grid)
+        if len(parallel_sessions) > 0:
+            session_num = parallel_sessions[0].num
+
+            path = os.path.join(args.output_dir, '%s-parallel-session-%s.tex' % (day, session_num))
+            out = open(path, 'w')
+            print >> sys.stderr, "\\input{%s}" % (path)
+            
             print >>out, '\\clearpage'
-            print >>out, '\\setheaders{Parallel Session %s}{\\daydateyear}' % (session_num)
-            print >>out, '\\begin{ThreeSessionOverview}{Parallel Session %s}{\daydateyear}' % (session_num)
-            num_papers = len(sessions[0].papers)
-            for session in sessions:
+            print >>out, '\\setheaders{Session %s}{\\daydateyear}' % (session_num)
+            print >>out, '\\begin{ThreeSessionOverview}{Session %s}{\daydateyear}' % (session_num)
+            # print the session overview
+            for session in parallel_sessions:
                 print >>out, '  {%s}' % (session.desc)
+                times = [minus12(p.time.split('--')[1]) for p in parallel_sessions[0].papers]
 
-#            print "START", start, "STOP", stop, day, sessions[0]
-            times = [minus12(p.time.split('--')[1]) for p in sessions[0].papers]
+            num_papers = len(parallel_sessions[0].papers)
             for paper_num in range(num_papers):
                 if paper_num > 0:
-                    print >>out, ' \\hline'
+                    print >>out, '  \\hline'
                 print >>out, '  \\marginnote{\\rotatebox{90}{%s}}[2mm]' % (times[paper_num])
-                papers = [session.papers[paper_num] for session in sessions]
-                print >>out, '  ', ' & '.join(['\\papertableentry{%s}' % (p.id) for p in papers])
-                print >>out, '\\\\'
+                papers = [session.papers[paper_num] for session in parallel_sessions]
+                print >>out, ' ', ' & '.join(['\\papertableentry{%s}' % (p.id) for p in papers])
+                print >>out, '  \\\\'
 
             print >>out, '\\end{ThreeSessionOverview}\n'
 
+            # Now print the papers in each of the sessions
             # Print the papers
             print >>out, '\\newpage'
             print >>out, '\\section*{Parallel Session %s}' % (session_num)
-            for i, session in enumerate(sessions):
+            for i, session in enumerate(parallel_sessions):
                 chair = session.chair()
                 print >>out, '{\\bfseries\\large %s: %s}\\\\' % (session.name, session.desc)
                 print >>out, '\\Track%cLoc\\hfill\\sessionchair{%s}{%s}' % (chr(i + 65),chair[0],chair[1])
@@ -234,15 +243,21 @@ for date in dates:
                     print >>out, '\\paperabstract{\\day}{%s}{}{}{%s}' % (paper.time, paper.id)
                 print >>out, '\\clearpage'
 
-        else:
-            session = event[0]
-            # Poster session
+            print >>out, '\n'
+
+            out.close()
+
+        # POSTER SESSIONS
+        for session in poster_sessions:
+            path = os.path.join(args.output_dir, '%s-%s.tex' % (day, session.name.replace(' ', '-')))
+            out = open(path, 'w')
+            print >> sys.stderr, "\\input{%s}" % (path)
+
             print >>out, '{\\section{%s}' % (session.name)
             print >>out, '{\\setheaders{%s}{\\daydateyear}' % (session.name)
-            print >>out, '%s\\\\' % (minus12(session.time))
+            print >>out, '{\large Time: \emph{%s}\\hfill Location: \\PosterLoc}\\\\\\\\' % (minus12(session.time))
             for paper in session.papers:
                 print >>out, '\\posterabstract{%s}' % (paper.id)
+            print >>out
 
-        print >>out, '\n'
-
-    out.close()
+            out.close()

@@ -45,6 +45,8 @@
 % for each part of the conference, add the .bib file produced with
 % meta2bibtex.py here:
 
+\bibliography{auto/tacl/papers.bib}
+
 \bibliography{auto/argmining/papers.bib}
 \bibliography{auto/bea/papers.bib}
 \bibliography{auto/clfl/papers.bib}
@@ -75,11 +77,10 @@
 \setdaydateyear{Sunday}{May 31}{2015}
 
 \fancyfoot[C]{}
-%% \input{content/fmatter/cover} 
-
 \includepdf[pages={1}]{content/fmatter/cover.pdf}
 
 %% \input{content/maps}
+\clearpage
 \vfill
 \emph{Cover design by Aurelia Bunescu}\\
 \emph{Printing by Omnipress of Madison, Wisconsin}
@@ -109,7 +110,7 @@
 \input{content/fmatter/committee}
 
 %% \clearpage
-%% \input{content/fmatter/sponsors}
+%\input{content/fmatter/sponsors}
 \clearpage%{\thispagestyle{emptyheader}\cleardoublepage}
 \setheaders{}{}
 
@@ -119,12 +120,12 @@
 
 %% TUTORIALS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\setdaydateyear{Sunday}{May 31}{2015}
 \input{content/tutorials/tutorials-overview}
 
 %% Welcome reception %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\setdaydateyear{Sunday}{May 31}{2015}
-\addcontentsline{toc}{chapter}{Welcome Reception: \daydate, 6:00pm}
+%% \addcontentsline{toc}{chapter}{Welcome Reception: \daydate, 6:00pm}
 \input{content/tutorials/welcome_reception}
 
 %% MAIN CONFERENCE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -175,9 +176,9 @@
 %% SPONSORS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \clearpage
-\addcontentsline{toc}{section}{Sponsorship}
+\addcontentsline{toc}{chapter}{Sponsorship}
 \setheaders{}{}
-%% \input{content/ads}
+\input{content/ads/ads}
 
 \pagestyle{empty}
 \newpage\newpage

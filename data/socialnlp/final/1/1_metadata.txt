@@ -29,7 +29,7 @@ Author{2}{Lastname}#=%=#Kawahara
 Author{2}{Email}#=%=#dk@i.kyoto-u.ac.jp
 Author{2}{Affiliation}#=%=#Kyoto University
 Author{3}{Firstname}#=%=#Eiji
-Author{3}{Lastname}#=%=#ARAMAKI
+Author{3}{Lastname}#=%=#Aramaki
 Author{3}{Email}#=%=#eiji.aramaki@gmail.com
 Author{3}{Affiliation}#=%=#Kyoto University
 Author{4}{Firstname}#=%=#Tomohide

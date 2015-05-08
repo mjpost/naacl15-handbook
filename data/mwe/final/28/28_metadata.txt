@@ -47,8 +47,8 @@ Author{1}{Firstname}#=%=#Paul
 Author{1}{Lastname}#=%=#Kay
 Author{1}{Email}#=%=#paulkay@berkeley.edu
 Author{1}{Affiliation}#=%=#International Computer Science Institute, UC Berkeley
-Author{2}{Firstname}#=%=#Laura
-Author{2}{Lastname}#=%=#A. Michaelis
+Author{2}{Firstname}#=%=#Laura A.
+Author{2}{Lastname}#=%=#Michaelis
 Author{2}{Email}#=%=#Laura.Michaelis@Colorado.EDU
 Author{2}{Affiliation}#=%=#epartment of Linguistics and Institute of Cognitive Science, University of Colorado Boulder
 

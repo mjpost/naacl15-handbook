@@ -37,8 +37,8 @@ Author{5}{Firstname}#=%=#Ting
 Author{5}{Lastname}#=%=#Liu
 Author{5}{Email}#=%=#ting.tim.liu@gmail.com
 Author{5}{Affiliation}#=%=#ILS, University at Albany
-Author{6}{Firstname}#=%=#George
-Author{6}{Lastname}#=%=#Aaron Broadwell
+Author{6}{Firstname}#=%=#George Aaron
+Author{6}{Lastname}#=%=#Broadwell
 Author{6}{Email}#=%=#gbroadwell@albany.edu
 Author{6}{Affiliation}#=%=#SUNY - University at Albany
 Author{7}{Firstname}#=%=#Laurie

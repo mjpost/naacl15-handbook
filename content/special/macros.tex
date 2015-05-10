@@ -427,21 +427,22 @@ Human Language Technologies}\par
 
 \newcounter{WorkshopCounter}
 
-\newenvironment{tutorial}[3]{%
+\newenvironment{tutorial}[4]{%
   \stepcounter{TutorialCounter}
-  % #1 tutorial bibtex ID
-  % #2 date and time
-  % #3 location
+  % #1 short title
+  % #2 tutorial bibtex ID
+  % #3 date and time
+  % #4 location
 
   % Cannot get \papertitle to expand
-  \section[\textbf{T\theTutorialCounter:} \expandafter\papertitle\expandafter{#1}]{Tutorial \theTutorialCounter}
+  \section[\textbf{T\theTutorialCounter:} {#1}]{Tutorial \theTutorialCounter}
   \begin{center}
     \begin{Large}
-      \bfseries \papertitle{#1}\\ \vspace{2em}\par
+      \bfseries \papertitle{#2}\\ \vspace{2em}\par
     \end{Large}
-    {\itshape \tutorialauthors{#1}}\vspace{1em}\par
-    #2 \vspace{1em}\\
-    #3
+    {\itshape \tutorialauthors{#2}}\vspace{1em}\par
+    #3 \vspace{1em}\\
+    #4
   \end{center}}
 
 \newcounter{TutorialCounter}

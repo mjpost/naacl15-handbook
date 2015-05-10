@@ -9,25 +9,22 @@ rooted in an optionally-supplied directory.
 
 Usage:
 
- cat {papers,shortpapers,demos,tacl}/proceedings/order | order2schedule_overview.py auto/papers
+ cat data/{papers,shortpapers,demos,srw}/order | order2schedule_overview.py
 
 """
 
 import re, os
 import sys, csv
 import argparse
-import handbook
+from handbook import *
 from collections import defaultdict
 
 PARSER = argparse.ArgumentParser(description="Generate overview schedules for *ACL handbooks")
 PARSER.add_argument("-output_dir", dest="output_dir", default="auto/papers")
-PARSER.add_argument("-location_file", default='input/room_assignments.csv', type=str, help="File path for CSV locations")
 args = PARSER.parse_args()
 
 if not os.path.exists(args.output_dir):
     os.makedirs(args.output_dir)
-
-locations = handbook.load_location_file(args.location_file)
 
 def time_min(a, b):
     ahour, amin = a.split(':')
@@ -68,11 +65,11 @@ for line in sys.stdin:
     elif line.startswith('='):
         str = line[2:]
         time_range, session_name = str.split(' ', 1)
-        sessions[session_name] = (day, date, year, time_range)
+        sessions[session_name] = Session(line, (day, date, year))
 
     elif line.startswith('+') or line.startswith('!'):
         timerange, title = line[2:].split(' ', 1)
-        title, keys = handbook.extract_keywords(title)
+        title, keys = extract_keywords(title)
         if keys.has_key('by'):
             title = "%s (%s)" % (title.strip(), keys['by'])
         session_name = None
@@ -81,11 +78,12 @@ for line in sys.stdin:
 
 # Take all the sessions and place them at their time
 for session in sorted(sessions.keys()):
-    day, date, year, timerange = sessions[session]
+    day, date, year = sessions[session].date
+    timerange = sessions[session].time
 #    print >> sys.stderr, "SESSION", session, day, date, year, timerange
     if not schedule[(day, date, year)].has_key(timerange):
         schedule[(day, date, year)][timerange] = []
-    schedule[(day, date, year)][timerange].append(session)
+    schedule[(day, date, year)][timerange].append(sessions[session])
 
 def sort_times(a, b):
     ahour, amin = a[0].split('--')[0].split(':')
@@ -111,44 +109,35 @@ for date in dates:
     print >>out, '\\section*{Overview}'
     print >>out, '\\renewcommand{\\arraystretch}{1.2}'
     print >>out, '\\begin{SingleTrackSchedule}'
-    for key, val in sorted(schedule[date].iteritems(), cmp=sort_times):
-        start, stop = key.split('--')
+    for timerange, events in sorted(schedule[date].iteritems(), cmp=sort_times):
+        start, stop = timerange.split('--')
 
-        def sessioncode(name):
-            """Session 9C: Machine Translation -> Session 9C"""
-            if name.find(':') == -1:
-                return name
-            else:
-                return name[:name.find(':')]
-
-        def sessiontitle(name):
-            """10:40--11:40 Session 9C: Machine Translation -> Machine Translation"""
-            name = name[name.find(' ')+1:]
-            if name.find(':') == -1:
-                return name
-            else:
-                return name[name.find(':')+2:]
-
-        if isinstance(val, list) and re.search(r':', val[0]):
-            sessions = [x for x in val]
+        if isinstance(events, list) and len(events) >= 3:
+            # Parallel sessions (assume there are at least 3)
+            sessions = [x for x in events]
 
             # turn "Session 9A" to "Session 9"
-            title = sessioncode(sessions[0])[:-1]
+            title = 'Session %s' % (sessions[0].num)
             num_parallel_sessions = len(sessions)
             rooms = ['\emph{\Track%cLoc}' % (chr(65+x)) for x in range(num_parallel_sessions)]
             # column width in inches
-            width = 3.0 / num_parallel_sessions
+            width = 3.3 / num_parallel_sessions
             print >>out, '  %s & -- & %s &' % (minus12(start), minus12(stop))
             print >>out, '  \\begin{tabular}{|%s|}' % ('|'.join(['p{%.1fin}' % width for x in range(num_parallel_sessions)]))
             print >>out, '    \\multicolumn{%d}{l}{{\\bfseries %s}}\\\\\\hline' % (num_parallel_sessions,title)
-            print >>out, ' & '.join([sessiontitle(x) for x in sessions]), '\\\\'
+            print >>out, ' & '.join([session.desc for session in sessions]), '\\\\'
             print >>out, ' & '.join(rooms), '\\\\'
             print >>out, '  \\hline\\end{tabular} \\\\'
 
+        elif isinstance(events, list):
+            # A non-parallel session
+            pass
+
         else:
+            # A regular event
             print >>out, '  %s & -- & %s &' % (minus12(start), minus12(stop))
-            loc = val.split(' ')[0].capitalize()
-            print >>out, '  {\\bfseries %s} \\hfill (\\%sLoc)' % (val, loc)
+            loc = events.split(' ')[0].capitalize()
+            print >>out, '  {\\bfseries %s} \\hfill \emph{\\%sLoc}' % (events, loc)
             print >>out, '  \\\\'
 
     print >>out, '\\end{SingleTrackSchedule}'

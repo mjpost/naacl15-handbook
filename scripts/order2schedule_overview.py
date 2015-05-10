@@ -74,7 +74,9 @@ for line in sys.stdin:
             title = "%s (%s)" % (title.strip(), keys['by'])
         session_name = None
 
-        schedule[(day, date, year)][timerange] = title
+        if not schedule[(day, date, year)].has_key(timerange):
+            schedule[(day, date, year)][timerange] = []
+        schedule[(day, date, year)][timerange].append(title)
 
 # Take all the sessions and place them at their time
 for session in sorted(sessions.keys()):
@@ -112,7 +114,7 @@ for date in dates:
     for timerange, events in sorted(schedule[date].iteritems(), cmp=sort_times):
         start, stop = timerange.split('--')
 
-        if isinstance(events, list) and len(events) >= 3:
+        if len(events) >= 3:
             # Parallel sessions (assume there are at least 3)
             sessions = [x for x in events]
 
@@ -129,16 +131,15 @@ for date in dates:
             print >>out, ' & '.join(rooms), '\\\\'
             print >>out, '  \\hline\\end{tabular} \\\\'
 
-        elif isinstance(events, list):
-            # A non-parallel session
-            pass
-
         else:
-            # A regular event
-            print >>out, '  %s & -- & %s &' % (minus12(start), minus12(stop))
-            loc = events.split(' ')[0].capitalize()
-            print >>out, '  {\\bfseries %s} \\hfill \emph{\\%sLoc}' % (events, loc)
-            print >>out, '  \\\\'
+
+            for event in events:
+                # A regular event
+                print >>out, '  %s & -- & %s &' % (minus12(start), minus12(stop))
+                loc = event.split(' ')[0].capitalize()
+                print >>out, '  {\\bfseries %s} \\hfill \emph{\\%sLoc}' % (event, loc)
+                print >>out, '  \\\\'
 
     print >>out, '\\end{SingleTrackSchedule}'
     out.close()
+

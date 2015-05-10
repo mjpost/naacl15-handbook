@@ -5,3 +5,5 @@ Wed May  6 16:07:49 EDT 2015 /Users/post/expts/naacl15/handbook python2.7 script
 Wed May  6 16:52:02 EDT 2015 /Users/post/expts/naacl15/handbook cat data/{papers,demos,srw}/order | ./scripts/order2schedule_overview.py
 Wed May  6 17:54:41 EDT 2015 /Users/post/expts/naacl15/handbook ./scripts/order2schedule.py data/{papers,srw,demos}/order
 Wed May  6 22:33:29 EDT 2015 /Users/post/expts/naacl15/handbook for dir in argmining; do [[ ! -d "auto/$dir" ]] && mkdir auto/$dir; ./scripts/meta2bibtex.py data/$dir/final $dir; [[ ! -d "auto/$dir" ]] && mkdir auto/$dir;          cat data/$dir/order | ./scripts/order2schedule_workshop.pl $dir > auto/$dir/schedule.tex;        done
+Fri May  8 09:41:14 EDT 2015 /Users/post/expts/naacl15/handbook ./scripts/order2schedule.py data/{papers,srw,demos}/order
+Sat May  9 21:49:44 EDT 2015 /Users/post/expts/naacl15/handbook cat data/{papers,demos,srw}/order | ./scripts/order2schedule_overview.py

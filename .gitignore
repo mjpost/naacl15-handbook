@@ -16,10 +16,10 @@ handbook.run.xml
 handbook.bbl
 handbook.blg
 handbook.toc
-handbook.*pdf
+handbook*pdf
 *.pyc
 *.swp
 *.log
 data/tar
-#.*#
-\.#.*
+#*#
+.#*

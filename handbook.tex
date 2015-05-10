@@ -172,26 +172,25 @@
 \addcontentsline{toc}{chapter}{Author Index}
 \setheaders{Author Index}{Author Index}
 
-%% {\em Are there problems with the presentation of your name in the index? You can improve the situation for *ACL conference handbooks and proceedings in the ACL Anthology by taking the following two steps: (1) Enter your name as you wish it to be displayed in START using UTF-8 characters (\url{http://tinyurl.com/start-profile}), and (2) When you submit papers, ensure that the submitter uses your START account name when creating the paper's metadata.}
-
 \printindex
 
-\chapter{Local Guide}
-
-% Restaurant and local guide
-%% \input{content/restaurant-guide}
-
-%% SPONSORS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ADS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \clearpage
 %\addcontentsline{toc}{chapter}{Sponsorship}
 \setheaders{}{}
 \input{content/ads/ads}
 
-\pagestyle{empty}
-\newpage\newpage
+%% LOCAL GUIDE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{content/local-guide/local-guide.tex}
 
 %% BACK COVER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\addcontentsline{toc}{chapter}{Sponsorship}
+\thispagestyle{empty}
+\setheaders{}{}
+\input{content/sponsors/sponsors}
 
 %% \input{content/restaurant-summary}
 %% \includepdf[pages={1}]{content/backcover.pdf}

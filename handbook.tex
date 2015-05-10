@@ -93,10 +93,12 @@
 
 %% SPONSORS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\addcontentsline{toc}{chapter}{Sponsorship}
-\thispagestyle{empty}
-\setheaders{}{}
-\input{content/sponsors/sponsors}
+%% Putting on back cover
+
+%% \addcontentsline{toc}{chapter}{Sponsorship}
+%% \thispagestyle{empty}
+%% \setheaders{}{}
+%% \input{content/sponsors/sponsors}
 
 %% TOC %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -104,6 +106,13 @@
 \tableofcontents
 \mainmatter
 \pagestyle{fancy}
+
+%% ADS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\clearpage
+%\addcontentsline{toc}{chapter}{Sponsorship}
+\setheaders{}{}
+\input{content/ads/ads}
 
 %% PREFACE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -174,22 +183,17 @@
 
 \printindex
 
-%% ADS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\clearpage
-%\addcontentsline{toc}{chapter}{Sponsorship}
-\setheaders{}{}
-\input{content/ads/ads}
-
 %% LOCAL GUIDE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \input{content/local-guide/local-guide.tex}
 
 %% BACK COVER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\addcontentsline{toc}{chapter}{Sponsorship}
 \thispagestyle{empty}
-\setheaders{}{}
+
+\noindent NAACL gratefully acknowledges the following sponsors for
+their support:
+
 \input{content/sponsors/sponsors}
 
 %% \input{content/restaurant-summary}

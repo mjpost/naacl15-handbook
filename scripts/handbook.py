@@ -10,7 +10,7 @@ def extract_keywords(title):
         dict[key] = value
 
     if title.find('%') != -1:
-        title = title[:title.find('%')]
+        title = title[:title.find('%')].strip()
 
     return title, dict
         
@@ -49,6 +49,9 @@ class Paper:
             
     def __str__(self):
         return "%s %s" % (id, time)
+
+def threedigits(str):
+    return '%03d' % (int(str))
 
 class Session:
     def __init__(self, line, date):

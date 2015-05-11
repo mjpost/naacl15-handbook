@@ -18,7 +18,7 @@ Author{1}{Email}#=%=#takamura@pi.titech.ac.jp
 Author{1}{Affiliation}#=%=#Tokyo Institute of Technology
 Author{2}{Firstname}#=%=#Jun'ichi
 Author{2}{Lastname}#=%=#Tsujii
-Author{2}{Email}#=%=#junichi.tsujii@live.com
+Author{2}{Email}#=%=#j-tsujii@aist.ac.jp
 Author{2}{Affiliation}#=%=#Aritificial Intelligence Research Centre at AIST
 
 ==========

@@ -21,7 +21,7 @@ in up to 8.5% improvement in the F_1-score.
 Author{1}{Firstname}#=%=#Gholamreza
 Author{1}{Lastname}#=%=#Haffari
 Author{1}{Email}#=%=#reza.haffari@gmail.com
-Author{1}{Affiliation}#=%=#
+Author{1}{Affiliation}#=%=#Monash University
 Author{2}{Firstname}#=%=#Ajay
 Author{2}{Lastname}#=%=#Nagesh
 Author{2}{Email}#=%=#ajaynagesh@cse.iitb.ac.in

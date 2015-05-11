@@ -23,7 +23,7 @@ Author{1}{Affiliation}#=%=#University of Alberta
 Author{2}{Firstname}#=%=#Saif
 Author{2}{Lastname}#=%=#Mohammad
 Author{2}{Email}#=%=#saif.mohammad@nrc-cnrc.gc.ca
-Author{2}{Affiliation}#=%=#
+Author{2}{Affiliation}#=%=#NRC
 Author{3}{Firstname}#=%=#Svetlana
 Author{3}{Lastname}#=%=#Kiritchenko
 Author{3}{Email}#=%=#svetlana.kiritchenko@nrc-cnrc.gc.ca

@@ -22,7 +22,7 @@ research questions.
 Author{1}{Firstname}#=%=#Jason
 Author{1}{Lastname}#=%=#Chuang
 Author{1}{Email}#=%=#jason@chuang.ca
-Author{1}{Affiliation}#=%=#IBM
+Author{1}{Affiliation}#=%=#N/A
 Author{2}{Firstname}#=%=#Margaret E.
 Author{2}{Lastname}#=%=#Roberts
 Author{2}{Email}#=%=#meroberts@ucsd.edu

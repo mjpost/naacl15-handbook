@@ -1,23 +1,28 @@
 SubmissionNumber#=%=#452
 FinalPaperTitle#=%=#Penalized Expectation Propagation for Graphical Models over Strings
 ShortPaperTitle#=%=#Penalized Expectation Propagation for Graphical Models over Strings
-NumberOfPages#=%=#10
+NumberOfPages#=%=#11
 CopyrightSigned#=%=#Jason M. Eisner
 JobTitle#==#
 Organization#==#Johns Hopkins University
 3400 N. Charles St.
 Baltimore, MD 21218
 USA
-Abstract#==#We present penalized expectation propagation, a novel algorithm for approximate
-inference in graphical models. Expectation propagation is a variant of loopy
-belief propagation that keeps messages tractable by projecting them back into
-a given family of functions. Our extension speeds up the method by using a
-structured-sparsity penalty to prefer simpler messages within the family.  In
-the case of string-valued random variables, penalized EP lets us work with an
-expressive non-parametric
-function family based on variable-length n-gram models. On phonological
-inference problems, we obtain substantial speedup over previous related
-algorithms with no significant loss in accuracy.
+Abstract#==#We present penalized expectation propagation (PEP), a novel algorithm for
+approximate inference in graphical models.  Expectation propagation is a
+variant of loopy belief propagation that keeps messages tractable by projecting
+them back into a given family of functions.  Our extension, PEP, uses a
+structured-sparsity penalty to encourage simple messages, thus balancing speed
+and accuracy.  We specifically show how to instantiate PEP in the case of
+string-valued random variables, where we adaptively approximate finite-state
+distributions by variable-order n-gram models.                                       
+     
+
+On
+phonological
+inference
+problems, we obtain substantial speedup over previous related algorithms with
+no significant loss in accuracy.
 Author{1}{Firstname}#=%=#Ryan
 Author{1}{Lastname}#=%=#Cotterell
 Author{1}{Email}#=%=#ryan.cotterell@gmail.com

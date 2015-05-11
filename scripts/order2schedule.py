@@ -49,10 +49,6 @@ def time_max(a, b):
         return b
     return a
 
-
-def threedigits(str):
-    return '%03d' % (int(str))
-
 # List of dates
 dates = []
 schedule = defaultdict(defaultdict)
@@ -189,6 +185,10 @@ for date in dates:
             path = os.path.join(args.output_dir, '%s-%s.tex' % (day, session.name.replace(' ', '-')))
             out = open(path, 'w')
             print >> sys.stderr, "\\input{%s}" % (path)
+
+            chair = session.chair()
+            if chair[1] != '':
+                print >>out, '\\emph{\\sessionchair{%s}{%s}}\\\\' % (chair[0], chair[1])
 
             print >>out, '{\\section{%s}' % (session.name)
             print >>out, '{\\setheaders{%s}{\\daydateyear}' % (session.name)

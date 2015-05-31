@@ -48,7 +48,9 @@ A good conference handbook should have the following
   [ACL anthology](http://aclweb.org/anthology). This is also sometimes
   called the **book**. Typically, separate books are produced for
   short and long papers, the student research workshop, and
-  demonstrations.
+  demonstrations. This is in contrast to the conference **handbook**,
+  which is used to navigate the actual conference, and which this
+  repository helps you to build.
   
 - **ACLPUB** is the tool used to assemble the proceedings for a
   conference. This was, I believe, written in the early 2000s by Jason
@@ -104,7 +106,12 @@ The downside of being the handbook chair is that there is all sorts of
 upstream events you have no power to enforce (except through friendly
 pub chairs) but that have a large impact on how difficult your job
 is. It will be helpful to read this section and pass this information
-on to the publications chairs, in the case where you are not them.
+on to the publications chairs, in the case where you are not them. In
+general, it is most helpful if the publications chairs are also
+responsible for the handbook (and this is what NAACL has done in 2013
+and 2015), but if you are the "handbook chair" and are not also the
+pub chair, you should be in touch with them early and often to
+minimize the amount of hand-correction you'll have to do.
 
 The single-most important thing you can do is to ensure that the
 "order" files are properly formatted, for the workshops, but most
@@ -162,15 +169,14 @@ Publications chairs should ensure the following:
   This aids immensely in generating the handbook and also the poster placards that sit
   outside the rooms and provide a summary of all papers in each track. 
   
-- If papers are mixed across workshops (e.g., a TACL paper presented
-  with main conference long papers), the session headers should be
-  identical across the order files. e.g., in `papers/order`, you could
-  have
+- If papers are mixed across workshops (e.g., SRW papers mixed into a
+  regular session), the session headers should be identical across the
+  order files. e.g., in `papers/order`, you could have
   
        = Session 1D: Syntax, Parsing, and Tagging I 
        247 11:00--11:25 # Tagging The Web: Building A Robust Web Tagger with Neural Network   
 
-  and in `tacl/order`, you would put
+  and in `srw/order`, you would put
   
        = Session 1D: Syntax, Parsing, and Tagging I
        6 10:10--10:35 # A Tabular Method for Dynamic Oracles in Transition-Based Parsing
@@ -180,12 +186,38 @@ Publications chairs should ensure the following:
   The identical session name allows them to be merged and formatted
   automatically when you generate the handbook.
   
-- TACL papers are a recent addition to *ACL conferences. To facilitate
-  construction of the handbook, the publications chairs should create a dummy
-  subconference named "TACL", manually enter the papers and metadata
-  for each of them, and then generate the proceedings from the ACLPUB
-  tab. These will not be published as part of the proceedings, but are
-  used only for the handbook.
+- TACL papers are a recent addition to *ACL conferences. Since TACL
+  papers are published elsewhere, and are therefore not included with
+  the conference proceedings, there is no ACLPUB package for them, and
+  you must come up with an alternative. NAACL 2013 and ACL 2014, a fake
+  subconference was created and the TACL papers were imported as if it
+  TACL were a workshop. In NAACL 2015, we instead do the following:
+  
+   - Add the TACL papers to the file `input/tacl_papers.yaml`. This is
+   a [YAML-formatted](http://yaml.org) document that is processed by
+   the file `scripts/tacl_builder.py` to pull out the abstracts and
+   paper metadata so they can be seamlessly integrated into the
+   conference handbook.
+   
+   - Run the script:
+   
+        $ python2.7 ./scripts/tacl_builder.py
+        Reading from file input/tacl_papers.yaml
+        Write bibtex entries to auto/tacl/papers.bib
+        Writing abstract auto/abstracts/tacl-485.tex
+        ...
+
+     This will generate the papers bibliography and the abstracts,
+     which can then be treated like any paper.
+     
+   - In the main schedule (`data/papers/order`), you can now reference
+     TACL papers using the format `XXX/TACL`, e.g.,
+     
+        498/TACL 11:05--11:30 # TACL-498: Extracting Lexically Divergent Paraphrases from Twitter %by Wei Xu, Alan Ritter, Chris Callison-Burch, William B. Dolan, and Yangfeng Ji
+
+     The scripts that process this file will know how to transform
+     this into a TACL paper reference, so long as it has been built
+     from the TACL YAML file.
 
 # The order file
 
@@ -221,17 +253,17 @@ Here is an example schedule (from `data/papers/proceedings/order`):
 
 If you want to mix papers between sessions, make sure the session
 titles are the same. Here are snippets from
-`data/papers/proceedings/order` 
+`data/papers/order` 
 
     = Session 1D: Syntax, Parsing, and Tagging I
     247 11:00--11:25 # Tagging The Web: Building A Robust Web Tagger with Neural Network
 
-and `data/tacl/proceedings/order`:
+As mentioned above, we can also refer to TACL papers using something
+like the following (where the IDs correspond to those listed in `input/tacl_papers.yaml`):
 
     = Session 1D: Syntax, Parsing, and Tagging I
-    6 10:10--10:35 # A Tabular Method for Dynamic Oracles in Transition-Based Parsing
-    5 10:35--11:00 # Joint Incremental Disfluency Detection and Dependency Parsin
-    12 11:25--11:50 # A Crossing-Sensitive Third-Order Factorization for Dependency Parsing
+    6/TACL 10:10--10:35 # A Tabular Method for Dynamic Oracles in Transition-Based Parsing
+    5/TACL 10:35--11:00 # Joint Incremental Disfluency Detection and Dependency Parsin
 
 These will be assembled automatically. Here's how to do a poster
 session:
@@ -253,10 +285,26 @@ number of common situations that people require.
 1. Listing a paper more than once in the schedule.
 
    Some people want this, say, when a paper is provided with both an
-   oral presentation and is also present in a poster session. You can
-   list the paper more than once outside of START, however, and the
-   handbook code will handle it fine. However, you'll want to ensure
-   that the abstract is not printed twice. You'll have to do this by hand.
+   oral presentation and is also present in a poster session. This
+   can't be done, however, in the current ACLPUB packages, which
+   assert a bijection between accepted paper IDs and papers listed in
+   the schedule (the schedule is used to determine the paper's order
+   in the proceedings, and this helps ensure that no paper is
+   forgotten or has an ambiguous place). In EMNLP 2014, working with
+   the SoftConf folks,
+   [Yuval Marton](http://www1.ccls.columbia.edu/~ymarton/) arranged
+   for a new notation, !, which is used to denote events that are a
+   little more complicated than typical things like breaks, lunches,
+   and so on, which use the '+' designator. You can use this to list a
+   paper more than once and get it past START's verifications, e.g.,
+   
+      ! 11:05--11:30 Extracting Lexically Divergent Paraphrases from Twitter %by Wei Xu, Alan Ritter, Chris Callison-Burch, William B. Dolan, and Yangfeng Ji
+   
+   The '!' notation also permits keywords, some of which are parsed by the
+   conference handbook code to create special formatting and to
+   automatically add people to the index. e.g.,
+
+      ! 09:00--10:10 Invited Talk: "A Quest for Visual Intelligence in Computers" %by Fei-fei Li
 
 2. Publishing a paper in the proceedings but not listing it in the
 schedule.
@@ -273,9 +321,10 @@ proceedings.
    for those papers in a separate proceedings tarball. Create new
    numbered entries and then the corresponding metadata in 
    
-       SUBCONF/proceedings/final/NUM/NUM_metadata.txt
+       SUBCONF/final/NUM/NUM_metadata.txt
      
-   The handbook code will then find what it needs and all shall be well.
+   The handbook code will then find what it needs, and all shall be
+   well, and all manner of thing shall be well.
 
 # Layout
 
@@ -335,23 +384,27 @@ Directories:
     
   This leaves you with a ton of `schedule.tex` files which can be
   `\input`ed via LaTeX
-
-- Generate the paper and poster session files (which you'll have to edit a bit afterwards):
-
-       for name in tacl demos papers; do
-           cat data/$name/proceedings/order | ./scripts/order2schedule.perl $name
-       done
-
+  
 - Edit `content/workshops/overview.tex` and
   `content/workshops/workshops.tex` to include these files and to be correct.
 
+- Create the workshops bibtex entries in
+  `content/workshops/papers.bib`. This is included in the main
+  `handbook.tex` so that you can cite the workshop chairs and title automatically.
+
 - Next, fill in the tutorials manually, editing
-  `content/sunday/tutorials-001.tex` and so on. Also edit the tutorial
-  overview page in `content/sunday/sunday.tex`.
+  `content/tutorials/tutorials-001.tex` and so on. Also edit the tutorial
+  overview page in `content/tutorials/tutorials-overview.tex`.
+
+- Generate the paper and poster session files (which you'll have to edit a bit afterwards):
+
+       for name in tacl demos papers srw; do
+           cat data/$name/order | ./scripts/order2schedule.perl $name
+       done
 
 - Generate the daily overviews, munge them a bit, pull them in
 
-        cat data/{papers,shortpapers,demos,tacl,srw}/proceedings/order | ./scripts/order2schedule_overview.py
+        cat data/{papers,shortpapers,demos,tacl,srw}/order | ./scripts/order2schedule_overview.py
 
 - Email Dragomir Radev, who will run your index against
   [the ACL Anthology Network](http://clair.eecs.umich.edu/aan/index.php),
@@ -368,7 +421,6 @@ Directories:
   
 - Also special characters in abstracts (e.g., a real alpha, funny
   latex, chinese, etc). Really this should all be converted over to XeTeX.
-  
 
 # Suggestions for the future
 
@@ -397,4 +449,3 @@ This document was written by Matt Post during assembly of the NAACL
 2013 and ACL 2014 handbooks. I inherited from Ulrich Germann the code
 and data he used to assemble the 2012 NAACL handbook. I don't know
 about any history prior to that.
-

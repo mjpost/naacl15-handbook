@@ -188,11 +188,10 @@ for date in dates:
 
             print >>out, '{\\section{%s}' % (session.name)
             print >>out, '{\\setheaders{%s}{\\daydateyear}' % (session.name)
-            print >>out, '{\large Time: \emph{%s}\\hfill Location: \\PosterLoc}\\' % (minus12(session.time))
+            print >>out, '{\large Time: \emph{%s}\\hfill Location: \\PosterLoc}\\\\' % (minus12(session.time))
             chair = session.chair()
             if chair[1] != '':
                 print >>out, '\\emph{\\sessionchair{%s}{%s}}' % (chair[0], chair[1])
-
             print >>out, '\\\\'
             for paper in session.papers:
                 print >>out, '\\posterabstract{%s}' % (paper.id)

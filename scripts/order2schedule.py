@@ -151,7 +151,7 @@ for date in dates:
             # print the session overview
             for session in parallel_sessions:
                 print >>out, '  {%s}' % (session.desc)
-                times = [minus12(p.time.split('--')[1]) for p in parallel_sessions[0].papers]
+                times = [minus12(p.time.split('--')[0]) for p in parallel_sessions[0].papers]
 
             num_papers = len(parallel_sessions[0].papers)
             for paper_num in range(num_papers):

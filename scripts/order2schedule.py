@@ -78,7 +78,7 @@ for file in args.order_files:
             # This names an event that takes place at a certain time
             timerange, title = line[2:].split(' ', 1)
 
-            if "poster" in title.lower() or "demo" in title.lower():
+            if "poster" in title.lower() or "demo" in title.lower() or "best paper session" in title.lower():
                 session_name = title
                 sessions[session_name] = Session(line, (day, date, year))
 
